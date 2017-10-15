@@ -617,18 +617,18 @@ startTable("$lang_userinfo     - Member of group(s): $groupname", "left", 100, 4
 						
 							<td class=back>
 								<input type=text size=20 name=username value="'.$info['user'].'">
-							</td>
+							</td></tr><tr>
 							<td class=back2 align=right>'.$lang_email.': </td>
 							<td class=back align=left>
 								<input type=text size=20 name=user_email value="'.$info['email'].'">
 							</td>
 
 						</tr>
-						<tr>
+						<tr>    
 							<td class=back2 align=right>'.$lang_office.':</td>
 							<td class=back>
 								<input type=text size=20 name=office value="'.$info['office'].'">
-							</td>
+							</td></tr><tr>
 
 							<td class=back2 align=right>'.$lang_phoneext.':</td>
 							<td class=back>

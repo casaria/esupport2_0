@@ -163,7 +163,7 @@ function createSupporterInfo()
 	if($sg == '')
 		$sg = getDefaultSupporterGroupID();
 
-	startTable("$lang_supporterinfo", "left", 100, 4);
+	startTable("$lang_supporterinfo", "left", 100, 2);
 		echo '<tr>
 				<td width="100px" class=back2 align=right>* '.$lang_group.':</td>
 				<td class=back colspan=2 width=20%>';

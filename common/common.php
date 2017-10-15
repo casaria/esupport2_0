@@ -39,6 +39,7 @@ $reg = 'no';
 $db = new $database();
 $db->connect($db_host, $db_user, $db_pwd, $db_name, $pconnect);
 
+
 $dbg = NULL;
 
 

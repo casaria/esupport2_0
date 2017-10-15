@@ -50,6 +50,7 @@ $time = time() + ($time_offset * 3600);
 
 $sql = "select update_log from $mysql_tickets_table where id=$id";
 $result = $db->query($sql);
+$s ='';
 
 $log = $db->fetch_row($result);
 
@@ -85,12 +86,12 @@ echo "</form>";
 						
 <TD class=info align=left><B>
 
-<?php  $info = getTicketInfo($id);
+<?php  $ticket = getTicketInfo($id);
 	echo $lang_ulog." Ticket ID #".$id."<br>"; 
-	echo "$lang_equipment: $info[equipment]";
-	echo " - ".$info[short]."<br>";
-	echo "$lang_category: $info[category] / $lang_platform: $info[platform]";
-	echo "<br>$lang_ticketcreatedby: $info[user] / $lang_supporter: $info[supporter] $platform $short";
+	echo "$lang_equipment: $ticket['equipment']";
+	echo " - ".$ticket["short"]."<br>";
+	echo "$lang_category: $ticket['category'] / $lang_platform: $ticket['platform']";
+	echo "<br>$lang_ticketcreatedby: $ticket['user'] / $lang_supporter: $ticket['supporter'] $platform $short";
 ?>
 </td>
 </TR>
@@ -99,7 +100,7 @@ echo "</form>";
 </tr>
 
 <?php
-	$description = "<b>DESCRIPTION:<BR></b>".$info[description];
+	$description = "<b>DESCRIPTION:<BR></b>".$ticket['description'];
 	echo " <tr><td colspan=1 class=back2 align=left><font size=2>".$description."</font></td></tr>";
         //echo sizeof($log);
 	if($s != "rev"){

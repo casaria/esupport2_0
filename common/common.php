@@ -653,7 +653,7 @@ function getUserList($order, $offset, $group)
 							<td width=20% class=back2 align=right>'.$lang_username.':</td><td class=back>'. $user_name .'</td>
 						</tr>
 						<tr>
-							<td width=27% class=back2 align=right>'.$lang_realname.':</td><td class=back>'. $first .' '. $last .'</td>
+							<td width=20% class=back2 align=right>'.$lang_realname.':</td><td class=back>'. $first .' '. $last .'</td>
 						</tr>
 						<tr>
 							<td width=20% class=back2 align=right>'.$lang_email.'</td><td class=back><a href=mailto:'. $email .'>'.$email.'</td>
@@ -1835,9 +1835,9 @@ function displayTicket($result)
 ************************************************************************************************************/
 function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 {
-    global $info, $enable_smtp, $cookie_name, $theme, $db, $lang_createdate, $lang_equipment, $lang_ticketinfo, $lang_platform, $lang_shortdesc, $lang_category, $lang_desc, $lang_email, $lang_user, $lang_update, $lang_attachment, $enable_tattachments;
+	global $info, $enable_smtp, $cookie_name, $theme, $db, $lang_equipment, $lang_ticketinfo, $lang_platform, $lang_shortdesc, $lang_category, $lang_desc, $lang_email, $lang_user, $lang_update, $lang_attachment, $enable_tattachments;
 
-    echo '	<table class=border cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+		echo '	<table class=border cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
 				<tr> 
 				<td> 
 					<table cellSpacing=1 cellPadding=5 width="100%" border=0>
@@ -1845,29 +1845,20 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 							<td class=info align=left colspan=4 align=center><b>'.$lang_ticketinfo.'</b></td>
 						</tr>		
 						<tr>
-							<td class=back2 width=100 align=right>* '.$lang_platform.':</td>
-							<td width=200    class=back><select name=platform>'; createPlatformMenu(0);
-    echo '	</select></td><td class=back2 width=100 align=right>* '.$lang_category.':</td>
-							<td class=back width=200><select name=category>';  createCategoryMenu(0);
-    echo '	</select></td>
+							<td class=back2 width=20% align=right>* '.$lang_platform.':</td>
+							<td width=20% class=back><select name=platform>'; createPlatformMenu(0);
+							echo '	</select></td><td class=back2 width=20% align=right>* '.$lang_category.':</td>
+							<td class=back><select name=category>';  createCategoryMenu(0);
+							echo '	</select></td>
 						</tr>
 						<tr>
-							<td width=100 class=back2 align=right>* '.$lang_equipment.':</td>
-							<td class=back width=200><select name=equipment>';  createEquipmentMenu(0,$equipmentgroupid);
-    echo '	</select></td>';
-    if (isAdministrator($cookie_name)) {
-        echo '<td class=back2 width=100 align=right>'.'*'.$lang_createdate.':';
-        echo '</td><td class=back>';
-        createDateMenu();
-        echo '</td>';
-    } else {
-        echo '<td class=back2 width=100 align=right></td>';
-        echo '<td class=back></td>';
-    }
-	echo'								
+							<td width=20% class=back2 align=right>* '.$lang_equipment.':</td>
+							<td class=back colspan=3><select name=equipment>';  createEquipmentMenu(0,$equipmentgroupid);
+							echo '	</select></td>
+						
 						</tr>
 						<tr>
-							<td width=100 class=back2 align=right>* '.$lang_shortdesc.':</td>
+							<td width=20% class=back2 align=right>* '.$lang_shortdesc.':</td>
 							<td class=back colspan=3>
 						
 							<input type=text size=60 name=short value="'.stripslashes($info['short']).'">
@@ -1881,41 +1872,42 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 
 
 						</tr>';
-	if(isset($info)) {
+if(isset($info)){
 
-        if ($enable_smtp == "win" || $enable_smtp == "lin") {
-            echo '
+	if($enable_smtp == "win" || $enable_smtp == "lin"){
+		echo '
 
 			<tr>
-				<td class=back2 align=right valign=top width=100> ' . $lang_email . ' ' . $lang_user . '</td>
-				<td class=back colspan=3 valign=bottom> <textarea name=email_msg rows=5 cols=60></textarea></td>
+				<td class=back2 align=right valign=top width=20%> '.$lang_email.' '. $lang_user.': </td>
+				<td class=back colspan=3 valign=bottom> <textarea name=email_msg rows=5 cols=60></textarea> </td>
 			</tr>';
-        }
-        echo '
-			<tr>
+	}
+	echo '
+		<tr>
 
-			<td class=back2 align=right valign=top width=100> ' . $lang_update . ': </td>
+			<td class=back2 align=right valign=top width=20%> '.$lang_update.': </td>
 			<td class=back colspan=3 valign=bottom> <textarea name=update_log rows=5 cols=60></textarea>
 
-				<a href="updatelog.php?cookie_name=' . $cookie_name . '&id=' . $info['id'] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',
+				<a href="updatelog.php?cookie_name='.$cookie_name.'&id='.$info['id'].'" target="myWindow" onClick="window.open(\'\', \'myWindow\',
 					\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">
-					<img border=0 src="../' . $theme['image_dir'] . 'log_button.jpg"></a>
+					<img border=0 src="../'.$theme['image_dir'].'log_button.jpg"></a>
 
 			</td>
-			</tr>';
-    }
-    if($enable_tattachments == 'On' && $flag == 'allow'){
-        echo '<tr>
-				<td class=back2 align=right valign=top width=100>'.$lang_attachment.': </td>';
+		</tr>';
+}
+		if($enable_tattachments == 'On' && $flag == 'allow'){
+			echo '<tr>
+				<td class=back2 align=right valign=top width=20%>'.$lang_attachment.': </td>';
 
-        echo "<td class=back colspan=3 valign=bottom>";
-        //echo "<input type=hidden name=\"MAX_FILE_SIZE\" value=\"1000000\">";
-        echo "<input type=\"file\" name=\"the_file\" size=60>";
+			echo "<td class=back colspan=3 valign=bottom>";
+			//echo "<input type=hidden name=\"MAX_FILE_SIZE\" value=\"1000000\">";
+			echo "<input type=\"file\" name=\"the_file\" size=60>";
 
-        echo '</td></tr>';
-    }
+			echo '</td></tr>';
+		}
 
-    echo '
+
+echo '
 					</table>
 				</td>
 				</tr>
@@ -2433,7 +2425,7 @@ function getEmailAddress($name)
 
 
 //this function takes an integer value (the number of seconds) and prints out the days, hours, minutes, and seconds.
-function showFormattedTime($seconds, $flag=0)
+function showFormattedTime($seconds, $daysEnabled = FALSE)
 {
 	global $lang_na, $lang_day, $lang_days, $lang_hour, $lang_hours, $lang_minute, $lang_minutes, $lang_second, $lang_seconds;
 
@@ -2441,9 +2433,12 @@ function showFormattedTime($seconds, $flag=0)
 		echo "<b>$lang_na</b>";
 	}
 	else{
-		$days = (int) ($seconds / (24*60*60));
-		$remainder = $seconds % (24*60*60);
-
+		if ($daysEnabled) {
+            $days = (int)($seconds / (24 * 60 * 60));
+            $remainder = $seconds % (24 * 60 * 60);
+        } else {
+		    $remainder = $seconds;
+        }
 		$hours = (int) ($remainder / (60*60));
 		$remainder = $remainder % (60*60);
 

@@ -269,7 +269,7 @@ function createSupporterMenu($group_id)
 		echo "<option value=\"$row[0]\"";
 		if((strtolower($cookie_name)) == (strtolower($row[1])) )
 			echo " selected";
-		echo "> $row[1] </option>";
+		echo ">".strtolower($row[1])."</option>";
 	}
 
 }

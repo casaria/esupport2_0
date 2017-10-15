@@ -185,7 +185,7 @@ function createSupporterInfo($group_id)
 				<td width=20% class=back2 align=right>'.$lang_supportergroup.':</td>
 				<td class=back width=20%>';
 				?>
-				<select name=group onChange="MM_jumpMenu('parent', this, 0)">
+				<select id="selecwidth" name=group onChange="MM_jumpMenu('parent', this, 0)">
 				<?php
 				
 				createGroupMenu(0);
@@ -194,7 +194,7 @@ function createSupporterInfo($group_id)
 				</td>
 				<td width=100 class=back2 align=right>'.$lang_ticket.' '.$lang_priority.':</td>
 				<td class=back>
-				<select name=priority>';
+				<select id="selecwidth"  name=priority>';
 				
 				createPriorityMenu();
 							

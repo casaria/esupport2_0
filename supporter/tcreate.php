@@ -301,7 +301,7 @@ echo '
     </tr>
     
     <tr>
-     <td class="back2" align="left" width="170px">'.$lang_emailcc.': </td>
+     <td class="back2" align="left" width="180px">'.$lang_emailcc.': </td>
      <td class="back">
 			<input type=text size=60 name=emailcc value="'.'">			
 	</td>
@@ -354,7 +354,7 @@ function createUserInfo()
 				
 				
 				
-				<td width=20% class=back2 align=right>'.$lang_username.':</td>
+				<td width="180px" class=back2 align=right>'.$lang_username.':</td>
 				<td class=back >';
 					
 				?>
@@ -371,17 +371,17 @@ function createUserInfo()
 					
 					
 				echo "</td>
-				<td class=back2 align=right width=100>".$lang_email.": </td>
+				<td class=back2 align=right>".$lang_email.": </td>
 				<td class=back align=left>
 					<input type=text size=24 name=email value=\"$row[email]\">
 				</td>
 				</tr>
 				<tr>
-				<td width=20% class=back2 align=right>".$lang_office.":</td>
+				<td class=back2 align=right>".$lang_office.":</td>
 				<td class=back>
 					<input type=text size=24 name=office value=\"$row[office]\">
 				</td>
-				<td class=back2 align=right width=100>".$lang_phoneext.":</td>
+				<td class=back2 align=right>".$lang_phoneext.":</td>
 				<td class=back>
 					<input type=text size=24 name=phone value=\"$row[phone]\">
 				</td>";

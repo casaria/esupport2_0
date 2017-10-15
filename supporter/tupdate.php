@@ -579,7 +579,7 @@ echo '
     <tr>
      <td class="back2" width="27%">'.$lang_emailcc.': </td>
      <td class="back" colspan=3>
-								<input type=text size=80 name=emailcc value="'.$info[emailcc].'">
+								<input type=text size=60 name=emailcc value="'.$info[emailcc].'">
 		 </td>
 		 
     </tr>';
@@ -592,7 +592,8 @@ endTable();
 function createUserInfo()
 {
 	global $info, $lang_userinfo, $lang_office, $lang_email, $lang_username, $lang_phoneext, $lang_office;
-// Get User group name and id associate with user 
+// Get User group name and id associate with use
+    $groupname='';
 $ugroups = getUGroupList(); $user = $info['user']; $n=0;
 if($user!= '' ){
 	for($i=0; $i<sizeof($ugroups); $i++){
@@ -637,7 +638,7 @@ endTable();
 //Thanks to SteveW for providing this great function
 function createTicketDetails()
 {
-	global $info, $db, $mysql_attachments_table, $id, $lang_ticket, $lang_opened, $lang_attachments, $lang_lastupdate;
+	global $info, $db, $lang_never, $mysql_attachments_table, $id, $lang_ticket, $lang_opened, $lang_attachments, $lang_lastupdate;
 
 	$padded_id = str_pad($id, 5, '0', STR_PAD_LEFT);
 	$info[create_date] = date("F j, Y, g:i a", $info[create_date]);
@@ -645,6 +646,7 @@ function createTicketDetails()
         	$info[lastupdate] = date("F j, Y, g:i a", $info[lastupdate]);
 	else
         	$info[lastupdate] = $lang_never;
+	$attachments = '';
 
 	//if there attachments, get them and setup the links to them.
 	$sql = "SELECT * from $mysql_attachments_table where tid=$id";

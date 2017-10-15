@@ -476,7 +476,7 @@ startTable("$lang_supporterinfo", "left", 100, 4);
 							<?php
 									createGroupMenu(1);
 		echo '
-								</select>
+							</select>
 							</td>
 							<td class=back2 align=right>'.$lang_supporter.' </td>
 							<td class=back align="left">
@@ -499,7 +499,7 @@ startTable("$lang_supporterinfo", "left", 100, 4);
 		echo '
 							</select>
 							</td>
-							</tr><tr><
+							</tr><tr>
 
 							<td class=back2 align=right>'.$lang_ticket.' '.$lang_status.':</td>
 							<td class=backalign="left">

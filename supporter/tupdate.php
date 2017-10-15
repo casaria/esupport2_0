@@ -547,7 +547,7 @@ function createNotificationPanel()
 {
 global $info, $lang_emailgroup, $lang_emailstatuschange, $lang_notification, $lang_email, $lang_emailcc, $lang_pagesupporter, $lang_office;
 
-startTable("$lang_notification ", "left", 100, 2);
+startTable("$lang_notification ", "left", 100, 5);
 echo '
     <tr>
      <td class="back2" width="180px">'.$lang_emailgroup.': </td>
@@ -749,9 +749,9 @@ function createTimeUpdate()
 	
 	echo '</td>';
 
-	echo '<td class=back >';
+	echo '<td class=back align="left" >';
 	echo 'Work order / reference<BR>';
-	echo '<textarea  name=reference rows=2 cols=30>'.'</textarea></td>';
+	echo '<textarea  name=reference rows=2 cols=40>'.'</textarea></td>';
   echo '</tr>';
 
 	echo '<tr><td width=20% class=back2 align=right>';

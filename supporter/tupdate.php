@@ -547,7 +547,7 @@ function createNotificationPanel()
 {
 global $info, $lang_emailgroup, $lang_emailstatuschange, $lang_notification, $lang_email, $lang_emailcc, $lang_pagesupporter, $lang_office;
 
-startTable("$lang_notification ", "left", 100, 2);
+startTable("$lang_notification ", "left", 100, 3);
 echo '
     <tr>
      <td class="back2" width="180px">'.$lang_emailgroup.': </td>

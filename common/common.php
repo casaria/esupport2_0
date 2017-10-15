@@ -3044,7 +3044,7 @@ function displayUserTicket($result)
             $minutes = "0";
         }
 
-        showFormattedTime($minutes * 60, 1);
+        showFormattedTime($minutes * 60, 0);
         echo '</td>';
 
 
@@ -3433,7 +3433,7 @@ function displayTimeHistory()
     	echo '</td>';     	
     	    		
     	echo '<td width=15% class=back2>';
-    			showFormattedTime($row[minutes] * 60, 1); 
+    			showFormattedTime($row[minutes] * 60, 0);
     	echo '</td>';			
     	echo '<td class=back>';
     			echo "$row[reference]"; 
@@ -3466,14 +3466,14 @@ function displayTimeHistory()
 	
 	$minutes_after_hours = 1.5 * $row_after_hours[0];
 	
-	showFormattedTime($minutes_after_hours * 60, 1);
+	showFormattedTime($minutes_after_hours * 60, 0);
 	
 	echo'</td> <td class=back> ';
-	showFormattedTime($minutes * 60, 1);
+	showFormattedTime($minutes * 60, 0);
 	echo '</td>';
 
 	echo'</td> <td class=back2> <B>';
-	showFormattedTime(($minutes * 60 )+ ($minutes_after_hours  * 60), 1);
+	showFormattedTime(($minutes * 60 )+ ($minutes_after_hours  * 60), 0);
 	echo '</B></td>';
 
 	endTable();

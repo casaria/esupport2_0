@@ -500,7 +500,7 @@ startTable("$lang_supporterinfo", "left", 100, 4);
 							
 							<select name=status>';
 							createStatusMenu(0);
-    echo '					</select>
+    echo '					</select></td>
 
                               </tr><tr>
                               

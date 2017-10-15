@@ -751,7 +751,7 @@ function createTimeUpdate()
 
 	echo '<td class=back >';
 	echo 'Work order / reference<BR>';
-	echo '<input <textarea  name=reference rows=2 cols=20 '.stripslashes($info[description].'><</textarea></td>';
+	echo '<textarea  name=reference rows=2 cols=20>'.'</textarea></td>';
   echo '</tr>';
 
 	echo '<tr><td width=27% class=back2 align=right>';

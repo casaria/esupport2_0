@@ -42,7 +42,7 @@ $db_name = 'casaria_hdesk2';
 $uploaddir = '/var/www/casaria/support/uploads/';
 $session_time = 72000;
 $session_name = 'CasariaIncSupport';
-$MailQueuePath = "/var/www/casaria/support/DelayedMail/";
+$MailQueuePath = "/var/www/casaria/support/MAILQUEUE/";
 
 /*********	You shouldn't need to change anything below here.	***********************************/
 /**********************************************************************************************************/

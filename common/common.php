@@ -2434,84 +2434,79 @@ function getEmailAddress($name)
 //this function takes an integer value (the number of seconds) and prints out the days, hours, minutes, and seconds.
 function showFormattedTime($seconds, $daysEnabled = FALSE, $DontRound15min = FALSE, $ShowSeconds = FALSE)
 {
-	global $lang_na, $lang_day, $lang_days, $lang_hour, $lang_hours, $lang_minute, $lang_minutes, $lang_second, $lang_seconds;
+    global $lang_na, $lang_day, $lang_days, $lang_hour, $lang_hours, $lang_minute, $lang_minutes, $lang_second, $lang_seconds;
 
-	if($seconds <= 0){
-		echo "<b>$lang_na</b>";
-	}
-	else{
-		if ($daysEnabled) {
+    if ($seconds <= 0) {
+        echo "<b>$lang_na</b>";
+    } else {
+        if ($daysEnabled) {
             $days = (int)($seconds / (24 * 60 * 60));
             $remainder = $seconds % (24 * 60 * 60);
         } else {
-		    $remainder = $seconds;
+            $remainder = $seconds;
         }
-		$hours = (int) ($remainder / (60*60));
-		$remainder = $remainder % (60*60);
+        $hours = (int)($remainder / (60 * 60));
+        $remainder = $remainder % (60 * 60);
 
-		$minutes = (int) ($remainder / 60);
-		$seconds = $remainder % 60;
-
-		if($days != 0){
-			echo "$days";
-			if($days > 1)
-				echo " $lang_days";
-			else
-				echo " $lang_day";
-			if($hours !=0) echo "-";
-		}
-
-		if($hours !=0){
-			echo "$hours";
-			if($hours > 1)
-				echo " $lang_hours";
-			else
-				echo " $lang_hour";
-			if($minutes !=0) echo ":";
-		}
+        $minutes = (int)($remainder / 60);
+        $seconds = $remainder % 60;
 
 
+        //comment all of these lines if you don't want to keep track of seconds as well.
+        //if($flag == 0)
+        //	echo ", ";
+    }
 
-			//comment all of these lines if you don't want to keep track of seconds as well.
-			//if($flag == 0)
-			//	echo ", ";
-				
-		}
-
-		if (!$DontRound15min){
-		    if ($seconds > 0){
-		       $minutes += $seconds / 60;    //convert seconds to decimal minutes
-            }
-            $minutes = ceil ($minutes / 15) * 15; // round up to the next 15 min
-            if($minutes !=0) {
-                echo "$minutes";
-                if ($minutes > 1)
-                    echo " $lang_minutes";
-                else
-                    echo " $lang_minute";
-            } else {
-                    //we are not rounding
-
-                    If ($ShowSeconds) {
-                        if ($seconds != 0) {
-                            echo ":";
-                            echo "$seconds";
-                            if ($seconds > 1)
-                                echo " $lang_seconds";
-                            else
-                                echo " $lang_second";
-                        }
-                    }
-                    else  {  //discard the seconds
-
-
-                    }
-
-
-                }
-
+    if (!$DontRound15min) {
+        if ($seconds > 0) {
+            $minutes += $seconds / 60;    //convert seconds to decimal minutes
+        }
+        $minutes = ceil($minutes / 15) * 15; // round up to the next 15 min
+        if ($minutes != 0) {
+            if (minutes == 60) {
+                $hours ++;
+                $minutes -= 60;
 
             }
+
+        }
+
+    }
+
+    if ($days != 0) {
+        echo "$days";
+        if ($days > 1)
+            echo " $lang_days";
+        else
+            echo " $lang_day";
+        if ($hours != 0) echo "-";
+    }
+
+    if ($hours != 0) {
+        echo "$hours";
+        if ($hours > 1)
+            echo " $lang_hours";
+        else
+            echo " $lang_hour";
+
+    }
+    if ($minutes > 1){
+        echo ":";
+        echo " $lang_minutes";
+    }else {
+        echo " $lang_minute";
+    }
+
+    If ($ShowSeconds) {
+        if ($seconds != 0) {
+            echo ":";
+            echo "$seconds";
+            if ($seconds > 1)
+                echo " $lang_seconds";
+            else
+                echo " $lang_second";
+        }
+    }
 }
 
         function listPlatforms()

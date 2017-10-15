@@ -547,7 +547,7 @@ function createNotificationPanel()
 {
 global $info, $lang_emailgroup, $lang_emailstatuschange, $lang_notification, $lang_email, $lang_emailcc, $lang_pagesupporter, $lang_office;
 
-startTable("$lang_notification ", "left", 100, 4);
+startTable("$lang_notification ", "left", 100, 2);
 echo '
     <tr>
      <td class="back2" width="180px">'.$lang_emailgroup.': </td>
@@ -557,15 +557,14 @@ echo '
 					echo " checked";
 				}					
 			echo " name=emailgroup></td>".
-    '
+    '</tr><tr>
      <td class="back2" width="180px">'.$lang_emailstatuschange.': </td>
      <td class="back">'.
     "<input class=box type=checkbox";
 				if($info[emailstatuschange] == "On"){
 					echo " checked";
 				}					
-			echo " name=emailstatuschange></td>".
-    '
+    echo " name=emailstatuschange></td>".'
     
     </tr>
     <tr>
@@ -581,7 +580,7 @@ echo '
     </tr>
     <tr>
      <td class="back2" width="180px">'.$lang_emailcc.': </td>
-     <td class="back" colspan=3>
+     <td class="back" colspan="2">
 		 <input type=text size=60 name=emailcc value="'.$info[emailcc].'">
 		 </td>
 		 
@@ -616,7 +615,7 @@ startTable("$lang_userinfo     - Member of group(s): $groupname", "left", 100, 4
 		echo '			<tr>
 							<td width="180px" class=back2 align=right>'.$lang_username.':</td>
 						
-							<td class=bac>
+							<td class=back>
 								<input type=text size=20 name=username value="'.$info['user'].'">
 							</td>
 							<td class=back2 align=right>'.$lang_email.': </td>
@@ -701,7 +700,7 @@ function createTimeUpdate()
 	startTable("$lang_timespent", "left", 100, 5);
 
 	echo ' <tr>
-	<td width=27% class=back2 align=right>'.$lang_timespent1.':<BR> <class=back2 align=left>'.
+	<td width="180opx" class=back2 align=right>'.$lang_timespent1.':<BR> <class=back2 align=left>'.
 		$lang_timespent2.		
 		'</td><td width=10% class=back >';
 	echo 'minutes<BR>';

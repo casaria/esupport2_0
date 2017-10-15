@@ -283,7 +283,7 @@ global $db, $mysql_ugroups_table, $info, $lang_emailgroup, $lang_emailstatuschan
 startTable("$lang_notification ", "left", 100, 4);
 echo '
     <tr>
-     <td class="back2" width="20%">'.$lang_emailgroup.': </td>
+     <td class="back2" width="170px">'.$lang_emailgroup.': </td>
      <td class="back">'.
     "<input class=box type=checkbox";
 		  echo " checked";
@@ -292,7 +292,7 @@ echo '
     </tr>
     <tr>
 
-     <td class="back2" width="20%">'.$lang_emailstatuschange.': </td>
+     <td class="back2">'.$lang_emailstatuschange.': </td>
      <td class="back">'.
     "<input class=box type=checkbox";
 			echo " checked";
@@ -301,10 +301,10 @@ echo '
     </tr>
     <tr>
 
-     <td class="back2" width="20%">'.$lang_emailcc.': </td>
+     <td class="back2">'.$lang_emailcc.': </td>
      <td class="back">
-								<input type=text size=60 name=emailcc value="'.'">
-							</td>
+			<input type=text size=60 name=emailcc value="'.'">			
+	</td>
     </tr>';
 endTable();
 }

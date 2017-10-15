@@ -1212,7 +1212,7 @@ function getPriorityList()
 
 	$sql = "select priority from $mysql_tpriorities_table order by rank asc";
 	$result = $db->query($sql);
-	$i = 0;=
+	$i = 0;
 	while ($row = $db->fetch_row($result)){
 		$list[$i] = $row[0];
 		$i++;

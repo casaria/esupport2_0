@@ -163,10 +163,10 @@ function createSupporterInfo()
 	if($sg == '')
 		$sg = getDefaultSupporterGroupID();
 
-	startTable("$lang_supporterinfo", "left", 100%, 2);
+	startTable("$lang_supporterinfo", "left", 100, 2);
 		echo '<tr>
 				<td width="100px" class=back2 align=left>* '.$lang_group.':</td>
-				<td class=back  width=20%>';
+				<td class=back width=20%>';
 				?>
 			    	<select name=usergroup_name onChange="MM_jumpMenu('parent', this, 0)">
 				<?php					

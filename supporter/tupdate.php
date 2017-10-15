@@ -569,14 +569,10 @@ echo '
     </tr>
     <tr>
      <td class="back2" width="180px" valign="top">'.$lang_pagesupporter.': </td>
-     <td class="back" colspan="4">'.
-     "<input class=box type=checkbox";
-	
-			echo " name=mms></td>";
+     <td class="back" colspan="4">'."<input class=box type=checkbox name=mms></td>";
+
 
     echo '
-      <td class="back2" width="180px> </td>
-      <td class="back" colspan="4"> </td>
     </tr>
     <tr>
      <td class="back2" width="180px">'.$lang_emailcc.': </td>

@@ -550,15 +550,15 @@ global $info, $lang_emailgroup, $lang_emailstatuschange, $lang_notification, $la
 startTable("$lang_notification ", "left", 100, 4);
 echo '
     <tr>
-     <td class="back2" width="27%">'.$lang_emailgroup.': </td>
-     <td class="back" width="23%">'.
+     <td class="back2" width="180px">'.$lang_emailgroup.': </td>
+     <td class="back">'.
     "<input class=box type=checkbox";
 				if($info[emailgroup] == "On"){
 					echo " checked";
 				}					
 			echo " name=emailgroup></td>".
     '
-     <td class="back2" width="27%">'.$lang_emailstatuschange.': </td>
+     <td class="back2" width="180px">'.$lang_emailstatuschange.': </td>
      <td class="back">'.
     "<input class=box type=checkbox";
 				if($info[emailstatuschange] == "On"){
@@ -569,20 +569,20 @@ echo '
     
     </tr>
     <tr>
-     <td class="back2" width="27%" valign="top">'.$lang_pagesupporter.': </td>
+     <td class="back2" width="180px" valign="top">'.$lang_pagesupporter.': </td>
      <td class="back">'.
      "<input class=box type=checkbox";
 	
 			echo " name=mms></td>";
 
     echo '
-      <td class="back2" width="27%"> </td>
+      <td class="back2" width="180px> </td>
       <td class="back"> </td>
     </tr>
     <tr>
-     <td class="back2" width="27%">'.$lang_emailcc.': </td>
+     <td class="back2" width="180px">'.$lang_emailcc.': </td>
      <td class="back" colspan=3>
-								<input type=text size=60 name=emailcc value="'.$info[emailcc].'">
+		 <input type=text size=60 name=emailcc value="'.$info[emailcc].'">
 		 </td>
 		 
     </tr>';
@@ -674,7 +674,7 @@ echo '
      <td class="back">'.$info[lastupdate].'</td>
     </tr>
     <tr>
-     <td class="back2" valign="top">'.$lang_attachments.': </td>
+     <td class="back2"  valign="top">'.$lang_attachments.': </td>
      <td class="back">'.  $attachments .'</td>
     </tr>';
 endTable();

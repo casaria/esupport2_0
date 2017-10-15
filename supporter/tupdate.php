@@ -614,24 +614,24 @@ if($user!= '' ){
 startTable("$lang_userinfo     - Member of group(s): $groupname", "left", 100, 4);
 				
 		echo '			<tr>
-							<td width="100px" class=back2 align=right>'.$lang_username.':</td>
+							<td width="180px" class=back2 align=right>'.$lang_username.':</td>
 						
-							<td class=back width=20%>
+							<td class=bac>
 								<input type=text size=20 name=username value="'.$info['user'].'">
 							</td>
-							<td class=back2 align=right width="100px">'.$lang_email.': </td>
-							<td class=back align=left width="20%">
+							<td class=back2 align=right>'.$lang_email.': </td>
+							<td class=back align=left>
 								<input type=text size=20 name=user_email value="'.$info['email'].'">
 							</td>
 
 						</tr>
 						<tr>
-							<td width="100px" class=back2 align=right>'.$lang_office.':</td>
-							<td class=back width="20%">
+							<td class=back2 align=right>'.$lang_office.':</td>
+							<td class=back>
 								<input type=text size=20 name=office value="'.$info['office'].'">
 							</td>
 
-							<td class=back2 align=right width=100>'.$lang_phoneext.':</td>
+							<td class=back2 align=right>'.$lang_phoneext.':</td>
 							<td class=back>
 								<input type=text size=20 name=phone value="'.$info['phone'].'">
 							</td>';

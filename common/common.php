@@ -2585,7 +2585,7 @@ function showFormattedTime($seconds, $daysEnabled = FALSE, $DontRound15min = FAL
             return $num_rows;
 
         }
-    }
+
         function getNumKCategories()
         {
             global $mysql_kcategories_table, $db;

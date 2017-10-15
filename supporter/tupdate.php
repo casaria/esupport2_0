@@ -490,7 +490,7 @@ startTable("$lang_supporterinfo", "left", 100, 4);
 
 						</tr>
 						<tr>
-							<td width=27% class=back2 align=right>'.$lang_ticket.' '.$lang_priority.':</td>
+							<td width=20% class=back2 align=right>'.$lang_ticket.' '.$lang_priority.':</td>
 							<td class=back>
 							
 							<select name=prio>';
@@ -501,7 +501,7 @@ startTable("$lang_supporterinfo", "left", 100, 4);
 							</td>
 
 							<td class=back2 align=right width=100>'.$lang_ticket.' '.$lang_status.':</td>
-							<td class=back>
+							<td class=back width="20%">
 							
 							<select name=status>';
 							createStatusMenu(0);
@@ -611,19 +611,20 @@ if($user!= '' ){
 startTable("$lang_userinfo     - Member of group(s): $groupname", "left", 100, 4);
 				
 		echo '			<tr>
-							<td width=27% class=back2 align=right>'.$lang_username.':</td>
-							<td class=back width=23%>
+							<td width="100px" class=back2 align=right>'.$lang_username.':</td>
+						
+							<td class=back width=20%>
 								<input type=text size=20 name=username value="'.$info['user'].'">
 							</td>
-							<td class=back2 align=right width=100>'.$lang_email.': </td>
-							<td class=back align=left>
+							<td class=back2 align=right width="100px">'.$lang_email.': </td>
+							<td class=back align=left width="20%">
 								<input type=text size=20 name=user_email value="'.$info['email'].'">
 							</td>
 
 						</tr>
 						<tr>
-							<td width=27% class=back2 align=right>'.$lang_office.':</td>
-							<td class=back>
+							<td width="100px" class=back2 align=right>'.$lang_office.':</td>
+							<td class=back width="20%">
 								<input type=text size=20 name=office value="'.$info['office'].'">
 							</td>
 

@@ -1840,7 +1840,7 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 		echo '	<table class=border cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
 				<tr> 
 				<td> 
-					<table cellSpacing=1 cellPadding=5 colspan=2 width="100%" border=0>
+					<table cellSpacing=1 cellPadding=5  width="100%" border=0>
 						<tr> 
 							<td class=info width="180px" align=left colspan=2 align=center><b>'.$lang_ticketinfo.'</b></td>
 						</tr>		
@@ -1861,7 +1861,7 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 							<td width=="180px" class=back2 align=right>* '.$lang_equipment.':</td>
 							<td class=back><select  width="300px" name=equipment>';  createEquipmentMenu(0,$equipmentgroupid);
 							echo '	</select></td>
-						
+						    
 						</tr>
 						<tr>
 							<td width="180px" class=back2 align=right>* '.$lang_shortdesc.':</td>

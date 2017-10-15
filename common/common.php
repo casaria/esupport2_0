@@ -2463,7 +2463,7 @@ function showFormattedTime($seconds, $daysEnabled = FALSE, $DontRound15min = FAL
         }
         $minutes = ceil($minutes / 15) * 15; // round up to the next 15 min
         if ($minutes != 0) {
-            if (minutes == 60) {
+            if ($minutes >= 60) {
                 $hours ++;
                 $minutes -= 60;
 

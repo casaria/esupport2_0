@@ -2474,7 +2474,7 @@ function showFormattedTime($seconds, $daysEnabled = FALSE, $DontRound15min = FAL
     }
 
     if ($days != 0) {
-        echo "$days";
+        echo $days;
         if ($days > 1)
             echo " $lang_days";
         else
@@ -2483,15 +2483,17 @@ function showFormattedTime($seconds, $daysEnabled = FALSE, $DontRound15min = FAL
     }
 
     if ($hours != 0) {
-        echo "$hours";
+        echo $hours;
         if ($hours > 1)
             echo " $lang_hours";
         else
             echo " $lang_hour";
 
     }
-    if ($minutes > 1){
+
+    if ($minutes > 0){
         echo ":";
+        echo $minutes;
         echo " $lang_minutes";
     }else {
         echo " $lang_minute";
@@ -2500,7 +2502,7 @@ function showFormattedTime($seconds, $daysEnabled = FALSE, $DontRound15min = FAL
     If ($ShowSeconds) {
         if ($seconds != 0) {
             echo ":";
-            echo "$seconds";
+            echo $seconds;
             if ($seconds > 1)
                 echo " $lang_seconds";
             else

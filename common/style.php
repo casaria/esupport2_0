@@ -79,7 +79,13 @@ $tablePadding = 10;
 
         @import url(https://fonts.googleapis.com/css?family=Lato);
         table {-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 1px; font-weight:500;}
+        #selecwidth{
+            width:375px;
+        }
 
+        #selecwidth option{
+            width:375px;
+        }
         BODY {background: <?php echo $theme['bgcolor'];?> ; color: black; font-weight:700;}
 
         a:link {text-decoration: none; color: <?php echo $theme['link']; ?>; font-weight:700;}

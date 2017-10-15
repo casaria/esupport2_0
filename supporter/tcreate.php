@@ -385,7 +385,7 @@ function createUserInfo()
 				<td class=back>
 					<input type=text size=24 name=office value=\"$row[office]\">
 				</td>
-				</tr>tr> 
+				</tr><tr> 
 				<td class=back2 align=right>".$lang_phoneext.":</td>
 				<td class=back>
 					<input type=text size=24 name=phone value=\"$row[phone]\">

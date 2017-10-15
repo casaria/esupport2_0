@@ -424,7 +424,12 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
         echo "<div align=right><a href=\"$supporter_site_url/print.php?id=$id\">$lang_printable</a></div>";
 
 
-		createTicketDetails();
+        echo '<<input type="file" accept="image/*"> <img border=0 src="../'.$theme['image_dir'].'orangeglow0_show_summary.png"></a> ';
+        echo "<div align=right><a href=\"$supporter_site_url/print.php?id=$id\">$lang_printable</a></div>";
+
+
+
+createTicketDetails();
 		createSupporterInfo();
 		createUserInfo();
 		createNotificationPanel();

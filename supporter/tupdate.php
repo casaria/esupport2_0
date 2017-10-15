@@ -504,13 +504,13 @@ startTable("$lang_supporterinfo", "left", 100, 4);
 
                               </tr><tr>
                               
-							<td class=back2 align=right>\'.$lang_supportergroup.\'</td>
-							<td class=back align="left">\';
+							<td class=back2 align=right>'.$lang_supportergroup.'</td>
+							<td class=back align="left">';
 							?>
-							<select name=group onChange="MM_jumpMenu(\'parent\', this, 0)">
+							<select name=group onChange="MM_jumpMenu('parent', this, 0)">
 							<?php
 									createGroupMenu(1);
-							</select>
+    echo '                    </select>
 							</td></tr>';
 
 

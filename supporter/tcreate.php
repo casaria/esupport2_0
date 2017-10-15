@@ -140,7 +140,7 @@ else{
 	createSupporterInfo();
 	createNotificationPanel();	
 	createUserInfo();
-	createTicketInfo('allow',$ug);
+	//createTicketInfo('allow',$ug);
 	echo "<center>";
 	echo "<input type=submit name=create value=\"$lang_create $lang_ticket\">";
 	echo "&nbsp;&nbsp;&nbsp;";
@@ -150,7 +150,7 @@ else{
 	echo "<input type=hidden name=userid value=".$userid.">";
 	echo "<input type=hidden name=logged_in_user value=$cookie_name>";
 	echo "</form>";
-	echo "</center>";
+	//echo "</center>";
 
 }
 

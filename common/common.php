@@ -1846,7 +1846,7 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 						</tr>		
 						<tr>';
 
-                          echo '	</select></td><td class=back2 width="180px" align=right>* '.$lang_category.':</td>
+                          echo '	</td><td class=back2 width="180px" align=right>* '.$lang_category.':</td>
 							<td class=back><select name=category>';  createCategoryMenu(0);
                           echo '	</select></td>';
 
@@ -1855,6 +1855,7 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 							<td class=back><select name=platform>'; createPlatformMenu(0);
 
 						echo '
+                               </select>
 						</tr>
 						<tr>
 							<td width=="180px" class=back2 align=right>* '.$lang_equipment.':</td>
@@ -1872,7 +1873,7 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 						</tr>
 						<tr>
 
-							<td class=back2 align=right valign=top width="180px">* '.$lang_desc.': </td>
+							<td class=back2 align=right width="180px">* '.$lang_desc.': </td>
 							<td class=back><textarea name=description rows=5 cols=60>'.stripslashes($info['description']).'</textarea></td>
 
 

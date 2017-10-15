@@ -290,18 +290,18 @@ echo '
 			echo " name=emailgroup></td>".
     '</td>
     </tr>
+    
     <tr>
-
-     <td class="back2">'.$lang_emailstatuschange.': </td>
+     <td class="back2" align="left" width="170px">'.$lang_emailstatuschange.': </td>
      <td class="back">'.
     "<input class=box type=checkbox";
 			echo " checked";
 		echo " name=emailstatuschange></td>".
     '</td>
     </tr>
+    
     <tr>
-
-     <td class="back2">'.$lang_emailcc.': </td>
+     <td class="back2" align="left" width="170px">'.$lang_emailcc.': </td>
      <td class="back">
 			<input type=text size=60 name=emailcc value="'.'">			
 	</td>

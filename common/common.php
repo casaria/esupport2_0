@@ -1837,7 +1837,7 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 {
 	global $info, $enable_smtp, $cookie_name, $theme, $db, $lang_equipment, $lang_ticketinfo, $lang_platform, $lang_shortdesc, $lang_category, $lang_desc, $lang_email, $lang_user, $lang_update, $lang_attachment, $enable_tattachments;
 
-		echo '	<table class=border cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+		echo '	<table class=border cellSpacing=0 cellPadding=0 colspan=2 width="100%" align=center border=0>
 				<tr> 
 				<td> 
 					<table cellSpacing=1 cellPadding=5 width="100%" border=0>

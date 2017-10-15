@@ -280,7 +280,7 @@ function createNotificationPanel()
 {
 global $db, $mysql_ugroups_table, $info, $lang_emailgroup, $lang_emailstatuschange, $lang_notification, $lang_email, $lang_emailcc;
 
-startTable("$lang_notification ", "left", 100, 4);
+startTable("$lang_notification ", "left", 100, 2);
 echo '
     <tr>
      <td class="back2" width="170px">'.$lang_emailgroup.': </td>

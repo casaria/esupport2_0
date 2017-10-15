@@ -2494,9 +2494,10 @@ function showFormattedTime($seconds, $daysEnabled = FALSE, $DontRound15min = FAL
     if ($minutes > 0){
         echo ":";
         echo $minutes;
-        echo " $lang_minutes";
-    }else {
-        echo " $lang_minute";
+        if ($minutes > 1)
+            echo " $lang_minutes";
+        else
+            echo " $lang_minute";
     }
 
     If ($ShowSeconds) {

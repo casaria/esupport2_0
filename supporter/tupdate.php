@@ -700,7 +700,7 @@ function createTimeUpdate()
 	startTable("$lang_timespent", "left", 100, 5);
 
 	echo ' <tr>
-	<td width="180opx" class=back2 align=right>'.$lang_timespent1.':<BR> <class=back2 align=left>'.
+	<td width="180px" class=back2 align=right>'.$lang_timespent1.':<BR> <class=back2 align=left>'.
 		$lang_timespent2.		
 		'</td><td width=10% class=back >';
 	echo 'minutes<BR>';
@@ -751,10 +751,10 @@ function createTimeUpdate()
 
 	echo '<td class=back >';
 	echo 'Work order / reference<BR>';
-	echo '<textarea  name=reference rows=2 cols=20>'.'</textarea></td>';
+	echo '<textarea  name=reference rows=2 cols=30>'.'</textarea></td>';
   echo '</tr>';
 
-	echo '<tr><td width=27% class=back2 align=right>';
+	echo '<tr><td width=20% class=back2 align=right>';
 	echo 'Special rate </td>';
 
 	echo '<td width=15% class=back align=left>';

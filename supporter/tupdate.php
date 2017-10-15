@@ -559,7 +559,7 @@ echo '
 			echo " name=emailgroup></td>".
     '</tr><tr>
      <td class="back2" width="180px">'.$lang_emailstatuschange.': </td>
-     <td class="back" colspan="1">'.
+     <td class="back" colspan="4">'.
     "<input class=box type=checkbox";
 				if($info[emailstatuschange] == "On"){
 					echo " checked";
@@ -569,18 +569,18 @@ echo '
     </tr>
     <tr>
      <td class="back2" width="180px" valign="top">'.$lang_pagesupporter.': </td>
-     <td class="back" colspan="1">'.
+     <td class="back" colspan="4">'.
      "<input class=box type=checkbox";
 	
 			echo " name=mms></td>";
 
     echo '
       <td class="back2" width="180px> </td>
-      <td class="back" colspan="1"> </td>
+      <td class="back" colspan="4"> </td>
     </tr>
     <tr>
      <td class="back2" width="180px">'.$lang_emailcc.': </td>
-     <td class="back" colspan="1">
+     <td class="back" colspan="4">
 		 <input type=text size=60 name=emailcc value="'.$info[emailcc].'">
 		 </td>
 		 

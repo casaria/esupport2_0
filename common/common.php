@@ -1842,7 +1842,7 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 				<td> 
 					<table cellSpacing=1 cellPadding=5 width="100%" border=0>
 						<tr> 
-							<td class=info align=left align=center><b>'.$lang_ticketinfo.'</b></td>
+							<td class=info width="180px" align=left colspan=2 align=center><b>'.$lang_ticketinfo.'</b></td>
 						</tr>		
 						<tr>';
 

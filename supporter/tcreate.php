@@ -140,8 +140,8 @@ else{
 	createSupporterInfo();
 	createNotificationPanel();	
 	createUserInfo();
-	//createTicketInfo('allow',$ug);
-	echo "<center>";
+	createTicketInfo('allow',$ug);
+	//echo "<center>";
 	echo "<input type=submit name=create value=\"$lang_create $lang_ticket\">";
 	echo "&nbsp;&nbsp;&nbsp;";
 	echo "<input type=reset name=reset value=$lang_reset>";

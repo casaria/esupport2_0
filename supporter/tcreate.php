@@ -369,12 +369,16 @@ function createUserInfo()
  	$result = $db->query($sql);
  	$row = $db->fetch_array($result);
 					
-					
-				echo "</td>
+
+				echo" 
+                 </td>
+                 
+                 </tr><tr>   
 				<td class=back2 align=right>".$lang_email.": </td>
 				<td class=back align=left>
 					<input type=text size=24 name=email value=\"$row[email]\">
 				</td>
+				
 				</tr>
 				<tr>
 				<td class=back2 align=right>".$lang_office.":</td>

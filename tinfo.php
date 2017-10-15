@@ -181,7 +181,7 @@ function updateLogUserView($log){
 
 			//to show all updates to the ticket, comment out the next line
 			if(eregi('\$lang_emailsent', $log[$i]) || eregi('\$lang_fileattached', $log[$i]) || eregi('\$lang_ticketcreatedby', $log[$i]) || eregi($lang_emailsent, $log[$i]) || eregi($lang_fileattached, $log[$i]) || eregi($lang_ticketcreatedby, $log[$i]) || eregi("$lang_updatedby $cookie_name", $log[$i]) || eregi('\$lang_updatedby ' . $cookie_name, $log[$i]) ||eregi('\$lang_transferred', $log[$i]) || eregi($lang_transferred, $log[$i])){
-				if(eregi("^[0-9]{1,11}", $log[$i-1])){		//if it contains just the timestamp, edit it.
+				//if(eregi("^[0-9]{1,11}", $log[$i-1])){		//if it contains just the timestamp, edit it.
 					$date = eregi_replace("by*", "", $log[$i-1]);
 					$date = date("F j, Y, g:i a", $date);
 					$log[$i-1] = eregi_replace("[0-9]*(.*)lang_by", "$date by", $log[$i-1]);

@@ -551,7 +551,7 @@ startTable("$lang_notification ", "left", 100, 4);
 echo '
     <tr>
      <td class="back2" width="180px">'.$lang_emailgroup.': </td>
-     <td class="back">'.
+     <td class="back" colspan="3">'.
     "<input class=box type=checkbox";
 				if($info[emailgroup] == "On"){
 					echo " checked";
@@ -559,7 +559,7 @@ echo '
 			echo " name=emailgroup></td>".
     '</tr><tr>
      <td class="back2" width="180px">'.$lang_emailstatuschange.': </td>
-     <td class="back">'.
+     <td class="back" colspan="3">'.
     "<input class=box type=checkbox";
 				if($info[emailstatuschange] == "On"){
 					echo " checked";
@@ -569,7 +569,7 @@ echo '
     </tr>
     <tr>
      <td class="back2" width="180px" valign="top">'.$lang_pagesupporter.': </td>
-     <td class="back">'.
+     <td class="back" colspan="3">'.
      "<input class=box type=checkbox";
 	
 			echo " name=mms></td>";
@@ -580,7 +580,7 @@ echo '
     </tr>
     <tr>
      <td class="back2" width="180px">'.$lang_emailcc.': </td>
-     <td class="back" colspan="2">
+     <td class="back" colspan="3">
 		 <input type=text size=60 name=emailcc value="'.$info[emailcc].'">
 		 </td>
 		 

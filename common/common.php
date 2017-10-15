@@ -1842,24 +1842,29 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 				<td> 
 					<table cellSpacing=1 cellPadding=5 width="100%" border=0>
 						<tr> 
-							<td class=info align=left colspan=4 align=center><b>'.$lang_ticketinfo.'</b></td>
+							<td class=info align=left colspan=2 align=center><b>'.$lang_ticketinfo.'</b></td>
 						</tr>		
-						<tr>
-							<td class=back2 width=20% align=right>* '.$lang_platform.':</td>
-							<td width=20% class=back><select name=platform>'; createPlatformMenu(0);
-							echo '	</select></td><td class=back2 width=20% align=right>* '.$lang_category.':</td>
+						<tr>';
+
+                          echo '	</select></td><td class=back2 width="180px" align=right>* '.$lang_category.':</td>
 							<td class=back><select name=category>';  createCategoryMenu(0);
-							echo '	</select></td>
+                          echo '	</select></td>';
+
+						echo '</tr><tr>
+                             	<td class=back2 width="180px" align=right>* '.$lang_platform.':</td>
+							<td class=back><select name=platform>'; createPlatformMenu(0);
+
+						echo '
 						</tr>
 						<tr>
-							<td width=20% class=back2 align=right>* '.$lang_equipment.':</td>
-							<td class=back colspan=3><select name=equipment>';  createEquipmentMenu(0,$equipmentgroupid);
+							<td width=="180px" class=back2 align=right>* '.$lang_equipment.':</td>
+							<td class=back><select name=equipment>';  createEquipmentMenu(0,$equipmentgroupid);
 							echo '	</select></td>
 						
 						</tr>
 						<tr>
-							<td width=20% class=back2 align=right>* '.$lang_shortdesc.':</td>
-							<td class=back colspan=3>
+							<td width="180px" class=back2 align=right>* '.$lang_shortdesc.':</td>
+							<td class=back>
 						
 							<input type=text size=60 name=short value="'.stripslashes($info['short']).'">
 							</td>
@@ -1867,8 +1872,8 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 						</tr>
 						<tr>
 
-							<td class=back2 align=right valign=top width=100>* '.$lang_desc.': </td>
-							<td class=back colspan=3><textarea name=description rows=5 cols=60>'.stripslashes($info['description']).'</textarea></td>
+							<td class=back2 align=right valign=top width="180px">* '.$lang_desc.': </td>
+							<td class=back><textarea name=description rows=5 cols=60>'.stripslashes($info['description']).'</textarea></td>
 
 
 						</tr>';

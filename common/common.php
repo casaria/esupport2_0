@@ -2432,7 +2432,7 @@ function getEmailAddress($name)
 
 
 //this function takes an integer value (the number of seconds) and prints out the days, hours, minutes, and seconds.
-function showFormattedTime($seconds, $daysEnabled = FALSE)
+function showFormattedTime($seconds, $daysEnabled = FALSE, $DontRound15min = FALSE, $ShowSeconds = FALSE)
 {
 	global $lang_na, $lang_day, $lang_days, $lang_hour, $lang_hours, $lang_minute, $lang_minutes, $lang_second, $lang_seconds;
 
@@ -2467,177 +2467,196 @@ function showFormattedTime($seconds, $daysEnabled = FALSE)
 				echo " $lang_hours";
 			else
 				echo " $lang_hour";
-			if($minutes !=0) echo ", ";
+			if($minutes !=0) echo "/";
 		}
 
-		if($minutes !=0){
-			echo "$minutes";
-			if($minutes > 1)
-				echo " $lang_minutes";
-			else
-				echo " $lang_minute";
 
-			if($seconds !=0) echo ", ";
+
 			//comment all of these lines if you don't want to keep track of seconds as well.
 			//if($flag == 0)
 			//	echo ", ";
 				
 		}
-		
-		if($seconds != 0){
-			echo "$seconds";
-			if($seconds > 1)
-				echo " $lang_seconds";
-			else
-				echo " $lang_second";
-		}
-			
-	}
+
+		if (!$DontRound15min){
+		    if ($seconds > 0){
+		       $minutes += $seconds / 60;    //convert seconds to decimal minutes
+            }
+            $minutes = ceil ($minutes / 15) * 15; // round up to the next 15 min
+            if($minutes !=0) {
+                echo "$minutes";
+                if ($minutes > 1)
+                    echo " $lang_minutes";
+                else
+                    echo " $lang_minute";
+            } else {
+                    //we are not rounding
+
+                    If ($ShowSeconds) {
+                        if ($seconds != 0) {
+                            echo ", ";
+                            echo "$seconds";
+                            if ($seconds > 1)
+                                echo " $lang_seconds";
+                            else
+                                echo " $lang_second";
+                        }
+                    }
+                    else  {  //discard the seconds
+
+
+                    }
+
+
+                }
+
+
+            }
 }
 
-function listPlatforms()
-{
+        function listPlatforms()
+        {
 
-	global $mysql_platforms_table, $db, $HTTP_REFERER, $lang_delete, $lang_rank;
+            global $mysql_platforms_table, $db, $HTTP_REFERER, $lang_delete, $lang_rank;
 
-	$sql = "select * from $mysql_platforms_table order by rank asc";
-	$result = $db->query($sql);
-	$num_rows = $db->num_rows($result);
+            $sql = "select * from $mysql_platforms_table order by rank asc";
+            $result = $db->query($sql);
+            $num_rows = $db->num_rows($result);
 
-	if($num_rows != 0){
-		$i = 0;
-		while($row = $db->fetch_row($result)){
-			echo "<input type=hidden name=id$i value='$row[0]'></input>";
-			echo "<tr><td class=back>";
-			echo "<input type=text name=platform$i value=\"$row[2]\">";
-			echo "&nbsp;&nbsp; $lang_rank: <input type=text size=2 value='$row[1]' name=rank".$i.">";
-			
-			if(!eregi("kbase", $HTTP_REFERER))
-				echo "&nbsp;&nbsp;<a href=control.php?t=topts&act=tpla&rm=delete&id=$row[0]>$lang_delete</a>?";
-			else
-				echo "&nbsp;&nbsp;<a href=control.php?t=kbase&act=plat&rm=delete&id=$row[0]>$lang_delete</a>?";
-			echo "</td>";
-			echo "</tr>";
-			$i++;
-		}
-	}
+            if($num_rows != 0){
+                $i = 0;
+                while($row = $db->fetch_row($result)){
+                    echo "<input type=hidden name=id$i value='$row[0]'></input>";
+                    echo "<tr><td class=back>";
+                    echo "<input type=text name=platform$i value=\"$row[2]\">";
+                    echo "&nbsp;&nbsp; $lang_rank: <input type=text size=2 value='$row[1]' name=rank".$i.">";
 
-	return $num_rows;
+                    if(!eregi("kbase", $HTTP_REFERER))
+                        echo "&nbsp;&nbsp;<a href=control.php?t=topts&act=tpla&rm=delete&id=$row[0]>$lang_delete</a>?";
+                    else
+                        echo "&nbsp;&nbsp;<a href=control.php?t=kbase&act=plat&rm=delete&id=$row[0]>$lang_delete</a>?";
+                    echo "</td>";
+                    echo "</tr>";
+                    $i++;
+                }
+            }
 
-}
+            return $num_rows;
 
-
-function getNumPlatforms()
-{
-	global $mysql_platforms_table, $db;
-
-	$sql = "select count(platform) from $mysql_platforms_table";
-	$result = $db->query($sql);
-	$total = $db->fetch_row($result);
-
-	return $total[0];
-
-}
+        }
 
 
-function listKCategories()
-{
+        function getNumPlatforms()
+        {
+            global $mysql_platforms_table, $db;
 
-	global $mysql_kcategories_table, $db, $lang_delete;
+            $sql = "select count(platform) from $mysql_platforms_table";
+            $result = $db->query($sql);
+            $total = $db->fetch_row($result);
 
-	$sql = "select * from $mysql_kcategories_table order by category asc";
-	$result = $db->query($sql);
-	$num_rows = $db->num_rows($result);
+            return $total[0];
 
-	if($num_rows != 0){
-		$i = 0;
-		while($row = $db->fetch_array($result)){
-			echo "<input type=hidden name=id$i value='".$row['id']."'></input>";
-			echo "<tr><td class=back>";
-			echo "<input type=text name=category$i value=\"".$row['category']."\">";
-			//echo "&nbsp;&nbsp; Rank: <input type=text size=2 value='$row[1]' name=rank".$i.">";
-			echo "&nbsp;&nbsp;<a href=control.php?t=kbase&act=cate&rm=delete&id=".$row['id'].">$lang_delete</a>?";
-			echo "</td>";
-			echo "</tr>";
-			$i++;
-		}
-	}
-
-	return $num_rows;
-
-}
-
-function getNumKCategories()
-{
-	global $mysql_kcategories_table, $db;
-
-	$sql = "select count(category) from $mysql_kcategories_table";
-	$result = $db->query($sql);
-	$total = $db->fetch_row($result);
-
-	return $total[0];
-
-}
-
-function createKBMenu()
-{
-	global $mysql_kcategories_table, $mysql_platforms_table, $lang_searchfor, $lang_incategory, $lang_under;
-
-	echo "<b>$lang_searchfor: </b>";
-	echo "<input type=text name=item> $lang_incategory <select name=category>";
-		createKCategoryMenu(1);
-	echo "</select> $lang_under ";
-	echo "<select name=platform>";
-		createPlatformMenu(1);
-	echo"</select> ";
-
-}
-
-function makeClickable($text)
-{
-    $ret = eregi_replace( "([[:alnum:]]+)://([^[:space:]]*)([[:alnum:]#?/&=])",  "<a href=\"\\1://\\2\\3\" target=\"_blank\" target=\"_new\">\\1://\\2\\3</a>", $text);
-    $ret = eregi_replace( "(([a-z0-9_]|\\-|\\.)+@([^[:space:]]*)([[:alnum:]-]))",  "<a href=\"mailto:\\1\" target=\"_new\">\\1</a>", $ret);
-    return($ret);
-}
-
-function setResponse($last, $prio, $tid)
-{
-	global $mysql_tpriorities_table, $db, $mysql_time_table;
-
-	$sql = "SELECT closed_date from $mysql_time_table where ticket_id=$tid order by id desc;";
-	$result = $db->query($sql);
-	$row = $db->fetch_array($result);
-	$closed_time = $row[closed_date];
-
-	if($closed_time == '' || $closed_time == '0')
-		$curr_time = time();
-	else
-		$curr_time = $closed_time;
-
-	$sql = "SELECT response_time from $mysql_tpriorities_table where priority='$prio'";
-	$result = $db->query($sql);
-	$row = $db->fetch_array($result);
-	$time_allowed = $row['response_time'];
-
-	$time_since_update = $curr_time - $last;		//time since last update in seconds
-
-	if($time_since_update >= $time_allowed)
-		$response = 4;
-	if($time_since_update < ($time_allowed))
-		$response = 3;
-	if($time_since_update <= ($time_allowed * 0.667))
-		$response = 2;
-	if( $time_since_update <= ($time_allowed * 0.333))
-		$response = 1;
+        }
 
 
-	return $response;
-}
+        function listKCategories()
+        {
 
-/***********************************************************************************************************
-**      function createViewableByMenu():
-**              Takes no arguments.  Creates the drop down menu for the list of knowledge base categories.
-************************************************************************************************************/
+            global $mysql_kcategories_table, $db, $lang_delete;
+
+            $sql = "select * from $mysql_kcategories_table order by category asc";
+            $result = $db->query($sql);
+            $num_rows = $db->num_rows($result);
+
+            if($num_rows != 0){
+                $i = 0;
+                while($row = $db->fetch_array($result)){
+                    echo "<input type=hidden name=id$i value='".$row['id']."'></input>";
+                    echo "<tr><td class=back>";
+                    echo "<input type=text name=category$i value=\"".$row['category']."\">";
+                    //echo "&nbsp;&nbsp; Rank: <input type=text size=2 value='$row[1]' name=rank".$i.">";
+                    echo "&nbsp;&nbsp;<a href=control.php?t=kbase&act=cate&rm=delete&id=".$row['id'].">$lang_delete</a>?";
+                    echo "</td>";
+                    echo "</tr>";
+                    $i++;
+                }
+            }
+
+            return $num_rows;
+
+        }
+    }
+        function getNumKCategories()
+        {
+            global $mysql_kcategories_table, $db;
+
+            $sql = "select count(category) from $mysql_kcategories_table";
+            $result = $db->query($sql);
+            $total = $db->fetch_row($result);
+
+            return $total[0];
+
+        }
+
+        function createKBMenu()
+        {
+            global $mysql_kcategories_table, $mysql_platforms_table, $lang_searchfor, $lang_incategory, $lang_under;
+
+            echo "<b>$lang_searchfor: </b>";
+            echo "<input type=text name=item> $lang_incategory <select name=category>";
+                createKCategoryMenu(1);
+            echo "</select> $lang_under ";
+            echo "<select name=platform>";
+                createPlatformMenu(1);
+            echo"</select> ";
+
+        }
+
+        function makeClickable($text)
+        {
+            $ret = eregi_replace( "([[:alnum:]]+)://([^[:space:]]*)([[:alnum:]#?/&=])",  "<a href=\"\\1://\\2\\3\" target=\"_blank\" target=\"_new\">\\1://\\2\\3</a>", $text);
+            $ret = eregi_replace( "(([a-z0-9_]|\\-|\\.)+@([^[:space:]]*)([[:alnum:]-]))",  "<a href=\"mailto:\\1\" target=\"_new\">\\1</a>", $ret);
+            return($ret);
+        }
+
+        function setResponse($last, $prio, $tid)
+        {
+            global $mysql_tpriorities_table, $db, $mysql_time_table;
+
+            $sql = "SELECT closed_date from $mysql_time_table where ticket_id=$tid order by id desc;";
+            $result = $db->query($sql);
+            $row = $db->fetch_array($result);
+            $closed_time = $row[closed_date];
+
+            if($closed_time == '' || $closed_time == '0')
+                $curr_time = time();
+            else
+                $curr_time = $closed_time;
+
+            $sql = "SELECT response_time from $mysql_tpriorities_table where priority='$prio'";
+            $result = $db->query($sql);
+            $row = $db->fetch_array($result);
+            $time_allowed = $row['response_time'];
+
+            $time_since_update = $curr_time - $last;		//time since last update in seconds
+
+            if($time_since_update >= $time_allowed)
+                $response = 4;
+            if($time_since_update < ($time_allowed))
+                $response = 3;
+            if($time_since_update <= ($time_allowed * 0.667))
+                $response = 2;
+            if( $time_since_update <= ($time_allowed * 0.333))
+                $response = 1;
+
+
+            return $response;
+        }
+
+        /***********************************************************************************************************
+        **      function createViewableByMenu():
+        **              Takes no arguments.  Creates the drop down menu for the list of knowledge base categories.
+        ************************************************************************************************************/
 function createViewableByMenu($flag=0)
 {
         global $info, $lang_allusers, $lang_onlysupporters;

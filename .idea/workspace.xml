@@ -17,7 +17,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/common.php" afterPath="$PROJECT_DIR$/common/common.php" />
     </list>
     <ignored mask="workspace.xml" />
     <ignored mask="error_log" />
@@ -227,8 +226,8 @@
       <file leaf-file-name="common.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/common.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="2428" column="1" lean-forward="true" selection-start-line="2428" selection-start-column="1" selection-end-line="2428" selection-end-column="1" />
+            <state relative-caret-position="458">
+              <caret line="2444" column="4" lean-forward="false" selection-start-line="2444" selection-start-column="4" selection-end-line="2444" selection-end-column="4" />
               <folding>
                 <marker date="1508052497513" expanded="true" signature="7833:7975" ph="INSERT into ${$mysql_attachments_table}... " />
                 <marker date="1508052497513" expanded="true" signature="8717:8776" ph="update ${$my... " />
@@ -875,14 +874,7 @@
       <workItem from="1507935960927" duration="9352000" />
       <workItem from="1507953534385" duration="21473000" />
       <workItem from="1508040116309" duration="3327000" />
-      <workItem from="1508044084489" duration="5282000" />
-    </task>
-    <task id="LOCAL-00641" summary="showFormattedTime  $IncludeDays=0">
-      <created>1507149933444</created>
-      <option name="number" value="00641" />
-      <option name="presentableId" value="LOCAL-00641" />
-      <option name="project" value="LOCAL" />
-      <updated>1507149933444</updated>
+      <workItem from="1508044084489" duration="6680000" />
     </task>
     <task id="LOCAL-00642" summary="showFormattedTime  $IncludeDays=0">
       <created>1507150012723</created>
@@ -1220,11 +1212,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508050030018</updated>
     </task>
-    <option name="localTasksCounter" value="690" />
+    <task id="LOCAL-00690" summary="showformattedtime, some common upgrades to displayticket">
+      <created>1508052542257</created>
+      <option name="number" value="00690" />
+      <option name="presentableId" value="LOCAL-00690" />
+      <option name="project" value="LOCAL" />
+      <updated>1508052542257</updated>
+    </task>
+    <option name="localTasksCounter" value="691" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="598575000" />
+    <option name="totallyTimeSpent" value="599973000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1335,7 +1334,6 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
-    <MESSAGE value="removed dylay &lt;div&gt; section" />
     <MESSAGE value="endtable()  remove &lt;BR&gt;" />
     <MESSAGE value="replace style.php" />
     <MESSAGE value="Removed scripts.php" />
@@ -1360,7 +1358,8 @@
     <MESSAGE value="master from eval-casaria-esupport  phpstorm" />
     <MESSAGE value="fixes" />
     <MESSAGE value="Added additional collumns for myopen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added additional collumns for myopen" />
+    <MESSAGE value="showformattedtime, some common upgrades to displayticket" />
+    <option name="LAST_COMMIT_MESSAGE" value="showformattedtime, some common upgrades to displayticket" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1425,11 +1424,16 @@
           <line>167</line>
           <option name="timeStamp" value="189" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/common/common.php</url>
+          <line>2435</line>
+          <option name="timeStamp" value="191" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="191" />
+      <option name="time" value="192" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2292,8 +2296,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/common.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="2428" column="1" lean-forward="true" selection-start-line="2428" selection-start-column="1" selection-end-line="2428" selection-end-column="1" />
+        <state relative-caret-position="458">
+          <caret line="2444" column="4" lean-forward="false" selection-start-line="2444" selection-start-column="4" selection-end-line="2444" selection-end-column="4" />
           <folding>
             <marker date="1508052497513" expanded="true" signature="7833:7975" ph="INSERT into ${$mysql_attachments_table}... " />
             <marker date="1508052497513" expanded="true" signature="8717:8776" ph="update ${$my... " />

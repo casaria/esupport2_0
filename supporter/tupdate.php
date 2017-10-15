@@ -468,17 +468,11 @@ function createSupporterInfo()
 
 startTable("$lang_supporterinfo", "left", 100, 4);	
 
-		echo '				<tr>
-							<td width="180Ppx" class=back2 align=right>'.$lang_supportergroup.'</td>
-							<td class=back align="left">';
-							?>
-							<select name=group onChange="MM_jumpMenu('parent', this, 0)">
-							<?php
-									createGroupMenu(1);
+
 		echo '
 							</select>
 							</td>
-							<td class=back2 align=right>'.$lang_supporter.' </td>
+							<td class=back2 align=right width="180Ppx">'.$lang_supporter.' </td>
 							<td class=back align="left">
                                 
 			
@@ -506,11 +500,19 @@ startTable("$lang_supporterinfo", "left", 100, 4);
 							
 							<select name=status>';
 							createStatusMenu(0);
-							
-		echo '
+    echo '					</select>
+
+                              </tr><tr>
+                              
+							<td class=back2 align=right>\'.$lang_supportergroup.\'</td>
+							<td class=back align="left">\';
+							?>
+							<select name=group onChange="MM_jumpMenu(\'parent\', this, 0)">
+							<?php
+									createGroupMenu(1);
 							</select>
-							</td>';
-			
+							</td></tr>';
+
 
 endTable();
 

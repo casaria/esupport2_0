@@ -166,7 +166,7 @@ function createSupporterInfo()
 	startTable("$lang_supporterinfo", "left", 100, 2);
 		echo '<tr>
 				<td width="100px" class=back2 align=left>* '.$lang_group.':</td>
-				<td class=back width=20%>';
+				<td class=back >';
 				?>
 			    	<select name=usergroup_name onChange="MM_jumpMenu('parent', this, 0)">
 				<?php					
@@ -176,7 +176,7 @@ function createSupporterInfo()
 		
 				<tr>
 				<td width="100px" class=back2 align=left>'.$lang_supportergroup.':</td>
-				<td class=back width=20%>';
+				<td class=back >';
 				?>
 				<select name=group onChange="MM_jumpMenu('parent', this, 0)">
 				<?php
@@ -187,7 +187,7 @@ function createSupporterInfo()
 				</td>
 				</tr><tr>
 				<td class=back2 align=left width="100px">'.$lang_supporter.': </td>
-				<td class=back align=left width=20%>
+				<td class=back align=left>
 				<select name=supporter_id>';
 				createSupporterMenu($sg);
 				echo '</select>

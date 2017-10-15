@@ -576,7 +576,7 @@ echo '
 
     echo '
       <td class="back2" width="180px> </td>
-      <td class="back"> </td>
+      <td class="back" colspan="2"> </td>
     </tr>
     <tr>
      <td class="back2" width="180px">'.$lang_emailcc.': </td>

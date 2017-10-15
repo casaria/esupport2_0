@@ -38,7 +38,7 @@ require_once "../common/common.php";
 //require_once "../common/login.php";
 RewindSession();
 //$cookie_name = $_SESSION['cookie_name'];
-$language = getLanguage($cookie_name);
+$langxuage = getLanguage($cookie_name);
 if($language == '')
 	require_once "../lang/$default_language.lang.php";
 else
@@ -88,10 +88,10 @@ echo "</form>";
 
 <?php  $ticket = getTicketInfo($id);
 	echo $lang_ulog." Ticket ID #".$id."<br>"; 
-	echo "$lang_equipment: $ticket['equipment']";
+	echo "$lang_equipment: $ticket[equipment]";
 	echo " - ".$ticket["short"]."<br>";
-	echo "$lang_category: $ticket['category'] / $lang_platform: $ticket['platform']";
-	echo "<br>$lang_ticketcreatedby: $ticket['user'] / $lang_supporter: $ticket['supporter'] $platform $short";
+	echo "$lang_category: $ticket[category] / $lang_platform: $ticket[Platform]";
+	echo "<br>$lang_ticketcreatedby: $ticket[user] / $lang_supporter: $ticket[supporter] $platform $short";
 ?>
 </td>
 </TR>

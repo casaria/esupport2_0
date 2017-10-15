@@ -204,7 +204,7 @@ function createSupporterInfo()
 		echo '</select>
                  </tr><tr>
 				</td>
-				<td class=back2 align=left width="100px">'.$lang_ticket.' '.$lang_status.':</td>
+				<td class=back2 align=left width="120px">'.$lang_ticket.' '.$lang_status.':</td>
 				<td class=back>
 				<select name=status>';
 				

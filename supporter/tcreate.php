@@ -202,6 +202,7 @@ function createSupporterInfo()
 				createPriorityMenu();  
 							
 		echo '</select>
+                 </tr><tr>
 				</td>
 				<td class=back2 align=right width=100>'.$lang_ticket.' '.$lang_status.':</td>
 				<td class=back>

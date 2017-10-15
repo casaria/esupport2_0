@@ -551,7 +551,7 @@ startTable("$lang_notification ", "left", 100, 5);
 echo '
     <tr>
      <td class="back2" width="180px">'.$lang_emailgroup.': </td>
-     <td class="back" colspan="1">'.
+     <td class="back" colspan="4">'.
     "<input class=box type=checkbox";
 				if($info[emailgroup] == "On"){
 					echo " checked";

@@ -421,10 +421,8 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 		echo '<a href="updatelog.php?cookie_name='.$cookie_name.'&id='.$info['id'].'" target="myWindow" onClick="window.open(\'\', \'myWindow\',
 					\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">
 					<img border=0 src="../'.$theme['image_dir'].'orangeglow0_show_summary.png"></a> ';
-        echo "<div align=right><a href=\"$supporter_site_url/print.php?id=$id\">$lang_printable</a>";
 
-
-        echo '<input type="file" accept="image/*"> <img border=0 src="../'.$theme['image_dir'].'orangeglow0_show_summary.png"></DIV> ';
+        echo '<input type="file" accept="image/*"> <img border=0 src="../'.$theme['image_dir'].'orangeglow0_show_summary.png"> ';
         echo "<div align=right><a href=\"$supporter_site_url/print.php?id=$id\">$lang_printable</a></div>";
 
 

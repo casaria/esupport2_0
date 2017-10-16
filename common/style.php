@@ -79,12 +79,36 @@ $tablePadding = 10;
 
         @import url(https://fonts.googleapis.com/css?family=Lato);
         table {-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 1px; font-weight:500;}
-        #selecwidth{
-            width:375px;
-        }
+        #selecwidth {
+            background-color: #afe7f7;
+            border: 1px solid;
 
-        #selecwidth option{
+            outline: 0;
+            overflow: hidden;
+            padding: 5px 3px 5px 10px;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+
+
+
+            /* background: transparent;
+             padding: 5px 10px 5px 5px;
+             font-size: 16px;
+             border: 1px solid #f4a62b;
+             height: 34px;
+             -webkit-appearance: none;
+             -moz-appearance: none;
+             appearance: none;
+             background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat */
+        }
+        #selecwidth2{
             width:375px;
+            background-color: #d0d6e8;
+        }
+        #selecwidth, selectwidth2 option{
+            width:375px; font-weight:700;
+            color: darkslateblue;
+            fongt-size: 18;
         }
         BODY {background: <?php echo $theme['bgcolor'];?> ; color: black; font-weight:700;}
 

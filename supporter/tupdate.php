@@ -211,7 +211,7 @@ if(isset($update)) {
 
 		$sql = "update $mysql_tickets_table set groupid='$sg', supporter='" . $name['user_name'] . "', supporter_id='$supporter_id',
 				priority='$prio', status='$status', user='$username', email='$user_email', office='$office', phone='$phone',
-				equipment='$equipment', category='$category',platform='$platform', short='$short', description='$description',
+				minutes_labor='$minutes_labor', equipment='$equipment', category='$category',platform='$platform', short='$short', description='$description',
                  }
                  id=$id";
 	} else {
@@ -220,7 +220,7 @@ if(isset($update)) {
 		$sql = "update $mysql_tickets_table set groupid='$sg', supporter='" . $name['user_name'] . "', supporter_id='$supporter_id',
 				priority='$prio', status='$status', user='$username', email='$user_email', office='$office', phone='$phone',
 				emailgroup='$emailgroupbox', emailstatuschange='$emailstatuschangebox', emailcc='$emailcc', category='$category',
-				platform='$platform', short='$short', description='$description' where id=$id";
+				platform='$platform', short='$short', description='$description', minutes_labor='$minutes_labor', where id=$id";
 	}
 
 	$db->query($sql);
@@ -448,7 +448,7 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 		echo "<input type=hidden name=old_emailcc value='".$info['emailcc']."'>";
         echo "<input type=hidden name=old_status value='".$info['status']."'>";
 		echo "<input type=hidden name=old_status value='".$info['status']."'>";
-        echo "<input type=hidden name=minutes_labor='".$info['status']."'>";
+        echo "<input type=hidden name=minutes_labor='".$info['minutes_labor']."'>";
         echo "<input type=submit name=update value=\"$lang_updateticket\">";
 		echo "</form>";
 

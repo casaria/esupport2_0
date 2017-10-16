@@ -81,13 +81,16 @@ $tablePadding = 10;
         table {-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 1px; font-weight:500;}
         #selecwidth{
             width:375px;
+            background-color: lightskyblue;
+        }
+        #selecwidth2{
+            width:375px;
             background-color: #f4a62b;
         }
-
-        #selecwidth option{
+        #selecwidth, selectwidth2 option{
             width:375px; font-weight:700;
             color: darkslateblue;
-            fongt-size: 16;
+            fongt-size: 18;
         }
         BODY {background: <?php echo $theme['bgcolor'];?> ; color: black; font-weight:700;}
 

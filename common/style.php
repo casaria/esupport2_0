@@ -85,7 +85,7 @@ $tablePadding = 10;
             width:375px;
             outline: 0;
             overflow: hidden;
-            padding: 5px 3px 5px 5px;
+            padding: 2px 2px 2px 2px;
             -moz-border-radius: 3px;
             -webkit-border-radius: 3px;
 

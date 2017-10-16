@@ -1698,7 +1698,7 @@ function displayTicket($result)
                 break;
         }
         // Calculates total time spent on the ticket in minutes
-        $sql3 = "SELECT sum(minutes) FROM tickets,time_track WHERE (tickets.id=time_track.ticket_id AND tickets.id=" . $row[id] . ")";
+        /*$sql3 = "SELECT sum(minutes) FROM tickets,time_track WHERE (tickets.id=time_track.ticket_id AND tickets.id=" . $row[id] . ")";
         echo '<td class=back2 align=right>';
         $result3 = $db->query($sql3);
         $row3 = $db->fetch_array($result3);
@@ -1707,10 +1707,13 @@ function displayTicket($result)
             $minutes = $row3[0];
         } else {
             $minutes = "0";
-        }
+        } */
+
+        $minutes = $row[minutes_labor_estimated];
+        /*
         $sql4= "UPDATE $mysql_tickets_table SET `minutes_labor_estimated`=$minutes where `id`=$row[id]";
         $db->query($sql4);
-
+        */
             showFormattedTime($minutes * 60, 0  , 1);
 
         echo '</td>';

@@ -212,14 +212,15 @@ if(isset($update)) {
 		$sql = "update $mysql_tickets_table set groupid='$sg', supporter='" . $name['user_name'] . "', supporter_id='$supporter_id',
 				priority='$prio', status='$status', user='$username', email='$user_email', office='$office', phone='$phone',
 				equipment='$equipment', category='$category',platform='$platform', short='$short', description='$description',
-				update_log='$log2' where id=$id";
+                 }
+                 id=$id";castag_id
 	} else {
 		$short = addslashes(stripScripts($short));
 		$description = addslashes(stripScripts($description));
-
 		$sql = "update $mysql_tickets_table set groupid='$sg', supporter='" . $name['user_name'] . "', supporter_id='$supporter_id',
 				priority='$prio', status='$status', user='$username', email='$user_email', office='$office', phone='$phone',
-				emailgroup='$emailgroupbox', emailstatuschange='$emailstatuschangebox', emailcc='$emailcc', category='$category',platform='$platform', short='$short', description='$description' where id=$id";
+				emailgroup='$emailgroupbox', emailstatuschange='$emailstatuschangebox', emailcc='$emailcc', category='$category',
+				platform='$platform', short='$short', description='$description' where id=$id";
 	}
 
 	$db->query($sql);
@@ -445,10 +446,10 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 		echo "<input type=hidden name=old_emailgroup value='".$info['emailgroup']."'>";
 		echo "<input type=hidden name=old_emailstatuschange value='".$info['emailstatuschange']."'>";
 		echo "<input type=hidden name=old_emailcc value='".$info['emailcc']."'>";
-		
+        echo "<input type=hidden name=old_status value='".$info['status']."'>";
 		echo "<input type=hidden name=old_status value='".$info['status']."'>";
 		echo "<input type=submit name=update value=\"$lang_updateticket\">";
-		echo "</form>";	
+		echo "</form>";
 
 		if($enable_kbase == 'On'){
 			echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>&nbsp;&nbsp;";

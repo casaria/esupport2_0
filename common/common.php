@@ -1839,7 +1839,6 @@ function displayTicket($result)
 
 /*    echo "<form method=post>";
     startTable("$lang_timetracking", "center");
-    echo "<tr><td class=back><br>";
     startTable("$lang_selecttickets", "center", "80%");
     echo "<tr><td class=cat>$lang_selectticketsexp</td></tr>";
     echo "<tr><td class=back2><br>$lang_ticket $lang_ids: <input type=text name=tids size=60% value=$csv_string><br><br></td></tr>";

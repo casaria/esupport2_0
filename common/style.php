@@ -80,9 +80,8 @@ $tablePadding = 10;
         @import url(https://fonts.googleapis.com/css?family=Lato);
         table {-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 1px; font-weight:500;}
         #selecwidth{
-            width:375px;
             background-color: lightskyblue;
-            margin: 50px;
+            margin: 2px;
             border: 1px solid #111;
             background: transparent;
             width: 150px;

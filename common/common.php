@@ -1708,7 +1708,7 @@ function displayTicket($result)
         } else {
             $minutes = "0";
         }
-        $sql4= "UPDATE $mysql_tickets_table SET `minutes_labor_estimate`=$minutes where `id`=$row[\"id\"]";
+        $sql4= "UPDATE $mysql_tickets_table SET `minutes_labor_estimate`=$minutes where `id`=$row[id]";
         $db->query($sql4);
 
             showFormattedTime($minutes * 60, 1, 1);

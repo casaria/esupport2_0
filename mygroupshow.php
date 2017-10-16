@@ -42,7 +42,7 @@ if ($opentickets)
 else 
   startTable("$lang_yourgroupsclose", "center");
 
-	echo '<tr><td class=back> ';
+	echo '<tr><td class="subcat" > ';
 	$num_groups = getNumberGroups();
 	$groups = getUsersGroupList($user_id);
 	echo "$lang_usergroups: ";
@@ -390,6 +390,7 @@ function listByPriority($id, $query, $order)
 function listByStatus($id, $query, $order)
 {
 	global $mysql_tstatus_table, $mysql_tickets_table, $db;
+	$flag = 0;
 
 	$sql = "select status from $mysql_tstatus_table order by rank $order";
 	$result = $db->query($sql);

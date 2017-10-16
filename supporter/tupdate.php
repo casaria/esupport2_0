@@ -218,7 +218,7 @@ if(isset($update)) {
 				priority='$prio', status='$status', user='$username', email='$user_email', office='$office', phone='$phone',
 				equipment='$equipment', category='$category',platform='$platform', short='$short', description='$description',
                  }
-                 id=$id";castag_id
+                 id=$id";
 	} else {
 		$short = addslashes(stripScripts($short));
 		$description = addslashes(stripScripts($description));

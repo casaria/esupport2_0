@@ -87,7 +87,7 @@ $tablePadding = 10;
         #selecwidth option{
             width:375px; font-weight:700;
             color: darkslateblue;
-            fongt-size: 14px;
+            fongt-size: 16;
         }
         BODY {background: <?php echo $theme['bgcolor'];?> ; color: black; font-weight:700;}
 

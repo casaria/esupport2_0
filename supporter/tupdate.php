@@ -34,6 +34,11 @@
 require_once "../common/config.php";
 require_once "../common/$database.class.php";
 require_once "../common/common.php";
+
+require_once "../common/style.php";
+
+
+
 $language = getLanguage($cookie_name);
 if($language == '')
 	require_once "../lang/$default_language.lang.php";
@@ -488,7 +493,7 @@ startTable("$lang_supporterinfo", "left", 100, 4);
 							<td class=back2 align=right>'.$lang_ticket.' '.$lang_priority.':</td>
 							<td class=back align="left">
 							
-							<select id="selecwidth" name=prio>';
+							<select id="selecwidth2" name=prio>';
 							createPriorityMenu(0);
 							
 		echo '
@@ -501,6 +506,7 @@ startTable("$lang_supporterinfo", "left", 100, 4);
 							
 							<select id="selecwidth" name=status>';
 							createStatusMenu(0);
+
     echo '					</select></td>
 
                               </tr><tr>
@@ -508,7 +514,7 @@ startTable("$lang_supporterinfo", "left", 100, 4);
 							<td class=back2 align=right>'.$lang_supportergroup.'</td>
 							<td class=back align="left">';
 							?>
-							<select id="selecwidth" name=group onChange="MM_jumpMenu('parent', this, 0)">
+							<select id="selecwidth2" name=group onChange="MM_jumpMenu('parent', this, 0)">
 							<?php
 									createGroupMenu(1);
     echo '                    </select>

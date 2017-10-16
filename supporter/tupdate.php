@@ -220,7 +220,7 @@ if(isset($update)) {
 		$sql = "update $mysql_tickets_table set groupid='$sg', supporter='" . $name['user_name'] . "', supporter_id='$supporter_id',
 				priority='$prio', status='$status', user='$username', email='$user_email', office='$office', phone='$phone',
 				emailgroup='$emailgroupbox', emailstatuschange='$emailstatuschangebox', emailcc='$emailcc', category='$category',
-				platform='$platform', short='$short', description='$description', minutes_labor='$minutes_labor', where id=$id";
+				platform='$platform', short='$short', description='$description', minutes_labor='$minutes_labor' where id=$id";
 	}
 
 	$db->query($sql);

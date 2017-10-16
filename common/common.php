@@ -1605,7 +1605,7 @@ function createTimeOffsetMenu($selected)
 function displayTicket($result)
 {
 	global $cookie_name, $mysql_ugroups_table, $lang_summary, $lang_recordcount, $supporter_site_url,
-           $highest_pri, $theme, $db, $admin_site_url, $mysql_BillingStatus_table;
+           $highest_pri, $theme, $db, $admin_site_url, $mysql_BillingStatus_table, $mysql_tickets_table;
     $second = getSecondPriority();
     $sql3 = "select * from $mysql_ugroups_table ";
     $sqlBS = "select * from $mysql_BillingStatus_table";
@@ -1697,6 +1697,24 @@ function displayTicket($result)
                 echo "<td class=back align=center><img height=20 src=\"../$theme[image_dir]hourglass1.gif\"></td>";
                 break;
         }
+        // Calculates total time spent on the ticket in minutes
+        $sql3 = "SELECT sum(minutes) FROM tickets,time_track WHERE (tickets.id=time_track.ticket_id AND tickets.id=" . $row[id] . ")";
+        echo '<td class=back2 align=right>';
+        $result3 = $db->query($sql3);
+        $row3 = $db->fetch_array($result3);
+
+        if ($row3[0]) {
+            $minutes = $row3[0];
+        } else {
+            $minutes = "0";
+        }
+        $sql4= "UPDATE $mysql_tickets_table SET `minutes_labor_estimate`=$minutes where `id`=$row[\"id\"]";
+        $db->query($sql4);
+
+            showFormattedTime($minutes * 60, 1, 1);
+
+        echo '</td>';
+
 
         echo "</tr>";
         $recordcount++;
@@ -3062,7 +3080,7 @@ function displayUserTicket($result)
             $minutes = "0";
         }
 
-        showFormattedTime($minutes * 60, 0);
+        showFormattedTime($minutes * 60, 1, 1);
         echo '</td>';
 
 

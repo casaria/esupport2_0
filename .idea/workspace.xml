@@ -17,7 +17,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/style.php" afterPath="$PROJECT_DIR$/common/style.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/common.php" afterPath="$PROJECT_DIR$/common/common.php" />
     </list>
     <ignored mask="workspace.xml" />
     <ignored mask="error_log" />
@@ -75,432 +75,204 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="common.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="common.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/common.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20468">
-              <caret line="1234" column="18" lean-forward="false" selection-start-line="1234" selection-start-column="18" selection-end-line="1234" selection-end-column="18" />
+            <state relative-caret-position="572">
+              <caret line="1710" column="44" lean-forward="false" selection-start-line="1710" selection-start-column="44" selection-end-line="1710" selection-end-column="44" />
               <folding>
-                <marker date="1508139365707" expanded="true" signature="7834:7976" ph="INSERT into ${$mysql_attachments_table}... " />
-                <marker date="1508139365707" expanded="true" signature="8718:8777" ph="update ${$my... " />
-                <marker date="1508139365707" expanded="true" signature="9273:9287" ph="select * fro... ${$mysql_crmsettings_table}" />
-                <marker date="1508139365707" expanded="true" signature="9820:9834" ph="select * fro... ${$mysql_settings_table}" />
-                <marker date="1508139365707" expanded="true" signature="10389:10403" ph="select * fro... ${$table}" />
-                <marker date="1508139365707" expanded="true" signature="11464:11528" ph="select user_... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="13931:14003" ph="select * fro... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="14875:14904" ph="select count... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="15454:15515" ph="select count... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="16055:16120" ph="select count... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="16712:16754" ph="select * fro... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="17571:17654" ph="select * fro... ${$group_table}" />
-                <marker date="1508139365707" expanded="true" signature="18706:18762" ph="select * fro... ${$mysql_announcement_table}" />
-                <marker date="1508139365707" expanded="true" signature="18785:18848" ph="select * fro... ${$mysql_announcement_table}" />
-                <marker date="1508139365707" expanded="true" signature="19215:19221" ph=" " />
-                <marker date="1508139365707" expanded="true" signature="19221:19227" ph=" " />
-                <marker date="1508139365707" expanded="true" signature="19227:19233" ph=" " />
-                <marker date="1508139365707" expanded="true" signature="19233:19239" ph=" " />
-                <marker date="1508139365707" expanded="true" signature="19766:19772" ph=" " />
-                <marker date="1508139365707" expanded="true" signature="19772:19778" ph=" " />
-                <marker date="1508139365707" expanded="true" signature="19778:19784" ph=" " />
-                <marker date="1508139365707" expanded="true" signature="19784:19790" ph=" " />
-                <marker date="1508139365707" expanded="true" signature="21051:21165" ph="select * fro... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="21223:21345" ph="select * fro... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="21395:21502" ph="select * fro... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="21619:21737" ph="select * fro... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="21795:21921" ph="select * fro... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="21971:22082" ph="select * fro... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="22234:22336" ph="select * fro... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="22394:22493" ph="select * fro... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="22543:22638" ph="select * fro... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="23351:23584" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="23360:23584" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="23370:23584" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="23434:23584" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="23445:23584" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="25270:25327" ph="select id fr... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="25862:25922" ph="select id fr... ${$mysql_sgroups_table}" />
-                <marker date="1508139365707" expanded="true" signature="26459:26519" ph="select id fr... ${$mysql_ugroups_table}" />
-                <marker date="1508139365707" expanded="true" signature="27058:27111" ph="select group... ${$mysql_sgroups_table}" />
-                <marker date="1508139365707" expanded="true" signature="27645:27698" ph="SELECT group... ${$mysql_sgroups_table}" />
-                <marker date="1508139365707" expanded="true" signature="28336:28396" ph="select prior... ${$mysql_tpriorities_table}" />
-                <marker date="1508139365707" expanded="true" signature="28928:28982" ph="select statu... ${$mysql_tstatus_table}" />
-                <marker date="1508139365707" expanded="true" signature="29524:29588" ph="select suppo... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="30221:30281" ph="select admin... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="30864:30917" ph="select group... ${$mysql_sgroups_table}" />
-                <marker date="1508139365707" expanded="true" signature="31664:31713" ph="select id fr... ${$mysql_sgroups_table}" />
-                <marker date="1508139365707" expanded="true" signature="32623:32672" ph="select id fr... ${$mysql_ugroups_table}" />
-                <marker date="1508139365707" expanded="true" signature="33342:33402" ph="SELECT * fro... ${$group_id}" />
-                <marker date="1508139365707" expanded="true" signature="33979:34032" ph="select group... ${$mysql_ugroups_table}" />
-                <marker date="1508139365707" expanded="true" signature="34583:34638" ph="select messa... ${$mysql_announcement_table}" />
-                <marker date="1508139365707" expanded="true" signature="35195:35387" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="35203:35387" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="35212:35387" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="35274:35387" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="35283:35354" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="35960:36172" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="35968:36172" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="35977:36172" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="36039:36172" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="36048:36121" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="36876:36926" ph="select rank ${$table}" />
-                <marker date="1508139365707" expanded="true" signature="36981:37029" ph="select rank ${$table}" />
-                <marker date="1508139365707" expanded="true" signature="37650:37705" ph="select prior... ${$mysql_tpriorities_table}" />
-                <marker date="1508139365707" expanded="true" signature="38257:38306" ph="select statu... ${$mysql_tstatus_table}" />
-                <marker date="1508139365707" expanded="true" signature="38981:39021" ph="select id fr... ${$table}" />
-                <marker date="1508139365707" expanded="true" signature="39045:39084" ph="select id fr... ${$table}" />
-                <marker date="1508139365707" expanded="true" signature="39784:39839" ph="select id, d... ${$table}" />
-                <marker date="1508139365707" expanded="true" signature="39862:39918" ph="select id, d... ${$table}" />
-                <marker date="1508139365707" expanded="true" signature="40631:40686" ph="select id, d... ${$table}" />
-                <marker date="1508139365707" expanded="true" signature="40709:40765" ph="select id, d... ${$table}" />
-                <marker date="1508139365707" expanded="true" signature="41306:41363" ph="select statu... ${$mysql_tstatus_table}" />
-                <marker date="1508139365707" expanded="true" signature="41921:41984" ph="select prior... ${$mysql_tpriorities_table}" />
-                <marker date="1508139365707" expanded="true" signature="42563:42626" ph="select prior... ${$mysql_tpriorities_table}" />
-                <marker date="1508139365707" expanded="true" signature="43228:43291" ph="select categ... ${$mysql_tcategories_table}" />
-                <marker date="1508139365707" expanded="true" signature="43880:43937" ph="select statu... ${$mysql_tstatus_table}" />
-                <marker date="1508139365707" expanded="true" signature="44511:44639" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="44519:44639" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="44528:44639" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="44591:44639" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="44601:44639" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="45544:45609" ph="select id, g... ${$mysql_ugroups_table}" />
-                <marker date="1508139365707" expanded="true" signature="47531:47596" ph="select id, g... ${$mysql_sgroups_table}" />
-                <marker date="1508139365707" expanded="true" signature="49182:49246" ph="select prior... ${$mysql_tpriorities_table}" />
-                <marker date="1508139365707" expanded="true" signature="49270:49352" ph="select prior... ${$mysql_tpriorities_table}" />
-                <marker date="1508139365707" expanded="true" signature="50321:50399" ph="select id, s... ${$mysql_tBStatus_table}" />
-                <marker date="1508139365707" expanded="true" signature="51262:51335" ph="select statu... ${$mysql_tstatus_table}" />
-                <marker date="1508139365707" expanded="true" signature="52153:52170" ph="select name ${$mysql_themes_table}" />
-                <marker date="1508139365707" expanded="true" signature="55416:65523" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="55671:55685" ph="select * fro... ${$mysql_ugroups_table}" />
-                <marker date="1508139365707" expanded="true" signature="55723:55737" ph="select * fro... ${$mysql_BillingStatus_table}" />
-                <marker date="1508139365707" expanded="true" signature="55969:56043" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="59330:59457" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="59339:59454" ph="SELECT sum(m... tickets" />
-                <marker date="1508139365707" expanded="true" signature="64783:65286" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="65527:65904" ph="&#9;function createTicketInfo(): ..." />
-                <marker date="1508139365707" expanded="true" signature="65970:68976" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="66296:66843" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="66296:66950" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="66305:66843" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="66315:66843" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="66380:66520" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="66380:66843" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="66391:66507" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="66520:66521" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="66520:66843" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="66653:66780" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="67053:67072" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="67053:67193" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="67301:67525" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="67401:67506" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="67536:67743" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="67764:68539" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="67818:68013" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="67835:68008" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="68028:68535" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="68029:68531" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="68029:68535" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="68143:68527" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="68446:68517" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="68596:68908" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="68609:68694" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="68746:68891" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="68985:123485" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="68989:69288" ph="&#9;function createUGroupsMenu(): ..." />
-                <marker date="1508139365707" expanded="true" signature="69324:69884" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="69382:69447" ph="select id, g... ${$mysql_ugroups_table}" />
-                <marker date="1508139365707" expanded="true" signature="69586:69868" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="69626:69864" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="69889:70292" ph="&#9;function createEquipmentMenu(): ..." />
-                <marker date="1508139365707" expanded="true" signature="70329:71631" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="70477:70623" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="70701:70837" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="70947:71083" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="71182:71323" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="71411:71551" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="71638:72038" ph="&#9;function createEquipmentMenu(): ..." />
-                <marker date="1508139365707" expanded="true" signature="72097:72649" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="72163:72210" ph="select short... ${$mysql_tequipment_table}" />
-                <marker date="1508139365707" expanded="true" signature="72521:72645" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="72654:72981" ph="&#9;function createCategoryMenu(): ..." />
-                <marker date="1508139365707" expanded="true" signature="73018:73387" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="73077:73140" ph="select categ... ${$mysql_tcategories_table}" />
-                <marker date="1508139365707" expanded="true" signature="73260:73383" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="73392:73735" ph="&#9;function createKCategoryMenu(): ..." />
-                <marker date="1508139365707" expanded="true" signature="73786:74361" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="73845:73912" ph="select categ... ${$mysql_kcategories_table}" />
-                <marker date="1508139365707" expanded="true" signature="74014:74185" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="74055:74182" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="74193:74356" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="74234:74353" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="74367:74693" ph="&#9;function createPlatformMenu(): ..." />
-                <marker date="1508139365707" expanded="true" signature="74743:75337" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="74800:74861" ph="select platf... ${$mysql_platforms_table}" />
-                <marker date="1508139365707" expanded="true" signature="74963:75136" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="75004:75133" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="75144:75333" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="75209:75330" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="75375:75669" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="75522:75582" ph="UPDATE ${$my... " />
-                <marker date="1508139365707" expanded="true" signature="75675:76099" ph="&#9;function updateLog($ticket_id, $msg): ..." />
-                <marker date="1508139365707" expanded="true" signature="76138:77100" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="76730:76764" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="76783:77081" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="77105:77450" ph="&#9;function getCurrentLog(): ..." />
-                <marker date="1508139365707" expanded="true" signature="77480:77732" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="77528:77581" ph="select updat... ${$mysql_tickets_table}" />
-                <marker date="1508139365707" expanded="true" signature="77737:78204" ph="&#9;function deleteFromGroups(): ..." />
-                <marker date="1508139365707" expanded="true" signature="78237:79143" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="78364:78412" ph="select id fr... ${$mysql_sgroups_table}" />
-                <marker date="1508139365707" expanded="true" signature="78492:78533" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="78545:78567" ph="select id fr... ugroups" />
-                <marker date="1508139365707" expanded="true" signature="78647:78688" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="78901:78997" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="78912:78970" ph="delete from " />
-                <marker date="1508139365707" expanded="true" signature="79043:79139" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="79054:79112" ph="delete from " />
-                <marker date="1508139365707" expanded="true" signature="79149:79634" ph="&#9;function getTotalNumOpenTickets(): ..." />
-                <marker date="1508139365707" expanded="true" signature="79673:80049" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="79773:79854" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="79784:79850" ph="select count... ${$mysql_tickets_table}" />
-                <marker date="1508139365707" expanded="true" signature="79862:79964" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="79873:79957" ph="select count... ${$mysql_tickets_table}" />
-                <marker date="1508139365707" expanded="true" signature="80054:80545" ph="&#9;function getTotalNumClosedTickets(): ..." />
-                <marker date="1508139365707" expanded="true" signature="80586:80960" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="80686:80766" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="80697:80762" ph="select count... ${$mysql_tickets_table}" />
-                <marker date="1508139365707" expanded="true" signature="80774:80875" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="80785:80868" ph="select count... ${$mysql_tickets_table}" />
-                <marker date="1508139365707" expanded="true" signature="80966:81433" ph="&#9;function getTotalNumTickets(): ..." />
-                <marker date="1508139365707" expanded="true" signature="81468:81789" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="81559:81616" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="81570:81592" ph="select count... ${$mysql_tickets_table}" />
-                <marker date="1508139365707" expanded="true" signature="81624:81704" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="81635:81697" ph="select count... ${$mysql_tickets_table}" />
-                <marker date="1508139365707" expanded="true" signature="81794:82168" ph="&#9;function getTotalNumOpenTickets(): ..." />
-                <marker date="1508139365707" expanded="true" signature="82200:82390" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="82396:82743" ph="&#9;function startTable(): ..." />
-                <marker date="1508139365707" expanded="true" signature="82818:83173" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="83180:83499" ph="&#9;function endTable(): ..." />
-                <marker date="1508139365707" expanded="true" signature="83521:83578" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="83583:84384" ph="&#9;function sendmail(): ..." />
-                <marker date="1508139365707" expanded="true" signature="84449:84909" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="84664:84705" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="84713:84752" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="84974:85495" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="85250:85291" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="85299:85338" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="85500:85823" ph="&#9;function getEmailAddress(): ..." />
-                <marker date="1508139365707" expanded="true" signature="85857:86048" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="85903:85963" ph="select email... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="86273:88124" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="86428:86465" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="86473:86985" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="86501:86616" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="86624:86668" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="87015:87362" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="87043:87131" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="87237:87355" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="87271:87344" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="87386:87545" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="87570:87699" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="87724:87878" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="87904:88121" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="87933:88115" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="88158:89345" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="88280:88334" ph="select * fro... ${$mysql_platforms_table}" />
-                <marker date="1508139365707" expanded="true" signature="88457:89302" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="88536:89288" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="88943:88949" ph=" " />
-                <marker date="1508139365707" expanded="true" signature="88949:88955" ph=" " />
-                <marker date="1508139365707" expanded="true" signature="89088:89094" ph=" " />
-                <marker date="1508139365707" expanded="true" signature="89094:89100" ph=" " />
-                <marker date="1508139365707" expanded="true" signature="89382:89642" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="89462:89490" ph="select count... ${$mysql_platforms_table}" />
-                <marker date="1508139365707" expanded="true" signature="89679:90667" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="89776:89836" ph="select * fro... ${$mysql_kcategories_table}" />
-                <marker date="1508139365707" expanded="true" signature="89959:90624" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="90040:90610" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="90705:90969" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="90787:90815" ph="select count... ${$mysql_kcategories_table}" />
-                <marker date="1508139365707" expanded="true" signature="91002:91469" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="91508:91878" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="91928:93121" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="92029:92108" ph="SELECT close... ${$mysql_time_table}" />
-                <marker date="1508139365707" expanded="true" signature="92421:92494" ph="SELECT respo... ${$mysql_tpriorities_table}" />
-                <marker date="1508139365707" expanded="true" signature="93134:93519" ph="      function createViewableByMenu(): ..." />
-                <marker date="1508139365707" expanded="true" signature="93560:94270" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="93835:93909" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="94127:94201" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="94309:94756" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="94368:94435" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="94697:94732" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="94785:94996" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="94831:94894" ph="SELECT langu... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="95031:96169" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="95105:95190" ph="SELECT id, g... ${$mysql_sgroups_table}" />
-                <marker date="1508139365707" expanded="true" signature="95286:95993" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="95322:95471" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="95334:95391" ph="select user_... sgroup" />
-                <marker date="1508139365707" expanded="true" signature="95489:95733" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="95525:95564" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="95528:95564" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="95590:95617" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="95742:95982" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="95778:95817" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="95781:95817" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="95843:95870" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="96100:96149" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="96126:96132" ph=" " />
-                <marker date="1508139365707" expanded="true" signature="96204:97302" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="96257:96328" ph="SELECT id, g... ${$mysql_ugroups_table}" />
-                <marker date="1508139365707" expanded="true" signature="96424:97126" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="96460:96609" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="96472:96529" ph="select user_... ugroup" />
-                <marker date="1508139365707" expanded="true" signature="96627:96871" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="96663:96702" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="96666:96702" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="96728:96755" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="96880:97115" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="96916:96955" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="96919:96955" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="96981:97008" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="97233:97282" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="97259:97265" ph=" " />
-                <marker date="1508139365707" expanded="true" signature="97333:97567" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="97379:97445" ph="SELECT time_... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="97602:97863" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="97648:97713" ph="SELECT lasta... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="97893:98035" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="98085:98596" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="98298:98356" ph="SELECT ${$my... ${$mysql_sgroups_table}" />
-                <marker date="1508139365707" expanded="true" signature="98738:101672" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="99060:99104" ph="SELECT * fro... ${$mysql_tickets_table}" />
-                <marker date="1508139365707" expanded="true" signature="99274:99563" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="99295:99378" ph="select pager... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="99461:99556" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="99499:99548" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="99572:100332" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="99724:99748" ph="SELECT pager... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="99795:99919" ph="select pager... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="100024:100325" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="100125:100317" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="100149:100217" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="100232:100308" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="100343:100414" ph="SELECT templ... ${$mysql_templates_table}" />
-                <marker date="1508139365707" expanded="true" signature="100696:100798" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="100828:100922" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="101049:101667" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="101094:101186" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="101482:101600" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="101850:104541" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="102199:102243" ph="SELECT * fro... ${$mysql_tickets_table}" />
-                <marker date="1508139365707" expanded="true" signature="102521:103384" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="102631:102705" ph="SELECT templ... ${$mysql_templates_table}" />
-                <marker date="1508139365707" expanded="true" signature="102970:103104" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="103144:103269" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="103429:104414" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="103652:103726" ph="SELECT templ... ${$mysql_templates_table}" />
-                <marker date="1508139365707" expanded="true" signature="104047:104197" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="104245:104386" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="104439:104537" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="104548:104966" ph="&#9;function displayUserTicket(): ..." />
-                <marker date="1508139365707" expanded="true" signature="105004:107564" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="105203:107403" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="105292:105366" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="105414:105596" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="105604:105680" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="106019:106349" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="106054:106154" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="106182:106259" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="106280:106340" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="106869:106984" ph="SELECT sum(m... tickets" />
-                <marker date="1508139365707" expanded="true" signature="107138:107180" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="107188:107225" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="107718:108368" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="107806:107821" ph="select id fr... ${$mysql_ugroups_table}" />
-                <marker date="1508139365707" expanded="true" signature="108040:108266" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="108064:108263" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="108077:108128" ph="select id fr... ugroup" />
-                <marker date="1508139365707" expanded="true" signature="108203:108258" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="108520:109136" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="108608:108623" ph="select id fr... ${$mysql_ugroups_table}" />
-                <marker date="1508139365707" expanded="true" signature="108842:109057" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="108866:109054" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="108879:108930" ph="select id fr... ugroup" />
-                <marker date="1508139365707" expanded="true" signature="109005:109049" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="109159:109902" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="109946:110020" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="110059:111152" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="110265:110415" ph="select trk.s... tickets" />
-                <marker date="1508139365707" expanded="true" signature="110513:111134" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="110543:111122" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="110713:110755" ph="select * fro... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="111190:111422" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="111236:111340" ph="SELECT email... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="111587:113294" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="111662:112941" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="111684:111992" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="111697:111979" ph="SELECT suppo... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="112016:112325" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="112029:112312" ph="SELECT suppo... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="112351:112637" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="112364:112624" ph="SELECT suppo... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="112678:112938" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="112691:112925" ph="SELECT suppo... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="113024:113275" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="113324:113502" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="113372:113416" ph="select * fro... ${$mysql_tickets_table}" />
-                <marker date="1508139365707" expanded="true" signature="113535:114679" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="113785:114070" ph="select ${$my... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="114172:114602" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="114299:114353" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="114415:114454" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="114539:114596" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="114778:115663" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="115022:115105" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="115059:115099" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="115154:115253" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="115204:115249" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="115301:115439" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="115353:115435" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="115459:115640" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="115719:118867" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="116199:116991" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="116236:116985" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="116534:116953" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="116591:116710" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="116758:116889" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="116906:116945" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="117066:117836" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="117115:117830" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="117479:117586" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="117623:117747" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="117760:117791" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="117918:118814" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="117969:118808" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="118009:118079" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="118087:118152" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="118382:118481" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="118619:118735" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="118742:118774" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="118898:121991" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="119145:119331" ph="select trk.s... tickets" />
-                <marker date="1508139365707" expanded="true" signature="119427:120606" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="119457:120603" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="119473:119518" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="119716:119758" ph="select * fro... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="120064:120099" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="120293:120328" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="120676:120809" ph="select sum(m... tickets" />
-                <marker date="1508139365707" expanded="true" signature="120834:120968" ph="select sum(m... tickets" />
-                <marker date="1508139365707" expanded="true" signature="122026:122087" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="122094:122497" ph="&#9;function getCloudControlUserSetting(): ..." />
-                <marker date="1508139365707" expanded="true" signature="122542:122740" ph="{...}" />
-                <marker date="1508139365707" expanded="true" signature="122588:122655" ph="select Cloud... ${$mysql_users_table}" />
-                <marker date="1508139365707" expanded="true" signature="122746:122784" ph=" @param $id_from ..." />
-                <marker date="1508139365707" expanded="true" signature="122835:123483" ph="..." />
-                <marker date="1508139365707" expanded="true" signature="122907:122973" ph="select * fro... ${$mysql_tickets_table}" />
-                <marker date="1508139365707" expanded="true" signature="123330:123390" ph="update ${$my... " />
+                <marker date="1508156387668" expanded="true" signature="7834:7976" ph="INSERT into ${$mysql_attachments_table}... " />
+                <marker date="1508156387668" expanded="true" signature="8718:8777" ph="update ${$my... " />
+                <marker date="1508156387668" expanded="true" signature="9273:9287" ph="select * fro... ${$mysql_crmsettings_table}" />
+                <marker date="1508156387668" expanded="true" signature="9820:9834" ph="select * fro... ${$mysql_settings_table}" />
+                <marker date="1508156387668" expanded="true" signature="10389:10403" ph="select * fro... ${$table}" />
+                <marker date="1508156387668" expanded="true" signature="11464:11528" ph="select user_... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="13931:14003" ph="select * fro... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="14875:14904" ph="select count... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="15454:15515" ph="select count... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="16055:16120" ph="select count... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="16712:16754" ph="select * fro... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="17571:17654" ph="select * fro... ${$group_table}" />
+                <marker date="1508156387668" expanded="true" signature="18706:18762" ph="select * fro... ${$mysql_announcement_table}" />
+                <marker date="1508156387668" expanded="true" signature="18785:18848" ph="select * fro... ${$mysql_announcement_table}" />
+                <marker date="1508156387668" expanded="true" signature="19215:19221" ph=" " />
+                <marker date="1508156387668" expanded="true" signature="19221:19227" ph=" " />
+                <marker date="1508156387668" expanded="true" signature="19227:19233" ph=" " />
+                <marker date="1508156387668" expanded="true" signature="19233:19239" ph=" " />
+                <marker date="1508156387668" expanded="true" signature="19766:19772" ph=" " />
+                <marker date="1508156387668" expanded="true" signature="19772:19778" ph=" " />
+                <marker date="1508156387668" expanded="true" signature="19778:19784" ph=" " />
+                <marker date="1508156387668" expanded="true" signature="19784:19790" ph=" " />
+                <marker date="1508156387668" expanded="true" signature="21051:21165" ph="select * fro... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="21223:21345" ph="select * fro... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="21395:21502" ph="select * fro... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="21619:21737" ph="select * fro... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="21795:21921" ph="select * fro... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="21971:22082" ph="select * fro... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="22234:22336" ph="select * fro... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="22394:22493" ph="select * fro... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="22543:22638" ph="select * fro... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="23351:23584" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="23360:23584" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="23370:23584" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="23434:23584" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="23445:23584" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="25270:25327" ph="select id fr... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="25862:25922" ph="select id fr... ${$mysql_sgroups_table}" />
+                <marker date="1508156387668" expanded="true" signature="26459:26519" ph="select id fr... ${$mysql_ugroups_table}" />
+                <marker date="1508156387668" expanded="true" signature="27058:27111" ph="select group... ${$mysql_sgroups_table}" />
+                <marker date="1508156387668" expanded="true" signature="27645:27698" ph="SELECT group... ${$mysql_sgroups_table}" />
+                <marker date="1508156387668" expanded="true" signature="28336:28396" ph="select prior... ${$mysql_tpriorities_table}" />
+                <marker date="1508156387668" expanded="true" signature="28928:28982" ph="select statu... ${$mysql_tstatus_table}" />
+                <marker date="1508156387668" expanded="true" signature="29524:29588" ph="select suppo... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="30221:30281" ph="select admin... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="30864:30917" ph="select group... ${$mysql_sgroups_table}" />
+                <marker date="1508156387668" expanded="true" signature="31664:31713" ph="select id fr... ${$mysql_sgroups_table}" />
+                <marker date="1508156387668" expanded="true" signature="32623:32672" ph="select id fr... ${$mysql_ugroups_table}" />
+                <marker date="1508156387668" expanded="true" signature="33342:33402" ph="SELECT * fro... ${$group_id}" />
+                <marker date="1508156387668" expanded="true" signature="33979:34032" ph="select group... ${$mysql_ugroups_table}" />
+                <marker date="1508156387668" expanded="true" signature="34583:34638" ph="select messa... ${$mysql_announcement_table}" />
+                <marker date="1508156387668" expanded="true" signature="35195:35387" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="35203:35387" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="35212:35387" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="35274:35387" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="35283:35354" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="35960:36172" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="35968:36172" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="35977:36172" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="36039:36172" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="36048:36121" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="36876:36926" ph="select rank ${$table}" />
+                <marker date="1508156387668" expanded="true" signature="36981:37029" ph="select rank ${$table}" />
+                <marker date="1508156387668" expanded="true" signature="37650:37705" ph="select prior... ${$mysql_tpriorities_table}" />
+                <marker date="1508156387668" expanded="true" signature="38257:38306" ph="select statu... ${$mysql_tstatus_table}" />
+                <marker date="1508156387668" expanded="true" signature="38981:39021" ph="select id fr... ${$table}" />
+                <marker date="1508156387668" expanded="true" signature="39045:39084" ph="select id fr... ${$table}" />
+                <marker date="1508156387668" expanded="true" signature="39784:39839" ph="select id, d... ${$table}" />
+                <marker date="1508156387668" expanded="true" signature="39862:39918" ph="select id, d... ${$table}" />
+                <marker date="1508156387668" expanded="true" signature="40631:40686" ph="select id, d... ${$table}" />
+                <marker date="1508156387668" expanded="true" signature="40709:40765" ph="select id, d... ${$table}" />
+                <marker date="1508156387668" expanded="true" signature="41306:41363" ph="select statu... ${$mysql_tstatus_table}" />
+                <marker date="1508156387668" expanded="true" signature="41921:41984" ph="select prior... ${$mysql_tpriorities_table}" />
+                <marker date="1508156387668" expanded="true" signature="42563:42626" ph="select prior... ${$mysql_tpriorities_table}" />
+                <marker date="1508156387668" expanded="true" signature="43228:43291" ph="select categ... ${$mysql_tcategories_table}" />
+                <marker date="1508156387668" expanded="true" signature="43880:43937" ph="select statu... ${$mysql_tstatus_table}" />
+                <marker date="1508156387668" expanded="true" signature="44511:44639" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="44519:44639" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="44528:44639" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="44591:44639" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="44601:44639" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="45544:45609" ph="select id, g... ${$mysql_ugroups_table}" />
+                <marker date="1508156387668" expanded="true" signature="47531:47596" ph="select id, g... ${$mysql_sgroups_table}" />
+                <marker date="1508156387668" expanded="true" signature="49182:49246" ph="select prior... ${$mysql_tpriorities_table}" />
+                <marker date="1508156387668" expanded="true" signature="49270:49352" ph="select prior... ${$mysql_tpriorities_table}" />
+                <marker date="1508156387668" expanded="true" signature="50321:50399" ph="select id, s... ${$mysql_tBStatus_table}" />
+                <marker date="1508156387668" expanded="true" signature="51262:51335" ph="select statu... ${$mysql_tstatus_table}" />
+                <marker date="1508156387668" expanded="true" signature="52153:52170" ph="select name ${$mysql_themes_table}" />
+                <marker date="1508156387668" expanded="true" signature="55671:55685" ph="select * fro... ${$mysql_ugroups_table}" />
+                <marker date="1508156387668" expanded="true" signature="55723:55737" ph="select * fro... ${$mysql_BillingStatus_table}" />
+                <marker date="1508156387668" expanded="true" signature="55969:56043" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="59339:59454" ph="SELECT sum(m... tickets" />
+                <marker date="1508156387668" expanded="true" signature="66296:66843" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="66296:66950" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="66305:66843" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="66315:66843" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="66380:66520" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="66380:66843" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="66391:66507" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="66520:66521" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="66520:66843" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="66653:66780" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="67053:67072" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="67053:67193" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="67301:67525" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="67401:67506" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="67536:67743" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="67835:68008" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="68028:68535" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="68029:68531" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="68029:68535" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="68143:68527" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="68446:68517" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="68609:68694" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="68746:68891" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="69382:69447" ph="select id, g... ${$mysql_ugroups_table}" />
+                <marker date="1508156387668" expanded="true" signature="72163:72210" ph="select short... ${$mysql_tequipment_table}" />
+                <marker date="1508156387668" expanded="true" signature="73077:73140" ph="select categ... ${$mysql_tcategories_table}" />
+                <marker date="1508156387668" expanded="true" signature="73845:73912" ph="select categ... ${$mysql_kcategories_table}" />
+                <marker date="1508156387668" expanded="true" signature="74800:74861" ph="select platf... ${$mysql_platforms_table}" />
+                <marker date="1508156387668" expanded="true" signature="75522:75582" ph="UPDATE ${$my... " />
+                <marker date="1508156387668" expanded="true" signature="77528:77581" ph="select updat... ${$mysql_tickets_table}" />
+                <marker date="1508156387668" expanded="true" signature="78364:78412" ph="select id fr... ${$mysql_sgroups_table}" />
+                <marker date="1508156387668" expanded="true" signature="78545:78567" ph="select id fr... ugroups" />
+                <marker date="1508156387668" expanded="true" signature="78912:78970" ph="delete from " />
+                <marker date="1508156387668" expanded="true" signature="79054:79112" ph="delete from " />
+                <marker date="1508156387668" expanded="true" signature="79784:79850" ph="select count... ${$mysql_tickets_table}" />
+                <marker date="1508156387668" expanded="true" signature="79873:79957" ph="select count... ${$mysql_tickets_table}" />
+                <marker date="1508156387668" expanded="true" signature="80697:80762" ph="select count... ${$mysql_tickets_table}" />
+                <marker date="1508156387668" expanded="true" signature="80785:80868" ph="select count... ${$mysql_tickets_table}" />
+                <marker date="1508156387668" expanded="true" signature="81570:81592" ph="select count... ${$mysql_tickets_table}" />
+                <marker date="1508156387668" expanded="true" signature="81635:81697" ph="select count... ${$mysql_tickets_table}" />
+                <marker date="1508156387668" expanded="true" signature="85903:85963" ph="select email... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="88280:88334" ph="select * fro... ${$mysql_platforms_table}" />
+                <marker date="1508156387668" expanded="true" signature="88943:88949" ph=" " />
+                <marker date="1508156387668" expanded="true" signature="88949:88955" ph=" " />
+                <marker date="1508156387668" expanded="true" signature="89088:89094" ph=" " />
+                <marker date="1508156387668" expanded="true" signature="89094:89100" ph=" " />
+                <marker date="1508156387668" expanded="true" signature="89462:89490" ph="select count... ${$mysql_platforms_table}" />
+                <marker date="1508156387668" expanded="true" signature="89776:89836" ph="select * fro... ${$mysql_kcategories_table}" />
+                <marker date="1508156387668" expanded="true" signature="90787:90815" ph="select count... ${$mysql_kcategories_table}" />
+                <marker date="1508156387668" expanded="true" signature="92029:92108" ph="SELECT close... ${$mysql_time_table}" />
+                <marker date="1508156387668" expanded="true" signature="92421:92494" ph="SELECT respo... ${$mysql_tpriorities_table}" />
+                <marker date="1508156387668" expanded="true" signature="94831:94894" ph="SELECT langu... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="95105:95190" ph="SELECT id, g... ${$mysql_sgroups_table}" />
+                <marker date="1508156387668" expanded="true" signature="95334:95391" ph="select user_... sgroup" />
+                <marker date="1508156387668" expanded="true" signature="95525:95564" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="95528:95564" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="95778:95817" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="95781:95817" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="96126:96132" ph=" " />
+                <marker date="1508156387668" expanded="true" signature="96257:96328" ph="SELECT id, g... ${$mysql_ugroups_table}" />
+                <marker date="1508156387668" expanded="true" signature="96472:96529" ph="select user_... ugroup" />
+                <marker date="1508156387668" expanded="true" signature="96663:96702" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="96666:96702" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="96916:96955" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="96919:96955" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="97259:97265" ph=" " />
+                <marker date="1508156387668" expanded="true" signature="97379:97445" ph="SELECT time_... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="97648:97713" ph="SELECT lasta... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="98298:98356" ph="SELECT ${$my... ${$mysql_sgroups_table}" />
+                <marker date="1508156387668" expanded="true" signature="99060:99104" ph="SELECT * fro... ${$mysql_tickets_table}" />
+                <marker date="1508156387668" expanded="true" signature="99295:99378" ph="select pager... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="99724:99748" ph="SELECT pager... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="99795:99919" ph="select pager... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="100343:100414" ph="SELECT templ... ${$mysql_templates_table}" />
+                <marker date="1508156387668" expanded="true" signature="102199:102243" ph="SELECT * fro... ${$mysql_tickets_table}" />
+                <marker date="1508156387668" expanded="true" signature="102631:102705" ph="SELECT templ... ${$mysql_templates_table}" />
+                <marker date="1508156387668" expanded="true" signature="103652:103726" ph="SELECT templ... ${$mysql_templates_table}" />
+                <marker date="1508156387668" expanded="true" signature="105292:105366" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="106869:106984" ph="SELECT sum(m... tickets" />
+                <marker date="1508156387668" expanded="true" signature="107806:107821" ph="select id fr... ${$mysql_ugroups_table}" />
+                <marker date="1508156387668" expanded="true" signature="108077:108128" ph="select id fr... ugroup" />
+                <marker date="1508156387668" expanded="true" signature="108608:108623" ph="select id fr... ${$mysql_ugroups_table}" />
+                <marker date="1508156387668" expanded="true" signature="108879:108930" ph="select id fr... ugroup" />
+                <marker date="1508156387668" expanded="true" signature="110265:110415" ph="select trk.s... tickets" />
+                <marker date="1508156387668" expanded="true" signature="110713:110755" ph="select * fro... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="111236:111340" ph="SELECT email... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="111697:111979" ph="SELECT suppo... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="112029:112312" ph="SELECT suppo... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="112364:112624" ph="SELECT suppo... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="112691:112925" ph="SELECT suppo... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="113372:113416" ph="select * fro... ${$mysql_tickets_table}" />
+                <marker date="1508156387668" expanded="true" signature="113785:114070" ph="select ${$my... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="119145:119331" ph="select trk.s... tickets" />
+                <marker date="1508156387668" expanded="true" signature="119473:119518" ph="..." />
+                <marker date="1508156387668" expanded="true" signature="119716:119758" ph="select * fro... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="120676:120809" ph="select sum(m... tickets" />
+                <marker date="1508156387668" expanded="true" signature="120834:120968" ph="select sum(m... tickets" />
+                <marker date="1508156387668" expanded="true" signature="122588:122655" ph="select Cloud... ${$mysql_users_table}" />
+                <marker date="1508156387668" expanded="true" signature="122907:122973" ph="select * fro... ${$mysql_tickets_table}" />
+                <marker date="1508156387668" expanded="true" signature="123330:123390" ph="update ${$my... " />
               </folding>
             </state>
           </provider>
@@ -690,11 +462,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/style.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="84" column="24" lean-forward="false" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
+            <state relative-caret-position="209">
+              <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="98" selection-end-column="12" />
               <folding>
                 <marker date="1508155993031" expanded="true" signature="16355:16407" ph="select * fro... ${$mysql_themes_table}" />
                 <marker date="1508155993031" expanded="true" signature="17170:17230" ph="select theme... ${$mysql_users_table}" />
@@ -1009,9 +781,9 @@
         <option value="$PROJECT_DIR$/lang/English.lang.php" />
         <option value="$PROJECT_DIR$/supporter/updatelog.php" />
         <option value="src:table:/c788f063/f5a594a7-31d9-494d-a74e-43164176beae/hostgo_hdesk1.tickets" />
-        <option value="$PROJECT_DIR$/common/common.php" />
         <option value="$PROJECT_DIR$/supporter/tupdate.php" />
         <option value="$PROJECT_DIR$/common/style.php" />
+        <option value="$PROJECT_DIR$/common/common.php" />
       </list>
     </option>
   </component>
@@ -1349,13 +1121,6 @@
       <workItem from="1508085300274" duration="15211000" />
       <workItem from="1508107715896" duration="7031000" />
     </task>
-    <task id="LOCAL-00744" summary="showformattedtime, some common upgrades to displayticket">
-      <created>1508073820701</created>
-      <option name="number" value="00744" />
-      <option name="presentableId" value="LOCAL-00744" />
-      <option name="project" value="LOCAL" />
-      <updated>1508073820701</updated>
-    </task>
     <task id="LOCAL-00745" summary="showformattedtime, some common upgrades to displayticket">
       <created>1508073935796</created>
       <option name="number" value="00745" />
@@ -1692,11 +1457,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508155961555</updated>
     </task>
-    <option name="localTasksCounter" value="793" />
+    <task id="LOCAL-00793" summary="displayTicket time totals added">
+      <created>1508156077869</created>
+      <option name="number" value="00793" />
+      <option name="presentableId" value="LOCAL-00793" />
+      <option name="project" value="LOCAL" />
+      <updated>1508156077869</updated>
+    </task>
+    <option name="localTasksCounter" value="794" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="649696000" />
+    <option name="totallyTimeSpent" value="650033000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1709,6 +1481,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1381" height="925" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33900928" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25510204" sideWeight="0.5822494" order="7" side_tool="false" content_ui="tabs" />
@@ -2948,443 +2721,215 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20468">
-          <caret line="1234" column="18" lean-forward="false" selection-start-line="1234" selection-start-column="18" selection-end-line="1234" selection-end-column="18" />
-          <folding>
-            <marker date="1508139365707" expanded="true" signature="7834:7976" ph="INSERT into ${$mysql_attachments_table}... " />
-            <marker date="1508139365707" expanded="true" signature="8718:8777" ph="update ${$my... " />
-            <marker date="1508139365707" expanded="true" signature="9273:9287" ph="select * fro... ${$mysql_crmsettings_table}" />
-            <marker date="1508139365707" expanded="true" signature="9820:9834" ph="select * fro... ${$mysql_settings_table}" />
-            <marker date="1508139365707" expanded="true" signature="10389:10403" ph="select * fro... ${$table}" />
-            <marker date="1508139365707" expanded="true" signature="11464:11528" ph="select user_... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="13931:14003" ph="select * fro... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="14875:14904" ph="select count... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="15454:15515" ph="select count... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="16055:16120" ph="select count... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="16712:16754" ph="select * fro... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="17571:17654" ph="select * fro... ${$group_table}" />
-            <marker date="1508139365707" expanded="true" signature="18706:18762" ph="select * fro... ${$mysql_announcement_table}" />
-            <marker date="1508139365707" expanded="true" signature="18785:18848" ph="select * fro... ${$mysql_announcement_table}" />
-            <marker date="1508139365707" expanded="true" signature="19215:19221" ph=" " />
-            <marker date="1508139365707" expanded="true" signature="19221:19227" ph=" " />
-            <marker date="1508139365707" expanded="true" signature="19227:19233" ph=" " />
-            <marker date="1508139365707" expanded="true" signature="19233:19239" ph=" " />
-            <marker date="1508139365707" expanded="true" signature="19766:19772" ph=" " />
-            <marker date="1508139365707" expanded="true" signature="19772:19778" ph=" " />
-            <marker date="1508139365707" expanded="true" signature="19778:19784" ph=" " />
-            <marker date="1508139365707" expanded="true" signature="19784:19790" ph=" " />
-            <marker date="1508139365707" expanded="true" signature="21051:21165" ph="select * fro... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="21223:21345" ph="select * fro... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="21395:21502" ph="select * fro... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="21619:21737" ph="select * fro... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="21795:21921" ph="select * fro... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="21971:22082" ph="select * fro... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="22234:22336" ph="select * fro... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="22394:22493" ph="select * fro... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="22543:22638" ph="select * fro... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="23351:23584" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="23360:23584" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="23370:23584" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="23434:23584" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="23445:23584" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="25270:25327" ph="select id fr... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="25862:25922" ph="select id fr... ${$mysql_sgroups_table}" />
-            <marker date="1508139365707" expanded="true" signature="26459:26519" ph="select id fr... ${$mysql_ugroups_table}" />
-            <marker date="1508139365707" expanded="true" signature="27058:27111" ph="select group... ${$mysql_sgroups_table}" />
-            <marker date="1508139365707" expanded="true" signature="27645:27698" ph="SELECT group... ${$mysql_sgroups_table}" />
-            <marker date="1508139365707" expanded="true" signature="28336:28396" ph="select prior... ${$mysql_tpriorities_table}" />
-            <marker date="1508139365707" expanded="true" signature="28928:28982" ph="select statu... ${$mysql_tstatus_table}" />
-            <marker date="1508139365707" expanded="true" signature="29524:29588" ph="select suppo... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="30221:30281" ph="select admin... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="30864:30917" ph="select group... ${$mysql_sgroups_table}" />
-            <marker date="1508139365707" expanded="true" signature="31664:31713" ph="select id fr... ${$mysql_sgroups_table}" />
-            <marker date="1508139365707" expanded="true" signature="32623:32672" ph="select id fr... ${$mysql_ugroups_table}" />
-            <marker date="1508139365707" expanded="true" signature="33342:33402" ph="SELECT * fro... ${$group_id}" />
-            <marker date="1508139365707" expanded="true" signature="33979:34032" ph="select group... ${$mysql_ugroups_table}" />
-            <marker date="1508139365707" expanded="true" signature="34583:34638" ph="select messa... ${$mysql_announcement_table}" />
-            <marker date="1508139365707" expanded="true" signature="35195:35387" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="35203:35387" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="35212:35387" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="35274:35387" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="35283:35354" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="35960:36172" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="35968:36172" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="35977:36172" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="36039:36172" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="36048:36121" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="36876:36926" ph="select rank ${$table}" />
-            <marker date="1508139365707" expanded="true" signature="36981:37029" ph="select rank ${$table}" />
-            <marker date="1508139365707" expanded="true" signature="37650:37705" ph="select prior... ${$mysql_tpriorities_table}" />
-            <marker date="1508139365707" expanded="true" signature="38257:38306" ph="select statu... ${$mysql_tstatus_table}" />
-            <marker date="1508139365707" expanded="true" signature="38981:39021" ph="select id fr... ${$table}" />
-            <marker date="1508139365707" expanded="true" signature="39045:39084" ph="select id fr... ${$table}" />
-            <marker date="1508139365707" expanded="true" signature="39784:39839" ph="select id, d... ${$table}" />
-            <marker date="1508139365707" expanded="true" signature="39862:39918" ph="select id, d... ${$table}" />
-            <marker date="1508139365707" expanded="true" signature="40631:40686" ph="select id, d... ${$table}" />
-            <marker date="1508139365707" expanded="true" signature="40709:40765" ph="select id, d... ${$table}" />
-            <marker date="1508139365707" expanded="true" signature="41306:41363" ph="select statu... ${$mysql_tstatus_table}" />
-            <marker date="1508139365707" expanded="true" signature="41921:41984" ph="select prior... ${$mysql_tpriorities_table}" />
-            <marker date="1508139365707" expanded="true" signature="42563:42626" ph="select prior... ${$mysql_tpriorities_table}" />
-            <marker date="1508139365707" expanded="true" signature="43228:43291" ph="select categ... ${$mysql_tcategories_table}" />
-            <marker date="1508139365707" expanded="true" signature="43880:43937" ph="select statu... ${$mysql_tstatus_table}" />
-            <marker date="1508139365707" expanded="true" signature="44511:44639" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="44519:44639" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="44528:44639" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="44591:44639" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="44601:44639" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="45544:45609" ph="select id, g... ${$mysql_ugroups_table}" />
-            <marker date="1508139365707" expanded="true" signature="47531:47596" ph="select id, g... ${$mysql_sgroups_table}" />
-            <marker date="1508139365707" expanded="true" signature="49182:49246" ph="select prior... ${$mysql_tpriorities_table}" />
-            <marker date="1508139365707" expanded="true" signature="49270:49352" ph="select prior... ${$mysql_tpriorities_table}" />
-            <marker date="1508139365707" expanded="true" signature="50321:50399" ph="select id, s... ${$mysql_tBStatus_table}" />
-            <marker date="1508139365707" expanded="true" signature="51262:51335" ph="select statu... ${$mysql_tstatus_table}" />
-            <marker date="1508139365707" expanded="true" signature="52153:52170" ph="select name ${$mysql_themes_table}" />
-            <marker date="1508139365707" expanded="true" signature="55416:65523" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="55671:55685" ph="select * fro... ${$mysql_ugroups_table}" />
-            <marker date="1508139365707" expanded="true" signature="55723:55737" ph="select * fro... ${$mysql_BillingStatus_table}" />
-            <marker date="1508139365707" expanded="true" signature="55969:56043" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="59330:59457" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="59339:59454" ph="SELECT sum(m... tickets" />
-            <marker date="1508139365707" expanded="true" signature="64783:65286" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="65527:65904" ph="&#9;function createTicketInfo(): ..." />
-            <marker date="1508139365707" expanded="true" signature="65970:68976" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="66296:66843" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="66296:66950" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="66305:66843" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="66315:66843" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="66380:66520" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="66380:66843" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="66391:66507" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="66520:66521" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="66520:66843" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="66653:66780" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="67053:67072" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="67053:67193" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="67301:67525" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="67401:67506" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="67536:67743" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="67764:68539" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="67818:68013" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="67835:68008" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="68028:68535" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="68029:68531" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="68029:68535" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="68143:68527" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="68446:68517" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="68596:68908" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="68609:68694" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="68746:68891" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="68985:123485" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="68989:69288" ph="&#9;function createUGroupsMenu(): ..." />
-            <marker date="1508139365707" expanded="true" signature="69324:69884" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="69382:69447" ph="select id, g... ${$mysql_ugroups_table}" />
-            <marker date="1508139365707" expanded="true" signature="69586:69868" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="69626:69864" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="69889:70292" ph="&#9;function createEquipmentMenu(): ..." />
-            <marker date="1508139365707" expanded="true" signature="70329:71631" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="70477:70623" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="70701:70837" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="70947:71083" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="71182:71323" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="71411:71551" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="71638:72038" ph="&#9;function createEquipmentMenu(): ..." />
-            <marker date="1508139365707" expanded="true" signature="72097:72649" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="72163:72210" ph="select short... ${$mysql_tequipment_table}" />
-            <marker date="1508139365707" expanded="true" signature="72521:72645" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="72654:72981" ph="&#9;function createCategoryMenu(): ..." />
-            <marker date="1508139365707" expanded="true" signature="73018:73387" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="73077:73140" ph="select categ... ${$mysql_tcategories_table}" />
-            <marker date="1508139365707" expanded="true" signature="73260:73383" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="73392:73735" ph="&#9;function createKCategoryMenu(): ..." />
-            <marker date="1508139365707" expanded="true" signature="73786:74361" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="73845:73912" ph="select categ... ${$mysql_kcategories_table}" />
-            <marker date="1508139365707" expanded="true" signature="74014:74185" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="74055:74182" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="74193:74356" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="74234:74353" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="74367:74693" ph="&#9;function createPlatformMenu(): ..." />
-            <marker date="1508139365707" expanded="true" signature="74743:75337" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="74800:74861" ph="select platf... ${$mysql_platforms_table}" />
-            <marker date="1508139365707" expanded="true" signature="74963:75136" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="75004:75133" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="75144:75333" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="75209:75330" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="75375:75669" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="75522:75582" ph="UPDATE ${$my... " />
-            <marker date="1508139365707" expanded="true" signature="75675:76099" ph="&#9;function updateLog($ticket_id, $msg): ..." />
-            <marker date="1508139365707" expanded="true" signature="76138:77100" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="76730:76764" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="76783:77081" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="77105:77450" ph="&#9;function getCurrentLog(): ..." />
-            <marker date="1508139365707" expanded="true" signature="77480:77732" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="77528:77581" ph="select updat... ${$mysql_tickets_table}" />
-            <marker date="1508139365707" expanded="true" signature="77737:78204" ph="&#9;function deleteFromGroups(): ..." />
-            <marker date="1508139365707" expanded="true" signature="78237:79143" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="78364:78412" ph="select id fr... ${$mysql_sgroups_table}" />
-            <marker date="1508139365707" expanded="true" signature="78492:78533" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="78545:78567" ph="select id fr... ugroups" />
-            <marker date="1508139365707" expanded="true" signature="78647:78688" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="78901:78997" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="78912:78970" ph="delete from " />
-            <marker date="1508139365707" expanded="true" signature="79043:79139" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="79054:79112" ph="delete from " />
-            <marker date="1508139365707" expanded="true" signature="79149:79634" ph="&#9;function getTotalNumOpenTickets(): ..." />
-            <marker date="1508139365707" expanded="true" signature="79673:80049" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="79773:79854" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="79784:79850" ph="select count... ${$mysql_tickets_table}" />
-            <marker date="1508139365707" expanded="true" signature="79862:79964" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="79873:79957" ph="select count... ${$mysql_tickets_table}" />
-            <marker date="1508139365707" expanded="true" signature="80054:80545" ph="&#9;function getTotalNumClosedTickets(): ..." />
-            <marker date="1508139365707" expanded="true" signature="80586:80960" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="80686:80766" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="80697:80762" ph="select count... ${$mysql_tickets_table}" />
-            <marker date="1508139365707" expanded="true" signature="80774:80875" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="80785:80868" ph="select count... ${$mysql_tickets_table}" />
-            <marker date="1508139365707" expanded="true" signature="80966:81433" ph="&#9;function getTotalNumTickets(): ..." />
-            <marker date="1508139365707" expanded="true" signature="81468:81789" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="81559:81616" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="81570:81592" ph="select count... ${$mysql_tickets_table}" />
-            <marker date="1508139365707" expanded="true" signature="81624:81704" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="81635:81697" ph="select count... ${$mysql_tickets_table}" />
-            <marker date="1508139365707" expanded="true" signature="81794:82168" ph="&#9;function getTotalNumOpenTickets(): ..." />
-            <marker date="1508139365707" expanded="true" signature="82200:82390" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="82396:82743" ph="&#9;function startTable(): ..." />
-            <marker date="1508139365707" expanded="true" signature="82818:83173" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="83180:83499" ph="&#9;function endTable(): ..." />
-            <marker date="1508139365707" expanded="true" signature="83521:83578" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="83583:84384" ph="&#9;function sendmail(): ..." />
-            <marker date="1508139365707" expanded="true" signature="84449:84909" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="84664:84705" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="84713:84752" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="84974:85495" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="85250:85291" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="85299:85338" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="85500:85823" ph="&#9;function getEmailAddress(): ..." />
-            <marker date="1508139365707" expanded="true" signature="85857:86048" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="85903:85963" ph="select email... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="86273:88124" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="86428:86465" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="86473:86985" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="86501:86616" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="86624:86668" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="87015:87362" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="87043:87131" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="87237:87355" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="87271:87344" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="87386:87545" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="87570:87699" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="87724:87878" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="87904:88121" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="87933:88115" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="88158:89345" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="88280:88334" ph="select * fro... ${$mysql_platforms_table}" />
-            <marker date="1508139365707" expanded="true" signature="88457:89302" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="88536:89288" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="88943:88949" ph=" " />
-            <marker date="1508139365707" expanded="true" signature="88949:88955" ph=" " />
-            <marker date="1508139365707" expanded="true" signature="89088:89094" ph=" " />
-            <marker date="1508139365707" expanded="true" signature="89094:89100" ph=" " />
-            <marker date="1508139365707" expanded="true" signature="89382:89642" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="89462:89490" ph="select count... ${$mysql_platforms_table}" />
-            <marker date="1508139365707" expanded="true" signature="89679:90667" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="89776:89836" ph="select * fro... ${$mysql_kcategories_table}" />
-            <marker date="1508139365707" expanded="true" signature="89959:90624" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="90040:90610" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="90705:90969" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="90787:90815" ph="select count... ${$mysql_kcategories_table}" />
-            <marker date="1508139365707" expanded="true" signature="91002:91469" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="91508:91878" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="91928:93121" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="92029:92108" ph="SELECT close... ${$mysql_time_table}" />
-            <marker date="1508139365707" expanded="true" signature="92421:92494" ph="SELECT respo... ${$mysql_tpriorities_table}" />
-            <marker date="1508139365707" expanded="true" signature="93134:93519" ph="      function createViewableByMenu(): ..." />
-            <marker date="1508139365707" expanded="true" signature="93560:94270" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="93835:93909" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="94127:94201" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="94309:94756" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="94368:94435" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="94697:94732" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="94785:94996" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="94831:94894" ph="SELECT langu... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="95031:96169" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="95105:95190" ph="SELECT id, g... ${$mysql_sgroups_table}" />
-            <marker date="1508139365707" expanded="true" signature="95286:95993" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="95322:95471" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="95334:95391" ph="select user_... sgroup" />
-            <marker date="1508139365707" expanded="true" signature="95489:95733" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="95525:95564" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="95528:95564" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="95590:95617" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="95742:95982" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="95778:95817" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="95781:95817" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="95843:95870" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="96100:96149" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="96126:96132" ph=" " />
-            <marker date="1508139365707" expanded="true" signature="96204:97302" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="96257:96328" ph="SELECT id, g... ${$mysql_ugroups_table}" />
-            <marker date="1508139365707" expanded="true" signature="96424:97126" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="96460:96609" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="96472:96529" ph="select user_... ugroup" />
-            <marker date="1508139365707" expanded="true" signature="96627:96871" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="96663:96702" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="96666:96702" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="96728:96755" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="96880:97115" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="96916:96955" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="96919:96955" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="96981:97008" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="97233:97282" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="97259:97265" ph=" " />
-            <marker date="1508139365707" expanded="true" signature="97333:97567" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="97379:97445" ph="SELECT time_... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="97602:97863" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="97648:97713" ph="SELECT lasta... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="97893:98035" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="98085:98596" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="98298:98356" ph="SELECT ${$my... ${$mysql_sgroups_table}" />
-            <marker date="1508139365707" expanded="true" signature="98738:101672" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="99060:99104" ph="SELECT * fro... ${$mysql_tickets_table}" />
-            <marker date="1508139365707" expanded="true" signature="99274:99563" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="99295:99378" ph="select pager... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="99461:99556" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="99499:99548" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="99572:100332" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="99724:99748" ph="SELECT pager... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="99795:99919" ph="select pager... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="100024:100325" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="100125:100317" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="100149:100217" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="100232:100308" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="100343:100414" ph="SELECT templ... ${$mysql_templates_table}" />
-            <marker date="1508139365707" expanded="true" signature="100696:100798" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="100828:100922" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="101049:101667" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="101094:101186" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="101482:101600" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="101850:104541" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="102199:102243" ph="SELECT * fro... ${$mysql_tickets_table}" />
-            <marker date="1508139365707" expanded="true" signature="102521:103384" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="102631:102705" ph="SELECT templ... ${$mysql_templates_table}" />
-            <marker date="1508139365707" expanded="true" signature="102970:103104" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="103144:103269" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="103429:104414" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="103652:103726" ph="SELECT templ... ${$mysql_templates_table}" />
-            <marker date="1508139365707" expanded="true" signature="104047:104197" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="104245:104386" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="104439:104537" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="104548:104966" ph="&#9;function displayUserTicket(): ..." />
-            <marker date="1508139365707" expanded="true" signature="105004:107564" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="105203:107403" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="105292:105366" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="105414:105596" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="105604:105680" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="106019:106349" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="106054:106154" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="106182:106259" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="106280:106340" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="106869:106984" ph="SELECT sum(m... tickets" />
-            <marker date="1508139365707" expanded="true" signature="107138:107180" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="107188:107225" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="107718:108368" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="107806:107821" ph="select id fr... ${$mysql_ugroups_table}" />
-            <marker date="1508139365707" expanded="true" signature="108040:108266" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="108064:108263" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="108077:108128" ph="select id fr... ugroup" />
-            <marker date="1508139365707" expanded="true" signature="108203:108258" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="108520:109136" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="108608:108623" ph="select id fr... ${$mysql_ugroups_table}" />
-            <marker date="1508139365707" expanded="true" signature="108842:109057" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="108866:109054" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="108879:108930" ph="select id fr... ugroup" />
-            <marker date="1508139365707" expanded="true" signature="109005:109049" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="109159:109902" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="109946:110020" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="110059:111152" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="110265:110415" ph="select trk.s... tickets" />
-            <marker date="1508139365707" expanded="true" signature="110513:111134" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="110543:111122" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="110713:110755" ph="select * fro... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="111190:111422" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="111236:111340" ph="SELECT email... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="111587:113294" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="111662:112941" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="111684:111992" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="111697:111979" ph="SELECT suppo... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="112016:112325" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="112029:112312" ph="SELECT suppo... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="112351:112637" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="112364:112624" ph="SELECT suppo... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="112678:112938" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="112691:112925" ph="SELECT suppo... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="113024:113275" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="113324:113502" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="113372:113416" ph="select * fro... ${$mysql_tickets_table}" />
-            <marker date="1508139365707" expanded="true" signature="113535:114679" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="113785:114070" ph="select ${$my... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="114172:114602" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="114299:114353" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="114415:114454" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="114539:114596" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="114778:115663" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="115022:115105" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="115059:115099" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="115154:115253" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="115204:115249" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="115301:115439" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="115353:115435" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="115459:115640" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="115719:118867" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="116199:116991" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="116236:116985" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="116534:116953" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="116591:116710" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="116758:116889" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="116906:116945" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="117066:117836" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="117115:117830" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="117479:117586" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="117623:117747" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="117760:117791" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="117918:118814" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="117969:118808" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="118009:118079" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="118087:118152" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="118382:118481" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="118619:118735" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="118742:118774" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="118898:121991" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="119145:119331" ph="select trk.s... tickets" />
-            <marker date="1508139365707" expanded="true" signature="119427:120606" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="119457:120603" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="119473:119518" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="119716:119758" ph="select * fro... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="120064:120099" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="120293:120328" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="120676:120809" ph="select sum(m... tickets" />
-            <marker date="1508139365707" expanded="true" signature="120834:120968" ph="select sum(m... tickets" />
-            <marker date="1508139365707" expanded="true" signature="122026:122087" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="122094:122497" ph="&#9;function getCloudControlUserSetting(): ..." />
-            <marker date="1508139365707" expanded="true" signature="122542:122740" ph="{...}" />
-            <marker date="1508139365707" expanded="true" signature="122588:122655" ph="select Cloud... ${$mysql_users_table}" />
-            <marker date="1508139365707" expanded="true" signature="122746:122784" ph=" @param $id_from ..." />
-            <marker date="1508139365707" expanded="true" signature="122835:123483" ph="..." />
-            <marker date="1508139365707" expanded="true" signature="122907:122973" ph="select * fro... ${$mysql_tickets_table}" />
-            <marker date="1508139365707" expanded="true" signature="123330:123390" ph="update ${$my... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/style.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="84" column="24" lean-forward="false" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
+        <state relative-caret-position="209">
+          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="98" selection-end-column="12" />
           <folding>
             <marker date="1508155993031" expanded="true" signature="16355:16407" ph="select * fro... ${$mysql_themes_table}" />
             <marker date="1508155993031" expanded="true" signature="17170:17230" ph="select theme... ${$mysql_users_table}" />
             <marker date="1508155993031" expanded="true" signature="17473:17499" ph="select defau... ${$mysql_settings_table}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="1710" column="44" lean-forward="false" selection-start-line="1710" selection-start-column="44" selection-end-line="1710" selection-end-column="44" />
+          <folding>
+            <marker date="1508156387668" expanded="true" signature="7834:7976" ph="INSERT into ${$mysql_attachments_table}... " />
+            <marker date="1508156387668" expanded="true" signature="8718:8777" ph="update ${$my... " />
+            <marker date="1508156387668" expanded="true" signature="9273:9287" ph="select * fro... ${$mysql_crmsettings_table}" />
+            <marker date="1508156387668" expanded="true" signature="9820:9834" ph="select * fro... ${$mysql_settings_table}" />
+            <marker date="1508156387668" expanded="true" signature="10389:10403" ph="select * fro... ${$table}" />
+            <marker date="1508156387668" expanded="true" signature="11464:11528" ph="select user_... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="13931:14003" ph="select * fro... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="14875:14904" ph="select count... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="15454:15515" ph="select count... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="16055:16120" ph="select count... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="16712:16754" ph="select * fro... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="17571:17654" ph="select * fro... ${$group_table}" />
+            <marker date="1508156387668" expanded="true" signature="18706:18762" ph="select * fro... ${$mysql_announcement_table}" />
+            <marker date="1508156387668" expanded="true" signature="18785:18848" ph="select * fro... ${$mysql_announcement_table}" />
+            <marker date="1508156387668" expanded="true" signature="19215:19221" ph=" " />
+            <marker date="1508156387668" expanded="true" signature="19221:19227" ph=" " />
+            <marker date="1508156387668" expanded="true" signature="19227:19233" ph=" " />
+            <marker date="1508156387668" expanded="true" signature="19233:19239" ph=" " />
+            <marker date="1508156387668" expanded="true" signature="19766:19772" ph=" " />
+            <marker date="1508156387668" expanded="true" signature="19772:19778" ph=" " />
+            <marker date="1508156387668" expanded="true" signature="19778:19784" ph=" " />
+            <marker date="1508156387668" expanded="true" signature="19784:19790" ph=" " />
+            <marker date="1508156387668" expanded="true" signature="21051:21165" ph="select * fro... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="21223:21345" ph="select * fro... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="21395:21502" ph="select * fro... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="21619:21737" ph="select * fro... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="21795:21921" ph="select * fro... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="21971:22082" ph="select * fro... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="22234:22336" ph="select * fro... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="22394:22493" ph="select * fro... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="22543:22638" ph="select * fro... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="23351:23584" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="23360:23584" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="23370:23584" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="23434:23584" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="23445:23584" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="25270:25327" ph="select id fr... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="25862:25922" ph="select id fr... ${$mysql_sgroups_table}" />
+            <marker date="1508156387668" expanded="true" signature="26459:26519" ph="select id fr... ${$mysql_ugroups_table}" />
+            <marker date="1508156387668" expanded="true" signature="27058:27111" ph="select group... ${$mysql_sgroups_table}" />
+            <marker date="1508156387668" expanded="true" signature="27645:27698" ph="SELECT group... ${$mysql_sgroups_table}" />
+            <marker date="1508156387668" expanded="true" signature="28336:28396" ph="select prior... ${$mysql_tpriorities_table}" />
+            <marker date="1508156387668" expanded="true" signature="28928:28982" ph="select statu... ${$mysql_tstatus_table}" />
+            <marker date="1508156387668" expanded="true" signature="29524:29588" ph="select suppo... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="30221:30281" ph="select admin... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="30864:30917" ph="select group... ${$mysql_sgroups_table}" />
+            <marker date="1508156387668" expanded="true" signature="31664:31713" ph="select id fr... ${$mysql_sgroups_table}" />
+            <marker date="1508156387668" expanded="true" signature="32623:32672" ph="select id fr... ${$mysql_ugroups_table}" />
+            <marker date="1508156387668" expanded="true" signature="33342:33402" ph="SELECT * fro... ${$group_id}" />
+            <marker date="1508156387668" expanded="true" signature="33979:34032" ph="select group... ${$mysql_ugroups_table}" />
+            <marker date="1508156387668" expanded="true" signature="34583:34638" ph="select messa... ${$mysql_announcement_table}" />
+            <marker date="1508156387668" expanded="true" signature="35195:35387" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="35203:35387" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="35212:35387" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="35274:35387" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="35283:35354" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="35960:36172" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="35968:36172" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="35977:36172" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="36039:36172" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="36048:36121" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="36876:36926" ph="select rank ${$table}" />
+            <marker date="1508156387668" expanded="true" signature="36981:37029" ph="select rank ${$table}" />
+            <marker date="1508156387668" expanded="true" signature="37650:37705" ph="select prior... ${$mysql_tpriorities_table}" />
+            <marker date="1508156387668" expanded="true" signature="38257:38306" ph="select statu... ${$mysql_tstatus_table}" />
+            <marker date="1508156387668" expanded="true" signature="38981:39021" ph="select id fr... ${$table}" />
+            <marker date="1508156387668" expanded="true" signature="39045:39084" ph="select id fr... ${$table}" />
+            <marker date="1508156387668" expanded="true" signature="39784:39839" ph="select id, d... ${$table}" />
+            <marker date="1508156387668" expanded="true" signature="39862:39918" ph="select id, d... ${$table}" />
+            <marker date="1508156387668" expanded="true" signature="40631:40686" ph="select id, d... ${$table}" />
+            <marker date="1508156387668" expanded="true" signature="40709:40765" ph="select id, d... ${$table}" />
+            <marker date="1508156387668" expanded="true" signature="41306:41363" ph="select statu... ${$mysql_tstatus_table}" />
+            <marker date="1508156387668" expanded="true" signature="41921:41984" ph="select prior... ${$mysql_tpriorities_table}" />
+            <marker date="1508156387668" expanded="true" signature="42563:42626" ph="select prior... ${$mysql_tpriorities_table}" />
+            <marker date="1508156387668" expanded="true" signature="43228:43291" ph="select categ... ${$mysql_tcategories_table}" />
+            <marker date="1508156387668" expanded="true" signature="43880:43937" ph="select statu... ${$mysql_tstatus_table}" />
+            <marker date="1508156387668" expanded="true" signature="44511:44639" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="44519:44639" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="44528:44639" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="44591:44639" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="44601:44639" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="45544:45609" ph="select id, g... ${$mysql_ugroups_table}" />
+            <marker date="1508156387668" expanded="true" signature="47531:47596" ph="select id, g... ${$mysql_sgroups_table}" />
+            <marker date="1508156387668" expanded="true" signature="49182:49246" ph="select prior... ${$mysql_tpriorities_table}" />
+            <marker date="1508156387668" expanded="true" signature="49270:49352" ph="select prior... ${$mysql_tpriorities_table}" />
+            <marker date="1508156387668" expanded="true" signature="50321:50399" ph="select id, s... ${$mysql_tBStatus_table}" />
+            <marker date="1508156387668" expanded="true" signature="51262:51335" ph="select statu... ${$mysql_tstatus_table}" />
+            <marker date="1508156387668" expanded="true" signature="52153:52170" ph="select name ${$mysql_themes_table}" />
+            <marker date="1508156387668" expanded="true" signature="55671:55685" ph="select * fro... ${$mysql_ugroups_table}" />
+            <marker date="1508156387668" expanded="true" signature="55723:55737" ph="select * fro... ${$mysql_BillingStatus_table}" />
+            <marker date="1508156387668" expanded="true" signature="55969:56043" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="59339:59454" ph="SELECT sum(m... tickets" />
+            <marker date="1508156387668" expanded="true" signature="66296:66843" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="66296:66950" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="66305:66843" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="66315:66843" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="66380:66520" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="66380:66843" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="66391:66507" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="66520:66521" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="66520:66843" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="66653:66780" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="67053:67072" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="67053:67193" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="67301:67525" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="67401:67506" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="67536:67743" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="67835:68008" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="68028:68535" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="68029:68531" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="68029:68535" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="68143:68527" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="68446:68517" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="68609:68694" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="68746:68891" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="69382:69447" ph="select id, g... ${$mysql_ugroups_table}" />
+            <marker date="1508156387668" expanded="true" signature="72163:72210" ph="select short... ${$mysql_tequipment_table}" />
+            <marker date="1508156387668" expanded="true" signature="73077:73140" ph="select categ... ${$mysql_tcategories_table}" />
+            <marker date="1508156387668" expanded="true" signature="73845:73912" ph="select categ... ${$mysql_kcategories_table}" />
+            <marker date="1508156387668" expanded="true" signature="74800:74861" ph="select platf... ${$mysql_platforms_table}" />
+            <marker date="1508156387668" expanded="true" signature="75522:75582" ph="UPDATE ${$my... " />
+            <marker date="1508156387668" expanded="true" signature="77528:77581" ph="select updat... ${$mysql_tickets_table}" />
+            <marker date="1508156387668" expanded="true" signature="78364:78412" ph="select id fr... ${$mysql_sgroups_table}" />
+            <marker date="1508156387668" expanded="true" signature="78545:78567" ph="select id fr... ugroups" />
+            <marker date="1508156387668" expanded="true" signature="78912:78970" ph="delete from " />
+            <marker date="1508156387668" expanded="true" signature="79054:79112" ph="delete from " />
+            <marker date="1508156387668" expanded="true" signature="79784:79850" ph="select count... ${$mysql_tickets_table}" />
+            <marker date="1508156387668" expanded="true" signature="79873:79957" ph="select count... ${$mysql_tickets_table}" />
+            <marker date="1508156387668" expanded="true" signature="80697:80762" ph="select count... ${$mysql_tickets_table}" />
+            <marker date="1508156387668" expanded="true" signature="80785:80868" ph="select count... ${$mysql_tickets_table}" />
+            <marker date="1508156387668" expanded="true" signature="81570:81592" ph="select count... ${$mysql_tickets_table}" />
+            <marker date="1508156387668" expanded="true" signature="81635:81697" ph="select count... ${$mysql_tickets_table}" />
+            <marker date="1508156387668" expanded="true" signature="85903:85963" ph="select email... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="88280:88334" ph="select * fro... ${$mysql_platforms_table}" />
+            <marker date="1508156387668" expanded="true" signature="88943:88949" ph=" " />
+            <marker date="1508156387668" expanded="true" signature="88949:88955" ph=" " />
+            <marker date="1508156387668" expanded="true" signature="89088:89094" ph=" " />
+            <marker date="1508156387668" expanded="true" signature="89094:89100" ph=" " />
+            <marker date="1508156387668" expanded="true" signature="89462:89490" ph="select count... ${$mysql_platforms_table}" />
+            <marker date="1508156387668" expanded="true" signature="89776:89836" ph="select * fro... ${$mysql_kcategories_table}" />
+            <marker date="1508156387668" expanded="true" signature="90787:90815" ph="select count... ${$mysql_kcategories_table}" />
+            <marker date="1508156387668" expanded="true" signature="92029:92108" ph="SELECT close... ${$mysql_time_table}" />
+            <marker date="1508156387668" expanded="true" signature="92421:92494" ph="SELECT respo... ${$mysql_tpriorities_table}" />
+            <marker date="1508156387668" expanded="true" signature="94831:94894" ph="SELECT langu... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="95105:95190" ph="SELECT id, g... ${$mysql_sgroups_table}" />
+            <marker date="1508156387668" expanded="true" signature="95334:95391" ph="select user_... sgroup" />
+            <marker date="1508156387668" expanded="true" signature="95525:95564" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="95528:95564" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="95778:95817" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="95781:95817" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="96126:96132" ph=" " />
+            <marker date="1508156387668" expanded="true" signature="96257:96328" ph="SELECT id, g... ${$mysql_ugroups_table}" />
+            <marker date="1508156387668" expanded="true" signature="96472:96529" ph="select user_... ugroup" />
+            <marker date="1508156387668" expanded="true" signature="96663:96702" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="96666:96702" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="96916:96955" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="96919:96955" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="97259:97265" ph=" " />
+            <marker date="1508156387668" expanded="true" signature="97379:97445" ph="SELECT time_... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="97648:97713" ph="SELECT lasta... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="98298:98356" ph="SELECT ${$my... ${$mysql_sgroups_table}" />
+            <marker date="1508156387668" expanded="true" signature="99060:99104" ph="SELECT * fro... ${$mysql_tickets_table}" />
+            <marker date="1508156387668" expanded="true" signature="99295:99378" ph="select pager... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="99724:99748" ph="SELECT pager... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="99795:99919" ph="select pager... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="100343:100414" ph="SELECT templ... ${$mysql_templates_table}" />
+            <marker date="1508156387668" expanded="true" signature="102199:102243" ph="SELECT * fro... ${$mysql_tickets_table}" />
+            <marker date="1508156387668" expanded="true" signature="102631:102705" ph="SELECT templ... ${$mysql_templates_table}" />
+            <marker date="1508156387668" expanded="true" signature="103652:103726" ph="SELECT templ... ${$mysql_templates_table}" />
+            <marker date="1508156387668" expanded="true" signature="105292:105366" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="106869:106984" ph="SELECT sum(m... tickets" />
+            <marker date="1508156387668" expanded="true" signature="107806:107821" ph="select id fr... ${$mysql_ugroups_table}" />
+            <marker date="1508156387668" expanded="true" signature="108077:108128" ph="select id fr... ugroup" />
+            <marker date="1508156387668" expanded="true" signature="108608:108623" ph="select id fr... ${$mysql_ugroups_table}" />
+            <marker date="1508156387668" expanded="true" signature="108879:108930" ph="select id fr... ugroup" />
+            <marker date="1508156387668" expanded="true" signature="110265:110415" ph="select trk.s... tickets" />
+            <marker date="1508156387668" expanded="true" signature="110713:110755" ph="select * fro... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="111236:111340" ph="SELECT email... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="111697:111979" ph="SELECT suppo... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="112029:112312" ph="SELECT suppo... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="112364:112624" ph="SELECT suppo... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="112691:112925" ph="SELECT suppo... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="113372:113416" ph="select * fro... ${$mysql_tickets_table}" />
+            <marker date="1508156387668" expanded="true" signature="113785:114070" ph="select ${$my... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="119145:119331" ph="select trk.s... tickets" />
+            <marker date="1508156387668" expanded="true" signature="119473:119518" ph="..." />
+            <marker date="1508156387668" expanded="true" signature="119716:119758" ph="select * fro... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="120676:120809" ph="select sum(m... tickets" />
+            <marker date="1508156387668" expanded="true" signature="120834:120968" ph="select sum(m... tickets" />
+            <marker date="1508156387668" expanded="true" signature="122588:122655" ph="select Cloud... ${$mysql_users_table}" />
+            <marker date="1508156387668" expanded="true" signature="122907:122973" ph="select * fro... ${$mysql_tickets_table}" />
+            <marker date="1508156387668" expanded="true" signature="123330:123390" ph="update ${$my... " />
           </folding>
         </state>
       </provider>

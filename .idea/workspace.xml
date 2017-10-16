@@ -16,9 +16,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/common.php" afterPath="$PROJECT_DIR$/common/common.php" />
     </list>
     <ignored mask="workspace.xml" />
     <ignored mask="error_log" />
@@ -79,8 +77,8 @@
       <file leaf-file-name="common.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/common.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="1710" column="100" lean-forward="false" selection-start-line="1710" selection-start-column="100" selection-end-line="1710" selection-end-column="100" />
+            <state relative-caret-position="264">
+              <caret line="1715" column="21" lean-forward="false" selection-start-line="1715" selection-start-column="21" selection-end-line="1715" selection-end-column="21" />
               <folding>
                 <marker date="1508132332746" expanded="true" signature="7834:7976" ph="INSERT into ${$mysql_attachments_table}... " />
                 <marker date="1508132332746" expanded="true" signature="8718:8777" ph="update ${$my... " />
@@ -440,7 +438,7 @@
         <entry file="file://$PROJECT_DIR$/supporter/mygroupopen.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="269">
-              <caret line="457" column="12" lean-forward="true" selection-start-line="457" selection-start-column="12" selection-end-line="457" selection-end-column="12" />
+              <caret line="457" column="12" lean-forward="false" selection-start-line="457" selection-start-column="12" selection-end-line="457" selection-end-column="12" />
               <folding>
                 <marker date="1507757244090" expanded="true" signature="2236:2327" ph="..." />
                 <marker date="1507757244090" expanded="true" signature="2244:2327" ph="..." />
@@ -493,7 +491,7 @@
         <entry file="file://$PROJECT_DIR$/supporter/tcreate.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="642">
-              <caret line="397" column="0" lean-forward="true" selection-start-line="397" selection-start-column="0" selection-end-line="397" selection-end-column="0" />
+              <caret line="397" column="0" lean-forward="false" selection-start-line="397" selection-start-column="0" selection-end-line="397" selection-end-column="0" />
               <folding>
                 <marker date="1508073752723" expanded="true" signature="2683:3013" ph="INSERT into ${$mysql_tickets_table}... " />
                 <marker date="1508073752723" expanded="true" signature="3136:3268" ph="SELECT id fr... ${$mysql_tickets_table}" />
@@ -1030,14 +1028,7 @@
       <workItem from="1508044084489" duration="10619000" />
       <workItem from="1508059989923" duration="454000" />
       <workItem from="1508085300274" duration="15211000" />
-      <workItem from="1508107715896" duration="3922000" />
-    </task>
-    <task id="LOCAL-00735" summary="showformattedtime, some common upgrades to displayticket">
-      <created>1508070138317</created>
-      <option name="number" value="00735" />
-      <option name="presentableId" value="LOCAL-00735" />
-      <option name="project" value="LOCAL" />
-      <updated>1508070138317</updated>
+      <workItem from="1508107715896" duration="3983000" />
     </task>
     <task id="LOCAL-00736" summary="showformattedtime, some common upgrades to displayticket">
       <created>1508070605925</created>
@@ -1375,11 +1366,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508132181875</updated>
     </task>
-    <option name="localTasksCounter" value="784" />
+    <task id="LOCAL-00784" summary="displayTicket time totals added">
+      <created>1508132339890</created>
+      <option name="number" value="00784" />
+      <option name="presentableId" value="LOCAL-00784" />
+      <option name="project" value="LOCAL" />
+      <updated>1508132339890</updated>
+    </task>
+    <option name="localTasksCounter" value="785" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="645894000" />
+    <option name="totallyTimeSpent" value="645955000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1403,7 +1401,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908162" sideWeight="0.49734244" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289977" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17388003" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39104024" sideWeight="0.49086162" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39104024" sideWeight="0.49086162" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34438777" sideWeight="0.47666413" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20226415" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13465953" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2546,7 +2544,7 @@
     <entry file="file://$PROJECT_DIR$/supporter/mygroupopen.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
-          <caret line="457" column="12" lean-forward="true" selection-start-line="457" selection-start-column="12" selection-end-line="457" selection-end-column="12" />
+          <caret line="457" column="12" lean-forward="false" selection-start-line="457" selection-start-column="12" selection-end-line="457" selection-end-column="12" />
           <folding>
             <marker date="1507757244090" expanded="true" signature="2236:2327" ph="..." />
             <marker date="1507757244090" expanded="true" signature="2244:2327" ph="..." />
@@ -2597,7 +2595,7 @@
     <entry file="file://$PROJECT_DIR$/supporter/tcreate.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="642">
-          <caret line="397" column="0" lean-forward="true" selection-start-line="397" selection-start-column="0" selection-end-line="397" selection-end-column="0" />
+          <caret line="397" column="0" lean-forward="false" selection-start-line="397" selection-start-column="0" selection-end-line="397" selection-end-column="0" />
           <folding>
             <marker date="1508073752723" expanded="true" signature="2683:3013" ph="INSERT into ${$mysql_tickets_table}... " />
             <marker date="1508073752723" expanded="true" signature="3136:3268" ph="SELECT id fr... ${$mysql_tickets_table}" />
@@ -2642,8 +2640,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/common.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="1710" column="100" lean-forward="false" selection-start-line="1710" selection-start-column="100" selection-end-line="1710" selection-end-column="100" />
+        <state relative-caret-position="264">
+          <caret line="1715" column="21" lean-forward="false" selection-start-line="1715" selection-start-column="21" selection-end-line="1715" selection-end-column="21" />
           <folding>
             <marker date="1508132332746" expanded="true" signature="7834:7976" ph="INSERT into ${$mysql_attachments_table}... " />
             <marker date="1508132332746" expanded="true" signature="8718:8777" ph="update ${$my... " />

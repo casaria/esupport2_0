@@ -42,7 +42,7 @@ if ($opentickets)
 else 
   startTable("$lang_yourgroupsclose", "center");
 
-	echo '<tr><td class="subcat" > ';
+	echo '<tr><td class="cat" > ';
 	$num_groups = getNumberGroups();
 	$groups = getUsersGroupList($user_id);
 	echo "$lang_usergroups: ";

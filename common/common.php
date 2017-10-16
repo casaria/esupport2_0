@@ -1711,7 +1711,7 @@ function displayTicket($result)
         $sql4= "UPDATE $mysql_tickets_table SET `minutes_labor_estimated`=$minutes where `id`=$row[id]";
         $db->query($sql4);
 
-            showFormattedTime($minutes * 60, 0, 1);
+            showFormattedTime($minutes * 60, 0  , 1);
 
         echo '</td>';
 
@@ -1827,8 +1827,13 @@ function displayTicket($result)
     ?>
 	<a href="#" onClick="document.formTimeTrack.submit();"> <?php echo "Time Track"; ?>!</a>
 
+
+
 	</form>
 	<?php
+    unset($result,$result3);
+
+
 /*    echo "<form method=post>";
     startTable("$lang_timetracking", "center");
     echo "<tr><td class=back><br>";
@@ -3089,7 +3094,7 @@ function displayUserTicket($result)
         $csv_string = $csv_string . $row[id] . ",";
 
     }
-
+    unset($result, $result3);
     $summary = array("recordcount" => $recordcount, "remarks" => "list (CSV):", "tktlist" => $csv_string);
     return $summary;
 }

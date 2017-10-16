@@ -80,7 +80,7 @@ $tablePadding = 10;
         @import url(https://fonts.googleapis.com/css?family=Lato);
         table {-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 1px; font-weight:500;}
         #selecwidth {
-            background-color: #afe7f7;
+            background-color: #b4e8f7;
             border: 1px solid;
              background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat */
         }   

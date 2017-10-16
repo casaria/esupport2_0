@@ -62,13 +62,13 @@ if(!$id){
 }
 
 if($action == 'download'){
-	$query = $db->query("SELECT * from $mysql_attachments_table where `id`=$id");
+	$query = $db->query("SELECT * from $mysql_attachments_table where id=$id");
 	$file = $db->fetch_array($query);
 		if($file[filename] == ''){
 		echo $lang_fileremoved;
 		exit;
 	}
-	$db->query("UPDATE $mysql_attachments_table SET `downloads`=`downloads`+1 WHERE `id`='$id'");
+	$db->query("UPDATE $mysql_attachments_table SET downloads=downloads+1 WHERE id='$id'");
 	// Send the attachment
 	header("Content-disposition: filename=$file[filename]");
 	header("Content-Length: ".strlen($file[attachment]));
@@ -218,7 +218,7 @@ if(isset($update)) {
 				priority='$prio', status='$status', user='$username', email='$user_email', office='$office', phone='$phone',
 				equipment='$equipment', category='$category',platform='$platform', short='$short', description='$description',
                  }
-                 id=$id";
+                 id=$id";castag_id
 	} else {
 		$short = addslashes(stripScripts($short));
 		$description = addslashes(stripScripts($description));

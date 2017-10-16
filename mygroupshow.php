@@ -390,7 +390,7 @@ function listByPriority($id, $query, $order)
 function listByStatus($id, $query, $order)
 {
 	global $mysql_tstatus_table, $mysql_tickets_table, $db;
-	$flag = 0;
+
 
 	$sql = "select status from $mysql_tstatus_table order by rank $order";
 	$result = $db->query($sql);
@@ -403,6 +403,7 @@ function listByStatus($id, $query, $order)
 	//now we have to list all of the tickets that have a priority other than what is in the priority list
 	//ie. if a priority gets deleted via the admin tool and there are still tickets with that priority, we
 	// still need to list them.
+    $flag = 0;
 
 	$sql = "select * from $mysql_tickets_table where ";
 	$status = getStatusList();

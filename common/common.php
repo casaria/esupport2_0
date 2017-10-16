@@ -3026,7 +3026,7 @@ function ProcessExtendedNotifications($cc_template_name, $mms_template_name, $st
 function displayUserTicket($result)
 {
     global $cookie_name, $highest_pri, $theme, $db, $admin_site_url;
-
+    $labor_minutes_total = 0;
     $second = getSecondPriority();
 
     $recordcount = 0;
@@ -3077,8 +3077,9 @@ function displayUserTicket($result)
 
 
         // Calculates total time spent on the ticket in minutes
+        /*
         $sql3 = "SELECT sum(minutes) FROM tickets,time_track WHERE (tickets.id=time_track.ticket_id AND tickets.id=" . $row[id] . ")";
-        echo '<td class=back2 align=right>';
+
         $result3 = $db->query($sql3);
         $row3 = $db->fetch_array($result3);
 
@@ -3087,7 +3088,9 @@ function displayUserTicket($result)
         } else {
             $minutes = "0";
         }
-
+        */
+        $labor_minutes_total +=
+        echo '<td class=back2 align=right>';
         showFormattedTime($minutes * 60, 1, 1);
         echo '</td>';
 

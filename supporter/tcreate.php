@@ -96,7 +96,7 @@ if(isset($create)){
 
 
 	//update the log so it shows who created the ticket now.
-	$msg = "<i>\$lang_ticketcreatedby $logged_in_user</i>";
+	$msg = "<i>$lang_ticketcreatedby $logged_in_user</i>";
 	$log = updateLog($id, $msg);
 	$sql = "update $mysql_tickets_table set update_log='$log' where id=$id";
 	$db->query($sql);

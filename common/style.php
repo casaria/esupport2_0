@@ -83,7 +83,7 @@ $tablePadding = 10;
             background-color: lightskyblue;
             margin: 2px;
             border: 1px solid ;
-            background: transparent;
+           /* background: transparent;
             padding: 5px 10px 5px 5px;
             font-size: 16px;
             border: 1px solid #f4a62b;
@@ -91,8 +91,7 @@ $tablePadding = 10;
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
-            background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat #eee;
-        }
+            background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat */
         #selecwidth2{
             width:375px;
             background-color: #f4a62b;

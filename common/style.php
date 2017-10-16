@@ -82,7 +82,6 @@ $tablePadding = 10;
         #selecwidth {
             background-color: #b4e8f7;
             border: 1px solid;
-             background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat */
         }   
         #selecwidth2{
             width:375px;
@@ -91,7 +90,7 @@ $tablePadding = 10;
         #selecwidth, selectwidth2 option{
             width:375px; font-weight:700;
             color: darkslateblue;
-            fongt-size: 18;
+            font-size: 16;
         }
         BODY {background: <?php echo $theme['bgcolor'];?> ; color: black; font-weight:700;}
 

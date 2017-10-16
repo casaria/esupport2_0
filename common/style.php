@@ -82,6 +82,15 @@ $tablePadding = 10;
         #selecwidth {
             background-color: #afe7f7;
             border: 1px solid;
+            border: 0 none;
+            color: #FFFFFF;
+            background: transparent;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 2px 10px;
+            width: 378px;
+            *width: 350px;
+            *background: #58B14C;
             /* background: transparent;
              padding: 5px 10px 5px 5px;
              font-size: 16px;

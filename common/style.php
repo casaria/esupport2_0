@@ -82,18 +82,6 @@ $tablePadding = 10;
         #selecwidth {
             background-color: #afe7f7;
             border: 1px solid;
-
-            outline: 0;
-            overflow: hidden;
-            height: 30px;
-            background: #2c343c;
-    =
-            padding: 5px 3px 5px 10px;
-            -moz-border-radius: 6px;
-            -webkit-border-radius: 6px;
-
-
-
             /* background: transparent;
              padding: 5px 10px 5px 5px;
              font-size: 16px;
@@ -103,7 +91,7 @@ $tablePadding = 10;
              -moz-appearance: none;
              appearance: none;
              background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat */
-        }
+        }   
         #selecwidth2{
             width:375px;
             background-color: #d0d6e8;

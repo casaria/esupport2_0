@@ -448,7 +448,8 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 		echo "<input type=hidden name=old_emailcc value='".$info['emailcc']."'>";
         echo "<input type=hidden name=old_status value='".$info['status']."'>";
 		echo "<input type=hidden name=old_status value='".$info['status']."'>";
-		echo "<input type=submit name=update value=\"$lang_updateticket\">";
+        echo "<input type=hidden name=minutes_labor='".$info['status']."'>";
+        echo "<input type=submit name=update value=\"$lang_updateticket\">";
 		echo "</form>";
 
 		if($enable_kbase == 'On'){

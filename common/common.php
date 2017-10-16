@@ -1709,7 +1709,7 @@ function displayTicket($result)
             $minutes = "0";
         } */
         echo '<td class=back2 align=right>';
-        $minutes = $row[minutes_labor_estimated];
+        $minutes = $row[minutes_labor];
         /*
         $sql4= "UPDATE $mysql_tickets_table SET `minutes_labor_estimated`=$minutes where `id`=$row[id]";
         $db->query($sql4);
@@ -1869,7 +1869,7 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 				<td> 
 					<table cellSpacing=1 cellPadding=5  width="100%" border=0>
 						<tr> 
-							<td class=info width="180px" align=left colspan=2 align=center><b>'.$lang_ticketinfo.'</b></td>
+							<td class=info width="180px" align=left colspan=2 ><b>'.$lang_ticketinfo.'</b></td>\
 						</tr>		
 						<tr>';
 

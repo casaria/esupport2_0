@@ -80,8 +80,7 @@ $tablePadding = 10;
         @import url(https://fonts.googleapis.com/css?family=Lato);
         table {-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 1px; font-weight:500;}
         #selecwidth{
-            background-color: lightskyblue;
-            margin: 2px;
+            background-color: #afe7f7;
             border: 1px solid ;
            /* background: transparent;
             padding: 5px 10px 5px 5px;
@@ -94,7 +93,7 @@ $tablePadding = 10;
             background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat */
         #selecwidth2{
             width:375px;
-            background-color: #f4a62b;
+            background-color: #d0d6e8;
         }
         #selecwidth, selectwidth2 option{
             width:375px; font-weight:700;

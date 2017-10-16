@@ -82,12 +82,12 @@ $tablePadding = 10;
         #selecwidth {
             background-color: #afe7f7;
             border: 1px solid;
-
+            width:375px;
             outline: 0;
             overflow: hidden;
-            padding: 5px 3px 5px 10px;
-            -moz-border-radius: 6px;
-            -webkit-border-radius: 6px;
+            padding: 5px 3px 5px 5px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
 
 
 

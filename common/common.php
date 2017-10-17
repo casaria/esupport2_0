@@ -3485,7 +3485,7 @@ function displayTimeHistory()
     	echo '</td>';     	
     	    		
     	echo '<td width=15% class=back2>';
-    			showFormattedTime($row[minutes] * 60, 0);
+    			showFormattedTime($row[minutes] * 60, 0, 1);
     	echo '</td>';			
     	echo '<td class=back>';
     			echo "$row[reference]"; 
@@ -3519,6 +3519,7 @@ function displayTimeHistory()
 	$minutes_after_hours = 1.5 * $row_after_hours[0];
 	
 	showFormattedTime($minutes_after_hours * 60, 0, 1);
+	echo " rounded to 15 min";
 	
 	echo'</td> <td class=back> ';
 	showFormattedTime($minutes * 60, 0,1);

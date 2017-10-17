@@ -351,8 +351,12 @@ return $summary;
 }
 
 
-
-
+/**
+ * @param $id
+ * @param $query
+ * @param $order
+ * @return array
+ */
 function listByPriority($id, $query, $order)
 {
 	global $mysql_tpriorities_table, $mysql_tickets_table, $db;

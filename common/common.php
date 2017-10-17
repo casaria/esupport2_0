@@ -3027,6 +3027,7 @@ function displayUserTicket($result)
 {
     global $cookie_name, $highest_pri, $theme, $db, $admin_site_url;
     $labor_minutes_total = 0;
+    $minutes = 0;
     $second = getSecondPriority();
 
     $recordcount = 0;
@@ -3089,7 +3090,8 @@ function displayUserTicket($result)
             $minutes = "0";
         }
         */
-        $labor_minutes_total += $row['labor_minutes'];
+        $minutes = $row['labor_minutes'];
+        $labor_minutes_total += $minutes;
         echo '<td class=back2 align=right>';
         showFormattedTime($minutes * 60, 1, 1);
         echo '</td>';

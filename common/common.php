@@ -3518,10 +3518,10 @@ function displayTimeHistory()
 	
 	$minutes_after_hours = 1.5 * $row_after_hours[0];
 	
-	showFormattedTime($minutes_after_hours * 60, 0);
+	showFormattedTime($minutes_after_hours * 60, 0, 1);
 	
 	echo'</td> <td class=back> ';
-	showFormattedTime($minutes * 60, 0);
+	showFormattedTime($minutes * 60, 0,1);
 	echo '</td>';
 
 	echo'</td> <td class=back2> <B>';

@@ -1,8 +1,8 @@
 <?php
 
-include "../models/CountryRepository.php";
+include "/jsgrid-php/models/CountryRepository.php";
 
-$config = include("../db/config.php");
+$config = include("/jsgrid-php/db/config.php");
 $db = new PDO($config["db"], $config["username"], $config["password"]);
 $countries = new CountryRepository($db);
 

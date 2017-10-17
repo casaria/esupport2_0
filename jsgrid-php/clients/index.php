@@ -1,8 +1,8 @@
 <?php
 
-include "../models/ClientRepository.php";
+include "/jsgrid-php/models/ClientRepository.php";
 
-$config = include("../db/config.php");
+$config = include("/jsgrid-php/db/config.php");
 $db = new PDO($config["db"], $config["username"], $config["password"]);
 $clients = new ClientRepository($db);
 

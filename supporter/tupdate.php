@@ -458,7 +458,7 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
         echo "<input type=hidden name=old_status value='".$info['status']."'>";
         echo "<input type=hidden name=minutes_labor=$minutes>";
         echo "<input type=submit name=update value=\"$lang_updateticket\">";
-		echo "</form>"
+		echo "</form>";
 
 		if($enable_kbase == 'On'){
 			echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>&nbsp;&nbsp;";

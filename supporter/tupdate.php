@@ -212,9 +212,8 @@ if(isset($update)) {
 
 		$sql = "update $mysql_tickets_table set groupid='$sg', supporter='" . $name['user_name'] . "', supporter_id='$supporter_id',
 				priority='$prio', status='$status', user='$username', email='$user_email', office='$office', phone='$phone',
-				minutes_labor='$minutes_labor', equipment='$equipment', category='$category',platform='$platform', short='$short', description='$description',
-                 }
-                 id=$id";
+				minutes_labor='$minutes_labor', equipment='$equipment', category='$category',platform='$platform', short='$short', description='$description'
+                WHERE id=$id";
 	} else {
 		$short = addslashes(stripScripts($short));
 		$description = addslashes(stripScripts($description));

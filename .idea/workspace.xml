@@ -18,7 +18,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jsgrid-php/public/css/jsgrid-theme.min.css" afterPath="$PROJECT_DIR$/jsgrid-php/public/css/jsgrid-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jsgrid-php/public/css/jsgrid.min.css" afterPath="$PROJECT_DIR$/jsgrid-php/public/css/jsgrid.min.css" />
     </list>
     <ignored mask="workspace.xml" />
     <ignored mask="error_log" />
@@ -132,17 +132,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jsgrid.min.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="jsgrid.min.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jsgrid-php/public/css/jsgrid.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="104" column="10" lean-forward="true" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="10" />
+            <state relative-caret-position="425">
+              <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jsgrid-theme.min.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jsgrid-theme.min.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jsgrid-php/public/css/jsgrid-theme.min.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="527">
@@ -275,7 +275,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/common/mysql.class.php" />
         <option value="$PROJECT_DIR$/jsgrid-php/models/ClientRepository.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0fef9fff-b91c-41a0-98a6-099749727d3e/console_4.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0fef9fff-b91c-41a0-98a6-099749727d3e/console_5.sql" />
@@ -326,6 +325,7 @@
         <option value="$PROJECT_DIR$/jsgrid-php/public/js/jsgrid.min.js" />
         <option value="$PROJECT_DIR$/jsgrid-php/index.html" />
         <option value="$PROJECT_DIR$/jsgrid-php/public/css/jsgrid-theme.min.css" />
+        <option value="$PROJECT_DIR$/jsgrid-php/public/css/jsgrid.min.css" />
       </list>
     </option>
   </component>
@@ -766,14 +766,7 @@
       <workItem from="1508059989923" duration="454000" />
       <workItem from="1508085300274" duration="15211000" />
       <workItem from="1508107715896" duration="7031000" />
-      <workItem from="1508187620386" duration="29755000" />
-    </task>
-    <task id="LOCAL-00787" summary="displayTicket time totals added">
-      <created>1508132836674</created>
-      <option name="number" value="00787" />
-      <option name="presentableId" value="LOCAL-00787" />
-      <option name="project" value="LOCAL" />
-      <updated>1508132836674</updated>
+      <workItem from="1508187620386" duration="29874000" />
     </task>
     <task id="LOCAL-00788" summary="displayTicket time totals added">
       <created>1508155478024</created>
@@ -1111,11 +1104,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508240312256</updated>
     </task>
-    <option name="localTasksCounter" value="836" />
+    <task id="LOCAL-00836" summary="JSGRID Color play">
+      <created>1508240374747</created>
+      <option name="number" value="00836" />
+      <option name="presentableId" value="LOCAL-00836" />
+      <option name="project" value="LOCAL" />
+      <updated>1508240374747</updated>
+    </task>
+    <option name="localTasksCounter" value="837" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="684478000" />
+    <option name="totallyTimeSpent" value="684597000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2410,14 +2410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jsgrid-php/public/css/jsgrid.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="104" column="10" lean-forward="true" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jsgrid-php/public/js/jsgrid.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="683">
@@ -2444,6 +2436,14 @@
             <element signature="e#3443#12318#2" expanded="true" />
             <element signature="e#12552#32519#2" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsgrid-php/public/css/jsgrid.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>

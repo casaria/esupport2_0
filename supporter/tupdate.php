@@ -439,6 +439,14 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 		if($enable_time_tracking == 'On'){
 			createTimeUpdate();
 		}
+        if ($enable_time_tracking == 'On' ) {
+
+            $minutes = $total_minutes['labor_minutes'] + $total_minutes['labor_after_hours'];
+        } else {
+		    $minutes = $info['minutes_labor'];
+        }
+
+
 		echo "<center>";
 		echo "<input type=hidden name=sg value='".$sg."'>";
 		echo "<input type=hidden name=id value='".$info['id']."'>";
@@ -448,11 +456,6 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 		echo "<input type=hidden name=old_emailstatuschange value='".$info['emailstatuschange']."'>";
 		echo "<input type=hidden name=old_emailcc value='".$info['emailcc']."'>";
         echo "<input type=hidden name=old_status value='".$info['status']."'>";
-
-		if ($enable_time_tracking == 'On' ) {
-
-		    $minutes = $total_minutes['labor_minutes'] + $total_minutes['labor_after_hours'];
-        } else $minutes = $info['minutes_labor'];
         echo "<input type=hidden name=minutes_labor=$minutes>";
         echo "<input type=submit name=update value=\"$lang_updateticket\">";
 		echo "</form>"

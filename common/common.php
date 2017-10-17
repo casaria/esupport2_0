@@ -31,6 +31,8 @@
 			**
 			***************************************************************************************/
 
+$version='1.5.0';
+
 //create the connection to the database.
 
 require_once 'config.php';
@@ -95,7 +97,8 @@ $enable_kbase = $var['kbase'];						//enable knowledge base
 //$enable_attachments = $var['attachments'];			//enable attachments +++ not a field in settings
 $default_theme = $var['default_theme'];				//the name of the default theme that is set by the admin
 $default_language = $var['default_language'];			//the default language
-$version = $var['version'];							//version number of the helpdesk software
+
+//$version = $var['version'];							//version number of the helpdesk software
 $pubpriv = $var['pubpriv'];							//public/private setting
 $enable_tattachments = $var['tattachments'];			//enable ticket attachments
 $enable_kattachments = $var['kattachments'];			//enable knowledge base attachments

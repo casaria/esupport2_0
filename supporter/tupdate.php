@@ -47,6 +47,7 @@ require "../common/login.php";
 $time_offset = getTimeOffset($cookie_name);
 $time = time() + ($time_offset * 3600);
 $timestamp = $time;
+$total_minutes =  array(0,0);
 
 if(!$id){
         printerror($lang_missing_info);
@@ -431,7 +432,7 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 		createTicketInfo();
 
 		if($enable_time_tracking == 'On'){
-			displayTimeHistory();
+			$total_minutes = displayTimeHistory();
 		}
 		displayMaterials();	
 				
@@ -447,10 +448,14 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 		echo "<input type=hidden name=old_emailstatuschange value='".$info['emailstatuschange']."'>";
 		echo "<input type=hidden name=old_emailcc value='".$info['emailcc']."'>";
         echo "<input type=hidden name=old_status value='".$info['status']."'>";
-		echo "<input type=hidden name=old_status value='".$info['status']."'>";
-        echo "<input type=hidden name=minutes_labor='".$info['minutes_labor']."'>";
+
+		if ($enable_time_tracking == 'On' ) {
+
+		    $minutes = $total_minutes['labor_minutes'] + $total_minutes['labor_after_hours'];
+        } else $minutes = $info['minutes_labor'];
+        echo "<input type=hidden name=minutes_labor=$minutes>";
         echo "<input type=submit name=update value=\"$lang_updateticket\">";
-		echo "</form>";
+		echo "</form>"
 
 		if($enable_kbase == 'On'){
 			echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>&nbsp;&nbsp;";

@@ -3529,6 +3529,7 @@ function displayTimeHistory()
 	echo '</B></td>';
 
 	endTable();
+	return  array("labor_minutes" => $minutes, "labor_after_hours" => $minutes_after_hours);
 }
 
 function createTicketHeader($msg)

@@ -118,6 +118,9 @@ if(isset($update)) {
 		$sql = "INSERT into $mysql_time_table (ticket_id, supporter_id, minutes, work_date, reference, after_hours, engineer_rate)" .
 			" values ('$id', '$supporter1', '$time_spent', '$work_date_stamp' ,'$reference', '$after_hoursbox', '$engineer_ratebox')";
 		$db->query($sql);
+
+
+        $minutes_labor += $time_spent;
 	}
 
 

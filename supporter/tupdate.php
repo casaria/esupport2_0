@@ -113,7 +113,7 @@ if(isset($update)) {
 	//lets update the time spent first.
 	if (isset($time_spent) && $time_spent != '' && $enable_time_tracking == 'On') {
 		//time is set to midnight
-		$work_date_stamp = mktime(0, 0, 0, $womonth, $woday, $woyear);
+		$work_date_stamp = mktime(8, 59, 0, $womonth, $woday, $woyear);
 
 		$sql = "INSERT into $mysql_time_table (ticket_id, supporter_id, minutes, work_date, reference, after_hours, engineer_rate)" .
 			" values ('$id', '$supporter1', '$time_spent', '$work_date_stamp' ,'$reference', '$after_hoursbox', '$engineer_ratebox')";
@@ -122,7 +122,6 @@ if(isset($update)) {
 
         $minutes_labor += $time_spent;
 	}
-
 
 	//if the priority is changed, update the log to reflect the change.
 	if ($old_pri != $prio) {

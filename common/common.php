@@ -1961,7 +1961,7 @@ echo '
 **	function createUGroupsMenu():
 **		Takes no arguments.  Creates the drop down menu 
 ************************************************************************************************************/
-function createUGroupsMenu($flag)
+function createUGroupsMenu()
 {
 	global $mysql_ugroups_table, $sg, $ug, $db;
 
@@ -1969,8 +1969,7 @@ function createUGroupsMenu($flag)
 	$result = $db->query($sql);
 	$num_rows = 0;
 	
-	if($flag == 1)
-		echo "<option></option>\n";
+
 
 		while($row = $db->fetch_array($result)){
 			if($num_rows == 1 || $row['id'] != 0){

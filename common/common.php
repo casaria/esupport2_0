@@ -1718,7 +1718,7 @@ function displayTicket($result)
         echo '<td class=back2 align=right>';
         $minutes = $row['minutes_labor'];
         /*
-        $sql4= "UPDATE $mysql_tickets_table SET `minutes_labor`=$minutes where `id`=$row[id]";
+        $sql4= "UPDATE $my      sql_tickets_table SET `minutes_labor`=$minutes where `id`=$row[id]";
         $db->query($sql4);
         */
             showFormattedTime($minutes * 60, 0  , 1);
@@ -2468,7 +2468,9 @@ function getEmailAddress($name)
 function showFormattedTime($seconds, $daysEnabled = FALSE, $DontRound15min = FALSE, $ShowSeconds = FALSE)
 {
     global $lang_na, $lang_day, $lang_days, $lang_hour, $lang_hours, $lang_minute, $lang_minutes, $lang_second, $lang_seconds;
-
+    $days = 0;
+    $hours = 0;
+    $minutes = 0;
     if ($seconds <= 0) {
         echo "<b>$lang_na</b>";
     } else {

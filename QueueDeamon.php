@@ -58,4 +58,7 @@ function CheckForPrivacy($time) {
 	 }
 	 return false;
 }
+//	/home/casaria/public_html/tree/bin/scheduler.php > /dev/null
 ?>
+
+

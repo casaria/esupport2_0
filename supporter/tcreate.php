@@ -328,13 +328,13 @@ function createSupportGroupMenu($ugroup=1)
 	
 	
 		while($row = $db->fetch_array($result)){
-			if($num_rows == 1 || $row[id] != 1){
+			if($num_rows == 1 || $row['id'] != 1){
 				echo "<option value=\"index.php?t=tcre&ug=$ug&userid=$userid&sg=$row[id]\"";
-					if($sg == $row[id] ||  $row[id]== $default_group){
+					if($sg == $row['id'] ||  $row['id']== $default_group){
 						echo " selected";
-						$sg = $row[id];
+						$sg = $row['id'];
 					}
-				echo ">".$row[group_name]."</option>";
+				echo ">".$row['group_name']."</option>";
 			}
 		}
 	return $sg;

@@ -85,6 +85,7 @@ $last_active = getLastActiveTime($cookie_name);
 $user_info = getCredentialsArray($cookie_name);
 $enable_CloudControl = getCloudControlUserSetting($_SESSION['cookie_name']);
 
+
 ?>
 <BODY class=body>
 <TABLE class=border cellSpacing=0 cellPadding=0 width="<?php echo $theme['width']; ?>" align=center 

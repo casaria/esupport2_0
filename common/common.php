@@ -1883,7 +1883,7 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 
 						echo '</tr><tr>
                              	<td class=back2 width="180px" align=right>* '.$lang_platform.':</td>
-							<td class=back><select id="selecwidth" name=platform>'; createPlatformMenu(0);
+							<td class=back><select id="selecwidth" name=platform>'; createPlatformMenu(0, "");
 
 						echo '
                                </select>
@@ -2128,7 +2128,7 @@ function createKCategoryMenu($flag=0, $category)
 **	function createPlatformMenu():
 **		Takes no arguments.  Creates the drop down menu for the list of platforms.
 ************************************************************************************************************/
-function createPlatformMenu($flag=0, $platform)
+function createPlatformMenu($flag=0, $Selectplatform)
 {
 	global $mysql_platforms_table, $info, $db;
 
@@ -2149,7 +2149,7 @@ function createPlatformMenu($flag=0, $platform)
 		//echo "We're here!";
 		while($row = $db->fetch_row($result)){
 			echo "<option value=\"$row[0]\" ";
-				if($row[0] == $platform) echo "selected";
+				if($row[0] == $Selectplatform) echo "selected";
 				echo "> $row[0] </option>\n";
 		}
 	}

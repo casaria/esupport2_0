@@ -2134,7 +2134,7 @@ function createPlatformMenu($flag=0, $Selectplatform)
 {
 	global $mysql_platforms_table, $info, $db;
 
-	$sql = "select platform from $mysql_platforms_table order by rank asc";
+	$sql = 'select platform from $mysql_platforms_table order by rank asc';
 	$result = $db->query($sql);
 
 	if($flag == 1)

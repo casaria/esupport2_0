@@ -40,6 +40,7 @@ if($language == '')
 else
 	require_once "../lang/$language.lang.php";
 
+
 require "../common/login.php";
 
 

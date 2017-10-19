@@ -36,15 +36,18 @@ $version='1.5.0a';
 //create the connection to the database.
 
 require_once 'config.php';
+
+
 $pconnect = 0;
 
 $reg = 'no';
-$db = new $database();
+$db = new database();
 $db->connect($db_host, $db_user, $db_pwd, $db_name, $pconnect);
 
 
 $dbg = NULL;
-
+$hidemenu = 0;
+$s = '';
 
 /**********************************************************************************************************/
 /****************************	Other Variables	***********************************************************/
@@ -1650,21 +1653,21 @@ function displayTicket($result)
 
         switch ($row['priority']) {
             case ("$highest_pri"):
-                echo "<font color=red><b>" . $row[priority] . "</b></font>";
+                echo "<font color=red><b>" . $row['priority'] . "</b></font>";
                 break;
             case ($second):
-                echo "<b>" . $row[priority] . "</b>";
+                echo "<b>" . $row['priority'] . "</b>";
                 break;
             default:
-                echo $row[priority];
+                echo $row['priority'];
                 break;
         }
 
         echo "</td>
-				<td class=back2> " . date("m/d/y", $row[create_date]) . "</td>";
-        echo "<td class=back> " . date("m/d/y", $row[lastupdate]) . "</td>";
+				<td class=back2> " . date("m/d/y", $row['create_date']) . "</td>";
+        echo "<td class=back> " . date("m/d/y", $row['lastupdate']) . "</td>";
 
-        echo "<td class=back> " . $row[category] . "</td>";
+        echo "<td class=back> " . $row['category'] . "</td>";
 
 
         //cookie_name='.$cookie_name.'
@@ -1675,14 +1678,14 @@ function displayTicket($result)
                 $bsIconRef = $row2['icon_ref'];
             }
         }
-        echo '<a href="updatelog.php?&id=' . $row[id] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',
+        echo '<a href="updatelog.php?&id=' . $row["id"] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',
 					\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">';
 
-        echo $row[status];
+        echo $row['status'];
         echo "</a></td>";
-        echo "<td class=back align=center><img height=28 src=\"../$theme[image_dir]$bsIconRef\"></td>";
+        echo "<td class=back align=center><img height=28 src=\"../$theme[image_dir]\"></td>";
 
-        $response = setResponse($last_update, $row[priority], $row[id]);
+        $response = setResponse($last_update, $row['priority'], $row['id']);
 
         switch ($response) {
             case('1'):
@@ -2414,7 +2417,7 @@ function sendmail($to, $from, $return, $id, $msg, $subject="")
 	fputs($fd, "Reply-To: $return\n");
 	fputs($fd, "Return-Path: $return\n");
 	fputs($fd, "$msg\n");
-  pclose($fd);
+      pclose($fd);
 
 }
 
@@ -2731,7 +2734,7 @@ function getLanguage($name)
 	$sql = "SELECT language from $mysql_users_table where user_name='$name'";
 	$result = $db->query($sql);
 	$language = $db->fetch_array($result);
-	return $language[language];
+	return $language['language'];
 }
 
 function createSGroupCheckboxes()
@@ -2850,10 +2853,10 @@ function getLastActiveTime($name)
 	$result = $db->query($sql);
 	$row = $db->fetch_array($result);
 
-	if($row[lastactive] == '0')
+	if($row['lastactive'] == '0')
 		return "Never";
 	else
-		return $row[lastactive];
+		return $row['lastactive'];
 
 }
 

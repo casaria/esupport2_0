@@ -30,7 +30,7 @@
 			***************************************************************************************/
 
 require_once "../common/config.php";
-require_once "../common/$database.class.php";
+require_once "../common/mysql.class.php";
 require_once "../common/common.php";
 
 if($SERVER_PORT == 80 && $enable_ssl == 'On' && (!isset($cookie_name) || $cookie_name == '')){
@@ -54,6 +54,8 @@ function winPop(url)
         
 <?php  
 $language = getLanguage($cookie_name);
+global $hidemenu;
+
 if($language == '')
 	require_once "../lang/$default_language.lang.php";
 else

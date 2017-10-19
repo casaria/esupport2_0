@@ -45,6 +45,8 @@ $session_name = 'CasariaIncSupport';
 $MailQueuePath = '/var/www/casaria/support/MAILQUEUE/';
 $includePath = '/var/www/casaria/support/common/';
 
+
+
 /*********	You shouldn't need to change anything below here.	***********************************/
 /**********************************************************************************************************/
 /**********************************************************************************************************/

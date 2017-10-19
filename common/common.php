@@ -41,7 +41,7 @@ require_once 'config.php';
 $pconnect = 0;
 
 $reg = 'no';
-$db = new database();
+$db = new $database();
 $db->connect($db_host, $db_user, $db_pwd, $db_name, $pconnect);
 
 
@@ -1716,7 +1716,7 @@ function displayTicket($result)
             $minutes = "0";
         } */
         echo '<td class=back2 align=right>';
-        $minutes = $row[minutes_labor];
+        $minutes = $row['minutes_labor'];
         /*
         $sql4= "UPDATE $mysql_tickets_table SET `minutes_labor`=$minutes where `id`=$row[id]";
         $db->query($sql4);
@@ -2657,7 +2657,7 @@ function showFormattedTime($seconds, $daysEnabled = FALSE, $DontRound15min = FAL
             $sql = "SELECT closed_date from $mysql_time_table where ticket_id=$tid order by id desc;";
             $result = $db->query($sql);
             $row = $db->fetch_array($result);
-            $closed_time = $row[closed_date];
+            $closed_time = $row['closed_date'];
 
             if($closed_time == '' || $closed_time == '0')
                 $curr_time = time();

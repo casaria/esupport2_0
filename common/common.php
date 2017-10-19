@@ -1973,12 +1973,12 @@ function createUGroupsMenu($flag)
 		echo "<option></option>\n";
 
 		while($row = $db->fetch_array($result)){
-			if($num_rows == 1 || $row[id] != 0){
+			if($num_rows == 1 || $row['id'] != 0){
 				echo "<option value=\"index.php?t=tcre&sg=$sg&ug=$row[id]\"";
-					if($ug == $row[id]) echo " selected";
-				echo ">".$row[group_name]."</option>";
+					if($ug == $row['id']) echo " selected";
+				echo ">".$row['group_name']."</option>";
 				//set $ug to the 1st item as default
-				If (! isset($ug)) $ug=$row[id];
+				If (! isset($ug)) $ug=$row['id'];
 				
 			}
 		}
@@ -2883,7 +2883,7 @@ function getDefaultSupporterGroupID($groupid=0)
 	$result = $db->query($sql);
 	$row = $db->fetch_array($result);
 
-	return $row[id];
+	return $row['id'];
 	//return 3;
 }
 

@@ -37,7 +37,7 @@
 //otherwise, grab the selected theme from the database.
 $theme = getThemeVars(getThemeName($cookie_name));
 
-$tablePadding = 10;
+$tablePadding = 6;
 
 
 ?>
@@ -68,7 +68,7 @@ $tablePadding = 10;
     <?php
     if ($theme['font'] == "Titillium Web") {
         $lineHeight = 1.1;
-        $tablePadding = 4;
+        $tablePadding = 2;
     } else  {
         $lineHeight = 1;
         $tablePadding = 3;

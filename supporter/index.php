@@ -100,7 +100,7 @@ border=0>
         <TR> 
           <TD class=hf align=right>
     			<?php echo "$lang_loggedinas <b>$cookie_name</b> (<A class=hf href=\"../common/logout.php\"> $lang_logout</a>)";
-			 echo "$crm_name"; ?>
+			 echo " $crm_name"; ?>
 		 </TD>
         </TR>
         <TR> 
@@ -242,7 +242,8 @@ border=0>
                         echo '
                             </TD>
                           </TR>
-                         </TBODY> 
+                         </TBOD
+                         Y> 
                         </TABLE>
                       </TD>
                     </TR>

@@ -103,7 +103,7 @@ $tablePadding = 6;
         }
         #selectwidth2{
             width:350px;
-            background-color: #f5b56c;
+            background-color: <?php echo $theme['category']; ?>;
             border: 2px solid;
             width:350px;
             outline: 0;

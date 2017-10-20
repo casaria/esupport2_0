@@ -91,7 +91,7 @@ echo "</form>";
 	echo "$lang_equipment: $ticket[equipment]";
 	echo " - ".$ticket["short"]."<br>";
 	echo "$lang_category: $ticket[category] / $lang_platform: $ticket[platform]";
-	echo "<br>$lang_ticketcreatedby: $ticket[user] / $lang_supporter: $ticket[supporter] $platform $short";
+	echo "<br>$lang_ticketcreatedby: $ticket[user] / $lang_supporter: $ticket[supporter]  : $ticket[short];
 ?>
 </td>
 </TR>

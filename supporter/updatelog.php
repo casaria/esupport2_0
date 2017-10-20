@@ -90,7 +90,7 @@ echo "</form>";
 	echo $lang_ulog." Ticket ID #".$id."<br>"; 
 	echo "$lang_equipment: $ticket[equipment]";
 	echo " - ".$ticket["short"]."<br>";
-	echo "$lang_category: $ticket[category] / $lang_platform: $ticket[Platform]";
+	echo "$lang_category: $ticket[category] / $lang_platform: $ticket[platform]";
 	echo "<br>$lang_ticketcreatedby: $ticket[user] / $lang_supporter: $ticket[supporter] $platform $short";
 ?>
 </td>

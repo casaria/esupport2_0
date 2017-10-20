@@ -79,7 +79,7 @@ $tablePadding = 6;
 
         @import url(https://fonts.googleapis.com/css?family=Lato);
         table {-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 1px; font-weight:500;}
-        #selecwidth {
+        #selectwidth{
             background-color: #afe7f7;
             border: 1px solid;
             width:375px;
@@ -101,14 +101,15 @@ $tablePadding = 6;
              appearance: none;
              background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat */
         }
-        #selecwidth2{
+        #selectwidth2{
             width:375px;
             background-color: #d0d6e8;
         }
-        #selecwidth, selectwidth2 option{
+        #selectwidth option{
+
             width:375px; font-weight:600;
             color: darkslateblue;
-            padding: 22px;
+            padding: 5px;
             list-style-type: circle;
             font-size: 13px;
         }
@@ -117,7 +118,7 @@ $tablePadding = 6;
         a:link {text-decoration: none; color: <?php echo $theme['link']; ?>; font-weight:500;}
         a:visited {text-decoration: none; color: <?php echo $theme['link']; ?>;}
         a:active {text-decoration: none; color: <?php echo $theme['link']; ?>;}
-        a:hover {text-decoration: underline; color: <?php echo $theme['link']; ?>;}
+        a:hver {text-decoration: underline; color: <?php echo $theme['link']; ?>;}
 
         a.kbase:link {text-decoration: underline; font-weight: bold; color: <?php echo $theme['text']; ?>;}
         a.kbase:visited {text-decoration: underline; font-weight: bold; color: <?php echo $theme['text']; ?>;}

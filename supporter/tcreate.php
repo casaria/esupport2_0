@@ -80,14 +80,10 @@ if(isset($create)){
 	$emailstatuschange = ($emailstatuschange == "on") ? "On" : "Off";
   
 	$billing_status = "0";
-	
-	$sql = "INSERT into $mysql_tickets_table values(NULL, $time, $sg, $ugroup_id, '$SupporterName',
-	 			 $supporter_id, '$priority', '$status', '$billing_status',	'$UserName', '$email', '$office', '$phone',
-				 '$equipment', '$category', '$platform', '$short', '$description', NULL, 0, $time,
-				 '$emailgroup', '$emailstatuschange', '$emailcc', 0, 0, 0)";
-	
-	
-	$db->query($sql);
+
+    $sql = "INSERT into $mysql_tickets_table values(NULL, $time, $sg, $ugroup_id, '$SupporterName', $supporter_id, '$priority', '$status', '$billing_status','$UserName','$email','$office', '$phone','$equipment', '$category', '$platform', '$short', '$description', NULL, 0, $time,'$emailgroup', '$emailstatuschange', '$emailcc', 0, 0, 0)";
+
+    $db->query($sql);
 
 	//grab the id number of the ticket so we can create the created by in the update log.
 	$sql = "SELECT id from $mysql_tickets_table where create_date='$time' and user='$UserRowArray' and short='$short' and description='$description'";

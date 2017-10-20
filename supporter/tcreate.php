@@ -190,26 +190,24 @@ function createSupporterInfo()
 				<td class=back align=left>
 				<select id="selectwidth" name=supporter_id>';
 				createSupporterMenu($sg);
-				echo '</select>
-				
-				</td>
-				</tr>
-				<tr>
+				echo '</select></td></tr>';
+
+
+
+		echo'	<tr>
 				<td class=back2 align=left>'.$lang_ticket.' '.$lang_priority.':</td>
 				<td class=back>
 				<select id="selectwidth" name=priority>';
-				
 				createPriorityMenu();  
-							
-		echo '</select>
-                 </tr><tr>
-				</td>
+		echo '</select></tr></td>';
+
+		echo '<tr>
 				<td class=back2 align=left>'.$lang_ticket.' '.$lang_status.':</td>
 				<td class=back>
 				<select id="selectwidth2" name=status>';
-				
+
 				createStatusMenu(0,1);
-							
+
 		echo '</select>
 				</td>
 				</tr>';

@@ -68,7 +68,7 @@ $tablePadding = 6;
     <?php
     if ($theme['font'] == "Titillium Web") {
         $lineHeight = 1.1;
-        $tablePadding = 2;
+        $tablePadding = 5;
     } else  {
         $lineHeight = 1;
         $tablePadding = 3;

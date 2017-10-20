@@ -108,7 +108,7 @@ $tablePadding = 6;
         #selecwidth, selectwidth2 option{
             width:375px; font-weight:600;
             color: darkslateblue;
-            line-height: 70px;
+            padding: 22px;
             list-style-type: circle;
             font-size: 13px;
         }

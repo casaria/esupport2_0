@@ -3290,7 +3290,7 @@ function getSupporterList($id, $filter)
 		$ResultArray[$i]['sum'] = $row['sum'];
 		$i++;
 	}
-	return $ResultArrayarray;
+	return $ResultArray;
 }
 
 

@@ -81,6 +81,7 @@ $tablePadding = 6;
         table {-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 1px; font-weight:500;}
         #selectwidth{
             background-color: #afe7f7;
+            Vbackground-color: <?php echo $theme['subcategory']; ?>
             border: 2px solid;
             width:350px;
             outline: 0;
@@ -88,6 +89,7 @@ $tablePadding = 6;
             padding: 2px 2px 2px 2px;
             -moz-border-radius: 3px;
             -webkit-border-radius: 3px;
+
 
 
 
@@ -124,7 +126,8 @@ $tablePadding = 6;
         #selectwidth, option{
 
             width:350px; font-weight:600;
-            color: darkslateblue;
+            //color: darkslateblue;
+            color: <?php echo $theme['text']; ?>;
             padding: 5px;
             list-style-type: circle;
             font-size: 13px;

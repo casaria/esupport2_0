@@ -61,18 +61,18 @@ if(!$id){
 if($action == 'download'){
 	$query = $db->query("SELECT * from $mysql_attachments_table where id=$id");
 	$file = $db->fetch_array($query);
-		if($file['filename'] == ''){
+		if($file[filename] == ''){
 		echo $lang_fileremoved;
 		exit;
 	}
 	$db->query("UPDATE $mysql_attachments_table SET downloads=downloads+1 WHERE id='$id'");
 	// Send the attachment
 	header("Content-disposition: filename=$file[filename]");
-	header("Content-Length: ".strlen($file['attachment']));
+	header("Content-Length: ".strlen($file[attachment]));
 	header("Content-type: $file[filetype]");
 	header("Pragma: no-cache");
 	header("Expires: 0");
-	echo $file['attachment'];
+	echo $file[attachment];
 	exit;
 	
 }
@@ -114,7 +114,7 @@ if(isset($update)) {
 	//lets update the time spent first.
 	if (isset($time_spent) && $time_spent != '' && $enable_time_tracking == 'On') {
 		//time is set to midnight
-		$work_date_stamp = mktime(8, 59, 0, $womonth, $woday, $woyear);
+		$work_date_stamp = mktime(9, 30, 0, $womonth, $woday, $woyear);
 
 		$sql = "INSERT into $mysql_time_table (ticket_id, supporter_id, minutes, work_date, reference, after_hours, engineer_rate)" .
 			" values ('$id', '$supporter1', '$time_spent', '$work_date_stamp' ,'$reference', '$after_hoursbox', '$engineer_ratebox')";
@@ -449,7 +449,7 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
         }
 
 
-		echo "<TR><td class='back2'>";
+		echo "<TR><td class=\"back2\">";
 		echo "<input type=hidden name=sg value='".$sg."'>";
 		echo "<input type=hidden name=id value='".$info['id']."'>";
 		echo "<input type=hidden name=old_supporter value='".$info['supporter']."'>";
@@ -482,7 +482,13 @@ function createSupporterInfo()
 
 startTable("$lang_supporterinfo", "left", 100, 4);	
 
-
+        ECHO '                <tr>                              
+							<td class=back2 align=right>'.$lang_supportergroup.'</td>
+							<td class=back align="left">';
+							?>
+							<select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)">
+							<?php
+									createGroupMenu(1);
 		echo '
 							</select>
 							</td>
@@ -514,16 +520,8 @@ startTable("$lang_supporterinfo", "left", 100, 4);
 							
 							<select id="selectwidth" name=status>';
 							createStatusMenu(0);
-    echo '					</select></td>
 
-                              </tr><tr>
-                              
-							<td class=back2 align=right>'.$lang_supportergroup.'</td>
-							<td class=back align="left">';
-							?>
-							<select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)">
-							<?php
-									createGroupMenu(1);
+
     echo '                    </select>
 							</td></tr>';
 

@@ -206,7 +206,7 @@ function createSupporterInfo()
 				</td>
 				<td class=back2 align=left>'.$lang_ticket.' '.$lang_status.':</td>
 				<td class=back>
-				<select id="selectwidth" name=status>';
+				<select id="selectwidth2" name=status>';
 				
 				createStatusMenu(0,1);
 							

@@ -332,7 +332,11 @@ function startSession() {
     session_set_cookie_params($session_time);
     session_name($session_name);
     session_start();
-
+    if (!isset($_SESSION['count'])) {
+        $_SESSION['count'] = 0;
+    } else {
+        $_SESSION['count']++;
+    }
 
 }
 

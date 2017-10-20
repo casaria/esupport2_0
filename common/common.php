@@ -3316,7 +3316,7 @@ function getTicketTimeInfo($id)
 	global $mysql_users_table, $mysql_time_table;
 
    		$sql = "select $mysql_users_table.user_name, sum(minutes) as sum, tt.after_hours, supporter_id, opened_date, closed_date from $mysql_users_table, $mysql_time_table as tt where ticket_id=$id and supporter_id=$mysql_users_table.id group by supporter_id, opened_date, closed_date order by sum asc";
-        $resarray = NULL;
+        $resarray = array();
 		$result = $db->query($sql);
 			while($row = $db->fetch_array($result)){
 		//create the array based on the db data.

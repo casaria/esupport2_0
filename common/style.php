@@ -109,6 +109,7 @@ $tablePadding = 6;
             width:375px; font-weight:600;
             color: darkslateblue;
             line-height: 70px;
+            list-style-type: circle;
             font-size: 13px;
         }
         BODY {background: <?php echo $theme['bgcolor'];?> ; color: black; font-weight:600;}

@@ -41,84 +41,86 @@ else
 
 	
 
-if(isset($create)){
-	//after all error checking...insert into the database.
-	
-	$SupporteRowArray = getUserInfo($supporter_id);
-	$SupporterName = $SupporteRowArray['user_name'];
+if(isset($create)) {
+    //after all error checking...insert into the database.
 
-	
-	//+++ change to the timezone of the facility ?? Not
-	//available in database yet
-	//$time_offset = getTimeOffset($name);
-    $time_offset= $SupporteRowArray["time_offset"];
-	$time = time() + ($time_offset * 3600);
-	
-	$UserRowArray = getUserInfo($userid);
-	$UserName = $UserRowArray['user_name'];
-	
-	if($group == '' || $priority == '' || $UserName == '' || $short == '' || $description == ''){
-		header("Location: index.php?t=terr");
-		exit;
-	}
+    $SupporteRowArray = getUserInfo($supporter_id);
+    $SupporterName = $SupporteRowArray['user_name'];
 
-	if($short == ''){
-		$short = "$lang_nodesc";
-	}
-	if($sg == ''){
-		$sg = 1;
-	}
-	
-	
-		$short = addslashes(stripScripts($short));
-	$description = addslashes(stripScripts($description));
-	//$ugroup_id = getUGroupId($usergroup_name);
-	$ugroup_id=$ug;
-	
-	//fix checkboxes
-	$emailgroup = ($emailgroup == "on") ?  "On" : "Off";
-	$emailstatuschange = ($emailstatuschange == "on") ? "On" : "Off";
+
+    //+++ change to the timezone of the facility ?? Not
+    //available in database yet
+    //$time_offset = getTimeOffset($name);
+    $time_offset = $SupporteRowArray["time_offset"];
+    $time = time() + ($time_offset * 3600);
+
+    $UserRowArray = getUserInfo($userid);
+    $UserName = $UserRowArray['user_name'];
+
+    if ($group == '' || $priority == '' || $UserName == '' || $short == '' || $description == '') {
+        header("Location: index.php?t=terr");
+        exit;
+    }
+
+    if ($short == '') {
+        $short = "$lang_nodesc";
+    }
+    if ($sg == '') {
+        $sg = 1;
+    }
+
+
+    $short = addslashes(stripScripts($short));
+    $description = addslashes(stripScripts($description));
+    //$ugroup_id = getUGroupId($usergroup_name);
+    $ugroup_id = $ug;
+
+    //fix checkboxes
+    $emailgroup = ($emailgroup == "on") ? "On" : "Off";
+    $emailstatuschange = ($emailstatuschange == "on") ? "On" : "Off";
 
     $billing_status = "0";
 
-    $sql = "INSERT INTO $mysql_tickets_table (`id`, `create_date`, `groupid`, `ugroupid`, `supporter`, `supporter_id`, `priority`, `status`, `BILLING_STATUS`, `user`, `email`, `office`, `phone`, `equipment`, `category`, `platform`, `short`, `description`, `update_log`, `survey`, `lastupdate`, `emailgroup`, `emailstatuschange`, `emailcc`, `closed_date`, `minutes_labor`, `castag_id`) VALUES (NULL, $time, $sg, $ugroup_id, '$SupporterName', $supporter_id, '$priority', '$status', '$billing_status','$UserName','$email','$office', '$phone','$equipment', '$category', '$platform', '$short', '$description', '', 0, $time,'$emailgroup', '$emailstatuschange', '$emailcc', 0, 0, 0)";
-
     $db->query($sql);
 
+    /*
 	//grab the id number of the ticket so we can create the created by in the update log.
 	$sql = "SELECT id from $mysql_tickets_table where create_date='$time' and user='$UserRowArray' and short='$short' and description='$description'";
 	$result = $db->query($sql);
 	$row = $db->fetch_row($result);
 	$id = $row[0];
+	*/
+
+    $last_insert_id = mysql_insert_id();
+    $id = $last_insert_id;
+
+    //update the log so it shows who created the ticket now.
+    $msg = "<i>$lang_ticketcreatedby $logged_in_user</i>";
+    $log = updateLog($id, $msg);
+    $sql = "update $mysql_tickets_table set update_log='$log' where id=$id";
+    $db->query($sql);
 
 
-	//update the log so it shows who created the ticket now.
-	$msg = "<i>$lang_ticketcreatedby $logged_in_user</i>";
-	$log = updateLog($id, $msg);
-	$sql = "update $mysql_tickets_table set update_log='$log' where id=$id";
-	$db->query($sql);
+    //finally, to keep track of time stuff:
+    if ($status != getRStatus(getLowestRank($mysql_tstatus_table))) {
+        $time = $time + 1;  //add one just so the response time isn't 0.
+        $sql = "INSERT into $mysql_time_table (ticket_id, supporter_id, opened_date) values ('$id', '$supporter_id', $time)";
+        $db->query($sql);
+    }
+
+    //insert the file into the database if it exists.
+    ProcessAttachment();
 
 
-	//finally, to keep track of time stuff:
-	if($status != getRStatus(getLowestRank($mysql_tstatus_table))){
-		$time = $time + 1;  //add one just so the response time isn't 0.
-		$sql = "INSERT into $mysql_time_table (ticket_id, supporter_id, opened_date) values ('$id', '$supporter_id', $time)";
-		$db->query($sql);
-	}
+    //if the pager gateway is enabled...send a page to the supporters of that group if the ticket is set above the default.
 
-	//insert the file into the database if it exists.
-	ProcessAttachment();
-	
-	
-	//if the pager gateway is enabled...send a page to the supporters of that group if the ticket is set above the default.
-
-	if($enable_pager == 'On' && (getRank($priority, $mysql_tpriorities_table) >= $pager_rank_low) ){
-		$template_name = 'email_group_page';
-		sendGroupPage($template_name, $sg, $UserRowArray, $short, $priority, $id);
-	}
-	header("Location: $supporter_site_url/index.php");
+    if ($enable_pager == 'On' && (getRank($priority, $mysql_tpriorities_table) >= $pager_rank_low)) {
+        $template_name = 'email_group_page';
+        sendGroupPage($template_name, $sg, $UserRowArray, $short, $priority, $id);
+    }
+    //now print out the html that lets the user know that their ticket was submitted successfully.
+    header("Location: $supporter_site_url/index.phpindex.php?t=tsuc&id=$id");
 }
-
 else{
 	echo "<form action=tcreate.php method=post enctype=\"multipart/form-data\">";
 ?>

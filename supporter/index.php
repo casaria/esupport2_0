@@ -347,6 +347,12 @@ if (isAdministrator($cookie_name) && $awaiting_approval){
 						case ("gstats"):
 							require "../admin/gstats.php";
 							break;
+
+
+                        case ("tsuc"):
+                              showSubmitResult(TRUE,$id);
+                            break;
+
 						case ("slist"):
 							require "../admin/slist.php";
 							break;

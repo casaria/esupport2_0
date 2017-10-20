@@ -173,11 +173,11 @@ echo "</form>";
 
 
   while($row = $db->fetch_array($resultsupporters)){
-    if ($row[minutes] != 0) {	
+    if ($row['minutes'] != 0) {
     	echo '<tr>
     		<td width=27% class=back2 align=right>';
     		if ($row['work_date'])
-    		    echo date("F j, Y", $row[work_date]);
+    		    echo date("F j, Y", $row['work_date']);
     		  else
     		    echo "- No Date -";
     		echo '</td>';
@@ -188,7 +188,7 @@ echo "</form>";
     			echo "$sup_row[user_name]"; 
     	echo '</td>';			
     	echo '<td width=25% class=back2>';
-    			showFormattedTime($row[minutes] * 60, 0);
+    			showFormattedTime($row['minutes'] * 60, 0);
     	echo '</td>';			
     	echo '<td class=back>';
     			echo "$row[reference]"; 

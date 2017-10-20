@@ -81,6 +81,8 @@ if(isset($create)) {
 
     $billing_status = "0";
 
+    $sql = "INSERT INTO $mysql_tickets_table (`id`, `create_date`, `groupid`, `ugroupid`, `supporter`, `supporter_id`, `priority`, `status`, `BILLING_STATUS`, `user`, `email`, `office`, `phone`, `equipment`, `category`, `platform`, `short`, `description`, `update_log`, `survey`, `lastupdate`, `emailgroup`, `emailstatuschange`, `emailcc`, `closed_date`, `minutes_labor`, `castag_id`) VALUES (NULL, $time, $sg, $ugroup_id, '$SupporterName', $supporter_id, '$priority', '$status', '$billing_status','$UserName','$email','$office', '$phone','$equipment', '$category', '$platform', '$short', '$description', '', 0, $time,'$emailgroup', '$emailstatuschange', '$emailcc', 0, 0, 0)";
+
     $db->query($sql);
 
     /*
@@ -120,6 +122,7 @@ if(isset($create)) {
     }
     //now print out the html that lets the user know that their ticket was submitted successfully.
     header("Location: $supporter_site_url/index.phpindex.php?t=tsuc&id=$id");
+
 }
 else{
 	echo "<form action=tcreate.php method=post enctype=\"multipart/form-data\">";

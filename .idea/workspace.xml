@@ -20,7 +20,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/common.php" afterPath="$PROJECT_DIR$/common/common.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/supporter/updatelog.php" afterPath="$PROJECT_DIR$/supporter/updatelog.php" />
     </list>
     <ignored mask="workspace.xml" />
     <ignored mask="error_log" />
@@ -74,13 +74,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="common.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="common.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/common.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="2149" column="11" lean-forward="true" selection-start-line="2149" selection-start-column="11" selection-end-line="2149" selection-end-column="11" />
               <folding>
                 <element signature="e#6#1399#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="updatelog.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/supporter/updatelog.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="44" column="39" lean-forward="true" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+              <folding>
+                <marker date="1508460958350" expanded="true" signature="1996:2049" ph="select updat... ${$mysql_tickets_table}" />
+                <marker date="1508460958350" expanded="true" signature="4653:4659" ph=" " />
+                <marker date="1508460958350" expanded="true" signature="4659:4665" ph=" " />
+                <marker date="1508460958350" expanded="true" signature="4665:4671" ph=" " />
+                <marker date="1508460958350" expanded="true" signature="4671:4677" ph=" " />
+                <marker date="1508460958350" expanded="true" signature="5751:5757" ph=" " />
+                <marker date="1508460958350" expanded="true" signature="5757:5763" ph=" " />
+                <marker date="1508460958350" expanded="true" signature="5763:5769" ph=" " />
+                <marker date="1508460958350" expanded="true" signature="5769:5775" ph=" " />
+                <marker date="1508460958350" expanded="true" signature="5928:6078" ph="select trk.s... tickets" />
+                <marker date="1508460958350" expanded="true" signature="6220:6265" ph="..." />
+                <marker date="1508460958350" expanded="true" signature="6464:6506" ph="select * fro... ${$mysql_users_table}" />
               </folding>
             </state>
           </provider>
@@ -380,7 +403,6 @@
         <option value="$PROJECT_DIR$/supporter/updatelogprint.php" />
         <option value="$PROJECT_DIR$/tinfo.php" />
         <option value="$PROJECT_DIR$/common/config.esupport.php" />
-        <option value="$PROJECT_DIR$/supporter/updatelog.php" />
         <option value="src:table:/c788f063/f5a594a7-31d9-494d-a74e-43164176beae/hostgo_hdesk1.tickets" />
         <option value="$PROJECT_DIR$/tcreate.php" />
         <option value="$PROJECT_DIR$/mygroupshow.php" />
@@ -410,6 +432,7 @@
         <option value="$PROJECT_DIR$/supporter/tupdate.php" />
         <option value="$PROJECT_DIR$/common/login.php" />
         <option value="$PROJECT_DIR$/common/common.php" />
+        <option value="$PROJECT_DIR$/supporter/updatelog.php" />
       </list>
     </option>
   </component>
@@ -831,14 +854,7 @@
       <workItem from="1508270118347" duration="6840000" />
       <workItem from="1508376591603" duration="3836000" />
       <workItem from="1508388059373" duration="21770000" />
-      <workItem from="1508444976781" duration="13577000" />
-    </task>
-    <task id="LOCAL-00834" summary="JSGRID Color play">
-      <created>1508240228185</created>
-      <option name="number" value="00834" />
-      <option name="presentableId" value="LOCAL-00834" />
-      <option name="project" value="LOCAL" />
-      <updated>1508240228185</updated>
+      <workItem from="1508444976781" duration="13693000" />
     </task>
     <task id="LOCAL-00835" summary="JSGRID Color play">
       <created>1508240312256</created>
@@ -1176,11 +1192,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508460808009</updated>
     </task>
-    <option name="localTasksCounter" value="883" />
+    <task id="LOCAL-00883" summary="``">
+      <created>1508460851044</created>
+      <option name="number" value="00883" />
+      <option name="presentableId" value="LOCAL-00883" />
+      <option name="project" value="LOCAL" />
+      <updated>1508460851044</updated>
+    </task>
+    <option name="localTasksCounter" value="884" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="740064000" />
+    <option name="totallyTimeSpent" value="740180000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1328,13 +1351,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/myclosed.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="108" column="50" lean-forward="false" selection-start-line="108" selection-start-column="50" selection-end-line="108" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2833">
@@ -1997,6 +2013,27 @@
           <caret line="2149" column="11" lean-forward="true" selection-start-line="2149" selection-start-column="11" selection-end-line="2149" selection-end-column="11" />
           <folding>
             <element signature="e#6#1399#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supporter/updatelog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="44" column="39" lean-forward="true" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+          <folding>
+            <marker date="1508460958350" expanded="true" signature="1996:2049" ph="select updat... ${$mysql_tickets_table}" />
+            <marker date="1508460958350" expanded="true" signature="4653:4659" ph=" " />
+            <marker date="1508460958350" expanded="true" signature="4659:4665" ph=" " />
+            <marker date="1508460958350" expanded="true" signature="4665:4671" ph=" " />
+            <marker date="1508460958350" expanded="true" signature="4671:4677" ph=" " />
+            <marker date="1508460958350" expanded="true" signature="5751:5757" ph=" " />
+            <marker date="1508460958350" expanded="true" signature="5757:5763" ph=" " />
+            <marker date="1508460958350" expanded="true" signature="5763:5769" ph=" " />
+            <marker date="1508460958350" expanded="true" signature="5769:5775" ph=" " />
+            <marker date="1508460958350" expanded="true" signature="5928:6078" ph="select trk.s... tickets" />
+            <marker date="1508460958350" expanded="true" signature="6220:6265" ph="..." />
+            <marker date="1508460958350" expanded="true" signature="6464:6506" ph="select * fro... ${$mysql_users_table}" />
           </folding>
         </state>
       </provider>

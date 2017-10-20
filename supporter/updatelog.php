@@ -120,10 +120,11 @@ echo "</form>";
 			echo "<tr><td colspan=2 class=cat align=left><font size=1><b>". $log[$i] ."</b></font></td></tr>";
 		}
 		else{
-			if(eregi("[$]", $log[$i]))	//this accounts for older tickets which don't have variables in the update log.
+			if(preg_match("[$]", $log[$i])) {
+			    $log[$i]= addslashes($log[$i]); //this accounts for older tickets which don't have variables in the update log.
+                eval("\$log[$i] = \"$log[$i]\";");    //if the update log doesn't contain variables, this eval doesn't work.
+            }
                 $log[$i] = stripslashes($log[$i]);
-			    eval("\$log[$i] = \"$log[$i]\";");	//if the update log doesn't contain variables, this eval doesn't work.
-
 				echo "<tr><td colspan=2 class=back2 align=left>&nbsp;&nbsp;&nbsp;&nbsp;". $log[$i] ."<br></td></tr>";
 		}
 	   }

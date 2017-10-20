@@ -238,7 +238,7 @@ $tablePadding = 6;
         td.subcat {background: <?php echo $theme['subcategory']; ?>; color: <?php echo $theme['text']; ?>; font-family: "<?php echo $theme['font']; ?>"; font-size: <?php echo '$theme["font_size"] + 4'?>'px';  font-weight:600;}
 
 
-        input.box {border: 2px; height: 50px}
+        input.box {border: 2px; height: 36px}
 
         table.border2 {background: #6974b5;}
         td.install {background:#dddddd; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 12px;}

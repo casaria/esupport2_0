@@ -358,7 +358,7 @@ function createUserInfo()
 				<td class=back >';
 					
 				?>
-			    	<select name=userlink onChange="MM_jumpMenu('parent', this, 0)">
+			    	<select name=userlink id="selectwidth2" onChange="MM_jumpMenu('parent', this, 0)">
 				<?php	
 					
 				$userid=createSupporterUserMenu($sg);

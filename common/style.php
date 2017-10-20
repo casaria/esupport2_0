@@ -45,7 +45,7 @@ $tablePadding = 6;
 
 <script type="text/javascript">
     WebFontConfig = {
-        google: { families: [ 'Roboto::latin', 'Lato::latin', 'Roboto+Condensed::latin', 'Ropa+Sans:latin', 'Titillium+Web:600,800:latin'] }
+        google: { families: [ 'Roboto::latin', 'Lato::latin', 'Roboto+Condensed::latin', 'Ropa+Sans:latin', 'Titillium+Web:500,600,700,800:latin'] }
     };
 
     (function() {
@@ -67,7 +67,7 @@ $tablePadding = 6;
     <TITLE> <?php echo $helpdesk_name;?></TITLE>
     <?php
     if ($theme['font'] == "Titillium Web") {
-        $lineHeight = 1.1;
+        $lineHeight = 1.0;
         $tablePadding = 5;
     } else  {
         $lineHeight = 1;
@@ -112,7 +112,7 @@ $tablePadding = 6;
         }
         BODY {background: <?php echo $theme['bgcolor'];?> ; color: black; font-weight:600;}
 
-        a:link {text-decoration: none; color: <?php echo $theme['link']; ?>; font-weight:700;}
+        a:link {text-decoration: none; color: <?php echo $theme['link']; ?>; font-weight:500;}
         a:visited {text-decoration: none; color: <?php echo $theme['link']; ?>;}
         a:active {text-decoration: none; color: <?php echo $theme['link']; ?>;}
         a:hover {text-decoration: underline; color: <?php echo $theme['link']; ?>;}

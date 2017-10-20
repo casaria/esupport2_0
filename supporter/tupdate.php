@@ -32,7 +32,7 @@
 			***************************************************************************************/
 
 require_once "../common/config.php";
-require_once "../common/$database.class.php";
+require_once "../common/".$database."class.php";
 require_once "../common/common.php";
 $language = getLanguage($cookie_name);
 if($language == '')
@@ -48,7 +48,7 @@ require "../common/login.php";
 $time_offset = getTimeOffset($cookie_name);
 $time = time() + ($time_offset * 3600);
 $timestamp = $time;
-$total_minutes =  array(0,0);
+$total_minutes = array(0,0);
 
 if(!$id){
         printerror($lang_missing_info);
@@ -61,18 +61,18 @@ if(!$id){
 if($action == 'download'){
 	$query = $db->query("SELECT * from $mysql_attachments_table where id=$id");
 	$file = $db->fetch_array($query);
-		if($file[filename] == ''){
+		if($file['filename'] == ''){
 		echo $lang_fileremoved;
 		exit;
 	}
 	$db->query("UPDATE $mysql_attachments_table SET downloads=downloads+1 WHERE id='$id'");
 	// Send the attachment
 	header("Content-disposition: filename=$file[filename]");
-	header("Content-Length: ".strlen($file[attachment]));
+	header("Content-Length: ".strlen($file['attachment']));
 	header("Content-type: $file[filetype]");
 	header("Pragma: no-cache");
 	header("Expires: 0");
-	echo $file[attachment];
+	echo $file['attachment'];
 	exit;
 	
 }
@@ -470,7 +470,7 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 			echo "<input type=hidden name=category value='$info[category]'>";
 			echo "<input type=hidden name=short value='$info[short]'>";
 			echo "<input type=hidden name=description value='$info[description]'>";
-			echo "<input type=submit name=dumptokb value=\"$lang_dumptokb\">"
+			echo "<input type=submit name=dumptokb value=\"$lang_dumptokb\">";
 			echo "</td></form>";
 		}
 		echo "</td></tr>";
@@ -478,7 +478,7 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 
 function createSupporterInfo()
 {
-	global $sg, $info, $lang_supporterinfo, $lang_supportergroup, $lang_supporter, $lang_ticket, $lang_priority, $lang_status;
+	global $sg, $lang_supporterinfo, $lang_supportergroup, $lang_supporter, $lang_ticket, $lang_priority, $lang_status;
 
 startTable("$lang_supporterinfo", "left", 100, 4);	
 
@@ -559,7 +559,7 @@ function createSupporterMenu($group_id)
 
 function createNotificationPanel()
 {
-global $info, $lang_emailgroup, $lang_emailstatuschange, $lang_notification, $lang_email, $lang_emailcc, $lang_pagesupporter, $lang_office;
+global $info, $lang_emailgroup, $lang_emailstatuschange, $lang_notification, $lang_emailcc, $lang_pagesupporter;
 
 startTable("$lang_notification ", "left", 100, 5);
 echo '
@@ -599,7 +599,7 @@ endTable();
 
 function createUserInfo()
 {
-	global $info, $lang_userinfo, $lang_office, $lang_email, $lang_username, $lang_phoneext, $lang_office;
+	global $info, $lang_userinfo, $lang_email, $lang_username, $lang_phoneext, $lang_office;
 // Get User group name and id associate with use
     $groupname='';
 $ugroups = getUGroupList(); $user = $info['user']; $n=0;
@@ -699,8 +699,9 @@ function resetRatingsCounter()
 
 function createTimeUpdate()
 {
-	global $sg, $info, $id, $mysql_users_table, $mysql_settings_table, $db, $lang_timespent, $lang_timespent1, $lang_timespent2;
-  global $lang_timehistory, $lang_month, $timestamp;
+	global $sg, $lang_timespent, $lang_timespent1, $lang_timespent2;
+  global $lang_month, $timestamp;
+
 
 // Time spent updates
 	startTable("$lang_timespent", "left", 100, 5);
@@ -782,8 +783,8 @@ function createTimeUpdate()
 
 function displayMaterials()
 {
-	global $sg, $info, $id, $mysql_users_table, $mysql_settings_table, $db, $lang_timespent, $lang_timespent1, $lang_timespent2;
-  global $lang_materialhistory, $lang_month, $timestamp;
+	global $id, $db;
+  global $lang_materialhistory;
   
 	
 	startTable("$lang_materialhistory", "left", 100, 5);

@@ -67,7 +67,7 @@ $tablePadding = 6;
     <TITLE> <?php echo $helpdesk_name;?></TITLE>
     <?php
     if ($theme['font'] == "Titillium Web") {
-        $lineHeight = 1.0;
+        $lineHeight = 1.09;
         $tablePadding = 5;
     } else  {
         $lineHeight = 1;

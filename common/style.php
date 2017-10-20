@@ -81,7 +81,7 @@ $tablePadding = 6;
         table {-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 1px; font-weight:500;}
         #selectwidth{
             background-color: #afe7f7;
-            border: 1px solid;
+            border: 2px solid;
             width:350px;
             outline: 0;
             overflow: hidden;
@@ -104,7 +104,7 @@ $tablePadding = 6;
         #selectwidth2{
             width:350px;
             background-color: #f5b56c;
-            border: 1px solid;
+            border: 2px solid;
             width:350px;
             outline: 0;
             overflow: hidden;
@@ -113,7 +113,15 @@ $tablePadding = 6;
             -webkit-border-radius: 3px;
 
         }
-        #selectwidth,#selectwidth2 option{
+        #selectwidth2 option{
+
+            width:350px; font-weight:600;
+            color: darkslateblue;
+            padding: 5px;
+            list-style-type: circle;
+            font-size: 13px;
+        }
+        #selectwidth, option{
 
             width:350px; font-weight:600;
             color: darkslateblue;

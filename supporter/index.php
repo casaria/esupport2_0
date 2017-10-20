@@ -227,7 +227,7 @@ border=0>
                                         <LI><A href=\"index.php?t=slist\">".$lang_supporterstats."</A></LI>";
 
                                 if($enable_ratings == 'On'){
-                                     echo '<LI><A href="index.php?t=tsur">$lang_surveystats</A></LI>';
+                                     echo  "<LI><A href=\"index.php?t=tsur\">".$lang_surveystats."</A></LI>";
                                 }
 
                                 echo "<LI><A href=\"index.php?t=gstats\">".$lang_groupstats."</A></LI> ";
@@ -239,8 +239,7 @@ border=0>
                                      echo "</TR>";
 
                           
-
-														echo '
+                        echo '
                             </TD>
                           </TR>
                          </TBODY> 

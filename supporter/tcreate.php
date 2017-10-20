@@ -121,7 +121,7 @@ if(isset($create)) {
         sendGroupPage($template_name, $sg, $UserRowArray, $short, $priority, $id);
     }
     //now print out the html that lets the user know that their ticket was submitted successfully.
-    header("Location: $supporter_site_url/index.phpindex.php?t=tsuc&id=$id");
+    header("Location: $supporter_site_url/index.php?t=tsuc&id=$id");
 
 }
 else{

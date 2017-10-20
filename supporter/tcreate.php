@@ -78,10 +78,10 @@ if(isset($create)){
 	//fix checkboxes
 	$emailgroup = ($emailgroup == "on") ?  "On" : "Off";
 	$emailstatuschange = ($emailstatuschange == "on") ? "On" : "Off";
-  
-	$billing_status = "0";
 
-    $sql = "INSERT into $mysql_tickets_table values(NULL, $time, $sg, $ugroup_id, '$SupporterName', $supporter_id, '$priority', '$status', '$billing_status','$UserName','$email','$office', '$phone','$equipment', '$category', '$platform', '$short', '$description', NULL, 0, $time,'$emailgroup', '$emailstatuschange', '$emailcc', 0, 0, 0)";
+    $billing_status = "0";
+
+    $sql = "INSERT INTO $mysql_tickets_table (`id`, `create_date`, `groupid`, `ugroupid`, `supporter`, `supporter_id`, `priority`, `status`, `BILLING_STATUS`, `user`, `email`, `office`, `phone`, `equipment`, `category`, `platform`, `short`, `description`, `update_log`, `survey`, `lastupdate`, `emailgroup`, `emailstatuschange`, `emailcc`, `closed_date`, `minutes_labor`, `castag_id`) VALUES values(NULL, $time, $sg, $ugroup_id, '$SupporterName', $supporter_id, '$priority', '$status', '$billing_status','$UserName','$email','$office', '$phone','$equipment', '$category', '$platform', '$short', '$description', '', 0, $time,'$emailgroup', '$emailstatuschange', '$emailcc', 0, 0, 0)";
 
     $db->query($sql);
 

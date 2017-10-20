@@ -106,9 +106,9 @@ $tablePadding = 6;
             background-color: #d0d6e8;
         }
         #selecwidth, selectwidth2 option{
-            width:375px; font-weight:700;
+            width:375px; font-weight:600;
             color: darkslateblue;
-            font-size: 14px;
+            font-size: 13px;
         }
         BODY {background: <?php echo $theme['bgcolor'];?> ; color: black; font-weight:600;}
 
@@ -238,7 +238,7 @@ $tablePadding = 6;
         td.subcat {background: <?php echo $theme['subcategory']; ?>; color: <?php echo $theme['text']; ?>; font-family: "<?php echo $theme['font']; ?>"; font-size: <?php echo '$theme["font_size"] + 4'?>'px';  font-weight:600;}
 
 
-        input.box {border: 2px; height: 40px}
+        input.box {border: 2px; height: 50px}
 
         table.border2 {background: #6974b5;}
         td.install {background:#dddddd; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 12px;}

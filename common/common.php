@@ -1888,19 +1888,19 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 						<tr>';
 
                           echo '	</td><td class=back2 width="180px" align=right>* '.$lang_category.':</td>
-							<td class=back><select id="selecwidth" name=category>';  createCategoryMenu(0);
+							<td class=back><select id="selectwidth" name=category>';  createCategoryMenu(0);
                           echo '	</select></td>';
 
 						echo '</tr><tr>
                              	<td class=back2 width="180px" align=right>* '.$lang_platform.':</td>
-							<td class=back><select id="selecwidth" name=platform>'; createPlatformMenu(0, "");
+							<td class=back><select id="selectwidth" name=platform>'; createPlatformMenu(0, "");
 
 						echo '
                                </select>
 						</tr>
 						<tr>
 							<td width=="180px" class=back2 align=right>* '.$lang_equipment.':</td>
-							<td class=back><select id="selecwidth" name=equipment>';  createEquipmentMenu(0,$equipmentgroupid);
+							<td class=back><select id="selectwidth" name=equipment>';  createEquipmentMenu(0,$equipmentgroupid);
 							echo '	</select></td>
 						    
 						</tr>

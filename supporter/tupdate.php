@@ -490,7 +490,7 @@ startTable("$lang_supporterinfo", "left", 100, 4);
 							<td class=back align="left">
                                 
 			
-							<select id="#selectwidth" name=supporter_id>';
+							<select id="selectwidth" name=supporter_id>';
 							createSupporterMenu($sg);
 
 		echo '				
@@ -501,7 +501,7 @@ startTable("$lang_supporterinfo", "left", 100, 4);
 							<td class=back2 align=right>'.$lang_ticket.' '.$lang_priority.':</td>
 							<td class=back align="left">
 							
-							<select id="#selectwidth" name=prio>';
+							<select id="selectwidth" name=prio>';
 							createPriorityMenu(0);
 							
 		echo '
@@ -512,7 +512,7 @@ startTable("$lang_supporterinfo", "left", 100, 4);
 							<td class=back2 align=right>'.$lang_ticket.' '.$lang_status.':</td>
 							<td class=back align="left">
 							
-							<select id="#selectwidth" name=status>';
+							<select id="selectwidth" name=status>';
 							createStatusMenu(0);
     echo '					</select></td>
 
@@ -521,7 +521,7 @@ startTable("$lang_supporterinfo", "left", 100, 4);
 							<td class=back2 align=right>'.$lang_supportergroup.'</td>
 							<td class=back align="left">';
 							?>
-							<select id="#selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)">
+							<select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)">
 							<?php
 									createGroupMenu(1);
     echo '                    </select>

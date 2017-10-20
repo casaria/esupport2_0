@@ -108,7 +108,7 @@ $tablePadding = 6;
         #selecwidth, selectwidth2 option{
             width:375px; font-weight:600;
             color: darkslateblue;
-            line-height: 1.5em;
+            line-height: 2;
             font-size: 13px;
         }
         BODY {background: <?php echo $theme['bgcolor'];?> ; color: black; font-weight:600;}

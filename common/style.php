@@ -82,7 +82,7 @@ $tablePadding = 6;
         #selectwidth{
             background-color: #afe7f7;
             border: 1px solid;
-            width:375px;
+            width:350px;
             outline: 0;
             overflow: hidden;
             padding: 2px 2px 2px 2px;
@@ -102,12 +102,12 @@ $tablePadding = 6;
              background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat */
         }
         #selectwidth2{
-            width:375px;
+            width:350px;
             background-color: #d0d6e8;
         }
         #selectwidth,#selectwidth2 option{
 
-            width:375px; font-weight:600;
+            width:350px; font-weight:600;
             color: darkslateblue;
             padding: 5px;
             list-style-type: circle;

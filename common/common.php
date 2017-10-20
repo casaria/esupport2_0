@@ -3463,11 +3463,11 @@ function displayTimeHistory()
 
 
   while($row = $db->fetch_array($resultsupporters)){
-    if ($row[minutes] != 0) {	
+    if ($row['minutes'] != 0) {
     	echo '<tr>
     		<td width=20% class=back2 align=right>';
     		if ($row['work_date'])
-    		    echo date("F j, Y", $row[work_date]);
+    		    echo date("F j, Y", $row['work_date']);
     		  else
     		    echo "- No Date -";
     	echo '</td>';
@@ -3481,7 +3481,7 @@ function displayTimeHistory()
    	  echo '<td width=10% class=back2>';
     		  //
           echo "<input class=box type=checkbox";
-				     if($row[after_hours] != "0"){
+				     if($row['after_hours'] != "0"){
 					   echo " checked";
 			     	}	
 			    echo ">after_hrs";
@@ -3490,14 +3490,14 @@ function displayTimeHistory()
    	  echo '<td width=10% class=back>';
     		  //
           echo "<input class=box type=checkbox";
-				     if($row[engineer_rate] != "0"){
+				     if($row['engineer_rate'] != "0"){
 					   echo " checked";
 			     	}	
 			    echo ">engineer_rate";    			
     	echo '</td>';     	
     	    		
     	echo '<td width=15% class=back2>';
-    			showFormattedTime($row[minutes] * 60, 0, 1);
+    			showFormattedTime($row['minutes'] * 60, 0, 1);
     	echo '</td>';			
     	echo '<td class=back>';
     			echo "$row[reference]"; 

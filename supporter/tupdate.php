@@ -648,11 +648,11 @@ function createTicketDetails()
 	global $info, $db, $lang_never, $mysql_attachments_table, $id, $lang_ticket, $lang_opened, $lang_attachments, $lang_lastupdate;
 
 	$padded_id = str_pad($id, 5, '0', STR_PAD_LEFT);
-	$info[create_date] = date("F j, Y, g:i a", $info[create_date]);
-	if($info[lastupdate] != 0)
-        	$info[lastupdate] = date("F j, Y, g:i a", $info[lastupdate]);
+	$info['create_date'] = date("F j, Y, g:i a", $info['create_date']);
+	if($info['lastupdate'] != 0)
+        	$info['lastupdate'] = date("F j, Y, g:i a", $info['lastupdate']);
 	else
-        	$info[lastupdate] = $lang_never;
+        	$info['lastupdate'] = $lang_never;
 	$attachments = '';
 
 	//if there attachments, get them and setup the links to them.
@@ -661,7 +661,7 @@ function createTicketDetails()
 	$num_attachments = $db->num_rows($result);
 	if($num_attachments > 0){
         	while($attachment = $db->fetch_array($result)){
-                	$attachment[filesize] = convertFileSize($attachment[filesize]);
+                	$attachment['filesize'] = convertFileSize($attachment['filesize']);
                 	$attachments .= "<a target=_blank href=\"../tinfo.php?action=download&id=$attachment[id]\">$attachment[filename] </a> ($attachment[filesize]) - ".date("n/j/Y",$attachment[timestamp])."<br>";
         	}
 	}

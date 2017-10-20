@@ -183,7 +183,7 @@ $tablePadding = 6;
 
         td.hfo {padding: <?php echo $tablePadding; ?>px;  background: <?php echo $theme['header_bg']; ?>; font-family: "<?php echo $theme['font']; ?>"; font-size: <?php echo $theme['font_size']; ?>px; color: <?php echo $theme['header_text']; ?>;}
 
-        td.hf {padding: <?php echo $tablePadding; ?>px;  background: #f4a62b; font-family: "<?php echo $theme['font']; ?>";  font-weight:600; font-size: <?php echo $theme['font_size']; ?>px; color: <?php echo $theme['header_text']; ?>;}
+        td.hf {padding: <?php echo $tablePadding; ?>px;  background: #c9caea; font-family: "<?php echo $theme['font']; ?>";  font-weight:600; font-size: <?php echo $theme['font_size']; ?>px; color: <?php echo $theme['header_text']; ?>;}
 
         td.printhf {padding: <?php echo $tablePadding; ?>px;  background: <?php echo $theme['print_header_bg']; ?>; font-family: "<?php echo $theme['font']; ?>"; font-size: <?php echo $theme['font_size']; ?>px; color: <?php echo $theme['print_header_text']; ?>;}
 

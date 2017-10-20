@@ -46,7 +46,7 @@ $db->connect($db_host, $db_user, $db_pwd, $db_name, $pconnect);
 
 
 $dbg = NULL;
-$hidemenu = TRUE;
+$hidemenu = false;
 $s = '';
 $action = '';
 $groupid = '';

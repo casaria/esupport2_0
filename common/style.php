@@ -67,10 +67,10 @@ $tablePadding = 6;
     <TITLE> <?php echo $helpdesk_name;?></TITLE>
     <?php
     if ($theme['font'] == "Titillium Web") {
-        $lineHeight = 1.1;
+        $lineHeight = 1.2;
         $tablePadding = 5;
     } else  {
-        $lineHeight = 1;
+        $lineHeight = 1.1;
         $tablePadding = 3;
 
     } ?>
@@ -108,7 +108,7 @@ $tablePadding = 6;
         #selecwidth, selectwidth2 option{
             width:375px; font-weight:700;
             color: darkslateblue;
-            fongt-size: 18;
+            font-size: 18px;
         }
         BODY {background: <?php echo $theme['bgcolor'];?> ; color: black; font-weight:600;}
 
@@ -186,7 +186,7 @@ $tablePadding = 6;
 		a.info:hover {line-height: <?php echo $lineHeight; ?>; text-decoration: underline; font-weight: normal; font-family: "<?php echo $theme['font']; ?>"; font-size: <?php echo $theme['font_size']; ?>px; color: <?php echo $theme['info_text']; ?>;}
 
         a.hf:hover {line-height: <?php echo $lineHeight; ?>; text-decoration: underline; font-weight: normal; font-family: "<?php echo $theme['font']; ?>"; font-size: <?php echo $theme['font_size']; ?>px; color: <?php echo $theme['header_text']; ?>;}
-
+-
         td.info {text-align: left; background: <?php echo $theme['info_bg']; ?>; font-family:"<?php echo $theme['font']; ?>", Helvetica, sans-serif; font-size: <?php echo ($theme['font_size'])+1; ?>px; color: <?php echo $theme['header_text']; ?>;}
 
         td.extra {background: <?php echo $theme['info_bg']; ?>; font-family:"<?php echo $theme['font']; ?>", Helvetica, sans-serif; font-size: <?php echo ($theme['font_size']+3); ?>px; color: <?php echo $theme['extra_text']; ?>;}

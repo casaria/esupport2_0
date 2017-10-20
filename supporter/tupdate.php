@@ -662,7 +662,7 @@ function createTicketDetails()
 	if($num_attachments > 0){
         	while($attachment = $db->fetch_array($result)){
                 	$attachment['filesize'] = convertFileSize($attachment['filesize']);
-                	$attachments .= "<a target=_blank href=\"../tinfo.php?action=download&id=$attachment[id]\">$attachment[filename] </a> ($attachment[filesize]) - ".date("n/j/Y",$attachment[timestamp])."<br>";
+                	$attachments .= "<a target=_blank href=\"../tinfo.php?action=download&id=$attachment[id]\">$attachment[filename] </a> ($attachment[filesize]) - ".date("n/j/Y",$attachment['timestamp'])."<br>";
         	}
 	}
 

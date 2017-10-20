@@ -449,7 +449,7 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
         }
 
 
-		echo "<center>";
+		echo "<TR><td class='back2'>";
 		echo "<input type=hidden name=sg value='".$sg."'>";
 		echo "<input type=hidden name=id value='".$info['id']."'>";
 		echo "<input type=hidden name=old_supporter value='".$info['supporter']."'>";
@@ -460,18 +460,20 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
         echo "<input type=hidden name=old_status value='".$info['status']."'>";
         echo "<input type=hidden name=minutes_labor value=$minutes>";
         echo "<input type=submit name=update value=\"$lang_updateticket\">";
-		echo "</form>";
+		echo "</form> ";
+
 
 		if($enable_kbase == 'On'){
+		    ECHO  "<td class='back2'>";
 			echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>&nbsp;&nbsp;";
 			echo "<input type=hidden name=platform value='$info[platform]'>";
 			echo "<input type=hidden name=category value='$info[category]'>";
 			echo "<input type=hidden name=short value='$info[short]'>";
 			echo "<input type=hidden name=description value='$info[description]'>";
-			echo "<input type=submit name=dumptokb value=\"$lang_dumptokb\">";
-			echo "</form>";
+			echo "<input type=submit name=dumptokb value=\"$lang_dumptokb\">"
+			echo "</td></form>";
 		}
-		echo "</center>";
+		echo "</td></tr>";
 
 
 function createSupporterInfo()

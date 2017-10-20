@@ -102,9 +102,10 @@ $tablePadding = 6;
              background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat */
         }
         #selectwidth2{
-            width:350px;
             background-color: <?php echo $theme['category']; ?>;
             border: 2px solid;
+            width:350px;
+            font-weight: 600;
             outline: 0;
             overflow: hidden;
             padding: 2px 2px 2px 2px;

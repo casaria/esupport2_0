@@ -670,11 +670,11 @@ startTable("$lang_ticket #$padded_id", "left", 100, 2, "extra");
 echo '
     <tr>
      <td class="back2" width="180px">'.$lang_ticket.' '.$lang_opened.': </td>
-     <td class="back">'.$info[create_date].'</td>
+     <td class="back">'.$info['create_date'].'</td>
     </tr>
     <tr>
      <td class="back2">'.$lang_lastupdate.': </td>
-     <td class="back">'.$info[lastupdate].'</td>
+     <td class="back">'.$info['lastupdate'].'</td>
     </tr>
     <tr>
      <td class="back2"  valign="top">'.$lang_attachments.': </td>
@@ -743,12 +743,12 @@ function createTimeUpdate()
 						echo '			
 							</select>
 							<select name=woyear>';
-							  echo "<option value=".(string)($today[year]-1); 
-							    echo '>'.($today[year]-1).'</option>';
+							  echo "<option value=".(string)($today['year']-1);
+							    echo '>'.($today['year']-1).'</option>';
 							    
 							    
-								echo "<option value=$today[year]"; 
-							  	echo ' selected'; echo '>'.($today[year]).'</option>
+								echo "<option value=$today[year]";
+							  	echo ' selected'; echo '>'.($today['year']).'</option>
 							</select>';
 	
 	echo '</td>';

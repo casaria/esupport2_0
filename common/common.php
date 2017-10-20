@@ -3315,16 +3315,16 @@ function getTicketTimeInfo($id)
 
 	global $mysql_users_table, $mysql_time_table;
 
-   		$sql = "select $mysql_users_table."."user_name, sum(minutes) as sum, tt.after_hours, supporter_id, opened_date, closed_date from $mysql_users_table, $mysql_time_table as tt where ticket_id=$id and supporter_id=$mysql_users_table.id group by supporter_id, opened_date, closed_date order by sum asc";
-        $resarray = array();
+            $sql = "select $mysql_users_table."."user_name, minutes, tt.after_hours, supporter_id, opened_date, closed_date from $mysql_users_table, $mysql_time_table as tt where ticket_id=$id and supporter_id=$mysql_users_table.id group by supporter_id, opened_date, closed_date";
+            $resarray = array();
 		$result = $db->query($sql);
 			while($row = $db->fetch_array($result)){
 		//create the array based on the db data.
 		if(($row['closed_date'] > $resarray['closed_date']) && $row['closed_date'] != 0){
 			$resarray['closed_date'] = $row['closed_date'];
 		}
-		if(/*($row['sum'] > $array['sum']) && */$row['sum'] != 0){
-			$resarray['sum'] += $row['sum'];
+		if(/*($row['sum'] > $array['sum']) && */$row['minutes'] != 0){
+			$resarray['sum'] += $row['minutes'];
 		}
 		if(($row['opened_date'] > $resarray['opened_date']) && $row['opened_date'] != 0){
 			$resarray['first_response'] = $row['opened_date'];

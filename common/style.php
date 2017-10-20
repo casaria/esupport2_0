@@ -103,7 +103,7 @@ $tablePadding = 6;
         }
         #selectwidth2{
             width:350px;
-            background-color: #d0d6e8;
+            background-color: #7de8e4;
         }
         #selectwidth,#selectwidth2 option{
 

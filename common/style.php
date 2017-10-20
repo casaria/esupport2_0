@@ -104,6 +104,14 @@ $tablePadding = 6;
         #selectwidth2{
             width:350px;
             background-color: #f5b56c;
+            border: 1px solid;
+            width:350px;
+            outline: 0;
+            overflow: hidden;
+            padding: 2px 2px 2px 2px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+
         }
         #selectwidth,#selectwidth2 option{
 

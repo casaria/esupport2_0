@@ -105,7 +105,6 @@ $tablePadding = 6;
             width:350px;
             background-color: <?php echo $theme['category']; ?>;
             border: 2px solid;
-            width:350px;
             outline: 0;
             overflow: hidden;
             padding: 2px 2px 2px 2px;
@@ -131,7 +130,7 @@ $tablePadding = 6;
         }
         BODY {background: <?php echo $theme['bgcolor'];?> ; color: black; font-weight:600;}
 
-        a:link {text-decoration: none; color: <?php echo $theme['link']; ?>; font-weight:500;}
+        a:link {text-decoration: none; color: <?php echo $theme['link']; ?>; font-weight:600;}
         a:visited {text-decoration: none; color: <?php echo $theme['link']; ?>;}
         a:active {text-decoration: none; color: <?php echo $theme['link']; ?>;}
         a:hver {text-decoration: underline; color: <?php echo $theme['link']; ?>;}

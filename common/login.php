@@ -51,7 +51,7 @@ else {
 
 $cookieuser = '';
 //common.php
-startSession();
+session_status() === PHP_SESSION_ACTIVE ? ; : startSession();
 
 $cookie_name = $_SESSION['cookie_name'];
 //echo "cookie_name = $cookie_name <br>";

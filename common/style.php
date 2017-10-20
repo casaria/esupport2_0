@@ -110,7 +110,7 @@ $tablePadding = 10;
             color: darkslateblue;
             fongt-size: 18;
         }
-        BODY {background: <?php echo $theme['bgcolor'];?> ; color: black; font-weight:700;}
+        BODY {background: <?php echo $theme['bgcolor'];?> ; color: black; font-weight:600;}
 
         a:link {text-decoration: none; color: <?php echo $theme['link']; ?>; font-weight:700;}
         a:visited {text-decoration: none; color: <?php echo $theme['link']; ?>;}

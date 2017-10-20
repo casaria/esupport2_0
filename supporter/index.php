@@ -99,7 +99,7 @@ border=0>
         <TBODY> 
         <TR> 
           <TD class=hf align=right>
-			<?php echo "$lang_loggedinas <b>$cookie_name</b> (<A class=hf href=\"../common/logout.php\"> $lang_logout</a>)";
+    			<?php echo "$lang_loggedinas <b>$cookie_name</b> (<A class=hf href=\"../common/logout.php\"> $lang_logout</a>)";
 			 echo "$crm_name"; ?>
 		 </TD>
         </TR>

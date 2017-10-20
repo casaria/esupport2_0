@@ -565,7 +565,7 @@ echo '
      <td class="back2" width="180px">'.$lang_emailgroup.': </td>
      <td class="back" colspan="4">'.
     "<input class=box type=checkbox";
-				if($info[emailgroup] == "On"){
+				if($info['emailgroup'] == "On"){
 					echo " checked";
 				}					
 			echo " name=emailgroup></td>".
@@ -573,7 +573,7 @@ echo '
      <td class="back2" width="180px">'.$lang_emailstatuschange.': </td>
      <td class="back" colspan="4">'.
     "<input class=box type=checkbox";
-				if($info[emailstatuschange] == "On"){
+				if($info['emailstatuschange'] == "On"){
 					echo " checked";
 				}					
     echo " name=emailstatuschange></td>".'
@@ -588,7 +588,7 @@ echo '
     </tr>
     <tr>
      <td class="back2" width="180px">'.$lang_emailcc.': </td>
-     <td class="back" colspan="4"><input type=text size=60 name=emailcc value="'.$info[emailcc].'"></td></tr>';
+     <td class="back" colspan="4"><input type=text size=60 name=emailcc value="'.$info['emailcc'].'"></td></tr>';
 endTable();
 }
 

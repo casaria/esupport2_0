@@ -1420,7 +1420,9 @@ function createGroupMenu($flag=0)
 ************************************************************************************************************/
 function createPriorityMenu($flag=0, $all=true)
 {
+
 	global $mysql_tpriorities_table, $info, $db;
+	$i=0;
 	if ($all) {
 		$sql = "select priority from $mysql_tpriorities_table order by rank desc";
 	}

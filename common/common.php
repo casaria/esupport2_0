@@ -2147,7 +2147,7 @@ function createPlatformMenu($flag=0, $Selectplatform)
 	if($flag == 1)
 		echo "<option></option>\n";
 	
-	if($platform == ''){
+	if($Seleectplatform == ''){
 		while($row = $db->fetch_row($result)){
 			echo "<option value=\"$row[0]\" ";
 				if($info['platform'] == $row[0]) echo "selected";

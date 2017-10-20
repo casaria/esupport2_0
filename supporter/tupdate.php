@@ -667,15 +667,15 @@ ECHO '                <tr>
         startTable("$lang_ticket #$padded_id", "left", 100, 2, "extra");
         echo '
     <tr>
-     <td class="back2" width="180px">' . $lang_ticket . ' ' . $lang_opened . ': </td>
+     <td class="back2" width="180px" align="right">' . $lang_ticket . ' ' . $lang_opened . ': </td>
      <td class="back">' . $info['create_date'] . '</td>
     </tr>
     <tr>
-     <td class="back2">' . $lang_lastupdate . ': </td>
+     <td class="back2" align="right">' . $lang_lastupdate . ': </td>
      <td class="back">' . $info['lastupdate'] . '</td>
     </tr>
     <tr>
-     <td class="back2"  valign="top">' . $lang_attachments . ': </td>
+     <td class="back2" align="right" valign="top">' . $lang_attachments . ': </td>
      <td class="back">' . $attachments . '</td>
     </tr>';
         endTable();

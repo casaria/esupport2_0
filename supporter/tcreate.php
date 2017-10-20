@@ -44,19 +44,20 @@ else
 if(isset($create)){
 	//after all error checking...insert into the database.
 	
-	$name = getUserInfo($supporter_id);
-	$name = $name['user_name'];
+	$SupporteRowArray = getUserInfo($supporter_id);
+	$SupporterName = $SupporteRowArray['user_name'];
 
 	
 	//+++ change to the timezone of the facility ?? Not
 	//available in database yet
-	$time_offset = getTimeOffset($name);
+	//$time_offset = getTimeOffset($name);
+    $time_offset= $SupporteRowArray["time_offset"];
 	$time = time() + ($time_offset * 3600);
 	
-	$username = getUserInfo($userid);
-	$username = $username['user_name'];
+	$UserRowArray = getUserInfo($userid);
+	$UserNamne = $UserRowArray['user_name'];
 	
-	if($group == '' || $priority == '' || $username == '' || $short == '' || $description == ''){
+	if($group == '' || $priority == '' || $UserName == '' || $short == '' || $description == ''){
 		header("Location: index.php?t=terr");
 		exit;
 	}
@@ -80,8 +81,8 @@ if(isset($create)){
   
 	$billing_status = "0";
 	
-	$sql = "INSERT into $mysql_tickets_table values(NULL, $time, $sg, $ugroup_id, '$name',
-	 			 $supporter_id, '$priority', '$status', '$billing_status',	'$username', '$email', '$office', '$phone',
+	$sql = "INSERT into $mysql_tickets_table values(NULL, $time, $sg, $ugroup_id, '$SupporterName',
+	 			 $supporter_id, '$priority', '$status', '$billing_status',	'$UserNaeme', '$email', '$office', '$phone',
 				 '$equipment', '$category', '$platform', '$short', '$description', NULL, 0, $time,
 				 '$emailgroup', '$emailstatuschange', '$emailcc', 0, 0, 0)";
 	
@@ -89,7 +90,7 @@ if(isset($create)){
 	$db->query($sql);
 
 	//grab the id number of the ticket so we can create the created by in the update log.
-	$sql = "SELECT id from $mysql_tickets_table where create_date='$time' and user='$username' and short='$short' and description='$description'";
+	$sql = "SELECT id from $mysql_tickets_table where create_date='$time' and user='$UserRowArray' and short='$short' and description='$description'";
 	$result = $db->query($sql);
 	$row = $db->fetch_row($result);
 	$id = $row[0];
@@ -117,7 +118,7 @@ if(isset($create)){
 
 	if($enable_pager == 'On' && (getRank($priority, $mysql_tpriorities_table) >= $pager_rank_low) ){
 		$template_name = 'email_group_page';
-		sendGroupPage($template_name, $sg, $username, $short, $priority, $id);
+		sendGroupPage($template_name, $sg, $UserRowArray, $short, $priority, $id);
 	}
 	header("Location: $supporter_site_url/index.php");
 }

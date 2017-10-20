@@ -55,7 +55,7 @@ if(isset($create)){
 	$time = time() + ($time_offset * 3600);
 	
 	$UserRowArray = getUserInfo($userid);
-	$UserNamne = $UserRowArray['user_name'];
+	$UserName = $UserRowArray['user_name'];
 	
 	if($group == '' || $priority == '' || $UserName == '' || $short == '' || $description == ''){
 		header("Location: index.php?t=terr");

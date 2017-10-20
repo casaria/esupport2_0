@@ -105,7 +105,7 @@ $tablePadding = 6;
             width:375px;
             background-color: #d0d6e8;
         }
-        #selectwidth option{
+        #selectwidth,#selectwidth2 option{
 
             width:375px; font-weight:600;
             color: darkslateblue;

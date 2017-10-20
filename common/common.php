@@ -663,7 +663,7 @@ function getUserList($order, $offset, $group)
 						</tr>
 						<tr>
 							<td width=20% class=back2 align=right>'.$lang_realname.':</td><td class=back>'. $first .' '. $last .'</td>
-						</tr>
+				=		</tr>
 						<tr>
 							<td width=20% class=back2 align=right>'.$lang_email.'</td><td class=back><a href=mailto:'. $email .'>'.$email.'</td>
 						</tr>
@@ -1385,12 +1385,12 @@ function createGroupMenu($flag=0)
 //flag is 1 is being called from tupdate.php
 	if ($flag == 1) {
 		while ($row = $db->fetch_array($result)) {
-			if ($num_rows == 1 || $row[id] != 1) {
+			if ($num_rows == 1 || $row['id'] != 1) {
 				echo "<option value=\"index.php?t=tupd&sg=$row[id]&id=$id&groupid=change\"";
-				if ($sg == $row[id] || $info['groupid'] == $row[id]) {
+				if ($sg == $row['id'] || $info['groupid'] == $row['id']) {
 					echo " selected";
 				}
-				echo ">" . $row[group_name] . "</option>";
+				echo ">" . $row['group_name'] . "</option>";
 			}
 		}
 	}

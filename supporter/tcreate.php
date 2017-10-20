@@ -82,7 +82,7 @@ if(isset($create)){
 	$billing_status = "0";
 	
 	$sql = "INSERT into $mysql_tickets_table values(NULL, $time, $sg, $ugroup_id, '$SupporterName',
-	 			 $supporter_id, '$priority', '$status', '$billing_status',	'$UserNaeme', '$email', '$office', '$phone',
+	 			 $supporter_id, '$priority', '$status', '$billing_status',	'$UserName', '$email', '$office', '$phone',
 				 '$equipment', '$category', '$platform', '$short', '$description', NULL, 0, $time,
 				 '$emailgroup', '$emailstatuschange', '$emailcc', 0, 0, 0)";
 	

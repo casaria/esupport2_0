@@ -47,9 +47,9 @@ $db->connect($db_host, $db_user, $db_pwd, $db_name, $pconnect);
 
 $dbg = NULL;
 $hidemenu = false;
-$s = '';
-$action = '';
-$groupid = '';
+//$s = '';
+//$action = '';
+//$groupid = '';
 /**********************************************************************************************************/
 /****************************	Other Variables	***********************************************************/
 //set the variables from the database if not running the install

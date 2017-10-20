@@ -1908,14 +1908,14 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 							<td width="180px" class=back2 align=right>* '.$lang_shortdesc.':</td>
 							<td class=back>
 						
-							<input type=text size=375px name=short value="'.stripslashes($info['short']).'">
+							<input type=text size="55"; ame=short value="'.stripslashes($info['short']).'">
 							</td>
 						
 						</tr>
 						<tr>
 
 							<td class=back2 align=right width="180px">* '.$lang_desc.': </td>
-							<td class=back><textarea name=description rows=5; width="375px">* '.stripslashes($info['description']).'</textarea></td>
+							<td class=back><textarea name=description; rows=5; cols="55">* '.stripslashes($info['description']).'</textarea></td>
 
 
 						</tr>';

@@ -448,7 +448,7 @@ if ($enable_time_tracking == 'On') {
 }
 
 
-echo "<TR><td class=\"back2\">";
+echo "<TR><td></td><td class=\"back\">";
 echo "<input type=hidden name=sg value='" . $sg . "'>";
 echo "<input type=hidden name=id value='" . $info['id'] . "'>";
 echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";

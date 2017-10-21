@@ -123,15 +123,17 @@ $tablePadding = 6;
             list-style-type: circle;
             font-size: 13px;
         }
-        #selectwidth, option{
+        #selectwidth, option {
 
-            width:350px; font-weight:600;
-            //color: darkslateblue;
+            width: 350px;
+            font-weight: 600;
+        / / color: darkslateblue;
             color: <?php echo $theme['text']; ?>;
             padding: 5px;
             list-style-type: circle;
             font-size: 13px;
-      /*  }
+        }
+      /*
         #submit {
             width: 21px;
             height: 21px;

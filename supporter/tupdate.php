@@ -488,7 +488,7 @@ ECHO '                <tr>
                                 createGroupMenu(1);
     echo '
 							</select>
-							</td>tr>
+							</td></tr><tr>
 							<td class=back2 align=right width="180Ppx">' . $lang_supporter . ' </td>
 							<td class=back align="left">
                                 

@@ -196,7 +196,7 @@ $tablePadding = 6;
         }
 
 
-        textarea:hover
+        textarea:hover,select:hover
         {
             border: 2px dashed #ff9913;
             background-color: #ffaf46;

@@ -183,7 +183,20 @@ $tablePadding = 6;
             filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
         }
 
-        input[type=text]:hover,
+        input[type=text]:hover
+        {
+            border: 2px dashed #ff9913;
+            background-color: #ffaf46;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaf46), to(#e78404));
+            background-image: -webkit-linear-gradient(top, #ffaf46, #e78404);
+            background-image: -moz-linear-gradient(top, #ffaf46, #e78404);
+            background-image: -ms-linear-gradient(top, #ffaf46, #e78404);
+            background-image: -o-linear-gradient(top, #ffaf46, #e78404);
+            background-image: linear-gradient(to bottom, #ffaf46, #e78404);
+            filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffaf46, endColorstr=#e78404);
+        }
+
+
         textarea:hover
         {
             border: 2px dashed #ff9913;

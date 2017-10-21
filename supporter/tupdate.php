@@ -515,7 +515,7 @@ ECHO '                <tr>
 							<td class=back2 align=right>' . $lang_ticket . ' ' . $lang_status . ':</td>
 							<td class=back align="left">
 							
-							<select id="selectwidth" name=status>';
+							<select id="selectwidth2" name=status>';
     createStatusMenu(0);
 
 

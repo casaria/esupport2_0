@@ -158,9 +158,9 @@ $tablePadding = 6;
         input[type=text], textarea, select, input[type=submit]
         {
             border: 2px solid #ffad41;
-            -webkit-box-shadow: #B4B5B5 5px 5px 5px;
-            -moz-box-shadow: #B4B5B5 5px 5px 5px;
-            box-shadow: #B4B5B5 5px 5px 5px;
+            -webkit-box-shadow: #B4B5B5 3px 3px 3px;
+            -moz-box-shadow: #B4B5B5 3px 3px 3px;
+            box-shadow: #B4B5B5 3px 3px 3px;
             -webkit-border-radius: 3px;
             -moz-border-radius: 3px;
             border-radius: 3px;

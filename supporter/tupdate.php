@@ -448,7 +448,7 @@ if ($enable_time_tracking == 'On') {
 }
 
 
-echo "<TR><td></td><td class=\"back\" colspan='3'>";
+echo "<TR><td></td><td class=\"back\">";
 echo "<input type=hidden name=sg value='" . $sg . "'>";
 echo "<input type=hidden name=id value='" . $info['id'] . "'>";
 echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
@@ -463,7 +463,7 @@ echo "</form> ";
 
 
 if ($enable_kbase == 'On') {
-    ECHO "<td class='back2'>";
+
     echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>&nbsp;&nbsp;";
     echo "<input type=hidden name=platform value='$info[platform]'>";
     echo "<input type=hidden name=category value='$info[category]'>";

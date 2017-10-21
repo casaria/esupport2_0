@@ -143,6 +143,8 @@ $tablePadding = 6;
             color: darkslateblue;
             list-style-type: circle;
             font-size: 13px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
         }
 
 

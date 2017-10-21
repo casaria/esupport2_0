@@ -135,7 +135,7 @@ $tablePadding = 6;
         #submit {
             width: 200px;
             height: 60px;
-            border:  10 px;
+            border:  10;
             margin: 10;
             padding: 6;
             background: #feaa37 url(../images/casariadefault/log_button.jpg) 0 0 no-repeat;

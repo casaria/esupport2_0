@@ -83,12 +83,15 @@ $tablePadding = 6;
             background-color: #afe7f7;
             Vbackground-color: <?php echo $theme['subcategory']; ?>
             border: 2px solid;
+            -webkit-box-shadow: #B4B5B5 5px 5px 5px;
+            -moz-box-shadow: #B4B5B5 5px 5px 5px;
+            box-shadow: #B4B5B5 5px 5px 5px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
             width:350px;
             outline: 0;
             overflow: hidden;
             padding: 2px 2px 2px 2px;
-            -moz-border-radius: 3px;
-            -webkit-border-radius: 3px;
 
 
 
@@ -124,17 +127,14 @@ $tablePadding = 6;
             width:350px; font-weight:600;
             color: darkslateblue;
             padding: 5px;
-            list-style-type: circle;
             font-size: 13px;
         }
         #selectwidth, option {
 
             width: 350px;
             font-weight: 600;
-        / / color: darkslateblue;
             color: <?php echo $theme['text']; ?>;
             padding: 5px;
-            list-style-type: circle;
             font-size: 13px;
         }
       /*

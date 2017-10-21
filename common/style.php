@@ -106,13 +106,17 @@ $tablePadding = 6;
         #selectwidth2{
             background-color: <?php echo $theme['category']; ?>;
             border: 2px solid;
+            -webkit-box-shadow: #B4B5B5 5px 5px 5px;
+            -moz-box-shadow: #B4B5B5 5px 5px 5px;
+            box-shadow: #B4B5B5 5px 5px 5px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
             width:350px;
             font-weight: 600;
             outline: 0;
             overflow: hidden;
             padding: 2px 2px 2px 2px;
-            -moz-border-radius: 3px;
-            -webkit-border-radius: 3px;
+
 
         }
         #selectwidth2 option{

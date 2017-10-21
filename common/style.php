@@ -131,10 +131,10 @@ $tablePadding = 6;
             padding: 5px;
             list-style-type: circle;
             font-size: 13px;
-        }
+      /*  }
         #submit {
-            width: 200px;
-            height: 60px;
+            width: 21px;
+            height: 21px;
             border:  10px;
             margin: 10px;
             padding: 6px;
@@ -145,8 +145,46 @@ $tablePadding = 6;
             font-size: 13px;
             -moz-border-radius: 3px;
             -webkit-border-radius: 3px;
+
+
+        }*/
+
+        #submit {
+            border: 1px solid #ffad41;
+            -webkit-box-shadow: #B4B5B5 10px 10px 10px;
+            -moz-box-shadow: #B4B5B5 10px 10px 10px;
+            box-shadow: #B4B5B5 10px 10px 10px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            font-size: 18px;
+            padding: 10px 10px 10px 10px;
+            text-decoration: none;
+            display: inline-block;
+            text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+            font-weight: bold;
+            color: #FFFFFF;
+            background-color: #ffc579;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc579), to(#fb9d23));
+            background-image: -webkit-linear-gradient(top, #ffc579, #fb9d23);
+            background-image: -moz-linear-gradient(top, #ffc579, #fb9d23);
+            background-image: -ms-linear-gradient(top, #ffc579, #fb9d23);
+            background-image: -o-linear-gradient(top, #ffc579, #fb9d23);
+            background-image: linear-gradient(to bottom, #ffc579, #fb9d23);
+            filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
         }
 
+        #submit:hover {
+            border: 1px solid #ff9913;
+            background-color: #ffaf46;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaf46), to(#e78404));
+            background-image: -webkit-linear-gradient(top, #ffaf46, #e78404);
+            background-image: -moz-linear-gradient(top, #ffaf46, #e78404);
+            background-image: -ms-linear-gradient(top, #ffaf46, #e78404);
+            background-image: -o-linear-gradient(top, #ffaf46, #e78404);
+            background-image: linear-gradient(to bottom, #ffaf46, #e78404);
+            filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffaf46, endColorstr=#e78404);
+        }
 
 
         BODY {background: <?php echo $theme['bgcolor'];?> ; color: black; font-weight:600;}

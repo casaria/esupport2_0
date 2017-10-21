@@ -138,7 +138,7 @@ $tablePadding = 6;
             border:  10px;
             margin: 10px;
             padding: 6px;
-            background: #feaa37 url(../images/casariadefault/log_button.jpg) 0 0 no-repeat;
+            background: #feaa37 url(../images/casariadefault/log_button.jpg) 10 10 no-repeat;
             font-weight:600;
             color: darkslateblue;
             list-style-type: circle;

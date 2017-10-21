@@ -151,7 +151,7 @@ $tablePadding = 6;
 
         }*/
 
-        #submit {
+        .button {
             border: 1px solid #ffad41;
             -webkit-box-shadow: #B4B5B5 10px 10px 10px;
             -moz-box-shadow: #B4B5B5 10px 10px 10px;
@@ -176,7 +176,7 @@ $tablePadding = 6;
             filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
         }
 
-        #submit:hover {
+        .button:hover {
             border: 1px solid #ff9913;
             background-color: #ffaf46;
             background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaf46), to(#e78404));

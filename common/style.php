@@ -132,6 +132,19 @@ $tablePadding = 6;
             list-style-type: circle;
             font-size: 13px;
         }
+        #submit {
+            color: <?php echo $theme['category']; ?>;
+
+            width: 150px;
+            height: 60px;
+            border:  3 px;
+            margin: 10;
+            padding: 6;
+            background: #0c0 url(../images/casariadefault/log_button.jpg) 0 0 no-repeat;
+        }
+
+
+
         BODY {background: <?php echo $theme['bgcolor'];?> ; color: black; font-weight:600;}
 
         a:link {text-decoration: none; color: <?php echo $theme['link']; ?>; font-weight:600;}

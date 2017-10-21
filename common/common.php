@@ -1371,13 +1371,14 @@ function createGroupMenu($flagUpdate=0)
 
 //we do have the information for info here.  In the case of creating a ticket, info array is empty.
 //in the case of updating a ticket, info array is full of stuff.
+
+
+
+    $sql = "select id, group_name from $mysql_sgroups_table order by users.user_name asc";
+    $result = $db->query($sql);
+    $num_rows = $db->num_rows($result);
+
     if (($flagUpdate== 0) || !isset($flagUpdate)) {
-
-            $sql = "select id, group_name from $mysql_sgroups_table order by users.user_name asc";
-            $result = $db->query($sql);
-            $num_rows = $db->num_rows($result);
-
-
             while ($row = $db->fetch_array($result)) {
                 if ($num_rows == 1 || $row[id] != 1) {
                     echo "<option value=\"index.php?t=tcre&sg=$row[id]\"";

@@ -333,7 +333,7 @@ if (isAdministrator($cookie_name) && $awaiting_approval){
 							break;
                         case("execute"):
                             //fixticketSeptember30(4996, 5051);
-    
+                            fixUgroupsTable();
                             break;
 						case ("memb"):
 							require "member.php";

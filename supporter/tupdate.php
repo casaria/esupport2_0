@@ -458,7 +458,7 @@ echo "<input type=hidden name=old_emailstatuschange value='" . $info['emailstatu
 echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
 echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
 echo "<input type=hidden name=minutes_labor value=$minutes>";
-echo "<input type=submit id=submit name=update height=80 value=\"$lang_updateticket\">";
+echo "<input type=submit id=submit name=update value=\"$lang_updateticket\">";
 echo "</form></td><td VALIGN='TOP' class=\"back\">";
 
 

@@ -3621,7 +3621,7 @@ function fixUgroupsTable () {
     global $mysql_users_table, $mysql_tickets_table, $db;
     $sql = "select * from ugroups ";
 
-    $sql= "";
+    $sql2= "";
 
     $result = $db->query($sql);
     $num_rows = $db->num_rows($result);

@@ -472,7 +472,7 @@ if ($enable_kbase == 'On') {
     echo "<input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\">";
     echo "</form></td>";
 }
-echo "</td></tr>";
+echo "</tr>";
 
 endTable();  // createTimeUpdate();
 

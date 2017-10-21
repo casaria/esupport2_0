@@ -155,8 +155,7 @@ $tablePadding = 6;
 
         }*/
 
-        input[type=text],
-        textarea,
+        input[type=text],textarea
         {
             border: 2px solid #ffad41;
             -webkit-box-shadow: #B4B5B5 5px 5px 5px;

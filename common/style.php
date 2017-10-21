@@ -133,14 +133,16 @@ $tablePadding = 6;
             font-size: 13px;
         }
         #submit {
-            color: <?php echo $theme['category']; ?>;
-
-            width: 150px;
+            width: 200px;
             height: 60px;
-            border:  3 px;
+            border:  10 px;
             margin: 10;
             padding: 6;
-            background: #0c0 url(../images/casariadefault/log_button.jpg) 0 0 no-repeat;
+            background: #feaa37 url(../images/casariadefault/log_button.jpg) 0 0 no-repeat;
+            font-weight:600;
+            color: darkslateblue;
+            list-style-type: circle;
+            font-size: 13px;
         }
 
 

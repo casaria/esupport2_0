@@ -78,6 +78,33 @@ $tablePadding = 6;
     <STYLE type="text/css">
 
         @import url(https://fonts.googleapis.com/css?family=Lato);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*Wide Layout*/
+        @media only screen and (min-width: 1280px) {
+            .wrap {
+                width: 1140px;
+                margin: 0 auto;
+            }
+        }
+
+
+
         table {-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 1px; font-weight:500;}
         #selectwidth{
             background-color: #afe7f7;

@@ -164,7 +164,7 @@ $tablePadding = 6;
             -moz-border-radius: 3px;
             border-radius: 3px;
             font-size: 13px;
-            padding: 10px 10px 10px 10px;
+            padding: 2px 2px 2px 2px;
             text-decoration: none;
 
             display: inline-block;

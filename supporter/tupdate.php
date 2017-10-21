@@ -458,7 +458,7 @@ echo "<input type=hidden name=old_emailstatuschange value='" . $info['emailstatu
 echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
 echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
 echo "<input type=hidden name=minutes_labor value=$minutes>";
-echo "<input type=submit id=submit name=update height=\"60\" value=\"$lang_updateticket\">";
+echo "<input type=submit id=submit name=update height=60 value=\"$lang_updateticket\">";
 echo "</form></td><td> ";
 
 
@@ -469,7 +469,7 @@ if ($enable_kbase == 'On') {
     echo "<input type=hidden name=category value='$info[category]'>";
     echo "<input type=hidden name=short value='$info[short]'>";
     echo "<input type=hidden name=description value='$info[description]'>";
-    echo "<input type=submit id=submit name=dumptokb height=\"60\" value=\"$lang_dumptokb\">";
+    echo "<input type=submit id=submit name=dumptokb height=60 value=\"$lang_dumptokb\">";
     echo "</form></td>";
 }
 echo "</td></tr>";

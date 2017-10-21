@@ -1365,38 +1365,33 @@ function createUserGroupMenu($flag=0)
 **	the flag is set to 0, or not set, the value of each group is set for the ticket creation.  If the flag
 **	is set to 1, the value of each group is set for ticket updating.
 ************************************************************************************************************/
-function createGroupMenu($flagUpdate=0, $groupSelectArray)
+function createGroupMenu($flagUpdate=0)
 {
 	global $mysql_sgroups_table, $sg, $info, $id, $db;
 
 //we do have the information for info here.  In the case of creating a ticket, info array is empty.
 //in the case of updating a ticket, info array is full of stuff.
-    (($flagUpdate== 0) || !isset($flagUpdate)) ? $u=1 : $u=0;
+    if (($flagUpdate== 0) || !isset($flagUpdate)) {
 
-    if ($u) {
-        $sql = "select id, group_name from $mysql_sgroups_table order by users.user_name asc";
-    } else {
-            $sql = "select users.id, users.first_name, users.last_name, sgroups.group_name  from $mysql_sgroups_table where order by users.user_name asc";
+            $sql = "select id, group_name from $mysql_sgroups_table order by users.user_name asc";
+            $result = $db->query($sql);
+            $num_rows = $db->num_rows($result);
+
+
+            while ($row = $db->fetch_array($result)) {
+                if ($num_rows == 1 || $row[id] != 1) {
+                    echo "<option value=\"index.php?t=tcre&sg=$row[id]\"";
+                    if ($sg == $row[id] || $info[groupid] == $row[id]) {
+                        echo " selected";
+                    }
+                    echo ">" . $row[group_name] . "</option>";
+                }
+            }
     }
-
-	$result = $db->query($sql);
-	$num_rows = $db->num_rows($result);
-
-	if (!$u)  {
-		while ($row = $db->fetch_array($result)) {
-			if ($num_rows == 1 || $row[id] != 1) {
-				echo "<option value=\"index.php?t=tcre&sg=$row[id]\"";
-				if ($sg == $row[id] || $info[groupid] == $row[id]) {
-					echo " selected";
-				}
-				echo ">" . $row[group_name] . "</option>";
-			}
-		}
-	}
 //flag is 1 is being called from tupdate.php
 	if ($flagUpdate == 1) {
 		while ($row = $db->fetch_array($result)) {
-		    echo "<option value=\"\"";          //ad a blank
+		    echo "<option value=\"\"</option>";          //ad a blank
 			if ($num_rows == 1 || $row['id'] != 1) {
 				echo "<option value=\"index.php?t=tupd&sg=$row[id]&id=$id&groupid=change\"";
 				if ($sg == $row['id'] || $info['groupid'] == $row['id']) {

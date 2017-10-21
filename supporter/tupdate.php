@@ -485,7 +485,7 @@ ECHO '                <tr>
 							<td class=back2 align=right>' . $lang_supportergroup . '</td>
 							<td class=back align="left">';
 ?> <select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)"><?php
-                                createGroupMenu();
+                                createGroupMenu(1);
     echo '
 							</select>
 							</td>tr>
@@ -528,7 +528,7 @@ ECHO '                <tr>
     }
 
 
-    function createSupporterMenu($group_id)
+        function createSupporterMenu($group_id)
     {
         global $mysql_users_table, $info, $db;
 
@@ -641,7 +641,7 @@ ECHO '                <tr>
     //Thanks to SteveW for providing this great function
     function createTicketDetails()
     {
-        global $info, $db, $lang_never, $mysql_attachments_table, $id, $lang_ticket, $lang_opened, $lang_attachments, $lang_lastupdate;
+        global $info, $db, $lang_never, $mysql_attachments_table, $id, $lang_ticket, $lang_opened,      $lang_attachments, $lang_lastupdate;
 
         $padded_id = str_pad($id, 5, '0', STR_PAD_LEFT);
         $info['create_date'] = date("F j, Y, g:i a", $info['create_date']);

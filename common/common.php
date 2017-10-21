@@ -1844,7 +1844,7 @@ function displayTicket($result)
 	echo "<input type=\"hidden\" name=\"tids\" value=\"".$csv_string."\">"	;
     echo '<input type="hidden" value="$lang_printstats" name="hidemenu">';
     ?>
-	<a href="#" onClick="document.form.TimeTrack.submit();"> <?php echo "Time Track"; ?></a>
+	<a href="#" onClick="document.formTimeTrack.submit();"> <?php echo "Time Track"; ?></a>
     </form>
 	<?php
     unset($result,$result3);

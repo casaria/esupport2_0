@@ -448,7 +448,7 @@ if ($enable_time_tracking == 'On') {
 }
 
 
-echo "<TR><td></td><td class=\"back\">";
+echo "<TR><td class=\"back\"><td></td><td class=\"back\">";
 echo "<input type=hidden name=sg value='" . $sg . "'>";
 echo "<input type=hidden name=id value='" . $info['id'] . "'>";
 echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
@@ -459,7 +459,7 @@ echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
 echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
 echo "<input type=hidden name=minutes_labor value=$minutes>";
 echo "<input type=submit id=submit name=update height=80 value=\"$lang_updateticket\">";
-echo "</form></td><td> ";
+echo "</form></td><td class=\"back\">";
 
 
 if ($enable_kbase == 'On') {

@@ -156,7 +156,7 @@ $tablePadding = 6;
         }*/
 
         input[type=text],
-        input[type=textarea],
+        textarea,
         {
             border: 2px solid #ffad41;
             -webkit-box-shadow: #B4B5B5 5px 5px 5px;
@@ -184,7 +184,7 @@ $tablePadding = 6;
         }
 
         input[type=text]:hover,
-        input[type=textarea]:hover
+        textarea:hover
         {
             border: 2px dashed #ff9913;
             background-color: #ffaf46;

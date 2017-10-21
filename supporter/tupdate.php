@@ -470,7 +470,7 @@ if ($enable_kbase == 'On') {
     echo "<input type=hidden name=short value='$info[short]'>";
     echo "<input type=hidden name=description value='$info[description]'>";
     echo "<input type=submit id=submit name=dumptokb value=\"$lang_dumptokb\">";
-    echo "</td></form>";
+    echo "</form></td>";
 }
 echo "</td></tr>";
 

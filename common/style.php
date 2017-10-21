@@ -83,9 +83,9 @@ $tablePadding = 6;
             background-color: #afe7f7;
             Vbackground-color: <?php echo $theme['subcategory']; ?>
             border: 2px solid;
-            -webkit-box-shadow: #B4B5B5 5px 5px 5px;
-            -moz-box-shadow: #B4B5B5 5px 5px 5px;
-            box-shadow: #B4B5B5 5px 5px 5px;
+            -webkit-box-shadow: #B4B5B5 3PX 3PX 3PX;
+            -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
+            box-shadow: #B4B5B5 3PX 3PX 3PX;
             -webkit-border-radius: 3px;
             -moz-border-radius: 3px;
             width:350px;
@@ -109,9 +109,9 @@ $tablePadding = 6;
         #selectwidth2{
             background-color: <?php echo $theme['category']; ?>;
             border: 2px solid;
-            -webkit-box-shadow: #B4B5B5 5px 5px 5px;
-            -moz-box-shadow: #B4B5B5 5px 5px 5px;
-            box-shadow: #B4B5B5 5px 5px 5px;
+            -webkit-box-shadow: #B4B5B5 3px 3PX 3PX;
+            -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
+            box-shadow: #B4B5B5 3PX 3PX 3PX;
             -webkit-border-radius: 3px;
             -moz-border-radius: 3px;
             width:350px;

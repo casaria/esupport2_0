@@ -67,7 +67,7 @@ $tablePadding = 6;
     <TITLE> <?php echo $helpdesk_name;?></TITLE>
     <?php
     if ($theme['font'] == "Titillium Web") {
-        $lineHeight = 1.2;
+        $lineHeight = 1.1;
         $tablePadding = 5;
     } else  {
         $lineHeight = 1.1;
@@ -137,7 +137,7 @@ $tablePadding = 6;
         a:link {text-decoration: none; color: <?php echo $theme['link']; ?>; font-weight:600;}
         a:visited {text-decoration: none; color: <?php echo $theme['link']; ?>;}
         a:active {text-decoration: none; color: <?php echo $theme['link']; ?>;}
-        a:hver {text-decoration: underline; color: <?php echo $theme['link']; ?>;}
+        a:hover {text-decoration: underline; color: <?php echo $theme['link']; ?>;}
 
         a.kbase:link {text-decoration: underline; font-weight: bold; color: <?php echo $theme['text']; ?>;}
         a.kbase:visited {text-decoration: underline; font-weight: bold; color: <?php echo $theme['text']; ?>;}
@@ -260,7 +260,7 @@ $tablePadding = 6;
         td.subcat {background: <?php echo $theme['subcategory']; ?>; color: <?php echo $theme['text']; ?>; font-family: "<?php echo $theme['font']; ?>"; font-size: <?php echo '$theme["font_size"] + 4'?>'px';  font-weight:600;}
 
 
-        input.box {border: 2px; height: 36px}
+        input.box {border: 4px; height: 22px}
 
         table.border2 {background: #6974b5;}
         td.install {background:#dddddd; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 12px;}

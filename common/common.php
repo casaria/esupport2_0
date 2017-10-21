@@ -1365,17 +1365,24 @@ function createUserGroupMenu($flag=0)
 **	the flag is set to 0, or not set, the value of each group is set for the ticket creation.  If the flag
 **	is set to 1, the value of each group is set for ticket updating.
 ************************************************************************************************************/
-function createGroupMenu($flag=0)
+function createGroupMenu($flagUpdate=0, $groupSelectArray)
 {
 	global $mysql_sgroups_table, $sg, $info, $id, $db;
 
 //we do have the information for info here.  In the case of creating a ticket, info array is empty.
 //in the case of updating a ticket, info array is full of stuff.
-	$sql = "select id, group_name from $mysql_sgroups_table order by rank asc";
+    (($flagUpdate== 0) || !isset($flagUpdate)) ? $u=1 : $u=0;
+
+    if ($u) {
+        $sql = "select id, group_name from $mysql_sgroups_table order by users.user_name asc";
+    } else {
+            $sql = "select users.id, users.first_name, users.last_name, sgroups.group_name  from $mysql_sgroups_table where order by users.user_name asc";
+    }
+
 	$result = $db->query($sql);
 	$num_rows = $db->num_rows($result);
 
-	if ($flag == 0 || !isset($flag)) {
+	if (!$u)  {
 		while ($row = $db->fetch_array($result)) {
 			if ($num_rows == 1 || $row[id] != 1) {
 				echo "<option value=\"index.php?t=tcre&sg=$row[id]\"";
@@ -1387,8 +1394,9 @@ function createGroupMenu($flag=0)
 		}
 	}
 //flag is 1 is being called from tupdate.php
-	if ($flag == 1) {
+	if ($flagUpdate == 1) {
 		while ($row = $db->fetch_array($result)) {
+		    echo "<option value=\"\"";          //ad a blank
 			if ($num_rows == 1 || $row['id'] != 1) {
 				echo "<option value=\"index.php?t=tupd&sg=$row[id]&id=$id&groupid=change\"";
 				if ($sg == $row['id'] || $info['groupid'] == $row['id']) {
@@ -1400,7 +1408,7 @@ function createGroupMenu($flag=0)
 	}
 
 //flag is 2 if being called from tsearch.php
-	if ($flag == 2) {
+	if ($flagUpdate == 2) {
 
 		echo "<option></option>";
 		while ($row = $db->fetch_row($result)) {
@@ -1842,11 +1850,8 @@ function displayTicket($result)
 	echo "<input type=\"hidden\" name=\"tids\" value=\"".$csv_string."\">"	;
     echo '<input type="hidden" value="$lang_printstats" name="hidemenu">';
     ?>
-	<a href="#" onClick="document.formTimeTrack.submit();"> <?php echo "Time Track"; ?>!</a>
-
-
-
-	</form>
+	<a href="#" onClick="document.formTimeTrack.submit();"> <?php echo "Time Track"; ?></a>
+    </form>
 	<?php
     unset($result,$result3);
 
@@ -3612,4 +3617,36 @@ function fixticketSeptember30($id_from, $id_to){
 
     }
 }
+
+
+/**
+ * @param $id_from
+ * @param $id_to
+ */
+function fixUgroupsTable () {
+    global $mysql_users_table, $mysql_tickets_table, $db;
+    $sql = "select * from ugroups ";
+
+    $sql= "";
+
+    $result = $db->query($sql);
+    $num_rows = $db->num_rows($result);
+
+    for ($i=1; $i<=$num_rows; $i++) {
+
+        $row = $db->fetch_row($result);
+        $id = $row[0];
+        $supporter = $row[4];
+        $createDate = $row[1];
+        $update= "'$createDate \$lang_by --//--<i>\$lang_ticketcreatedby $supporter --//--'";
+        $sql2 = "update $mysql_tickets_table set update_log=$update where id=$id";
+        $result2 = $db->query($sql2);
+        echo "<br>$sql2>  $result2<br>";
+
+
+    }
+}
+
+
+
 ?>

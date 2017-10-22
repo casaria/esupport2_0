@@ -185,7 +185,7 @@ $tablePadding = 6;
             }
 
             input[type=text]:hover, textarea:hover, select:hover, input[type=submit]:hover {
-                border: 2px dashed #ff9913;
+               /* border: 2px dashed #ff9913; */
                 background-color: #ffaf46;
                 background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaf46), to(#e78404));
                 background-image: -webkit-linear-gradient(top, #ffaf46, #e78404);

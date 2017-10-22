@@ -417,7 +417,8 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 
 
 <div class="container">
-    <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
+    <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a
+        unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
 
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#main">MAIN</a></li>
@@ -429,7 +430,7 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
     <div class="tab-content">
         <div id="main" class="tab-pane fade in active">
             <h3>MAIN</h3>
-            <p>Review and edit.  Provide Instucions: The field sequence is now more intuitive.
+            <p>Review and edit. Provide Instucions: The field sequence is now more intuitive.
                 <?php
 
                 $info = getTicketInfo($id);
@@ -544,32 +545,26 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 
                     }
 
-?>
-
-
-            </p>
-        </div>
-    </div>
-</div>
-
-
-
-
+                    ?>
             </p>
         </div>
         <div id="time" class="tab-pane fade">
             <h3>TIME</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
         </div>
         <div id="material" class="tab-pane fade">
             <h3>MATERIAL</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam.</p>
         </div>
         <div id="extra" class="tab-pane fade">
             <h3>EXTRA</h3>
             <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-
+            </p>
+        </div>
+    </div>
+</div>
 
 
 <?php
@@ -686,7 +681,7 @@ function createUserInfo()
 //Thanks to SteveW for providing this great function
 function createTicketDetails()
 {
-    global $info, $db, $lang_never, $mysql_attachments_table, $id, $lang_ticket, $lang_opened,      $lang_attachments, $lang_lastupdate;
+    global $info, $db, $lang_never, $mysql_attachments_table, $id, $lang_ticket, $lang_opened, $lang_attachments, $lang_lastupdate;
 
     $padded_id = str_pad($id, 5, '0', STR_PAD_LEFT);
     $info['create_date'] = date("F j, Y, g:i a", $info['create_date']);

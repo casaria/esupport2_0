@@ -157,7 +157,8 @@ $tablePadding = 6;
                                   }*/
                 input[type=text], textarea, select {
                     width: 200px;
-                    border: 2px solid #ffad41;
+                    border: 2px solid;
+                    border-top-color: #67bcd1;border-right-color: #67bcd1;border-bottom-color: #67bcd1;border-left-color: #67bcd1;
                     -webkit-box-shadow: #B4B5B5 3px 3px 3px;
                     -moz-box-shadow: #B4B5B5 3px 3px 3px;
                     box-shadow: #B4B5B5 3px 3px 3px;
@@ -171,7 +172,19 @@ $tablePadding = 6;
                     display: inline-block;
                     text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
                     font-weight: bold;
-                    color: #FFFFFF;
+
+                    background-color: #AFE7F7;
+                    background-image: -webkit-gradient(linear, left top, left bottom, from(#AFE7F7), to(#90CDDD));
+                    background-image: -webkit-linear-gradient(top, #AFE7F7, #90CDDD);
+                    background-image: -moz-linear-gradient(top, #AFE7F7, #90CDDD);
+                    background-image: -ms-linear-gradient(top, #AFE7F7, #90CDDD);
+                    background-image: -o-linear-gradient(top, #AFE7F7, #90CDDD);
+                    background-image: linear-gradient(to bottom, #AFE7F7, #90CDDD);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#AFE7F7,
+
+
+
+
+                    /*
                     background-color: #ffc579;
                     background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc579), to(#fb9d23));
                     background-image: -webkit-linear-gradient(top, #ffc579, #fb9d23);
@@ -180,6 +193,8 @@ $tablePadding = 6;
                     background-image: -o-linear-gradient(top, #ffc579, #fb9d23);
                     background-image: linear-gradient(to bottom, #ffc579, #fb9d23);
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
+
+                    */
                 }
 
                 input[type=text]:hover, textarea:hover, select:hover {

@@ -85,9 +85,7 @@ $tablePadding = 6;
 
         <STYLE type="text/css">
 
-            table {
-                padding: 1;
-            }
+
             @import url(https://fonts.googleapis.com/css?family=Lato);
 
             /*### Smartphones (portrait and landscape)(small)### */
@@ -97,6 +95,13 @@ $tablePadding = 6;
                     /*width: 50%;  */
                     margin: 0 auto;
                     zoom: 0.25;
+                }
+
+                table {
+                    -webkit-border-horizontal-spacing: 2px;
+                    -webkit-border-vertical-spacing: 1px;
+                    font-weight: 500;
+                    padding: 1;
                 }
 
                 #selectwidth {
@@ -783,10 +788,12 @@ $tablePadding = 6;
                     zoom: 0.9;
                 }
 
+
                 table {
                     -webkit-border-horizontal-spacing: 2px;
                     -webkit-border-vertical-spacing: 1px;
                     font-weight: 500;
+                    padding: 1;
                 }
 
                 #selectwidth {

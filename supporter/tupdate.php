@@ -34,8 +34,6 @@
 require_once "../common/config.php";
 require_once "../common/mysql.class.php";
 require_once "../common/common.php";
-require_once "../commom/style.php";
-
 $language = getLanguage($cookie_name);
 if ($language == '')
     require_once "../lang/$default_language.lang.php";
@@ -403,9 +401,11 @@ if (isset($update)) {
 }
 
 unset($update);
-//set up the javascript function for creating a menu.
+echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 
+//set up the javascript function for creating a menu.
 ?>
+
 <script language="JavaScript">
     <!--
     function MM_jumpMenu(targ, selObj, restore) { //v3.0
@@ -419,7 +419,36 @@ unset($update);
 
 <div class="container">
     <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a
-        unique ID for every tab and wrap them inside a div element with class .tab-content</p>
+        unique ID for every tab and wrap them inside a div element with class .tab-content.
+        <?php
+        echo "<TR><td class=\"back\"></td><td VALIGN='TOP' class=\"back\">";
+        echo "<input type=hidden name=sg value='" . $sg . "'>";
+        echo "<input type=hidden name=id value='" . $info['id'] . "'>";
+        echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
+        echo "<input type=hidden name=old_pri value='" . $info['priority'] . "'>";
+        echo "<input type=hidden name=old_emailgroup value='" . $info['emailgroup'] . "'>";
+        echo "<input type=hidden name=old_emailstatuschange value='" . $info['emailstatuschange'] . "'>";
+        echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
+        echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
+        echo "<input type=hidden name=minutes_labor value=$minutes>";
+        echo "<input type=submit id=submit name=update value=\"$lang_updateticket\">";
+        echo "</form></td><td VALIGN='TOP' class=\"back\">";
+
+
+        if ($enable_kbase == 'On') {
+
+            echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>&nbsp;&nbsp;";
+            echo "<input type=hidden name=platform value='$info[platform]'>";
+            echo "<input type=hidden name=category value='$info[category]'>";
+            echo "<input type=hidden name=short value='$info[short]'>";
+            echo "<input type=hidden name=description value='$info[description]'>";
+            echo "<input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\">";
+            echo "</form></td>";
+        }
+        echo "</tr>";
+        ?>
+
+    </p>
 
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#main">MAIN</a></li>
@@ -432,8 +461,12 @@ unset($update);
         <div id="main" class="tab-pane fade in active">
             <h3>MAIN</h3>
             <p>Review and edit. Provide Instucions: The field sequence is now more intuitive.
-
                 <?php
+
+                $info = getTicketInfo($id);
+
+                $sg = $info['groupid'];
+
                 createTicketHeader("$lang_updateticket");
                 echo '<a href="updatelog.php?cookie_name=' . $cookie_name . '&id=' . $info['id'] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',
 					\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">
@@ -462,50 +495,74 @@ unset($update);
                 }
 
 
-        echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
-
-        echo "<TR><td class=\"back\"></td><td VALIGN='TOP' class=\"back\">";
-        echo "<input type=hidden name=sg value='" . $sg . "'>";
-        echo "<input type=hidden name=id value='" . $info['id'] . "'>";
-        echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
-        echo "<input type=hidden name=old_pri value='" . $info['priority'] . "'>";
-        echo "<input type=hidden name=old_emailgroup value='" . $info['emailgroup'] . "'>";
-        echo "<input type=hidden name=old_emailstatuschange value='" . $info['emailstatuschange'] . "'>";
-        echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
-        echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
-        echo "<input type=hidden name=minutes_labor value=$minutes>";
-        echo "<input type=submit id=submit name=update value=\"$lang_updateticket\">";
-        echo "</form></td><td VALIGN='TOP' class=\"back\">";
-
-
-        if ($enable_kbase == 'On') {
-
-            echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>&nbsp;&nbsp;";
-            echo "<input type=hidden name=platform value='$info[platform]'>";
-            echo "<input type=hidden name=category value='$info[category]'>";
-            echo "<input type=hidden name=short value='$info[short]'>";
-            echo "<input type=hidden name=description value='$info[description]'>";
-            echo "<input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\">";
-            echo "</form></td>";
-        }
-        echo "</tr>";
-                $info = getTicketInfo($id);
-                $sg = $info['groupid'];
-
 
 
                 endTable();  // createTimeUpdate();
 
-        ?>
+                function createSupporterInfo()
+                {
+                global $sg, $lang_supporterinfo, $lang_supportergroup, $lang_supporter, $lang_ticket, $lang_priority, $lang_status;
+
+                startTable("$lang_supporterinfo", "left", 100, 4);
+
+                ECHO '                <tr>                              
+							<td class=back2 align=right>' . $lang_supportergroup . '</td>
+							<td class=back align="left">';
+                ?> <select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)"><?php
+                    createGroupMenu(1);
+                    echo '
+							</select>
+							</td></tr><tr>
+							<td class=back2 align=right width="180Ppx">' . $lang_supporter . ' </td>
+							<td class=back align="left">
+                                
+			
+							<select id="selectwidth" name=supporter_id>';
+                    createSupporterMenu($sg);
+
+                    echo '				
+							</select>
+							</td>
+                              </tr><tr>
+					
+							<td class=back2 align=right>' . $lang_ticket . ' ' . $lang_priority . ':</td>
+							<td class=back align="left">
+							
+							<select id="selectwidth" name=prio>';
+                    createPriorityMenu(0);
+
+                    echo '
+							</select>
+							</td>
+							</tr><tr>
+
+							<td class=back2 align=right>' . $lang_ticket . ' ' . $lang_status . ':</td>
+							<td class=back align="left">
+							
+							<select id="selectwidth2" name=status>';
+                    createStatusMenu(0);
+
+
+                    echo '                    </select>
+							</td></tr>';
+
+
+                    endTable();
+
+                    }
+
+                    ?>
             </p>
         </div>
         <div id="time" class="tab-pane fade">
             <h3>TIME</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
         </div>
         <div id="material" class="tab-pane fade">
             <h3>MATERIAL</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totamrem aperiam.</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam.</p>
         </div>
         <div id="extra" class="tab-pane fade">
             <h3>EXTRA</h3>
@@ -517,110 +574,6 @@ unset($update);
 
 
 <?php
-
-
-function createSupporterInfo()
-{
-global $sg, $lang_supporterinfo, $lang_supportergroup, $lang_supporter, $lang_ticket, $lang_priority, $lang_status;
-
-startTable("$lang_supporterinfo", "left", 100, 4);
-
-ECHO '                <tr>                              
-							<td class=back2 align=right>' . $lang_supportergroup . '</td>
-							<td class=back align="left">';
-?> <select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)"><?php
-    createGroupMenu(1);
-    echo '
-							</select>
-							</td></tr><tr>
-							<td class=back2 align=right width="180Ppx">' . $lang_supporter . ' </td>
-							<td class=back align="left">
-                                
-			
-							<select id="selectwidth" name=supporter_id>';
-    createSupporterMenu($sg);
-
-    echo '				
-							</select>
-							</td>
-                              </tr><tr>
-					
-							<td class=back2 align=right>' . $lang_ticket . ' ' . $lang_priority . ':</td>
-							<td class=back align="left">
-							
-							<select id="selectwidth" name=prio>';
-    createPriorityMenu(0);
-
-    echo '
-							</select>
-							</td>
-							</tr><tr>
-
-							<td class=back2 align=right>' . $lang_ticket . ' ' . $lang_status . ':</td>
-							<td class=back align="left">
-							
-							<select id="selectwidth2" name=status>';
-    createStatusMenu(0);
-
-
-    echo '                    </select>
-							</td></tr>';
-
-
-    endTable();
-
-    }                function createSupporterInfo()
-    {
-    global $sg, $lang_supporterinfo, $lang_supportergroup, $lang_supporter, $lang_ticket, $lang_priority, $lang_status;
-
-    startTable("$lang_supporterinfo", "left", 100, 4);
-
-    ECHO '                <tr>                              
-							<td class=back2 align=right>' . $lang_supportergroup . '</td>
-							<td class=back align="left">';
-    ?> <select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)"><?php
-        createGroupMenu(1);
-        echo '
-							</select>
-							</td></tr><tr>
-							<td class=back2 align=right width="180Ppx">' . $lang_supporter . ' </td>
-							<td class=back align="left">
-                                
-			
-							<select id="selectwidth" name=supporter_id>';
-        createSupporterMenu($sg);
-
-        echo '				
-							</select>
-							</td>
-                              </tr><tr>
-					
-							<td class=back2 align=right>' . $lang_ticket . ' ' . $lang_priority . ':</td>
-							<td class=back align="left">
-							
-							<select id="selectwidth" name=prio>';
-        createPriorityMenu(0);
-
-        echo '
-							</select>
-							</td>
-							</tr><tr>
-
-							<td class=back2 align=right>' . $lang_ticket . ' ' . $lang_status . ':</td>
-							<td class=back align="left">
-							
-							<select id="selectwidth2" name=status>';
-        createStatusMenu(0);
-
-
-        echo '                    </select>
-							</td></tr>';
-
-
-        endTable();
-
-        }
-
 function createSupporterMenu($group_id)
 {
     global $mysql_users_table, $info, $db;

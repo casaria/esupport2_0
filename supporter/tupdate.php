@@ -416,7 +416,6 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
     //--></script>
 
 
-
 <div class="container">
     <p>UPDATE </p>
 
@@ -437,8 +436,8 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
                 $sg = $info['groupid'];
 
                 createTicketHeader("$lang_updateticket");
-                echo '<a href="updatelog.php?cookie_name=' . $cookie_name . '&id=' . $info['id'] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',
-					\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">
+                echo '<a href="updatelog.php?cookie_name=' . $cookie_name . '&id=' .
+                    $info['id'] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">
 
 <img border=0 src="../' . $theme['image_dir'] . 'orangeglow0_show_summary.png"></a> ';
                 echo "<div align=right><a href=\"$supporter_site_url/print.php?id=$id\">$lang_printable</a></div>";
@@ -464,31 +463,31 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
                 }
 
 
-echo "<TR><td class=\"back\"></td><td VALIGN='TOP' class=\"back\">";
-echo "<input type=hidden name=sg value='" . $sg . "'>";
-echo "<input type=hidden name=id value='" . $info['id'] . "'>";
-echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
-echo "<input type=hidden name=old_pri value='" . $info['priority'] . "'>";
-echo "<input type=hidden name=old_emailgroup value='" . $info['emailgroup'] . "'>";
-echo "<input type=hidden name=old_emailstatuschange value='" . $info['emailstatuschange'] . "'>";
-echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
-echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
-echo "<input type=hidden name=minutes_labor value=$minutes>";
-echo "<input type=submit id=submit name=update height=80 value=\"$lang_updateticket\">";
-echo "</form></td><td VALIGN='TOP' class=\"back\">";
+                echo "<TR><td class=\"back\"></td><td VALIGN='TOP' class=\"back\">";
+                echo "<input type=hidden name=sg value='" . $sg . "'>";
+                echo "<input type=hidden name=id value='" . $info['id'] . "'>";
+                echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
+                echo "<input type=hidden name=old_pri value='" . $info['priority'] . "'>";
+                echo "<input type=hidden name=old_emailgroup value='" . $info['emailgroup'] . "'>";
+                echo "<input type=hidden name=old_emailstatuschange value='" . $info['emailstatuschange'] . "'>";
+                echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
+                echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
+                echo "<input type=hidden name=minutes_labor value=$minutes>";
+                echo "<input type=submit id=submit name=update height=80 value=\"$lang_updateticket\">";
+                echo "</form></td><td VALIGN='TOP' class=\"back\">";
 
 
-if ($enable_kbase == 'On') {
+                if ($enable_kbase == 'On') {
 
-    echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>&nbsp;&nbsp;";
-    echo "<input type=hidden name=platform value='$info[platform]'>";
-    echo "<input type=hidden name=category value='$info[category]'>";
-    echo "<input type=hidden name=short value='$info[short]'>";
-    echo "<input type=hidden name=description value='$info[description]'>";
-    echo "<input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\">";
-    echo "</form></td>";
-}
-echo "</tr>";
+                    echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>&nbsp;&nbsp;";
+                    echo "<input type=hidden name=platform value='$info[platform]'>";
+                    echo "<input type=hidden name=category value='$info[category]'>";
+                    echo "<input type=hidden name=short value='$info[short]'>";
+                    echo "<input type=hidden name=description value='$info[description]'>";
+                    echo "<input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\">";
+                    echo "</form></td>";
+                }
+                echo "</tr>";
 
                 endTable();  // createTimeUpdate();
                 ?>

@@ -92,7 +92,8 @@ $tablePadding = 6;
 
         } ?>
 
-        <STYLE type="text/css">
+        <STYLE>
+        <type="text/css">
 
 
             @import url(https://fonts.googleapis.com/css?family=Lato);
@@ -1508,10 +1509,9 @@ $tablePadding = 6;
                     color: #000099;
                 }
             }
+    </STYLE>
 
-
-        </STYLE>
-    </HEAD>
+    </HEAD></HTML>
 <?php
 
 function getThemeVars($name)

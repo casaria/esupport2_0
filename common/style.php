@@ -47,6 +47,17 @@ $tablePadding = 6;
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../dylay/assets/vendor/jquery.easing.1.3.js"></script>
+    <script src="../dylay/src/dylay.js"></script>
+    <script src="../dylay/assets/js/main.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Titillium Web:300:400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../dylay/assets/css/main.css" media="screen">
+    </html>
 
     <script type="text/javascript">
         WebFontConfig = {
@@ -1486,10 +1497,9 @@ $tablePadding = 6;
                     color: #000099;
                 }
             }
+
+
         </STYLE>
-        <?php
-        require_once $includePath . "scripts.php";
-        ?>
     </HEAD>
 <?php
 

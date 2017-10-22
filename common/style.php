@@ -207,7 +207,6 @@ $tablePadding = 6;
                     -moz-border-radius: 4px;
                     border-radius: 4px;
                     font-size: 18px;
-                    font-family: tahoma, verdana, arial, sans-serif;
                     padding: 8px 8px 8px 8px;
                     text-decoration: none;
                     display: inline-block;

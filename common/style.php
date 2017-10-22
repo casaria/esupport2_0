@@ -816,15 +816,8 @@ $tablePadding = 6;
                     zoom: 0.9;
                 }
 
-                .tabbox {
-                    padding-right: 1px;
-                    padding-left: 1px;
-                    margin-right: 1px;
-                    margin-left: 1px;
-                }
-
                 .back {
-                    background-color: #ffffff
+                    background-color: #ffffff;
                 }
 
                 table {
@@ -836,7 +829,7 @@ $tablePadding = 6;
 
                 #selectwidth {
                 /*    background-color: #afe7f7;   */
-                    border: 0px solid;
+                    border: 0 solid;
                     background-color: <?php echo $theme['subcategory']; ?>;
                     -webkit-box-shadow: #B4B5B5 3PX 3PX 3PX;
                     -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
@@ -861,7 +854,7 @@ $tablePadding = 6;
 
                 #selectwidth2 {
                     background-color: <?php echo $theme['category']; ?>;
-                    border: 0px solid;
+                    border: 0 solid;
                     -webkit-box-shadow: #B4B5B5 3px 3PX 3PX;
                     -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
                     box-shadow: #B4B5B5 3PX 3PX 3PX;
@@ -1232,7 +1225,6 @@ $tablePadding = 6;
                 a.hf:link {
                     line-height: <?php echo $lineHeight; ?>;
                     text-decoration: none;
-                    font-weight: normal;
                     font-family: "<?php echo $theme['font']; ?>";
                     font-weight: 600;
                     font-size: <?php echo $theme['font_size']; ?>px;

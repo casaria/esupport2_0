@@ -902,7 +902,7 @@ $tablePadding = 6;
                     -webkit-border-horizontal-spacing: 2px;
                     -webkit-border-vertical-spacing: 1px;
                     font-weight: 500;
-                    padding: 1px;
+
                 }
 
                 #selectwidth {
@@ -1122,15 +1122,14 @@ $tablePadding = 6;
                     color: #000000;
                     font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
                     font-size: <?php echo $theme['font_size']; ?>px;
-                    padding: 2px;
+
                 }
 
                 tr {
                     color: #000000;
                     font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
                     font-size: <?php echo $theme['font_size']; ?>px;
-                    padding: 2px;
-                }
+
 
                 td.back {
                     padding: <?php echo $tablePadding; ?>px;

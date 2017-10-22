@@ -171,7 +171,7 @@ $tablePadding = 6;
                     display: inline-block;
                     text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
                     font-weight: bold;
-                    color: #FFFFFF;
+                    color: darkslateblue;
                     background-color: #AFE7F7; background-image: -webkit-gradient(linear, left top, left bottom, from(#AFE7F7), to(#90CDDD));
                     background-image: -webkit-linear-gradient(top, #AFE7F7, #90CDDD);
                     background-image: -moz-linear-gradient(top, #AFE7F7, #90CDDD);

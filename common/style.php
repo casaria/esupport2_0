@@ -249,7 +249,7 @@ $tablePadding = 6;
                     border-right-color: #44adc6;
                     border-bottom-color: #44adc6;
                     border-left-color: #44adc6;
-                    border-width: 4px;
+                    border-width: 2px;
                     border-style: solid;
                     background-color: #6bbed2;
                     background-image: -webkit-gradient(linear, left top, left bottom, from(#6bbed2), to(#50abc4));

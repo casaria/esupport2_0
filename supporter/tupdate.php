@@ -415,7 +415,7 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 
     //--></script>
 
-
+<?php
 echo "<TR><td class=\"back\"></td><td VALIGN='TOP' class=\"back\">";
         echo "<input type=hidden name=sg value='" . $sg . "'>";
         echo "<input type=hidden name=id value='" . $info['id'] . "'>";
@@ -441,6 +441,7 @@ echo "<TR><td class=\"back\"></td><td VALIGN='TOP' class=\"back\">";
             echo "</form></td>";
     }
     echo "</tr>";
+?>
 
 <div class="container">
     <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a

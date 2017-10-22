@@ -102,7 +102,7 @@ $tablePadding = 6;
                 margin: 1px;
             }
 
-            .li {
+            ul {
                 padding-left: 4px;
             }
 

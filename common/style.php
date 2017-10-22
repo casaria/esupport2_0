@@ -761,7 +761,7 @@ $tablePadding = 6;
             }
 
             /*Wide Layout*/
-            @media only screen and (min-width: 820px) {
+            @media only screen and (min-width: 768px) {
                 .wrap {
                     width: 1140px;
                     margin: 0 auto;
@@ -869,7 +869,7 @@ $tablePadding = 6;
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
                 }
 
-                input[type=text]:hover, textarea:hover, select:hover, input[type=submit]:hover {
+                input[type=text]:hover, textarea:hover, select:hover {
                     border: 2px dashed #ff9913;
                     background-color: #ffaf46;
                     background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaf46), to(#e78404));
@@ -881,7 +881,7 @@ $tablePadding = 6;
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffaf46, endColorstr=#e78404);
                 }
 
-                button {
+                button, input[type=submit] {
                     border-top-color: #67bcd1;
                     border-right-color: #67bcd1;
                     border-bottom-color: #67bcd1;
@@ -911,7 +911,7 @@ $tablePadding = 6;
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#92cfde, endColorstr=#76bdd1);
                 }
 
-                button:hover {
+                button:hover, input[type=submit]:hover {
                     border-top-color: #44adc6;
                     border-right-color: #44adc6;
                     border-bottom-color: #44adc6;

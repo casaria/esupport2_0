@@ -127,7 +127,7 @@ $tablePadding = 6;
                     Vbackground-color: <?php echo $theme['subcategory']; ?> border: 2px solid;
                     -webkit-box-shadow: #B4B5B5 3PX 3PX 3PX;
                     -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
-                    box-shadow: #B4B5B5 3PX 3PX 3PX;
+                    -box-shadow: #B4B5B5 3PX 3PX 3PX;
                     -webkit-border-radius: 3px;
                     -moz-border-radius: 3px;
                     width: 200px;
@@ -244,8 +244,8 @@ $tablePadding = 6;
                     -webkit-border-radius: 4px;
                     -moz-border-radius: 4px;
                     border-radius: 4px;
-                    font-size: 18px;
-                    padding: 8px 8px 8px 8px;
+                    font-size: 16px
+                    padding: 6px 6px 6px 6px;
                     font-weight: 600;
                     text-decoration: none;
                     display: inline-block;
@@ -1158,7 +1158,7 @@ $tablePadding = 6;
                 tr.back3 {
                     line-height: <?php echo $lineHeight; ?>;
                     background: #feaa37;
-                    font-weight: 600;
+                    fontnt-weight: 600;
                 }
 
                 /*table tr:nth-child(odd) tr{background:
@@ -1224,7 +1224,6 @@ $tablePadding = 6;
                 a.hf:link {
                     line-height: <?php echo $lineHeight; ?>;
                     text-decoration: none;
-                    font-weight: normal;
                     font-family: "<?php echo $theme['font']; ?>";
                     font-weight: 600;
                     font-size: <?php echo $theme['font_size']; ?>px;

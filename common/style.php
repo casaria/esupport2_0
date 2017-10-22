@@ -79,7 +79,7 @@ $tablePadding = 6;
             @import url(https://fonts.googleapis.com/css?family=Lato);
 
             /*### Smartphones (portrait and landscape)(small)### */
-            @media screen and (min-width: 0px) and (max-width: 767px) {
+            @media screen and (min-width : 0px) and (max-width : 767px){
                 /*Base Mobile Layout*/
                 .table {
                     /*width: 50%;  */
@@ -100,6 +100,16 @@ $tablePadding = 6;
                     outline: 0;
                     overflow: hidden;
                     padding: 2px 2px 2px 2px;
+
+                    /* background: transparent;
+                     padding: 5px 10px 5px 5px;
+                     font-size: 16px;
+                     border: 1px solid #f4a62b;
+                     height: 34px;
+                     -webkit-appearance: none;
+                     -moz-appearance: none;
+                     appearance: none;
+                     background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat */
                 }
 
                 #selectwidth2 {
@@ -119,6 +129,7 @@ $tablePadding = 6;
                 }
 
                 #selectwidth option, #selectwidth2 option {
+
                     width: 200px;
                     font-weight: 600;
                     color: darkslateblue;
@@ -143,14 +154,9 @@ $tablePadding = 6;
                                       -webkit-border-radius: 3px;
 
 
-                }*/
+                                  }*/
                 input[type=text], textarea, select {
-                    width: 200px;
-                    border: 2px;
-                    border-top-color: #67bcd1;
-                    border-right-color: #67bcd1;
-                    border-bottom-color: #67bcd1;
-                    border-left-color: #67bcd1;
+                    border: 2px solid #ffad41;
                     -webkit-box-shadow: #B4B5B5 3px 3px 3px;
                     -moz-box-shadow: #B4B5B5 3px 3px 3px;
                     box-shadow: #B4B5B5 3px 3px 3px;
@@ -160,17 +166,11 @@ $tablePadding = 6;
                     font-size: 13px;
                     padding: 2px 2px 2px 2px;
                     text-decoration: none;
+
                     display: inline-block;
                     text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
                     font-weight: bold;
-                    background-color: #AFE7F7;
-                    background-image: -webkit-gradient(linear, left top, left bottom, from(#AFE7F7), to(#90CDDD));
-                    background-image: -webkit-linear-gradient(top, #AFE7F7, #90CDDD);
-                    background-image: -moz-linear-gradient(top, #AFE7F7, #90CDDD);
-                    background-image: -ms-linear-gradient(top, #AFE7F7, #90CDDD);
-                    background-image: -o-linear-gradient(top, #AFE7F7, #90CDDD);
-                    background-image: linear-gradient(to bottom, #AFE7F7, #90CDDD);
-                    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#AFE7F7, /*
+                    color: #FFFFFF;
                     background-color: #ffc579;
                     background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc579), to(#fb9d23));
                     background-image: -webkit-linear-gradient(top, #ffc579, #fb9d23);
@@ -179,7 +179,6 @@ $tablePadding = 6;
                     background-image: -o-linear-gradient(top, #ffc579, #fb9d23);
                     background-image: linear-gradient(to bottom, #ffc579, #fb9d23);
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
-                    */
                 }
 
                 input[type=text]:hover, textarea:hover, select:hover {
@@ -240,7 +239,6 @@ $tablePadding = 6;
                     background-image: linear-gradient(to bottom, #6bbed2, #50abc4);
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#6bbed2, endColorstr=#50abc4);
                 }
-
                 BODY {
                     background: <?php echo $theme['bgcolor'];?>;
                     color: black;
@@ -423,11 +421,17 @@ $tablePadding = 6;
 
                 /*table tr:nth-child(odd) tr{background:
 
-                 }
-                table tr:nth-child(even) tr{background:
 
-                }
-                */
+
+
+            <?php echo $theme['bg1']; ?>;}
+        table tr:nth-child(even) tr{background:
+
+
+
+
+            <?php echo $theme['bg2']; ?>;}
+        */
                 td.back {
                     padding: <?php echo $tablePadding; ?>px;
                     line-height: <?php echo $lineHeight; ?>;
@@ -553,6 +557,7 @@ $tablePadding = 6;
                     color: <?php echo $theme['header_text']; ?>;
                 }
 
+            -
                 td.info {
                     text-align: left;
                     background: <?php echo $theme['info_bg']; ?>;
@@ -755,10 +760,13 @@ $tablePadding = 6;
                     color: #000099;
                 }
 
+
+
+
             }
 
             /*Wide Layout*/
-            @media only screen and (min-width: 768px) {
+            @media only screen and (min-width: 820px) {
                 .wrap {
                     width: 1140px;
                     margin: 0 auto;
@@ -866,7 +874,7 @@ $tablePadding = 6;
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
                 }
 
-                input[type=text]:hover, textarea:hover, select:hover {
+                input[type=text]:hover, textarea:hover, select:hover, input[type=submit]:hover {
                     border: 2px dashed #ff9913;
                     background-color: #ffaf46;
                     background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaf46), to(#e78404));
@@ -878,7 +886,7 @@ $tablePadding = 6;
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffaf46, endColorstr=#e78404);
                 }
 
-                button, input[type=submit] {
+                button {
                     border-top-color: #67bcd1;
                     border-right-color: #67bcd1;
                     border-bottom-color: #67bcd1;
@@ -908,7 +916,7 @@ $tablePadding = 6;
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#92cfde, endColorstr=#76bdd1);
                 }
 
-                button:hover, input[type=submit]:hover {
+                button:hover {
                     border-top-color: #44adc6;
                     border-right-color: #44adc6;
                     border-bottom-color: #44adc6;
@@ -1107,12 +1115,17 @@ $tablePadding = 6;
 
                 /*table tr:nth-child(odd) tr{background:
 
-                 }
-                table tr:nth-child(even) tr{background:
 
 
-                }
-                */
+
+            <?php echo $theme['bg1']; ?>;}
+        table tr:nth-child(even) tr{background:
+
+
+
+
+            <?php echo $theme['bg2']; ?>;}
+        */
                 td.back {
                     padding: <?php echo $tablePadding; ?>px;
                     line-height: <?php echo $lineHeight; ?>;
@@ -1238,6 +1251,7 @@ $tablePadding = 6;
                     color: <?php echo $theme['header_text']; ?>;
                 }
 
+            -
                 td.info {
                     text-align: left;
                     background: <?php echo $theme['info_bg']; ?>;
@@ -1440,7 +1454,6 @@ $tablePadding = 6;
                     color: #000099;
                 }
             }
-
         </STYLE>
         <?php
         require_once $includePath . "scripts.php";

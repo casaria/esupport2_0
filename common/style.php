@@ -912,7 +912,7 @@ $tablePadding = 6;
                     -webkit-border-radius: 3px;
                     -moz-border-radius: 3px;
                     border-radius: 3px;
-                    font-size: 13px;
+                    font-size: 15px;
                     padding: 2px 2px 2px 2px;
                     text-decoration: none;
 

@@ -431,7 +431,35 @@ unset($update);
             <h3>MAIN</h3>
             <p>Review and edit. Provide Instucions: The field sequence is now more intuitive.
 
-            <?php
+<?php
+                createTicketHeader("$lang_updateticket");
+                echo '<a href="updatelog.php?cookie_name=' . $cookie_name . '&id=' . $info['id'] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',
+					\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">
+
+<img border=0 src="../' . $theme['image_dir'] . 'orangeglow0_show_summary.png"></a> ';
+                echo "<div align=right><a href=\"$supporter_site_url/print.php?id=$id\">$lang_printable</a></div>";
+                createTicketDetails();
+                createSupporterInfo();
+                createUserInfo();
+                createNotificationPanel();
+                createTicketInfo();
+
+                if ($enable_time_tracking == 'On') {
+                    $total_minutes = displayTimeHistory();
+                }
+                displayMaterials();
+
+                if ($enable_time_tracking == 'On') {
+                    createTimeUpdate();
+                }
+                if ($enable_time_tracking == 'On') {
+
+                    $minutes = $total_minutes['labor_minutes'] + $total_minutes['labor_after_hours'];
+                } else {
+                    $minutes = $info['minutes_labor'];
+                }
+
+
         echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 
         echo "<TR><td class=\"back\"></td><td VALIGN='TOP' class=\"back\">";
@@ -463,34 +491,6 @@ unset($update);
                 $info = getTicketInfo($id);
 
                 $sg = $info['groupid'];
-
-                createTicketHeader("$lang_updateticket");
-                echo '<a href="updatelog.php?cookie_name=' . $cookie_name . '&id=' . $info['id'] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',
-					\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">
-
-<img border=0 src="../' . $theme['image_dir'] . 'orangeglow0_show_summary.png"></a> ';
-                echo "<div align=right><a href=\"$supporter_site_url/print.php?id=$id\">$lang_printable</a></div>";
-                createTicketDetails();
-                createSupporterInfo();
-                createUserInfo();
-                createNotificationPanel();
-                createTicketInfo();
-
-                if ($enable_time_tracking == 'On') {
-                    $total_minutes = displayTimeHistory();
-                }
-                displayMaterials();
-
-                if ($enable_time_tracking == 'On') {
-                    createTimeUpdate();
-                }
-                if ($enable_time_tracking == 'On') {
-
-                    $minutes = $total_minutes['labor_minutes'] + $total_minutes['labor_after_hours'];
-                } else {
-                    $minutes = $info['minutes_labor'];
-                }
-
 
 
 

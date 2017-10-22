@@ -917,7 +917,7 @@ $tablePadding = 6;
                     text-decoration: none;
 
                     display: inline-block;
-                    text-shadow: 0 0 1 rgba(0, 0, 0, 0.3);
+                    text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
                     font-weight: 600;
                     color: #FFFFFF;
                     background-color: #ffc579;

@@ -157,7 +157,7 @@ $tablePadding = 6;
                                   }*/
                 input[type=text], textarea, select {
                     width: 200px;
-                    border: 2px solid #ffad41;
+                    border: 2px solid #67bcd1;
                     -webkit-box-shadow: #B4B5B5 3px 3px 3px;
                     -moz-box-shadow: #B4B5B5 3px 3px 3px;
                     box-shadow: #B4B5B5 3px 3px 3px;

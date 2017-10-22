@@ -78,181 +78,182 @@ $tablePadding = 6;
 
             @import url(https://fonts.googleapis.com/css?family=Lato);
 
+            @media screen (min-width :
+
+            0px
+
+            ) and
+
+            (max-width :
+
+            767px
+
+            ) {
+                /*Base Mobile Layout*/
+                .table {
+                    /*width: 50%;  */
+                    margin: 0 auto;
+                    zoom: 0.25;
+                }
+
+                #selectwidth {
+                    background-color: #afe7f7;
+                    border: 0 solid;
+                    Vbackground-color: <?php echo $theme['subcategory']; ?> border: 2px solid;
+                    -webkit-box-shadow: #B4B5B5 3PX 3PX 3PX;
+                    -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
+                    box-shadow: #B4B5B5 3PX 3PX 3PX;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    width: 200px;
+                    outline: 0;
+                    overflow: hidden;
+                    padding: 2px 2px 2px 2px;
+
+                    /* background: transparent;
+                     padding: 5px 10px 5px 5px;
+                     font-size: 16px;
+                     border: 1px solid #f4a62b;
+                     height: 34px;
+                     -webkit-appearance: none;
+                     -moz-appearance: none;
+                     appearance: none;
+                     background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat */
+                }
+
+                #selectwidth2 {
+                    background-color: <?php echo $theme['category']; ?>;
+                    border: 0 solid;
+                    -webkit-box-shadow: #B4B5B5 3px 3PX 3PX;
+                    -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
+                    box-shadow: #B4B5B5 3PX 3PX 3PX;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    width: 200px;
+                    font-weight: 600;
+                    outline: 0;
+                    overflow: hidden;
+                    padding: 2px 2px 2px 2px;
+
+                }
+
+                #selectwidth option, #selectwidth2 option {
+
+                    width: 200px;
+                    font-weight: 600;
+                    color: darkslateblue;
+                    padding: 5px;
+                    font-size: 13px;
+                }
+
+                /*
+
+                                  #submit {
+                                      width: 21px;
+                                      height: 21px;
+                                      border:  10px;
+                                      margin: 10px;
+                                      padding: 6px;
+                                      background: #feaa37 url(../images/casariadefault/log_button.jpg) 10 10 no-repeat;
+                                      font-weight:600;
+                                      color: darkslateblue;
+                                      list-style-type: circle;
+                                      font-size: 13px;
+                                      -moz-border-radius: 3px;
+                                      -webkit-border-radius: 3px;
 
 
+                                  }*/
+                input[type=text], textarea, select {
+                    border: 2px solid #ffad41;
+                    -webkit-box-shadow: #B4B5B5 3px 3px 3px;
+                    -moz-box-shadow: #B4B5B5 3px 3px 3px;
+                    box-shadow: #B4B5B5 3px 3px 3px;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    border-radius: 3px;
+                    font-size: 13px;
+                    padding: 2px 2px 2px 2px;
+                    text-decoration: none;
 
-            @media screen (min-width : 0px) and (max-width : 767px){
-            /*Base Mobile Layout*/
-            .table {
-                /*width: 50%;  */
-                margin: 0 auto;
-                zoom: 0.25;
-            }
+                    display: inline-block;
+                    text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+                    font-weight: bold;
+                    color: #FFFFFF;
+                    background-color: #ffc579;
+                    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc579), to(#fb9d23));
+                    background-image: -webkit-linear-gradient(top, #ffc579, #fb9d23);
+                    background-image: -moz-linear-gradient(top, #ffc579, #fb9d23);
+                    background-image: -ms-linear-gradient(top, #ffc579, #fb9d23);
+                    background-image: -o-linear-gradient(top, #ffc579, #fb9d23);
+                    background-image: linear-gradient(to bottom, #ffc579, #fb9d23);
+                    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
+                }
 
+                input[type=text]:hover, textarea:hover, select:hover {
+                    /* border: 2px dashed #ff9913; */
+                    background-color: #ffaf46;
+                    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaf46), to(#e78404));
+                    background-image: -webkit-linear-gradient(top, #ffaf46, #e78404);
+                    background-image: -moz-linear-gradient(top, #ffaf46, #e78404);
+                    background-image: -ms-linear-gradient(top, #ffaf46, #e78404);
+                    background-image: -o-linear-gradient(top, #ffaf46, #e78404);
+                    background-image: linear-gradient(to bottom, #ffaf46, #e78404);
+                    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffaf46, endColorstr=#e78404);
+                }
 
-            #selectwidth {
-                background-color: #afe7f7;
-                border: 0 solid;
-                Vbackground-color: <?php echo $theme['subcategory']; ?> border: 2px solid;
-                -webkit-box-shadow: #B4B5B5 3PX 3PX 3PX;
-                -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
-                box-shadow: #B4B5B5 3PX 3PX 3PX;
-                -webkit-border-radius: 3px;
-                -moz-border-radius: 3px;
-                width: 200px;
-                outline: 0;
-                overflow: hidden;
-                padding: 2px 2px 2px 2px;
+                button, input[type=submit] {
+                    border-top-color: #67bcd1;
+                    border-right-color: #67bcd1;
+                    border-bottom-color: #67bcd1;
+                    border-left-color: #67bcd1;
+                    border-width: 3px;
+                    border-style: solid;
+                    -webkit-box-shadow: #797991 1px 1px 1px;
+                    -moz-box-shadow: #797991 1px 1px 1px;
+                    box-shadow: #797991 1px 1px 1px;
+                    -webkit-border-radius: 4px;
+                    -moz-border-radius: 4px;
+                    border-radius: 4px;
+                    font-size: 18px;
+                    font-family: tahoma, verdana, arial, sans-serif;
+                    padding: 12px 12px 12px 12px;
+                    text-decoration: none;
+                    display: inline-block;
+                    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+                    color: #FFFFFF;
+                    background-color: #92cfde;
+                    background-image: -webkit-gradient(linear, left top, left bottom, from(#92cfde), to(#76bdd1));
+                    background-image: -webkit-linear-gradient(top, #92cfde, #76bdd1);
+                    background-image: -moz-linear-gradient(top, #92cfde, #76bdd1);
+                    background-image: -ms-linear-gradient(top, #92cfde, #76bdd1);
+                    background-image: -o-linear-gradient(top, #92cfde, #76bdd1);
+                    background-image: linear-gradient(to bottom, #92cfde, #76bdd1);
+                    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#92cfde, endColorstr=#76bdd1);
+                }
 
-                /* background: transparent;
-                 padding: 5px 10px 5px 5px;
-                 font-size: 16px;
-                 border: 1px solid #f4a62b;
-                 height: 34px;
-                 -webkit-appearance: none;
-                 -moz-appearance: none;
-                 appearance: none;
-                 background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat */
-            }
-
-            #selectwidth2 {
-                background-color: <?php echo $theme['category']; ?>;
-                border: 0 solid;
-                -webkit-box-shadow: #B4B5B5 3px 3PX 3PX;
-                -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
-                box-shadow: #B4B5B5 3PX 3PX 3PX;
-                -webkit-border-radius: 3px;
-                -moz-border-radius: 3px;
-                width: 200px;
-                font-weight: 600;
-                outline: 0;
-                overflow: hidden;
-                padding: 2px 2px 2px 2px;
-
-            }
-
-            #selectwidth option, #selectwidth2 option {
-
-                width: 200px;
-                font-weight: 600;
-                color: darkslateblue;
-                padding: 5px;
-                font-size: 13px;
-            }
-
-            /*
-
-                              #submit {
-                                  width: 21px;
-                                  height: 21px;
-                                  border:  10px;
-                                  margin: 10px;
-                                  padding: 6px;
-                                  background: #feaa37 url(../images/casariadefault/log_button.jpg) 10 10 no-repeat;
-                                  font-weight:600;
-                                  color: darkslateblue;
-                                  list-style-type: circle;
-                                  font-size: 13px;
-                                  -moz-border-radius: 3px;
-                                  -webkit-border-radius: 3px;
-
-
-                              }*/
-            input[type=text], textarea, select {
-                border: 2px solid #ffad41;
-                -webkit-box-shadow: #B4B5B5 3px 3px 3px;
-                -moz-box-shadow: #B4B5B5 3px 3px 3px;
-                box-shadow: #B4B5B5 3px 3px 3px;
-                -webkit-border-radius: 3px;
-                -moz-border-radius: 3px;
-                border-radius: 3px;
-                font-size: 13px;
-                padding: 2px 2px 2px 2px;
-                text-decoration: none;
-
-                display: inline-block;
-                text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
-                font-weight: bold;
-                color: #FFFFFF;
-                background-color: #ffc579;
-                background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc579), to(#fb9d23));
-                background-image: -webkit-linear-gradient(top, #ffc579, #fb9d23);
-                background-image: -moz-linear-gradient(top, #ffc579, #fb9d23);
-                background-image: -ms-linear-gradient(top, #ffc579, #fb9d23);
-                background-image: -o-linear-gradient(top, #ffc579, #fb9d23);
-                background-image: linear-gradient(to bottom, #ffc579, #fb9d23);
-                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
-            }
-
-            input[type=text]:hover, textarea:hover, select:hover {
-               /* border: 2px dashed #ff9913; */
-                background-color: #ffaf46;
-                background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaf46), to(#e78404));
-                background-image: -webkit-linear-gradient(top, #ffaf46, #e78404);
-                background-image: -moz-linear-gradient(top, #ffaf46, #e78404);
-                background-image: -ms-linear-gradient(top, #ffaf46, #e78404);
-                background-image: -o-linear-gradient(top, #ffaf46, #e78404);
-                background-image: linear-gradient(to bottom, #ffaf46, #e78404);
-                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffaf46, endColorstr=#e78404);
-            }
-
-            button, input[type=submit] {
-                border-top-color: #67bcd1;
-                border-right-color: #67bcd1;
-                border-bottom-color: #67bcd1;
-                border-left-color: #67bcd1;
-                border-width: 3px;
-                border-style: solid;
-                -webkit-box-shadow: #797991 1px 1px 1px;
-                -moz-box-shadow: #797991 1px 1px 1px;
-                box-shadow: #797991 1px 1px 1px;
-                -webkit-border-radius: 4px;
-                -moz-border-radius: 4px;
-                border-radius: 4px;
-                font-size: 18px;
-                font-family: tahoma, verdana, arial, sans-serif;
-                padding: 12px 12px 12px 12px;
-                text-decoration: none;
-                display: inline-block;
-                text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-                color: #FFFFFF;
-                background-color: #92cfde;
-                background-image: -webkit-gradient(linear, left top, left bottom, from(#92cfde), to(#76bdd1));
-                background-image: -webkit-linear-gradient(top, #92cfde, #76bdd1);
-                background-image: -moz-linear-gradient(top, #92cfde, #76bdd1);
-                background-image: -ms-linear-gradient(top, #92cfde, #76bdd1);
-                background-image: -o-linear-gradient(top, #92cfde, #76bdd1);
-                background-image: linear-gradient(to bottom, #92cfde, #76bdd1);
-                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#92cfde, endColorstr=#76bdd1);
-            }
-
-            button:hover, input[type=submit]:hover {
-                border-top-color: #44adc6;
-                border-right-color: #44adc6;
-                border-bottom-color: #44adc6;
-                border-left-color: #44adc6;
-                border-width: 4px;
-                border-style: solid;
-                background-color: #6bbed2;
-                background-image: -webkit-gradient(linear, left top, left bottom, from(#6bbed2), to(#50abc4));
-                background-image: -webkit-linear-gradient(top, #6bbed2, #50abc4);
-                background-image: -moz-linear-gradient(top, #6bbed2, #50abc4);
-                background-image: -ms-linear-gradient(top, #6bbed2, #50abc4);
-                background-image: -o-linear-gradient(top, #6bbed2, #50abc4);
-                background-image: linear-gradient(to bottom, #6bbed2, #50abc4);
-                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#6bbed2, endColorstr=#50abc4);
-            }
-
-
-
-
-
+                button:hover, input[type=submit]:hover {
+                    border-top-color: #44adc6;
+                    border-right-color: #44adc6;
+                    border-bottom-color: #44adc6;
+                    border-left-color: #44adc6;
+                    border-width: 4px;
+                    border-style: solid;
+                    background-color: #6bbed2;
+                    background-image: -webkit-gradient(linear, left top, left bottom, from(#6bbed2), to(#50abc4));
+                    background-image: -webkit-linear-gradient(top, #6bbed2, #50abc4);
+                    background-image: -moz-linear-gradient(top, #6bbed2, #50abc4);
+                    background-image: -ms-linear-gradient(top, #6bbed2, #50abc4);
+                    background-image: -o-linear-gradient(top, #6bbed2, #50abc4);
+                    background-image: linear-gradient(to bottom, #6bbed2, #50abc4);
+                    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#6bbed2, endColorstr=#50abc4);
+                }
 
             }
 
             /*Wide Layout*/
             @media only screen and (min-width: 820px) {
-                    .wrap {
+                .wrap {
                     width: 1140px;
                     margin: 0 auto;
                     zoom: 0.9;
@@ -316,8 +317,6 @@ $tablePadding = 6;
 
                 /*
 
-
-            <?php echo $theme['text']; ?>;
 
                   #submit {
                       width: 21px;
@@ -603,8 +602,12 @@ $tablePadding = 6;
                 /*table tr:nth-child(odd) tr{background:
 
 
+
+
             <?php echo $theme['bg1']; ?>;}
         table tr:nth-child(even) tr{background:
+
+
 
 
             <?php echo $theme['bg2']; ?>;}

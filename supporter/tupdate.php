@@ -401,11 +401,11 @@ if (isset($update)) {
 }
 
 unset($update);
-echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 
-//set up the javascript function for creating a menu.
+
 ?>
 
+//set up the javascript function for creating a menu.
 <script language="JavaScript">
     <!--
     function MM_jumpMenu(targ, selObj, restore) { //v3.0
@@ -421,6 +421,8 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
     <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a
         unique ID for every tab and wrap them inside a div element with class .tab-content.
         <?php
+        echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
+
         echo "<TR><td class=\"back\"></td><td VALIGN='TOP' class=\"back\">";
         echo "<input type=hidden name=sg value='" . $sg . "'>";
         echo "<input type=hidden name=id value='" . $info['id'] . "'>";
@@ -556,13 +558,11 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
         </div>
         <div id="time" class="tab-pane fade">
             <h3>TIME</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
         <div id="material" class="tab-pane fade">
             <h3>MATERIAL</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                rem aperiam.</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totamrem aperiam.</p>
         </div>
         <div id="extra" class="tab-pane fade">
             <h3>EXTRA</h3>

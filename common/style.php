@@ -892,10 +892,10 @@ $tablePadding = 6;
                 }
 
                 .container {
-                    padding-right: 15px;
-                    padding-left: 15px;
-                    margin-right: auto;
-                    margin-left: auto;
+                    padding-right: 1px;
+                    padding-left: 1px;
+                    margin-right: 1px;
+                    margin-left: 1px;
                 }
 
                 table {

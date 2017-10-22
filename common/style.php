@@ -82,7 +82,7 @@ $tablePadding = 6;
             .wrap {
                 width: 20%;
                 margin: 0 auto;
-                zoom: .5;
+                zoom: 0.5;
             }
 
 
@@ -104,6 +104,7 @@ $tablePadding = 6;
 
                 #selectwidth {
                     background-color: #afe7f7;
+                    border: 0px solid;
                     Vbackground-color: <?php echo $theme['subcategory']; ?> border: 2px solid;
                     -webkit-box-shadow: #B4B5B5 3PX 3PX 3PX;
                     -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
@@ -128,7 +129,7 @@ $tablePadding = 6;
 
                 #selectwidth2 {
                     background-color: <?php echo $theme['category']; ?>;
-                    border: 2px solid;
+                    border: 0px solid;
                     -webkit-box-shadow: #B4B5B5 3px 3PX 3PX;
                     -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
                     box-shadow: #B4B5B5 3PX 3PX 3PX;

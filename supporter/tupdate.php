@@ -417,8 +417,21 @@ unset($update);
 
 <div class="container">
     <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a
-        unique ID for every tab and wrap them inside a div element with class .tab-content.
-        <?php
+        unique ID for every tab and wrap them inside a div element with class .tab-content</p>
+
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#main">MAIN</a></li>
+        <li><a data-toggle="tab" href="#time">TIME</a></li>
+        <li><a data-toggle="tab" href="#material">MATERIAL</a></li>
+        <li><a data-toggle="tab" href="#extra">EXTRA</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="main" class="tab-pane fade in active">
+            <h3>MAIN</h3>
+            <p>Review and edit. Provide Instucions: The field sequence is now more intuitive.
+
+            <?php
         echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 
         echo "<TR><td class=\"back\"></td><td VALIGN='TOP' class=\"back\">";
@@ -446,22 +459,6 @@ unset($update);
             echo "</form></td>";
         }
         echo "</tr>";
-        ?>
-
-    </p>
-
-    <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#main">MAIN</a></li>
-        <li><a data-toggle="tab" href="#time">TIME</a></li>
-        <li><a data-toggle="tab" href="#material">MATERIAL</a></li>
-        <li><a data-toggle="tab" href="#extra">EXTRA</a></li>
-    </ul>
-
-    <div class="tab-content">
-        <div id="main" class="tab-pane fade in active">
-            <h3>MAIN</h3>
-            <p>Review and edit. Provide Instucions: The field sequence is now more intuitive.
-                <?php
 
                 $info = getTicketInfo($id);
 

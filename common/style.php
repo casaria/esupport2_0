@@ -906,9 +906,9 @@ $tablePadding = 6;
                 }
 
                 #selectwidth {
-                    background-color: #afe7f7;
+                /*    background-color: #afe7f7;   */
                     border: 0px solid;
-                    Vbackground-color: <?php echo $theme['subcategory']; ?> border: 2px solid;
+                    background-color: <?php echo $theme['subcategory']; ?>;
                     -webkit-box-shadow: #B4B5B5 3PX 3PX 3PX;
                     -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
                     box-shadow: #B4B5B5 3PX 3PX 3PX;

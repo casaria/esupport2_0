@@ -891,6 +891,12 @@ $tablePadding = 6;
                     zoom: 0.9;
                 }
 
+                .container {
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
 
                 table {
                     -webkit-border-horizontal-spacing: 2px;

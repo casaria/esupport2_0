@@ -94,9 +94,14 @@ $tablePadding = 6;
                     zoom: 0.25;
                 }
 
-                .back {
-                    background-color: #ffffff}
-            }
+                .tabbox {
+                    padding-right: 1px;
+                    padding-left: 1px;
+                    margin-right: 1px;
+                    margin-left: 1px;
+                }
+
+
                 table {
                     -webkit-border-horizontal-spacing: 2px;
                     -webkit-border-vertical-spacing: 1px;
@@ -788,7 +793,7 @@ $tablePadding = 6;
                     zoom: 0.9;
                 }
 
-                div.container {
+                .tabbox {
                     padding-right: 1px;
                     padding-left: 1px;
                     margin-right: 1px;

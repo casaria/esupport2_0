@@ -419,19 +419,13 @@ $tablePadding = 6;
                     background: #feaa37;
                     font-weight: 600;
                 }
+        /*table tr:nth-child(odd) tr{background:
 
-                /*table tr:nth-child(odd) tr{background:
-
-
-
-
-            <?php echo $theme['bg1']; ?>;}
+         }
         table tr:nth-child(even) tr{background:
 
 
-
-
-            <?php echo $theme['bg2']; ?>;}
+        }
         */
                 td.back {
                     padding: <?php echo $tablePadding; ?>px;
@@ -1116,17 +1110,13 @@ $tablePadding = 6;
 
                 /*table tr:nth-child(odd) tr{background:
 
+                 }
+                table tr:nth-child(even) tr{background:
 
 
+                }
+                */
 
-            <?php echo $theme['bg1']; ?>;}
-        table tr:nth-child(even) tr{background:
-
-
-
-
-            <?php echo $theme['bg2']; ?>;}
-        */
                 td.back {
                     padding: <?php echo $tablePadding; ?>px;
                     line-height: <?php echo $lineHeight; ?>;

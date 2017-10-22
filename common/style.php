@@ -99,7 +99,7 @@ $tablePadding = 6;
                 box-shadow: #B4B5B5 3PX 3PX 3PX;
                 -webkit-border-radius: 3px;
                 -moz-border-radius: 3px;
-                width: 350px;
+                width: 200px;
                 outline: 0;
                 overflow: hidden;
                 padding: 2px 2px 2px 2px;
@@ -252,7 +252,7 @@ $tablePadding = 6;
 
             /*Wide Layout*/
             @media only screen and (min-width: 820px) {
-                .wrap {
+                    .wrap {
                     width: 1140px;
                     margin: 0 auto;
                     zoom: 0.9;

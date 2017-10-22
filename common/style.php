@@ -172,13 +172,12 @@ $tablePadding = 6;
                     text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
                     font-weight: bold;
                     color: #FFFFFF;
-                    background-color: #ffc579;
-                    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc579), to(#fb9d23));
-                    background-image: -webkit-linear-gradient(top, #ffc579, #fb9d23);
-                    background-image: -moz-linear-gradient(top, #ffc579, #fb9d23);
-                    background-image: -ms-linear-gradient(top, #ffc579, #fb9d23);
-                    background-image: -o-linear-gradient(top, #ffc579, #fb9d23);
-                    background-image: linear-gradient(to bottom, #ffc579, #fb9d23);
+                    background-color: #AFE7F7; background-image: -webkit-gradient(linear, left top, left bottom, from(#AFE7F7), to(#90CDDD));
+                    background-image: -webkit-linear-gradient(top, #AFE7F7, #90CDDD);
+                    background-image: -moz-linear-gradient(top, #AFE7F7, #90CDDD);
+                    background-image: -ms-linear-gradient(top, #AFE7F7, #90CDDD);
+                    background-image: -o-linear-gradient(top, #AFE7F7, #90CDDD);
+                    background-image: linear-gradient(to bottom, #AFE7F7, #90CDDD)
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
                 }
 

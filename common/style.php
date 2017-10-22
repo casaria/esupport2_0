@@ -66,6 +66,110 @@ $tablePadding = 6;
         })();
     </script>
 
+
+    <SCRIPT>
+
+    .tabs; li; {
+    /* Makes a horizontal row */
+    left;
+
+    /* So the psueudo elements can be
+    abs. positioned inside */
+    relative;
+    }
+    .tabs; a; {
+    /* Make them block level
+    and only as wide as they need */
+    left;
+    10;px; 40;px;
+    text-decoration;: none;
+
+    /* Default colors */
+    black;
+    background: #ddc385;
+
+    /* Only round the top corners */
+    -webkit-border-top-left-radius;: 15;px;
+    -webkit-border-top-right-radius;: 15;px;
+    -moz-border-radius-topleft;: 15;px;
+    -moz-border-radius-topright;: 15;px;
+    border-top-left-radius;: 15;px;
+    border-top-right-radius;: 15;px;
+    }
+    .tabs .active; {
+    /* Highest, active tab is on top */
+    z-index;: 3;
+    }
+    .tabs .active; a; {
+    /* Colors when tab is active */
+    white;
+    black;
+    }
+    .tabs; before,; .tabs; after,;
+    .tabs; li; before,; .tabs; li; after; {
+    /* All pseudo elements are
+    abs. positioned and on bottom */
+    absolute;
+    0;
+    }
+    /* Only the first, last, and active
+    tabs need pseudo elements at all */
+    .tabs; last-child;:after,;   .tabs; last-child; after,;
+    .tabs; first-child;:before,; .tabs; first-child; before,;
+    .tabs .active;:after,;   .tabs .active;:before,;
+    .tabs .active; after,; .tabs .active; before; {
+    "";
+    }
+    .tabs .active;:before,; .tabs .active;:after; {
+    white;
+
+    /* Squares below circles */
+    z-index;: 1;
+    }
+    /* Squares */
+    .tabs; before,; .tabs; after; {
+    background: #ddc385;
+    10;px;
+    10;px;
+    }
+    .tabs; before; {
+    -10;px;
+    }
+    .tabs; after; {
+    -10;px;
+    }
+    /* Circles */
+    .tabs; li; after,; .tabs; li; before; {
+    20;px;
+    20;px;
+    /* Circles are circular */
+    -webkit-border-radius;: 10;px;
+    -moz-border-radius;:    10;px;
+    border-radius;:         10;px;
+    background: #222;
+
+    /* Circles over squares */
+    z-index;: 2;
+    }
+    .tabs .active; after,; .tabs .active; before; {
+    background: #ddc385;
+    }
+    /* First and last tabs have different
+    outside color needs */
+    .tabs; first-child.active; before,;
+    .tabs; last-child.active; after; {
+    background: #222;
+    }
+    .tabs; li; before; {
+    -20;px;
+    }
+    .tabs; li; after; {
+    -20;px;
+    }
+
+    </SCRIPT>
+
+
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
     <HTML>
     <HEAD>

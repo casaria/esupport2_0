@@ -78,19 +78,19 @@ if($m =='delete2'){
 
   <div class="tab-content">
     <div id="main" class="tab-pane fade in active">
-      <h3>HOME</h3>
+      <h3>MAIN</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
     <div id="time" class="tab-pane fade">
-      <h3>Menu 1</h3>
+      <h3>TIME</h3>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
     <div id="material" class="tab-pane fade">
-      <h3>Menu 2</h3>
+      <h3>MATERIAL</h3>
       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
     </div>
     <div id="extra" class="tab-pane fade">
-      <h3>Menu 3</h3>
+      <h3>EXTRA</h3>
       <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
 
           <?php

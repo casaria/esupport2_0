@@ -429,7 +429,7 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
     <div class="tab-content">
         <div id="main" class="tab-pane fade in active">
             <h3>MAIN</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p>Review and edit.  Provide Instucions: The field sequence is now more intuitive.
                 <?php
 
                 $info = getTicketInfo($id);
@@ -544,51 +544,79 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 
                     }
 
+?>
 
-                    function createSupporterMenu($group_id)
-                    {
-                        global $mysql_users_table, $info, $db;
 
-                        if ($group_id == '' || !isset($group_id) || $group_id == 1 || !groupExists($group_id)) {
-                            $sql = "select id,user_name from $mysql_users_table where supporter=1 order by user_name asc";
-                            $table = $mysql_users_table;
-                        } else {
-                            $table = "sgroup" . $group_id;
-                            $sql = "select user_id,user_name from $table order by user_name asc";
-                        }
+            </p>
+        </div>
+    </div>
+</div>
 
-                        $result = $db->query($sql, $table);
 
-                        while ($row = $db->fetch_row($result)) {
-                            echo "<option value=\"$row[0]\" ";
-                            if ($info['supporter_id'] == $row[0]) echo "selected";
-                            echo "> $row[1] </option>";
-                        }
 
-                    }
 
-                    function createNotificationPanel()
-                    {
-                        global $info, $lang_emailgroup, $lang_emailstatuschange, $lang_notification, $lang_emailcc, $lang_pagesupporter;
+            </p>
+        </div>
+        <div id="time" class="tab-pane fade">
+            <h3>TIME</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div id="material" class="tab-pane fade">
+            <h3>MATERIAL</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
+        <div id="extra" class="tab-pane fade">
+            <h3>EXTRA</h3>
+            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
 
-                        startTable("$lang_notification ", "left", 100, 5);
-                        echo '
+
+
+
+<?php
+function createSupporterMenu($group_id)
+{
+    global $mysql_users_table, $info, $db;
+
+    if ($group_id == '' || !isset($group_id) || $group_id == 1 || !groupExists($group_id)) {
+        $sql = "select id,user_name from $mysql_users_table where supporter=1 order by user_name asc";
+        $table = $mysql_users_table;
+    } else {
+        $table = "sgroup" . $group_id;
+        $sql = "select user_id,user_name from $table order by user_name asc";
+    }
+
+    $result = $db->query($sql, $table);
+
+    while ($row = $db->fetch_row($result)) {
+        echo "<option value=\"$row[0]\" ";
+        if ($info['supporter_id'] == $row[0]) echo "selected";
+        echo "> $row[1] </option>";
+    }
+
+}
+
+function createNotificationPanel()
+{
+    global $info, $lang_emailgroup, $lang_emailstatuschange, $lang_notification, $lang_emailcc, $lang_pagesupporter;
+
+    startTable("$lang_notification ", "left", 100, 5);
+    echo '
     <tr>
      <td class="back2" width="180px">' . $lang_emailgroup . ': </td>
      <td class="back" colspan="4">' .
-                            "<input class=box type=checkbox";
-                        if ($info['emailgroup'] == "On") {
-                            echo " checked";
-                        }
-                        echo " name=emailgroup></td>" .
-                            '</tr><tr>
+        "<input class=box type=checkbox";
+    if ($info['emailgroup'] == "On") {
+        echo " checked";
+    }
+    echo " name=emailgroup></td>" .
+        '</tr><tr>
      <td class="back2" width="180px">' . $lang_emailstatuschange . ': </td>
      <td class="back" colspan="4">' .
-                            "<input class=box type=checkbox";
-                        if ($info['emailstatuschange'] == "On") {
-                            echo " checked";
-                        }
-                        echo " name=emailstatuschange></td>" . '
+        "<input class=box type=checkbox";
+    if ($info['emailstatuschange'] == "On") {
+        echo " checked";
+    }
+    echo " name=emailstatuschange></td>" . '
     
     </tr>
     <tr>
@@ -596,40 +624,40 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
      <td class="back" colspan="4">' . "<input class=box type=checkbox name=mms></td>";
 
 
-                        echo '
+    echo '
     </tr>
     <tr>
      <td class="back2" width="180px">' . $lang_emailcc . ': </td>
      <td class="back" colspan="4"><input type=text size=55 name=emailcc value="' . $info['emailcc'] . '"></td></tr>';
-                        endTable();
-                    }
+    endTable();
+}
 
 
-                    function createUserInfo()
-                    {
-                        global $info, $lang_userinfo, $lang_email, $lang_username, $lang_phoneext, $lang_office;
+function createUserInfo()
+{
+    global $info, $lang_userinfo, $lang_email, $lang_username, $lang_phoneext, $lang_office;
 // Get User group name and id associate with use
-                        $groupname = '';
-                        $ugroups = getUGroupList();
-                        $user = $info['user'];
-                        $n = 0;
-                        if ($user != '') {
-                            for ($i = 0; $i < sizeof($ugroups); $i++) {
-                                if (inGroup($user, $ugroups[$i])) {
-                                    $groupname .= getuGroup($i + 1) . "/";
-                                    $grpid_list[$n] = $i + 1;
-                                    $n++;
-                                }
-                            }
-                        }
+    $groupname = '';
+    $ugroups = getUGroupList();
+    $user = $info['user'];
+    $n = 0;
+    if ($user != '') {
+        for ($i = 0; $i < sizeof($ugroups); $i++) {
+            if (inGroup($user, $ugroups[$i])) {
+                $groupname .= getuGroup($i + 1) . "/";
+                $grpid_list[$n] = $i + 1;
+                $n++;
+            }
+        }
+    }
 //+++
 //for ($i=0; $i<sizeof($grpid_list); $i++){
 //  echo $grpid_list[$i];
 //}
 
-                        startTable("$lang_userinfo     - Member of group(s): $groupname", "left", 100, 4);
+    startTable("$lang_userinfo     - Member of group(s): $groupname", "left", 100, 4);
 
-                        echo '			<tr>
+    echo '			<tr>
 							<td width="180px" class=back2 align=right>' . $lang_username . ':</td>
 						
 							<td class=back>
@@ -652,35 +680,35 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 								<input type=text size=20 name=phone value="' . $info['phone'] . '">
 							</td>';
 
-                        endTable();
-                    }
+    endTable();
+}
 
-                    //Thanks to SteveW for providing this great function
-                    function createTicketDetails()
-                    {
-                        global $info, $db, $lang_never, $mysql_attachments_table, $id, $lang_ticket, $lang_opened,      $lang_attachments, $lang_lastupdate;
+//Thanks to SteveW for providing this great function
+function createTicketDetails()
+{
+    global $info, $db, $lang_never, $mysql_attachments_table, $id, $lang_ticket, $lang_opened,      $lang_attachments, $lang_lastupdate;
 
-                        $padded_id = str_pad($id, 5, '0', STR_PAD_LEFT);
-                        $info['create_date'] = date("F j, Y, g:i a", $info['create_date']);
-                        if ($info['lastupdate'] != 0)
-                            $info['lastupdate'] = date("F j, Y, g:i a", $info['lastupdate']);
-                        else
-                            $info['lastupdate'] = $lang_never;
-                        $attachments = '';
+    $padded_id = str_pad($id, 5, '0', STR_PAD_LEFT);
+    $info['create_date'] = date("F j, Y, g:i a", $info['create_date']);
+    if ($info['lastupdate'] != 0)
+        $info['lastupdate'] = date("F j, Y, g:i a", $info['lastupdate']);
+    else
+        $info['lastupdate'] = $lang_never;
+    $attachments = '';
 
-                        //if there attachments, get them and setup the links to them.
-                        $sql = "SELECT * from $mysql_attachments_table where tid=$id";
-                        $result = $db->query($sql);
-                        $num_attachments = $db->num_rows($result);
-                        if ($num_attachments > 0) {
-                            while ($attachment = $db->fetch_array($result)) {
-                                $attachment['filesize'] = convertFileSize($attachment['filesize']);
-                                $attachments .= "<a target=_blank href=\"../tinfo.php?action=download&id=$attachment[id]\">$attachment[filename] </a> ($attachment[filesize]) - " . date("n/j/Y", $attachment['timestamp']) . "<br>";
-                            }
-                        }
+    //if there attachments, get them and setup the links to them.
+    $sql = "SELECT * from $mysql_attachments_table where tid=$id";
+    $result = $db->query($sql);
+    $num_attachments = $db->num_rows($result);
+    if ($num_attachments > 0) {
+        while ($attachment = $db->fetch_array($result)) {
+            $attachment['filesize'] = convertFileSize($attachment['filesize']);
+            $attachments .= "<a target=_blank href=\"../tinfo.php?action=download&id=$attachment[id]\">$attachment[filename] </a> ($attachment[filesize]) - " . date("n/j/Y", $attachment['timestamp']) . "<br>";
+        }
+    }
 
-                        startTable("$lang_ticket #$padded_id", "left", 100, 2, "extra");
-                        echo '
+    startTable("$lang_ticket #$padded_id", "left", 100, 2, "extra");
+    echo '
     <tr>
      <td class="back2" width="180px">' . $lang_ticket . ' ' . $lang_opened . ': </td>
      <td class="back">' . $info['create_date'] . '</td>
@@ -693,189 +721,159 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
      <td class="back2"  valign="top">' . $lang_attachments . ': </td>
      <td class="back">' . $attachments . '</td>
     </tr>';
-                        endTable();
-                    }
+    endTable();
+}
 
 
-                    function resetRatingsCounter()
-                    {
-                        global $mysql_settings_table, $db;
+function resetRatingsCounter()
+{
+    global $mysql_settings_table, $db;
 
-                        $sql = "update $mysql_settings_table set ticket_count=0";
-                        $db->query($sql);
+    $sql = "update $mysql_settings_table set ticket_count=0";
+    $db->query($sql);
 
-                    }
+}
 
-                    function createTimeUpdate()
-                    {
-                        global $sg, $lang_timespent, $lang_timespent1, $lang_timespent2;
-                        global $lang_month, $timestamp;
+function createTimeUpdate()
+{
+    global $sg, $lang_timespent, $lang_timespent1, $lang_timespent2;
+    global $lang_month, $timestamp;
 
 
 // Time spent updates
-                        startTable("$lang_timespent", "left", 100, 5);
+    startTable("$lang_timespent", "left", 100, 5);
 
-                        echo ' <tr>
+    echo ' <tr>
 	<td width="180px" class=back2 align=right>' . $lang_timespent1 . ':<BR> <class=back2 align=left>' .
-                            $lang_timespent2 .
-                            '</td><td width=10% class=back >';
-                        echo 'minutes<BR>';
-                        echo '<input type=text size=6 name=time_spent>';
-                        echo '</td>';
+        $lang_timespent2 .
+        '</td><td width=10% class=back >';
+    echo 'minutes<BR>';
+    echo '<input type=text size=6 name=time_spent>';
+    echo '</td>';
 
-                        echo '<td width=15% class=back >';
-                        echo 'supporter<BR><select name=supporter1>';
-                        createSupporterMenu($sg);
-                        echo '</select>';
-                        echo '</td>';
+    echo '<td width=15% class=back >';
+    echo 'supporter<BR><select name=supporter1>';
+    createSupporterMenu($sg);
+    echo '</select>';
+    echo '</td>';
 
 
-                        echo '<td width=25% class=back >';
-                        echo 'DATE <BR>';
+    echo '<td width=25% class=back >';
+    echo 'DATE <BR>';
 
-                        $today = getdate($timestamp);
-                        echo '<select name=womonth>';
-                        for ($i = 1; $i < 13; $i++) {
-                            echo "<option value=$i";
-                            if ($today['mon'] == $i)
-                                echo ' selected';
-                            echo ">" . $lang_month[$i] . "</option>";
-                        }
+    $today = getdate($timestamp);
+    echo '<select name=womonth>';
+    for ($i = 1; $i < 13; $i++) {
+        echo "<option value=$i";
+        if ($today['mon'] == $i)
+            echo ' selected';
+        echo ">" . $lang_month[$i] . "</option>";
+    }
 
-                        echo '					</select>
+    echo '					</select>
 							<select name=woday>
 								<option></option>';
-                        for ($i = 1; $i < 32; $i++) {
-                            echo "<option value=$i";
-                            if ($i == $today['mday'])
-                                echo " selected";
-                            echo ">$i</option>\n";
-                        }
+    for ($i = 1; $i < 32; $i++) {
+        echo "<option value=$i";
+        if ($i == $today['mday'])
+            echo " selected";
+        echo ">$i</option>\n";
+    }
 
-                        echo '			
+    echo '			
 							</select>
 							<select name=woyear>';
-                        echo "<option value=" . (string)($today['year'] - 1);
-                        echo '>' . ($today['year'] - 1) . '</option>';
+    echo "<option value=" . (string)($today['year'] - 1);
+    echo '>' . ($today['year'] - 1) . '</option>';
 
 
-                        echo "<option value=$today[year]";
-                        echo ' selected';
-                        echo '>' . ($today['year']) . '</option>
+    echo "<option value=$today[year]";
+    echo ' selected';
+    echo '>' . ($today['year']) . '</option>
 							</select>';
 
-                        echo '</td>';
+    echo '</td>';
 
-                        echo '<td class=back align="left" >';
-                        echo 'Work order / reference<BR>';
-                        echo '<textarea  name=reference rows=2 cols=40>' . '</textarea></td>';
-                        echo '</tr>';
+    echo '<td class=back align="left" >';
+    echo 'Work order / reference<BR>';
+    echo '<textarea  name=reference rows=2 cols=40>' . '</textarea></td>';
+    echo '</tr>';
 
-                        echo '<tr><td width=20% class=back2 align=right>';
-                        echo 'Special rate </td>';
+    echo '<tr><td width=20% class=back2 align=right>';
+    echo 'Special rate </td>';
 
-                        echo '<td width=15% class=back align=left>';
-                        echo "<input class=box type=checkbox name=after_hours>";
-                        echo "after_hrs";
-                        echo '</td>';
+    echo '<td width=15% class=back align=left>';
+    echo "<input class=box type=checkbox name=after_hours>";
+    echo "after_hrs";
+    echo '</td>';
 
-                        echo '<td width=15% class=back align=left>';
-                        echo "<input class=box type=checkbox name=engineer_rate>";
-                        echo "engineer rate";
-                        echo '</td>';
+    echo '<td width=15% class=back align=left>';
+    echo "<input class=box type=checkbox name=engineer_rate>";
+    echo "engineer rate";
+    echo '</td>';
 
-                        echo '<td width=15% class=back align=left colspan=2>';
-                        echo '</td>';
+    echo '<td width=15% class=back align=left colspan=2>';
+    echo '</td>';
 
-                        //endtable();
-                    }
-
-
-                    function displayMaterials()
-                    {
-                        global $id, $db;
-                        global $lang_materialhistory;
+    //endtable();
+}
 
 
-                        startTable("$lang_materialhistory", "left", 100, 5);
+function displayMaterials()
+{
+    global $id, $db;
+    global $lang_materialhistory;
 
-                        $sql = "select mat.material_id, mat.date, mat.count, mat.reference from tickets as tkt, material_track as mat where (tkt.id=mat.ticket_id AND tkt.id=$id)";
-                        $resultmaterials = $db->query($sql);
+
+    startTable("$lang_materialhistory", "left", 100, 5);
+
+    $sql = "select mat.material_id, mat.date, mat.count, mat.reference from tickets as tkt, material_track as mat where (tkt.id=mat.ticket_id AND tkt.id=$id)";
+    $resultmaterials = $db->query($sql);
 
 
-                        while ($row = $db->fetch_array($resultmaterials)) {
-                            if ($row[count] != 0) {
+    while ($row = $db->fetch_array($resultmaterials)) {
+        if ($row[count] != 0) {
 
-                                $sql = "select * from tmaterial where id=$row[material_id]";
-                                $result = $db->query($sql);
-                                $sup_row = $db->fetch_array($result);
+            $sql = "select * from tmaterial where id=$row[material_id]";
+            $result = $db->query($sql);
+            $sup_row = $db->fetch_array($result);
 
-                                echo '<tr>
+            echo '<tr>
     		<td width=10% class=back2 align=right>';
-                                if ($row['work_date'])
-                                    echo date("F j, Y", $row[date]);
-                                else
-                                    echo "- No Date -";
-                                echo '</td>';
-                                echo '<td width=4% class=back>';
-                                echo $row[count];
-                                echo '</td>';
-                                echo '<td width=15% class=back2>';
-                                echo "$sup_row[ourpartnum]";
-                                echo '</td>';
-                                echo '<td class=back>';
-                                echo "$sup_row[short]";
-                                echo '</td>';
-                                echo '<td class=back2>';
-                                echo "$row[reference]";
-                                echo '</td>';
-                            }
-                        }
+            if ($row['work_date'])
+                echo date("F j, Y", $row[date]);
+            else
+                echo "- No Date -";
+            echo '</td>';
+            echo '<td width=4% class=back>';
+            echo $row[count];
+            echo '</td>';
+            echo '<td width=15% class=back2>';
+            echo "$sup_row[ourpartnum]";
+            echo '</td>';
+            echo '<td class=back>';
+            echo "$sup_row[short]";
+            echo '</td>';
+            echo '<td class=back2>';
+            echo "$row[reference]";
+            echo '</td>';
+        }
+    }
 
-                        echo '<tr><td width=24% class=back2 align=right><B>Total pcs:</B>';
-                        echo '</td> <td class=back >';
-                        echo '</td> <td class=back colspan=3>';
-
-
-                        echo '<B>';
-                        echo "coming soon";
-                        echo '</B></td>';
-
-                        endTable();
-
-                    }
-
-                    ?>
+    echo '<tr><td width=24% class=back2 align=right><B>Total pcs:</B>';
+    echo '</td> <td class=back >';
+    echo '</td> <td class=back colspan=3>';
 
 
-            </p>
-        </div>
-    </div>
-</div>
+    echo '<B>';
+    echo "coming soon";
+    echo '</B></td>';
 
+    endTable();
 
+}
 
-
-
-
-            </p>
-        </div>
-        <div id="time" class="tab-pane fade">
-            <h3>TIME</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <div id="material" class="tab-pane fade">
-            <h3>MATERIAL</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-        </div>
-        <div id="extra" class="tab-pane fade">
-            <h3>EXTRA</h3>
-            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-
-
-
-
+?>
 
 
 

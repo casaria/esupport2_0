@@ -226,7 +226,7 @@ $tablePadding = 6;
                 filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#92cfde, endColorstr=#76bdd1);
             }
 
-            button:hover, input[type=submit] {
+            button:hover, input[type=submit]:hover {
                 border-top-color: #44adc6;
                 border-right-color: #44adc6;
                 border-bottom-color: #44adc6;
@@ -361,7 +361,8 @@ $tablePadding = 6;
                 filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffaf46, endColorstr=#e78404);
             }
 
-            button {
+
+            button, input[type=submit] {
                 border-top-color: #67bcd1;
                 border-right-color: #67bcd1;
                 border-bottom-color: #67bcd1;
@@ -391,7 +392,7 @@ $tablePadding = 6;
                 filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#92cfde, endColorstr=#76bdd1);
             }
 
-            button:hover {
+            button:hover, input[type=submit]:hover {
                 border-top-color: #44adc6;
                 border-right-color: #44adc6;
                 border-bottom-color: #44adc6;
@@ -406,7 +407,6 @@ $tablePadding = 6;
                 background-image: -o-linear-gradient(top, #6bbed2, #50abc4);
                 background-image: linear-gradient(to bottom, #6bbed2, #50abc4);
                 filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#6bbed2, endColorstr=#50abc4);
-            }
 
             .wrap {
                     width: 1140px;

@@ -418,6 +418,7 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 
 
 <div class="container">
+    <p>UPDATE </p>
 
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#main">MAIN</a></li>
@@ -430,7 +431,7 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
         <div id="main" class="tab-pane fade in active">
             <h3>MAIN</h3>
             <p>Review and edit. Provide Instucions: The field sequence is now more intuitive.
-<?php
+                <?php
                 $info = getTicketInfo($id);
 
                 $sg = $info['groupid'];

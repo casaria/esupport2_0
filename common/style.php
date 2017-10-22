@@ -189,6 +189,7 @@ $tablePadding = 6;
 
 
                                   }*/
+
                 input[type=text], textarea, select {
                     width: 200px;
                     border: 2px solid #67bcd1;
@@ -219,6 +220,8 @@ $tablePadding = 6;
                     */
                 }
 
+
+
                 input[type=text]:hover, textarea:hover, select:hover {
                     /* border: 2px dashed #ff9913; */
                     background-color: #ffaf46;
@@ -230,6 +233,12 @@ $tablePadding = 6;
                     background-image: linear-gradient(to bottom, #ffaf46, #e78404);
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffaf46, endColorstr=#e78404);
                 }
+
+                .small{
+
+
+                }
+
 
                 button, input[type=submit] {
                     border-top-color: #67bcd1;
@@ -620,6 +629,8 @@ $tablePadding = 6;
                     font-size: <?php echo $theme['font_size']; ?>px;
                     color: <?php echo $theme['info_text']; ?>;
                 }
+
+
 
             <?php if(eregi("IE", $HTTP_USER_AGENT)){ ?>
                 select, option, textarea, input {

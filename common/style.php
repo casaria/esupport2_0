@@ -94,13 +94,7 @@ $tablePadding = 6;
 
         <STYLE type="text/css">
 
-            .container {
-                padding-right: 2px;
-                padding-left: 2px;
-                margin-right: 2px;
-                margin-left: 2px;
-                width: 780px;
-            }
+
 
             table {
                 border-spacing: 1px;
@@ -108,10 +102,9 @@ $tablePadding = 6;
                 margin: 1px;
             }
 
-         /*   td,
-            th {
-                padding: 5px;
-            }  */
+            .li {
+                padding-left: 4px;
+            }
 
             @import url(https://fonts.googleapis.com/css?family=Lato);
 
@@ -138,6 +131,14 @@ $tablePadding = 6;
                     font-weight: 500;
                     padding: 5px;
                     margin: 2px;
+                }
+
+                .container {
+                    padding-right: 2px;
+                    padding-left: 2px;
+                    margin-right: 2px;
+                    margin-left: 4px;
+                    width: 580px;
                 }
 
                 #selectwidth {
@@ -854,8 +855,14 @@ $tablePadding = 6;
                     margin: 0px;
                 }
 
-                }
 
+                .container {
+                    padding-right: 2px;
+                    padding-left: 2px;
+                    margin-right: 2px;
+                    margin-left: 2px;
+                    width: 780px;
+                }
                 #selectwidth {
                 /*    background-color: #afe7f7;   */
                     border: 0 solid;

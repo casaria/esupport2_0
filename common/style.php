@@ -123,7 +123,7 @@ $tablePadding = 6;
                 box-shadow: #B4B5B5 3PX 3PX 3PX;
                 -webkit-border-radius: 3px;
                 -moz-border-radius: 3px;
-                width: 350px;
+                width: 200px;
                 font-weight: 600;
                 outline: 0;
                 overflow: hidden;
@@ -133,7 +133,7 @@ $tablePadding = 6;
 
             #selectwidth option, #selectwidth2 option {
 
-                width: 350px;
+                width: 200px;
                 font-weight: 600;
                 color: darkslateblue;
                 padding: 5px;

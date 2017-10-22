@@ -1042,23 +1042,22 @@ $tablePadding = 6;
                     color: <?php echo $theme['text']; ?>;
                 }
 
-              /*  table.border {
+                /*table.border {
                     background: <?php echo $theme['table_border']; ?>;
                     color: black;
-                }   */
+                } */
 
                 td {
                     color: #000000;
                     font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
                     font-size: <?php echo $theme['font_size']; ?>px;
-
                 }
 
                 tr {
                     color: #000000;
                     font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
                     font-size: <?php echo $theme['font_size']; ?>px;
-
+                }
 
                 td.back {
                     padding: <?php echo $tablePadding; ?>px;
@@ -1169,9 +1168,8 @@ $tablePadding = 6;
                 tr.back3 {
                     line-height: <?php echo $lineHeight; ?>;
                     background: #feaa37;
-                    fontnt-weight: 600;
+                    font-weight: 600;
                 }
-
                 /*table tr:nth-child(odd) tr{background:
 
                  }
@@ -1180,7 +1178,6 @@ $tablePadding = 6;
 
                 }
                 */
-
                 td.back {
                     padding: <?php echo $tablePadding; ?>px;
                     line-height: <?php echo $lineHeight; ?>;
@@ -1235,6 +1232,7 @@ $tablePadding = 6;
                 a.hf:link {
                     line-height: <?php echo $lineHeight; ?>;
                     text-decoration: none;
+                    font-weight: normal;
                     font-family: "<?php echo $theme['font']; ?>";
                     font-weight: 600;
                     font-size: <?php echo $theme['font_size']; ?>px;
@@ -1336,6 +1334,8 @@ $tablePadding = 6;
                     font-size: <?php echo $theme['font_size']; ?>px;
                     color: <?php echo $theme['info_text']; ?>;
                 }
+
+
 
             <?php if(eregi("IE", $HTTP_USER_AGENT)){ ?>
                 select, option, textarea, input {
@@ -1507,6 +1507,7 @@ $tablePadding = 6;
                     font-size: 12px;
                     color: #000099;
                 }
+
             }
 
 

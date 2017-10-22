@@ -417,12 +417,11 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 
 
 <div class="container">
-    <ul class="nav nav-tabs"><H2>
-        <li class="active"><a data-toggle="tab" href="#main">MAIN</a></li>
-        <li><a data-toggle="tab" href="#time">TIME</a></li>
-        <li><a data-toggle="tab" href="#material">MATERIAL</a></li>
-        <li><a data-toggle="tab" href="#extra">EXTRA</a></li>
-            </H2>
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#main"><H2>MAIN</H2></a></li>
+        <li><a data-toggle="tab" href="#time"><H2>TIME</H2></a></li>
+        <li><a data-toggle="tab" href="#material"><H2>MATERIAL</H2></a></li>
+        <li><a data-toggle="tab" href="#extra"><H2>EXTRA</H2></a></li>
     </ul>
 
     <div class="tab-content">

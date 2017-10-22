@@ -102,9 +102,6 @@ $tablePadding = 6;
                 margin: 1px;
             }
 
-            ul {
-                padding-left: 4px;
-            }
 
             @import url(https://fonts.googleapis.com/css?family=Lato);
 

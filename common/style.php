@@ -80,7 +80,7 @@ $tablePadding = 6;
 
             /*Base Mobile Layout*/
             .wrap {
-                width: 50%;
+                width: 20%;
                 margin: 0 auto;
             }
 

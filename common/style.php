@@ -364,7 +364,7 @@ $tablePadding = 6;
                     color: #000000;
                     font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
                     font-size: <?php echo $theme['font_size']; ?>px;
-                    padding: 5px;
+                    padding: 2px;
                 }
 
                 tr {

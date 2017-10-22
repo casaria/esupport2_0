@@ -92,7 +92,7 @@ $tablePadding = 6;
 
             #selectwidth {
                 background-color: #afe7f7;
-                border: 0px solid;
+                border: 0 solid;
                 Vbackground-color: <?php echo $theme['subcategory']; ?> border: 2px solid;
                 -webkit-box-shadow: #B4B5B5 3PX 3PX 3PX;
                 -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
@@ -117,7 +117,7 @@ $tablePadding = 6;
 
             #selectwidth2 {
                 background-color: <?php echo $theme['category']; ?>;
-                border: 0px solid;
+                border: 0 solid;
                 -webkit-box-shadow: #B4B5B5 3px 3PX 3PX;
                 -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
                 box-shadow: #B4B5B5 3PX 3PX 3PX;
@@ -158,7 +158,7 @@ $tablePadding = 6;
 
 
                               }*/
-            input[type=text], textarea, select, input[type=submit] {
+            input[type=text], textarea, select {
                 border: 2px solid #ffad41;
                 -webkit-box-shadow: #B4B5B5 3px 3px 3px;
                 -moz-box-shadow: #B4B5B5 3px 3px 3px;
@@ -184,7 +184,7 @@ $tablePadding = 6;
                 filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
             }
 
-            input[type=text]:hover, textarea:hover, select:hover, input[type=submit]:hover {
+            input[type=text]:hover, textarea:hover, select:hover {
                /* border: 2px dashed #ff9913; */
                 background-color: #ffaf46;
                 background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaf46), to(#e78404));
@@ -196,7 +196,7 @@ $tablePadding = 6;
                 filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffaf46, endColorstr=#e78404);
             }
 
-            button {
+            button, input[type=submit] {
                 border-top-color: #67bcd1;
                 border-right-color: #67bcd1;
                 border-bottom-color: #67bcd1;
@@ -226,7 +226,7 @@ $tablePadding = 6;
                 filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#92cfde, endColorstr=#76bdd1);
             }
 
-            button:hover {
+            button:hover, input[type=submit] {
                 border-top-color: #44adc6;
                 border-right-color: #44adc6;
                 border-bottom-color: #44adc6;

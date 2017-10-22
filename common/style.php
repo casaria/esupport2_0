@@ -126,7 +126,8 @@ $tablePadding = 6;
                     -webkit-border-horizontal-spacing: 2px;
                     -webkit-border-vertical-spacing: 1px;
                     font-weight: 500;
-                    padding: 0px;
+                    padding: 5px;
+                    margin: 2px;
                 }
 
                 #selectwidth {
@@ -832,6 +833,9 @@ $tablePadding = 6;
                     -webkit-border-horizontal-spacing: 2px;
                     -webkit-border-vertical-spacing: 1px;
                     font-weight: 500;
+                    padding: 5px;
+                    margin: 2px;
+                }
 
                 }
 

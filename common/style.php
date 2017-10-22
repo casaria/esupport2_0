@@ -105,6 +105,7 @@ $tablePadding = 6;
             table {
                 border-spacing: 1px;
                 border-collapse: collapse;
+                margin: 1px;
             }
 
          /*   td,

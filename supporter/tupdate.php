@@ -431,7 +431,7 @@ unset($update);
             <h3>MAIN</h3>
             <p>Review and edit. Provide Instucions: The field sequence is now more intuitive.
 
-<?php
+                <?php
                 createTicketHeader("$lang_updateticket");
                 echo '<a href="updatelog.php?cookie_name=' . $cookie_name . '&id=' . $info['id'] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',
 					\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">
@@ -487,16 +487,14 @@ unset($update);
             echo "</form></td>";
         }
         echo "</tr>";
-
                 $info = getTicketInfo($id);
-
                 $sg = $info['groupid'];
 
 
 
                 endTable();  // createTimeUpdate();
 
- ?>
+        ?>
             </p>
         </div>
         <div id="time" class="tab-pane fade">

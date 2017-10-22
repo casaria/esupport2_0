@@ -86,7 +86,6 @@ $tablePadding = 6;
         <STYLE type="text/css">
 
             table {
-
                 padding: 1;
             }
             @import url(https://fonts.googleapis.com/css?family=Lato);

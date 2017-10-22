@@ -434,7 +434,7 @@ $tablePadding = 6;
                     background: <?php echo $theme['bg2']; ?>;
                 }
 
-                .back3 {
+                tr.back3 {
                     line-height: <?php echo $lineHeight; ?>;
                     background: #feaa37;
                     font-weight: 600;

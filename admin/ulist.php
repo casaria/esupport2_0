@@ -73,7 +73,7 @@ if($m =='delete2'){
     <li class="active"><a data-toggle="tab" href="#main">MAIN</a></li>
     <li><a data-toggle="tab" href="#time">TIME</a></li>
     <li><a data-toggle="tab" href="#material">MATERIAL</a></li>
-    <li><a data-toggle="tab" href="otherextra">EXTRA</a></li>
+    <li><a data-toggle="tab" href="#extra">EXTRA</a></li>
   </ul>
 
   <div class="tab-content">

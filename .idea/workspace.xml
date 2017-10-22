@@ -16,14 +16,14 @@
     <bookmark url="file://$PROJECT_DIR$/common/common.php" line="3609" />
     <bookmark url="file://$PROJECT_DIR$/common/common.php" line="1809" />
     <bookmark url="file://$PROJECT_DIR$/common/common.php" line="2666" />
-    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="842" />
-    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="653" />
-    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="709" />
+    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="840" />
+    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="651" />
+    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="707" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/bootstrap.css" afterPath="$PROJECT_DIR$/common/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/style.php" afterPath="$PROJECT_DIR$/common/style.php" />
     </list>
     <ignored mask="workspace.xml" />
     <ignored mask="error_log" />
@@ -71,16 +71,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/style.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="107" column="27" lean-forward="false" selection-start-line="107" selection-start-column="27" selection-end-line="107" selection-end-column="27" />
+            <state relative-caret-position="386">
+              <caret line="136" column="37" lean-forward="true" selection-start-line="136" selection-start-column="37" selection-end-line="136" selection-end-column="37" />
               <folding>
                 <element signature="e#7#1399#0#PHP" expanded="true" />
-                <marker date="1508712383147" expanded="true" signature="62113:62165" ph="select * fro... ${$mysql_themes_table}" />
-                <marker date="1508712383147" expanded="true" signature="62941:63001" ph="select theme... ${$mysql_users_table}" />
-                <marker date="1508712383147" expanded="true" signature="63247:63273" ph="select defau... ${$mysql_settings_table}" />
+                <marker date="1508713206207" expanded="true" signature="62279:62331" ph="select * fro... ${$mysql_themes_table}" />
+                <marker date="1508713206207" expanded="true" signature="63107:63167" ph="select theme... ${$mysql_users_table}" />
+                <marker date="1508713206207" expanded="true" signature="63413:63439" ph="select defau... ${$mysql_settings_table}" />
               </folding>
             </state>
           </provider>
@@ -224,10 +224,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="-255">
               <caret line="4029" column="11" lean-forward="false" selection-start-line="4029" selection-start-column="11" selection-end-line="4029" selection-end-column="11" />
               <folding />
             </state>
@@ -290,7 +290,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tsuc</find>
       <find>5px</find>
       <find>@m</find>
       <find>60</find>
@@ -320,6 +319,7 @@
       <find>li</find>
       <find>.li</find>
       <find>subca</find>
+      <find>nav-t</find>
     </findStrings>
     <replaceStrings>
       <replace>$summary = displayTicket($result);</replace>
@@ -447,8 +447,8 @@
         <option value="netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/supporter/index.php" />
         <option value="$PROJECT_DIR$/supporter/tupdate.php" />
-        <option value="$PROJECT_DIR$/common/style.php" />
         <option value="$PROJECT_DIR$/common/bootstrap.css" />
+        <option value="$PROJECT_DIR$/common/style.php" />
       </list>
     </option>
   </component>
@@ -843,14 +843,7 @@
       <workItem from="1508388059373" duration="21770000" />
       <workItem from="1508444976781" duration="25610000" />
       <workItem from="1508475049417" duration="86584000" />
-      <workItem from="1508655613890" duration="26595000" />
-    </task>
-    <task id="LOCAL-01132" summary="TABS modified">
-      <created>1508672250949</created>
-      <option name="number" value="01132" />
-      <option name="presentableId" value="LOCAL-01132" />
-      <option name="project" value="LOCAL" />
-      <updated>1508672250949</updated>
+      <workItem from="1508655613890" duration="26973000" />
     </task>
     <task id="LOCAL-01133" summary="TABS modified">
       <created>1508672703106</created>
@@ -1188,11 +1181,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508712768972</updated>
     </task>
-    <option name="localTasksCounter" value="1181" />
+    <task id="LOCAL-01181" summary="bootstrap padding, borderspacing overrides">
+      <created>1508712846824</created>
+      <option name="number" value="01181" />
+      <option name="presentableId" value="LOCAL-01181" />
+      <option name="project" value="LOCAL" />
+      <updated>1508712846824</updated>
+    </task>
+    <option name="localTasksCounter" value="1182" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="865276000" />
+    <option name="totallyTimeSpent" value="865654000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1405,7 +1405,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/common/style.php</url>
-          <line>145</line>
+          <line>143</line>
           <option name="timeStamp" value="254" />
         </line-breakpoint>
       </breakpoints>
@@ -2220,24 +2220,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/style.php">
+    <entry file="file://$PROJECT_DIR$/common/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="107" column="27" lean-forward="false" selection-start-line="107" selection-start-column="27" selection-end-line="107" selection-end-column="27" />
-          <folding>
-            <element signature="e#7#1399#0#PHP" expanded="true" />
-            <marker date="1508712383147" expanded="true" signature="62113:62165" ph="select * fro... ${$mysql_themes_table}" />
-            <marker date="1508712383147" expanded="true" signature="62941:63001" ph="select theme... ${$mysql_users_table}" />
-            <marker date="1508712383147" expanded="true" signature="63247:63273" ph="select defau... ${$mysql_settings_table}" />
-          </folding>
+        <state relative-caret-position="-255">
+          <caret line="4029" column="11" lean-forward="false" selection-start-line="4029" selection-start-column="11" selection-end-line="4029" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/bootstrap.css">
+    <entry file="file://$PROJECT_DIR$/common/style.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="4029" column="11" lean-forward="false" selection-start-line="4029" selection-start-column="11" selection-end-line="4029" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="386">
+          <caret line="136" column="37" lean-forward="true" selection-start-line="136" selection-start-column="37" selection-end-line="136" selection-end-column="37" />
+          <folding>
+            <element signature="e#7#1399#0#PHP" expanded="true" />
+            <marker date="1508713206207" expanded="true" signature="62279:62331" ph="select * fro... ${$mysql_themes_table}" />
+            <marker date="1508713206207" expanded="true" signature="63107:63167" ph="select theme... ${$mysql_users_table}" />
+            <marker date="1508713206207" expanded="true" signature="63413:63439" ph="select defau... ${$mysql_settings_table}" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -418,8 +418,8 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 
 
 <div class="container">
-    <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a
-        unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
+        //--> <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a
+        //-->    unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
 
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#main">MAIN</a></li>

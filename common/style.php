@@ -94,6 +94,13 @@ $tablePadding = 6;
 
         <STYLE type="text/css">
 
+            .container {
+                padding-right: 2px;
+                padding-left: 2px;
+                margin-right: 2px;
+                margin-left: 2px;
+            }
+
 
             @import url(https://fonts.googleapis.com/css?family=Lato);
 

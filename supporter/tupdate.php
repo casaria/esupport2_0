@@ -416,6 +416,32 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
     //--></script>
 
 
+echo "<TR><td class=\"back\"></td><td VALIGN='TOP' class=\"back\">";
+        echo "<input type=hidden name=sg value='" . $sg . "'>";
+        echo "<input type=hidden name=id value='" . $info['id'] . "'>";
+        echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
+        echo "<input type=hidden name=old_pri value='" . $info['priority'] . "'>";
+        echo "<input type=hidden name=old_emailgroup value='" . $info['emailgroup'] . "'>";
+        echo "<input type=hidden name=old_emailstatuschange value='" . $info['emailstatuschange'] . "'>";
+        echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
+        echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
+        echo "<input type=hidden name=minutes_labor value=$minutes>";
+        echo "<input type=submit id=submit name=update value=\"$lang_updateticket\">";
+        echo "</form></td><td VALIGN='TOP' class=\"back\">";
+
+
+        if ($enable_kbase == 'On') {
+
+        echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>&nbsp;&nbsp;";
+            echo "<input type=hidden name=platform value='$info[platform]'>";
+            echo "<input type=hidden name=category value='$info[category]'>";
+            echo "<input type=hidden name=short value='$info[short]'>";
+            echo "<input type=hidden name=description value='$info[description]'>";
+            echo "<input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\">";
+            echo "</form></td>";
+    }
+    echo "</tr>";
+
 <div class="container">
     <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a
         unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
@@ -465,31 +491,7 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
                 }
 
 
-                echo "<TR><td class=\"back\"></td><td VALIGN='TOP' class=\"back\">";
-                echo "<input type=hidden name=sg value='" . $sg . "'>";
-                echo "<input type=hidden name=id value='" . $info['id'] . "'>";
-                echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
-                echo "<input type=hidden name=old_pri value='" . $info['priority'] . "'>";
-                echo "<input type=hidden name=old_emailgroup value='" . $info['emailgroup'] . "'>";
-                echo "<input type=hidden name=old_emailstatuschange value='" . $info['emailstatuschange'] . "'>";
-                echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
-                echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
-                echo "<input type=hidden name=minutes_labor value=$minutes>";
-                echo "<input type=submit id=submit name=update value=\"$lang_updateticket\">";
-                echo "</form></td><td VALIGN='TOP' class=\"back\">";
 
-
-                if ($enable_kbase == 'On') {
-
-                    echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>&nbsp;&nbsp;";
-                    echo "<input type=hidden name=platform value='$info[platform]'>";
-                    echo "<input type=hidden name=category value='$info[category]'>";
-                    echo "<input type=hidden name=short value='$info[short]'>";
-                    echo "<input type=hidden name=description value='$info[description]'>";
-                    echo "<input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\">";
-                    echo "</form></td>";
-                }
-                echo "</tr>";
 
                 endTable();  // createTimeUpdate();
 

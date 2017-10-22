@@ -791,7 +791,7 @@ $tablePadding = 6;
                     zoom: 0.9;
                 }
 
-                .container {
+                div.container {
                     padding-right: 1px;
                     padding-left: 1px;
                     margin-right: 1px;

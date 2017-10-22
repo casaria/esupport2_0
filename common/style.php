@@ -143,7 +143,7 @@ $tablePadding = 6;
 
                 }
 
-                #selectwidth2 option {
+                #selectwidth2 option, #selectwidth2 option {
 
                     width: 350px;
                     font-weight: 600;
@@ -152,14 +152,7 @@ $tablePadding = 6;
                     font-size: 13px;
                 }
 
-                #selectwidth option {
 
-                    width: 350px;
-                    font-weight: 600;
-                    color: darkviolet;
-                    padding: 5px;
-                    font-size: 13px;
-                }
 
                 /*
 

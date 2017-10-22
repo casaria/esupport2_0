@@ -852,6 +852,7 @@ $tablePadding = 6;
                     margin: 0px;
                 }
 
+                }
 
                 .container {
                     padding-right: 2px;

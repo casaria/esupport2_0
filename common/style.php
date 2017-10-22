@@ -106,10 +106,11 @@ $tablePadding = 6;
                 border-spacing: 0px;
                 border-collapse: collapse;
             }
-            td,
+
+         /*   td,
             th {
                 padding: 5px;
-            }
+            }  */
 
             @import url(https://fonts.googleapis.com/css?family=Lato);
 
@@ -363,12 +364,14 @@ $tablePadding = 6;
                     color: #000000;
                     font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
                     font-size: <?php echo $theme['font_size']; ?>px;
+                    padding: 5px;
                 }
 
                 tr {
                     color: #000000;
                     font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
                     font-size: <?php echo $theme['font_size']; ?>px;
+                    padding: 2px;
                 }
 
                 td.back {

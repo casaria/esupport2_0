@@ -102,6 +102,14 @@ $tablePadding = 6;
                 width: 780px;
             }
 
+            table {
+                border-spacing: 2px;
+                border-collapse: collapse;
+            }
+            td,
+            th {
+                padding: 5px;
+            }
 
             @import url(https://fonts.googleapis.com/css?family=Lato);
 
@@ -833,8 +841,8 @@ $tablePadding = 6;
                     -webkit-border-horizontal-spacing: 2px;
                     -webkit-border-vertical-spacing: 1px;
                     font-weight: 500;
-                    padding: 5px;
-                    margin: 2px;
+                    padding: 1px;
+                    margin: 0px;
                 }
 
                 }

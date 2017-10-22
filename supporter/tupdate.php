@@ -430,101 +430,81 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
     <div class="tab-content">
         <div id="main" class="tab-pane fade in active">
             <h3>MAIN</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div id="time" class="tab-pane fade">
-            <h3>TIME</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <div id="material" class="tab-pane fade">
-            <h3>MATERIAL</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-        </div>
-        <div id="extra" class="tab-pane fade">
-            <h3>EXTRA</h3>
-            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-
-
-
-
-
-
-
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 <?php
 
-$info = getTicketInfo($id);
+                $info = getTicketInfo($id);
 
-$sg = $info['groupid'];
+                $sg = $info['groupid'];
 
-createTicketHeader("$lang_updateticket");
-echo '<a href="updatelog.php?cookie_name=' . $cookie_name . '&id=' . $info['id'] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',
+                createTicketHeader("$lang_updateticket");
+                echo '<a href="updatelog.php?cookie_name=' . $cookie_name . '&id=' . $info['id'] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',
 					\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">
 
 <img border=0 src="../' . $theme['image_dir'] . 'orangeglow0_show_summary.png"></a> ';
-echo "<div align=right><a href=\"$supporter_site_url/print.php?id=$id\">$lang_printable</a></div>";
-createTicketDetails();
-createSupporterInfo();
-createUserInfo();
-createNotificationPanel();
-createTicketInfo();
+                echo "<div align=right><a href=\"$supporter_site_url/print.php?id=$id\">$lang_printable</a></div>";
+                createTicketDetails();
+                createSupporterInfo();
+                createUserInfo();
+                createNotificationPanel();
+                createTicketInfo();
 
-if ($enable_time_tracking == 'On') {
-    $total_minutes = displayTimeHistory();
-}
-displayMaterials();
+                if ($enable_time_tracking == 'On') {
+                    $total_minutes = displayTimeHistory();
+                }
+                displayMaterials();
 
-if ($enable_time_tracking == 'On') {
-    createTimeUpdate();
-}
-if ($enable_time_tracking == 'On') {
+                if ($enable_time_tracking == 'On') {
+                    createTimeUpdate();
+                }
+                if ($enable_time_tracking == 'On') {
 
-    $minutes = $total_minutes['labor_minutes'] + $total_minutes['labor_after_hours'];
-} else {
-    $minutes = $info['minutes_labor'];
-}
-
-
-echo "<TR><td class=\"back\"></td><td VALIGN='TOP' class=\"back\">";
-echo "<input type=hidden name=sg value='" . $sg . "'>";
-echo "<input type=hidden name=id value='" . $info['id'] . "'>";
-echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
-echo "<input type=hidden name=old_pri value='" . $info['priority'] . "'>";
-echo "<input type=hidden name=old_emailgroup value='" . $info['emailgroup'] . "'>";
-echo "<input type=hidden name=old_emailstatuschange value='" . $info['emailstatuschange'] . "'>";
-echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
-echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
-echo "<input type=hidden name=minutes_labor value=$minutes>";
-echo "<input type=submit id=submit name=update value=\"$lang_updateticket\">";
-echo "</form></td><td VALIGN='TOP' class=\"back\">";
+                    $minutes = $total_minutes['labor_minutes'] + $total_minutes['labor_after_hours'];
+                } else {
+                    $minutes = $info['minutes_labor'];
+                }
 
 
-if ($enable_kbase == 'On') {
+                echo "<TR><td class=\"back\"></td><td VALIGN='TOP' class=\"back\">";
+                echo "<input type=hidden name=sg value='" . $sg . "'>";
+                echo "<input type=hidden name=id value='" . $info['id'] . "'>";
+                echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
+                echo "<input type=hidden name=old_pri value='" . $info['priority'] . "'>";
+                echo "<input type=hidden name=old_emailgroup value='" . $info['emailgroup'] . "'>";
+                echo "<input type=hidden name=old_emailstatuschange value='" . $info['emailstatuschange'] . "'>";
+                echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
+                echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
+                echo "<input type=hidden name=minutes_labor value=$minutes>";
+                echo "<input type=submit id=submit name=update value=\"$lang_updateticket\">";
+                echo "</form></td><td VALIGN='TOP' class=\"back\">";
 
-    echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>&nbsp;&nbsp;";
-    echo "<input type=hidden name=platform value='$info[platform]'>";
-    echo "<input type=hidden name=category value='$info[category]'>";
-    echo "<input type=hidden name=short value='$info[short]'>";
-    echo "<input type=hidden name=description value='$info[description]'>";
-    echo "<input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\">";
-    echo "</form></td>";
-}
-echo "</tr>";
 
-endTable();  // createTimeUpdate();
+                if ($enable_kbase == 'On') {
 
-function createSupporterInfo()
-{
-global $sg, $lang_supporterinfo, $lang_supportergroup, $lang_supporter, $lang_ticket, $lang_priority, $lang_status;
+                    echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>&nbsp;&nbsp;";
+                    echo "<input type=hidden name=platform value='$info[platform]'>";
+                    echo "<input type=hidden name=category value='$info[category]'>";
+                    echo "<input type=hidden name=short value='$info[short]'>";
+                    echo "<input type=hidden name=description value='$info[description]'>";
+                    echo "<input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\">";
+                    echo "</form></td>";
+                }
+                echo "</tr>";
 
-startTable("$lang_supporterinfo", "left", 100, 4);
+                endTable();  // createTimeUpdate();
 
-ECHO '                <tr>                              
+                function createSupporterInfo()
+                {
+                global $sg, $lang_supporterinfo, $lang_supportergroup, $lang_supporter, $lang_ticket, $lang_priority, $lang_status;
+
+                startTable("$lang_supporterinfo", "left", 100, 4);
+
+                ECHO '                <tr>                              
 							<td class=back2 align=right>' . $lang_supportergroup . '</td>
 							<td class=back align="left">';
-?> <select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)"><?php
-                                createGroupMenu(1);
-    echo '
+                ?> <select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)"><?php
+                    createGroupMenu(1);
+                    echo '
 							</select>
 							</td></tr><tr>
 							<td class=back2 align=right width="180Ppx">' . $lang_supporter . ' </td>
@@ -532,9 +512,9 @@ ECHO '                <tr>
                                 
 			
 							<select id="selectwidth" name=supporter_id>';
-    createSupporterMenu($sg);
+                    createSupporterMenu($sg);
 
-    echo '				
+                    echo '				
 							</select>
 							</td>
                               </tr><tr>
@@ -543,9 +523,9 @@ ECHO '                <tr>
 							<td class=back align="left">
 							
 							<select id="selectwidth" name=prio>';
-    createPriorityMenu(0);
+                    createPriorityMenu(0);
 
-    echo '
+                    echo '
 							</select>
 							</td>
 							</tr><tr>
@@ -554,62 +534,62 @@ ECHO '                <tr>
 							<td class=back align="left">
 							
 							<select id="selectwidth2" name=status>';
-    createStatusMenu(0);
+                    createStatusMenu(0);
 
 
-    echo '                    </select>
+                    echo '                    </select>
 							</td></tr>';
 
 
-    endTable();
+                    endTable();
 
-    }
+                    }
 
 
-        function createSupporterMenu($group_id)
-    {
-        global $mysql_users_table, $info, $db;
+                    function createSupporterMenu($group_id)
+                    {
+                        global $mysql_users_table, $info, $db;
 
-        if ($group_id == '' || !isset($group_id) || $group_id == 1 || !groupExists($group_id)) {
-            $sql = "select id,user_name from $mysql_users_table where supporter=1 order by user_name asc";
-            $table = $mysql_users_table;
-        } else {
-            $table = "sgroup" . $group_id;
-            $sql = "select user_id,user_name from $table order by user_name asc";
-        }
+                        if ($group_id == '' || !isset($group_id) || $group_id == 1 || !groupExists($group_id)) {
+                            $sql = "select id,user_name from $mysql_users_table where supporter=1 order by user_name asc";
+                            $table = $mysql_users_table;
+                        } else {
+                            $table = "sgroup" . $group_id;
+                            $sql = "select user_id,user_name from $table order by user_name asc";
+                        }
 
-        $result = $db->query($sql, $table);
+                        $result = $db->query($sql, $table);
 
-        while ($row = $db->fetch_row($result)) {
-            echo "<option value=\"$row[0]\" ";
-            if ($info['supporter_id'] == $row[0]) echo "selected";
-            echo "> $row[1] </option>";
-        }
+                        while ($row = $db->fetch_row($result)) {
+                            echo "<option value=\"$row[0]\" ";
+                            if ($info['supporter_id'] == $row[0]) echo "selected";
+                            echo "> $row[1] </option>";
+                        }
 
-    }
+                    }
 
-    function createNotificationPanel()
-    {
-        global $info, $lang_emailgroup, $lang_emailstatuschange, $lang_notification, $lang_emailcc, $lang_pagesupporter;
+                    function createNotificationPanel()
+                    {
+                        global $info, $lang_emailgroup, $lang_emailstatuschange, $lang_notification, $lang_emailcc, $lang_pagesupporter;
 
-        startTable("$lang_notification ", "left", 100, 5);
-        echo '
+                        startTable("$lang_notification ", "left", 100, 5);
+                        echo '
     <tr>
      <td class="back2" width="180px">' . $lang_emailgroup . ': </td>
      <td class="back" colspan="4">' .
-            "<input class=box type=checkbox";
-        if ($info['emailgroup'] == "On") {
-            echo " checked";
-        }
-        echo " name=emailgroup></td>" .
-            '</tr><tr>
+                            "<input class=box type=checkbox";
+                        if ($info['emailgroup'] == "On") {
+                            echo " checked";
+                        }
+                        echo " name=emailgroup></td>" .
+                            '</tr><tr>
      <td class="back2" width="180px">' . $lang_emailstatuschange . ': </td>
      <td class="back" colspan="4">' .
-            "<input class=box type=checkbox";
-        if ($info['emailstatuschange'] == "On") {
-            echo " checked";
-        }
-        echo " name=emailstatuschange></td>" . '
+                            "<input class=box type=checkbox";
+                        if ($info['emailstatuschange'] == "On") {
+                            echo " checked";
+                        }
+                        echo " name=emailstatuschange></td>" . '
     
     </tr>
     <tr>
@@ -617,40 +597,40 @@ ECHO '                <tr>
      <td class="back" colspan="4">' . "<input class=box type=checkbox name=mms></td>";
 
 
-        echo '
+                        echo '
     </tr>
     <tr>
      <td class="back2" width="180px">' . $lang_emailcc . ': </td>
      <td class="back" colspan="4"><input type=text size=55 name=emailcc value="' . $info['emailcc'] . '"></td></tr>';
-        endTable();
-    }
+                        endTable();
+                    }
 
 
-    function createUserInfo()
-    {
-        global $info, $lang_userinfo, $lang_email, $lang_username, $lang_phoneext, $lang_office;
+                    function createUserInfo()
+                    {
+                        global $info, $lang_userinfo, $lang_email, $lang_username, $lang_phoneext, $lang_office;
 // Get User group name and id associate with use
-        $groupname = '';
-        $ugroups = getUGroupList();
-        $user = $info['user'];
-        $n = 0;
-        if ($user != '') {
-            for ($i = 0; $i < sizeof($ugroups); $i++) {
-                if (inGroup($user, $ugroups[$i])) {
-                    $groupname .= getuGroup($i + 1) . "/";
-                    $grpid_list[$n] = $i + 1;
-                    $n++;
-                }
-            }
-        }
+                        $groupname = '';
+                        $ugroups = getUGroupList();
+                        $user = $info['user'];
+                        $n = 0;
+                        if ($user != '') {
+                            for ($i = 0; $i < sizeof($ugroups); $i++) {
+                                if (inGroup($user, $ugroups[$i])) {
+                                    $groupname .= getuGroup($i + 1) . "/";
+                                    $grpid_list[$n] = $i + 1;
+                                    $n++;
+                                }
+                            }
+                        }
 //+++
 //for ($i=0; $i<sizeof($grpid_list); $i++){
 //  echo $grpid_list[$i];
 //}
 
-        startTable("$lang_userinfo     - Member of group(s): $groupname", "left", 100, 4);
+                        startTable("$lang_userinfo     - Member of group(s): $groupname", "left", 100, 4);
 
-        echo '			<tr>
+                        echo '			<tr>
 							<td width="180px" class=back2 align=right>' . $lang_username . ':</td>
 						
 							<td class=back>
@@ -673,35 +653,35 @@ ECHO '                <tr>
 								<input type=text size=20 name=phone value="' . $info['phone'] . '">
 							</td>';
 
-        endTable();
-    }
+                        endTable();
+                    }
 
-    //Thanks to SteveW for providing this great function
-    function createTicketDetails()
-    {
-        global $info, $db, $lang_never, $mysql_attachments_table, $id, $lang_ticket, $lang_opened,      $lang_attachments, $lang_lastupdate;
+                    //Thanks to SteveW for providing this great function
+                    function createTicketDetails()
+                    {
+                        global $info, $db, $lang_never, $mysql_attachments_table, $id, $lang_ticket, $lang_opened,      $lang_attachments, $lang_lastupdate;
 
-        $padded_id = str_pad($id, 5, '0', STR_PAD_LEFT);
-        $info['create_date'] = date("F j, Y, g:i a", $info['create_date']);
-        if ($info['lastupdate'] != 0)
-            $info['lastupdate'] = date("F j, Y, g:i a", $info['lastupdate']);
-        else
-            $info['lastupdate'] = $lang_never;
-        $attachments = '';
+                        $padded_id = str_pad($id, 5, '0', STR_PAD_LEFT);
+                        $info['create_date'] = date("F j, Y, g:i a", $info['create_date']);
+                        if ($info['lastupdate'] != 0)
+                            $info['lastupdate'] = date("F j, Y, g:i a", $info['lastupdate']);
+                        else
+                            $info['lastupdate'] = $lang_never;
+                        $attachments = '';
 
-        //if there attachments, get them and setup the links to them.
-        $sql = "SELECT * from $mysql_attachments_table where tid=$id";
-        $result = $db->query($sql);
-        $num_attachments = $db->num_rows($result);
-        if ($num_attachments > 0) {
-            while ($attachment = $db->fetch_array($result)) {
-                $attachment['filesize'] = convertFileSize($attachment['filesize']);
-                $attachments .= "<a target=_blank href=\"../tinfo.php?action=download&id=$attachment[id]\">$attachment[filename] </a> ($attachment[filesize]) - " . date("n/j/Y", $attachment['timestamp']) . "<br>";
-            }
-        }
+                        //if there attachments, get them and setup the links to them.
+                        $sql = "SELECT * from $mysql_attachments_table where tid=$id";
+                        $result = $db->query($sql);
+                        $num_attachments = $db->num_rows($result);
+                        if ($num_attachments > 0) {
+                            while ($attachment = $db->fetch_array($result)) {
+                                $attachment['filesize'] = convertFileSize($attachment['filesize']);
+                                $attachments .= "<a target=_blank href=\"../tinfo.php?action=download&id=$attachment[id]\">$attachment[filename] </a> ($attachment[filesize]) - " . date("n/j/Y", $attachment['timestamp']) . "<br>";
+                            }
+                        }
 
-        startTable("$lang_ticket #$padded_id", "left", 100, 2, "extra");
-        echo '
+                        startTable("$lang_ticket #$padded_id", "left", 100, 2, "extra");
+                        echo '
     <tr>
      <td class="back2" width="180px">' . $lang_ticket . ' ' . $lang_opened . ': </td>
      <td class="back">' . $info['create_date'] . '</td>
@@ -714,162 +694,189 @@ ECHO '                <tr>
      <td class="back2"  valign="top">' . $lang_attachments . ': </td>
      <td class="back">' . $attachments . '</td>
     </tr>';
-        endTable();
-    }
+                        endTable();
+                    }
 
 
-    function resetRatingsCounter()
-    {
-        global $mysql_settings_table, $db;
+                    function resetRatingsCounter()
+                    {
+                        global $mysql_settings_table, $db;
 
-        $sql = "update $mysql_settings_table set ticket_count=0";
-        $db->query($sql);
+                        $sql = "update $mysql_settings_table set ticket_count=0";
+                        $db->query($sql);
 
-    }
+                    }
 
-    function createTimeUpdate()
-    {
-        global $sg, $lang_timespent, $lang_timespent1, $lang_timespent2;
-        global $lang_month, $timestamp;
+                    function createTimeUpdate()
+                    {
+                        global $sg, $lang_timespent, $lang_timespent1, $lang_timespent2;
+                        global $lang_month, $timestamp;
 
 
 // Time spent updates
-        startTable("$lang_timespent", "left", 100, 5);
+                        startTable("$lang_timespent", "left", 100, 5);
 
-        echo ' <tr>
+                        echo ' <tr>
 	<td width="180px" class=back2 align=right>' . $lang_timespent1 . ':<BR> <class=back2 align=left>' .
-            $lang_timespent2 .
-            '</td><td width=10% class=back >';
-        echo 'minutes<BR>';
-        echo '<input type=text size=6 name=time_spent>';
-        echo '</td>';
+                            $lang_timespent2 .
+                            '</td><td width=10% class=back >';
+                        echo 'minutes<BR>';
+                        echo '<input type=text size=6 name=time_spent>';
+                        echo '</td>';
 
-        echo '<td width=15% class=back >';
-        echo 'supporter<BR><select name=supporter1>';
-        createSupporterMenu($sg);
-        echo '</select>';
-        echo '</td>';
+                        echo '<td width=15% class=back >';
+                        echo 'supporter<BR><select name=supporter1>';
+                        createSupporterMenu($sg);
+                        echo '</select>';
+                        echo '</td>';
 
 
-        echo '<td width=25% class=back >';
-        echo 'DATE <BR>';
+                        echo '<td width=25% class=back >';
+                        echo 'DATE <BR>';
 
-        $today = getdate($timestamp);
-        echo '<select name=womonth>';
-        for ($i = 1; $i < 13; $i++) {
-            echo "<option value=$i";
-            if ($today['mon'] == $i)
-                echo ' selected';
-            echo ">" . $lang_month[$i] . "</option>";
-        }
+                        $today = getdate($timestamp);
+                        echo '<select name=womonth>';
+                        for ($i = 1; $i < 13; $i++) {
+                            echo "<option value=$i";
+                            if ($today['mon'] == $i)
+                                echo ' selected';
+                            echo ">" . $lang_month[$i] . "</option>";
+                        }
 
-        echo '					</select>
+                        echo '					</select>
 							<select name=woday>
 								<option></option>';
-        for ($i = 1; $i < 32; $i++) {
-            echo "<option value=$i";
-            if ($i == $today['mday'])
-                echo " selected";
-            echo ">$i</option>\n";
-        }
+                        for ($i = 1; $i < 32; $i++) {
+                            echo "<option value=$i";
+                            if ($i == $today['mday'])
+                                echo " selected";
+                            echo ">$i</option>\n";
+                        }
 
-        echo '			
+                        echo '			
 							</select>
 							<select name=woyear>';
-        echo "<option value=" . (string)($today['year'] - 1);
-        echo '>' . ($today['year'] - 1) . '</option>';
+                        echo "<option value=" . (string)($today['year'] - 1);
+                        echo '>' . ($today['year'] - 1) . '</option>';
 
 
-        echo "<option value=$today[year]";
-        echo ' selected';
-        echo '>' . ($today['year']) . '</option>
+                        echo "<option value=$today[year]";
+                        echo ' selected';
+                        echo '>' . ($today['year']) . '</option>
 							</select>';
 
-        echo '</td>';
+                        echo '</td>';
 
-        echo '<td class=back align="left" >';
-        echo 'Work order / reference<BR>';
-        echo '<textarea  name=reference rows=2 cols=40>' . '</textarea></td>';
-        echo '</tr>';
+                        echo '<td class=back align="left" >';
+                        echo 'Work order / reference<BR>';
+                        echo '<textarea  name=reference rows=2 cols=40>' . '</textarea></td>';
+                        echo '</tr>';
 
-        echo '<tr><td width=20% class=back2 align=right>';
-        echo 'Special rate </td>';
+                        echo '<tr><td width=20% class=back2 align=right>';
+                        echo 'Special rate </td>';
 
-        echo '<td width=15% class=back align=left>';
-        echo "<input class=box type=checkbox name=after_hours>";
-        echo "after_hrs";
-        echo '</td>';
+                        echo '<td width=15% class=back align=left>';
+                        echo "<input class=box type=checkbox name=after_hours>";
+                        echo "after_hrs";
+                        echo '</td>';
 
-        echo '<td width=15% class=back align=left>';
-        echo "<input class=box type=checkbox name=engineer_rate>";
-        echo "engineer rate";
-        echo '</td>';
+                        echo '<td width=15% class=back align=left>';
+                        echo "<input class=box type=checkbox name=engineer_rate>";
+                        echo "engineer rate";
+                        echo '</td>';
 
-        echo '<td width=15% class=back align=left colspan=2>';
-        echo '</td>';
+                        echo '<td width=15% class=back align=left colspan=2>';
+                        echo '</td>';
 
-        //endtable();
-    }
-
-
-    function displayMaterials()
-    {
-        global $id, $db;
-        global $lang_materialhistory;
+                        //endtable();
+                    }
 
 
-        startTable("$lang_materialhistory", "left", 100, 5);
+                    function displayMaterials()
+                    {
+                        global $id, $db;
+                        global $lang_materialhistory;
 
-        $sql = "select mat.material_id, mat.date, mat.count, mat.reference from tickets as tkt, material_track as mat where (tkt.id=mat.ticket_id AND tkt.id=$id)";
-        $resultmaterials = $db->query($sql);
+
+                        startTable("$lang_materialhistory", "left", 100, 5);
+
+                        $sql = "select mat.material_id, mat.date, mat.count, mat.reference from tickets as tkt, material_track as mat where (tkt.id=mat.ticket_id AND tkt.id=$id)";
+                        $resultmaterials = $db->query($sql);
 
 
-        while ($row = $db->fetch_array($resultmaterials)) {
-            if ($row[count] != 0) {
+                        while ($row = $db->fetch_array($resultmaterials)) {
+                            if ($row[count] != 0) {
 
-                $sql = "select * from tmaterial where id=$row[material_id]";
-                $result = $db->query($sql);
-                $sup_row = $db->fetch_array($result);
+                                $sql = "select * from tmaterial where id=$row[material_id]";
+                                $result = $db->query($sql);
+                                $sup_row = $db->fetch_array($result);
 
-                echo '<tr>
+                                echo '<tr>
     		<td width=10% class=back2 align=right>';
-                if ($row['work_date'])
-                    echo date("F j, Y", $row[date]);
-                else
-                    echo "- No Date -";
-                echo '</td>';
-                echo '<td width=4% class=back>';
-                echo $row[count];
-                echo '</td>';
-                echo '<td width=15% class=back2>';
-                echo "$sup_row[ourpartnum]";
-                echo '</td>';
-                echo '<td class=back>';
-                echo "$sup_row[short]";
-                echo '</td>';
-                echo '<td class=back2>';
-                echo "$row[reference]";
-                echo '</td>';
-            }
-        }
+                                if ($row['work_date'])
+                                    echo date("F j, Y", $row[date]);
+                                else
+                                    echo "- No Date -";
+                                echo '</td>';
+                                echo '<td width=4% class=back>';
+                                echo $row[count];
+                                echo '</td>';
+                                echo '<td width=15% class=back2>';
+                                echo "$sup_row[ourpartnum]";
+                                echo '</td>';
+                                echo '<td class=back>';
+                                echo "$sup_row[short]";
+                                echo '</td>';
+                                echo '<td class=back2>';
+                                echo "$row[reference]";
+                                echo '</td>';
+                            }
+                        }
 
-        echo '<tr><td width=24% class=back2 align=right><B>Total pcs:</B>';
-        echo '</td> <td class=back >';
-        echo '</td> <td class=back colspan=3>';
+                        echo '<tr><td width=24% class=back2 align=right><B>Total pcs:</B>';
+                        echo '</td> <td class=back >';
+                        echo '</td> <td class=back colspan=3>';
 
 
-        echo '<B>';
-        echo "coming soon";
-        echo '</B></td>';
+                        echo '<B>';
+                        echo "coming soon";
+                        echo '</B></td>';
 
-        endTable();
+                        endTable();
 
-    }
+                    }
 
-    ?>
+                    ?>
 
 
             </p>
         </div>
     </div>
 </div>
+
+
+
+
+
+
+            </p>
+        </div>
+        <div id="time" class="tab-pane fade">
+            <h3>TIME</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div id="material" class="tab-pane fade">
+            <h3>MATERIAL</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
+        <div id="extra" class="tab-pane fade">
+            <h3>EXTRA</h3>
+            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+
+
+
+
+
+
+

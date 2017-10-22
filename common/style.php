@@ -324,8 +324,7 @@ $tablePadding = 6;
 
                 a.kbase:hover {
                     text-decoration: underline;
-                    font-weight: bold
-                    ;===table border
+                    font-weight: bold;
                     color: <?php echo $theme['text']; ?>;
                 }
 
@@ -1032,10 +1031,10 @@ $tablePadding = 6;
                     color: <?php echo $theme['text']; ?>;
                 }
 
-                table.border {
+              /*  table.border {
                     background: <?php echo $theme['table_border']; ?>;
                     color: black;
-                }
+                }   */
 
                 td {
                     color: #000000;

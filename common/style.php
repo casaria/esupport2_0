@@ -884,7 +884,7 @@ $tablePadding = 6;
             }
 
             /*Wide Layout*/
-            @media only screen and (min-width: 768px) {
+            @media screen and (min-width: 768px) {
                 .wrap {
                     width: 1140px;
                     margin: 0 auto;

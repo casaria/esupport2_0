@@ -304,9 +304,6 @@ $tablePadding = 6;
 
 
             /*
-
-<?php echo $theme['text']; ?>;
-
                   #submit {
                       width: 21px;
                       height: 21px;
@@ -320,9 +317,10 @@ $tablePadding = 6;
                       font-size: 13px;
                       -moz-border-radius: 3px;
                       -webkit-border-radius: 3px;
-
-
                   }*/
+
+
+
             input[type=text], textarea, select, input[type=submit] {
                 border: 2px solid #ffad41;
                 -webkit-box-shadow: #B4B5B5 3px 3px 3px;

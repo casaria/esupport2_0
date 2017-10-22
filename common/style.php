@@ -129,7 +129,6 @@ $tablePadding = 6;
                 }
 
                 #selectwidth option, #selectwidth2 option {
-
                     width: 200px;
                     font-weight: 600;
                     color: darkslateblue;
@@ -157,7 +156,7 @@ $tablePadding = 6;
                                   }*/
                 input[type=text], textarea, select {
                     width: 200px;
-                    border: 2px solid;
+                    border: 2px;
                     border-top-color: #67bcd1;border-right-color: #67bcd1;border-bottom-color: #67bcd1;border-left-color: #67bcd1;
                     -webkit-box-shadow: #B4B5B5 3px 3px 3px;
                     -moz-box-shadow: #B4B5B5 3px 3px 3px;
@@ -179,7 +178,8 @@ $tablePadding = 6;
                     background-image: -moz-linear-gradient(top, #AFE7F7, #90CDDD);
                     background-image: -ms-linear-gradient(top, #AFE7F7, #90CDDD);
                     background-image: -o-linear-gradient(top, #AFE7F7, #90CDDD);
-                    background-image: linear-gradient(to bottom, #AFE7F7, #90CDDD);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#AFE7F7,
+                    background-image: linear-gradient(to bottom, #AFE7F7, #90CDDD);
+                    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#AFE7F7,
 
 
 

@@ -401,11 +401,9 @@ if (isset($update)) {
 }
 
 unset($update);
-
+//set up the javascript function for creating a menu.
 
 ?>
-
-//set up the javascript function for creating a menu.
 <script language="JavaScript">
     <!--
     function MM_jumpMenu(targ, selObj, restore) { //v3.0

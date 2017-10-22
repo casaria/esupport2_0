@@ -208,6 +208,7 @@ $tablePadding = 6;
                     border-radius: 4px;
                     font-size: 18px;
                     padding: 8px 8px 8px 8px;
+                    font-weight: 600;
                     text-decoration: none;
                     display: inline-block;
                     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);

@@ -142,10 +142,6 @@ $tablePadding = 6;
 
             /*
 
-
-            <?php echo $theme['text']; ?>
-            ;
-
                               #submit {
                                   width: 21px;
                                   height: 21px;

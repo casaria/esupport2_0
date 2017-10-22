@@ -134,8 +134,8 @@ $tablePadding = 6;
                     padding-right: 2px;
                     padding-left: 2px;
                     margin-right: 2px;
-                    margin-left: 2px;
-                    width: 680px;
+                    margin-left: 4px;
+                    width: 580px;
                 }
 
                 #selectwidth {

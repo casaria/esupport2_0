@@ -418,15 +418,14 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 
 <div class="container">
     <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#main"><H2>MAIN</H2></a></li>
-        <li><a data-toggle="tab" href="#time"><H2>TIME</H2></a></li>
-        <li><a data-toggle="tab" href="#material"><H2>MATERIAL</H2></a></li>
-        <li><a data-toggle="tab" href="#extra"><H2>EXTRA</H2></a></li>
+        <li class="active"><a data-toggle="tab" href="#main"><H3>MAIN</H3></a></li>
+        <li><a data-toggle="tab" href="#time"><H3>TIME</H3></a></li>
+        <li><a data-toggle="tab" href="#material"><H3>MATERIAL</H3></a></li>
+        <li><a data-toggle="tab" href="#extra"><H3>EXTRA</H3></a></li>
     </ul>
 
     <div class="tab-content">
         <div id="main" class="tab-pane fade in active">
-            <h3>MAIN</h3>
             <p>Review and edit. Provide Instucions: The field sequence is now more intuitive.
                 <?php
                 $info = getTicketInfo($id);

@@ -417,7 +417,7 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 
 
 
-<div class="tabbox">
+<div class="container">
 
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#main">MAIN</a></li>

@@ -78,10 +78,13 @@ $tablePadding = 6;
 
             @import url(https://fonts.googleapis.com/css?family=Lato);
 
+
+
+
             @media screen (min-width : 0px) and (max-width : 767px){
             /*Base Mobile Layout*/
             .wrap {
-                width: 50%;
+                /*width: 50%;  */
                 margin: 0 auto;
                 zoom: 33%;
             }

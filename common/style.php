@@ -172,6 +172,8 @@ $tablePadding = 6;
                     text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
                     font-weight: bold;
                     color: darkslateblue;
+                    background-color: <?php echo $theme['bg2']; ?>;
+                    /*
                     background-color: #AFE7F7; background-image: -webkit-gradient(linear, left top, left bottom, from(#AFE7F7), to(#90CDDD));
                     background-image: -webkit-linear-gradient(top, #AFE7F7, #90CDDD);
                     background-image: -moz-linear-gradient(top, #AFE7F7, #90CDDD);
@@ -179,6 +181,8 @@ $tablePadding = 6;
                     background-image: -o-linear-gradient(top, #AFE7F7, #90CDDD);
                     background-image: linear-gradient(to bottom, #AFE7F7, #90CDDD)
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
+
+                    */
                 }
 
                 input[type=text]:hover, textarea:hover, select:hover {
@@ -870,14 +874,17 @@ $tablePadding = 6;
 
                 input[type=text]:hover, textarea:hover, select:hover {
                     border: 2px dashed #ff9913;
-                    background-color: #ffaf46;
-                    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaf46), to(#e78404));
-                    background-image: -webkit-linear-gradient(top, #ffaf46, #e78404);
-                    background-image: -moz-linear-gradient(top, #ffaf46, #e78404);
-                    background-image: -ms-linear-gradient(top, #ffaf46, #e78404);
-                    background-image: -o-linear-gradient(top, #ffaf46, #e78404);
-                    background-image: linear-gradient(to bottom, #ffaf46, #e78404);
-                    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffaf46, endColorstr=#e78404);
+                    background-color: <?php echo $theme['bg2']; ?>;
+                    /*
+                    background-color: #AFE7F7; background-image: -webkit-gradient(linear, left top, left bottom, from(#AFE7F7), to(#90CDDD));
+                    background-image: -webkit-linear-gradient(top, #AFE7F7, #90CDDD);
+                    background-image: -moz-linear-gradient(top, #AFE7F7, #90CDDD);
+                    background-image: -ms-linear-gradient(top, #AFE7F7, #90CDDD);
+                    background-image: -o-linear-gradient(top, #AFE7F7, #90CDDD);
+                    background-image: linear-gradient(to bottom, #AFE7F7, #90CDDD)
+                    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
+
+                    */
                 }
 
                 button, input[type=submit] {

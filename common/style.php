@@ -84,9 +84,7 @@ $tablePadding = 6;
         } ?>
 
         <STYLE type="text/css">
-            .back {
-                background-color: #ffffff}
-            }
+
 
             @import url(https://fonts.googleapis.com/css?family=Lato);
 
@@ -99,6 +97,9 @@ $tablePadding = 6;
                     zoom: 0.25;
                 }
 
+                .back {
+                    background-color: #ffffff}
+            }
                 table {
                     -webkit-border-horizontal-spacing: 2px;
                     -webkit-border-vertical-spacing: 1px;
@@ -795,6 +796,10 @@ $tablePadding = 6;
                     padding-left: 1px;
                     margin-right: 1px;
                     margin-left: 1px;
+                }
+
+                .back {
+                    background-color: #ffffff
                 }
 
                 table {

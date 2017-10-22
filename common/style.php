@@ -82,6 +82,7 @@ $tablePadding = 6;
             .wrap {
                 width: 20%;
                 margin: 0 auto;
+                zoom: .5;
             }
 
 
@@ -92,6 +93,7 @@ $tablePadding = 6;
                 .wrap {
                     width: 1140px;
                     margin: 0 auto;
+                    zoom: 0.9;
                 }
 
                 table {

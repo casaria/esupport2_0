@@ -1494,7 +1494,7 @@ $tablePadding = 6;
 
                 a.install:active {
                     text-decoration: none;
-```                    font-weight: normal;
+                    font-weight: normal;
                     font-family: Arial, Helvetica, sans-serif;
                     font-size: 12px;
                     color: #000099;

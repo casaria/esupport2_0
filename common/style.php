@@ -103,7 +103,7 @@ $tablePadding = 6;
             }
 
             table {
-                border-spacing: 0px;
+                border-spacing: 1px;
                 border-collapse: collapse;
             }
 

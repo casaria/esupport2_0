@@ -156,6 +156,7 @@ $tablePadding = 6;
 
                                   }*/
                 input[type=text], textarea, select {
+                    width: 200px;
                     border: 2px solid #ffad41;
                     -webkit-box-shadow: #B4B5B5 3px 3px 3px;
                     -moz-box-shadow: #B4B5B5 3px 3px 3px;
@@ -557,7 +558,7 @@ $tablePadding = 6;
                     color: <?php echo $theme['header_text']; ?>;
                 }
 
-            -
+
                 td.info {
                     text-align: left;
                     background: <?php echo $theme['info_bg']; ?>;
@@ -1251,7 +1252,7 @@ $tablePadding = 6;
                     color: <?php echo $theme['header_text']; ?>;
                 }
 
-            -
+
                 td.info {
                     text-align: left;
                     background: <?php echo $theme['info_bg']; ?>;

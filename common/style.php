@@ -85,7 +85,7 @@ $tablePadding = 6;
 
         <STYLE type="text/css">
             .back {
-                background-color: #e3ffe5}
+                background-color: #ffffff}
             }
 
             @import url(https://fonts.googleapis.com/css?family=Lato);

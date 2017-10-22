@@ -364,14 +364,14 @@ $tablePadding = 6;
                     color: #000000;
                     font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
                     font-size: <?php echo $theme['font_size']; ?>px;
-                    padding: 2px;
+
                 }
 
                 tr {
                     color: #000000;
                     font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
                     font-size: <?php echo $theme['font_size']; ?>px;
-                    padding: 2px;
+
                 }
 
                 td.back {
@@ -707,6 +707,11 @@ $tablePadding = 6;
                     font-family: "<?php echo $theme['font']; ?>";
                     font-size: <?php echo '$theme["font_size"] + 4'?>'px';
                     font-weight: 600
+                    padding-left: 5px;
+                    padding-bottom: 3px;
+                    padding-top: 3px;
+                    padding-right: 3px;
+
                 }
 
             <?php       if(eregi("IE", $HTTP_USER_AGENT)){ ?>

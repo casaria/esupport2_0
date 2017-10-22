@@ -16,7 +16,7 @@
     <bookmark url="file://$PROJECT_DIR$/common/common.php" line="3609" />
     <bookmark url="file://$PROJECT_DIR$/common/common.php" line="1809" />
     <bookmark url="file://$PROJECT_DIR$/common/common.php" line="2666" />
-    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="836" />
+    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="841" />
     <bookmark url="file://$PROJECT_DIR$/common/style.php" line="652" />
   </component>
   <component name="ChangeListManager">
@@ -73,13 +73,13 @@
       <file leaf-file-name="style.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/style.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="361" column="0" lean-forward="true" selection-start-line="361" selection-start-column="0" selection-end-line="361" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="708" column="36" lean-forward="false" selection-start-line="708" selection-start-column="36" selection-end-line="708" selection-end-column="36" />
               <folding>
                 <element signature="e#7#1399#0#PHP" expanded="true" />
-                <marker date="1508711935914" expanded="true" signature="61991:62043" ph="select * fro... ${$mysql_themes_table}" />
-                <marker date="1508711935914" expanded="true" signature="62819:62879" ph="select theme... ${$mysql_users_table}" />
-                <marker date="1508711935914" expanded="true" signature="63125:63151" ph="select defau... ${$mysql_settings_table}" />
+                <marker date="1508712285074" expanded="true" signature="62084:62136" ph="select * fro... ${$mysql_themes_table}" />
+                <marker date="1508712285074" expanded="true" signature="62912:62972" ph="select theme... ${$mysql_users_table}" />
+                <marker date="1508712285074" expanded="true" signature="63218:63244" ph="select defau... ${$mysql_settings_table}" />
               </folding>
             </state>
           </provider>
@@ -226,8 +226,8 @@
       <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="182" column="0" lean-forward="false" selection-start-line="182" selection-start-column="0" selection-end-line="189" selection-end-column="1" />
+            <state relative-caret-position="170">
+              <caret line="5403" column="4" lean-forward="false" selection-start-line="5403" selection-start-column="1" selection-end-line="5403" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -289,9 +289,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>notification</find>
-      <find>createStat</find>
-      <find>subm</find>
       <find>tsuc</find>
       <find>5px</find>
       <find>@m</find>
@@ -300,7 +297,6 @@
       <find>kba</find>
       <find>back2</find>
       <find>padd</find>
-      <find>td</find>
       <find>table_border</find>
       <find>.back</find>
       <find>.conta</find>
@@ -319,6 +315,10 @@
       <find>tab</find>
       <find>768</find>
       <find>.container</find>
+      <find>td</find>
+      <find>li</find>
+      <find>.li</find>
+      <find>subca</find>
     </findStrings>
     <replaceStrings>
       <replace>$summary = displayTicket($result);</replace>
@@ -842,14 +842,7 @@
       <workItem from="1508388059373" duration="21770000" />
       <workItem from="1508444976781" duration="25610000" />
       <workItem from="1508475049417" duration="86584000" />
-      <workItem from="1508655613890" duration="25707000" />
-    </task>
-    <task id="LOCAL-01125" summary="TABS modified">
-      <created>1508670164794</created>
-      <option name="number" value="01125" />
-      <option name="presentableId" value="LOCAL-01125" />
-      <option name="project" value="LOCAL" />
-      <updated>1508670164795</updated>
+      <workItem from="1508655613890" duration="26055000" />
     </task>
     <task id="LOCAL-01126" summary="TABS modified">
       <created>1508670299953</created>
@@ -1187,11 +1180,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508711915858</updated>
     </task>
-    <option name="localTasksCounter" value="1174" />
+    <task id="LOCAL-01174" summary="bootstrap padding, borderspacing overrides">
+      <created>1508711942241</created>
+      <option name="number" value="01174" />
+      <option name="presentableId" value="LOCAL-01174" />
+      <option name="project" value="LOCAL" />
+      <updated>1508711942241</updated>
+    </task>
+    <option name="localTasksCounter" value="1175" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="864388000" />
+    <option name="totallyTimeSpent" value="864736000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2221,21 +2221,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="182" column="0" lean-forward="false" selection-start-line="182" selection-start-column="0" selection-end-line="189" selection-end-column="1" />
+        <state relative-caret-position="170">
+          <caret line="5403" column="4" lean-forward="false" selection-start-line="5403" selection-start-column="1" selection-end-line="5403" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/style.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="361" column="0" lean-forward="true" selection-start-line="361" selection-start-column="0" selection-end-line="361" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="708" column="36" lean-forward="false" selection-start-line="708" selection-start-column="36" selection-end-line="708" selection-end-column="36" />
           <folding>
             <element signature="e#7#1399#0#PHP" expanded="true" />
-            <marker date="1508711935914" expanded="true" signature="61991:62043" ph="select * fro... ${$mysql_themes_table}" />
-            <marker date="1508711935914" expanded="true" signature="62819:62879" ph="select theme... ${$mysql_users_table}" />
-            <marker date="1508711935914" expanded="true" signature="63125:63151" ph="select defau... ${$mysql_settings_table}" />
+            <marker date="1508712285074" expanded="true" signature="62084:62136" ph="select * fro... ${$mysql_themes_table}" />
+            <marker date="1508712285074" expanded="true" signature="62912:62972" ph="select theme... ${$mysql_users_table}" />
+            <marker date="1508712285074" expanded="true" signature="63218:63244" ph="select defau... ${$mysql_settings_table}" />
           </folding>
         </state>
       </provider>

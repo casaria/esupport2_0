@@ -152,16 +152,19 @@ $tablePadding = 6;
                     font-size: 13px;
                 }
 
-                #selectwidth, option {
+                #selectwidth option {
 
                     width: 350px;
                     font-weight: 600;
-                    color: <?php echo $theme['text']; ?>;
+                    color: darkviolet;
                     padding: 5px;
                     font-size: 13px;
                 }
 
                 /*
+
+                  <?php echo $theme['text']; ?>;
+
                   #submit {
                       width: 21px;
                       height: 21px;

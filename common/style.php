@@ -91,7 +91,7 @@ $tablePadding = 6;
             /*### Smartphones (portrait and landscape)(small)### */
             @media screen and (min-width : 0px) and (max-width : 767px){
                 /*Base Mobile Layout*/
-                .table {
+                .wrap {
                     /*width: 50%;  */
                     margin: 0 auto;
                     zoom: 0.25;

@@ -99,6 +99,7 @@ $tablePadding = 6;
                 padding-left: 2px;
                 margin-right: 2px;
                 margin-left: 2px;
+                width: 80%;
             }
 
 

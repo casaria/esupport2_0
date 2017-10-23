@@ -1486,16 +1486,17 @@ $tablePadding = 6;
              }
 
             div.header {
-                background-color: <?php echo $theme['bg1']; ?>;
+                background-color: <?php echo $theme['bg2']; ?>;
                 color: darkslateblue;
                 padding: 10px;
-                font-size: 40px;
+                font-size: 14px;
             }
 
             div.container {
                 padding: 20px;
                 font-size: 40px;
-                text-align: center;
+                text-align: left;
+                background-color: <?php echo $theme['category']; ?>
             }
 
 

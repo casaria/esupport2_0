@@ -700,7 +700,7 @@ $tablePadding = 6;
                     color: <?php echo $theme['info_text']; ?>;
                 }
 
-                td .subcat {
+                td.subcat {
                     background: <?php echo $theme['subcategory']; ?>;
                     color: <?php echo $theme['text']; ?>;
                     font-family: "<?php echo $theme['font']; ?>";
@@ -1078,6 +1078,8 @@ $tablePadding = 6;
                     color: #000000;
                     font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
                     font-size: <?php echo $theme['font_size']; ?>px;
+                    padding-left: 5px;
+                    padding-right: 5px;
                 }
 
                 tr {

@@ -115,7 +115,7 @@ $tablePadding = 6;
 
             }
 
-            .text-1, .text-2, .text-3 {
+            .text-1, .text-2, .text-3, .btn-login, .pwd-login {
                 border: 2px solid #ffad41;
                 -webkit-box-shadow: #B4B5B5 3px 3px 3px;
                 -moz-box-shadow: #B4B5B5 3px 3px 3px;
@@ -144,7 +144,7 @@ $tablePadding = 6;
             .text-1 {
                 width: 80px;
             }
-            .text-2 {
+            .text-2, .btn-login, .pwd-login {
                 width: 150px;
             }
             .text-3 {
@@ -153,7 +153,7 @@ $tablePadding = 6;
 
 
 
-            .btn-login, .pwd-login {
+            .dummy1 {
                 width: 150px;
                 height: 34px;
                 padding-bottom: 10px;

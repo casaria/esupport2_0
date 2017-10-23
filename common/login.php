@@ -190,11 +190,11 @@ echo'
           <TD class=back2>
 			<table width=100% border=0 cellspacing=0 cellpadding=6>
 				<tr>
-				 <td class=back2 align=right>'.$lang_username.':</td><td>
+				 <td class=back2 align=center>'.$lang_username.':</td><td>
 					<input type=text name=user class="text-2" value='."$cookieuser".'></td>
 				</tr>
 				<tr>
-				 <td class=back2 align=right>'.$lang_password.':</td><td>
+				 <td class=back2 align=center>'.$lang_password.':</td><td>
 					<input type=password name=password class="text-2" value='."$cookiepwd".'></td>
 				</tr>
 				<tr>

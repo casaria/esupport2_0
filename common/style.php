@@ -125,6 +125,7 @@ $tablePadding = 6;
                 border-radius: 3px;
                 font-size: 15px;
                 padding: 2px 2px 2px 2px;
+                margin: 8px;
                 text-decoration: none;
 
                 display: inline-block;

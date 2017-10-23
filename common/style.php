@@ -154,6 +154,8 @@ $tablePadding = 6;
             .btn-login {
                 width: 150px;
                 height: 35px;
+                margin-bottom: 35px;
+                margin-top: 25px;
             }
 
             td.stats {
@@ -953,7 +955,7 @@ $tablePadding = 6;
                     -webkit-border-radius: 3px;
                     -moz-border-radius: 3px;
                     border-radius: 3px;
-                    font-size: 15px;
+                    font-size: 14px;
                     padding: 2px 2px 2px 2px;
                     margin: 5px;
                     text-decoration: none;

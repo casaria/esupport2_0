@@ -134,7 +134,7 @@ $tablePadding = 6;
                 color: <?php echo $theme['text']; ?>;
                 font-family: "<?php echo $theme['font']; ?>";
                 font-size: <?php echo '$theme["font_size"] + 4'?>'px';
-                font-weight: 600
+                font-weight: 600;
                 padding-left: 15px;
                 padding-bottom: 4px;
                 padding-top: 4px;

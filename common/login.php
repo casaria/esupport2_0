@@ -166,10 +166,10 @@ echo'
 <TABLE class=border cellSpacing=0 cellPadding=0 width='.$theme['width'].' align=center border="0">
   <TR>
     <TD>
-      <TABLE cellSpacing=0 cellPadding=0 width="100%" align="center" border=2>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" align="center" border=0>
       
         <TR>
-          <TD class=hf align=left></TD>
+          <TD class=hf align=center></TD>
         </TR>
         <TR>
           <TD class=back>

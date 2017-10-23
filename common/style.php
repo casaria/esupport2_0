@@ -151,13 +151,7 @@ $tablePadding = 6;
                 width: 300px;
             }
 
-            .btn-login {
-                width: 150px;
-                height: 34px;
-                padding-bottom: 10px;
-                margin-bottom: 35px;
-                margin-top: 25px;
-            }
+
 
             td.stats {
                 background: <?php echo $theme['category']; ?>;
@@ -1451,7 +1445,13 @@ $tablePadding = 6;
             }
             ?>
         }
-
+            .btn-login {
+                width: 150px;
+                height: 34px;
+                padding-bottom: 10px;
+                margin-bottom: 35px;
+                margin-top: 25px;
+            }
 
         </STYLE>
     </HEAD>

@@ -175,7 +175,7 @@ echo'
           <TD class=back2>
 			<TABLE border=0 width="100%" align="center">
               <TR></TR><tr>
-                  <TD class=back vAlign=top aling="center">
+                  <TD class=back2 vAlign="top" align="center">
 
 <TABLE class=border cellSpacing=0 cellPadding=0 width="40%" align=center border=0>
   <TR>

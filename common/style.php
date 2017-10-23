@@ -189,6 +189,7 @@ $tablePadding = 6;
             }
             .text-2, .btn-login, .pwd-login {
                 width: 150px;
+                margin: 8px;
             }
             .text-3 {
                 width: 300px;

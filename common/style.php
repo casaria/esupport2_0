@@ -102,6 +102,112 @@ $tablePadding = 6;
                 margin: 1px;
             }
 
+            td.cat {
+                background: <?php echo $theme['category']; ?>;
+                font-family: "<?php echo $theme['font']; ?>";
+                font-size: <?php echo $theme['font_size']; ?>px;
+                color: <?php echo $theme['text']; ?>;
+                padding-left: 15px;
+                padding-bottom: 4px;
+                padding-top: 4px;
+                padding-right: 6px;
+
+            }
+
+            td.stats {
+                background: <?php echo $theme['category']; ?>;
+                font-family: "<?php echo $theme['font']; ?>";
+                font-size: 10px;
+                color: <?php echo $theme['text']; ?>;
+            }
+
+            td.error {
+                background: <?php echo $theme['subcategory']; ?>;
+                color: #ff0000;
+                font-family: "<?php echo $theme['font']; ?>";
+                font-size: <?php echo $theme['font_size']; ?>px;
+            }
+
+
+            td.subcat {
+                background: <?php echo $theme['subcategory']; ?>;
+                color: <?php echo $theme['text']; ?>;
+                font-family: "<?php echo $theme['font']; ?>";
+                font-size: <?php echo '$theme["font_size"] + 4'?>'px';
+                font-weight: 600
+                padding-left: 15px;
+                padding-bottom: 4px;
+                padding-top: 4px;
+                padding-right: 6px;
+
+            }
+
+
+            input.box {
+                border: 4px;
+                height: 16px
+            }
+
+            table.border2 {
+                background: #6974b5;
+            }
+
+            td.install {
+                background: #dddddd;
+                color: #000000;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+            }
+
+            table.install {
+                background: #000099;
+            }
+
+            td.head {
+                text-align: left;
+                background: #6974b5;
+                color: #ffffff;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+            }
+
+            a.install:link {
+                text-decoration: none;
+                font-weight: normal;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                color: #6974b5;
+            }
+
+            a.install:visited {
+                text-decoration: none;
+                font-weight: normal;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                color: #6974b5;
+            }
+
+            a.install:active {
+                text-decoration: none;
+                font-weight: normal;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                color: #000099;
+            }
+
+            a.install:hover {
+                text-decoration: underline;
+                font-weight: normal;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                color: #000099;
+            }
+
+            //
+
+
+            //`
+
 
             @import url(https://fonts.googleapis.com/css?family=Lato);
 
@@ -545,8 +651,6 @@ $tablePadding = 6;
 
                 a.hf:link {
                     line-height: <?php echo $lineHeight; ?>;
-                    text-decoration: none;
-                    font-weight: normal;
                     font-family: "<?php echo $theme['font']; ?>";
                     font-weight: 600;
                     font-size: <?php echo $theme['font_size']; ?>px;
@@ -700,18 +804,6 @@ $tablePadding = 6;
                     color: <?php echo $theme['info_text']; ?>;
                 }
 
-                td.subcat {
-                    background: <?php echo $theme['subcategory']; ?>;
-                    color: <?php echo $theme['text']; ?>;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo '$theme["font_size"] + 4'?>'px';
-                    font-weight: 600
-                    padding-left: 5px;
-                    padding-bottom: 3px;
-                    padding-top: 3px;
-                    padding-right: 3px;
-
-                }
 
             <?php       if(eregi("IE", $HTTP_USER_AGENT)){ ?>
                 select, option, textarea, input {
@@ -736,96 +828,6 @@ $tablePadding = 6;
             <?php
             }
             ?>
-
-
-                td.cat {
-                    background: <?php echo $theme['category']; ?>;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['text']; ?>;
-                }
-
-                td.stats {
-                    background: <?php echo $theme['category']; ?>;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: 10px;
-                    color: <?php echo $theme['text']; ?>;
-                }
-
-                td.error {
-                    background: <?php echo $theme['subcategory']; ?>;
-                    color: #ff0000;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                }
-
-                td.subcat {
-                    background: <?php echo $theme['subcategory']; ?>;
-                    color: <?php echo $theme['text']; ?>;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo '$theme["font_size"] + 4'?>'px';
-                    font-weight: 600;
-                }
-
-                input.box {
-                    border: 4px;
-                    height: 16px
-                }
-
-                table.border2 {
-                    background: #6974b5;
-                }
-
-                td.install {
-                    background: #dddddd;
-                    color: #000000;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 12px;
-                }
-
-                table.install {
-                    background: #000099;
-                }
-
-                td.head {
-                    text-align: left;
-                    background: #6974b5;
-                    color: #ffffff;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 14px;
-                }
-
-                a.install:link {
-                    text-decoration: none;
-                    font-weight: normal;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 12px;
-                    color: #6974b5;
-                }
-
-                a.install:visited {
-                    text-decoration: none;
-                    font-weight: normal;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 12px;
-                    color: #6974b5;
-                }
-
-                a.install:active {
-                    text-decoration: none;
-                    font-weight: normal;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 12px;
-                    color: #000099;
-                }
-
-                a.install:hover {
-                    text-decoration: underline;
-                    font-weight: normal;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 12px;
-                    color: #000099;
-                }
 
 
 
@@ -1398,7 +1400,6 @@ $tablePadding = 6;
                 a.info:active {
                     line-height: <?php echo $lineHeight; ?>;
                     text-decoration: none;
-                    text-decoration: none;
                     font-weight: normal;
                     font-family: "<?php echo $theme['font']; ?>";
                     font-size: <?php echo $theme['font_size']; ?>px;
@@ -1414,15 +1415,6 @@ $tablePadding = 6;
                     color: <?php echo $theme['info_text']; ?>;
                 }
 
-                td.subcat {
-                    background: <?php echo $theme['subcategory']; ?>;
-                    color: <?php echo $theme['text']; ?>;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo '$theme["font_size"] + 4'?>'px';
-                    font-weight: 600;
-                    padding-left: 15px;
-                    padding-right: 5px;
-                }
 
             <?php       if(eregi("IE", $HTTP_USER_AGENT)){ ?>
                 select, option, textarea, input {
@@ -1449,94 +1441,7 @@ $tablePadding = 6;
             ?>
 
 
-                td.cat {
-                    background: <?php echo $theme['category']; ?>;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['text']; ?>;
-                }
 
-                td.stats {
-                    background: <?php echo $theme['category']; ?>;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: 10px;
-                    color: <?php echo $theme['text']; ?>;
-                }
-
-                td.error {
-                    background: <?php echo $theme['subcategory']; ?>;
-                    color: #ff0000;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                }
-
-                td.subcat {
-                    background: <?php echo $theme['subcategory']; ?>;
-                    color: <?php echo $theme['text']; ?>;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo '$theme["font_size"] + 4'?>'px';
-                    font-weight: 600;
-                }
-
-                input.box {
-                    border: 4px;
-                    height: 16px
-                }
-
-                table.border2 {
-                    background: #6974b5;
-                }
-
-                td.install {
-                    background: #dddddd;
-                    color: #000000;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 12px;
-                }
-
-                table.install {
-                    background: #000099;
-                }
-
-                td.head {
-                    text-align: left;
-                    background: #6974b5;
-                    color: #ffffff;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 14px;
-                }
-
-                a.install:link {
-                    text-decoration: none;
-                    font-weight: normal;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 12px;
-                    color: #6974b5;
-                }
-
-                a.install:visited {
-                    text-decoration: none;
-                    font-weight: normal;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 12px;
-                    color: #6974b5;
-                }
-
-                a.install:active {
-                    text-decoration: none;
-                    font-weight: normal;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 12px;
-                    color: #000099;
-                }
-
-                a.install:hover {
-                    text-decoration: underline;
-                    font-weight: normal;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 12px;
-                    color: #000099;
-                }
 
             }
 

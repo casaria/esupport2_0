@@ -1482,7 +1482,8 @@ $tablePadding = 6;
 
              div.card {
                  width: 350px;
-                 box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  text-align: center
+                 box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                 text-align: center;
              }
 
             div.header {

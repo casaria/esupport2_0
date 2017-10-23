@@ -159,6 +159,40 @@ $tablePadding = 6;
                 filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#6bbed2, endColorstr=#50abc4);
             }
 
+            .text-1, .text-2, .text-3, .btn-login, .pwd-login {
+                border: 2px solid #67bcd1;
+                -webkit-box-shadow: #797991 1px 1px 1px;
+                -moz-box-shadow: #797991 1px 1px 1px;
+                box-shadow: #797991 1px 1px 1px;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px;
+                font-size: 16px;
+                padding: 6px 6px 6px 6px;
+                font-weight: 600;
+                text-decoration: none;
+                display: inline-block;
+                text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+                color: #FFFFFF;
+                background-color: #92cfde;
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaf46), to(#e78404));
+                background-image: -webkit-linear-gradient(top, #ffaf46, #e78404);
+                background-image: -moz-linear-gradient(top, #ffaf46, #e78404);
+                background-image: -ms-linear-gradient(top, #ffaf46, #e78404);
+                background-image: -o-linear-gradient(top, #ffaf46, #e78404);
+                background-image: linear-gradient(to bottom, #ffaf46, #e78404);
+                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#92cfde, endColorstr=#76bdd1);
+            }
+
+            .text-1 {
+                width: 80px;
+            }
+            .text-2, .btn-login, .pwd-login {
+                width: 150px;
+            }
+            .text-3 {
+                width: 300px;
+            }
 
 
             td.stats {
@@ -1456,40 +1490,6 @@ $tablePadding = 6;
         }  /*@media */
 
 
-            .text-1, .text-2, .text-3, .btn-login, .pwd-login {
-                border: 2px solid #67bcd1;
-                -webkit-box-shadow: #797991 1px 1px 1px;
-                -moz-box-shadow: #797991 1px 1px 1px;
-                box-shadow: #797991 1px 1px 1px;
-                -webkit-border-radius: 4px;
-                -moz-border-radius: 4px;
-                border-radius: 4px;
-                font-size: 16px;
-                padding: 6px 6px 6px 6px;
-                font-weight: 600;
-                text-decoration: none;
-                display: inline-block;
-                text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-                color: #FFFFFF;
-                background-color: #92cfde;
-                background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaf46), to(#e78404));
-                background-image: -webkit-linear-gradient(top, #ffaf46, #e78404);
-                background-image: -moz-linear-gradient(top, #ffaf46, #e78404);
-                background-image: -ms-linear-gradient(top, #ffaf46, #e78404);
-                background-image: -o-linear-gradient(top, #ffaf46, #e78404);
-                background-image: linear-gradient(to bottom, #ffaf46, #e78404);
-                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#92cfde, endColorstr=#76bdd1);
-            }
-
-            .text-1 {
-                width: 80px;
-            }
-            .text-2, .btn-login, .pwd-login {
-                width: 150px;
-            }
-            .text-3 {
-                width: 300px;
-            }
 
 
         </STYLE>

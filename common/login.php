@@ -180,11 +180,11 @@ echo'
 <TABLE class=border cellSpacing=0 cellPadding=0 width="35%" align=center border=0>
   <TR>
     <TD>
-      <TABLE cellSpacing=1 cellPadding=1 width="100%" border=0>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" border=2 align="center">
         <TR>
-          <TD class=info align=left><b>'.$helpdesk_name.' '.$lang_login.'</b></TD>
+          <TD class=info align="left"><b>'.$helpdesk_name.' '.$lang_login.'</b></TD>
         </TR>
-          <TD class=back Align=center> <IMG SRC='."$login_logo".' ALT="">
+          <TD class=back align="center"> <IMG SRC='."$login_logo".' ALT="">
         <TR>
         </TR>
         <TR>

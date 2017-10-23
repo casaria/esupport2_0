@@ -198,7 +198,7 @@ echo'
 					<input type=password name=password class="text-2" value='."$cookiepwd".'></td>
 				</tr>
 				<tr>
-				 <td class=back2></td><td class=back2 align=center>
+				 <<td class=back2 align=center>:</td><td>
 					<input type=submit name=login value="'.$lang_submit.'"></td>
 				</tr>
 			</table>

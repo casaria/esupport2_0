@@ -169,7 +169,7 @@ echo'
       <TABLE cellSpacing=0 cellPadding=0 width="100%" align="center" border=0>
       
         <TR>
-          <TD class=hf align=center></TD>
+          <TD class=back2 align=center></TD>
         </TR>
         <TR>
           <TD class=back2>

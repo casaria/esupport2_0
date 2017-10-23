@@ -151,6 +151,10 @@ $tablePadding = 6;
                 width: 300px;
             }
 
+            .btn-login {
+                width 150 px;
+                height 80 px;
+            }
 
             td.stats {
                 background: <?php echo $theme['category']; ?>;

@@ -163,7 +163,7 @@ echo'
 </head>
 <body bgcolor='.$theme['bgcolor'].' onload="setfocus()">
 <form name=login method=post>
-<TABLE class=border cellSpacing=0 cellPadding=0 width='.$theme['width'].' align=center border="0">
+<TABLE class=border cellSpacing=0 cellPadding=0 width='.$theme['width'].' align=center border=0>
   <TR>
     <TD>
       <TABLE cellSpacing=0 cellPadding=0 width="100%" align="center" border=0>
@@ -184,7 +184,7 @@ echo'
     </TD></TR><TR><TD>
       <TABLE style="margin:1px; Padding:1px; width=100%" align="center">
         <TR
-          <TD class=info align="left"><b>'.$helpdesk_name.' '.$lang_login.'</b></TD>
+          <TD class=info align="center"><b>'.$helpdesk_name.' '.$lang_login.'</b></TD>
         </TR>
           <TD class=back align="center"> <IMG SRC='."$login_logo".' ALT="">
         <TR>

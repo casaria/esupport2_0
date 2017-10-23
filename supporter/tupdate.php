@@ -880,6 +880,7 @@ function extraTab() {
     $('.popover-dismiss').popover({
 
   trigger: 'focus'
+
     }
     </script>
 

@@ -41,11 +41,11 @@ $tablePadding = 6;
 
 ?>
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/common/bootstrap.css" media="screen">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/common/bootstrap.css" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -115,9 +115,6 @@ $tablePadding = 6;
 
             }
 
-
-
-
             .dummy1 {
                 width: 150px;
                 height: 34px;
@@ -136,7 +133,7 @@ $tablePadding = 6;
                 text-decoration: blink;
                 display: inline-block;
                 text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-                color:<?php echo $theme['text'];?>;
+                color: <?php echo $theme['text'];?>;
                 background-color: #92cfde;
                 background-image: -webkit-gradient(linear, left top, left bottom, from(#92cfde), to(#76bdd1));
                 background-image: -webkit-linear-gradient(top, #92cfde, #76bdd1);
@@ -159,47 +156,6 @@ $tablePadding = 6;
                 filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#6bbed2, endColorstr=#50abc4);
             }
 
-            .text-1, .text-2, .text-3, .btn-login, .pwd-login {
-                border: 2px solid #67bcd1;
-                -webkit-box-shadow: #797991 1px 1px 1px;
-                -moz-box-shadow: #797991 1px 1px 1px;
-                box-shadow: #797991 1px 1px 1px;
-                -webkit-border-radius: 4px;
-                -moz-border-radius: 4px;
-                border-radius: 4px;
-                font-size: 14px;
-                padding: 6px 6px 6px 6px;
-                font-weight: 600;
-                text-decoration: none;
-                display: inline-block;
-                text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-                color: #FFFFFF;
-                background-color: #92cfde;
-                background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaf46), to(#e78404));
-                background-image: -webkit-linear-gradient(top, #ffaf46, #e78404);
-                background-image: -moz-linear-gradient(top, #ffaf46, #e78404);
-                background-image: -ms-linear-gradient(top, #ffaf46, #e78404);
-                background-image: -o-linear-gradient(top, #ffaf46, #e78404);
-                background-image: linear-gradient(to bottom, #ffaf46, #e78404);
-                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#92cfde, endColorstr=#76bdd1);
-            }
-
-            .text-1 {
-                width: 80px;
-            }
-            .text-2, .btn-login, .pwd-login {
-                width: 150px;
-                margin: 8px;
-            }
-            .text-3 {
-                width: 300px;
-            }
-
-            .btn-login {
-                margin-top: 15px;
-                margin-bottom: 25px;
-            }
-
             td.stats {
                 background: <?php echo $theme['category']; ?>;
                 font-family: "<?php echo $theme['font']; ?>";
@@ -214,7 +170,6 @@ $tablePadding = 6;
                 font-size: <?php echo $theme['font_size']; ?>px;
             }
 
-
             td.subcat {
                 background: <?php echo $theme['subcategory']; ?>;
                 color: <?php echo $theme['text']; ?>;
@@ -226,7 +181,7 @@ $tablePadding = 6;
                 padding-top: 4px;
                 padding-right: 6px;
 
-        }
+            }
 
             input.box {
                 border: 4px;
@@ -288,16 +243,14 @@ $tablePadding = 6;
                 color: #000099;
             }
 
-
             /*### Smartphones (portrait and landscape)(small)### */
-            @media screen and (min-width : 0px) and (max-width : 767px){
+            @media screen and (min-width: 0px) and (max-width: 767px) {
                 /*Base Mobile Layout*/
                 .wrap {
                     /*width: 50%;  */
                     margin: 0 auto;
                     zoom: 0.25;
                 }
-
 
                 table {
                     -webkit-border-horizontal-spacing: 2px;
@@ -384,7 +337,6 @@ $tablePadding = 6;
 
 
                                   }*/
-
                 input[type=text], textarea, select {
                     width: 200px;
                     border: 2px solid #67bcd1;
@@ -415,8 +367,6 @@ $tablePadding = 6;
                     */
                 }
 
-
-
                 input[type=text]:hover, textarea:hover, select:hover {
                     /* border: 2px dashed #ff9913; */
                     background-color: #ffaf46;
@@ -428,8 +378,6 @@ $tablePadding = 6;
                     background-image: linear-gradient(to bottom, #ffaf46, #e78404);
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffaf46, endColorstr=#e78404);
                 }
-
-
 
                 button, input[type=submit] {
                     border: 2px solid #67bcd1;
@@ -467,6 +415,7 @@ $tablePadding = 6;
                     background-image: linear-gradient(to bottom, #6bbed2, #50abc4);
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#6bbed2, endColorstr=#50abc4);
                 }
+
                 BODY {
                     background: <?php echo $theme['bgcolor'];?>;
                     color: black;
@@ -519,10 +468,11 @@ $tablePadding = 6;
                 }
 
                 /*table.border {
-                    background: <?php echo $theme['table_border']; ?>;
+                    background:
+
+            <?php echo $theme['table_border']; ?>;
                     color: black;
                 } */
-
                 td {
                     color: #000000;
                     font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
@@ -648,610 +598,7 @@ $tablePadding = 6;
                     background: #feaa37;
                     font-weight: 600;
                 }
-        /*table tr:nth-child(odd) tr{background:
 
-         }
-        table tr:nth-child(even) tr{background:
-
-
-        }
-        */
-                td.back {
-                    padding: <?php echo $tablePadding; ?>px;
-                    line-height: <?php echo $lineHeight; ?>;
-                    background: <?php echo $theme['bg1']; ?>;
-                }
-
-                td.back2 {
-                    padding: <?php echo $tablePadding; ?>px;
-                    line-height: <?php echo $lineHeight; ?>;
-                    background: <?php echo $theme['bg2']; ?>;
-                }
-
-                td.printback {
-                    padding: <?php echo $tablePadding; ?>px;
-                    line-height: <?php echo $lineHeight; ?>;
-                    background: <?php echo $theme['print_bg']; ?>;
-                }
-
-                td.date {
-                    padding: <?php echo $tablePadding; ?>px;
-                    background: <?php echo $theme['category']; ?>;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size'];?>px;
-                    color: <?php echo $theme['text']; ?>;
-                }
-
-                td.hfo {
-                    padding: <?php echo $tablePadding; ?>px;
-                    background: <?php echo $theme['header_bg']; ?>;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['header_text']; ?>;
-                }
-
-                td.hf {
-                    padding: <?php echo $tablePadding; ?>px;
-                    background: #c9caea;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-weight: 600;
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['header_text']; ?>;
-                }
-
-                td.printhf {
-                    padding: <?php echo $tablePadding; ?>px;
-                    background: <?php echo $theme['print_header_bg']; ?>;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['print_header_text']; ?>;
-                }
-
-                a.hf:link {
-                    line-height: <?php echo $lineHeight; ?>;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-weight: 600;
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: #9907c1;
-                }
-
-                /* 00c6ff , a34bc6*/
-                a.hf:visited {
-                    line-height: <?php echo $lineHeight; ?>;
-                    text-decoration: none;
-                    font-weight: normal;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['header_text']; ?>;
-                }
-
-                a.hf:active {
-                    line-height: <?php echo $lineHeight; ?>;
-                    text-decoration: none;
-                    font-weight: normal;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['header_text']; ?>;
-                }
-
-                a.info:link {
-                    line-height: <?php echo $lineHeight; ?>;
-                    text-decoration: none;
-                    font-weight: normal;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['info_text']; ?>;
-                }
-
-                a.info:visited {
-                    line-height: <?php echo $lineHeight; ?>;
-                    text-decoration: none;
-                    font-weight: normal;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['info_text']; ?>;
-                }
-
-                a.info:active {
-                    line-height: <?php echo $lineHeight; ?>;
-                    text-decoration: none;
-                    font-weight: normal;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['info_text']; ?>;
-                }
-
-                a.info:hover {
-                    line-height: <?php echo $lineHeight; ?>;
-                    text-decoration: underline;
-                    font-weight: normal;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['info_text']; ?>;
-                }
-
-                a.hf:hover {
-                    line-height: <?php echo $lineHeight; ?>;
-                    text-decoration: underline;
-                    font-weight: normal;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['header_text']; ?>;
-                }
-
-
-                td.info {
-                    text-align: left;
-                    background: <?php echo $theme['info_bg']; ?>;
-                    font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
-                    font-size: <?php echo ($theme['font_size'])+1; ?>px;
-                    color: <?php echo $theme['header_text']; ?>;
-                }
-
-                td.extra {
-                    background: <?php echo $theme['info_bg']; ?>;
-                    font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
-                    font-size: <?php echo ($theme['font_size']+3); ?>px;
-                    color: <?php echo $theme['extra_text']; ?>;
-                }
-
-                td.printinfo {
-                    background: <?php echo $theme['print_info_bg']; ?>;
-                    font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['print_info_text']; ?>;
-                }
-
-                a.info:link {
-                    line-height: <?php echo $lineHeight; ?>;
-                    text-decoration: none;
-                    font-weight: normal;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['info_text']; ?>;
-                }
-
-
-
-            <?php if(eregi("IE", $HTTP_USER_AGENT)){ ?>
-                select, option, textarea, input {
-                    border: 1px solid <?php echo $theme['table_border']; ?>;
-                    font-family: "<?php echo $theme['font']; ?>", arial, helvetica, sans-serif;
-                    font-size: 11px;
-                    font-weight: bold;
-                    background: <?php echo $theme['subcategory']; ?>;
-                    color: <?php echo $theme['text']; ?>;
-                }
-
-            <?php
-            }
-            else{ ?>
-                select, option, textarea, input {
-                    font-family: "<?php echo $theme['font']; ?>", arial, helvetica, sans-serif;
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    background: <?php echo $theme['subcategory']; ?>;
-                    color: <?php echo $theme['text']; ?>;
-                }
-
-            <?php
-            }
-            ?>
-
-                a.info:visited {
-                    line-height: <?php echo $lineHeight; ?>;
-                    text-decoration "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['info_text']; ?>;
-                }
-
-                a.info:active {
-                    line-height: <?php echo $lineHeight; ?>;
-                    text-decoration: none;
-                    font-weight: normal;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['info_text']; ?>;
-                }
-
-                a.info:hover {
-                    line-height: <?php echo $lineHeight; ?>;
-                    text-decoration: underline;
-                    font-weight: normal;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['info_text']; ?>;
-                }
-
-
-            <?php       if(eregi("IE", $HTTP_USER_AGENT)){ ?>
-                select, option, textarea, input {
-                    border: 1px solid <?php echo $theme['table_border']; ?>;
-                    font-family: "<?php echo $theme['font']; ?>", arial, helvetica, sans-serif;
-                    font-size: 11px;
-                    font-weight: bold;
-                    background: <?php echo $theme['subcategory']; ?>;
-                    color: <?php echo $theme['text']; ?>;
-                }
-
-            <?php
-                   }
-                   else{ ?>
-                select, option, textarea, input {
-                    font-family: "<?php echo $theme['font']; ?>", arial, helvetica, sans-serif;
-                    font-size: 11px;
-                    background: <?php echo $theme['subcategory']; ?>;
-                    color: <?php echo $theme['text']; ?>;
-                }
-
-            <?php
-            }
-            ?>
-
-
-
-
-            }
-
-            /*Wide Layout*/
-            @media screen and (min-width: 768px) {
-                .wrap {
-                    width: 1140px;
-                    margin: 0 auto;
-                    zoom: 0.9;
-                }
-
-                .back {
-                    background-color: #ffffff;
-                }
-
-                table {
-                    -webkit-border-horizontal-spacing: 2px;
-                    -webkit-border-vertical-spacing: 1px;
-                    font-weight: 500;
-                    padding: 1px;
-                    margin: 1px;
-                }
-
-
-                .container {
-                    padding-right: 2px;
-                    padding-left: 2px;
-                    margin-right: 2px;
-                    margin-left: 2px;
-                    width: 780px;
-                }
-                #selectwidth {
-                /*    background-color: #afe7f7;   */
-                    border: 0 solid;
-                    background-color: <?php echo $theme['subcategory']; ?>;
-                    -webkit-box-shadow: #B4B5B5 3PX 3PX 3PX;
-                    -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
-                    box-shadow: #B4B5B5 3PX 3PX 3PX;
-                    -webkit-border-radius: 3px;
-                    -moz-border-radius: 3px;
-                    width: 350px;
-                    outline: 0;
-                    overflow: hidden;
-                    padding: 2px 2px 2px 2px;
-
-                    /* background: transparent;
-                     padding: 5px 10px 5px 5px;
-                     font-size: 16px;
-                     border: 1px solid #f4a62b;
-                     height: 34px;
-                     -webkit-appearance: none;
-                     -moz-appearance: none;
-                     appearance: none;
-                     background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat */
-                }
-
-                #selectwidth2 {
-                    background-color: <?php echo $theme['category']; ?>;
-                    border: 0 solid;
-                    -webkit-box-shadow: #B4B5B5 3px 3PX 3PX;
-                    -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
-                    box-shadow: #B4B5B5 3PX 3PX 3PX;
-                    -webkit-border-radius: 3px;
-                    -moz-border-radius: 3px;
-                    width: 350px;
-                    font-weight: 600;
-                    outline: 0;
-                    overflow: hidden;
-                    padding: 2px 2px 2px 2px;
-
-                }
-
-                #selectwidth option, #selectwidth2 option {
-
-                    width: 350px;
-                    font-weight: 600;
-                    color: darkslateblue;
-                    padding: 5px;
-                    font-size: 13px;
-                }
-
-                /*
-
-
-                  #submit {
-                      width: 21px;
-                      height: 21px;
-                      border:  10px;
-                      margin: 10px;
-                      padding: 6px;
-                      background: #feaa37 url(../images/casariadefault/log_button.jpg) 10 10 no-repeat;
-                      font-weight:600;
-                      color: darkslateblue;
-                      list-style-type: circle;
-                      font-size: 13px;
-                      -moz-border-radius: 3px;
-                      -webkit-border-radius: 3px;
-
-
-                  }*/
-                input[type=text], textarea, select, input[type=submit] {
-                    border: 2px solid #ffad41;
-                    -webkit-box-shadow: #B4B5B5 3px 3px 3px;
-                    -moz-box-shadow: #B4B5B5 3px 3px 3px;
-                    box-shadow: #B4B5B5 3px 3px 3px;
-                    -webkit-border-radius: 3px;
-                    -moz-border-radius: 3px;
-                    border-radius: 3px;
-                    font-size: 14px;
-                    padding-top: 2px;
-                    padding-right: 2px;
-                    padding-left: 2px;
-                    padding-bottom: 2px;
-                    margin: 5px;
-                    text-decoration: none;
-
-                    display: inline-block;
-                    text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
-                    font-weight: 600;
-                    color: #FFFFFF;
-                    background-color: #ffc579;
-                    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc579), to(#fb9d23));
-                    background-image: -webkit-linear-gradient(top, #ffc579, #fb9d23);
-                    background-image: -moz-linear-gradient(top, #ffc579, #fb9d23);
-                    background-image: -ms-linear-gradient(top, #ffc579, #fb9d23);
-                    background-image: -o-linear-gradient(top, #ffc579, #fb9d23);
-                    background-image: linear-gradient(to bottom, #ffc579, #fb9d23);
-                    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
-                }
-
-                input[type=text]:hover, textarea:hover, select:hover {
-                    border: 2px dashed #ff9913;
-                    background-color: <?php echo $theme['bg2']; ?>;
-                    color: <?php echo $theme['text']; ?>`;
-                    /*
-                    background-color: #AFE7F7; background-image: -webkit-gradient(linear, left top, left bottom, from(#AFE7F7), to(#90CDDD));
-                    background-image: -webkit-linear-gradient(top, #AFE7F7, #90CDDD);
-                    background-image: -moz-linear-gradient(top, #AFE7F7, #90CDDD);
-                    background-image: -ms-linear-gradient(top, #AFE7F7, #90CDDD);
-                    background-image: -o-linear-gradient(top, #AFE7F7, #90CDDD);
-                    background-image: linear-gradient(to bottom, #AFE7F7, #90CDDD)
-                    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
-
-                    */
-                }
-
-                button, input[type=submit] {
-                    width: 150px;
-                    border: 2px solid #67bcd1;
-                    -webkit-box-shadow: #797991 3px 3px 3px;
-                    -moz-box-shadow: #797991 3px 3px 3px;
-                    box-shadow: #797991 3px 3px 3px;
-                    -webkit-border-radius: 4px;
-                    -moz-border-radius: 4px;
-                    border-radius: 4px;
-                    font-size: 16px;
-                    padding: 10px 10px 10px 10px;
-                    text-decoration: blink;
-                    display: inline-block;
-                    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-                    color:<?php echo $theme['text'];?>;
-                    background-color: #92cfde;
-                    background-image: -webkit-gradient(linear, left top, left bottom, from(#92cfde), to(#76bdd1));
-                    background-image: -webkit-linear-gradient(top, #92cfde, #76bdd1);
-                    background-image: -moz-linear-gradient(top, #92cfde, #76bdd1);
-                    background-image: -ms-linear-gradient(top, #92cfde, #76bdd1);
-                    background-image: -o-linear-gradient(top, #92cfde, #76bdd1);
-                    background-image: linear-gradient(to bottom, #92cfde, #76bdd1);
-                    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#92cfde, endColorstr=#76bdd1);
-                }
-
-                button:hover, input[type=submit]:hover {
-                    border: 2px solid #44adc6;
-                    background-color: #6bbed2;
-                    background-image: -webkit-gradient(linear, left top, left bottom, from(#6bbed2), to(#50abc4));
-                    background-image: -webkit-linear-gradient(top, #6bbed2, #50abc4);
-                    background-image: -moz-linear-gradient(top, #6bbed2, #50abc4);
-                    background-image: -ms-linear-gradient(top, #6bbed2, #50abc4);
-                    background-image: -o-linear-gradient(top, #6bbed2, #50abc4);
-                    background-image: linear-gradient(to bottom, #6bbed2, #50abc4);
-                    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#6bbed2, endColorstr=#50abc4);
-                }
-
-                BODY {
-                    background: <?php echo $theme['bgcolor'];?>;
-                    color: black;
-                    font-weight: 600;
-                }
-
-                a:link {
-                    text-decoration: none;
-                    color: <?php echo $theme['link']; ?>;
-                    font-weight: 600;
-                }
-
-                a:visited {
-                    text-decoration: none;
-                    color: <?php echo $theme['link']; ?>;
-                }
-
-                a:active {
-                    text-decoration: none;
-                    color: <?php echo $theme['link']; ?>;
-                }
-
-                a:hover {
-                    text-decoration: underline;
-                    color: <?php echo $theme['link']; ?>;
-                }
-
-                a.kbase:link {
-                    text-decoration: underline;
-                    font-weight: bold;
-                    color: <?php echo $theme['text']; ?>;
-                }
-
-                a.kbase:visited {
-                    text-decoration: underline;
-                    font-weight: bold;
-                    color: <?php echo $theme['text']; ?>;
-                }
-
-                a.kbase:active {
-                    text-decoration: underline;
-                    font-weight: bold;
-                    color: <?php echo $theme['text']; ?>;
-                }
-
-                a.kbase:hover {
-                    text-decoration: underline;
-                    font-weight: bold;
-                    color: <?php echo $theme['text']; ?>;
-                }
-
-                /*table.border {
-                    background: <?php echo $theme['table_border']; ?>;
-                    color: black;
-                } */
-
-                td {
-                    color: #000000;
-                    font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
-                    font-size: <?php echo $theme['font_size']; ?>px;
-
-                }
-
-                tr {
-                    color: #000000;
-                    font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                }
-
-                td.back {
-                    padding: <?php echo $tablePadding; ?>px;
-                    line-height: <?php echo $lineHeight; ?>;
-                    background: <?php echo $theme['bg1']; ?>;
-                }
-
-                td.back2 {
-                    padding: <?php echo $tablePadding; ?>px;
-                    line-height: <?php echo $lineHeight; ?>;
-                    background: <?php echo $theme['bg2']; ?>;
-                }
-
-                td.printback {
-                    padding: <?php echo $tablePadding; ?>px;
-                    line-height: <?php echo $lineHeight; ?>;
-                    background: <?php echo $theme['print_bg']; ?>;
-                }
-
-                td.date {
-                    padding: <?php echo $tablePadding; ?>px;
-                    background: <?php echo $theme['category']; ?>;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size'];?>px;
-                    color: <?php echo $theme['text']; ?>;
-                }
-
-                td.hf {
-                    padding: <?php echo $tablePadding; ?>px;
-                    background: <?php echo $theme['header_bg']; ?>;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['header_text']; ?>;
-                }
-
-                td.printhf {
-                    padding: <?php echo $tablePadding; ?>px;
-                    background: <?php echo $theme['print_header_bg']; ?>;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['print_header_text']; ?>;
-                }
-
-                a.hf:link {
-                    line-height: <?php echo $lineHeight; ?>;
-                    text-decoration: none;
-                    font-weight: normal;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['header_text']; ?>;
-                }
-
-                a.hf:visited {
-                    line-height: <?php echo $lineHeight; ?>;
-                    text-decoration: none;
-                    font-weight: normal;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['header_text']; ?>;
-                }
-
-                a.hf:active {
-                    line-height: <?php echo $lineHeight; ?>;
-                    text-decoration: none;
-                    font-weight: normal;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['header_text']; ?>;
-                }
-
-                a.hf:hover {
-                    line-height: <?php echo $lineHeight; ?>;
-                    text-decoration: underline;
-                    font-weight: normal;
-                    font-family: "<?php echo $theme['font']; ?>";
-                    font-size: <?php echo $theme['font_size']; ?>px;
-                    color: <?php echo $theme['header_text']; ?>;
-                }
-
-                .alternate tr:nth-child(2n+0) {
-                    background-color: <?php echo $theme['bg1']; ?>;
-                }
-
-                .alternate tr:nth-child(2n+0):hover, .alternate tr:hover {
-                    background-color: #E7FF00;
-                }
-
-                .alternate tr:nth-child(2n+2) {
-                    background-color: <?php echo $theme['bg2']; ?>;
-                }
-
-                .alternate tr:nth-of-type(1) {
-                    background-color: <?php echo $theme['bg1']; ?>;
-                    padding: 20px;
-                    font-size: 22px
-                }
-
-                tr.back {
-                    line-height: <?php echo $lineHeight; ?>;
-                    background: <?php echo $theme['bg1']; ?>;
-                }
-
-                tr.back2 {
-                    line-height: <?php echo $lineHeight; ?>;
-                    background: <?php echo $theme['bg2']; ?>;
-                }
-
-                tr.back3 {
-                    line-height: <?php echo $lineHeight; ?>;
-                    background: #feaa37;
-                    font-weight: 600;
-                }
                 /*table tr:nth-child(odd) tr{background:
 
                  }
@@ -1266,7 +613,7 @@ $tablePadding = 6;
                     background: <?php echo $theme['bg1']; ?>;
                 }
 
-                td.back2= {
+                td.back2 {
                     padding: <?php echo $tablePadding; ?>px;
                     line-height: <?php echo $lineHeight; ?>;
                     background: <?php echo $theme['bg2']; ?>;
@@ -1313,7 +660,6 @@ $tablePadding = 6;
 
                 a.hf:link {
                     line-height: <?php echo $lineHeight; ?>;
-                    text-decoration: none;
                     font-family: "<?php echo $theme['font']; ?>";
                     font-weight: 600;
                     font-size: <?php echo $theme['font_size']; ?>px;
@@ -1384,7 +730,6 @@ $tablePadding = 6;
                     color: <?php echo $theme['header_text']; ?>;
                 }
 
-
                 td.info {
                     text-align: left;
                     background: <?php echo $theme['info_bg']; ?>;
@@ -1415,8 +760,6 @@ $tablePadding = 6;
                     font-size: <?php echo $theme['font_size']; ?>px;
                     color: <?php echo $theme['info_text']; ?>;
                 }
-
-
 
             <?php if(eregi("IE", $HTTP_USER_AGENT)){ ?>
                 select, option, textarea, input {
@@ -1467,7 +810,6 @@ $tablePadding = 6;
                     color: <?php echo $theme['info_text']; ?>;
                 }
 
-
             <?php       if(eregi("IE", $HTTP_USER_AGENT)){ ?>
                 select, option, textarea, input {
                     border: 1px solid <?php echo $theme['table_border']; ?>;
@@ -1492,9 +834,650 @@ $tablePadding = 6;
             }
             ?>
 
-        }  /*@media */
+            }
+
+    /*Wide Layout*/
+    @media screen and (min-width: 768px) {
+        .wrap {
+            width: 1140px;
+            margin: 0 auto;
+            zoom: 0.9;
+        }
+
+        .back {
+            background-color: #ffffff;
+        }
+
+        table {
+            -webkit-border-horizontal-spacing: 2px;
+            -webkit-border-vertical-spacing: 1px;
+            font-weight: 500;
+            padding: 1px;
+            margin: 1px;
+        }
+
+        .container {
+            padding-right: 2px;
+            padding-left: 2px;
+            margin-right: 2px;
+            margin-left: 2px;
+            width: 780px;
+        }
+
+        #selectwidth {
+            /*    background-color: #afe7f7;   */
+            border: 0 solid;
+            background-color: <?php echo $theme['subcategory']; ?>;
+            -webkit-box-shadow: #B4B5B5 3PX 3PX 3PX;
+            -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
+            box-shadow: #B4B5B5 3PX 3PX 3PX;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            width: 350px;
+            outline: 0;
+            overflow: hidden;
+            padding: 2px 2px 2px 2px;
+
+            /* background: transparent;
+             padding: 5px 10px 5px 5px;
+             font-size: 16px;
+             border: 1px solid #f4a62b;
+             height: 34px;
+             -webkit-appearance: none;
+             -moz-appearance: none;
+             appearance: none;
+             background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat */
+        }
+
+        #selectwidth2 {
+            background-color: <?php echo $theme['category']; ?>;
+            border: 0 solid;
+            -webkit-box-shadow: #B4B5B5 3px 3PX 3PX;
+            -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
+            box-shadow: #B4B5B5 3PX 3PX 3PX;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            width: 350px;
+            font-weight: 600;
+            outline: 0;
+            overflow: hidden;
+            padding: 2px 2px 2px 2px;
+
+        }
+
+        #selectwidth option, #selectwidth2 option {
+
+            width: 350px;
+            font-weight: 600;
+            color: darkslateblue;
+            padding: 5px;
+            font-size: 13px;
+        }
+
+        /*
 
 
+          #submit {
+              width: 21px;
+              height: 21px;
+              border:  10px;
+              margin: 10px;
+              padding: 6px;
+              background: #feaa37 url(../images/casariadefault/log_button.jpg) 10 10 no-repeat;
+              font-weight:600;
+              color: darkslateblue;
+              list-style-type: circle;
+              font-size: 13px;
+              -moz-border-radius: 3px;
+              -webkit-border-radius: 3px;
+
+
+          }*/
+        input[type=text], textarea, select, input[type=submit] {
+            border: 2px solid #ffad41;
+            -webkit-box-shadow: #B4B5B5 3px 3px 3px;
+            -moz-box-shadow: #B4B5B5 3px 3px 3px;
+            box-shadow: #B4B5B5 3px 3px 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            font-size: 14px;
+            padding-top: 2px;
+            padding-right: 2px;
+            padding-left: 2px;
+            padding-bottom: 2px;
+            margin: 5px;
+            text-decoration: none;
+
+            display: inline-block;
+            text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+            font-weight: 600;
+            color: #FFFFFF;
+            background-color: #ffc579;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc579), to(#fb9d23));
+            background-image: -webkit-linear-gradient(top, #ffc579, #fb9d23);
+            background-image: -moz-linear-gradient(top, #ffc579, #fb9d23);
+            background-image: -ms-linear-gradient(top, #ffc579, #fb9d23);
+            background-image: -o-linear-gradient(top, #ffc579, #fb9d23);
+            background-image: linear-gradient(to bottom, #ffc579, #fb9d23);
+            filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
+        }
+
+        input[type=text]:hover, textarea:hover, select:hover {
+            border: 2px dashed #ff9913;
+            background-color: <?php echo $theme['bg2']; ?>;
+            color: <?php echo $theme['text']; ?> `;
+            /*
+            background-color: #AFE7F7; background-image: -webkit-gradient(linear, left top, left bottom, from(#AFE7F7), to(#90CDDD));
+            background-image: -webkit-linear-gradient(top, #AFE7F7, #90CDDD);
+            background-image: -moz-linear-gradient(top, #AFE7F7, #90CDDD);
+            background-image: -ms-linear-gradient(top, #AFE7F7, #90CDDD);
+            background-image: -o-linear-gradient(top, #AFE7F7, #90CDDD);
+            background-image: linear-gradient(to bottom, #AFE7F7, #90CDDD)
+            filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
+
+            */
+        }
+
+        button, input[type=submit] {
+            width: 150px;
+            border: 2px solid #67bcd1;
+            -webkit-box-shadow: #797991 3px 3px 3px;
+            -moz-box-shadow: #797991 3px 3px 3px;
+            box-shadow: #797991 3px 3px 3px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            font-size: 16px;
+            padding: 10px 10px 10px 10px;
+            text-decoration: blink;
+            display: inline-block;
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+            color: <?php echo $theme['text'];?>;
+            background-color: #92cfde;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#92cfde), to(#76bdd1));
+            background-image: -webkit-linear-gradient(top, #92cfde, #76bdd1);
+            background-image: -moz-linear-gradient(top, #92cfde, #76bdd1);
+            background-image: -ms-linear-gradient(top, #92cfde, #76bdd1);
+            background-image: -o-linear-gradient(top, #92cfde, #76bdd1);
+            background-image: linear-gradient(to bottom, #92cfde, #76bdd1);
+            filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#92cfde, endColorstr=#76bdd1);
+        }
+
+        button:hover, input[type=submit]:hover {
+            border: 2px solid #44adc6;
+            background-color: #6bbed2;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#6bbed2), to(#50abc4));
+            background-image: -webkit-linear-gradient(top, #6bbed2, #50abc4);
+            background-image: -moz-linear-gradient(top, #6bbed2, #50abc4);
+            background-image: -ms-linear-gradient(top, #6bbed2, #50abc4);
+            background-image: -o-linear-gradient(top, #6bbed2, #50abc4);
+            background-image: linear-gradient(to bottom, #6bbed2, #50abc4);
+            filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#6bbed2, endColorstr=#50abc4);
+        }
+
+        BODY {
+            background: <?php echo $theme['bgcolor'];?>;
+            color: black;
+            font-weight: 600;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: <?php echo $theme['link']; ?>;
+            font-weight: 600;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: <?php echo $theme['link']; ?>;
+        }
+
+        a:active {
+            text-decoration: none;
+            color: <?php echo $theme['link']; ?>;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: <?php echo $theme['link']; ?>;
+        }
+
+        a.kbase:link {
+            text-decoration: underline;
+            font-weight: bold;
+            color: <?php echo $theme['text']; ?>;
+        }
+
+        a.kbase:visited {
+            text-decoration: underline;
+            font-weight: bold;
+            color: <?php echo $theme['text']; ?>;
+        }
+
+        a.kbase:active {
+            text-decoration: underline;
+            font-weight: bold;
+            color: <?php echo $theme['text']; ?>;
+        }
+
+        a.kbase:hover {
+            text-decoration: underline;
+            font-weight: bold;
+            color: <?php echo $theme['text']; ?>;
+        }
+
+        /*table.border {
+            background:
+
+
+    <?php echo $theme['table_border']; ?>;
+                    color: black;
+                } */
+        td {
+            color: #000000;
+            font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
+            font-size: <?php echo $theme['font_size']; ?>px;
+
+        }
+
+        tr {
+            color: #000000;
+            font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
+            font-size: <?php echo $theme['font_size']; ?>px;
+        }
+
+        td.back {
+            padding: <?php echo $tablePadding; ?>px;
+            line-height: <?php echo $lineHeight; ?>;
+            background: <?php echo $theme['bg1']; ?>;
+        }
+
+        td.back2 {
+            padding: <?php echo $tablePadding; ?>px;
+            line-height: <?php echo $lineHeight; ?>;
+            background: <?php echo $theme['bg2']; ?>;
+        }
+
+        td.printback {
+            padding: <?php echo $tablePadding; ?>px;
+            line-height: <?php echo $lineHeight; ?>;
+            background: <?php echo $theme['print_bg']; ?>;
+        }
+
+        td.date {
+            padding: <?php echo $tablePadding; ?>px;
+            background: <?php echo $theme['category']; ?>;
+            font-family: "<?php echo $theme['font']; ?>";
+            font-size: <?php echo $theme['font_size'];?>px;
+            color: <?php echo $theme['text']; ?>;
+        }
+
+        td.hf {
+            padding: <?php echo $tablePadding; ?>px;
+            background: <?php echo $theme['header_bg']; ?>;
+            font-family: "<?php echo $theme['font']; ?>";
+            font-size: <?php echo $theme['font_size']; ?>px;
+            color: <?php echo $theme['header_text']; ?>;
+        }
+
+        td.printhf {
+            padding: <?php echo $tablePadding; ?>px;
+            background: <?php echo $theme['print_header_bg']; ?>;
+            font-family: "<?php echo $theme['font']; ?>";
+            font-size: <?php echo $theme['font_size']; ?>px;
+            color: <?php echo $theme['print_header_text']; ?>;
+        }
+
+        a.hf:link {
+            line-height: <?php echo $lineHeight; ?>;
+            text-decoration: none;
+            font-weight: normal;
+            font-family: "<?php echo $theme['font']; ?>";
+            font-size: <?php echo $theme['font_size']; ?>px;
+            color: <?php echo $theme['header_text']; ?>;
+        }
+
+        a.hf:visited {
+            line-height: <?php echo $lineHeight; ?>;
+            text-decoration: none;
+            font-weight: normal;
+            font-family: "<?php echo $theme['font']; ?>";
+            font-size: <?php echo $theme['font_size']; ?>px;
+            color: <?php echo $theme['header_text']; ?>;
+        }
+
+        a.hf:active {
+            line-height: <?php echo $lineHeight; ?>;
+            text-decoration: none;
+            font-weight: normal;
+            font-family: "<?php echo $theme['font']; ?>";
+            font-size: <?php echo $theme['font_size']; ?>px;
+            color: <?php echo $theme['header_text']; ?>;
+        }
+
+        a.hf:hover {
+            line-height: <?php echo $lineHeight; ?>;
+            text-decoration: underline;
+            font-weight: normal;
+            font-family: "<?php echo $theme['font']; ?>";
+            font-size: <?php echo $theme['font_size']; ?>px;
+            color: <?php echo $theme['header_text']; ?>;
+        }
+
+        .alternate tr:nth-child(2n+0) {
+            background-color: <?php echo $theme['bg1']; ?>;
+        }
+
+        .alternate tr:nth-child(2n+0):hover, .alternate tr:hover {
+            background-color: #E7FF00;
+        }
+
+        .alternate tr:nth-child(2n+2) {
+            background-color: <?php echo $theme['bg2']; ?>;
+        }
+
+        .alternate tr:nth-of-type(1) {
+            background-color: <?php echo $theme['bg1']; ?>;
+            padding: 20px;
+            font-size: 22px
+        }
+
+        tr.back {
+            line-height: <?php echo $lineHeight; ?>;
+            background: <?php echo $theme['bg1']; ?>;
+        }
+
+        tr.back2 {
+            line-height: <?php echo $lineHeight; ?>;
+            background: <?php echo $theme['bg2']; ?>;
+        }
+
+        tr.back3 {
+            line-height: <?php echo $lineHeight; ?>;
+            background: #feaa37;
+            font-weight: 600;
+        }
+
+        /*table tr:nth-child(odd) tr{background:
+
+         }
+        table tr:nth-child(even) tr{background:
+
+
+        }
+        */
+        td.back {
+            padding: <?php echo $tablePadding; ?>px;
+            line-height: <?php echo $lineHeight; ?>;
+            background: <?php echo $theme['bg1']; ?>;
+        }
+
+        td.back2 {
+            padding: <?php echo $tablePadding; ?>px;
+            line-height: <?php echo $lineHeight; ?>;
+            background: <?php echo $theme['bg2']; ?>;
+        }
+
+        td.printback {
+            padding: <?php echo $tablePadding; ?>px;
+            line-height: <?php echo $lineHeight; ?>;
+            background: <?php echo $theme['print_bg']; ?>;
+        }
+
+        td.date {
+            padding: <?php echo $tablePadding; ?>px;
+            background: <?php echo $theme['category']; ?>;
+            font-family: "<?php echo $theme['font']; ?>";
+            font-size: <?php echo $theme['font_size'];?>px;
+            color: <?php echo $theme['text']; ?>;
+        }
+
+        td.hfo {
+            padding: <?php echo $tablePadding; ?>px;
+            background: <?php echo $theme['header_bg']; ?>;
+            font-family: "<?php echo $theme['font']; ?>";
+            font-size: <?php echo $theme['font_size']; ?>px;
+            color: <?php echo $theme['header_text']; ?>;
+        }
+
+        td.hf {
+            padding: <?php echo $tablePadding; ?>px;
+            background: #c9caea;
+            font-family: "<?php echo $theme['font']; ?>";
+            font-weight: 600;
+            font-size: <?php echo $theme['font_size']; ?>px;
+            color: <?php echo $theme['header_text']; ?>;
+        }
+
+        td.printhf {
+            padding: <?php echo $tablePadding; ?>px;
+            background: <?php echo $theme['print_header_bg']; ?>;
+            font-family: "<?php echo $theme['font']; ?>";
+            font-size: <?php echo $theme['font_size']; ?>px;
+            color: <?php echo $theme['print_header_text']; ?>;
+        }
+
+        a.hf:link {
+            line-height: <?php echo $lineHeight; ?>;
+            text-decoration: none;
+            font-family: "<?php echo $theme['font']; ?>";
+            font-weight: 600;
+            font-size: <?php echo $theme['font_size']; ?>px;
+            color: #9907c1;
+        }
+
+        /* 00c6ff , a34bc6*/
+        a.hf:visited {
+            line-height: <?php echo $lineHeight; ?>;
+            text-decoration: none;
+            font-weight: normal;
+            font-family: "<?php echo $theme['font']; ?>";
+            font-size: <?php echo $theme['font_size']; ?>px;
+            color: <?php echo $theme['header_text']; ?>;
+        }
+
+        a.hf:active {
+            line-height: <?php echo $lineHeight; ?>;
+            text-decoration: none;
+            font-weight: normal;
+            font-family: "<?php echo $theme['font']; ?>";
+            font-size: <?php echo $theme['font_size']; ?>px;
+            color: <?php echo $theme['header_text']; ?>;
+        }
+
+        a.info:link {
+            line-height: <?php echo $lineHeight; ?>;
+            text-decoration: none;
+            font-weight: normal;
+            font-family: "<?php echo $theme['font']; ?>";
+            font-size: <?php echo $theme['font_size']; ?>px;
+            color: <?php echo $theme['info_text']; ?>;
+        }
+
+        a.info:visited {
+            line-height: <?php echo $lineHeight; ?>;
+            text-decoration: none;
+            font-weight: normal;
+            font-family: "<?php echo $theme['font']; ?>";
+            font-size: <?php echo $theme['font_size']; ?>px;
+            color: <?php echo $theme['info_text']; ?>;
+        }
+
+        a.info:active {
+            line-height: <?php echo $lineHeight; ?>;
+            text-decoration: none;
+            font-weight: normal;
+            font-family: "<?php echo $theme['font']; ?>";
+            font-size: <?php echo $theme['font_size']; ?>px;
+            color: <?php echo $theme['info_text']; ?>;
+        }
+
+        a.info:hover {
+            line-height: <?php echo $lineHeight; ?>;
+            text-decoration: underline;
+            font-weight: normal;
+            font-family: "<?php echo $theme['font']; ?>";
+            font-size: <?php echo $theme['font_size']; ?>px;
+            color: <?php echo $theme['info_text']; ?>;
+        }
+
+        a.hf:hover {
+            line-height: <?php echo $lineHeight; ?>;
+            text-decoration: underline;
+            font-weight: normal;
+            font-family: "<?php echo $theme['font']; ?>";
+            font-size: <?php echo $theme['font_size']; ?>px;
+            color: <?php echo $theme['header_text']; ?>;
+        }
+
+        td.info {
+            text-align: left;
+            background: <?php echo $theme['info_bg']; ?>;
+            font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
+            font-size: <?php echo ($theme['font_size'])+1; ?>px;
+            color: <?php echo $theme['header_text']; ?>;
+        }
+
+        td.extra {
+            background: <?php echo $theme['info_bg']; ?>;
+            font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
+            font-size: <?php echo ($theme['font_size']+3); ?>px;
+            color: <?php echo $theme['extra_text']; ?>;
+        }
+
+        td.printinfo {
+            background: <?php echo $theme['print_info_bg']; ?>;
+            font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
+            font-size: <?php echo $theme['font_size']; ?>px;
+            color: <?php echo $theme['print_info_text']; ?>;
+        }
+
+        a.info:link {
+            line-height: <?php echo $lineHeight; ?>;
+            text-decoration: none;
+            font-weight: normal;
+            font-family: "<?php echo $theme['font']; ?>";
+            font-size: <?php echo $theme['font_size']; ?>px;
+            color: <?php echo $theme['info_text']; ?>;
+        }
+
+    <?php if(eregi("IE", $HTTP_USER_AGENT)){ ?>
+        select, option, textarea, input {
+            border: 1px solid <?php echo $theme['table_border']; ?>;
+            font-family: "<?php echo $theme['font']; ?>", arial, helvetica, sans-serif;
+            font-size: 11px;
+            font-weight: bold;
+            background: <?php echo $theme['subcategory']; ?>;
+            color: <?php echo $theme['text']; ?>;
+        }
+
+    <?php
+    }
+    else{ ?>
+        select, option, textarea, input {
+            font-family: "<?php echo $theme['font']; ?>", arial, helvetica, sans-serif;
+            font-size: <?php echo $theme['font_size']; ?>px;
+            background: <?php echo $theme['subcategory']; ?>;
+            color: <?php echo $theme['text']; ?>;
+        }
+
+    <?php
+    }
+    ?>
+
+        a.info:visited {
+            line-height: <?php echo $lineHeight; ?>;
+            text-decoration "<?php echo $theme['font']; ?>";
+            font-size: <?php echo $theme['font_size']; ?>px;
+            color: <?php echo $theme['info_text']; ?>;
+        }
+
+        a.info:active {
+            line-height: <?php echo $lineHeight; ?>;
+            text-decoration: none;
+            font-weight: normal;
+            font-family: "<?php echo $theme['font']; ?>";
+            font-size: <?php echo $theme['font_size']; ?>px;
+            color: <?php echo $theme['info_text']; ?>;
+        }
+
+        a.info:hover {
+            line-height: <?php echo $lineHeight; ?>;
+            text-decoration: underline;
+            font-weight: normal;
+            font-family: "<?php echo $theme['font']; ?>";
+            font-size: <?php echo $theme['font_size']; ?>px;
+            color: <?php echo $theme['info_text']; ?>;
+        }
+
+    <?php       if(eregi("IE", $HTTP_USER_AGENT)){ ?>
+        select, option, textarea, input {
+            border: 1px solid <?php echo $theme['table_border']; ?>;
+            font-family: "<?php echo $theme['font']; ?>", arial, helvetica, sans-serif;
+            font-size: 11px;
+            font-weight: bold;
+            background: <?php echo $theme['subcategory']; ?>;
+            color: <?php echo $theme['text']; ?>;
+        }
+
+    <?php
+           }
+           else{ ?>
+        select, option, textarea, input {
+            font-family: "<?php echo $theme['font']; ?>", arial, helvetica, sans-serif;
+            font-size: 11px;
+            background: <?php echo $theme['subcategory']; ?>;
+            color: <?php echo $theme['text']; ?>;
+        }
+
+    <?php
+    }
+    ?>
+
+    }  /*@media */
+            .text-1, .text-2, .text-3, .btn-login, .pwd-login {
+                border: 2px solid #67bcd1;
+                -webkit-box-shadow: #797991 1px 1px 1px;
+                -moz-box-shadow: #797991 1px 1px 1px;
+                box-shadow: #797991 1px 1px 1px;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px;
+                font-size: 14px;
+                padding: 6px 6px 6px 6px;
+                font-weight: 600;
+                text-decoration: none;
+                display: inline-block;
+                text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+                color: #FFFFFF;
+                background-color: #92cfde;
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaf46), to(#e78404));
+                background-image: -webkit-linear-gradient(top, #ffaf46, #e78404);
+                background-image: -moz-linear-gradient(top, #ffaf46, #e78404);
+                background-image: -ms-linear-gradient(top, #ffaf46, #e78404);
+                background-image: -o-linear-gradient(top, #ffaf46, #e78404);
+                background-image: linear-gradient(to bottom, #ffaf46, #e78404);
+                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#92cfde, endColorstr=#76bdd1);
+            }
+
+            .text-1 {
+                width: 80px;
+            }
+
+            .text-2, .btn-login, .pwd-login {
+                width: 150px;
+                margin: 8px;
+            }
+
+            .text-3 {
+                width: 300px;
+            }
+
+            .btn-login {
+                margin-top: 15px;
+                margin-bottom: 25px;
+            }
 
 
         </STYLE>

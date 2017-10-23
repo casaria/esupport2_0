@@ -198,10 +198,6 @@ $tablePadding = 6;
                 color: #000099;
             }
 
-            //
-
-
-            //`
 
             /*### Smartphones (portrait and landscape)(small)### */
             @media screen and (min-width : 0px) and (max-width : 767px){

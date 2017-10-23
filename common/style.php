@@ -956,7 +956,10 @@ $tablePadding = 6;
                     -moz-border-radius: 3px;
                     border-radius: 3px;
                     font-size: 14px;
-                    padding: 2px 2px 2px 2px;
+                    padding-top: 2px;
+                    padding-right: 2px;
+                    padding-left: 2px;
+                    padding-bottom: 11px;
                     margin: 5px;
                     text-decoration: none;
 

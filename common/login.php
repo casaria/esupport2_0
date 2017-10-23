@@ -176,7 +176,7 @@ echo'
               <TR>
                 <TD class=back vAlign=top><BR>
 
-<TABLE class=border cellSpacing=0 cellPadding=0 width="25%" align=center border=0>
+<TABLE class=border cellSpacing=0 cellPadding=0 width="35%" align=center border=0>
   <TR>
     <TD>
       <TABLE cellSpacing=1 cellPadding=1 width="100%" border=0>

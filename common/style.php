@@ -115,41 +115,6 @@ $tablePadding = 6;
 
             }
 
-            .text-1, .text-2, .text-3, .btn-login, .pwd-login {
-                border: 2px solid #ffad41;
-                -webkit-box-shadow: #B4B5B5 3px 3px 3px;
-                -moz-box-shadow: #B4B5B5 3px 3px 3px;
-                box-shadow: #B4B5B5 3px 3px 3px;
-                -webkit-border-radius: 3px;
-                -moz-border-radius: 3px;
-                border-radius: 3px;
-                font-size: 14px;
-                padding: 2px 2px 2px 2px;
-                margin: 5px;
-                text-decoration: none;
-                color: darkslateblue;
-                display: inline-block;
-                text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
-                font-weight: 600;
-                background-color: #ffc579;
-                background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc579), to(#fb9d23));
-                background-image: -webkit-linear-gradient(top, #ffc579, #fb9d23);
-                background-image: -moz-linear-gradient(top, #ffc579, #fb9d23);
-                background-image: -ms-linear-gradient(top, #ffc579, #fb9d23);
-                background-image: -o-linear-gradient(top, #ffc579, #fb9d23);
-                background-image: linear-gradient(to bottom, #ffc579, #fb9d23);
-                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
-            }
-
-            .text-1 {
-                width: 80px;
-            }
-            .text-2, .btn-login, .pwd-login {
-                width: 150px;
-            }
-            .text-3 {
-                width: 300px;
-            }
 
 
 
@@ -338,7 +303,7 @@ $tablePadding = 6;
 
                 #selectwidth2 {
 
-                    background-color: <?ph$theme['category']; ?>;
+                    background-color: <?php echo $theme['category']; ?>;
                     border: 0 solid;
                     -webkit-box-shadow: #B4B5B5 3px 3PX 3PX;
                     -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
@@ -1262,7 +1227,7 @@ $tablePadding = 6;
                     background: <?php echo $theme['bg1']; ?>;
                 }
 
-                td.back2 {
+                td.back2= {
                     padding: <?php echo $tablePadding; ?>px;
                     line-height: <?php echo $lineHeight; ?>;
                     background: <?php echo $theme['bg2']; ?>;
@@ -1487,7 +1452,44 @@ $tablePadding = 6;
             <?php
             }
             ?>
-        }
+
+        }  /*@media */
+
+
+            .text-1, .text-2, .text-3, .btn-login, .pwd-login {
+                border: 2px solid #67bcd1;
+                -webkit-box-shadow: #797991 1px 1px 1px;
+                -moz-box-shadow: #797991 1px 1px 1px;
+                box-shadow: #797991 1px 1px 1px;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px;
+                font-size: 16px;
+                padding: 6px 6px 6px 6px;
+                font-weight: 600;
+                text-decoration: none;
+                display: inline-block;
+                text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+                color: #FFFFFF;
+                background-color: #92cfde;
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaf46), to(#e78404));
+                background-image: -webkit-linear-gradient(top, #ffaf46, #e78404);
+                background-image: -moz-linear-gradient(top, #ffaf46, #e78404);
+                background-image: -ms-linear-gradient(top, #ffaf46, #e78404);
+                background-image: -o-linear-gradient(top, #ffaf46, #e78404);
+                background-image: linear-gradient(to bottom, #ffaf46, #e78404);
+                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#92cfde, endColorstr=#76bdd1);
+            }
+
+            .text-1 {
+                width: 80px;
+            }
+            .text-2, .btn-login, .pwd-login {
+                width: 150px;
+            }
+            .text-3 {
+                width: 300px;
+            }
 
 
         </STYLE>

@@ -182,7 +182,7 @@ $tablePadding = 6;
                 filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#92cfde, endColorstr=#76bdd1);
             }
 
-            .btn-login, .pwd-login {
+            .dummy1:hover {
                 border: 2px solid #44adc6;
                 background-color: #6bbed2;
                 background-image: -webkit-gradient(linear, left top, left bottom, from(#6bbed2), to(#50abc4));

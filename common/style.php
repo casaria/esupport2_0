@@ -1444,13 +1444,12 @@ $tablePadding = 6;
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
         border-radius: 4px;
-        font-size: 14px;
-        padding: 6px 6px 6px 6px;
+        padding: 2px 2px 2px 2px;
         font-weight: 600;
         text-decoration: none;
         display: inline-block;
         text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-        color: #FFFFFF;
+        color: darkslateblue;
         background-color: #92cfde;
         background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaf46), to(#e78404));
         background-image: -webkit-linear-gradient(top, #ffaf46, #e78404);
@@ -1468,6 +1467,7 @@ $tablePadding = 6;
     .text-2, .btn-login, .pwd-login {
         width: 150px;
         margin: 8px;
+        font-size: 13px;
     }
 
     .text-3 {

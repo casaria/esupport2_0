@@ -199,7 +199,7 @@ echo'
 				</tr>
 				<tr>
 				 <<td class=back2 align=right>:</td><td>
-					<input type=submit name=login value="'.$lang_submit.'"></td>
+					<input type=submit class="btn-login" name=login value="'.$lang_submit.'"></td>
 				</tr>
 			</table>
 

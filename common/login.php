@@ -182,11 +182,11 @@ echo'
     <TD>
     
     </TD></TR><TR><TD>
-      <TABLE style="margin:1px; Padding:1px; width=100%" align="center">
+      <TABLE style=\"margin:1px; Padding:1px; width=100%\" align=\"center|">
         <TR
           <TD class=info align="center"><b>'.$helpdesk_name.' '.$lang_login.'</b></TD>
         </TR>
-          <TD class=back align="center"> <IMG SRC='."$login_logo".' ALT="">
+          <TD class=back align="center"> <IMG SRC='."$login_logo".'>
         <TR>
         </TR>
         <TR>

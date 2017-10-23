@@ -1078,8 +1078,7 @@ $tablePadding = 6;
                     color: #000000;
                     font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
                     font-size: <?php echo $theme['font_size']; ?>px;
-                    padding-left: 5px;
-                    padding-right: 5px;
+
                 }
 
                 tr {
@@ -1399,6 +1398,7 @@ $tablePadding = 6;
                 a.info:active {
                     line-height: <?php echo $lineHeight; ?>;
                     text-decoration: none;
+                    text-decoration: none;
                     font-weight: normal;
                     font-family: "<?php echo $theme['font']; ?>";
                     font-size: <?php echo $theme['font_size']; ?>px;
@@ -1419,7 +1419,9 @@ $tablePadding = 6;
                     color: <?php echo $theme['text']; ?>;
                     font-family: "<?php echo $theme['font']; ?>";
                     font-size: <?php echo '$theme["font_size"] + 4'?>'px';
-                    font-weight: 600
+                    font-weight: 600;
+                    padding-left: 5px;
+                    padding-right: 5px;
                 }
 
             <?php       if(eregi("IE", $HTTP_USER_AGENT)){ ?>

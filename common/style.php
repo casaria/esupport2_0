@@ -83,7 +83,7 @@ $tablePadding = 6;
 
         <TITLE> <?php echo $helpdesk_name; ?></TITLE>
         <?php
-        if ($theme['font'] == "Titillium Web") {
+        if ($theme[font] == "Titillium Web") {
             $lineHeight = 1.2;
             $tablePadding = 5;
         } else {
@@ -136,7 +136,6 @@ $tablePadding = 6;
                 padding: 4px 6px 4px 15px;
 
             }
-
 
             input.box {
                 border: 4px;
@@ -1427,7 +1426,10 @@ function getThemeVars($name)
  **    function getThemeName():
  **        Takes one argument.  Queries the database and selects the theme associated with the user name that
  **    is given.  Returns the file path of the css file.
- ************************************************************************************************************/
+ ***********************************************************************************************************
+ * @param $name
+ * @return
+ */
 function getThemeName($name)
 {
     global $mysql_users_table, $mysql_settings_table, $default_theme, $db;

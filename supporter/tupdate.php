@@ -498,8 +498,7 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
         </div>
         <div id="material" class="tab-pane fade">
             <h3>MATERIAL</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                rem aperiam.</p>
+            <p><?php materialTab();?></p>
         </div>
         <div id="extra" class="tab-pane fade">
             <h3>EXTRA</h3>
@@ -898,5 +897,66 @@ function extraTab() {
     <?php
 
 }
+
+
+function materialTab(){
+global $lang_groupslists, $lang_groupslists2;
+
+    startTable("$lang_groupslists", "center");
+    echo "<tr><td class=cat> $lang_groupslists2 </td></tr>";
+    //echo "<tr><td class=back2>";
+
+
+
+    listGroupMembers("sgroup2");
+    ?>
+    </div>
+    </div>
+
+    <?php
+    echo "</td></tr>";
+    endTable();
+
+
+
+
+
+
+}
+
+
+    function listGroupMembers($group)
+    {
+        global $supporter_site_url, $db, $lang_group;
+
+        $group_id = eregi_replace("sgroup", "", $group);
+
+        $sql = "SELECT * FROM `users`\n"
+            . "INNER JOIN `sgroup2` ON `sgroup2`.`user_name` = `users`.`user_name` ";
+
+        $result = $db->query($sql);
+        startTable("$lang_group  --  ".getsGroup($group_id), "left");
+        echo "<tr><td class=back>";
+
+        echo '<div class="container">';
+
+        echo '<div id="dylay" class="row no-gutters">';
+        while($row = $db->fetch_array($result)){
+
+
+            echo "<div class=\"col-xs-12 col-sm-6 col-md-3 ".($row['supporter'] >= 1 ? "active" : "inactive")."\" username=\"$row[user_name]\">";
+            echo "<span style=height:60px;>";
+            echo "$row[first_name] $row[last_name] <b>($row[user_name])</b><br>$row[email] ".date("m/d/Y", $row[lastactive])."</span></div>";
+
+
+        }
+        echo '</div></div></div>';
+        echo "</td></tr>";
+
+
+        endTable();
+
+    }
+
 ?>
 

@@ -177,12 +177,12 @@ echo'
               <TR></TR><tr>
                   <TD class=back vAlign="top" align="center">
 
-<TABLE class=border cellSpacing=0 cellPadding=0 width="40%" align=center border=0>
+<TABLE class=border cellSpacing=0 cellPadding=0 width=300px align=center border=0>
   <TR>
     <TD>
     
     </TD></TR><TR><TD>
-      <TABLE style=\"margin:5px; Padding:5px; width=100%\" align=\"center|">
+      <TABLE style=\"margin:0px; Padding:0px; width=100%\" align=\"center|">
         <TR
           <TD class=back2 align="center"><b>'.$helpdesk_name.' '.$lang_login.'</b></TD>
         </TR>
@@ -191,7 +191,7 @@ echo'
         </TR>
         <TR>
           <TD class=back2>
-			<table width=100% border=0 cellspacing=2 cellpadding=6>
+			<table width=100% border=0 cellspacing=0 cellpadding=6>
 				<tr>
 				 <td class=back2 align=right>'.$lang_username.':</td><td>
 					<input type=text name=user class="text-2" value='."$cookieuser".'></td>

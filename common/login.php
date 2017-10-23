@@ -172,7 +172,7 @@ echo'
           <TD class=hf align=center></TD>
         </TR>
         <TR>
-          <TD class=back>
+          <TD class=back2>
 			<TABLE border=0 width="100%" align="center">
               <TR></TR><tr>
                   <TD class=back vAlign=top aling="center">
@@ -191,7 +191,7 @@ echo'
         </TR>
         <TR>
           <TD class=back2>
-			<table width=100% border=0 cellspacing=0 cellpadding=6>
+			<table width=100% border=0 cellspacing=2 cellpadding=6>
 				<tr>
 				 <td class=back2 align=right>'.$lang_username.':</td><td>
 					<input type=text name=user class="text-2" value='."$cookieuser".'></td>

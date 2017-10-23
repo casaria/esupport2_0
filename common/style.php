@@ -220,13 +220,6 @@ $tablePadding = 6;
                     zoom: 0.25;
                 }
 
-                .tabbox {
-                    padding-right: 1px;
-                    padding-left: 1px;
-                    margin-right: 1px;
-                    margin-left: 1px;
-                }
-
 
                 table {
                     -webkit-border-horizontal-spacing: 2px;
@@ -355,12 +348,7 @@ $tablePadding = 6;
                     background-image: -o-linear-gradient(top, #ffaf46, #e78404);
                     background-image: linear-gradient(to bottom, #ffaf46, #e78404);
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffaf46, endColorstr=#e78404);
-                }
 
-                .small{
-                    width: 100px;
-
-                }
 
 
                 button, input[type=submit] {
@@ -376,7 +364,7 @@ $tablePadding = 6;
                     -webkit-border-radius: 4px;
                     -moz-border-radius: 4px;
                     border-radius: 4px;
-                    font-size: 16px
+                    font-size: 16px;
                     padding: 6px 6px 6px 6px;
                     font-weight: 600;
                     text-decoration: none;

@@ -152,8 +152,8 @@ $tablePadding = 6;
             }
 
             .btn-login {
-                width 150 px;
-                height 80 px;
+                width: 150px;
+                height: 50px;
             }
 
             td.stats {

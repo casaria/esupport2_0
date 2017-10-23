@@ -503,7 +503,7 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
         </div>
         <div id="extra" class="tab-pane fade">
             <h3>EXTRA</h3>
-            <p>The Extra TAB!
+            <p><H4>TICKET UPDATE performance (onn time percentage)</H4>
                <?php extraTab();  ?>
 
             </p>
@@ -872,7 +872,7 @@ function extraTab() {
 
     ?>
 
-    <H4>TICKET UPDATE performance (onn time percentage)</H4>
+
     <div class="progress">
 
         <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">

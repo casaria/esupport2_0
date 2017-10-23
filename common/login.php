@@ -163,12 +163,12 @@ echo'
 </head>
 <body bgcolor='.$theme['bgcolor'].' onload="setfocus()">
 <form name=login method=post>
-<TABLE class=border cellSpacing=0 cellPadding=0 width='.$theme['width'].' align=center border=0>
+<TABLE class=border cellSpacing=0 cellPadding=0 width='.$theme['width'].' align=center border=2>
   <TR>
     <TD>
       <TABLE cellSpacing=1 cellPadding=1 width="100%" border=0>
         <TR>
-          <TD class=hf align=left>&nbsp;</TD>
+          <TD class=hf align=left></TD>
         </TR>
         <TR>
           <TD class=back>

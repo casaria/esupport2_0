@@ -127,7 +127,7 @@ $tablePadding = 6;
                 padding: 2px 2px 2px 2px;
                 margin: 6px;
                 text-decoration: none;
-
+                color: darkslateblue;
                 display: inline-block;
                 text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
                 font-weight: 600;

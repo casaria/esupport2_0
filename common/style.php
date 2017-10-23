@@ -153,6 +153,49 @@ $tablePadding = 6;
 
 
 
+            .btn-login, .pwd-login {
+                width: 150px;
+                height: 34px;
+                padding-bottom: 10px;
+                margin-bottom: 35px;
+                margin-top: 25px;
+                border: 2px solid #67bcd1;
+                -webkit-box-shadow: #797991 3px 3px 3px;
+                -moz-box-shadow: #797991 3px 3px 3px;
+                box-shadow: #797991 3px 3px 3px;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px;
+                font-size: 16px;
+                padding: 10px 10px 10px 10px;
+                text-decoration: blink;
+                display: inline-block;
+                text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+                color:<?php echo $theme['text'];?>;
+                background-color: #92cfde;
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#92cfde), to(#76bdd1));
+                background-image: -webkit-linear-gradient(top, #92cfde, #76bdd1);
+                background-image: -moz-linear-gradient(top, #92cfde, #76bdd1);
+                background-image: -ms-linear-gradient(top, #92cfde, #76bdd1);
+                background-image: -o-linear-gradient(top, #92cfde, #76bdd1);
+                background-image: linear-gradient(to bottom, #92cfde, #76bdd1);
+                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#92cfde, endColorstr=#76bdd1);
+            }
+
+            .btn-login, .pwd-login {
+                border: 2px solid #44adc6;
+                background-color: #6bbed2;
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#6bbed2), to(#50abc4));
+                background-image: -webkit-linear-gradient(top, #6bbed2, #50abc4);
+                background-image: -moz-linear-gradient(top, #6bbed2, #50abc4);
+                background-image: -ms-linear-gradient(top, #6bbed2, #50abc4);
+                background-image: -o-linear-gradient(top, #6bbed2, #50abc4);
+                background-image: linear-gradient(to bottom, #6bbed2, #50abc4);
+                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#6bbed2, endColorstr=#50abc4);
+            }
+
+
+
             td.stats {
                 background: <?php echo $theme['category']; ?>;
                 font-family: "<?php echo $theme['font']; ?>";
@@ -179,7 +222,7 @@ $tablePadding = 6;
                 padding-top: 4px;
                 padding-right: 6px;
 
-            }
+        }
 
             input.box {
                 border: 4px;
@@ -1445,13 +1488,7 @@ $tablePadding = 6;
             }
             ?>
         }
-            .btn-login, .pwd-login {
-                width: 150px;
-                height: 34px;
-                pa\dding-bottom: 10px;
-                margin-bottom: 35px;
-                margin-top: 25px;
-            }
+
 
         </STYLE>
     </HEAD>

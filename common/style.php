@@ -83,7 +83,7 @@ $tablePadding = 6;
 
         <TITLE> <?php echo $helpdesk_name; ?></TITLE>
         <?php
-        if ($theme[font] == "Titillium Web") {
+        if ($theme['font'] == "Titillium Web") {
             $lineHeight = 1.2;
             $tablePadding = 5;
         } else {
@@ -108,7 +108,10 @@ $tablePadding = 6;
                 font-family: "<?php echo $theme['font']; ?>";
                 font-size: <?php echo $theme['font_size']; ?>px;
                 color: <?php echo $theme['text']; ?>;
-                padding: 4px 6px 4px 15px;
+                padding-left: 15px;
+                padding-bottom: 4px;
+                padding-top: 4px;
+                padding-right: 6px;
 
             }
 
@@ -133,7 +136,10 @@ $tablePadding = 6;
                 font-family: "<?php echo $theme['font']; ?>";
                 font-size: <?php echo '$theme["font_size"] + 4'?>'px';
                 font-weight: 600;
-                padding: 4px 6px 4px 15px;
+                padding-left: 15px;
+                padding-bottom: 4px;
+                padding-top: 4px;
+                padding-right: 6px;
 
             }
 
@@ -335,6 +341,7 @@ $tablePadding = 6;
                     background-image: -o-linear-gradient(top, #ffaf46, #e78404);
                     background-image: linear-gradient(to bottom, #ffaf46, #e78404);
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffaf46, endColorstr=#e78404);
+                }
 
 
 

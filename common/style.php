@@ -144,10 +144,10 @@ $tablePadding = 6;
                 width: 80px;
             }
             .text-2 {
-                width: 100px;
+                width: 150px;
             }
             .text-3 {
-                width: 160px;
+                width: 300px;
             }
 
 

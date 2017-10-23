@@ -177,7 +177,7 @@ echo'
               <TR></TR><tr>
                   <TD class=back vAlign="top" align="center">
 
-<TABLE class=border cellSpacing=0 cellPadding=0 width=300px align=center border=0>
+<TABLE class=border cellSpacing=0 cellPadding=0 width=350px align=center border=0>
   <TR>
     <TD>
     
@@ -186,7 +186,7 @@ echo'
         <TR
           <TD class=back2 align="center"><b>'.$helpdesk_name.' '.$lang_login.'</b></TD>
         </TR>
-          <TD class=back2 style="\cellpadding:0px \"align="center"> <IMG SRC='."$login_logo".'>
+          <TD class=back2 style=\"padding:0px;\"align="center"> <IMG SRC='."$login_logo".'>
         <TR>
         </TR>
         <TR>

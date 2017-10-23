@@ -169,13 +169,13 @@ echo'
       <TABLE cellSpacing=0 cellPadding=0 width="100%" align="center" border=0>
       
         <TR>
-          <TD class=back2 align=center></TD>
+          <TD class=back align=center></TD>
         </TR>
         <TR>
-          <TD class=back2>
+          <TD class=back>
 			<TABLE border=0 width="100%" align="center">
               <TR></TR><tr>
-                  <TD class=back2 vAlign="top" align="center">
+                  <TD class=back vAlign="top" align="center">
 
 <TABLE class=border cellSpacing=0 cellPadding=0 width="40%" align=center border=0>
   <TR>

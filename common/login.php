@@ -184,7 +184,7 @@ echo'
     </TD></TR><TR><TD>
       <TABLE style=\"margin:5px; Padding:5px; width=100%\" align=\"center|">
         <TR
-          <TD class=info align="center"><b>'.$helpdesk_name.' '.$lang_login.'</b></TD>
+          <TD class=back2 align="center"><b>'.$helpdesk_name.' '.$lang_login.'</b></TD>
         </TR>
           <TD class=back align="center"> <IMG SRC='."$login_logo".'>
         <TR>

@@ -173,9 +173,9 @@ echo'
         </TR>
         <TR>
           <TD class=back>
-			<TABLE border=0 width="100%">
-              <TR>
-                <TD class=back vAlign=top><BR>
+			<TABLE border=0 width="100%" align="center">
+              <TR></TR><tr>
+                  <TD class=back vAlign=top aling="center">
 
 <TABLE class=border cellSpacing=0 cellPadding=0 width="35%" align=center border=0>
   <TR>

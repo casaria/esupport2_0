@@ -198,10 +198,10 @@ echo'
 				</tr>
 				<tr>
 				 <td class=back2 align=right>'.$lang_password.':</td><td>
-					<input type=password name=password class="pwd-login"" value='."$cookiepwd".'></td>
+					<input type=password name=password class="pwd-login" value="'.$cookiepwd.'"></td>
 				</tr>
 				<tr>
-				 <<td class=back2 align=right>:</td><td>
+				 	<td class=back2 align=right></td><td>
 					<input type=submit class="btn-login" name=login value="'.$lang_submit.'"></td>
 				</tr>
 			</table>

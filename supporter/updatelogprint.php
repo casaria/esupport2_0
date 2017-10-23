@@ -209,7 +209,7 @@ $info = getTicketInfo($id);
     			echo "$sup_row[user_name]"; 
     	echo '</td>';			
     	echo '<td width=25% class=back2>';
-    			showFormattedTime($row[minutes] * 60, 1); 
+    			showFormattedTime($row[minutes] * 60, 0);
     	echo '</td>';			
     	echo '<td class=back>';
     			echo "$row[reference]"; 
@@ -232,7 +232,7 @@ $info = getTicketInfo($id);
 				$minutes = $results['total_time'];
 
 	echo'<B>';
-	showFormattedTime($minutes * 60, 1);
+	showFormattedTime($minutes * 60, 0);
 	echo '</B></td>';
 
 	endTable();

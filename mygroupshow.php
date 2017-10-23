@@ -42,7 +42,7 @@ if ($opentickets)
 else 
   startTable("$lang_yourgroupsclose", "center");
 
-	echo '<tr><td class=back> ';
+	echo '<tr><td class="back2"> ';
 	$num_groups = getNumberGroups();
 	$groups = getUsersGroupList($user_id);
 	echo "$lang_usergroups: ";
@@ -351,8 +351,12 @@ return $summary;
 }
 
 
-
-
+/**
+ * @param $id
+ * @param $query
+ * @param $order
+ * @return array
+ */
 function listByPriority($id, $query, $order)
 {
 	global $mysql_tpriorities_table, $mysql_tickets_table, $db;
@@ -391,6 +395,7 @@ function listByStatus($id, $query, $order)
 {
 	global $mysql_tstatus_table, $mysql_tickets_table, $db;
 
+
 	$sql = "select status from $mysql_tstatus_table order by rank $order";
 	$result = $db->query($sql);
 	while($row = $db->fetch_row($result)){
@@ -402,6 +407,7 @@ function listByStatus($id, $query, $order)
 	//now we have to list all of the tickets that have a priority other than what is in the priority list
 	//ie. if a priority gets deleted via the admin tool and there are still tickets with that priority, we
 	// still need to list them.
+    $flag = 0;
 
 	$sql = "select * from $mysql_tickets_table where ";
 	$status = getStatusList();

@@ -88,11 +88,14 @@ if(isset($create)){
 		$billing_status = "0";
 		//enter fixed values for support pool and group
 		$sql = "INSERT into $mysql_tickets_table values(NULL, $time, $sg, $group_id, 'support_pool', 1, '$priority', '$status',
-				'$billing_status','$username', '$email', '$office', '$phone', '$equipment', '$category', '$platform', '$short', '$description', NULL, 0, '$time', '$emailgroup', '$emailstatuschange', '$emailcc',0)";
-		
+				'$billing_status','$username', '$email', '$office', '$phone', '$equipment', '$category', '$platform', '$short', '$description', NULL, 0, '$time', '$emailgroup', '$emailstatuschange', '$emailcc',0,0,0)";
+
+
 		$db->query($sql);
 		$id = $db->insert_id();
-		
+        $last_insert_id= mysql_insert_id();
+
+
 		//update the log so it shows who created the ticket now.
 		if($pubpriv == "Public")
 			$msg = "<i> \$lang_createdbyweb </i>";
@@ -143,7 +146,7 @@ else{
   $user_id = getUserID($cookie_name);
 	$groups = getUsersGroupList($user_id);
 	for ($i=0; $i< sizeof ($groups); $i++) {
-		 $group_id =  eregi_replace("ugroup", "", $groups[$i]);
+		 $group_id =  preg_replace ("/ugroup/i", "", $groups[$i]);
 		 $groupname = getuGroup($group_id);
 	}
 	createTicketHeader("$lang_create $lang_ticket");
@@ -182,8 +185,8 @@ function createSupporterInfo($group_id)
 	startTable("$lang_supporterinfo", "left", 100, 4);
 					
 		echo '<tr>
-				<td width=20% class=back2 align=right>'.$lang_supportergroup.':</td>
-				<td class=back width=20%>';
+				<td width=100 class=back2 align=right>'.$lang_supportergroup.':</td>
+				<td class=back width=190>';
 				?>
 				<select name=group onChange="MM_jumpMenu('parent', this, 0)">
 				<?php
@@ -192,8 +195,8 @@ function createSupporterInfo($group_id)
 
 		echo '</select>
 				</td>
-				<td width=100 class=back2 align=right>'.$lang_ticket.' '.$lang_priority.':</td>
-				<td class=back>
+				<td width=100 Class=back2 align=right>'.$lang_ticket.' '.$lang_priority.':</td>
+				<td class=back width=190>
 				<select name=priority>';
 				
 				createPriorityMenu();
@@ -288,36 +291,36 @@ function createUserInfo($groupname)
 	
 
 	if($groupname =='') $groupname = "No Group ERROR";
-	startTable("$lang_userinfo  ($groupname)", "left", 100, 4);	
+	startTable("$lang_userinfo  ($groupname)", "left", 100, 4);
 		if($pubpriv == "Private"){
 			echo "<tr>
-				<td width=20% class=back2 align=right>* $lang_username:</td>
-				<td class=back width=20%>$cookie_user_name
+				<td width=100 class=back2 align=right>* $lang_username:</td>
+				<td width=190 class=back align=left> $cookie_user_name
 					<input type=hidden name=username value=\"$cookie_user_name\">
 				</td>";
 		}
 		else{
 			echo "<tr>
-				<td width=20% class=back2 align=right>* $lang_username:</td>
-				<td class=back width=20%>
+				<td width=100 class=back2 align=right>* $lang_username:</td>
+				<td width=190 class=back align=left>
 					<input type=text size=16 name=username value=\"$cookie_user_name\">
 				</td>";
 		}
 
 
 			echo "
-				<td class=back2 align=right width=100> $lang_email: </td>
-				<td class=back align=left>
+				<td class=back2 align=right width=20%> $lang_email: </td>
+				<td class=back width=25% align=left>
 					<input type=text name=email value=\"$cookie_email\">
 				</td>
 				</tr>
 				<tr>
-				<td width=20% class=back2 align=right>* $lang_office:</td>
-				<td class=back>
+				<td width=20% class=back2 align=RIGHT>* $lang_office:</td>
+				<td class=back width=25%>
 					<input type=text size=16 name=office value=\"$cookie_office\">
 				</td>
-				<td class=back2 align=right width=100>$lang_phoneext:</td>
-				<td class=back>
+				<td class=back2 align=right> $lang_phoneext:</td>
+				<td class=back width=25%>
 					<input type=text name=phone value=\"$cookie_phone\">
 				</td>";
 

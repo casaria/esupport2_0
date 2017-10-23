@@ -30,7 +30,7 @@
 			***************************************************************************************/
 
 require_once "../common/config.php";
-require_once "../common/$database.class.php";
+require_once "../common/mysql.class.php";
 require_once "../common/common.php";
 
 if($SERVER_PORT == 80 && $enable_ssl == 'On' && (!isset($cookie_name) || $cookie_name == '')){
@@ -54,6 +54,8 @@ function winPop(url)
         
 <?php  
 $language = getLanguage($cookie_name);
+global $hidemenu;
+
 if($language == '')
 	require_once "../lang/$default_language.lang.php";
 else
@@ -85,6 +87,7 @@ $last_active = getLastActiveTime($cookie_name);
 $user_info = getCredentialsArray($cookie_name);
 $enable_CloudControl = getCloudControlUserSetting($_SESSION['cookie_name']);
 
+
 ?>
 <BODY class=body>
 <TABLE class=border cellSpacing=0 cellPadding=0 width="<?php echo $theme['width']; ?>" align=center 
@@ -96,8 +99,8 @@ border=0>
         <TBODY> 
         <TR> 
           <TD class=hf align=right>
-			<?php echo "$lang_loggedinas <b>$cookie_name</b> (<A class=hf href=\"../common/logout.php\">$lang_logout</a>)";
-			 echo "$crm_name"; ?>
+    			<?php echo "$lang_loggedinas <i>$cookie_name</i> (<A class=hf href=\"../common/logout.php\"> $lang_logout</a>)";
+			 echo " $crm_name"; ?>
 		 </TD>
         </TR>
         <TR> 
@@ -224,7 +227,7 @@ border=0>
                                         <LI><A href=\"index.php?t=slist\">".$lang_supporterstats."</A></LI>";
 
                                 if($enable_ratings == 'On'){
-                                     echo '<LI><A href="index.php?t=tsur">$lang_surveystats</A></LI>';
+                                     echo  "<LI><A href=\"index.php?t=tsur\">".$lang_surveystats."</A></LI>";
                                 }
 
                                 echo "<LI><A href=\"index.php?t=gstats\">".$lang_groupstats."</A></LI> ";
@@ -236,11 +239,11 @@ border=0>
                                      echo "</TR>";
 
                           
-
-														echo '
+                        echo '
                             </TD>
                           </TR>
-                         </TBODY> 
+                         </TBOD
+                         Y> 
                         </TABLE>
                       </TD>
                     </TR>
@@ -330,7 +333,7 @@ if (isAdministrator($cookie_name) && $awaiting_approval){
 							break;
                         case("execute"):
                             //fixticketSeptember30(4996, 5051);
-    
+                            fixUgroupsTable();
                             break;
 						case ("memb"):
 							require "member.php";
@@ -344,6 +347,12 @@ if (isAdministrator($cookie_name) && $awaiting_approval){
 						case ("gstats"):
 							require "../admin/gstats.php";
 							break;
+
+
+                        case ("tsuc"):
+                              showSubmitResult(TRUE,$id);
+                            break;
+
 						case ("slist"):
 							require "../admin/slist.php";
 							break;

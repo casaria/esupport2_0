@@ -32,6 +32,7 @@
 require_once "../common/config.php";
 require_once "../common/$database.class.php";
 require_once "../common/common.php";
+require_once "../common/style.php";
 
 	echo '<script language="JavaScript">
 			<!--
@@ -55,17 +56,56 @@ if($m =='delete2'){
 
 }
 
-if($m == 'delete'){
+?>
 
-	echo "<form method=post>";
-	echo createHeader("Confirmation");
-	createHeader("<font color=red size=4>Are you sure?</font>");
-	echo "<input type=hidden name=m value=delete2>";
-	echo "<input type=hidden name=id value=$id>";
-	echo "<br><br><center><input type=submit name=delete2 value=Delete></center>";	
-}
-else{
-	echo '
+
+
+
+
+
+
+
+<div class="container">
+  <h2>Dynamic Tabs</h2>
+  <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#main">MAIN</a></li>
+    <li><a data-toggle="tab" href="#time">TIME</a></li>
+    <li><a data-toggle="tab" href="#material">MATERIAL</a></li>
+    <li><a data-toggle="tab" href="#extra">EXTRA</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="main" class="tab-pane fade in active">
+      <h3>MAIN</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="time" class="tab-pane fade">
+      <h3>TIME</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="material" class="tab-pane fade">
+      <h3>MATERIAL</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="extra" class="tab-pane fade">
+      <h3>EXTRA</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+          <?php
+
+          if($m == 'delete'){
+
+              echo "<form method=post>";
+              echo createHeader("Confirmation");
+              createHeader("<font color=red size=4>Are you sure?</font>");
+              echo "<input type=hidden name=m value=delete2>";
+              echo "<input type=hidden name=id value=$id>";
+              echo "<br><br><center><input type=submit name=delete2 value=Delete></center>";
+          }
+          else{
+              echo '
 		<TABLE class=border cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
 			<TR> 
 			<TD> 
@@ -88,32 +128,46 @@ else{
 			</tr>
 		</table><br>';
 
-		getUserList($o, $offset, "users");
-		echo "<center>";
+              getUserList($o, $offset, "users");
+              echo "<center>";
 
-		$offset = $offset - $users_limit;
+              $offset = $offset - $users_limit;
 
-		if($offset < 0){
-			echo "&nbsp;Previous";
-		}
-		else{
-			echo "&nbsp;<a href=index.php?t=ulist&o=$o&offset=$offset>Previous</a>";
-		}
+              if($offset < 0){
+                  echo "&nbsp;Previous";
+              }
+              else{
+                  echo "&nbsp;<a href=index.php?t=ulist&o=$o&offset=$offset>Previous</a>";
+              }
 
-		echo "&nbsp; | &nbsp;";
-		$offset = $offset + $users_limit +$users_limit;
-	
-
-
-		if($offset < getTotalUsers()){
-			echo "&nbsp;<a href=index.php?t=ulist&o=$o&offset=$offset>Next</a>";
-		}
-		else{
-			echo "&nbsp;Next";
-		}
-		
-}
-		
+              echo "&nbsp; | &nbsp;";
+              $offset = $offset + $users_limit +$users_limit;
 
 
-?>
+
+              if($offset < getTotalUsers()){
+                  echo "&nbsp;<a href=index.php?t=ulist&o=$o&offset=$offset>Next</a>";
+              }
+              else{
+                  echo "&nbsp;Next";
+              }
+
+          }
+
+
+
+          ?>
+
+
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+

@@ -31,17 +31,25 @@
 			**
 			***************************************************************************************/
 
+$version='1.5.0a';
+
 //create the connection to the database.
 
 require_once 'config.php';
+
+
 $pconnect = 0;
+
 $reg = 'no';
 $db = new $database();
 $db->connect($db_host, $db_user, $db_pwd, $db_name, $pconnect);
 
+
 $dbg = NULL;
-
-
+$hidemenu = false;
+//$s = '';
+//$action = '';
+//$groupid = '';
 /**********************************************************************************************************/
 /****************************	Other Variables	***********************************************************/
 //set the variables from the database if not running the install
@@ -94,7 +102,8 @@ $enable_kbase = $var['kbase'];						//enable knowledge base
 //$enable_attachments = $var['attachments'];			//enable attachments +++ not a field in settings
 $default_theme = $var['default_theme'];				//the name of the default theme that is set by the admin
 $default_language = $var['default_language'];			//the default language
-$version = $var['version'];							//version number of the helpdesk software
+
+//$version = $var['version'];							//version number of the helpdesk software
 $pubpriv = $var['pubpriv'];							//public/private setting
 $enable_tattachments = $var['tattachments'];			//enable ticket attachments
 $enable_kattachments = $var['kattachments'];			//enable knowledge base attachments
@@ -127,7 +136,7 @@ class SendPreferences {
   public $ForceAllSupporters = false;
   public $CopyAdminOnUserUpdate = true;
   public $CopyAllOnUserUpdate= false;
-  public $BlockCloseUpdates = false;      
+  public $BlockCloseUpdates = false;
 
 }
 
@@ -142,7 +151,7 @@ $EP = new SendPreferences();
   $EP->ForceAllSupporters = false;
   $EP->CopyAdminOnUserUpdate = true;
   $EP->CopyAllOnUserUpdate= false;
-  $EP->BlockCloseUpdates = false;      
+  $EP->BlockCloseUpdates = false;
 
 
 
@@ -160,45 +169,45 @@ $EP = new SendPreferences();
 ************************************************************************************************************/
 function ProcessAttachment()
 {
-	
+
 	global $mysql_attachments_table, $mysql_tickets_table, $enable_uattachments, $uploaddir, $cookie_name, $time, $id, $db;
-	
+
 			//attachement file handling
   		$userfile = $_FILES['the_file']['name'];
   		$tmpfile = $_FILES['the_file']['tmp_name'];
         $file_type = $_FILES['the_file']['type'];
   		$file_size = $_FILES['the_file']['size'];
   		$file_err = $_FILES['the_file']['error'];
-      
+
   		$uploadfile = $uploaddir . basename($userfile);
 
 		  //insert the file into the database if it exists.
-		  
+
 		  if($enable_uattachments == 'On' && (!empty($userfile)) ){
 		  	if (move_uploaded_file($tmpfile, $uploadfile)) {
     		  $attachment = addslashes(fread(fopen($uploadfile, "rb"), filesize($uploadfile)));
-						
-        		  
+
+
         			if($file_type=="application/x-gzip-compressed"){
         				$attachment = base64_decode($attachment);
         			}
         			$query = "INSERT into $mysql_attachments_table VALUES(NULL, NULL, $id, '$userfile', '$file_type', '$file_size', '$attachment', 0, '$cookie_name', $time)";
         			$db->query($query);	//insert all info about the attachment into the database.
         			$file_id = $db->insert_id();
-        
+
         			$attachsize = $file_size;
         			if($attachsize >= 1073741824) { $attachsize = round($attachsize / 1073741824 * 100) / 100 . "gb"; }
         			elseif($attachsize >= 1048576) { $attachsize = round($attachsize / 1048576 * 100) / 100 . "mb"; }
         			elseif($attachsize >= 1024)     { $attachsize = round($attachsize / 1024 * 100) / 100 . "kb"; }
         			else { $attachsize = $attachsize . "b"; }
-        
+
         			//update the update log
         			$msg = "\$lang_fileattached : ". $userfile . " ( $attachsize ) <br>";
         			$log = updateLog($id, $msg);
         			$sql = "update $mysql_tickets_table set update_log='$log' where id=$id";
         			$db->query($sql);
 				} // file move
-		  }  
+		  }
 }
 
 /***********************************************************************************************************
@@ -294,7 +303,7 @@ function userExists($name)
 /***********************************************************************************************************
 **	function isCookieSet($cookie_name, $enc_pwd):
 **	Returns boolean true or false if the presence of the cookie is detected.
-**	
+**
 **  Modified to work without register_globals post php4.2.3
 References checkUser();
 ************************************************************************************************************/
@@ -315,7 +324,7 @@ function isCookieSet($cookie_name, $enc_pwd)
 
 /***********************************************************************************************************
 **	function startSession():
-**		Takes two  arguments.  
+**		Takes two  arguments.
 ************************************************************************************************************/
 
 function startSession() {
@@ -323,7 +332,11 @@ function startSession() {
     session_set_cookie_params($session_time);
     session_name($session_name);
     session_start();
-
+    if (!isset($_SESSION['count'])) {
+        $_SESSION['count'] = 0;
+    } else {
+        $_SESSION['count']++;
+    }
 
 }
 
@@ -332,7 +345,7 @@ function RewindSession() {
     //Reset the expiration time upon page load
    if (isset($_COOKIE[$session_name]))
       setcookie($session_name, $_COOKIE[$session_name], time() + $session_time, "/");
-  
+
 }
 /***********************************************************************************************************
 **	function checkUser():
@@ -363,7 +376,7 @@ function checkUser($name, $pwd)
 	if(!checkPwd($pwd, $row['password'])){
 		return false;
 	}
-	
+
 	if($row[user] == 0 && $name != ''){
 		require_once "../common/style.php";
 		printerror("Your account is not active.");
@@ -372,7 +385,7 @@ function checkUser($name, $pwd)
 
 	//if user the password for the given user is correct, return true
 	return true;
-				
+
 }
 
 
@@ -449,7 +462,7 @@ function getUserInfo($id)
 /***********************************************************************************************************
 **	function listMembers():
 **		Takes a user id and a category as an input.  The category determines whether the data is queried
-**	from all users or from only supporters.  It simply lists the members of the particular group along 
+**	from all users or from only supporters.  It simply lists the members of the particular group along
 **	with a link to delete that particular user.
 ************************************************************************************************************/
 function listMembers($id, $cat)
@@ -473,9 +486,9 @@ function listMembers($id, $cat)
 		if($cat == 'users')
 			echo "<a href=control.php?t=users&act=uopt&table=$group_table&rm=delete&gid=$row[0]&g=$id>$lang_delete</a>?</LI>";
 		if($cat == 'supporters')
-			echo "<a href=control.php?t=users&act=sopt&table=$group_table&rm=delete&gid=$row[0]&g=$id>$lang_delete</a>?</LI>"; 
+			echo "<a href=control.php?t=users&act=sopt&table=$group_table&rm=delete&gid=$row[0]&g=$id>$lang_delete</a>?</LI>";
 	}
-	
+
 	echo "</td></tr>";
 
 }
@@ -501,7 +514,7 @@ function getAnnouncements($flag)
 	if($flag == 'user' || $flag == 'supporter'){
 		while($row = $db->fetch_row($result)){
 			echo "\n<td class=date><b>".date("F d, Y",$row[1])."</b>";
-			
+
 			if($i == $announcements_limit-1){
 				echo "<a name=place></a>";
 			}
@@ -520,7 +533,7 @@ function getAnnouncements($flag)
 			}
 			echo "&nbsp;&nbsp;&nbsp;&nbsp; ";
 			echo "<a href=\"index.php?t=delete&id=$row[0]\">$lang_delete</a>";
-			
+
 			echo ", <a href=\"index.php?m=update&id=$row[0]\">";
 			echo " $lang_edit</a>?";
 
@@ -580,7 +593,7 @@ function getUserList($order, $offset, $group)
 
 		}
 	}
-	
+
 	//grab the information for all users.
 	if($group == "users"){
 		switch($order){
@@ -644,7 +657,7 @@ function getUserList($order, $offset, $group)
 											echo "u";
 											break;
 									}
-									
+
 										echo 'list&m=delete&id='.$id.'>'.$lang_delete.'</a>, or
 										<a class=info href=index.php?t=tstats&id='.$id.'>'.$lang_stats.'</a>?</td>
 						</tr>		
@@ -654,7 +667,7 @@ function getUserList($order, $offset, $group)
 						</tr>
 						<tr>
 							<td width=20% class=back2 align=right>'.$lang_realname.':</td><td class=back>'. $first .' '. $last .'</td>
-						</tr>
+				=		</tr>
 						<tr>
 							<td width=20% class=back2 align=right>'.$lang_email.'</td><td class=back><a href=mailto:'. $email .'>'.$email.'</td>
 						</tr>
@@ -868,7 +881,7 @@ function getsGroup($id)
 **	function getGroupList():
 **		Takes two arguments.  Queries the supporter group tables and gets a list of all sgroups in an array.
 **	If the flag is not set, prints out the members of each group if the name given is in that particular
-**	group.  If the flag is set, group members are not listed.  In both cases, the array of sgroups is 
+**	group.  If the flag is set, group members are not listed.  In both cases, the array of sgroups is
 **	returned.
 ************************************************************************************************************/
 function getGroupList($name, $flag=1)
@@ -881,7 +894,7 @@ function getGroupList($name, $flag=1)
 	while ($row = $db->fetch_row($result)){
 		$group[$i] = "sgroup" . $row[0];
 		$i++;
-		
+
 	}
 	//now list contains a list of all the groups....now we have to cycle through that list
 	//and determine whether the logged in user is in each group.
@@ -913,7 +926,7 @@ function getUGroupList()
 	while ($row = $db->fetch_row($result)){
 		$group[$i] = "ugroup" . $row[0];
 		$i++;
-		
+
 	}
 	//now list contains a list of all the groups
 
@@ -1035,7 +1048,7 @@ function printSuccess($msg)
 
 /***********************************************************************************************************
 **	function getRank():
-**		Takes a two strings as input.  Second string is the table to query.  First string is the text to 
+**		Takes a two strings as input.  Second string is the table to query.  First string is the text to
 **	query the table for.  Returns the rank value of the given text.
 ************************************************************************************************************/
 function getRank($string, $table)
@@ -1069,11 +1082,11 @@ function getRPriority($rank)
 	global $mysql_tpriorities_table, $db;
 
 	$sql = "select priority from $mysql_tpriorities_table where id=$rank";
-		
+
 	$result = $db->query($sql);
 	$row = $db->fetch_row($result);
 	return $row[0];
-	
+
 }
 
 /***********************************************************************************************************
@@ -1108,7 +1121,7 @@ function getHighestRank($table)
     }else{
 		$sql = "select id from $table order by rank asc";
 	}
-	
+
 	$result = $db->query($sql);
 	$row = $db->fetch_row($result);
 	return $row[0];
@@ -1132,11 +1145,11 @@ function getLowestRank($table)
 	else{
 		$sql = "select id, default_create from $table order by rank desc";
 	}
-	
+
 	$result = $db->query($sql);
-	
+
 	while($row = $db->fetch_array($result)){
-	     
+
 	     if ($row["default_create"]) return $row[0];
 	}
 }
@@ -1156,12 +1169,12 @@ function getHoldRank($table)
 	else{
 		$sql = "select id, default_create from $table order by rank desc";
 	}
-	
+
 	$result = $db->query($sql);
-	
+
 	$row = $db->fetch_array($result);
         return $row[0];
-	
+
 }
 
 /**********************************************************************************************************
@@ -1352,7 +1365,7 @@ function createUserGroupMenu($flag=0)
 **	the flag is set to 0, or not set, the value of each group is set for the ticket creation.  If the flag
 **	is set to 1, the value of each group is set for ticket updating.
 ************************************************************************************************************/
-function createGroupMenu($flag=0)
+function createGroupMenu($flagUpdate=0)
 {
 	global $mysql_sgroups_table, $sg, $info, $id, $db;
 
@@ -1362,7 +1375,9 @@ function createGroupMenu($flag=0)
 	$result = $db->query($sql);
 	$num_rows = $db->num_rows($result);
 
-	if ($flag == 0 || !isset($flag)) {
+	if ($flagUpdate== 0 || !isset($flagUpdate)) {
+
+        echo "<option value=\"\"</option>";          //ad a blank
 		while ($row = $db->fetch_array($result)) {
 			if ($num_rows == 1 || $row[id] != 1) {
 				echo "<option value=\"index.php?t=tcre&sg=$row[id]\"";
@@ -1374,20 +1389,20 @@ function createGroupMenu($flag=0)
 		}
 	}
 //flag is 1 is being called from tupdate.php
-	if ($flag == 1) {
+	if ($flagUpdate == 1) {
 		while ($row = $db->fetch_array($result)) {
-			if ($num_rows == 1 || $row[id] != 1) {
+			if ($num_rows == 1 || $row['id'] != 1) {
 				echo "<option value=\"index.php?t=tupd&sg=$row[id]&id=$id&groupid=change\"";
-				if ($sg == $row[id] || $info['groupid'] == $row[id]) {
+				if ($sg == $row['id'] || $info['groupid'] == $row['id']) {
 					echo " selected";
 				}
-				echo ">" . $row[group_name] . "</option>";
+				echo ">" . $row['group_name'] . "</option>";
 			}
 		}
 	}
 
 //flag is 2 if being called from tsearch.php
-	if ($flag == 2) {
+	if ($flagUpdate == 2) {
 
 		echo "<option></option>";
 		while ($row = $db->fetch_row($result)) {
@@ -1411,7 +1426,9 @@ function createGroupMenu($flag=0)
 ************************************************************************************************************/
 function createPriorityMenu($flag=0, $all=true)
 {
+
 	global $mysql_tpriorities_table, $info, $db;
+	$i=0;
 	if ($all) {
 		$sql = "select priority from $mysql_tpriorities_table order by rank desc";
 	}
@@ -1485,14 +1502,14 @@ function createStatusMenu($flag = 0, $new = 0)
 	}
 	while($row = $db->fetch_array($result)){
 		echo "<option value=\"$row[status]\" ";
-			if ($new){ 
+			if ($new){
 			  if($row['default_create']) echo "selected";
 			}
 			else{
 			  if($info['status'] == $row['status']) echo "selected";
 			}
 			echo "> $row[status] </option><br>";
-			
+
 	}
 
 }
@@ -1536,11 +1553,11 @@ function createThemeMenu($flag = 0)
 **		Takes no arguments.  Creates the drop down menu for the language list.
 ************************************************************************************************************/
 function createLanguageMenu($flag=0)
-{	
+{
 	//scan the lang directory and create the menu based on the language files present
 
 	global $language, $default_language;
-	
+
 	if($flag == 0)
 		$path = "../lang";
 	elseif ($flag == 1)
@@ -1553,7 +1570,7 @@ function createLanguageMenu($flag=0)
 
 	echo "<select name=\"langfile\">\n";
 
-	$dir = opendir("$path");	
+	$dir = opendir("$path");
 	while ($thafile = readdir($dir)) {
 		if (is_file("$path/$thafile")) {
 			$thafile = str_replace(".lang.php", "", $thafile);
@@ -1604,7 +1621,7 @@ function createTimeOffsetMenu($selected)
 function displayTicket($result)
 {
 	global $cookie_name, $mysql_ugroups_table, $lang_summary, $lang_recordcount, $supporter_site_url,
-           $highest_pri, $theme, $db, $admin_site_url, $mysql_BillingStatus_table;
+           $highest_pri, $theme, $db, $admin_site_url, $mysql_BillingStatus_table, $mysql_tickets_table;
     $second = getSecondPriority();
     $sql3 = "select * from $mysql_ugroups_table ";
     $sqlBS = "select * from $mysql_BillingStatus_table";
@@ -1645,21 +1662,21 @@ function displayTicket($result)
 
         switch ($row['priority']) {
             case ("$highest_pri"):
-                echo "<font color=red><b>" . $row[priority] . "</b></font>";
+                echo "<font color=red><b>" . $row['priority'] . "</b></font>";
                 break;
             case ($second):
-                echo "<b>" . $row[priority] . "</b>";
+                echo "<b>" . $row['priority'] . "</b>";
                 break;
             default:
-                echo $row[priority];
+                echo $row['priority'];
                 break;
         }
 
         echo "</td>
-				<td class=back2> " . date("m/d/y", $row[create_date]) . "</td>";
-        echo "<td class=back> " . date("m/d/y", $row[lastupdate]) . "</td>";
+				<td class=back2> " . date("m/d/y", $row['create_date']) . "</td>";
+        echo "<td class=back> " . date("m/d/y", $row['lastupdate']) . "</td>";
 
-        echo "<td class=back> " . $row[category] . "</td>";
+        echo "<td class=back> " . $row['category'] . "</td>";
 
 
         //cookie_name='.$cookie_name.'
@@ -1670,14 +1687,14 @@ function displayTicket($result)
                 $bsIconRef = $row2['icon_ref'];
             }
         }
-        echo '<a href="updatelog.php?&id=' . $row[id] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',
+        echo '<a href="updatelog.php?&id=' . $row["id"] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',
 					\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">';
 
-        echo $row[status];
+        echo $row['status'];
         echo "</a></td>";
-        echo "<td class=back align=center><img height=28 src=\"../$theme[image_dir]$bsIconRef\"></td>";
+        echo "<td class=back align=center><img height=28 src=\"../$theme[image_dir]\"></td>";
 
-        $response = setResponse($last_update, $row[priority], $row[id]);
+        $response = setResponse($last_update, $row['priority'], $row['id']);
 
         switch ($response) {
             case('1'):
@@ -1696,6 +1713,27 @@ function displayTicket($result)
                 echo "<td class=back align=center><img height=20 src=\"../$theme[image_dir]hourglass1.gif\"></td>";
                 break;
         }
+        // Calculates total time spent on the ticket in minutes
+        /*$sql3 = "SELECT sum(minutes) FROM tickets,time_track WHERE (tickets.id=time_track.ticket_id AND tickets.id=" . $row[id] . ")";
+
+        $result3 = $db->query($sql3);
+        $row3 = $db->fetch_array($result3);
+
+        if ($row3[0]) {
+            $minutes = $row3[0];
+        } else {
+            $minutes = "0";
+        } */
+        echo '<td class=back2 align=right>';
+        $minutes = $row['minutes_labor'];
+        /*
+        $sql4= "UPDATE $my      sql_tickets_table SET `minutes_labor`=$minutes where `id`=$row[id]";
+        $db->query($sql4);
+        */
+            showFormattedTime($minutes * 60, 0  , 1);
+
+        echo '</td>';
+
 
         echo "</tr>";
         $recordcount++;
@@ -1806,10 +1844,12 @@ function displayTicket($result)
 	echo "<input type=\"hidden\" name=\"tids\" value=\"".$csv_string."\">"	;
     echo '<input type="hidden" value="$lang_printstats" name="hidemenu">';
     ?>
-	<a href="#" onClick="document.formTimeTrack.submit();"> <?php echo "Time Track"; ?>!</a>
-
-	</form>
+	<a href="#" onClick="document.formTimeTrack.submit();"> <?php echo "Time Track"; ?></a>
+    </form>
 	<?php
+    unset($result,$result3);
+
+
 /*    echo "<form method=post>";
     startTable("$lang_timetracking", "center");
     echo "<tr><td class=back><br>";
@@ -1837,38 +1877,44 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 {
 	global $info, $enable_smtp, $cookie_name, $theme, $db, $lang_equipment, $lang_ticketinfo, $lang_platform, $lang_shortdesc, $lang_category, $lang_desc, $lang_email, $lang_user, $lang_update, $lang_attachment, $enable_tattachments;
 
-		echo '	<table class=border cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+    		echo '	<table class=border cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
 				<tr> 
 				<td> 
-					<table cellSpacing=1 cellPadding=5 width="100%" border=0>
+					<table cellSpacing=1 cellPadding=5  width="100%" border=0>
 						<tr> 
-							<td class=info align=left colspan=4 align=center><b>'.$lang_ticketinfo.'</b></td>
+							<td class=info width="180px" align=left colspan=2><b>'.$lang_ticketinfo.'</b></td>
 						</tr>		
-						<tr>
-							<td class=back2 width=20% align=right>* '.$lang_platform.':</td>
-							<td width=20% class=back><select name=platform>'; createPlatformMenu(0);
-							echo '	</select></td><td class=back2 width=20% align=right>* '.$lang_category.':</td>
-							<td class=back><select name=category>';  createCategoryMenu(0);
-							echo '	</select></td>
+						<tr>';
+
+                          echo '	</td><td class=back2 width="180px" align=right>* '.$lang_category.':</td>
+							<td class=back><select id="selectwidth" name=category>';  createCategoryMenu(0);
+                          echo '	</select></td>';
+
+						echo '</tr><tr>
+                             	<td class=back2 width="180px" align=right>* '.$lang_platform.':</td>
+							<td class=back><select id="selectwidth" name=platform>'; createPlatformMenu(0, "");
+
+						echo '
+                               </select>
 						</tr>
 						<tr>
-							<td width=20% class=back2 align=right>* '.$lang_equipment.':</td>
-							<td class=back colspan=3><select name=equipment>';  createEquipmentMenu(0,$equipmentgroupid);
+							<td width=="180px" class=back2 align=right>* '.$lang_equipment.':</td>
+							<td class=back><select id="selectwidth" name=equipment>';  createEquipmentMenu(0,$equipmentgroupid);
 							echo '	</select></td>
-						
+						    
 						</tr>
 						<tr>
-							<td width=20% class=back2 align=right>* '.$lang_shortdesc.':</td>
-							<td class=back colspan=3>
+							<td width="180px" class=back2 align=right>* '.$lang_shortdesc.':</td>
+							<td class=back>
 						
-							<input type=text size=60 name=short value="'.stripslashes($info['short']).'">
+							<input type=text size="55" name=short value="'.stripslashes($info['short']).'">
 							</td>
 						
 						</tr>
 						<tr>
 
-							<td class=back2 align=right valign=top width=100>* '.$lang_desc.': </td>
-							<td class=back colspan=3><textarea name=description rows=5 cols=60>'.stripslashes($info['description']).'</textarea></td>
+							<td class=back2 align=right width="180px">* '.$lang_desc.': </td>
+							<td class=back><textarea name=description rows=5; cols="55">'.stripslashes($info['description']).'</textarea></td>
 
 
 						</tr>';
@@ -1878,15 +1924,15 @@ if(isset($info)){
 		echo '
 
 			<tr>
-				<td class=back2 align=right valign=top width=20%> '.$lang_email.' '. $lang_user.': </td>
-				<td class=back colspan=3 valign=bottom> <textarea name=email_msg rows=5 cols=60></textarea> </td>
+				<td class=back2 align=right width="180px"> '.$lang_email.' '. $lang_user.': </td>
+				<td class=back> <textarea name=email_msg rows=5 cols="55"></textarea> </td>
 			</tr>';
 	}
 	echo '
 		<tr>
 
-			<td class=back2 align=right valign=top width=20%> '.$lang_update.': </td>
-			<td class=back colspan=3 valign=bottom> <textarea name=update_log rows=5 cols=60></textarea>
+			<td class=back2 align=right valign=top width="180px"> '.$lang_update.': </td>
+			<td class=back valign=bottom> <textarea name=update_log rows=5 cols="55"></textarea>
 
 				<a href="updatelog.php?cookie_name='.$cookie_name.'&id='.$info['id'].'" target="myWindow" onClick="window.open(\'\', \'myWindow\',
 					\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">
@@ -1897,11 +1943,11 @@ if(isset($info)){
 }
 		if($enable_tattachments == 'On' && $flag == 'allow'){
 			echo '<tr>
-				<td class=back2 align=right valign=top width=20%>'.$lang_attachment.': </td>';
+				<td class=back2 align=right valign=top width="180px">'.$lang_attachment.': </td>';
 
-			echo "<td class=back colspan=3 valign=bottom>";
+			echo "<td class=back colspan=2 valign=bottom>";
 			//echo "<input type=hidden name=\"MAX_FILE_SIZE\" value=\"1000000\">";
-			echo "<input type=\"file\" name=\"the_file\" size=60>";
+			echo "<input type=\"file\" name=\"the_file\" size=\"55\">";
 
 			echo '</td></tr>';
 		}
@@ -1919,27 +1965,26 @@ echo '
 <?php
 /***********************************************************************************************************
 **	function createUGroupsMenu():
-**		Takes no arguments.  Creates the drop down menu 
+**		Takes no arguments.  Creates the drop down menu
 ************************************************************************************************************/
-function createUGroupsMenu($flag)
+function createUGroupsMenu()
 {
 	global $mysql_ugroups_table, $sg, $ug, $db;
 
 	$sql = "select id, group_name from $mysql_ugroups_table order by rank asc";
 	$result = $db->query($sql);
 	$num_rows = 0;
-	
-	if($flag == 1)
-		echo "<option></option>\n";
+
+
 
 		while($row = $db->fetch_array($result)){
-			if($num_rows == 1 || $row[id] != 0){
+			if($num_rows == 1 || $row['id'] != 0){
 				echo "<option value=\"index.php?t=tcre&sg=$sg&ug=$row[id]\"";
-					if($ug == $row[id]) echo " selected";
-				echo ">".$row[group_name]."</option>";
+					if($ug == $row['id']) echo " selected";
+				echo ">".$row['group_name']."</option>";
 				//set $ug to the 1st item as default
-				If (! isset($ug)) $ug=$row[id];
-				
+				If (! isset($ug)) $ug=$row['id'];
+
 			}
 		}
 	return $ug;
@@ -2005,22 +2050,22 @@ function createDateMenu($flag = 1)
 
 /***********************************************************************************************************
 **	function createEquipmentMenu():
-**		Argument : $equipmentgroupid, if 0 all equipment will be listed. 
+**		Argument : $equipmentgroupid, if 0 all equipment will be listed.
 **      Creates the drop down menu for the list of Equipment by current facility.
 ************************************************************************************************************/
 function createEquipmentMenu($flag, $equipmentgroupid=0)
 {
 	global $mysql_tequipment_table, $info, $db;
-        
+
 	$sql = "select short from $mysql_tequipment_table where";
-	if ($equipmentgroupid==0 ) 
+	if ($equipmentgroupid==0 )
 	   $sql .=" groupid >= 1";
 	else
 	   $sql .=" groupid = $equipmentgroupid";
 	// groupid - is equipment for all groups
 	$sql .=" or groupid=0 order by rank asc";
 	$result = $db->query($sql);
-	
+
 	if($flag == 1)
 		echo "<option></option>\n";
 
@@ -2042,7 +2087,7 @@ function createCategoryMenu($flag)
 
 	$sql = "select category from $mysql_tcategories_table order by rank asc";
 	$result = $db->query($sql);
-	
+
 	if($flag == 1)
 		echo "<option></option>\n";
 
@@ -2064,7 +2109,7 @@ function createKCategoryMenu($flag=0, $category)
 
 	$sql = "select category from $mysql_kcategories_table order by category asc";
 	$result = $db->query($sql);
-	
+
 	if($flag == 1)
 		echo "<OPTION></OPTION>\n";
 
@@ -2091,7 +2136,7 @@ function createKCategoryMenu($flag=0, $category)
 **	function createPlatformMenu():
 **		Takes no arguments.  Creates the drop down menu for the list of platforms.
 ************************************************************************************************************/
-function createPlatformMenu($flag=0, $platform)
+function createPlatformMenu($flag=0, $Selectplatform)
 {
 	global $mysql_platforms_table, $info, $db;
 
@@ -2100,8 +2145,8 @@ function createPlatformMenu($flag=0, $platform)
 
 	if($flag == 1)
 		echo "<option></option>\n";
-	
-	if($platform == ''){
+
+	if($Selectplatform == ''){
 		while($row = $db->fetch_row($result)){
 			echo "<option value=\"$row[0]\" ";
 				if($info['platform'] == $row[0]) echo "selected";
@@ -2112,7 +2157,7 @@ function createPlatformMenu($flag=0, $platform)
 		//echo "We're here!";
 		while($row = $db->fetch_row($result)){
 			echo "<option value=\"$row[0]\" ";
-				if($row[0] == $platform) echo "selected";
+				if($row[0] == $Selectplatform) echo "selected";
 				echo "> $row[0] </option>\n";
 		}
 	}
@@ -2140,7 +2185,7 @@ function updateLog($ticket_id, $msg)
 	global $mysql_tickets_table, $cookie_name, $delimiter, $helpdesk_name, $db, $lang_transferred, $lang_statuschange, $lang_prioritychange, $lang_by, $lang_createdbyweb;
 	$time_offset = getTimeOffset($cookie_name);
 	$time = time() + ($time_offset * 3600);
-	
+
 
 	//grab the current update log from the tickets table.
 	$log = getCurrentLog($ticket_id);
@@ -2182,8 +2227,8 @@ function getCurrentLog($id)
 
 /***********************************************************************************************************
 **	function deleteFromGroups():
-**		Takes one argument.  Cycles through the list of supporter groups that the use is a member of and 
-**	deletes that user from the group.  This is called when a user is deleted so that user is not left in 
+**		Takes one argument.  Cycles through the list of supporter groups that the use is a member of and
+**	deletes that user from the group.  This is called when a user is deleted so that user is not left in
 **	each group.
 ************************************************************************************************************/
 function deleteFromGroups($id)
@@ -2224,8 +2269,8 @@ function deleteFromGroups($id)
 
 /***********************************************************************************************************
 **	function getTotalNumOpenTickets():
-**		Takes one argument.  If the id is not set, this returns the total number of open tickets in the 
-**	database.  If the id is set, it returns the total number of tickets that are open and assigned to the 
+**		Takes one argument.  If the id is not set, this returns the total number of open tickets in the
+**	database.  If the id is set, it returns the total number of tickets that are open and assigned to the
 **	user with the given id.
 ************************************************************************************************************/
 function getTotalNumOpenTickets($id)
@@ -2248,8 +2293,8 @@ function getTotalNumOpenTickets($id)
 
 /***********************************************************************************************************
 **	function getTotalNumClosedTickets():
-**		Takes one argument.  If the id is not set, this returns the total number of closed tickets in the 
-**	database.  If the id is set, it returns the total number of tickets that are closed and assigned to the 
+**		Takes one argument.  If the id is not set, this returns the total number of closed tickets in the
+**	database.  If the id is set, it returns the total number of tickets that are closed and assigned to the
 **	user with the given id.
 ************************************************************************************************************/
 function getTotalNumClosedTickets($id)
@@ -2273,8 +2318,8 @@ function getTotalNumClosedTickets($id)
 
 /***********************************************************************************************************
 **	function getTotalNumTickets():
-**		Takes one argument.  If the id is not set, this returns the total number of tickets in the 
-**	database.  If the id is set, it returns the total number of tickets that are assigned to the 
+**		Takes one argument.  If the id is not set, this returns the total number of tickets in the
+**	database.  If the id is set, it returns the total number of tickets that are assigned to the
 **	user with the given id.
 ************************************************************************************************************/
 function getTotalNumTickets($id)
@@ -2302,7 +2347,7 @@ function getTotalNumTickets($id)
 ************************************************************************************************************/
 function validEmail($address)
 {
-	if (ereg('^[-!#$%&\'*+\\./0-9=?A-Z^_`a-z{|}~]+'. '@'. '[-!#$%&\'*+\\/0-9=?A-Z^_`a-z{|}~]+\.' . '[-!#$%&\'*+\\./0-9=?A-Z^_`a-z{|}~]+$', $address)) 
+	if (ereg('^[-!#$%&\'*+\\./0-9=?A-Z^_`a-z{|}~]+'. '@'. '[-!#$%&\'*+\\/0-9=?A-Z^_`a-z{|}~]+\.' . '[-!#$%&\'*+\\./0-9=?A-Z^_`a-z{|}~]+$', $address))
 		return true;
 	else
 		return false;
@@ -2328,7 +2373,7 @@ function startTable($msg, $align, $width=100, $colspan=1, $class='info')
 					<TD class='.$class.' colspan='.$colspan.' align='.$align.'><B>';
 						echo $msg;
 						echo '</B></td>
-						</TR>	';	
+						</TR>	';
 }
 
 
@@ -2360,13 +2405,13 @@ function endTable()
 function sendmail($to, $from, $return, $id, $msg, $subject="")
 {
 	global $admin_email, $sendmail_path;
-  
+
 	$msg = stripslashes($msg);
 	$mailprog = $sendmail_path . "sendmail -r '$admin_email' -t";
 
   $fd = popen($mailprog,"w");
-	
-	fputs($fd, "To: $to\n"); 
+
+	fputs($fd, "To: $to\n");
 	if($subject == ''){
 		fputs($fd, "Subject: Ticket $id\n");
 	}
@@ -2377,7 +2422,7 @@ function sendmail($to, $from, $return, $id, $msg, $subject="")
 	fputs($fd, "Reply-To: $return\n");
 	fputs($fd, "Return-Path: $return\n");
 	fputs($fd, "$msg\n");
-  pclose($fd);
+      pclose($fd);
 
 }
 
@@ -2390,9 +2435,9 @@ function QueueMail($to, $from, $return, $id, $msg, $subject="")
 	$QueueFile = $MailQueuePath."MAILQ".(string)$sec.(string)$usec.".TXT";
 
 	$fd = fopen($QueueFile, "w");
-	
-	 
-	fputs($fd, "To: $to\n"); 
+
+
+	fputs($fd, "To: $to\n");
 	if($subject == ''){
 		fputs($fd, "Subject: Ticket $id\n");
 	}
@@ -2425,212 +2470,231 @@ function getEmailAddress($name)
 
 
 //this function takes an integer value (the number of seconds) and prints out the days, hours, minutes, and seconds.
-function showFormattedTime($seconds, $daysEnabled = FALSE)
+function showFormattedTime($seconds, $daysEnabled = FALSE, $DontRound15min = FALSE, $ShowSeconds = FALSE)
 {
-	global $lang_na, $lang_day, $lang_days, $lang_hour, $lang_hours, $lang_minute, $lang_minutes, $lang_second, $lang_seconds;
-
-	if($seconds <= 0){
-		echo "<b>$lang_na</b>";
-	}
-	else{
-		if ($daysEnabled) {
+    global $lang_na, $lang_day, $lang_days, $lang_hour, $lang_hours, $lang_minute, $lang_minutes, $lang_second, $lang_seconds;
+    $days = 0;
+    $hours = 0;
+    $minutes = 0;
+    if ($seconds <= 0) {
+        echo "<b>$lang_na</b>";
+    } else {
+        if ($daysEnabled) {
             $days = (int)($seconds / (24 * 60 * 60));
             $remainder = $seconds % (24 * 60 * 60);
         } else {
-		    $remainder = $seconds;
+            $remainder = $seconds;
         }
-		$hours = (int) ($remainder / (60*60));
-		$remainder = $remainder % (60*60);
+        $hours = (int)($remainder / (60 * 60));
+        $remainder = $remainder % (60 * 60);
 
-		$minutes = (int) ($remainder / 60);
-		$seconds = $remainder % 60;
+        $minutes = (int)($remainder / 60);
+        $seconds = $remainder % 60;
 
-		if($days != 0){
-			echo "$days";
-			if($days > 1)
-				echo " $lang_days";
-			else
-				echo " $lang_day";
-			if($hours !=0) echo ", ";
-		}
 
-		if($hours !=0){
-			echo "$hours";
-			if($hours > 1)
-				echo " $lang_hours";
-			else
-				echo " $lang_hour";
-			if($minutes !=0) echo ", ";
-		}
+        //comment all of these lines if you don't want to keep track of seconds as well.
+        //if($flag == 0)
+        //	echo ", ";
+    }
 
-		if($minutes !=0){
-			echo "$minutes";
-			if($minutes > 1)
-				echo " $lang_minutes";
-			else
-				echo " $lang_minute";
+    if (!$DontRound15min) {
+        if ($seconds > 0) {
+            $minutes += $seconds / 60;    //convert seconds to decimal minutes
+        }
+        $minutes = ceil($minutes / 15) * 15; // round up to the next 15 min
+        if ($minutes != 0) {
+            if ($minutes >= 60) {
+                $hours ++;
+                $minutes -= 60;
 
-			if($seconds !=0) echo ", ";
-			//comment all of these lines if you don't want to keep track of seconds as well.
-			//if($flag == 0)
-			//	echo ", ";
-				
-		}
-		
-		if($seconds != 0){
-			echo "$seconds";
-			if($seconds > 1)
-				echo " $lang_seconds";
-			else
-				echo " $lang_second";
-		}
-			
-	}
+            }
+
+        }
+
+    }
+
+    if ($days != 0) {
+        echo $days;
+        if ($days > 1)
+            echo " $lang_days";
+        else
+            echo " $lang_day";
+        if ($hours != 0) echo "-";
+    }
+
+    if ($hours != 0) {
+        echo $hours;
+        if ($hours > 1)
+            echo " $lang_hours";
+        else
+            echo " $lang_hour";
+
+    }
+
+    if ($minutes > 0){
+        echo ":";
+        echo $minutes;
+        if ($minutes > 1)
+            echo " $lang_minutes";
+        else
+            echo " $lang_minute";
+    }
+
+    If ($ShowSeconds) {
+        if ($seconds != 0) {
+            echo ":";
+            echo $seconds;
+            if ($seconds > 1)
+                echo " $lang_seconds";
+            else
+                echo " $lang_second";
+        }
+    }
 }
 
-function listPlatforms()
-{
+        function listPlatforms()
+        {
 
-	global $mysql_platforms_table, $db, $HTTP_REFERER, $lang_delete, $lang_rank;
+            global $mysql_platforms_table, $db, $HTTP_REFERER, $lang_delete, $lang_rank;
 
-	$sql = "select * from $mysql_platforms_table order by rank asc";
-	$result = $db->query($sql);
-	$num_rows = $db->num_rows($result);
+            $sql = "select * from $mysql_platforms_table order by rank asc";
+            $result = $db->query($sql);
+            $num_rows = $db->num_rows($result);
 
-	if($num_rows != 0){
-		$i = 0;
-		while($row = $db->fetch_row($result)){
-			echo "<input type=hidden name=id$i value='$row[0]'></input>";
-			echo "<tr><td class=back>";
-			echo "<input type=text name=platform$i value=\"$row[2]\">";
-			echo "&nbsp;&nbsp; $lang_rank: <input type=text size=2 value='$row[1]' name=rank".$i.">";
-			
-			if(!eregi("kbase", $HTTP_REFERER))
-				echo "&nbsp;&nbsp;<a href=control.php?t=topts&act=tpla&rm=delete&id=$row[0]>$lang_delete</a>?";
-			else
-				echo "&nbsp;&nbsp;<a href=control.php?t=kbase&act=plat&rm=delete&id=$row[0]>$lang_delete</a>?";
-			echo "</td>";
-			echo "</tr>";
-			$i++;
-		}
-	}
+            if($num_rows != 0){
+                $i = 0;
+                while($row = $db->fetch_row($result)){
+                    echo "<input type=hidden name=id$i value='$row[0]'></input>";
+                    echo "<tr><td class=back>";
+                    echo "<input type=text name=platform$i value=\"$row[2]\">";
+                    echo "&nbsp;&nbsp; $lang_rank: <input type=text size=2 value='$row[1]' name=rank".$i.">";
 
-	return $num_rows;
+                    if(!eregi("kbase", $HTTP_REFERER))
+                        echo "&nbsp;&nbsp;<a href=control.php?t=topts&act=tpla&rm=delete&id=$row[0]>$lang_delete</a>?";
+                    else
+                        echo "&nbsp;&nbsp;<a href=control.php?t=kbase&act=plat&rm=delete&id=$row[0]>$lang_delete</a>?";
+                    echo "</td>";
+                    echo "</tr>";
+                    $i++;
+                }
+            }
 
-}
+            return $num_rows;
 
-
-function getNumPlatforms()
-{
-	global $mysql_platforms_table, $db;
-
-	$sql = "select count(platform) from $mysql_platforms_table";
-	$result = $db->query($sql);
-	$total = $db->fetch_row($result);
-
-	return $total[0];
-
-}
+        }
 
 
-function listKCategories()
-{
+        function getNumPlatforms()
+        {
+            global $mysql_platforms_table, $db;
 
-	global $mysql_kcategories_table, $db, $lang_delete;
+            $sql = "select count(platform) from $mysql_platforms_table";
+            $result = $db->query($sql);
+            $total = $db->fetch_row($result);
 
-	$sql = "select * from $mysql_kcategories_table order by category asc";
-	$result = $db->query($sql);
-	$num_rows = $db->num_rows($result);
+            return $total[0];
 
-	if($num_rows != 0){
-		$i = 0;
-		while($row = $db->fetch_array($result)){
-			echo "<input type=hidden name=id$i value='".$row['id']."'></input>";
-			echo "<tr><td class=back>";
-			echo "<input type=text name=category$i value=\"".$row['category']."\">";
-			//echo "&nbsp;&nbsp; Rank: <input type=text size=2 value='$row[1]' name=rank".$i.">";
-			echo "&nbsp;&nbsp;<a href=control.php?t=kbase&act=cate&rm=delete&id=".$row['id'].">$lang_delete</a>?";
-			echo "</td>";
-			echo "</tr>";
-			$i++;
-		}
-	}
-
-	return $num_rows;
-
-}
-
-function getNumKCategories()
-{
-	global $mysql_kcategories_table, $db;
-
-	$sql = "select count(category) from $mysql_kcategories_table";
-	$result = $db->query($sql);
-	$total = $db->fetch_row($result);
-
-	return $total[0];
-
-}
-
-function createKBMenu()
-{
-	global $mysql_kcategories_table, $mysql_platforms_table, $lang_searchfor, $lang_incategory, $lang_under;
-
-	echo "<b>$lang_searchfor: </b>";
-	echo "<input type=text name=item> $lang_incategory <select name=category>";
-		createKCategoryMenu(1);
-	echo "</select> $lang_under ";
-	echo "<select name=platform>";
-		createPlatformMenu(1);
-	echo"</select> ";
-
-}
-
-function makeClickable($text)
-{
-    $ret = eregi_replace( "([[:alnum:]]+)://([^[:space:]]*)([[:alnum:]#?/&=])",  "<a href=\"\\1://\\2\\3\" target=\"_blank\" target=\"_new\">\\1://\\2\\3</a>", $text);
-    $ret = eregi_replace( "(([a-z0-9_]|\\-|\\.)+@([^[:space:]]*)([[:alnum:]-]))",  "<a href=\"mailto:\\1\" target=\"_new\">\\1</a>", $ret);
-    return($ret);
-}
-
-function setResponse($last, $prio, $tid)
-{
-	global $mysql_tpriorities_table, $db, $mysql_time_table;
-
-	$sql = "SELECT closed_date from $mysql_time_table where ticket_id=$tid order by id desc;";
-	$result = $db->query($sql);
-	$row = $db->fetch_array($result);
-	$closed_time = $row[closed_date];
-
-	if($closed_time == '' || $closed_time == '0')
-		$curr_time = time();
-	else
-		$curr_time = $closed_time;
-
-	$sql = "SELECT response_time from $mysql_tpriorities_table where priority='$prio'";
-	$result = $db->query($sql);
-	$row = $db->fetch_array($result);
-	$time_allowed = $row['response_time'];
-
-	$time_since_update = $curr_time - $last;		//time since last update in seconds
-
-	if($time_since_update >= $time_allowed)
-		$response = 4;
-	if($time_since_update < ($time_allowed))
-		$response = 3;
-	if($time_since_update <= ($time_allowed * 0.667))
-		$response = 2;
-	if( $time_since_update <= ($time_allowed * 0.333))
-		$response = 1;
+        }
 
 
-	return $response;
-}
+        function listKCategories()
+        {
 
-/***********************************************************************************************************
-**      function createViewableByMenu():
-**              Takes no arguments.  Creates the drop down menu for the list of knowledge base categories.
-************************************************************************************************************/
+            global $mysql_kcategories_table, $db, $lang_delete;
+
+            $sql = "select * from $mysql_kcategories_table order by category asc";
+            $result = $db->query($sql);
+            $num_rows = $db->num_rows($result);
+
+            if($num_rows != 0){
+                $i = 0;
+                while($row = $db->fetch_array($result)){
+                    echo "<input type=hidden name=id$i value='".$row['id']."'></input>";
+                    echo "<tr><td class=back>";
+                    echo "<input type=text name=category$i value=\"".$row['category']."\">";
+                    //echo "&nbsp;&nbsp; Rank: <input type=text size=2 value='$row[1]' name=rank".$i.">";
+                    echo "&nbsp;&nbsp;<a href=control.php?t=kbase&act=cate&rm=delete&id=".$row['id'].">$lang_delete</a>?";
+                    echo "</td>";
+                    echo "</tr>";
+                    $i++;
+                }
+            }
+
+            return $num_rows;
+
+        }
+
+        function getNumKCategories()
+        {
+            global $mysql_kcategories_table, $db;
+
+            $sql = "select count(category) from $mysql_kcategories_table";
+            $result = $db->query($sql);
+            $total = $db->fetch_row($result);
+
+            return $total[0];
+
+        }
+
+        function createKBMenu()
+        {
+            global $mysql_kcategories_table, $mysql_platforms_table, $lang_searchfor, $lang_incategory, $lang_under;
+
+            echo "<b>$lang_searchfor: </b>";
+            echo "<input type=text name=item> $lang_incategory <select name=category>";
+                createKCategoryMenu(1);
+            echo "</select> $lang_under ";
+            echo "<select name=platform>";
+                createPlatformMenu(1);
+            echo"</select> ";
+
+        }
+
+        function makeClickable($text)
+        {
+            $ret = eregi_replace( "([[:alnum:]]+)://([^[:space:]]*)([[:alnum:]#?/&=])",  "<a href=\"\\1://\\2\\3\" target=\"_blank\" target=\"_new\">\\1://\\2\\3</a>", $text);
+            $ret = eregi_replace( "(([a-z0-9_]|\\-|\\.)+@([^[:space:]]*)([[:alnum:]-]))",  "<a href=\"mailto:\\1\" target=\"_new\">\\1</a>", $ret);
+            return($ret);
+        }
+
+        function setResponse($last, $prio, $tid)
+        {
+            global $mysql_tpriorities_table, $db, $mysql_time_table;
+
+            $sql = "SELECT closed_date from $mysql_time_table where ticket_id=$tid order by id desc;";
+            $result = $db->query($sql);
+            $row = $db->fetch_array($result);
+            $closed_time = $row['closed_date'];
+
+            if($closed_time == '' || $closed_time == '0')
+                $curr_time = time();
+            else
+                $curr_time = $closed_time;
+
+            $sql = "SELECT response_time from $mysql_tpriorities_table where priority='$prio'";
+            $result = $db->query($sql);
+            $row = $db->fetch_array($result);
+            $time_allowed = $row['response_time'];
+
+            $time_since_update = $curr_time - $last;		//time since last update in seconds
+
+            if($time_since_update >= $time_allowed)
+                $response = 4;
+            if($time_since_update < ($time_allowed))
+                $response = 3;
+            if($time_since_update <= ($time_allowed * 0.667))
+                $response = 2;
+            if( $time_since_update <= ($time_allowed * 0.333))
+                $response = 1;
+
+
+            return $response;
+        }
+
+        /***********************************************************************************************************
+        **      function createViewableByMenu():
+        **              Takes no arguments.  Creates the drop down menu for the list of knowledge base categories.
+        ************************************************************************************************************/
 function createViewableByMenu($flag=0)
 {
         global $info, $lang_allusers, $lang_onlysupporters;
@@ -2652,7 +2716,7 @@ function createViewableByMenu($flag=0)
                                 echo "selected";
                         }
                 echo "> $lang_onlysupporters </option>";
-        
+
 }
 
 function convertFileSize($attachsize)
@@ -2677,7 +2741,7 @@ function getLanguage($name)
 	$sql = "SELECT language from $mysql_users_table where user_name='$name'";
 	$result = $db->query($sql);
 	$language = $db->fetch_array($result);
-	return $language[language];
+	return $language['language'];
 }
 
 function createSGroupCheckboxes()
@@ -2709,12 +2773,12 @@ function createSGroupCheckboxes()
 					<input class=box type=checkbox";
 				if($num_rows > 0){
 					echo " checked";
-				}					
+				}
 			echo " name=sbox".$i." value=".$row['id'].">&nbsp;&nbsp;&nbsp;".$row['group_name']."</b><br></td>";
 		}
 		$i++;
 	}
-	
+
 	$num_boxes = $i - 1;
 	echo "<input type=hidden name=num_sboxes value=$num_boxes>";
 
@@ -2761,7 +2825,7 @@ function createUGroupCheckboxes()
 		}
 		$i++;
 	}
-	
+
 	$num_boxes = $i - 1;
 	echo "<input type=hidden name=num_uboxes value=$num_boxes>";
 
@@ -2796,10 +2860,10 @@ function getLastActiveTime($name)
 	$result = $db->query($sql);
 	$row = $db->fetch_array($result);
 
-	if($row[lastactive] == '0')
+	if($row['lastactive'] == '0')
 		return "Never";
 	else
-		return $row[lastactive];
+		return $row['lastactive'];
 
 }
 
@@ -2810,6 +2874,17 @@ function stripScripts($text)
 	return $text;
 
 }
+
+
+function showSubmitResult($success, $id){
+global $lang_ticket, $lang_submitted;
+    startTable("$lang_ticket $lang_submitted", "left");
+        echo "<tr><td class=back2><br><br> $lang_ticket <b>#" . str_pad($id, 5, "0", STR_PAD_LEFT) . " </b>$lang_submitted_succ.";
+        echo "<br><br><br></td></tr>";
+    endTable();
+
+}
+
 
 
 function getDefaultSupporterGroupID($groupid=0)
@@ -2824,14 +2899,14 @@ function getDefaultSupporterGroupID($groupid=0)
 	$result = $db->query($sql);
 	$row = $db->fetch_array($result);
 
-	return $row[id];
+	return $row['id'];
 	//return 3;
 }
 
 function sendGroupPage($template_name, $sg, $user_name, $short, $priority, $id, $subject='', $assignedSupporterOnly='', $SendPreferences='')
 {
 	global $user_update, $site_url, $logfile, $mysql_users_table, $lang_equipment, $admin_email, $helpdesk_name, $enable_smtp, $db, $mysql_templates_table, $mysql_tickets_table, $lang_status, $lang_ticket, $lang_from, $lang_created, $lang_ticketcreatedby, $supporter_site_url, $lang_shortdesc, $lang_priority;
-  
+
 	$sql = "SELECT * from $mysql_tickets_table where id=$id";
 	$result = $db->query($sql);
 	$ticket = $db->fetch_array($result);		//setup the ticket array so all variables are available.
@@ -2853,7 +2928,7 @@ function sendGroupPage($template_name, $sg, $user_name, $short, $priority, $id, 
     			$sql = "SELECT pager_email from $mysql_users_table";
     		else
     			$sql = "select pager_email from $mysql_users_table, sgroup" . $sg . " where $mysql_users_table.user_name=sgroup" . $sg . ".user_name";
-    
+
     		$result = $db->query($sql);
     		$list = 0;
     		while($row = $db->fetch_array($result)){
@@ -2877,7 +2952,7 @@ function sendGroupPage($template_name, $sg, $user_name, $short, $priority, $id, 
 		$email_msg='empty';
 		if (empty($subject)) $subject = "TICKET $id $ticket[status]";
 		eval("\$email_msg = \"$template\";");
-    
+
 		if($enable_smtp == 'lin'){
 			//+++ SendMail
 			QueueMail($to_list, $helpdesk_name, $admin_email, $id, $email_msg, $subject);
@@ -2886,19 +2961,19 @@ function sendGroupPage($template_name, $sg, $user_name, $short, $priority, $id, 
 			mail($to_list, "TICKET $id $ticket[status]", $email_msg, "From: ".$helpdesk_name."\n");
 		}
 		//no other options...if enable_smtp is set to anything else, the email will not get sent.
-		
+
 		if (is_writable($logfile)) {
 		    if (!$handle = fopen($logfile, 'a')) {
                         //cannot append
                          exit;
                     }
-                
+
                     // Write to our opened file.
                     if (fwrite($handle, date("l m/d/y H:i:s ") ."$lang_ticket $id / $lang_ticketcreatedby:$user_name / $lang_priority::$priority / $lang_equipment:$ticket[equipment]\nEMAIL/PAGE sent to: $to_list\n") === FALSE) {
                         //echo "Cannot write to file ($filename)";
                         exit;
                     }
-                         
+
                     fclose($handle);
 		}
 
@@ -2911,25 +2986,25 @@ function ProcessExtendedNotifications($cc_template_name, $mms_template_name, $st
 	global $logfile, $mysql_users_table, $lang_equipment, $admin_email, $helpdesk_name, $enable_smtp, $db, $mysql_templates_table, $mysql_tickets_table, $lang_status, $lang_ticket,
 	 $lang_from, $lang_created, $lang_ticketcreatedby, $supporter_site_url, $lang_shortdesc,
 	 $lang_priority, $lang_username, $lang_update, $lang_cc_subject;
-	
-	
+
+
 	$sql = "SELECT * from $mysql_tickets_table where id=$id";
 	$result = $db->query($sql);
 	$ticket = $db->fetch_array($result);		//setup the ticket array so all variables are available.
 	$supporter = getUserInfo($ticket[supporter_id]);
-	
+
 	  	//takes care of status change and email_msg
           	if ($email_yes && $email_msg !='') {
           		// build tolist +++
           		$to_list = "horrack@hotmail.com";
-          
+
           		$sql = "SELECT template from $mysql_templates_table where name='$cc_template_name'";
           		$result = $db->query($sql);
           		$template = $db->fetch_array($result);
           		$template=str_replace("\\'","'",$template[0]);
-          		
+
           		eval("\$email_msg = \"$template\";");
-          
+
           		if($enable_smtp == 'lin'){
           			sendmail($to_list, $helpdesk_name, $admin_email, $id, $email_msg, "$lang_cc_subject #$id $ticket[status]");
           		}
@@ -2937,34 +3012,34 @@ function ProcessExtendedNotifications($cc_template_name, $mms_template_name, $st
           			mail($to_list, "$lang_cc_subject #$id $ticket[status]", $email_msg, "From: ".$helpdesk_name."\n");
           		}
           		//no other options...if enable_smtp is set to anything else, the email will not get sent.
-          	} else 
+          	} else
           		if ($status_change_yes) {
 	   			//use statuschange template
                   		// build tolist +++
                   		// send a partial history
                   		$to_list = "horrack@hotmail.com";
-                  
+
                   		$sql = "SELECT template from $mysql_templates_table where name='$cc_template_name'";
                   		$result = $db->query($sql);
                   		$template = $db->fetch_array($result);
                   		$template=str_replace("\\'","'",$template[0]);
-                  		
+
                   		eval("\$email_msg = \"$template\";");
-                  
+
                   		if($enable_smtp == 'lin'){
                   			sendmail($to_list, $helpdesk_name, $admin_email, $id, $email_msg, "$lang_cc_subject #$id $ticket[status]");
                   		}
                   		if($enable_smtp == 'win'){
                   			mail($to_list, "$lang_cc_subject #$id $ticket[status]", $email_msg, "From: ".$helpdesk_name."\n");
-                  		}	   			
-        	   			
+                  		}
+
 			}
-		
+
 	   	if ($mms_yes) {
 	   		// send to supporter of ticket
 	   		//include details from log
 	   		//use mms_template
-		}		
+		}
 }
 
 
@@ -2976,7 +3051,8 @@ function ProcessExtendedNotifications($cc_template_name, $mms_template_name, $st
 function displayUserTicket($result)
 {
     global $cookie_name, $highest_pri, $theme, $db, $admin_site_url;
-
+    $labor_minutes_total = 0;
+    $minutes = 0;
     $second = getSecondPriority();
 
     $recordcount = 0;
@@ -3027,8 +3103,9 @@ function displayUserTicket($result)
 
 
         // Calculates total time spent on the ticket in minutes
+        /*
         $sql3 = "SELECT sum(minutes) FROM tickets,time_track WHERE (tickets.id=time_track.ticket_id AND tickets.id=" . $row[id] . ")";
-        echo '<td class=back2 align=right>';
+
         $result3 = $db->query($sql3);
         $row3 = $db->fetch_array($result3);
 
@@ -3037,8 +3114,11 @@ function displayUserTicket($result)
         } else {
             $minutes = "0";
         }
-
-        showFormattedTime($minutes * 60, 1);
+        */
+        $minutes = $row[labor_minutes];
+        $labor_minutes_total += $minutes;
+        echo '<td class=back2 align=right>';
+        showFormattedTime($minutes * 60, 1, 1);
         echo '</td>';
 
 
@@ -3047,7 +3127,7 @@ function displayUserTicket($result)
         $csv_string = $csv_string . $row[id] . ",";
 
     }
-
+    unset($result, $result3);
     $summary = array("recordcount" => $recordcount, "remarks" => "list (CSV):", "tktlist" => $csv_string);
     return $summary;
 }
@@ -3117,25 +3197,25 @@ function getUsersGroupIDList($id)
 
 function testPDF() {
 
-        $pdf = PDF_new(); 
-        PDF_open_file($pdf); 
-         PDF_set_info($pdf, "author", "John Coggeshall");  
-    PDF_set_info($pdf, "title", "Zend.com Example");  
-    PDF_set_info($pdf, "creator", "Zend.com");  
-    PDF_set_info($pdf, "subject", "Code Gallery  Spotlight"); 
-    PDF_begin_page($pdf, 450, 450); 
-    $font = PDF_findfont($pdf, "Helvetica-Bold",  "winansi",0);     
-    PDF_setfont($pdf, $font, 12); 
-    PDF_show_xy($pdf, "WORK ORDER No. 10456", 5, 425); 
-    PDF_end_page($pdf); 
+        $pdf = PDF_new();
+        PDF_open_file($pdf);
+         PDF_set_info($pdf, "author", "John Coggeshall");
+    PDF_set_info($pdf, "title", "Zend.com Example");
+    PDF_set_info($pdf, "creator", "Zend.com");
+    PDF_set_info($pdf, "subject", "Code Gallery  Spotlight");
+    PDF_begin_page($pdf, 450, 450);
+    $font = PDF_findfont($pdf, "Helvetica-Bold",  "winansi",0);
+    PDF_setfont($pdf, $font, 12);
+    PDF_show_xy($pdf, "WORK ORDER No. 10456", 5, 425);
+    PDF_end_page($pdf);
     PDF_close($pdf);
-$buffer = PDF_get_buffer($pdf); 
-header("Content-type: application/pdf"); 
-header("Content-Length: ".strlen($buffer)); 
-header("Content-Disposition: inline; filename=zend.pdf"); 
+$buffer = PDF_get_buffer($pdf);
+header("Content-type: application/pdf");
+header("Content-Length: ".strlen($buffer));
+header("Content-Disposition: inline; filename=zend.pdf");
 
-echo $buffer; 
-PDF_delete($pdf); 
+echo $buffer;
+PDF_delete($pdf);
 }
 
 function GetServerTimeOffset($timezone) {
@@ -3147,16 +3227,16 @@ function CreateTimeHistoryArray($id)
 {
 	global $mysql_users_table, $mysql_settings_table, $db, $lang_timespent, $lang_timespent1, $lang_timespent2;
   global $lang_timehistory, $lang_month, $timestamp;
-  
+
 	$arry = array();
 	$i = 0;
-	
+
 	$sql = "select trk.supporter_id, trk.work_date, trk.reference,  trk.minutes from tickets as tkt, time_track as trk where (tkt.id=trk.ticket_id AND tkt.id=$id)";
 	$resultsupporters = $db->query($sql);
 
-  
+
   while($row = $db->fetch_array($resultsupporters)){
-    if ($row[minutes] != 0) {	
+    if ($row[minutes] != 0) {
     	   	if ($row['work_date'])
     		    $arry[$i]["date"] = date("F j, Y", $row[work_date]);
     		  else
@@ -3164,12 +3244,12 @@ function CreateTimeHistoryArray($id)
     		  $sql = "select * from $mysql_users_table where id=$row[supporter_id]";
     		  $result = $db->query($sql);
     		  $sup_row = $db->fetch_array($result);
-    			$arry[$i]["user"]= $sup_row[user_name]; 
-    		  $arry[$i]["time"]= $row[minutes]; 
-    			$arry[$i]["reference"]= "$row[reference]"; 
-    			$arry[$i]["after_hours"]= $row[after_hours]; 
-    			$arry[$i]["engineer_rate"]= $row[engineer_rate]; 
-    			
+    			$arry[$i]["user"]= $sup_row[user_name];
+    		  $arry[$i]["time"]= $row[minutes];
+    			$arry[$i]["reference"]= "$row[reference]";
+    			$arry[$i]["after_hours"]= $row[after_hours];
+    			$arry[$i]["engineer_rate"]= $row[engineer_rate];
+
  	  }
 	  $i++;
 	}
@@ -3192,34 +3272,35 @@ function getCredentialsArray($name)
 function getSupporterList($id, $filter)
 {
 	global $mysql_users_table, $mysql_time_table, $db;
-  switch ($filter) {
+	$ResultArray = array();
+    switch ($filter) {
 
-		case ("straight"):	
+		case ("straight"):
 			$sql = "SELECT supporter_id, $mysql_users_table.user_name, sum(minutes) as sum, tt.after_hours, tt.engineer_rate from $mysql_users_table, $mysql_time_table as tt where tt.engineer_rate = 0 and tt.after_hours = 0 AND $mysql_users_table.id=supporter_id and ticket_id=$id group by supporter_id";
 	  	break;
-		case ("after_hours"):	
+		case ("after_hours"):
 			$sql = "SELECT supporter_id, $mysql_users_table.user_name, sum(minutes) as sum, tt.after_hours, tt.engineer_rate from $mysql_users_table, $mysql_time_table as tt where tt.engineer_rate = 0 and tt.after_hours != 0 AND $mysql_users_table.id=supporter_id and ticket_id=$id group by supporter_id";
 	  	break;
-		case ("engineer_rate"):	
+		case ("engineer_rate"):
 			$sql = "SELECT supporter_id, $mysql_users_table.user_name, sum(minutes) as sum, tt.after_hours, tt.engineer_rate from $mysql_users_table, $mysql_time_table as tt where tt.engineer_rate != 0 AND $mysql_users_table.id=supporter_id and ticket_id=$id group by supporter_id";
-	  	break;	  	
-		case ("all"):	
-		case ("default"):	
+	  	break;
+		case ("all"):
+		case ("default"):
 			$sql = "SELECT supporter_id, $mysql_users_table.user_name, sum(minutes) as sum, tt.after_hours, tt.engineer_rate from $mysql_users_table, $mysql_time_table as tt where $mysql_users_table.id=supporter_id and ticket_id=$id group by supporter_id";
 	  	break;
   }
 	$result = $db->query($sql);
-	
+
 	$i = 0;
 	while($row = $db->fetch_array($result)){
 		//each row contains a different user name and sum.
-		$array[$i]['user_name'] = $row['user_name'];
-		$array[$i]['after_hours'] = $row['after_hours'];
-		$array[$i]['engineer_rate'] = $row['engineer_rate'];
-		$array[$i]['sum'] = $row['sum'];
+		$ResultArray[$i]['user_name'] = $row['user_name'];
+		$ResultArray[$i]['after_hours'] = $row['after_hours'];
+		$ResultArray[$i]['engineer_rate'] = $row['engineer_rate'];
+		$ResultArray[$i]['sum'] = $row['sum'];
 		$i++;
 	}
-	return $array;
+	return $ResultArray;
 }
 
 
@@ -3243,22 +3324,22 @@ function getTicketTimeInfo($id)
 //closed date is closed_date field in time_track table
 
 	global $mysql_users_table, $mysql_time_table;
-  
-   		$sql = "select $mysql_users_table.user_name, sum(minutes) as sum, tt.after_hours, supporter_id, opened_date, closed_date from $mysql_users_table, $mysql_time_table as tt where ticket_id=$id and supporter_id=$mysql_users_table.id group by supporter_id, opened_date, closed_date order by sum asc";
-        $resarray = NULL;
+
+            $sql = "select $mysql_users_table."."user_name, minutes, tt.after_hours, supporter_id, opened_date, closed_date from $mysql_users_table, $mysql_time_table as tt where ticket_id=$id and supporter_id=$mysql_users_table.id group by supporter_id, opened_date, closed_date";
+            $resarray = array();
 		$result = $db->query($sql);
 			while($row = $db->fetch_array($result)){
 		//create the array based on the db data.
 		if(($row['closed_date'] > $resarray['closed_date']) && $row['closed_date'] != 0){
 			$resarray['closed_date'] = $row['closed_date'];
 		}
-		if(/*($row['sum'] > $array['sum']) && */$row['sum'] != 0){
-			$resarray['sum'] += $row['sum'];
+		if(/*($row['sum'] > $array['sum']) && */$row['minutes'] != 0){
+			$resarray['sum'] += $row['minutes'];
 		}
 		if(($row['opened_date'] > $resarray['opened_date']) && $row['opened_date'] != 0){
 			$resarray['first_response'] = $row['opened_date'];
 		}
-		
+
 	}
 
 	//return an array of that relevant data per ticket.
@@ -3275,30 +3356,30 @@ function getTicketTotalTime($id)
 		$supporters_after_hours = getSupporterList($id,'after_hours');
 		$supporters_engineer_rate = getSupporterList($id,'engineer_rate');
     $total_time =0;
-    
+
     if(sizeof($supporters) > 0){
     	foreach($supporters as $items){
 				 $total_time += $items['sum'];
- 			}		
-		}			
-    if(sizeof($supporters_after_hours) > 0){ 
+ 			}
+		}
+    if(sizeof($supporters_after_hours) > 0){
     	foreach($supporters_after_hours as $items){
 				 $total_time += $items['sum'] * 1.5;
 			}
 		}
-    if(sizeof($supporters_engineer_rate) > 0){ 
+    if(sizeof($supporters_engineer_rate) > 0){
     	foreach($supporters_engineer_rate as $items){
 				 $total_time += $items['sum'] * (($items['after_hours'] == 1) ? 1.5 : 1);
 			}
 		}
-		$result = array(	'supporters' 	=> 	$supporters, 'supporters_after_hours'	=>	$supporters_after_hours, 
-											'supporters_engineer_rate' => $supporters_engineer_rate, 'total_time' => $total_time); 
+		$result = array(	'supporters' 	=> 	$supporters, 'supporters_after_hours'	=>	$supporters_after_hours,
+											'supporters_engineer_rate' => $supporters_engineer_rate, 'total_time' => $total_time);
 		return $result;
 }
 
 function DrawTableSupporterTotals($array, $id, $title)
 {
-	
+
   				$supporters = $array['supporters'];
 				$supporters_after_hours = $array['supporters_after_hours'];
 				$supporters_engineer_rate= $array['supporters_engineer_rate'];
@@ -3307,7 +3388,7 @@ function DrawTableSupporterTotals($array, $id, $title)
 			    $supporter_after_hours_total = 0;
     			$supporter_engineer_total = $array['user_name'];
 				$ticket_data = getTicketTimeInfo($id);
-					
+
 				startTable($title, "left", 100, 2);
 				if(sizeof($supporters) > 0){
 					foreach($supporters as $items){
@@ -3318,7 +3399,7 @@ function DrawTableSupporterTotals($array, $id, $title)
                             if (!empty($items['sum'])) {
                                 $supporter_total[($items['user_name'])] += $items['sum'];
                             }
-						
+
     						if($ticket_data['sum'] != 0){
     							$percentage = number_format(($items['sum'] / $total_time) * 100, 2);
     							echo "  (".$percentage."%)";
@@ -3345,11 +3426,11 @@ function DrawTableSupporterTotals($array, $id, $title)
 						else{
 							$percentage = 0;
 						}
-						
+
 						echo "</td></tr>";
 					}
 				} //end of previous table code
-				
+
 				if(sizeof($supporters_engineer_rate) > 0){
 					foreach($supporters_engineer_rate as $items){
 						if ($items['after_hours'] == 1) {
@@ -3357,26 +3438,26 @@ function DrawTableSupporterTotals($array, $id, $title)
 							$suffix = " (engineer after_hrs):";
 						} else {
 							$mult = 1;
-							$suffix = " (engineer):";							
-						}						
+							$suffix = " (engineer):";
+						}
 						echo "<tr><td class=subcat width=20%> $items[user_name]".$suffix."</td><td class=back>";
 					  $time_engineer = $items['sum'] ;
 						showFormattedTime( $time_engineer * 60 );
 						if ($items['after_hours'] == 1) {
 							echo "  (after hours  x 1.5)->       ";	showFormattedTime($items['sum'] * 60 * 1.5);
 						}
-						$time_engineer *= $mult; 
+						$time_engineer *= $mult;
 						$supporter_engineer_total[$items['user_name']] += $time_engineer ;
 					  if($time_engineer != 0){
 							$percentage = number_format($time_engineer/$total_time * 100, 2);
 							echo "  (".$percentage."%)";
 						}	else{
 							$percentage = 0;
-					  }	
+					  }
 					  echo "</td></tr>";
 					}
 				} //end of previous table code
-				
+
 				endTable();
 }
 
@@ -3384,8 +3465,8 @@ function displayTimeHistory()
 {
 	global $sg, $info, $id, $mysql_users_table, $mysql_settings_table, $db, $lang_timespent, $lang_timespent1, $lang_timespent2;
   global $lang_timehistory, $lang_month, $timestamp;
-  
-	
+
+
 	startTable("$lang_timehistory", "left", 100, 6);
 
 	$sql = "select trk.supporter_id, trk.work_date, trk.reference,  trk.minutes, trk.after_hours, trk.engineer_rate from tickets as tkt, time_track as trk where (tkt.id=trk.ticket_id AND tkt.id=$id)";
@@ -3393,11 +3474,11 @@ function displayTimeHistory()
 
 
   while($row = $db->fetch_array($resultsupporters)){
-    if ($row[minutes] != 0) {	
+    if ($row['minutes'] != 0) {
     	echo '<tr>
     		<td width=20% class=back2 align=right>';
     		if ($row['work_date'])
-    		    echo date("F j, Y", $row[work_date]);
+    		    echo date("F j, Y", $row['work_date']);
     		  else
     		    echo "- No Date -";
     	echo '</td>';
@@ -3406,35 +3487,35 @@ function displayTimeHistory()
     		  $result = $db->query($sql);
     		  $sup_row = $db->fetch_array($result);
     		  echo "$sup_row[user_name]";
-    			
-    	echo '</td>';	
+
+    	echo '</td>';
    	  echo '<td width=10% class=back2>';
     		  //
           echo "<input class=box type=checkbox";
-				     if($row[after_hours] != "0"){
+				     if($row['after_hours'] != "0"){
 					   echo " checked";
-			     	}	
+			     	}
 			    echo ">after_hrs";
-    	echo '</td>';    	
+    	echo '</td>';
 
    	  echo '<td width=10% class=back>';
     		  //
           echo "<input class=box type=checkbox";
-				     if($row[engineer_rate] != "0"){
+				     if($row['engineer_rate'] != "0"){
 					   echo " checked";
-			     	}	
-			    echo ">engineer_rate";    			
-    	echo '</td>';     	
-    	    		
+			     	}
+			    echo ">engineer_rate";
+    	echo '</td>';
+
     	echo '<td width=15% class=back2>';
-    			showFormattedTime($row[minutes] * 60, 1); 
-    	echo '</td>';			
+    			showFormattedTime($row['minutes'] * 60, 0, 1);
+    	echo '</td>';
     	echo '<td class=back>';
-    			echo "$row[reference]"; 
-    	echo '</td>';				
+    			echo "$row[reference]";
+    	echo '</td>';
 	  }
 	}
-	
+
 	// Calculates total time spent on the ticket in minutes
 	$sql = "select sum(minutes) from tickets,time_track where (time_track.after_hours = 0 AND tickets.id=time_track.ticket_id AND tickets.id=$id)";
   $sql_after_hours = "select sum(minutes) from tickets,time_track where (time_track.after_hours != 0 AND tickets.id=time_track.ticket_id AND tickets.id=$id)";
@@ -3447,7 +3528,7 @@ function displayTimeHistory()
   echo 'Straight Time:';
   echo '</td> <td class=back2  colspan=1>';
   echo '<B>Grand Total:</B>';
-    
+
   echo '<tr><td width=20% class=back2 align=right><B>Total Time:</B>';
 	echo '</td> <td class=back >';
 	echo '</td> <td class=back colspan=2>';
@@ -3457,20 +3538,22 @@ function displayTimeHistory()
 	$row_after_hours = $db->fetch_array($result_after_hours);
 
 	if ($row[0]) $minutes = $row[0]; else $minutes = "0";
-	
+
 	$minutes_after_hours = 1.5 * $row_after_hours[0];
-	
-	showFormattedTime($minutes_after_hours * 60, 1);
-	
+
+	showFormattedTime($minutes_after_hours * 60, 0, 1);
+	echo " rounded to 15 min";
+
 	echo'</td> <td class=back> ';
-	showFormattedTime($minutes * 60, 1);
+	showFormattedTime($minutes * 60, 0,1);
 	echo '</td>';
 
 	echo'</td> <td class=back2> <B>';
-	showFormattedTime(($minutes * 60 )+ ($minutes_after_hours  * 60), 1);
+	showFormattedTime(($minutes * 60 )+ ($minutes_after_hours  * 60), 0);
 	echo '</B></td>';
 
 	endTable();
+	return  array("labor_minutes" => $minutes, "labor_after_hours" => $minutes_after_hours);
 }
 
 function createTicketHeader($msg)
@@ -3528,4 +3611,36 @@ function fixticketSeptember30($id_from, $id_to){
 
     }
 }
+
+
+/**
+ * @param $id_from
+ * @param $id_to
+ */
+function fixUgroupsTable () {
+    global $mysql_users_table, $mysql_tickets_table, $db;
+    $sql = "select * from ugroups ";
+
+    $sql2= "";
+
+    $result = $db->query($sql);
+    $num_rows = $db->num_rows($result);
+
+    for ($i=1; $i<=$num_rows; $i++) {
+
+        $row = $db->fetch_row($result);
+        $id = $row[0];
+        $supporter = $row[4];
+        $createDate = $row[1];
+        $update= "'$createDate \$lang_by --//--<i>\$lang_ticketcreatedby $supporter --//--'";
+        $sql2 = "update $mysql_tickets_table set update_log=$update where id=$id";
+        $result2 = $db->query($sql2);
+        echo "<br>$sql2>  $result2<br>";
+
+
+    }
+}
+
+
+
 ?>

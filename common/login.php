@@ -51,7 +51,7 @@ else {
 
 $cookieuser = '';
 //common.php
-startSession();
+session_status() === PHP_SESSION_ACTIVE  ? $cookieuser = '' : startSession();
 
 $cookie_name = $_SESSION['cookie_name'];
 //echo "cookie_name = $cookie_name <br>";
@@ -129,7 +129,7 @@ if(isset($login))
 				//nov14 header("Location: $referer");
 				//echo"<BR>$cookie_name $enc_pwd";
 				setcookie('cookieuser', $cookie_name,  time()+ 60*60*24*7);
-				setcookie('cookiepwd', $_POST['password'],  time()+ 60*60*24*7);				
+				setcookie('cookiepwd', $_POST['password'],  time()+ 60*60*24*7);
 		}
 		else{
 			echo $lang_wronglogin;
@@ -166,40 +166,43 @@ echo'
 <TABLE class=border cellSpacing=0 cellPadding=0 width='.$theme['width'].' align=center border=0>
   <TR>
     <TD>
-      <TABLE cellSpacing=1 cellPadding=1 width="100%" border=0>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" align="center" border=0>
+      
         <TR>
-          <TD class=hf align=left>&nbsp;</TD>
+          <TD class=back align=center></TD>
         </TR>
         <TR>
           <TD class=back>
-			<TABLE border=0 width="100%">
-              <TR>
-                <TD class=back vAlign=top><BR>
+			<TABLE border=0 width="100%" align="center">
+              <TR></TR><tr>
+                  <TD class=back vAlign="top" align="center">
 
-<TABLE class=border cellSpacing=0 cellPadding=0 width="25%" align=center border=0>
+<TABLE class=border cellSpacing=0 cellPadding=0 width=280px align=center border=0>
   <TR>
     <TD>
-      <TABLE cellSpacing=1 cellPadding=1 width="100%" border=0>
-        <TR>
-          <TD class=info align=left><b>'.$helpdesk_name.' '.$lang_login.'</b></TD>
+    
+    </TD></TR><TR><TD>
+      <TABLE style=\"margin:0px; Padding:0px; width=100%\" align=\"center\">
+        <TR
+          <TD class=back2 align="center"><b>'.$helpdesk_name.' '.$lang_login.'</b></TD>
         </TR>
-          <TD class=back Align=center> <IMG SRC='."$login_logo".' ALT="">
+          <TD class=back2 style="\padding:0 \" align="center"> <IMG SRC='."$login_logo".'>
         <TR>
         </TR>
         <TR>
           <TD class=back2>
-			<table width=100% border=0 cellspacing=0 cellpadding=6>
+			<table width=100% border=0 cellspacing=0 cellpadding=0>
 				<tr>
 				 <td class=back2 align=right>'.$lang_username.':</td><td>
-					<input type=text name=user size=16 value='."$cookieuser".'></td>
+					<input type=text name=user class="text-2" value='."$cookieuser".'></td>
 				</tr>
 				<tr>
 				 <td class=back2 align=right>'.$lang_password.':</td><td>
-					<input type=password name=password size=16 value='."$cookiepwd".'></td>
+					<input type=password name=password class="pwd-login" value="'.$cookiepwd.'"></td>
 				</tr>
 				<tr>
-				 <td class=back2></td><td class=back2 align=center>
-					<input type=submit name=login value="'.$lang_submit.'"></td>
+				 	<td class=back2 align=right></td><td>
+					<input type=submit class="btn-login" name=login value="'.$lang_submit.'"></td>
 				</tr>
 			</table>
 

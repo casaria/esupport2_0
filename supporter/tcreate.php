@@ -41,87 +41,89 @@ else
 
 	
 
-if(isset($create)){
-	//after all error checking...insert into the database.
-	
-	$name = getUserInfo($supporter_id);
-	$name = $name['user_name'];
+if(isset($create)) {
+    //after all error checking...insert into the database.
 
-	
-	//+++ change to the timezone of the facility ?? Not
-	//available in database yet
-	$time_offset = getTimeOffset($name);
-	$time = time() + ($time_offset * 3600);
-	
-	$username = getUserInfo($userid);
-	$username = $username['user_name'];
-	
-	if($group == '' || $priority == '' || $username == '' || $short == '' || $description == ''){
-		header("Location: index.php?t=terr");
-		exit;
-	}
+    $SupporteRowArray = getUserInfo($supporter_id);
+    $SupporterName = $SupporteRowArray['user_name'];
 
-	if($short == ''){
-		$short = "$lang_nodesc";
-	}
-	if($sg == ''){
-		$sg = 1;
-	}
-	
-	
-		$short = addslashes(stripScripts($short));
-	$description = addslashes(stripScripts($description));
-	//$ugroup_id = getUGroupId($usergroup_name);
-	$ugroup_id=$ug;
-	
-	//fix checkboxes
-	$emailgroup = ($emailgroup == "on") ?  "On" : "Off";
-	$emailstatuschange = ($emailstatuschange == "on") ? "On" : "Off";
-  
-	$billing_status = "0";
-	
-	$sql = "INSERT into $mysql_tickets_table values(NULL, $time, $sg, $ugroup_id, '$name',
-	 			 $supporter_id, '$priority', '$status', '$billing_status',	'$username', '$email', '$office', '$phone',
-				 '$equipment', '$category', '$platform', '$short', '$description', NULL, 0, $time,
-				 '$emailgroup', '$emailstatuschange', '$emailcc', 0)";
-	
-	
-	$db->query($sql);
 
+    //+++ change to the timezone of the facility ?? Not
+    //available in database yet
+    //$time_offset = getTimeOffset($name);
+    $time_offset = $SupporteRowArray["time_offset"];
+    $time = time() + ($time_offset * 3600);
+
+    $UserRowArray = getUserInfo($userid);
+    $UserName = $UserRowArray['user_name'];
+
+    if ($group == '' || $priority == '' || $UserName == '' || $short == '' || $description == '') {
+        header("Location: index.php?t=terr");
+        exit;
+    }
+
+    if ($short == '') {
+        $short = "$lang_nodesc";
+    }
+    if ($sg == '') {
+        $sg = 1;
+    }
+
+
+    $short = addslashes(stripScripts($short));
+    $description = addslashes(stripScripts($description));
+    //$ugroup_id = getUGroupId($usergroup_name);
+    $ugroup_id = $ug;
+
+    //fix checkboxes
+    $emailgroup = ($emailgroup == "on") ? "On" : "Off";
+    $emailstatuschange = ($emailstatuschange == "on") ? "On" : "Off";
+
+    $billing_status = "0";
+
+    $sql = "INSERT INTO $mysql_tickets_table (`id`, `create_date`, `groupid`, `ugroupid`, `supporter`, `supporter_id`, `priority`, `status`, `BILLING_STATUS`, `user`, `email`, `office`, `phone`, `equipment`, `category`, `platform`, `short`, `description`, `update_log`, `survey`, `lastupdate`, `emailgroup`, `emailstatuschange`, `emailcc`, `closed_date`, `minutes_labor`, `castag_id`) VALUES (NULL, $time, $sg, $ugroup_id, '$SupporterName', $supporter_id, '$priority', '$status', '$billing_status','$UserName','$email','$office', '$phone','$equipment', '$category', '$platform', '$short', '$description', '', 0, $time,'$emailgroup', '$emailstatuschange', '$emailcc', 0, 0, 0)";
+
+    $db->query($sql);
+
+    /*
 	//grab the id number of the ticket so we can create the created by in the update log.
-	$sql = "SELECT id from $mysql_tickets_table where create_date='$time' and user='$username' and short='$short' and description='$description'";
+	$sql = "SELECT id from $mysql_tickets_table where create_date='$time' and user='$UserRowArray' and short='$short' and description='$description'";
 	$result = $db->query($sql);
 	$row = $db->fetch_row($result);
 	$id = $row[0];
+	*/
+
+    $last_insert_id = mysql_insert_id();
+    $id = $last_insert_id;
+
+    //update the log so it shows who created the ticket now.
+    $msg = "<i>$lang_ticketcreatedby $logged_in_user</i>";
+    $log = updateLog($id, $msg);
+    $sql = "update $mysql_tickets_table set update_log='$log' where id=$id";
+    $db->query($sql);
 
 
-	//update the log so it shows who created the ticket now.
-	$msg = "<i>\$lang_ticketcreatedby $logged_in_user</i>";
-	$log = updateLog($id, $msg);
-	$sql = "update $mysql_tickets_table set update_log='$log' where id=$id";
-	$db->query($sql);
+    //finally, to keep track of time stuff:
+    if ($status != getRStatus(getLowestRank($mysql_tstatus_table))) {
+        $time = $time + 1;  //add one just so the response time isn't 0.
+        $sql = "INSERT into $mysql_time_table (ticket_id, supporter_id, opened_date) values ('$id', '$supporter_id', $time)";
+        $db->query($sql);
+    }
+
+    //insert the file into the database if it exists.
+    ProcessAttachment();
 
 
-	//finally, to keep track of time stuff:
-	if($status != getRStatus(getLowestRank($mysql_tstatus_table))){
-		$time = $time + 1;  //add one just so the response time isn't 0.
-		$sql = "INSERT into $mysql_time_table (ticket_id, supporter_id, opened_date) values ('$id', '$supporter_id', $time)";
-		$db->query($sql);
-	}
+    //if the pager gateway is enabled...send a page to the supporters of that group if the ticket is set above the default.
 
-	//insert the file into the database if it exists.
-	ProcessAttachment();
-	
-	
-	//if the pager gateway is enabled...send a page to the supporters of that group if the ticket is set above the default.
+    if ($enable_pager == 'On' && (getRank($priority, $mysql_tpriorities_table) >= $pager_rank_low)) {
+        $template_name = 'email_group_page';
+        sendGroupPage($template_name, $sg, $UserRowArray, $short, $priority, $id);
+    }
+    //now print out the html that lets the user know that their ticket was submitted successfully.
+    header("Location: $supporter_site_url/index.php?t=tsuc&id=$id");
 
-	if($enable_pager == 'On' && (getRank($priority, $mysql_tpriorities_table) >= $pager_rank_low) ){
-		$template_name = 'email_group_page';
-		sendGroupPage($template_name, $sg, $username, $short, $priority, $id);
-	}
-	header("Location: $supporter_site_url/index.php");
 }
-
 else{
 	echo "<form action=tcreate.php method=post enctype=\"multipart/form-data\">";
 ?>
@@ -141,7 +143,7 @@ else{
 	createNotificationPanel();	
 	createUserInfo();
 	createTicketInfo('allow',$ug);
-	echo "<center>";
+	//echo "<center>";
 	echo "<input type=submit name=create value=\"$lang_create $lang_ticket\">";
 	echo "&nbsp;&nbsp;&nbsp;";
 	echo "<input type=reset name=reset value=$lang_reset>";
@@ -150,7 +152,7 @@ else{
 	echo "<input type=hidden name=userid value=".$userid.">";
 	echo "<input type=hidden name=logged_in_user value=$cookie_name>";
 	echo "</form>";
-	echo "</center>";
+	//echo "</center>";
 
 }
 
@@ -163,51 +165,51 @@ function createSupporterInfo()
 	if($sg == '')
 		$sg = getDefaultSupporterGroupID();
 
-	startTable("$lang_supporterinfo", "left", 100, 4);
+	startTable("$lang_supporterinfo", "left", 100, 2);
 		echo '<tr>
-				<td width=20% class=back2 align=right>* '.$lang_group.':</td>
-				<td class=back colspan=3 width=22%>';
+				<td width="180px" class=back2 align=left>* '.$lang_group.':</td>
+				<td class=back >';
 				?>
-			    	<select name=usergroup_name onChange="MM_jumpMenu('parent', this, 0)">
+			    	<select id="selectwidth" name=usergroup_name onChange="MM_jumpMenu('parent', this, 0)">
 				<?php					
 				$ug=createUGroupsMenu();
 				echo '</select>				
 				</td></tr>					
 		
 				<tr>
-				<td width=20% class=back2 align=right>'.$lang_supportergroup.':</td>
-				<td class=back width=22%>';
+				<td class=back2 align=left>'.$lang_supportergroup.':</td>
+				<td class=back >';
 				?>
-				<select name=group onChange="MM_jumpMenu('parent', this, 0)">
+				<select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)">
 				<?php
 				
 				$sg=createSupportGroupMenu($ug);
 
 		echo '</select>
 				</td>
-				<td class=back2 align=right width=100>'.$lang_supporter.': </td>
+				</tr><tr>
+				<td class=back2 align=left>'.$lang_supporter.': </td>
 				<td class=back align=left>
-				<select name=supporter_id>';
+				<select id="selectwidth" name=supporter_id>';
 				createSupporterMenu($sg);
-				echo '</select>
-				
-				</td>
-				</tr>
-				<tr>
-				<td width=20% class=back2 align=right>'.$lang_ticket.' '.$lang_priority.':</td>
+				echo '</select></td></tr>';
+
+
+
+		echo'	<tr>
+				<td class=back2 align=left>'.$lang_ticket.' '.$lang_priority.':</td>
 				<td class=back>
-				<select name=priority>';
-				
+				<select id="selectwidth" name=priority>';
 				createPriorityMenu();  
-							
-		echo '</select>
-				</td>
-				<td class=back2 align=right width=100>'.$lang_ticket.' '.$lang_status.':</td>
+		echo '</select></tr></td>';
+
+		echo '<tr>
+				<td class=back2 align=left>'.$lang_ticket.' '.$lang_status.':</td>
 				<td class=back>
-				<select name=status>';
-				
+				<select id="selectwidth2" name=status>';
+
 				createStatusMenu(0,1);
-							
+
 		echo '</select>
 				</td>
 				</tr>';
@@ -278,31 +280,31 @@ function createNotificationPanel()
 {
 global $db, $mysql_ugroups_table, $info, $lang_emailgroup, $lang_emailstatuschange, $lang_notification, $lang_email, $lang_emailcc;
 
-startTable("$lang_notification ", "left", 100, 4);
+startTable("$lang_notification ", "left", 100, 2);
 echo '
     <tr>
-     <td class="back2" width="20%">'.$lang_emailgroup.': </td>
+     <td class="back2" align="left" width="180px">'.$lang_emailgroup.': </td>
      <td class="back">'.
     "<input class=box type=checkbox";
 		  echo " checked";
 			echo " name=emailgroup></td>".
     '</td>
     </tr>
+    
     <tr>
-
-     <td class="back2" width="20%">'.$lang_emailstatuschange.': </td>
+     <td class="back2" align="left" width="180px">'.$lang_emailstatuschange.': </td>
      <td class="back">'.
     "<input class=box type=checkbox";
 			echo " checked";
 		echo " name=emailstatuschange></td>".
     '</td>
     </tr>
+    
     <tr>
-
-     <td class="back2" width="20%">'.$lang_emailcc.': </td>
+     <td class="back2" align="left" width="180px">'.$lang_emailcc.': </td>
      <td class="back">
-								<input type=text size=60 name=emailcc value="'.'">
-							</td>
+			<input type=text size=55 name=emailcc value="'.'">			
+	</td>
     </tr>';
 endTable();
 }
@@ -326,13 +328,13 @@ function createSupportGroupMenu($ugroup=1)
 	
 	
 		while($row = $db->fetch_array($result)){
-			if($num_rows == 1 || $row[id] != 1){
+			if($num_rows == 1 || $row['id'] != 1){
 				echo "<option value=\"index.php?t=tcre&ug=$ug&userid=$userid&sg=$row[id]\"";
-					if($sg == $row[id] ||  $row[id]== $default_group){
+					if($sg == $row['id'] ||  $row['id']== $default_group){
 						echo " selected";
-						$sg = $row[id];
+						$sg = $row['id'];
 					}
-				echo ">".$row[group_name]."</option>";
+				echo ">".$row['group_name']."</option>";
 			}
 		}
 	return $sg;
@@ -352,11 +354,11 @@ function createUserInfo()
 				
 				
 				
-				<td width=20% class=back2 align=right>'.$lang_username.':</td>
+				<td width="180px" class=back2 align=right>'.$lang_username.':</td>
 				<td class=back >';
 					
 				?>
-			    	<select name=userlink onChange="MM_jumpMenu('parent', this, 0)">
+			    	<select name=userlink id="selectwidth2" onChange="MM_jumpMenu('parent', this, 0)">
 				<?php	
 					
 				$userid=createSupporterUserMenu($sg);
@@ -367,19 +369,24 @@ function createUserInfo()
  	$result = $db->query($sql);
  	$row = $db->fetch_array($result);
 					
-					
-				echo "</td>
-				<td class=back2 align=right width=100>".$lang_email.": </td>
+
+				echo" 
+                 </td>
+                 
+                 </tr><tr>   
+				<td class=back2 align=right>".$lang_email.": </td>
 				<td class=back align=left>
 					<input type=text size=24 name=email value=\"$row[email]\">
 				</td>
+				
 				</tr>
 				<tr>
-				<td width=20% class=back2 align=right>".$lang_office.":</td>
+				<td class=back2 align=right>".$lang_office.":</td>
 				<td class=back>
 					<input type=text size=24 name=office value=\"$row[office]\">
 				</td>
-				<td class=back2 align=right width=100>".$lang_phoneext.":</td>
+				</tr><tr> 
+				<td class=back2 align=right>".$lang_phoneext.":</td>
 				<td class=back>
 					<input type=text size=24 name=phone value=\"$row[phone]\">
 				</td>";

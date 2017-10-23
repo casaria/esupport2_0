@@ -1,4 +1,5 @@
 <?php
+global $id;
 
 $lang_powered = "Powered by";
 $lang_processed = "Processed in";
@@ -124,7 +125,7 @@ $lang_month = array("Value 0", "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","
 $lang_office = "Office Phone";
 $lang_keywords = "Keywords";
 $lang_sqlstmt = "SQL Statement";
-$lang_sqlstmt2 = "SELECT * from ";
+$lang_sqlstmt2 = "SELECT * from"." ";
 $lang_sqlstmt3 = " where";
 $lang_addtokb = "Add to Knowledge Base";
 $lang_editkb = "Edit Knowledge Base";
@@ -210,10 +211,10 @@ $lang_tableerror = "Table does not exist . . . you screwed up.";
 $lang_by = "by";
 $lang_na = "N/A";
 $lang_second = "second";
-$lang_hour = "hour";
-$lang_hours = "hours";
-$lang_minute = "minute";
-$lang_minutes = "minutes";
+$lang_hour = "hr";
+$lang_hours = "hrs";
+$lang_minute = "min";
+$lang_minutes = "min";
 $lang_day = "day";
 $lang_days = "days";
 $lang_searchfor = "Search for";

@@ -48,7 +48,7 @@ $result = $db->query("SELECT DISTINCT ip, user FROM $mysql_whosonline_table orde
 
 $i=0;
 while($row = $db->fetch_array($result)){
-	$users[$i] = $row[user];			//create array with user names in it.
+	$users[$i] = $row['user'];			//create array with user names in it.
 	$i++;
 }
 

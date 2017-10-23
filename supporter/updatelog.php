@@ -42,7 +42,7 @@ $language = getLanguage($cookie_name);
 if($language == '')
 	require_once "../lang/$default_language.lang.php";
 else
-	require_once "../lang/$language.lang.php";
+	require_once "../lang/$language".".lang.php";
 require_once "../common/style.php";
 
 $time_offset = getTimeOffset($cookie_name);
@@ -50,6 +50,7 @@ $time = time() + ($time_offset * 3600);
 
 $sql = "select update_log from $mysql_tickets_table where id=$id";
 $result = $db->query($sql);
+$s ='';
 
 $log = $db->fetch_row($result);
 
@@ -85,12 +86,12 @@ echo "</form>";
 						
 <TD class=info align=left><B>
 
-<?php  $info = getTicketInfo($id);
+<?php  $ticket = getTicketInfo($id);
 	echo $lang_ulog." Ticket ID #".$id."<br>"; 
-	echo "$lang_equipment: $info[equipment]";
-	echo " - ".$info[short]."<br>";
-	echo "$lang_category: $info[category] / $lang_platform: $info[platform]";
-	echo "<br>$lang_ticketcreatedby: $info[user] / $lang_supporter: $info[supporter] $platform $short";
+	echo "$lang_equipment: $ticket[equipment]";
+	echo " - ".$ticket["short"]."<br>";
+	echo "$lang_category: $ticket[category] / $lang_platform: $ticket[platform]";
+	echo "<br>$lang_ticketcreatedby: $ticket[user] / $lang_supporter: $ticket[supporter]  : $ticket[short]";
 ?>
 </td>
 </TR>
@@ -99,7 +100,7 @@ echo "</form>";
 </tr>
 
 <?php
-	$description = "<b>DESCRIPTION:<BR></b>".$info[description];
+	$description = "<b>DESCRIPTION:<BR></b>".$ticket['description'];
 	echo " <tr><td colspan=1 class=back2 align=left><font size=2>".$description."</font></td></tr>";
         //echo sizeof($log);
 	if($s != "rev"){
@@ -119,9 +120,11 @@ echo "</form>";
 			echo "<tr><td colspan=2 class=cat align=left><font size=1><b>". $log[$i] ."</b></font></td></tr>";
 		}
 		else{
-			if(eregi("[$]", $log[$i]))	//this accounts for older tickets which don't have variables in the update log.
-				eval("\$log[$i] = \"$log[$i]\";");	//if the update log doesn't contain variables, this eval doesn't work.
-				$log[$i] = stripslashes($log[$i]);
+			if(preg_match("[$]", $log[$i])) {
+			    $log[$i]= addslashes($log[$i]); //this accounts for older tickets which don't have variables in the update log.
+                eval("\$log[$i] = \"$log[$i]\";");    //if the update log doesn't contain variables, this eval doesn't work.
+            }
+                $log[$i] = stripslashes($log[$i]);
 				echo "<tr><td colspan=2 class=back2 align=left>&nbsp;&nbsp;&nbsp;&nbsp;". $log[$i] ."<br></td></tr>";
 		}
 	   }
@@ -172,11 +175,11 @@ echo "</form>";
 
 
   while($row = $db->fetch_array($resultsupporters)){
-    if ($row[minutes] != 0) {	
+    if ($row['minutes'] != 0) {
     	echo '<tr>
     		<td width=27% class=back2 align=right>';
     		if ($row['work_date'])
-    		    echo date("F j, Y", $row[work_date]);
+    		    echo date("F j, Y", $row['work_date']);
     		  else
     		    echo "- No Date -";
     		echo '</td>';
@@ -187,7 +190,7 @@ echo "</form>";
     			echo "$sup_row[user_name]"; 
     	echo '</td>';			
     	echo '<td width=25% class=back2>';
-    			showFormattedTime($row[minutes] * 60, 1); 
+    			showFormattedTime($row['minutes'] * 60, 0);
     	echo '</td>';			
     	echo '<td class=back>';
     			echo "$row[reference]"; 
@@ -210,7 +213,7 @@ echo "</form>";
 				$minutes = $results['total_time'];
 
 	echo'<B>';
-	showFormattedTime($minutes * 60, 1);
+	showFormattedTime($minutes * 60, 0);
 	echo '</B></td>';
 
 	endTable();

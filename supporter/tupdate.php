@@ -503,7 +503,8 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
         </div>
         <div id="extra" class="tab-pane fade">
             <h3>EXTRA</h3>
-            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            <p<H4>The extra tab is fot tests right now"</H4>
+            <?php extraTab(); ?>
             </p>
         </div>
     </div>
@@ -520,12 +521,8 @@ startTable("$lang_supporterinfo", "left", 100, 4);
 ECHO '                <tr>                              
 							<td class=back2 align=right>' . $lang_supportergroup . '</td>
 							<td class=back align="left">';
-?> <select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)"><?php
-                                createGroupMenu(1);
-    echo '
-							</select>
-							</td></tr><tr>
-							<td class=back2 align=right width="180Ppx">' . $lang_supporter . ' </td>
+Echo '<select id="selectwidth" name=group onChange=\"MM_jumpMenu(\'parent\', this, 0)\"> '. createGroupMenu(1).'</select>/td></tr><tr>';
+echo '		<td class=back2 align=right width="180Ppx">' . $lang_supporter . ' </td>
 							<td class=back align="left">
                                 
 			
@@ -864,6 +861,189 @@ function displayMaterials()
     endTable();
 
 }
+
+    function extraTab(){
+        ?>
+        <div class="container">
+            <h1>Scheduler</h1>
+            <div id="sandbox">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>Filters</h2>
+                        <ul id="filters">
+                            <li>
+                                <a href="#" data-filter="*">all</a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".overhead">Overhead</a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".billable">billable</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Sorts</h2>
+                        <ul id="sorts">
+                            <li>
+                                <a href="#">text</a>
+                            </li>
+                            <li>
+                                <a href="#" data-sort-by="foo">data-foo</a>
+                            </li>
+                            <li>
+                                <a href="#" data-sort-way="desc">text desc</a>
+                            </li>
+                            <li>
+                                <a href="#" data-sort-by="foo" data-sort-way="desc">data-foo desc</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container">
+
+
+                    <div id="dylay" class="row">
+                        <div class="col-sm-12 overhead"  data-foo="5">
+                            <span style="height: 200px;">#4530<br>Short dedcription<br>line 2</span>
+                        </div>
+                        <div class="col-sm-12 billable" data-foo="6">
+                            <span style="height: 40px;">#4320</span>
+                        </div>
+                        <div class="col-sm-12 billable" data-foo="3">
+                            <span style="height: 40px;">#4857</span>
+                        </div>
+                        <div class="col-sm-12 billable" data-foo="2">
+                            <span style="height: 40px;">#4858</span>
+                        </div>
+                        <div class="col-sm-12 overhead"  data-foo="4">
+                            <span style="height: 60px;">#3567</span>
+                        </div>
+                        <div class="col-sm-12 consonne" data-foo="1">
+                            <span style="height: 60px;">#4584</span>
+                        </div>
+                        <div class="col-sm-12 billable" data-foo="17">
+                            <span style="height: 80px;">#4000</span>
+                        </div>
+
+                        <div class="col-sm-12 overhead"  data-foo="5">
+                            <span style="height: 200px;">#4530<br>Short dedcription<br>line 2</span>
+                        </div>
+                        <div class="col-sm-12 billable" data-foo="6">
+                            <span style="height: 40px;">#4320</span>
+                        </div>
+                        <div class="col-sm-12 billable" data-foo="3">
+                            <span style="height: 40px;">#4857</span>
+                        </div>
+                        <div class="col-sm-12 billable" data-foo="2">
+                            <span style="height: 40px;">#4858</span>
+                        </div>
+                        <div class="col-sm-12 overhead"  data-foo="4">
+                            <span style="height: 60px;">#3567</span>
+                        </div>
+                        <div class="col-sm-12 consonne" data-foo="1">
+                            <span style="height: 60px;">#4584</span>
+                        </div>
+                        <div class="col-sm-12 billable" data-foo="17">
+                            <span style="height: 40px;">#4000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <?php
+    }
+
+    function extraTab2() {
+
+        ?>
+
+
+        <div class="progress">
+
+            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                <span class="sr-only">40% Complete (success)</span>
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                <span class="sr-only">20% Complete</span>
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                <span class="sr-only">60% Complete (warning)</span>
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                <span class="sr-only">80% Complete (danger)</span>
+            </div>
+        </div
+
+        <?php
+
+    }
+
+
+    function materialTab(){
+        global $lang_groupslists, $lang_groupslists2;
+
+        startTable("$lang_groupslists", "center");
+        echo "<tr><td class=cat> $lang_groupslists2 </td></tr>";
+        //echo "<tr><td class=back2>";
+
+
+
+        listGroupMembers("sgroup2");
+        ?>
+        </div>
+        </div>
+
+        <?php
+        echo "</td></tr>";
+        endTable();
+
+
+        return;
+
+
+
+    }
+
+
+    function listGroupMembers($group)
+    {
+        global $supporter_site_url, $db, $lang_group;
+
+        $group_id = eregi_replace("sgroup", "", $group);
+
+        $sql = "SELECT * FROM `users`\n"
+            . "INNER JOIN `sgroup2` ON `sgroup2`.`user_name` = `users`.`user_name` ";
+
+        $result = $db->query($sql);
+        startTable("$lang_group  --  " . getsGroup($group_id), "left");
+        echo "<tr><td class=back>";
+
+        echo '<div class="container">';
+
+        echo '<div id="dylay" class="row no-gutters">';
+        while ($row = $db->fetch_array($result)) {
+
+
+            echo "<div class=\"col-xs-12 col-sm-6 col-md-3 " . ($row['supporter'] >= 1 ? "active" : "inactive") . "\" username=\"$row[user_name]\">";
+            echo "<span style=height:60px;>";
+            echo "$row[first_name] $row[last_name] <b>($row[user_name])</b><br>$row[email] " . date("m/d/Y", $row[lastactive]) . "</span></div>";
+
+
+        }
+        echo '</div></div></div>';
+        echo "</td></tr>";
+
+
+        endTable();
+    }
 
 ?>
 

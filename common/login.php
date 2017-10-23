@@ -182,12 +182,7 @@ echo'
     <TD>
     
     </TD></TR><TR><TD>
-      <TABLE style="margin:1px; Padding:1px; width=100%; -webkit-box-shadow: #797991 3px 3px 3px;
-            -moz-box-shadow: #797991 3px 3px 3px;
-            box-shadow: #797991 3px 3px 3px;
-            -webkit-border-radius: 4px;
-            -moz-border-radius: 4px;
-            border-radius: 4px; border:2px" align="center">
+      <TABLE style="margin:1px; Padding:1px; width=100%" align="center">
         <TR
           <TD class=info align="left"><b>'.$helpdesk_name.' '.$lang_login.'</b></TD>
         </TR>

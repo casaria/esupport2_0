@@ -153,7 +153,8 @@ $tablePadding = 6;
 
             .btn-login {
                 width: 150px;
-                height: 35px;
+                height: 34px;
+                padding-bottom: 10px;
                 margin-bottom: 35px;
                 margin-top: 25px;
             }
@@ -959,7 +960,7 @@ $tablePadding = 6;
                     padding-top: 2px;
                     padding-right: 2px;
                     padding-left: 2px;
-                    padding-bottom: 11px;
+                    padding-bottom: 2px;
                     margin: 5px;
                     text-decoration: none;
 

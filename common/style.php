@@ -1481,19 +1481,21 @@ $tablePadding = 6;
 
 
              div.card {
-                 width: 250px;
-                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  text-align: center
+                 width: 350px;
+                 box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  text-align: center
              }
 
             div.header {
-                background-color: #4CAF50;
-                color: white;
+                background-color: <?php echo $theme['bg1']; ?>;
+                color: darkslateblue;
                 padding: 10px;
                 font-size: 40px;
             }
 
             div.container {
-                padding: 10px;
+                padding: 20px;
+                font-size: 40px;
+                text-align: center;
             }
 
 

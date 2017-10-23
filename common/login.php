@@ -180,7 +180,12 @@ echo'
 <TABLE class=border cellSpacing=0 cellPadding=0 width="35%" align=center border=0>
   <TR>
     <TD>
-      <TABLE cellSpacing=1 cellPadding=1 width="100%" border=2 align="center">
+      <TABLE style="cellSpacing:1px; Padding:1px; width=100%; -webkit-box-shadow: #797991 3px 3px 3px;
+            -moz-box-shadow: #797991 3px 3px 3px;
+            box-shadow: #797991 3px 3px 3px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;border=2" align="center">
         <TR>
           <TD class=info align="left"><b>'.$helpdesk_name.' '.$lang_login.'</b></TD>
         </TR>

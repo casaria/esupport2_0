@@ -1394,11 +1394,7 @@ $tablePadding = 6;
             <?php
             }
             ?>
-
-
-
-
-            }
+        }
 
 
         </STYLE>

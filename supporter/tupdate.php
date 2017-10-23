@@ -503,7 +503,9 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
         </div>
         <div id="extra" class="tab-pane fade">
             <h3>EXTRA</h3>
-            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            <p>The Extra TAB!
+               <?php extraTab();  ?>
+
             </p>
         </div>
     </div>
@@ -865,7 +867,24 @@ function displayMaterials()
 
 }
 
+
+function extraTab() {
+
+    ?>
+
+
+    <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+
+
+  <script>
+    $('.popover-dismiss').popover({
+
+  trigger: 'focus'
+    }
+    </script>
+
+    <?php
+
+}
 ?>
-
-
 

@@ -115,6 +115,42 @@ $tablePadding = 6;
 
             }
 
+            .text-1, .text-2, .text-3 {
+                border: 2px solid #ffad41;
+                -webkit-box-shadow: #B4B5B5 3px 3px 3px;
+                -moz-box-shadow: #B4B5B5 3px 3px 3px;
+                box-shadow: #B4B5B5 3px 3px 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+                font-size: 15px;
+                padding: 2px 2px 2px 2px;
+                text-decoration: none;
+
+                display: inline-block;
+                text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+                font-weight: 600;
+                background-color: #ffc579;
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc579), to(#fb9d23));
+                background-image: -webkit-linear-gradient(top, #ffc579, #fb9d23);
+                background-image: -moz-linear-gradient(top, #ffc579, #fb9d23);
+                background-image: -ms-linear-gradient(top, #ffc579, #fb9d23);
+                background-image: -o-linear-gradient(top, #ffc579, #fb9d23);
+                background-image: linear-gradient(to bottom, #ffc579, #fb9d23);
+                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
+            }
+
+            .text-1 {
+                width: 80px;
+            }
+            .text-2 {
+                width: 100px;
+            }
+            .text-3 {
+                width: 160px;
+            }
+
+
             td.stats {
                 background: <?php echo $theme['category']; ?>;
                 font-family: "<?php echo $theme['font']; ?>";
@@ -256,6 +292,7 @@ $tablePadding = 6;
                 }
 
                 #selectwidth2 {
+
                     background-color: <?php echo $theme['category']; ?>;
                     border: 0 solid;
                     -webkit-box-shadow: #B4B5B5 3px 3PX 3PX;

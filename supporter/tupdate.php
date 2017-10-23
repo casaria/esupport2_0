@@ -918,7 +918,7 @@ global $lang_groupslists, $lang_groupslists2;
     endTable();
 
 
-
+return;
 
 
 
@@ -935,18 +935,18 @@ global $lang_groupslists, $lang_groupslists2;
             . "INNER JOIN `sgroup2` ON `sgroup2`.`user_name` = `users`.`user_name` ";
 
         $result = $db->query($sql);
-        startTable("$lang_group  --  ".getsGroup($group_id), "left");
+        startTable("$lang_group  --  " . getsGroup($group_id), "left");
         echo "<tr><td class=back>";
 
         echo '<div class="container">';
 
         echo '<div id="dylay" class="row no-gutters">';
-        while($row = $db->fetch_array($result)){
+        while ($row = $db->fetch_array($result)) {
 
 
-            echo "<div class=\"col-xs-12 col-sm-6 col-md-3 ".($row['supporter'] >= 1 ? "active" : "inactive")."\" username=\"$row[user_name]\">";
+            echo "<div class=\"col-xs-12 col-sm-6 col-md-3 " . ($row['supporter'] >= 1 ? "active" : "inactive") . "\" username=\"$row[user_name]\">";
             echo "<span style=height:60px;>";
-            echo "$row[first_name] $row[last_name] <b>($row[user_name])</b><br>$row[email] ".date("m/d/Y", $row[lastactive])."</span></div>";
+            echo "$row[first_name] $row[last_name] <b>($row[user_name])</b><br>$row[email] " . date("m/d/Y", $row[lastactive]) . "</span></div>";
 
 
         }
@@ -955,8 +955,6 @@ global $lang_groupslists, $lang_groupslists2;
 
 
         endTable();
-
-    }
-
+}
 ?>
 

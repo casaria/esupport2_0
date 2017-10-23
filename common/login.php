@@ -186,7 +186,7 @@ echo'
         <TR
           <TD class=back2 align="center"><b>'.$helpdesk_name.' '.$lang_login.'</b></TD>
         </TR>
-          <TD class=back align="center"> <IMG SRC='."$login_logo".'>
+          <TD class=back2 style="\padding:0px \"align="center"> <IMG SRC='."$login_logo".'>
         <TR>
         </TR>
         <TR>

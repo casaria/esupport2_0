@@ -177,16 +177,16 @@ echo'
               <TR></TR><tr>
                   <TD class=back vAlign=top aling="center">
 
-<TABLE class=border cellSpacing=0 cellPadding=0 width="35%" align=center border=0>
+<TABLE class=border cellSpacing=0 cellPadding=0 width="40%" align=center border=0>
   <TR>
     <TD>
-      <TABLE style="cellSpacing:1px; Padding:1px; width=100%; -webkit-box-shadow: #797991 3px 3px 3px;
+      <TABLE style="margin:1px; Padding:1px; width=100%; -webkit-box-shadow: #797991 3px 3px 3px;
             -moz-box-shadow: #797991 3px 3px 3px;
             box-shadow: #797991 3px 3px 3px;
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
-            border-radius: 4px;border=2" align="center">
-        <TR>
+            border-radius: 4px; border:2px" align="center">
+        <TR
           <TD class=info align="left"><b>'.$helpdesk_name.' '.$lang_login.'</b></TD>
         </TR>
           <TD class=back align="center"> <IMG SRC='."$login_logo".' ALT="">

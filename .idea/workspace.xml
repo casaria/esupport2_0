@@ -16,7 +16,7 @@
     <bookmark url="file://$PROJECT_DIR$/common/common.php" line="3609" />
     <bookmark url="file://$PROJECT_DIR$/common/common.php" line="1809" />
     <bookmark url="file://$PROJECT_DIR$/common/common.php" line="2666" />
-    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="724" />
+    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="706" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
@@ -72,13 +72,13 @@
       <file leaf-file-name="style.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/style.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3519">
-              <caret line="366" column="36" lean-forward="false" selection-start-line="366" selection-start-column="36" selection-end-line="366" selection-end-column="36" />
+            <state relative-caret-position="323">
+              <caret line="253" column="20" lean-forward="false" selection-start-line="253" selection-start-column="20" selection-end-line="253" selection-end-column="20" />
               <folding>
                 <element signature="e#7#1399#0#PHP" expanded="true" />
-                <marker date="1508725103520" expanded="true" signature="57959:58011" ph="select * fro... ${$mysql_themes_table}" />
-                <marker date="1508725103520" expanded="true" signature="58787:58847" ph="select theme... ${$mysql_users_table}" />
-                <marker date="1508725103520" expanded="true" signature="59093:59119" ph="select defau... ${$mysql_settings_table}" />
+                <marker date="1508726007169" expanded="true" signature="56848:56900" ph="select * fro... ${$mysql_themes_table}" />
+                <marker date="1508726007169" expanded="true" signature="57676:57736" ph="select theme... ${$mysql_users_table}" />
+                <marker date="1508726007169" expanded="true" signature="57982:58008" ph="select defau... ${$mysql_settings_table}" />
               </folding>
             </state>
           </provider>
@@ -107,7 +107,7 @@
       <file leaf-file-name="tcreate.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/supporter/tcreate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-146">
+            <state relative-caret-position="-350">
               <caret line="360" column="56" lean-forward="false" selection-start-line="360" selection-start-column="56" selection-end-line="360" selection-end-column="56" />
               <folding>
                 <marker date="1508631790492" expanded="true" signature="2872:3535" ph="INSERT INTO ${$mysql_tickets_table}... " />
@@ -155,7 +155,7 @@
       <file leaf-file-name="tupdate.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/supporter/tupdate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="102">
               <caret line="427" column="55" lean-forward="false" selection-start-line="427" selection-start-column="55" selection-end-line="427" selection-end-column="55" />
               <folding>
                 <element signature="e#8#1497#0#PHP" expanded="true" />
@@ -225,7 +225,7 @@
       <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-255">
+            <state relative-caret-position="-476">
               <caret line="4029" column="11" lean-forward="false" selection-start-line="4029" selection-start-column="11" selection-end-line="4029" selection-end-column="11" />
               <folding />
             </state>
@@ -255,7 +255,7 @@
       <file leaf-file-name="jsgrid-theme.min.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jsgrid-php/public/css/jsgrid-theme.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
+            <state relative-caret-position="-3835">
               <caret line="167" column="14613" lean-forward="false" selection-start-line="167" selection-start-column="14613" selection-end-line="167" selection-end-column="14613" />
               <folding>
                 <element signature="e#3450#12325#2" expanded="true" />
@@ -267,7 +267,7 @@
       <file leaf-file-name="php.ori.ini" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/php.ori.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
+            <state relative-caret-position="133">
               <caret line="743" column="23" lean-forward="false" selection-start-line="743" selection-start-column="23" selection-end-line="743" selection-end-column="23" />
               <folding />
             </state>
@@ -841,14 +841,7 @@
       <workItem from="1508388059373" duration="21770000" />
       <workItem from="1508444976781" duration="25610000" />
       <workItem from="1508475049417" duration="86584000" />
-      <workItem from="1508655613890" duration="30775000" />
-    </task>
-    <task id="LOCAL-01150" summary="STYLE fixed">
-      <created>1508679102290</created>
-      <option name="number" value="01150" />
-      <option name="presentableId" value="LOCAL-01150" />
-      <option name="project" value="LOCAL" />
-      <updated>1508679102290</updated>
+      <workItem from="1508655613890" duration="31677000" />
     </task>
     <task id="LOCAL-01151" summary="STYLE fixed">
       <created>1508679361337</created>
@@ -1186,11 +1179,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508724946060</updated>
     </task>
-    <option name="localTasksCounter" value="1199" />
+    <task id="LOCAL-01199" summary="td.subcat, td.cat cleaaned up, move out of @media">
+      <created>1508725115419</created>
+      <option name="number" value="01199" />
+      <option name="presentableId" value="LOCAL-01199" />
+      <option name="project" value="LOCAL" />
+      <updated>1508725115419</updated>
+    </task>
+    <option name="localTasksCounter" value="1200" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="869456000" />
+    <option name="totallyTimeSpent" value="870358000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1206,7 +1206,7 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33900928" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2616352" sideWeight="0.5822494" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2616352" sideWeight="0.5822494" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5006435" sideWeight="0.41775057" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24905661" sideWeight="0.46442235" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31949687" sideWeight="0.49339622" order="7" side_tool="false" content_ui="tabs" />
@@ -1214,7 +1214,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908162" sideWeight="0.49734244" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33862433" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16931216" sideWeight="0.76831347" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32578617" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32578617" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38926682" sideWeight="0.49086162" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33207548" sideWeight="0.47666413" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20226415" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1403,7 +1403,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/common/style.php</url>
-          <line>239</line>
+          <line>231</line>
           <option name="timeStamp" value="254" />
         </line-breakpoint>
       </breakpoints>
@@ -2056,7 +2056,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/php.ori.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
+        <state relative-caret-position="133">
           <caret line="743" column="23" lean-forward="false" selection-start-line="743" selection-start-column="23" selection-end-line="743" selection-end-column="23" />
           <folding />
         </state>
@@ -2096,7 +2096,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jsgrid-php/public/css/jsgrid-theme.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
+        <state relative-caret-position="-3835">
           <caret line="167" column="14613" lean-forward="false" selection-start-line="167" selection-start-column="14613" selection-end-line="167" selection-end-column="14613" />
           <folding>
             <element signature="e#3450#12325#2" expanded="true" />
@@ -2106,7 +2106,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/supporter/tupdate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="102">
           <caret line="427" column="55" lean-forward="false" selection-start-line="427" selection-start-column="55" selection-end-line="427" selection-end-column="55" />
           <folding>
             <element signature="e#8#1497#0#PHP" expanded="true" />
@@ -2174,7 +2174,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
+        <state relative-caret-position="-476">
           <caret line="4029" column="11" lean-forward="false" selection-start-line="4029" selection-start-column="11" selection-end-line="4029" selection-end-column="11" />
           <folding />
         </state>
@@ -2182,7 +2182,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/supporter/tcreate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-146">
+        <state relative-caret-position="-350">
           <caret line="360" column="56" lean-forward="false" selection-start-line="360" selection-start-column="56" selection-end-line="360" selection-end-column="56" />
           <folding>
             <marker date="1508631790492" expanded="true" signature="2872:3535" ph="INSERT INTO ${$mysql_tickets_table}... " />
@@ -2228,13 +2228,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/style.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3519">
-          <caret line="366" column="36" lean-forward="false" selection-start-line="366" selection-start-column="36" selection-end-line="366" selection-end-column="36" />
+        <state relative-caret-position="323">
+          <caret line="253" column="20" lean-forward="false" selection-start-line="253" selection-start-column="20" selection-end-line="253" selection-end-column="20" />
           <folding>
             <element signature="e#7#1399#0#PHP" expanded="true" />
-            <marker date="1508725103520" expanded="true" signature="57959:58011" ph="select * fro... ${$mysql_themes_table}" />
-            <marker date="1508725103520" expanded="true" signature="58787:58847" ph="select theme... ${$mysql_users_table}" />
-            <marker date="1508725103520" expanded="true" signature="59093:59119" ph="select defau... ${$mysql_settings_table}" />
+            <marker date="1508726007169" expanded="true" signature="56848:56900" ph="select * fro... ${$mysql_themes_table}" />
+            <marker date="1508726007169" expanded="true" signature="57676:57736" ph="select theme... ${$mysql_users_table}" />
+            <marker date="1508726007169" expanded="true" signature="57982:58008" ph="select defau... ${$mysql_settings_table}" />
           </folding>
         </state>
       </provider>

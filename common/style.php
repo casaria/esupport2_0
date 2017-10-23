@@ -95,6 +95,7 @@ $tablePadding = 6;
         <STYLE type="text/css">
 
 
+            @import url(https://fonts.googleapis.com/css?family=Lato);
 
             table {
                 border-spacing: 1px;
@@ -107,10 +108,7 @@ $tablePadding = 6;
                 font-family: "<?php echo $theme['font']; ?>";
                 font-size: <?php echo $theme['font_size']; ?>px;
                 color: <?php echo $theme['text']; ?>;
-                padding-left: 15px;
-                padding-bottom: 4px;
-                padding-top: 4px;
-                padding-right: 6px;
+                padding: 4px 6px 4px 15px;
 
             }
 
@@ -135,10 +133,7 @@ $tablePadding = 6;
                 font-family: "<?php echo $theme['font']; ?>";
                 font-size: <?php echo '$theme["font_size"] + 4'?>'px';
                 font-weight: 600;
-                padding-left: 15px;
-                padding-bottom: 4px;
-                padding-top: 4px;
-                padding-right: 6px;
+                padding: 4px 6px 4px 15px;
 
             }
 
@@ -208,9 +203,6 @@ $tablePadding = 6;
 
             //`
 
-
-            @import url(https://fonts.googleapis.com/css?family=Lato);
-
             /*### Smartphones (portrait and landscape)(small)### */
             @media screen and (min-width : 0px) and (max-width : 767px){
                 /*Base Mobile Layout*/
@@ -243,7 +235,7 @@ $tablePadding = 6;
                     Vbackground-color: <?php echo $theme['subcategory']; ?> border: 2px solid;
                     -webkit-box-shadow: #B4B5B5 3PX 3PX 3PX;
                     -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
-                    -box-shadow: #B4B5B5 3PX 3PX 3PX;
+                    box-shadow: #B4B5B5 3PX 3PX 3PX;
                     -webkit-border-radius: 3px;
                     -moz-border-radius: 3px;
                     width: 200px;
@@ -352,12 +344,7 @@ $tablePadding = 6;
 
 
                 button, input[type=submit] {
-                    border-top-color: #67bcd1;
-                    border-right-color: #67bcd1;
-                    border-bottom-color: #67bcd1;
-                    border-left-color: #67bcd1;
-                    border-width: 2px;
-                    border-style: solid;
+                    border: 2px solid #67bcd1;
                     -webkit-box-shadow: #797991 1px 1px 1px;
                     -moz-box-shadow: #797991 1px 1px 1px;
                     box-shadow: #797991 1px 1px 1px;
@@ -382,12 +369,7 @@ $tablePadding = 6;
                 }
 
                 button:hover, input[type=submit]:hover {
-                    border-top-color: #44adc6;
-                    border-right-color: #44adc6;
-                    border-bottom-color: #44adc6;
-                    border-left-color: #44adc6;
-                    border-width: 2px;
-                    border-style: solid;
+                    border: 2px solid #44adc6;
                     background-color: #6bbed2;
                     background-image: -webkit-gradient(linear, left top, left bottom, from(#6bbed2), to(#50abc4));
                     background-image: -webkit-linear-gradient(top, #6bbed2, #50abc4);
@@ -839,7 +821,7 @@ $tablePadding = 6;
                     -webkit-border-vertical-spacing: 1px;
                     font-weight: 500;
                     padding: 1px;
-                    margin: 0px;
+                    margin: 1px;
                 }
 
 
@@ -962,13 +944,8 @@ $tablePadding = 6;
                 }
 
                 button, input[type=submit] {
-                    border-top-color: #67bcd1;
-                    border-right-color: #67bcd1;
-                    border-bottom-color: #67bcd1;
-                    border-left-color: #67bcd1;
-                    border-width: 2px;
                     width: 150px;
-                    border-style: solid;
+                    border: 2px solid #67bcd1;
                     -webkit-box-shadow: #797991 3px 3px 3px;
                     -moz-box-shadow: #797991 3px 3px 3px;
                     box-shadow: #797991 3px 3px 3px;
@@ -992,12 +969,7 @@ $tablePadding = 6;
                 }
 
                 button:hover, input[type=submit]:hover {
-                    border-top-color: #44adc6;
-                    border-right-color: #44adc6;
-                    border-bottom-color: #44adc6;
-                    border-left-color: #44adc6;
-                    border-width: 2px;
-                    border-style: solid;
+                    border: 2px solid #44adc6;
                     background-color: #6bbed2;
                     background-image: -webkit-gradient(linear, left top, left bottom, from(#6bbed2), to(#50abc4));
                     background-image: -webkit-linear-gradient(top, #6bbed2, #50abc4);

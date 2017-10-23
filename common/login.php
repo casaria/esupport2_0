@@ -182,7 +182,7 @@ echo'
     <TD>
     
     </TD></TR><TR><TD>
-      <TABLE style=\"margin:0px; Padding:0px; width=100%\" align=\"center|">
+      <TABLE style=\"margin:0px; Padding:0px; width=100%\" align=\"center\">
         <TR
           <TD class=back2 align="center"><b>'.$helpdesk_name.' '.$lang_login.'</b></TD>
         </TR>

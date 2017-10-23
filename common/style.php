@@ -167,7 +167,7 @@ $tablePadding = 6;
                 -webkit-border-radius: 4px;
                 -moz-border-radius: 4px;
                 border-radius: 4px;
-                font-size: 16px;
+                font-size: 14px;
                 padding: 6px 6px 6px 6px;
                 font-weight: 600;
                 text-decoration: none;

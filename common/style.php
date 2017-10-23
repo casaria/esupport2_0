@@ -295,7 +295,7 @@ $tablePadding = 6;
 
                 #selectwidth2 {
 
-                    background-color: <?php echo $theme['category']; ?>;
+                    background-color: <?ph$theme['category']; ?>;
                     border: 0 solid;
                     -webkit-box-shadow: #B4B5B5 3px 3PX 3PX;
                     -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
@@ -1445,10 +1445,10 @@ $tablePadding = 6;
             }
             ?>
         }
-            .btn-login {
+            .btn-login, .pwd-login {
                 width: 150px;
                 height: 34px;
-                padding-bottom: 10px;
+                pa\dding-bottom: 10px;
                 margin-bottom: 35px;
                 margin-top: 25px;
             }

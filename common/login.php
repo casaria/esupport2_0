@@ -129,7 +129,7 @@ if(isset($login))
 				//nov14 header("Location: $referer");
 				//echo"<BR>$cookie_name $enc_pwd";
 				setcookie('cookieuser', $cookie_name,  time()+ 60*60*24*7);
-				setcookie('cookiepwd', $_POST['password'],  time()+ 60*60*24*7);				
+				setcookie('cookiepwd', $_POST['password'],  time()+ 60*60*24*7);
 		}
 		else{
 			echo $lang_wronglogin;
@@ -195,7 +195,7 @@ echo'
 				</tr>
 				<tr>
 				 <td class=back2 align=right>'.$lang_password.':</td><td>
-					<input type=password name=password class="text-2" value='."$cookiepwd".'></td>
+					<input type=password name=password class="password"" value='."$cookiepwd".'></td>
 				</tr>
 				<tr>
 				 <<td class=back2 align=right>:</td><td>

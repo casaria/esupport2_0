@@ -1420,7 +1420,7 @@ $tablePadding = 6;
                     font-family: "<?php echo $theme['font']; ?>";
                     font-size: <?php echo '$theme["font_size"] + 4'?>'px';
                     font-weight: 600;
-                    padding-left: 5px;
+                    padding-left: 15px;
                     padding-right: 5px;
                 }
 

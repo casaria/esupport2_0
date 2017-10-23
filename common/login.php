@@ -177,7 +177,7 @@ echo'
               <TR></TR><tr>
                   <TD class=back vAlign="top" align="center">
 
-<TABLE class=border cellSpacing=0 cellPadding=0 width=300px align=center border=0>
+<TABLE class=border cellSpacing=0 cellPadding=0 width=2800px align=center border=0>
   <TR>
     <TD>
     
@@ -191,7 +191,7 @@ echo'
         </TR>
         <TR>
           <TD class=back2>
-			<table width=100% border=0 cellspacing=0 cellpadding=6>
+			<table width=100% border=0 cellspacing=0 cellpadding=0>
 				<tr>
 				 <td class=back2 align=right>'.$lang_username.':</td><td>
 					<input type=text name=user class="text-2" value='."$cookieuser".'></td>

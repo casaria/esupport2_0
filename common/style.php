@@ -194,6 +194,10 @@ $tablePadding = 6;
                 width: 300px;
             }
 
+            .btn-login {
+                margin-top: 15px;
+                margin-bottom: 25px;
+            }
 
             td.stats {
                 background: <?php echo $theme['category']; ?>;

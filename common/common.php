@@ -1345,7 +1345,7 @@ function createUserGroupMenu($flag=0)
 //flag is 2 if being called from tsearch.php
 	if ($flag == 2) {
 
-		echo "<option>selected</option>";
+		echo "<option></option>";
 		while ($row = $db->fetch_row($result)) {
 			if ($num_rows == 1 || $row[0] != 1) {
 				echo "<option value=\"$row[0]\"";
@@ -1404,7 +1404,7 @@ function createGroupMenu($flagUpdate=0)
 //flag is 2 if being called from tsearch.php
 	if ($flagUpdate == 2) {
 
-		echo "<option>selected</option>";
+		echo "<option></option>";
 		while ($row = $db->fetch_row($result)) {
 			if ($num_rows == 1 || $row[0] != 1) {
 				echo "<option value=\"$row[0]\"";
@@ -1438,7 +1438,7 @@ function createPriorityMenu($flag=0, $maxRank = 999999)
 		$i=0;
 	}
 	if($flag) {
-        echo "<option>selected</option> ";
+        echo "<option></option> ";
     }
         while($row = $db->fetch_row($result)){
 		echo "<option value=\"$row[0]\" ";
@@ -1465,7 +1465,7 @@ function createBillingStatusMenu($flag = 0, $new = 0)
     $result = $db->query($sql, $mysql_BillingStatus_table);
 
     if($flag >= 1)
-        echo "<option>selected</option>";
+        echo "<option></option>";
 
     while($row = $db->fetch_array($result)){
         echo "<option value=\"$row[status]\" ";
@@ -1493,7 +1493,7 @@ function createStatusMenu($flag = 0, $new = 0)
 
 	if($flag == 1) {
 
-        echo '<option>selected</option>';
+        echo '<option></option>';
 	}
 	while($row = $db->fetch_array($result)){
 		echo "<option value=\"$row[status]\" ";

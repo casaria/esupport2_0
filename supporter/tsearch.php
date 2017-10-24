@@ -715,7 +715,6 @@ function sqlByPriority($query, $order)
 		$array[$i] = $row[0];
 		$i++;
 	}
-
 	return $array;
 
 }

@@ -687,7 +687,7 @@ echo'
 								
 					</table>
 
-                    <tr><td></td><td class="back" align="left"><input type=submit value='.$lang_searchforticket.' name = search>
+                    <tr><td class=back2 align="right"></td><td class="back" align="left"><input type=submit value='.$lang_searchforticket.' name = search>
                     <input type = hidden value = \'.$query.\' name=query>
                      </td></tr>
                  </form>

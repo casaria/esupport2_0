@@ -558,7 +558,6 @@ if(isset($search) || isset($s)) {
 									echo ' selected';
 							echo ">".$lang_month[$i]."</option>";
 						}
-
 echo '					</select>
 						<select name=sday>
 						<option></option>';

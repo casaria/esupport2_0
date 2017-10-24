@@ -683,8 +683,8 @@ echo'
 						</td>
 						</tr>';?>
 
-                    <tr><td class=back2 align="right"></td><td class="back" align="left"><input type=submit value='.$lang_searchforticket.' name = search>
-                    <input type = hidden value =".$query." name=query>
+                    <tr><td class=back2 align="right"></td><td class="back" align="left"><input type=submit value='<?php echo $lang_searchforticket;?>' name = search>
+                    <input type = hidden value ="<?php echo $query;?>" name=query>
                      </td></tr>
 <?php       echo '                 </form>
                 </table>

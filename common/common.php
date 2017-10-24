@@ -1462,10 +1462,10 @@ function createPriorityMenu($flag=0, $maxRank = 999999)
  ************************************************************************************************************/
 function createBillingStatusMenu($flag = 0, $new = 0)
 {
-    global $mysql_tBStatus_table, $info, $db;
+    global $mysql_BillingStatus_table, $info, $db;
 
-    $sql = "select id, status, default_create from $mysql_tBStatus_table order by rank asc";
-    $result = $db->query($sql, $mysql_tBStatus_table);
+    $sql = "select id, status, default_create from $mysql_BillingStatus_table order by rank asc";
+    $result = $db->query($sql, $mysql_BillingStatus_table);
 
     if($flag == 1)
         echo "<option></option>";

@@ -607,12 +607,15 @@ echo'
 						</select>
 						</td>
 						</tr>
-		$lang_beetweenUpdateDates
+		
+						
+						<TR>
+						<TD class=back2 align=right>'.$lang_beetweenUpdateDates.': </td>
+						<td class=back>
 						
 						
-						
-						
-						
+						</td>
+						</TR>
 						
 						
 						

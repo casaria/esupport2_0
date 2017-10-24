@@ -1439,7 +1439,7 @@ function createPriorityMenu($flag=0, $maxRank = 999999)
 	}
 	if($flag == 1 || $flag == 2)
         if($flag >= 1)
-            echo "<option></option>selected";
+            echo "<option></option> selected";
 	while($row = $db->fetch_row($result)){
 		echo "<option value=\"$row[0]\" ";
 			if($info['priority'] == '' && $i == $select && isset($i))

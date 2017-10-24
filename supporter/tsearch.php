@@ -669,9 +669,8 @@ echo'
 						</select>
 						</td>
 						</tr>										
-														
-																					
-	    `				<TR>
+							
+	        				<TR>
 						<TD class=back2 align=right>'.$lang_keywords.': </td>
 						<td class=back>
 							<input type=text  name=keywords>
@@ -682,9 +681,10 @@ echo'
 						<td class=back>'.$lang_sqlstmt2 . $mysql_tickets_table . $lang_sqlstmt3 . '
 							<input type=text name=input>
 						</td>
-						</tr>
+						</tr>';
+    ?>
                     <tr><td class=back2 align="right"></td><td class="back" align="left"><input type=submit value='.$lang_searchforticket.' name = search>
-                    <input type = hidden value = \'.$query.\' name=query>
+                    <input type = hidden value ="<?php .echo $query;?>." name=query>
                      </td></tr>
                  </form>								
 								
@@ -692,9 +692,9 @@ echo'
 
 
 
-			</table>';
+			</table>
 			
-
+<?php
 
 }
 

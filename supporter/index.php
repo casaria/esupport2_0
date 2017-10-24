@@ -77,7 +77,7 @@ if($pubpriv == "Private"){	//generate a list of people waiting to be approved.
 		$i++;
 	}
 }
-$time_offset = getTimeOffset($cookie_name);
+ $time_offset = getTimeOffset($cookie_name);
 if(isset($cookie_name)){
 	//update the lastactive time in the database.
 	$sql = "UPDATE $mysql_users_table set lastactive='".time()."' where user_name='".$cookie_name."'";

@@ -670,9 +670,8 @@ echo'
 						</td>
 						</tr>										
 														
-																						
-						
-						<TR>
+																					
+	    `				<TR>
 						<TD class=back2 align=right>'.$lang_keywords.': </td>
 						<td class=back>
 							<input type=text  name=keywords>
@@ -692,7 +691,7 @@ echo'
                      </td></tr>
                  </form>
 
-			</table><br>';
+			</table>';
 			
 
 

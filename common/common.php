@@ -1493,7 +1493,7 @@ function createStatusMenu($flag = 0, $new = 0)
 
 	if($flag == 1) {
 
-        echo '<option> selected</option>';
+        echo '<option></option>selected';
 	}
 	while($row = $db->fetch_array($result)){
 		echo "<option value=\"$row[status]\" ";

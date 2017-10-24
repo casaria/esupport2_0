@@ -1437,8 +1437,8 @@ function createPriorityMenu($flag=0, $maxRank = 999999)
 		$select = floor($num_rows / 2);
 		$i=0;
 	}
-	if($flag)
-                echo "<option></option> selected";
+	if($flag) {
+                echo "<option> Value=\"\" selected</option> ";
 	while($row = $db->fetch_row($result)){
 		echo "<option value=\"$row[0]\" ";
 			if($info['priority'] == '' && $i == $select && isset($i))
@@ -1491,7 +1491,8 @@ function createStatusMenu($flag = 0, $new = 0)
 	$result = $db->query($sql, $mysql_tstatus_table);
 
 	if($flag == 1) {
-	    echo "<option></option>";
+
+        echo '<option> Value="" selected</option>';
 	}
 	while($row = $db->fetch_array($result)){
 		echo "<option value=\"$row[status]\" ";

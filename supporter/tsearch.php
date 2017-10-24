@@ -501,7 +501,7 @@ if(isset($search) || isset($s)) {
 						<TR>
 						<TD class=back2 align=right>'.$lang_ticket.' '.$lang_priority.': </td>
 						<td class=back><select name=priority>';
-							createPriorityMenu(2);
+    							createPriorityMenu(2);
 	echo '
 						</select>
 						</td>
@@ -607,12 +607,28 @@ echo'
 						</select>
 						</td>
 						</tr>
-		
+		$lang_beetweenUpdateDates
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
 						
 						<TR>
 						<TD class=back2 align=right>'.$lang_betweenClosedDates.': </td>
 						<td class=back>
-						<select name=csmonth>';
+						<select name=csmonth>    
+                                <option></option> selected';
 						for($i=1; $i<13; $i++){
 							echo "<option value=$i";
 								if(($today['mon']-2) == $i)
@@ -622,7 +638,7 @@ echo'
 
 echo '					</select>
 						<select name=csday>
-						<option></option>';
+						<option></option> selected';
 						for($i=1; $i<32; $i++){
 							echo "<option value=$i";
 							if($i == $today['mday'])
@@ -631,7 +647,7 @@ echo '					</select>
 						}
 echo'					</select>
 						<select name=csyear>
-						<option></option>';
+						<option></option> selected';
 						for($i=2001; $i<= $today['year']; $i++){
 								echo "<option value=$i";
 								if($today['year'] == $i)
@@ -640,7 +656,8 @@ echo'					</select>
 						}
 						
 echo '					</select>	
-						<select name=cemonth>';
+						<select name=cemonth> 
+						<option></option> selected';
 						for($i=1; $i<13; $i++){
 							echo "<option value=$i";
 								if($today['mon'] == $i)
@@ -648,7 +665,7 @@ echo '					</select>
 							echo ">".$lang_month[$i]."</option>";
 						}
 echo '					</select>
-							<select name=ceday> <option></option>';
+							<select name=ceday> <option></option> selected';
 						for($i=1; $i<32; $i++){
 							echo "<option value=$i";
 								if($i == $today['mday'])
@@ -658,7 +675,7 @@ echo '					</select>
 echo '
 						</select>
 						<select name=ceyear>
-						<option></option>';
+						<option></option> selected';
 						for($i=2001; $i<= $today['year']; $i++){
 								echo "<option value=$i";
 								if($today['year'] == $i)

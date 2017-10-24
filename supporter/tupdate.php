@@ -891,6 +891,7 @@ function displayMaterials()
                                 <a href="#" data-sort-by="foo">data-foo</a>
                             </li>
                             <li>
+                           
                                 <a href="#" data-sort-way="desc">text desc</a>
                             </li>
                             <li>

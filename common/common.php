@@ -1444,7 +1444,7 @@ function createPriorityMenu($flag=0, $all=true)
 	}
 
 	if($flag == 1 || $flag == 2)
-		echo "<option></option>";
+		echo "<option></option> selected";
 
 	while($row = $db->fetch_row($result)){
 		echo "<option value=\"$row[0]\" ";

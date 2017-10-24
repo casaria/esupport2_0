@@ -2871,7 +2871,7 @@ function stripScripts($text)
 
 
 function showSubmitResult($success, $id){
-global $lang_ticket, $lang_submitted, $lang_submitted_succ;
+    global $lang_ticket, $lang_submitted, $lang_submitted_succ;
     startTable("$lang_ticket $lang_submitted", "left");
         echo "<tr><td class=back2><br><br> $lang_ticket <b>#" . str_pad($id, 5, "0", STR_PAD_LEFT) . " </b>$lang_submitted_succ.";
         echo "<br><br><br></td></tr>";

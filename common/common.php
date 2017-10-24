@@ -1429,7 +1429,9 @@ function createPriorityMenu($flag=0, $maxRank = 999999)
 
 	global $mysql_tpriorities_table, $info, $db;
 	$i=0;
-		$sql = "select priority from $mysql_tpriorities_table where rank <= $maxRank order by rank desc";
+
+		$sql = "select priority from $mysql_tpriorities_table where rank < $maxRank order by rank desc";
+
 	$result = $db->query($sql, $mysql_tpriorities_table);
 	$num_rows = $db->num_rows($result);
 
@@ -1437,9 +1439,10 @@ function createPriorityMenu($flag=0, $maxRank = 999999)
 		$select = floor($num_rows / 2);
 		$i=0;
 	}
-	if($flag>=1) {
+
+	if($flag == 1 || $flag == 2)
         echo "<option></option> ";
-    }
+
         while($row = $db->fetch_row($result)){
 		echo "<option value=\"$row[0]\" ";
 			if($info['priority'] == '' && $i == $select && isset($i))
@@ -1459,12 +1462,12 @@ function createPriorityMenu($flag=0, $maxRank = 999999)
  ************************************************************************************************************/
 function createBillingStatusMenu($flag = 0, $new = 0)
 {
-    global $mysql_BillingStatus_table, $info, $db;
+    global $mysql_tBStatus_table, $info, $db;
 
-    $sql = "select id, status, default_create from $mysql_BillingStatus_table order by rank asc";
-    $result = $db->query($sql, $mysql_BillingStatus_table);
+    $sql = "select id, status, default_create from $mysql_tBStatus_table order by rank asc";
+    $result = $db->query($sql, $mysql_tBStatus_table);
 
-    if($flag >= 1)
+    if($flag == 1)
         echo "<option></option>";
 
     while($row = $db->fetch_array($result)){
@@ -1492,8 +1495,7 @@ function createStatusMenu($flag = 0, $new = 0)
 	$result = $db->query($sql, $mysql_tstatus_table);
 
 	if($flag == 1) {
-
-        echo '<option></option>';
+	    echo "<option></option>";
 	}
 	while($row = $db->fetch_array($result)){
 		echo "<option value=\"$row[status]\" ";

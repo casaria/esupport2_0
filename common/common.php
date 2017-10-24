@@ -1411,6 +1411,7 @@ function createGroupMenu($flagUpdate=0)
 				if ($sg == $row[0] || $info['groupid'] == $row[0]) {
 					echo " selected";
 				}
+
 				echo ">" . $row[1] . "</option>";
 			}
 		}

@@ -1437,7 +1437,7 @@ function createPriorityMenu($flag=0, $maxRank = 999999)
 		$select = floor($num_rows / 2);
 		$i=0;
 	}
-	if($flag) {
+	if($flag>=1) {
         echo "<option></option> ";
     }
         while($row = $db->fetch_row($result)){

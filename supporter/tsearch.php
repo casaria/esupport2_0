@@ -690,8 +690,7 @@ echo'
 						
 						</tr>		
 					</table>
-				</td>
-				</tr>
+
                     <tr><td></td> <input type=submit value='.$lang_searchforticket.' name = search >
                     <input type = hidden value = \'.$query.\' name=query>
                      </td></tr>

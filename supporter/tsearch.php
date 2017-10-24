@@ -681,20 +681,15 @@ echo'
 						<td class=back>'.$lang_sqlstmt2 . $mysql_tickets_table . $lang_sqlstmt3 . '
 							<input type=text name=input>
 						</td>
-						</tr>';
-    ?>
+						</tr>';?>
+
                     <tr><td class=back2 align="right"></td><td class="back" align="left"><input type=submit value='.$lang_searchforticket.' name = search>
-                    <input type = hidden value ="<?php .echo $query;?>." name=query>
+                    <input type = hidden value =".$query." name=query>
                      </td></tr>
-                 </form>								
-								
-					</table>
+<?php       echo '                 </form>
+                </table>
 
-
-
-			</table>
-			
-<?php
+			</table>';
 
 }
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="esupport.casaria.net" uploadOnCheckin="d5067280-9d13-4d9e-ab36-3abade15bcf6" showNewOnSourceInSync="false">
+  <component name="PublishConfigData" serverName="esupport.casaria.net" persistUploadOnCheckin="false" showNewOnSourceInSync="false">
     <serverData>
       <paths name="cpanel.casaria.net">
         <serverdata>
@@ -23,7 +23,13 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="rc1.casaria.net">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/var/www/casaria/esupport2_0" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
     </serverData>
-    <option name="myUploadOnCheckinName" value="esupport.casaria.net" />
   </component>
 </project>

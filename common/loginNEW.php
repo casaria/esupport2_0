@@ -163,34 +163,25 @@ echo'
 </head>
 <body bgcolor='.$theme['bgcolor'].' onload="setfocus()">
 <form name=login method=post>
-<TABLE class=border cellSpacing=0 cellPadding=0 width='.$theme['width'].' align=center border="0">
-  <TR>
-    <TD>
-      <TABLE cellSpacing=0 cellPadding=0 width="100%" align="center" border=0>
-      
-        <TR>
-          <TD class=hf align=center></TD>
-        </TR>
-        <TR>
-          <TD class=back>
-			<TABLE border=0 width="100%" align="center">
-              <TR></TR><tr>
-                  <TD class=back vAlign=top aling="center">
 
-<TABLE class=border cellSpacing=0 cellPadding=0 width="40%" align=center border=0>
-  <TR>
-    <TD>
-    
-    <div class="card">
+
+ <div class="card">
   <div class="header">
     <h1>1</h1>
+    
+    
+    
   </div>
+  
+  
 
   <div class="container">
     <p>January 1, 2016</p>
   </div>
 </div>
     
+    
+
     </TD></TR><TR><TD>
       <TABLE style="margin:1px; Padding:1px; width=100%; -webkit-box-shadow: #797991 3px 3px 3px;
             -moz-box-shadow: #797991 3px 3px 3px;

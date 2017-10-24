@@ -465,9 +465,8 @@ if(isset($search) || isset($s)) {
 	createHeader("$lang_ticketsearch");
 
 	echo '
-		<TABLE class=border cellSpacing=2 cellPadding=0 width="100%" align=center colspan=4 border=0>
-				<TR>
-				<TD>
+		<TABLE class=border cellSpacing=2 cellPadding=3 width="100%" align=center colspan=4 border=0>
+			
 					<TABLE cellSpacing=1 cellPadding=5 width="100%" border=0>
 						<TR>
 						<TD class=back2 align=right width=180>'.$lang_searchtype.': </td>

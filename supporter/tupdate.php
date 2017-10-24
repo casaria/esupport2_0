@@ -503,8 +503,10 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
         </div>
         <div id="extra" class="tab-pane fade">
             <h3>EXTRA</h3>
-            <p<H4>The extra tab is fot tests right now"</H4>
-            <?php extraTab(); ?>
+            <p<H4>The extra tab is for tests right now"</H4>
+
+
+
             </p>
         </div>
     </div>
@@ -891,7 +893,7 @@ function displayMaterials()
                                 <a href="#" data-sort-by="foo">data-foo</a>
                             </li>
                             <li>
-                           
+                            
                                 <a href="#" data-sort-way="desc">text desc</a>
                             </li>
                             <li>

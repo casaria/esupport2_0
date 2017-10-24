@@ -686,10 +686,10 @@ echo'
 							<input type=text name=input>
 						</td>
 						</tr>
-						</tr>		
+								
 					</table>
 
-                    <tr><td></td> <input type=submit value='.$lang_searchforticket.' name = search >
+                    <tr><td><input type=submit value='.$lang_searchforticket.' name = search >
                     <input type = hidden value = \'.$query.\' name=query>
                      </td></tr>
                  </form>

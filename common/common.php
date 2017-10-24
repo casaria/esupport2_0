@@ -1424,17 +1424,12 @@ function createGroupMenu($flagUpdate=0)
 **	function createPriorityMenu():
 **		Takes no arguments.  Creates the drop down menu for the list of priorities.
 ************************************************************************************************************/
-function createPriorityMenu($flag=0, $all=true)
+function createPriorityMenu($flag=0, $maxRank = 999999)
 {
 
 	global $mysql_tpriorities_table, $info, $db;
 	$i=0;
-	if ($all) {
-		$sql = "select priority from $mysql_tpriorities_table order by rank desc";
-	}
-	else {
-		$sql = "select priority from $mysql_tpriorities_table where rank < 9999 order by rank desc";
-	}
+		$sql = "select priority from $mysql_tpriorities_table where rank <= $maxRank order by rank desc";
 	$result = $db->query($sql, $mysql_tpriorities_table);
 	$num_rows = $db->num_rows($result);
 
@@ -1444,7 +1439,8 @@ function createPriorityMenu($flag=0, $all=true)
 	}
 
 	if($flag == 1 || $flag == 2)
-
+        if($flag >= 1)
+            echo "<option></option>";
 	while($row = $db->fetch_row($result)){
 		echo "<option value=\"$row[0]\" ";
 			if($info['priority'] == '' && $i == $select && isset($i))
@@ -1469,7 +1465,7 @@ function createBillingStatusMenu($flag = 0, $new = 0)
     $sql = "select id, status, default_create from $mysql_BillingStatus_table order by rank asc";
     $result = $db->query($sql, $mysql_BillingStatus_table);
 
-    if($flag == 1)
+    if($flag >= 1)
         echo "<option></option>";
 
     while($row = $db->fetch_array($result)){

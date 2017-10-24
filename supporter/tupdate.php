@@ -862,8 +862,8 @@ function displayMaterials()
 
 }
     function extraTab(){
-        ?>
-        <div class="container">
+
+        ECHO '<div class="container">
             <h1>Scheduler</h1>
             <div id="sandbox">
                 <div class="row">
@@ -949,9 +949,9 @@ function displayMaterials()
                     </div>
                 </div>
             </div>
-        </div>
+        </div>';
 
-        <?php
+
     }
 
     function extraTab2() {

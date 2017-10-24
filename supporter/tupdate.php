@@ -861,7 +861,6 @@ function displayMaterials()
     endTable();
 
 }
-
     function extraTab(){
         ?>
         <div class="container">

@@ -138,7 +138,7 @@ else{
 
 
 <div class="container">
-    <ul class="nav nav-tabs">
+    <ul class="nav nav-pills">
         <li class="active"><a data-toggle="tab" href="#scan"><H3>SCAN</H3></a></li>
         <li><a data-toggle="tab" href="#legacy"><H3>LEGACY</H3></a></li>
         <li><a data-toggle="tab" href="#extra"><H3>EXTRA</H3></a></li>

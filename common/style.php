@@ -1078,18 +1078,16 @@ $tablePadding = 6;
 
                 table.border {
                     background: transparent;
-                    margin-bottom: 0;
                     margin-left: 2PX;
                     margin-right:6PX;
                     margin-top: 0;
 
                     color: black;
-                    padding-left: 2;
+                    padding-left: 2px;
                     padding-bottom: 2px;
                     padding-right: 2px;
                     padding-top: 2px;
 
-                    padding: 0;
                     padding-top: 0px;
                     padding-right: 0px;
                     padding-bottom: 0px;

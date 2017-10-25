@@ -196,6 +196,7 @@ else{
                     <li>Default Materials/Tools Packages</li>
                 </ul>
             </div>
+        </div>
             </p>
         </div>
         <div id="asset" class="tab-pane fade">
@@ -209,22 +210,6 @@ else{
                     <li><H4><b>PM schedules/taskds</H4></b></li>
                     <li><H4><b>Default Materials/Tools Packages</H4></b></li>
                 </UL>
-
-                    <div class="btn-group">
-                <button class="btn.large"><Warning></Warning></button>
-                <button class="btn dropdown-toggle" data-toggle="dropdown">
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li>Assigned cost centers<li>
-                    <li>Class of Work (workers comp)</li>
-                    <li>Sub-Asset</li>
-                    <li>Survey links</li>
-                    <li>PM schedules/taskds></li>
-                    <li>Default Materials/Tools Packages</li>
-                    <!-- dropdown menu links -->
-                </ul>
-            </div>
             </p>
         </div>
     </div>

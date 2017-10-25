@@ -90,7 +90,7 @@ $enable_CloudControl = getCloudControlUserSetting($_SESSION['cookie_name']);
 
 ?>
 <BODY class=body>
-<TABLE class=border cellSpacing=0 cellPadding=0 width="<?php echo $theme['width']; ?>" align=center 
+<TABLE class=border cellSpacing=2 cellPadding=0 width="<?php echo $theme['width']; ?>" align=center
 border=0>
   <TBODY> 
   <TR> 

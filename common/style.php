@@ -42,7 +42,7 @@ $tablePadding = 6;
 ?>
 
         <meta charset="utf-8">
-X
+
     <meta name = "viewport" content = "user-scalable=no, width=device-width">
 
         <link rel="stylesheet" href="/common/bootstrap.css" media="screen">
@@ -75,6 +75,16 @@ X
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(wf, s);
         })();
+
+
+        $(window).bind('gesturestart touchmove', function(event) {
+            event = event.originalEvent || event;
+            if (event.scale !== 1) {
+                event.preventDefault();
+                document.body.style.transform = 'scale(1)'
+            }
+        });
+
     </script>
 
 

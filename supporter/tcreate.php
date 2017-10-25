@@ -181,9 +181,9 @@ else{
         </div>
         <div id="extra" class="tab-pane fade">
             <h4>EXTRA</h4>
-            <p><H4>Additional ticket details (PO/Customer reference, cost centers, time budget, due time</H4>
-            <div class="btn-group">
-                <button class="btn">Action</button>
+            <p><H4>Additional ticket details (PO/Customer reference, cost centers, time budget, due time, continuation/follow up </H4>
+                 <div class="btn-group">
+    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                 <button class="btn dropdown-toggle" data-toggle="dropdown">
                     <span class="caret"></span>
                 </button>

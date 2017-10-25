@@ -943,7 +943,7 @@ $tablePadding = 6;
 
                   }*/
                 input[type=text], textarea, select, input[type=submit] {
-                    border: 2px solid #ffad41;
+                    border: -2px solid #ffad41;
                     -webkit-box-shadow: #B4B5B5 3px 3px 3px;
                     -moz-box-shadow: #B4B5B5 3px 3px 3px;
                     box-shadow: #B4B5B5 3px 3px 3px;
@@ -1077,7 +1077,7 @@ $tablePadding = 6;
                 }
 
                 table.border {
-                    background: <?php echo $theme['table_border']; ?>;
+                    background: transparent;
                     margin-bottom: 0;
                     margin-left: 2PX;
                     margin-right:6PX;

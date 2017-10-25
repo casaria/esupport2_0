@@ -269,7 +269,7 @@ $tablePadding = 6;
                     position: fixed;
                     width: 450px;
                     height: 732px;
-                    left: 50%;
+                    left: 80%;
                     top: 0%;
                     margin-left: -100px; /*half the width*/
                 }

@@ -261,7 +261,7 @@ $tablePadding = 6;
                 }
 
                 .container {
-                    background-color: mintcream;
+
                     padding-right: 10px;
                     padding-left: 10px;
                     margin-right: 4px;

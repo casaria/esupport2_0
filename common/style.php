@@ -269,8 +269,8 @@ $tablePadding = 6;
                     position: fixed;
                     width: 450px;
                     height: 732px;
-                    left: 80%;
-                    top: 0%;
+                    left: 0px;
+                    top: 0px;
                     margin-left: -100px; /*half the width*/
                 }
                 #selectwidth {

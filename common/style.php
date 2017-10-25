@@ -883,13 +883,14 @@ $tablePadding = 6;
                     -webkit-border-radius: 3px;
                     -moz-border-radius: 3px;
                     width: 350px;
+                    font-size: <?php echo ($theme['font_size']+2); ?>px
                     outline: 0;
                     overflow: hidden;
                     padding: 2px 2px 2px 2px;
 
                     /* background: transparent;
                      padding: 5px 10px 5px 5px;
-                     font-size: 16px;
+
                      border: 1px solid #f4a62b;
                      height: 34px;
                      -webkit-appearance: none;
@@ -1078,7 +1079,7 @@ $tablePadding = 6;
 
                 table.border {
                     background: transparent;
-                    margin-left: 2PX;
+                    margin-left: 0PX;
                     margin-right:6PX;
                     margin-top: 0;
 

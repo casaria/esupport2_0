@@ -148,8 +148,8 @@ else{
     <div class="tab-content">
         <div id="scan" class="tab-pane fade in active">
             <h3>SCAN</h3>
-            <p>SCAN or enter CASARIA Tag# to identify asset and all available details automatically. <BR>
-            ENTER or SCAN CASARIA TAG# assigned to the asset. As an alternative select by<br><br>
+            <p><H4>SCAN or enter CASARIA Tag# to identify asset and all available details automatically. <BR>
+                ENTER or SCAN CASARIA TAG# assigned to the asset. As an alternative select by</H4><br><br>
             <UL>
                 <li><H4>Facility</H4></li>
                 <li><h4>Category</h4></li>
@@ -160,7 +160,7 @@ else{
         </div>
         <div id="legacy" class="tab-pane fade">
             <h3>LEGACY</h3>
-            <p>Manually enter ticket the "classic/legacy" way
+            <p><H4>Manually enter ticket the "classic/legacy" way.</H4>
      <?php      createTicketHeader("$lang_create $lang_ticket");
                 createSupporterInfo();
                 createNotificationPanel();
@@ -181,14 +181,14 @@ else{
         </div>
         <div id="extra" class="tab-pane fade">
             <h4>EXTRA</h4>
-            <p>Additional ticket details (PO/Customer reference, cost centers, time budget, due time</p>
+            <p><H4>Additional ticket details (PO/Customer reference, cost centers, time budget, due time</H4></p>
         </div>
         <div id="asset" class="tab-pane fade">
             <h4>ASSET</h4>
-            <p<H4>Asset sepcific, preconfigured defaults, this tab allows modification. <br><br>
+            <p<H4>Asset sepcific, preconfigured defaults, this tab allows modification.</H4> <br><br>
                 <UL>
                     <li><H4><b>Assigned cost centers</H4></b></li>
-                    <li><H4><b>>Class of Work (workers comp)</H4></b></li>
+                    <li><H4><b>Class of Work (workers comp)</H4></b></li>
                     <li><H4><b>Sub-Assets</H4></b></li>                   
                     <li><H4><b>Survey links</H4></b></li>
                     <li><H4><b>PM schedules/taskds</H4></b></li>

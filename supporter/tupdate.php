@@ -526,6 +526,7 @@ ECHO '                <tr>
 <select id="selectwidth" name=group onChange=MM_jumpMenu(;\'parent\',; this, 0)><?php createGroupMenu(1); ?></select><td class="back2" align="right" width="180px">
         <?php echo $lang_supporter;?>
         </td>
+        <tr>
 							<td class=back align=\"left\">
 							<select id=\"selectwidth\" name=\"supporter_id\">"
     <?php createSupporterMenu($sg);

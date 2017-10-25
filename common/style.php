@@ -80,7 +80,7 @@ $tablePadding = 6;
 
         let preLastTouchStartAt = 0;
         let lastTouchStartAt = 0;
-        const delay = 500;
+        const delay = 200;
 
         document.addEventListener('touchstart', () => {
             preLastTouchStartAt = lastTouchStartAt;
@@ -91,7 +91,8 @@ $tablePadding = 6;
         if (touchEndAt - preLastTouchStartAt < delay) {
             event.preventDefault();
             event.target.click();
-            document.body.style.transform = 'scale(1)'
+
+            //document.body.style.transform = 'scale(1)'
         }
         })
 

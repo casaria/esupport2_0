@@ -155,7 +155,7 @@ else{
                 <li><h4>Category</h4></li>
                 <li><h4>Asset</h4></li>
             </UL>
-            <h2>Goto LEGACY to create TKT until active!</h2>
+            <h3><b>Goto LEGACY to create TKT until active!</b></h3>
             </p>
         </div>
         <div id="legacy" class="tab-pane fade">

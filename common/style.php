@@ -438,7 +438,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
               /*      width: 580px;   */
                     /* position: fixed;*/
                     width: 421px;
-                    height: 756px;
+                    height: 1400px;
                     left: 0%;
                     top: 0%;
                     margin-left: -8px; /*half the width*/

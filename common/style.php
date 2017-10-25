@@ -1091,7 +1091,7 @@ $tablePadding = 6;
                     padding-top: 0px;
                     padding-right: 0px;
                     padding-bottom: 0px;
-                    padding-left: 0px;
+                    padding-left: 6px;
                 }
 
                 td {

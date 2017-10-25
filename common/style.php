@@ -77,7 +77,20 @@ $tablePadding = 6;
         })();
 
 
+        $(function () {
+            if (!(/iPad|iPhone|iPod/.test(navigator.userAgent))) return;
+            $(document.head).append(
+                '<style>*{cursor:pointer;-webkit-tap-highlight-color:rgba(0,0,0,0)}</style>'
+            );
+            $(window).on('gesturestart touchmove', function (evt) {
+                if (evt.originalEvent.scale !== 1) {
+                    evt.originalEvent.preventDefault();
+                    document.body.style.transform = 'scale(1)'
+                }
+            })
+        })
 
+/*
         let preLastTouchStartAt = 0;
         let lastTouchStartAt = 0;
         const delay = 200;
@@ -94,7 +107,7 @@ $tablePadding = 6;
 
             //document.body.style.transform = 'scale(1)'
         }
-        })
+        }) */
 
     </script>
 

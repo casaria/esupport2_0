@@ -148,7 +148,13 @@ else{
     <div class="tab-content">
         <div id="scan" class="tab-pane fade in active">
             <h3>SCAN</h3>
-            <p>SCAN or enter CASARIA Tag# to identify asset and all available details automatically.</p>
+            <p>SCAN or enter CASARIA Tag# to identify asset and all available details automatically. <BR>
+            ENTER or SCAN CASARIA TAG# assigned to the asset. As an alternative select by<br><br>
+            Facility
+            Category
+            Asset<br><br>
+            Goto LEGACY TAP to create until activated!
+            </p>
         </div>
         <div id="legacy" class="tab-pane fade">
             <h3>LEGACY</h3>

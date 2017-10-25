@@ -189,7 +189,7 @@ else{
                 </button>
                 <ul class="dropdown-menu">
                     <li>Assigned cost centers<li>
-                    <li>Class of Work (workers comp)/li>
+                    <li>Class of Work (workers comp)</li>
                     <li>Sub-Asset</li>
                     <li>Survey links</li>
                     <li>PM schedules/taskds></li>
@@ -204,18 +204,24 @@ else{
                 <UL>
                     <li><H4><b>Assigned cost centers</H4></b></li>
                     <li><H4><b>Class of Work (workers comp)</H4></b></li>
-                    <li><H4><b>Sub-Assets</H4></b></li>                   
+                    <li><H4><b>Sub-Assets</H4></b></li>
                     <li><H4><b>Survey links</H4></b></li>
                     <li><H4><b>PM schedules/taskds</H4></b></li>
                     <li><H4><b>Default Materials/Tools Packages</H4></b></li>
                 </UL>
 
-            <div class="btn-group">
-                <button class="btn"><Warning></Warning></button>
+                    <div class="btn-group">
+                <button class="btn.large"><Warning></Warning></button>
                 <button class="btn dropdown-toggle" data-toggle="dropdown">
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
+                    <li>Assigned cost centers<li>
+                    <li>Class of Work (workers comp)</li>
+                    <li>Sub-Asset</li>
+                    <li>Survey links</li>
+                    <li>PM schedules/taskds></li>
+                    <li>Default Materials/Tools Packages</li>
                     <!-- dropdown menu links -->
                 </ul>
             </div>

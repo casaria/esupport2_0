@@ -243,7 +243,7 @@ border=0>
                             </TD>
                           </TR>
                          </TBOD
-                         Y> 
+                         </TBODY> 
                         </TABLE>
                       </TD>
                     </TR>

@@ -1353,8 +1353,9 @@ $tablePadding = 6;
                     text-align: left;
                     background: <?php echo $theme['info_bg']; ?>;
                     font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
-                    font-size: <?php echo ($theme['font_size'])+1; ?>px;
+                    font-size: <?php echo ($theme['font_size'])+2; ?>px;
                     color: <?php echo $theme['header_text']; ?>;
+                    padding: 3px;
                 }
 
                 td.extra {

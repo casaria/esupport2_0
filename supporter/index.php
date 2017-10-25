@@ -111,7 +111,7 @@ border=0>
     if (!$hidemenu) 
     {        
             echo '
-            <TABLE width="100%" align=center border=0>
+            <TABLE class=border width="100%" align=center border=0>
               <TBODY> 
               <TR> 
                 <TD vAlign=top width="200"> 

@@ -270,8 +270,8 @@ $tablePadding = 6;
                     position: fixed;
                     width: 465px;
                     height: 735px;
-                    left: 0px;
-                    top: 0px;
+                    left: 1%;
+                    top: 0%;
                     margin-left: 4px; /*half the width*/
                 }
                 #selectwidth {

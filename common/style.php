@@ -268,9 +268,9 @@ $tablePadding = 6;
               /*      margin-left: 6px; */
               /*      width: 580px;   */
                     position: fixed;
-                    width: 370px;
-                    height: 735px;
-                    left: 1%;
+                    width: 414px;
+                    height: 736px;
+                    left: 0%;
                     top: 0%;
                     margin-left: 4px; /*half the width*/
                 }

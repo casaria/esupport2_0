@@ -140,7 +140,7 @@ else{
 <div class="container">
     <ul class="nav nav-pills">
         <li class="active"><a data-toggle="tab" href="#scan"><H3>SCAN</H3></a></li>
-        <li><a data-toggle="tab" href="#legacy"><H3><*></H3></a></li>
+        <li><a data-toggle="tab" href="#legacy"><H1><*></H1></a></li>
         <li><a data-toggle="tab" href="#extra"><H3>EXTRA</H3></a></li>
         <li><a data-toggle="tab" href="#asset"><H3>ASSET</H3></a></li>
     </ul>
@@ -155,7 +155,7 @@ else{
                 <li><h4>Category</h4></li>
                 <li><h4>Asset</h4></li>
             </UL>
-            <h3><b>Goto LEGACY TAB<br>to create Tickets until active!</b></h3>
+            <h3><b>Goto LEGACY <h1>*</h1> TAB<br>to create Tickets until active!</b></h3>
             </p>
         </div>
         <div id="legacy" class="tab-pane fade>

@@ -76,7 +76,16 @@ $tablePadding = 6;
             s.parentNode.insertBefore(wf, s);
         })();
 
-/*
+/*let viewportmeta = document.querySelector('meta[name="viewport"]');
+if(viewportmeta===null){
+  viewportmeta = document.createElement("meta");
+  viewportmeta.setAttribute("name","viewport");
+  document.head.appendChild(viewportmeta);
+
+  viewportmeta = document.querySelector('meta[name="viewport"]');
+}
+viewportmeta.setAttribute('content', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
+console.log(document.querySelector('meta[name="viewport"]'));
         $(function () {
             if (!(/iPad|iPhone|iPod/.test(navigator.userAgent))) return;
             $(document.head).append(
@@ -318,7 +327,7 @@ $tablePadding = 6;
               /*      width: 580px;   */
                     position: fixed;
                     width: 421px;
-                    height: 736px;
+                    height: 756px;
                     left: 0%;
                     top: 0%;
                     margin-left: 4px; /*half the width*/

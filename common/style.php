@@ -43,7 +43,7 @@ $tablePadding = 6;
 
         <meta charset="utf-8">
 
-    <meta name = "viewport" content = "user-scalable=no, width=device-width">
+
 
         <link rel="stylesheet" href="/common/bootstrap.css" media="screen">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -77,13 +77,22 @@ $tablePadding = 6;
         })();
 
 
-        $(window).bind('gesturestart touchmove', function(event) {
-            event = event.originalEvent || event;
-            if (event.scale !== 1) {
-                event.preventDefault();
-                document.body.style.transform = 'scale(1)'
-            }
-        });
+
+        let preLastTouchStartAt = 0;
+        let lastTouchStartAt = 0;
+        const delay = 500;
+
+        document.addEventListener('touchstart', () => {
+            preLastTouchStartAt = lastTouchStartAt;
+        lastTouchStartAt = +new Date();
+        })
+        document.addEventListener('touchend', (event) => {
+            const touchEndAt = +new Date();
+        if (touchEndAt - preLastTouchStartAt < delay) {
+            event.preventDefault();
+            event.target.click();
+        }
+        })
 
     </script>
 

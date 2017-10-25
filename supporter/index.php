@@ -54,7 +54,7 @@ function winPop(url)
         
 <?php  
 $language = getLanguage($cookie_name);
-global $hidemenu;
+
 
 if($language == '')
 	require_once "../lang/$default_language.lang.php";
@@ -357,7 +357,7 @@ if (isAdministrator($cookie_name) && $awaiting_approval){
 							require "../admin/slist.php";
 							break;
 						case ("time"):						
-							require "../admin/timedetailed.php";
+    							require "../admin/timedetailed.php";
 							break;
 						case("cccheater"):
 							require "../CCC/jheater.php";

@@ -295,7 +295,7 @@ $tablePadding = 6;
 
                 #selectwidth2 {
 
-                    background-color: <?ph$theme['category']; ?>;
+                    background-color: <?php $theme['category']; ?>;
                     border: 0 solid;
                     -webkit-box-shadow: #B4B5B5 3px 3PX 3PX;
                     -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
@@ -1079,11 +1079,21 @@ $tablePadding = 6;
                 table.border {
                     background: <?php echo $theme['table_border']; ?>;
                     margin-bottom: 0;
-                    margin-left: 0;
-                    margin-right: 0;
+                    margin-left: 2PX;
+                    margin-right:6PX;
                     margin-top: 0;
-                    margin-inside: 4;
+
                     color: black;
+                    padding-left: 2;
+                    padding-bottom: 2px;
+                    padding-right: 2px;
+                    padding-top: 2px;
+
+                    padding: 0;
+                    padding-top: 0px;
+                    padding-right: 0px;
+                    padding-bottom: 0px;
+                    padding-left: 0px;
                 }
 
                 td {

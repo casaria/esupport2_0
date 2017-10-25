@@ -868,10 +868,10 @@ $tablePadding = 6;
 
 
                 .container {
-                    padding-right: 2px;
-                    padding-left: 2px;
-                    margin-right: 2px;
-                    margin-left: 2px;
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    margin-right: 4px;
+                    margin-left: 4px;
                     width: 780px;
                 }
                 #selectwidth {

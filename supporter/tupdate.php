@@ -523,7 +523,7 @@ startTable("$lang_supporterinfo", "left", 100, 4);
 ECHO '                <tr>                              
 							<td class=back2 align=right>' . $lang_supportergroup . '</td>
 							<td class=back align="left">';
-Echo '<select id="selectwidth" name=group onChange=\"MM_jumpMenu(\'parent\', this, 0)\"> '. createGroupMenu(1).'</select></td></tr><tr>';
+Echo "<select id=\"selectwidth\" name=group onChange=\"MM_jumpMenu(\'parent\', this, 0)\">createGroupMenu(1)</select></td></tr><tr>";
 echo '		<td class=back2 align=right width="180Ppx">' . $lang_supporter . ' </td>
 							<td class=back align="left">
                                 

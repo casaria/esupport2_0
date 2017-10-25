@@ -136,6 +136,18 @@ else{
 		}
 		//--></script>
 
+
+<div class="container">
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#main"><H3>MAIN</H3></a></li>
+        <li><a data-toggle="tab" href="#time"><H3>TIME</H3></a></li>
+        <li><a data-toggle="tab" href="#material"><H3>MATERIAL</H3></a></li>
+        <li><a data-toggle="tab" href="#extra"><H3>EXTRA</H3></a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="main" class="tab-pane fade in active">
+            <p>Review and edit. Provide Instucions: The field sequence is now more intuitive.
 <?php
 
 	createTicketHeader("$lang_create $lang_ticket");
@@ -153,9 +165,30 @@ else{
 	echo "<input type=hidden name=logged_in_user value=$cookie_name>";
 	echo "</form>";
 	//echo "</center>";
-
 }
+?>
+</p>
+        </div>
+        <div id="time" class="tab-pane fade">
+            <h3>TIME</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+        </div>
+        <div id="material" class="tab-pane fade">
+            <h3>MATERIAL</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam.</p>
+        </div>
+        <div id="extra" class="tab-pane fade">
+            <h3>EXTRA</h3>
+            <p<H4>The extra tab is for tests right now"</H4>
 
+
+            </p>
+        </div>
+    </div>
+</div>
+<?php
 
 
 function createSupporterInfo()

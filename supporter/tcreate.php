@@ -148,20 +148,50 @@ else{
     <div class="tab-content">
         <div id="scan" class="tab-pane fade in active">
             <h3>SCAN</h3>
-            <p><H4>SCAN or enter CASARIA Tag# to identify asset and all available details automatically. <BR>
-                ENTER or SCAN CASARIA TAG# assigned to the asset. As an alternative select by</H4><br><br>
-            <UL>
-                <li><H4>Facility</H4></li>
-                <li><h4>Category</h4></li>
-                <li><h4>Asset</h4></li>
-            </UL>
-            <h3><b>Goto LEGACY <h1>*</h1> TAB<br>to create Tickets until active!</b></h3>
+            <p><h3>Goto LEGACY <h1><b>*</b></h1> TAB<br>to create Tickets until active!</h3>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <input id="scanner_input" class="form-control" placeholder="Click the button to scan an EAN..." type="text" />
+                        <span class="input-group-btn">
+				<button class="btn btn-default" type="button" data-toggle="modal" data-target="#livestream_scanner">
+					<i class="fa fa-barcode"></i>
+				</button>
+			</span>
+                    </div><!-- /input-group -->
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+            <div class="modal" id="livestream_scanner">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 class="modal-title">Barcode Scanner</h4>
+                        </div>
+                        <div class="modal-body" style="position: static">
+                            <div id="interactive" class="viewport"></div>
+                            <div class="error"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <label class="btn btn-default pull-left">
+                                <i class="fa fa-camera"></i> Use camera app
+                                <input type="file" accept="image/*;capture=camera" capture="camera" class="hidden" />
+                            </label>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+
             </p>
         </div>
         <div id="legacy" class="tab-pane fade>
             <h3>LEGACY</h3>
             <p><H4>Manually enter ticket the "classic/legacy" way.</H4>
-     <?php      createTicketHeader("$lang_create $lang_ticket");
+             <?php      createTicketHeader("$lang_create $lang_ticket");
                 createSupporterInfo();
                 createNotificationPanel();
                 createUserInfo();

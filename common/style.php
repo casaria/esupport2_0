@@ -1078,6 +1078,11 @@ $tablePadding = 6;
 
                 table.border {
                     background: <?php echo $theme['table_border']; ?>;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    margin-top: 0;
+                    margin-inside: 4;
                     color: black;
                 }
 

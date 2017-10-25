@@ -85,7 +85,7 @@ $tablePadding = 6;
             $(window).on('gesturestart touchmove', function (evt) {
                 if (evt.originalEvent.scale !== 1) {
                     evt.originalEvent.preventDefault();
-                    document.body.style.transform = 'scale(1)'
+                    document.body.style.transform = 'scale(1,1)'
                 }
             })
         })

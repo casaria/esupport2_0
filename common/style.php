@@ -883,7 +883,7 @@ $tablePadding = 6;
                     -webkit-border-radius: 3px;
                     -moz-border-radius: 3px;
                     width: 350px;
-                    font-size: <?php echo ($theme['font_size']+2); ?>px
+                    font-size: <?php echo ($theme['font_size']+9); ?>px
                     outline: 0;
                     overflow: hidden;
                     padding: 2px 2px 2px 2px;

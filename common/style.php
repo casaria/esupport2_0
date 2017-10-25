@@ -268,7 +268,7 @@ $tablePadding = 6;
               /*      margin-left: 6px; */
               /*      width: 580px;   */
                     position: fixed;
-                    width: 485px;
+                    width: 465px;
                     height: 740px;
                     left: 0px;
                     top: 0px;

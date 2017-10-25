@@ -269,8 +269,7 @@ if(isset($getstats)){
 
 }
 else{
-
-echo "<form method=post>";
+	echo "<form method=post>";
 startTable("$lang_timetracking", "center");
 	echo "<tr><td class=back><br>";
 	startTable("$lang_selecttickets", "center", "80%");

@@ -320,9 +320,9 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
                 .container {
                     background-color: whitesmoke;
-                    padding-right: 6px;
-                    padding-left: 6x;
-                    margin-right: 4px;
+                    padding-right: 1px;
+                    padding-left: 1x;
+                    margin-right: 0px;
               /*      margin-left: 6px; */
               /*      width: 580px;   */
                     position: fixed;
@@ -330,7 +330,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     height: 756px;
                     left: 0%;
                     top: 0%;
-                    margin-left: 4px; /*half the width*/
+                    margin-left: 0px; /*half the width*/
                 }
                 #selectwidth {
                     background-color: #afe7f7;

@@ -1076,10 +1076,10 @@ $tablePadding = 6;
                     color: <?php echo $theme['text']; ?>;
                 }
 
-                /*table.border {
+                table.border {
                     background: <?php echo $theme['table_border']; ?>;
                     color: black;
-                } */
+                }
 
                 td {
                     color: #000000;

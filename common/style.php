@@ -330,7 +330,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     height: 756px;
                     left: 0%;
                     top: 0%;
-                    margin-left: 0px; /*half the width*/
+                    margin-left: -50px; /*half the width*/
                 }
                 #selectwidth {
                     background-color: #afe7f7;

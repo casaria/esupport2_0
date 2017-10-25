@@ -271,7 +271,7 @@ $tablePadding = 6;
                     height: 732px;
                     left: 0px;
                     top: 0px;
-                    margin-left: -100px; /*half the width*/
+                    margin-left: 6px; /*half the width*/
                 }
                 #selectwidth {
                     background-color: #afe7f7;

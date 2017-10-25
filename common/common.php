@@ -1968,8 +1968,12 @@ function createUGroupsMenu()
 {
 	global $mysql_ugroups_table, $sg, $ug, $db;
 
-	$sql = "select id, group_name from $mysql_ugroups_table order by rank asc";
-	$result = $db->query($sql);
+	/* $sql = "select id, group_name from $mysql_ugroups_table order by rank asc"; */
+
+    $sql = "select id, group_name from $mysql_ugroups_table order by $group_name asc";
+
+
+    $result = $db->query($sql);
 	$num_rows = 0;
 
 

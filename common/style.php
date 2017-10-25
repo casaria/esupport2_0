@@ -480,6 +480,7 @@ $tablePadding = 6;
                     color: #000000;
                     font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
                     font-size: <?php echo $theme['font_size']; ?>px;
+                    margin-left: 2px;
 
                 }
 

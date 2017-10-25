@@ -146,7 +146,7 @@ else{
     </ul>
 
     <div class="tab-content">
-        <div id="scan" class="tab-pane fade">
+        <div id="scan" class="tab-pane fade in active">
             <h3>SCAN</h3>
             <p><H4>SCAN or enter CASARIA Tag# to identify asset and all available details automatically. <BR>
                 ENTER or SCAN CASARIA TAG# assigned to the asset. As an alternative select by</H4><br><br>
@@ -158,7 +158,7 @@ else{
             <h3><b>Goto LEGACY TAB<br>to create Tickets until active!</b></h3>
             </p>
         </div>
-        <div id="legacy" class="tab-pane fade in active">
+        <div id="legacy" class="tab-pane fade>
             <h3>LEGACY</h3>
             <p><H4>Manually enter ticket the "classic/legacy" way.</H4>
      <?php      createTicketHeader("$lang_create $lang_ticket");
@@ -181,7 +181,22 @@ else{
         </div>
         <div id="extra" class="tab-pane fade">
             <h4>EXTRA</h4>
-            <p><H4>Additional ticket details (PO/Customer reference, cost centers, time budget, due time</H4></p>
+            <p><H4>Additional ticket details (PO/Customer reference, cost centers, time budget, due time</H4>
+            <div class="btn-group">
+                <button class="btn">Action</button>
+                <button class="btn dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li>Assigned cost centers<li>
+                    <li>Class of Work (workers comp)/li>
+                    <li>Sub-Asset</li>
+                    <li>Survey links</li>
+                    <li>PM schedules/taskds></li>
+                    <li>Default Materials/Tools Packages</li>
+                </ul>
+            </div>
+            </p>
         </div>
         <div id="asset" class="tab-pane fade">
             <h4>ASSET</h4>
@@ -194,6 +209,16 @@ else{
                     <li><H4><b>PM schedules/taskds</H4></b></li>
                     <li><H4><b>Default Materials/Tools Packages</H4></b></li>
                 </UL>
+
+            <div class="btn-group">
+                <button class="btn"><Warning></Warning></button>
+                <button class="btn dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <!-- dropdown menu links -->
+                </ul>
+            </div>
             </p>
         </div>
     </div>

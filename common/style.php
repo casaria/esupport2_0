@@ -264,10 +264,15 @@ $tablePadding = 6;
                     padding-right: 10px;
                     padding-left: 10px;
                     margin-right: 6px;
-                    margin-left: 6px;
-                    width: 580px;
+              /*      margin-left: 6px; */
+              /*      width: 580px;   */
+                    position: fixed;
+                    width: 450px;
+                    height: 732px;
+                    left: 50%;
+                    top: 0%;
+                    margin-left: -100px; /*half the width*/
                 }
-
                 #selectwidth {
                     background-color: #afe7f7;
                     border: 0 solid;

@@ -76,7 +76,7 @@ $tablePadding = 6;
             s.parentNode.insertBefore(wf, s);
         })();
 
-
+/*
         $(function () {
             if (!(/iPad|iPhone|iPod/.test(navigator.userAgent))) return;
             $(document.head).append(
@@ -88,7 +88,20 @@ $tablePadding = 6;
                     document.body.style.transform = 'scale(1,1)'
                 }
             })
-        })
+        }) */
+
+
+        let viewportmeta = document.querySelector('meta[name="viewport"]');
+        if(viewportmeta===null){
+            viewportmeta = document.createElement("meta");
+            viewportmeta.setAttribute("name","viewport");
+            document.head.appendChild(viewportmeta);
+
+            viewportmeta = document.querySelector('meta[name="viewport"]');
+        }
+        viewportmeta.setAttribute('content', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
+        console.log(document.querySelector('meta[name="viewport"]'));
+
 
 /*
         let preLastTouchStartAt = 0;

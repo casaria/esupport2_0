@@ -1088,10 +1088,7 @@ $tablePadding = 6;
                     padding-right: 2px;
                     padding-top: 2px;
 
-                    padding-top: 0px;
-                    padding-right: 0px;
-                    padding-bottom: 0px;
-                    padding-left: 6px;
+
                 }
 
                 td {

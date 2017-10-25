@@ -1447,7 +1447,7 @@ $tablePadding = 6;
                    else{ ?>
                 select, option, textarea, input {
                     font-family: "<?php echo $theme['font']; ?>", arial, helvetica, sans-serif;
-                    font-size: 11px;
+                    font-size: <?php echo $theme['font_size']; ?>px;
                     background: <?php echo $theme['subcategory']; ?>;
                     color: <?php echo $theme['text']; ?>;
                 }

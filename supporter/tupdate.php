@@ -522,14 +522,18 @@ startTable("$lang_supporterinfo", "left", 100, 4);
 
 ECHO '                <tr>                              
 							<td class=back2 align=right>' . $lang_supportergroup . '</td>
-							<td class=back align="left">'; ?>
-<select id="selectwidth" name=group onChange=MM_jumpMenu(;\'parent\',; this, 0)><?php createGroupMenu(1); ?></select><td class="back2" align="right" width="180px">
-        <?php echo $lang_supporter;?>
-        </td>
-        <tr>
-							<td class=back align=\"left\">
-							<select id=\"selectwidth\" name=\"supporter_id\">"
-    <?php createSupporterMenu($sg);
+							<td class=back align="left">';
+                ?> <select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)"><?php
+                    createGroupMenu(1);
+                    echo '
+							</select>
+							</td></tr><tr>
+							<td class=back2 align=right width="180Ppx">' . $lang_supporter . ' </td>
+							<td class=back align="left">
+                                
+			
+							<select id="selectwidth" name=supporter_id>';
+                    createSupporterMenu($sg);
 
     echo '				
 							</select>

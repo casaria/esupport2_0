@@ -181,13 +181,20 @@ else{
         </div>
         <div id="extra" class="tab-pane fade">
             <h3>EXTRA</h3>
-            <p>Additional ticket details (PO/Customer reference, cost centers, </p>
+            <p>Additional ticket details (PO/Customer reference, cost centers, time budget, due time</p>
         </div>
         <div id="asset" class="tab-pane fade">
-            <h3>EXTRA</h3>
-            <p<H4>The extra tab is for tests right now"</H4>
+            <h3>ASSET</h3>
+            <p<H4>Asset sepcific, preconfigured defaults, this tab allows modification. <br><br>
+                <UL>
+                    <li><H4>Assigned cost centers</H4></li>
+                    <li><h4>Class of Work (workers comp)</h4></li>
+                    <li><h4>Sub-Assets</h4></li>
+                    <li><h4>Survey links</h4></li>
+                    <li><h4>PM schedules/taskds</h4></li>
+                    <li><h4>Default Materials/Tools Packages</h4></li>
 
-
+                </UL>
             </p>
         </div>
     </div>

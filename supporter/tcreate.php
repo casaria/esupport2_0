@@ -146,7 +146,7 @@ else{
     </ul>
 
     <div class="tab-content">
-        <div id="scan" class="tab-pane fade in active">
+        <div id="scan" class="tab-pane fade">
             <h3>SCAN</h3>
             <p><H4>SCAN or enter CASARIA Tag# to identify asset and all available details automatically. <BR>
                 ENTER or SCAN CASARIA TAG# assigned to the asset. As an alternative select by</H4><br><br>
@@ -158,7 +158,7 @@ else{
             <h3><b>Goto LEGACY TAB<br>to create Tickets until active!</b></h3>
             </p>
         </div>
-        <div id="legacy" class="tab-pane fade">
+        <div id="legacy" class="tab-pane fade in active">
             <h3>LEGACY</h3>
             <p><H4>Manually enter ticket the "classic/legacy" way.</H4>
      <?php      createTicketHeader("$lang_create $lang_ticket");

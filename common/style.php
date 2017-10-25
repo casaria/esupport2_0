@@ -298,13 +298,13 @@ $tablePadding = 6;
 
                 .container {
                     background-color: whitesmoke;
-                    padding-right: 10px;
-                    padding-left: 10px;
+                    padding-right: 6px;
+                    padding-left: 6x;
                     margin-right: 4px;
               /*      margin-left: 6px; */
               /*      width: 580px;   */
                     position: fixed;
-                    width: 414px;
+                    width: 421px;
                     height: 736px;
                     left: 0%;
                     top: 0%;

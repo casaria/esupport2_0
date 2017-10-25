@@ -261,17 +261,18 @@ $tablePadding = 6;
                 }
 
                 .container {
+                    background-color: mintcream;
                     padding-right: 10px;
                     padding-left: 10px;
-                    margin-right: 6px;
+                    margin-right: 4px;
               /*      margin-left: 6px; */
               /*      width: 580px;   */
                     position: fixed;
-                    width: 480px;
-                    height: 732px;
+                    width: 485px;
+                    height: 740px;
                     left: 0px;
                     top: 0px;
-                    margin-left: 6px; /*half the width*/
+                    margin-left: 4px; /*half the width*/
                 }
                 #selectwidth {
                     background-color: #afe7f7;

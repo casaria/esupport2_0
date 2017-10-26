@@ -124,131 +124,135 @@ if(isset($create)) {
     header("Location: $supporter_site_url/index.php?t=tsuc&id=$id");
 
 }
-else{
-	echo "<form action=tcreate.php method=post enctype=\"multipart/form-data\">";
-?>
-	
-	<script language="JavaScript">
-		<!--
-		function MM_jumpMenu(targ,selObj,restore){ //v3.0
-		  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
-		  if (restore) selObj.selectedIndex=0;
-		}
-		//--></script>
+else {
+    echo "<form action=tcreate.php method=post enctype=\"multipart/form-data\">";
+    ?>
+
+    <script language="JavaScript">
+        <!--
+        function MM_jumpMenu(targ, selObj, restore) { //v3.0
+            eval(targ + ".location='" + selObj.options[selObj.selectedIndex].value + "'");
+            if (restore) selObj.selectedIndex = 0;
+        }
+
+        //--></script>
 
 
-<div class="container">
-    <ul class="nav nav-pills">
-        <li class="active"><a data-toggle="tab" href="#old"><H3>OLD</H3></a></li>
-        <li><a data-toggle="tab" href="#scan"><h3>SCAN</h3></a></li>
-        <li><a data-toggle="tab" href="#extra"><H3>EXTRA</H3></a></li>
-        <li><a data-toggle="tab" href="#asset"><H3>ASSET</H3></a></li>
-    </ul>
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="tab" href="#edit"><H3>EDIT</H3></a></li>
+            <li><a data-toggle="tab" href="#scan"><h3>SCAN</h3></a></li>
+            <li><a data-toggle="tab" href="#extra"><H3>EXTRA</H3></a></li>
+            <li><a data-toggle="tab" href="#asset"><H3>ASSET</H3></a></li>
+        </ul>
 
-    <div class="tab-content">
-        <div id="old" class="tab-pane fade in active">
-            <p><H4>Manually enter ticket the "classic/legacy" way.</H4>
-            <?php      createTicketHeader("$lang_create $lang_ticket");
-            createSupporterInfo();
-            createNotificationPanel();
-            createUserInfo();
-            createTicketInfo('allow',$ug);
-            //echo "<center>";
-            echo "<input type=submit name=create value=\"$lang_create $lang_ticket\">";
-            echo "&nbsp;&nbsp;&nbsp;";
-            echo "<input type=reset name=reset value=$lang_reset>";
-            echo "<input type=hidden name=sg value=".$sg.">";
-            echo "<input type=hidden name=ug value=".$ug.">";
-            echo "<input type=hidden name=userid value=".$userid.">";
-            echo "<input type=hidden name=logged_in_user value=$cookie_name>";
-            echo "</form>";
-            //echo "</center>";
-            }?>
+        <div class="tab-content">
+            <div id="edit" class="tab-pane fade in active">
+                <p><H4>Manually enter ticket the "classic/legacy" way.</H4>
+                <?php createTicketHeader("$lang_create $lang_ticket");
+                createSupporterInfo();
+                createNotificationPanel();
+                createUserInfo();
+                createTicketInfo('allow', $ug);
+                //echo "<center>";
+                echo "<input type=submit name=create value=\"$lang_create $lang_ticket\">";
+                echo "&nbsp;&nbsp;&nbsp;";
+                echo "<input type=reset name=reset value=$lang_reset>";
+                echo "<input type=hidden name=sg value=" . $sg . ">";
+                echo "<input type=hidden name=ug value=" . $ug . ">";
+                echo "<input type=hidden name=userid value=" . $userid . ">";
+                echo "<input type=hidden name=logged_in_user value=$cookie_name>";
+                echo "</form>";
+                //echo "</center>";
+                ?>
 
 
-
-            </p>
-        </div>
-        <div id="scan" class="tab-pane fade>
+                </p>
+            </div>
+            <div id="scan" class="tab-pane fade>
             <h3>SCAN</h3>
             <p>
-                  <div class="row">
-                    <div class="col-xs-6">
-                        <div class="input-group">
-                            <input id="scanner_input" class="form-control" placeholder="Click the button to scan an EAN..." type="text" />
-                            <span class="input-group-btn">
-                                        <button class="btn btn-default" height="50" type="button" data-toggle="modal" data-target="#livestream_scanner">
+                  <div class=" row
+            ">
+            <div class="col-xs-6">
+                <div class="input-group">
+                    <input id="scanner_input" class="form-control" placeholder="Click the button to scan an EAN..."
+                           type="text"/>
+                    <span class="input-group-btn">
+                                        <button class="btn btn-default" height="50" type="button" data-toggle="modal"
+                                                data-target="#livestream_scanner">
                                         <i class="fa fa-barcode"></i>
                                     </button>
                                    </span>
-                        </div><!-- /input-group -->
-                    </div><!-- /.col-lg-6 -->
-                </div><!-- /.row -->
-                <div class="modal" id="livestream_scanner">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title">Barcode Scanner</h4>
-                            </div>
-                            <div class="modal-body" style="position: static">
-                                <div id="interactive" class="viewport"></div>
-                                <div class="error"></div>
-                            </div>
-                            <div class="modal-footer">
-                                <label class="btn btn-default pull-left">
-                                    <i class="fa fa-camera"></i> Use camera app
-                                    <input type="file" accept="image/*;capture=camera" capture="camera" class="hidden" />
-                                </label>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+        <div class="modal" id="livestream_scanner">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title">Barcode Scanner</h4>
+                    </div>
+                    <div class="modal-body" style="position: static">
+                        <div id="interactive" class="viewport"></div>
+                        <div class="error"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <label class="btn btn-default pull-left">
+                            <i class="fa fa-camera"></i> Use camera app
+                            <input type="file" accept="image/*;capture=camera" capture="camera" class="hidden"/>
+                        </label>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
 
 
-
-    </p>
-        </div>
-        <div id="extra" class="tab-pane fade">
-            <h4>EXTRA</h4>
-            <p><H4>Additional ticket details (PO/Customer reference, cost centers, time budget, due time, continuation/follow up </H4>
-            <div class="btn-group">
-    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+        </p>
+    </div>
+    <div id="extra" class="tab-pane fade">
+        <h4>EXTRA</h4>
+        <p><H4>Additional ticket details (PO/Customer reference, cost centers, time budget, due time,
+            continuation/follow up </H4>
+        <div class="btn-group">
+            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                 <button class="btn.large dropdown-toggle" data-toggle="dropdown">
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li>Assigned cost centers<li>
+                    <li>Assigned cost centers
+                    <li>
                     <li>Class of Work (workers comp)</li>
                     <li>Sub-Asset</li>
                     <li>Survey links</li>
                     <li>PM schedules/taskds></li>
                     <li>Default Materials/Tools Packages</li>
                 </ul>
-            </div>
-        </div>
-            </p>
-        </div>
-        <div id="asset" class="tab-pane fade">
-            <h4>ASSET</h4>
-            <p<H4>Asset sepcific, preconfigured defaults, this tab allows modification.</H4> <br><br>
-                <UL>
-                    <li><H4><b>Assigned cost centers</H4></b></li>
-                    <li><H4><b>Class of Work (workers comp)</H4></b></li>
-                    <li><H4><b>Sub-Assets</H4></b></li>
-                    <li><H4><b>Survey links</H4></b></li>
-                    <li><H4><b>PM schedules/taskds</H4></b></li>
-                    <li><H4><b>Default Materials/Tools Packages</H4></b></li>
-                </UL>
-            </p>
         </div>
     </div>
-</div>
-<?php
-
+    </p>
+    </div>
+    <div id="asset" class="tab-pane fade">
+        <h4>ASSET</h4>
+        <p<H4>Asset sepcific, preconfigured defaults, this tab allows modification.</H4> <br><br>
+        <UL>
+            <li><H4><b>Assigned cost centers</H4></b></li>
+            <li><H4><b>Class of Work (workers comp)</H4></b></li>
+            <li><H4><b>Sub-Assets</H4></b></li>
+            <li><H4><b>Survey links</H4></b></li>
+            <li><H4><b>PM schedules/taskds</H4></b></li>
+            <li><H4><b>Default Materials/Tools Packages</H4></b></li>
+        </UL>
+        </p>
+    </div>
+    </div>
+    </div>
+    <?php
+}
 
 function createSupporterInfo()
 {

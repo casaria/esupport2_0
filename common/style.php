@@ -111,7 +111,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
             viewportmeta = document.querySelector('meta[name="viewport"]');
         }
-        viewportmeta.setAttribute('content', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
+        viewportmeta.setAttribute('cont ent', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
         console.log(document.querySelector('meta[name="viewport"]'));
 
 /*

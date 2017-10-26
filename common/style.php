@@ -98,10 +98,10 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 }
             })
         }) */
-
+/*
         function isvisible(obj) {
             return obj.offsetWidth > 0 && obj.offsetHeight > 0;
-        }
+        }  */
 
         let viewportmeta = document.querySelector('meta[name="viewport"]');
         if(viewportmeta===null){

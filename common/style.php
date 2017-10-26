@@ -112,14 +112,14 @@ console.log(document.querySelector('meta[name="viewport"]'));
         console.log(document.querySelector('meta[name="viewport"]'));
 
 
-      rtAt = 0;
+        rtAt = 0;
         let lastTouchStartAt = 0;
         const delay = 200;
 
         document.addEventListener('touchstart', () => {
             preLastTouchStartAt = lastTouchStartAt;
         lastTouchStartAt = +new Date();
-        })
+        });
         document.addEventListener('touchend', (event) => {
             const touchEndAt = +new Date();
         if (touchEndAt - preLastTouchStartAt < delay) {
@@ -321,8 +321,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 .container {
                     background-color: whitesmoke;
                     padding-right: 1px;
-                    padding-left: 1x;
-                    margin-right: 0px;
+                    padding-left: 1px;
+                    margin-right: 0;
               /*      margin-left: 6px; */
               /*      width: 580px;   */
                     position: fixed;

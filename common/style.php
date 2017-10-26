@@ -322,7 +322,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     background-color: whitesmoke;
                     padding-right: 1px;
                     padding-left: 1px;
-                    margin-right: 0;
+                    margin-right: 0px;
               /*      margin-left: 6px; */
               /*      width: 580px;   */
                     position: fixed;

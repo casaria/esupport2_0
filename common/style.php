@@ -114,7 +114,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
         viewportmeta.setAttribute('cont ent', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
         console.log(document.querySelector('meta[name="viewport"]'));
 
-/*
+
         rtAt = 0;
         let lastTouchStartAt = 0;
         const delay = 200;
@@ -135,7 +135,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
             //document.body.style.transform = 'scale(1)'
         }
         })
-*/
+
 
     </script>
 

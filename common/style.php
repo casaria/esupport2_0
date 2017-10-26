@@ -56,7 +56,7 @@ $tablePadding = 6;
     <script src="../dylay/assets/js/main.js"></script>
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <link href='http://fonts.googleapis.com/css?family=Titillium Web:300:400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../dylay/assets/css/main.css" media="screen">
@@ -117,7 +117,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
         rtAt = 0;
         let lastTouchStartAt = 0;
-        const delay = 350;
+        const delay = 200;
 
         document.addEventListener('touchstart', () => {
             preLastTouchStartAt = lastTouchStartAt;

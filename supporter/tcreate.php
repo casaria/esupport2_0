@@ -147,7 +147,6 @@ else{
 
     <div class="tab-content">
         <div id="old" class="tab-pane fade in active">
-            <h3>OLD</h3>
             <p><H4>Manually enter ticket the "classic/legacy" way.</H4>
             <?php      createTicketHeader("$lang_create $lang_ticket");
             createSupporterInfo();

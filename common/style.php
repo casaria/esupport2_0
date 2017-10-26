@@ -114,7 +114,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
 
 
-        <script; type="text/javascript"; src="quagga.min.js"></script>
+        <script; type="text/javascript"; src="assets/js/libs/quagga.min.js"></script>
     <style>
         #interactive.viewport {position: relative; width: 100%; height: auto; overflow: hidden; text-align: center;}
         #interactive.viewport > canvas, #interactive.viewport > video {max-width: 100%;width: 100%;}
@@ -223,7 +223,10 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 }
             });
         });
-/*
+
+
+        /*
+
         let preLastTouchStartAt = 0;
         let lastTouchStartAt = 0;
         const delay = 200;

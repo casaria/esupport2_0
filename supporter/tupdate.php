@@ -1918,9 +1918,100 @@ function displayMaterials()
     endTable();
 
 }
+function extraTab(){
+ ?>
+    <div class="container">
+        <h1>Scheduler</h1>
+        <div id="sandbox">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>Filters</h2>
+                    <ul id="filters">
+                        <li>
+                            <a href="#" data-filter="*">all</a>
+                        </li>
+                        <li>
+                            <a href="#" data-filter=".overhead">Overhead</a>
+                        </li>
+                        <li>
+                            <a href="#" data-filter=".billable">billable</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <h2>Sorts</h2>
+                    <ul id="sorts">
+                        <li>
+                            <a href="#">text</a>
+                        </li>
+                        <li>
+                            <a href="#" data-sort-by="foo">data-foo</a>
+                        </li>
+                        <li>
+                            <a href="#" data-sort-way="desc">text desc</a>
+                        </li>
+                        <li>
+                            <a href="#" data-sort-by="foo" data-sort-way="desc">data-foo desc</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
 
 
-function extraTab() {
+                <div id="dylay" class="row">
+                    <div class="col-sm-12 overhead"  data-foo="5">
+                        <span style="height: 200px;">#4530<br>Short dedcription<br>line 2</span>
+                    </div>
+                    <div class="col-sm-12 billable" data-foo="6">
+                        <span style="height: 40px;">#4320</span>
+                    </div>
+                    <div class="col-sm-12 billable" data-foo="3">
+                        <span style="height: 40px;">#4857</span>
+                    </div>
+                    <div class="col-sm-12 billable" data-foo="2">
+                        <span style="height: 40px;">#4858</span>
+                    </div>
+                    <div class="col-sm-12 overhead"  data-foo="4">
+                        <span style="height: 60px;">#3567</span>
+                    </div>
+                    <div class="col-sm-12 consonne" data-foo="1">
+                        <span style="height: 60px;">#4584</span>
+                    </div>
+                    <div class="col-sm-12 billable" data-foo="17">
+                        <span style="height: 80px;">#4000</span>
+                    </div>
+
+                    <div class="col-sm-12 overhead"  data-foo="5">
+                        <span style="height: 200px;">#4530<br>Short dedcription<br>line 2</span>
+                    </div>
+                    <div class="col-sm-12 billable" data-foo="6">
+                        <span style="height: 40px;">#4320</span>
+                    </div>
+                    <div class="col-sm-12 billable" data-foo="3">
+                        <span style="height: 40px;">#4857</span>
+                    </div>
+                    <div class="col-sm-12 billable" data-foo="2">
+                        <span style="height: 40px;">#4858</span>
+                    </div>
+                    <div class="col-sm-12 overhead"  data-foo="4">
+                        <span style="height: 60px;">#3567</span>
+                    </div>
+                    <div class="col-sm-12 consonne" data-foo="1">
+                        <span style="height: 60px;">#4584</span>
+                    </div>
+                    <div class="col-sm-12 billable" data-foo="17">
+                        <span style="height: 40px;">#4000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <?php
+    }
+
+function extraTab2() {
 
     ?>
 
@@ -1971,7 +2062,7 @@ global $lang_groupslists, $lang_groupslists2;
     endTable();
 
 
-
+return;
 
 
 
@@ -1988,18 +2079,18 @@ global $lang_groupslists, $lang_groupslists2;
             . "INNER JOIN `sgroup2` ON `sgroup2`.`user_name` = `users`.`user_name` ";
 
         $result = $db->query($sql);
-        startTable("$lang_group  --  ".getsGroup($group_id), "left");
+        startTable("$lang_group  --  " . getsGroup($group_id), "left");
         echo "<tr><td class=back>";
 
         echo '<div class="container">';
 
         echo '<div id="dylay" class="row no-gutters">';
-        while($row = $db->fetch_array($result)){
+        while ($row = $db->fetch_array($result)) {
 
 
-            echo "<div class=\"col-xs-12 col-sm-6 col-md-3 ".($row['supporter'] >= 1 ? "active" : "inactive")."\" username=\"$row[user_name]\">";
+            echo "<div class=\"col-xs-12 col-sm-6 col-md-3 " . ($row['supporter'] >= 1 ? "active" : "inactive") . "\" username=\"$row[user_name]\">";
             echo "<span style=height:60px;>";
-            echo "$row[first_name] $row[last_name] <b>($row[user_name])</b><br>$row[email] ".date("m/d/Y", $row[lastactive])."</span></div>";
+            echo "$row[first_name] $row[last_name] <b>($row[user_name])</b><br>$row[email] " . date("m/d/Y", $row[lastactive]) . "</span></div>";
 
 
         }
@@ -2008,9 +2099,7 @@ global $lang_groupslists, $lang_groupslists2;
 
 
         endTable();
-
-    }
-
+}
 ?>
 
 >>>>>>> 16b201026f82fa3412396fa6ab43fdf9ae569382

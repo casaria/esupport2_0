@@ -150,7 +150,7 @@ else{
             <h3>SCAN</h3>
             <p><h3>Goto LEGACY <h1><b>*</b></h1> TAB<br>to create Tickets until active!</h3>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-xs-2">
                     <div class="input-group">
                         <input id="scanner_input" class="form-control" placeholder="Click the button to scan an EAN..." type="text" />
                         <span class="input-group-btn">

@@ -169,11 +169,10 @@ else {
 
                 </p>
             </div>
-            <div id="scan" class="tab-pane fade>
+            <div id="scan" class="tab-pane fade">
             <h3>SCAN</h3>
-            <p>
-                  <div class=" row
-            ">
+            <p>This is where the serviced asset is scanned or selected
+            <div class="row">
             <div class="col-xs-6">
                 <div class="input-group">
                     <input id="scanner_input" class="form-control" placeholder="Click the button to scan an EAN..."

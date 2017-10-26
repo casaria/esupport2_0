@@ -140,7 +140,7 @@ else{
 <div class="container">
     <ul class="nav nav-pills">
         <li class="active"><a data-toggle="tab" href="#scan"><H3>SCAN</H3></a></li>
-        <li><a data-toggle="tab" href="#legacy"><H1><*></H1></a></li>
+        <li><a data-toggle="tab" href="#legacy"><H1>*</H1></a></li>
         <li><a data-toggle="tab" href="#extra"><H3>EXTRA</H3></a></li>
         <li><a data-toggle="tab" href="#asset"><H3>ASSET</H3></a></li>
     </ul>
@@ -154,10 +154,10 @@ else{
                     <div class="input-group">
                         <input id="scanner_input" class="form-control" placeholder="Click the button to scan an EAN..." type="text" />
                         <span class="input-group-btn">
-				<button class="btn btn-default" type="button" data-toggle="modal" data-target="#livestream_scanner">
-					<i class="fa fa-barcode"></i>
-				</button>
-			</span>
+		            		<button class="btn btn-default" height="50" type="button" data-toggle="modal" data-target="#livestream_scanner">
+                            <i class="fa fa-barcode"></i>
+                        </button>
+                       </span>
                     </div><!-- /input-group -->
                 </div><!-- /.col-lg-6 -->
             </div><!-- /.row -->

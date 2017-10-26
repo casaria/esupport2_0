@@ -99,6 +99,9 @@ console.log(document.querySelector('meta[name="viewport"]'));
             })
         }) */
 
+        function isvisible(obj) {
+            return obj.offsetWidth > 0 && obj.offsetHeight > 0;
+        }
 
         let viewportmeta = document.querySelector('meta[name="viewport"]');
         if(viewportmeta===null){
@@ -111,7 +114,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
         viewportmeta.setAttribute('content', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
         console.log(document.querySelector('meta[name="viewport"]'));
 
-
+/*
         rtAt = 0;
         let lastTouchStartAt = 0;
         const delay = 200;
@@ -126,10 +129,13 @@ console.log(document.querySelector('meta[name="viewport"]'));
             event.preventDefault();
             event.target.click();
 
+
+
+
             //document.body.style.transform = 'scale(1)'
         }
         })
-
+*/
 
     </script>
 

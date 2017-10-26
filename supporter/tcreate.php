@@ -140,7 +140,7 @@ else {
 
     <div class="container">
         <ul class="nav nav-pills">
-            <li class="active"><a data-toggle="tab" href="#new"<H3>NEW</H3></a></li>
+            <li class="active"><a data-toggle="tab" href="#new"><H3>NEW</H3></a></li>
             <li><a data-toggle="tab" href="#scan"><h3>SCAN</h3></a></li>
             <li><a data-toggle="tab" href="#extra"><H3>EXTRA</H3></a></li>
             <li><a data-toggle="tab" href="#asset"><H3>ASSET</H3></a></li>

@@ -439,7 +439,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     margin-right: 0px;
               /*      margin-left: 6px; */
               /*      width: 580px;   */
-                    /* position: fixed;*/
+                    position: fixed;
                     width: 421px;
                     height: 1400px;
                     left: 0%;

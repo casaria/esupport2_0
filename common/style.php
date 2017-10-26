@@ -117,7 +117,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
         rtAt = 0;
         let lastTouchStartAt = 0;
-        const delay = 200;
+        const delay = 350;
 
         document.addEventListener('touchstart', () => {
             preLastTouchStartAt = lastTouchStartAt;
@@ -1047,7 +1047,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 input[type=text]:hover, textarea:hover, select:hover {
                     border: 2px dashed #ff9913;
                     background-color: <?php echo $theme['bg2']; ?>;
-                    color: <?php echo $theme['text']; ?>`;
+                    color: <?php echo $theme['text']; ?>;
                     /*
                     background-color: #AFE7F7; background-image: -webkit-gradient(linear, left top, left bottom, from(#AFE7F7), to(#90CDDD));
                     background-image: -webkit-linear-gradient(top, #AFE7F7, #90CDDD);
@@ -1535,6 +1535,9 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 padding-bottom: 10px;
                 margin-bottom: 35px;
                 margin-top: 25px;
+            }
+            .h3{
+                font-weight: 700;
             }
 
         </STYLE>

@@ -139,75 +139,79 @@ else{
 
 <div class="container">
     <ul class="nav nav-pills">
-        <li class="active"><a data-toggle="tab" href="#scan"><H3>SCAN</H3></a></li>
-        <li><a data-toggle="tab" href="#legacy"><H1>*</H1></a></li>
+        <li class="active"><a data-toggle="tab" href="#scan"><H3>OLD</H3></a></li>
+        <li><a data-toggle="tab" href="#legacy"><H1>SCAN</H1></a></li>
         <li><a data-toggle="tab" href="#extra"><H3>EXTRA</H3></a></li>
         <li><a data-toggle="tab" href="#asset"><H3>ASSET</H3></a></li>
     </ul>
 
     <div class="tab-content">
         <div id="scan" class="tab-pane fade in active">
-            <h3>SCAN</h3>
-            <p><h3>Goto LEGACY <h1><b>*</b></h1> TAB<br>to create Tickets until active!</h3>
-            <div class="row">
-                <div class="col-xs-6">
-                    <div class="input-group">
-                        <input id="scanner_input" class="form-control" placeholder="Click the button to scan an EAN..." type="text" />
-                        <span class="input-group-btn">
-		            		<button class="btn btn-default" height="50" type="button" data-toggle="modal" data-target="#livestream_scanner">
-                            <i class="fa fa-barcode"></i>
-                        </button>
-                       </span>
-                    </div><!-- /input-group -->
-                </div><!-- /.col-lg-6 -->
-            </div><!-- /.row -->
-            <div class="modal" id="livestream_scanner">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h4 class="modal-title">Barcode Scanner</h4>
-                        </div>
-                        <div class="modal-body" style="position: static">
-                            <div id="interactive" class="viewport"></div>
-                            <div class="error"></div>
-                        </div>
-                        <div class="modal-footer">
-                            <label class="btn btn-default pull-left">
-                                <i class="fa fa-camera"></i> Use camera app
-                                <input type="file" accept="image/*;capture=camera" capture="camera" class="hidden" />
-                            </label>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                        </div>
-                    </div><!-- /.modal-content -->
-                </div><!-- /.modal-dialog -->
-            </div><!-- /.modal -->
+            <h3>OLD</h3>
+            <p><H4>Manually enter ticket the "classic/legacy" way.</H4>
+            <?php      createTicketHeader("$lang_create $lang_ticket");
+            createSupporterInfo();
+            createNotificationPanel();
+            createUserInfo();
+            createTicketInfo('allow',$ug);
+            //echo "<center>";
+            echo "<input type=submit name=create value=\"$lang_create $lang_ticket\">";
+            echo "&nbsp;&nbsp;&nbsp;";
+            echo "<input type=reset name=reset value=$lang_reset>";
+            echo "<input type=hidden name=sg value=".$sg.">";
+            echo "<input type=hidden name=ug value=".$ug.">";
+            echo "<input type=hidden name=userid value=".$userid.">";
+            echo "<input type=hidden name=logged_in_user value=$cookie_name>";
+            echo "</form>";
+            //echo "</center>";
+            }?>
+
 
 
             </p>
         </div>
-        <div id="legacy" class="tab-pane fade>
-            <h3>LEGACY</h3>
-            <p><H4>Manually enter ticket the "classic/legacy" way.</H4>
-             <?php      createTicketHeader("$lang_create $lang_ticket");
-                createSupporterInfo();
-                createNotificationPanel();
-                createUserInfo();
-                createTicketInfo('allow',$ug);
-                //echo "<center>";
-                echo "<input type=submit name=create value=\"$lang_create $lang_ticket\">";
-                echo "&nbsp;&nbsp;&nbsp;";
-                echo "<input type=reset name=reset value=$lang_reset>";
-                echo "<input type=hidden name=sg value=".$sg.">";
-                echo "<input type=hidden name=ug value=".$ug.">";
-                echo "<input type=hidden name=userid value=".$userid.">";
-                echo "<input type=hidden name=logged_in_user value=$cookie_name>";
-                echo "</form>";
-                //echo "</center>";
-                }?>
-            </p>
+        <div id="scan" class="tab-pane fade>
+            <h3>SCAN</h3>
+            <p>
+                  <div class="row">
+                    <div class="col-xs-6">
+                        <div class="input-group">
+                            <input id="scanner_input" class="form-control" placeholder="Click the button to scan an EAN..." type="text" />
+                            <span class="input-group-btn">
+                                        <button class="btn btn-default" height="50" type="button" data-toggle="modal" data-target="#livestream_scanner">
+                                        <i class="fa fa-barcode"></i>
+                                    </button>
+                                   </span>
+                        </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+                <div class="modal" id="livestream_scanner">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title">Barcode Scanner</h4>
+                            </div>
+                            <div class="modal-body" style="position: static">
+                                <div id="interactive" class="viewport"></div>
+                                <div class="error"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <label class="btn btn-default pull-left">
+                                    <i class="fa fa-camera"></i> Use camera app
+                                    <input type="file" accept="image/*;capture=camera" capture="camera" class="hidden" />
+                                </label>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+
+
+
+    </p>
         </div>
         <div id="extra" class="tab-pane fade">
             <h4>EXTRA</h4>

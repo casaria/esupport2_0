@@ -140,14 +140,14 @@ else {
 
     <div class="container">
         <ul class="nav nav-pills">
-            <li class="active"><a data-toggle="tab" href="#edit"><H3>EDIT</H3></a></li>
+            <li class="active"><a data-toggle="tab" href="#new"<H3>NEW</H3></a></li>
             <li><a data-toggle="tab" href="#scan"><h3>SCAN</h3></a></li>
             <li><a data-toggle="tab" href="#extra"><H3>EXTRA</H3></a></li>
             <li><a data-toggle="tab" href="#asset"><H3>ASSET</H3></a></li>
         </ul>
 
         <div class="tab-content">
-            <div id="edit" class="tab-pane fade in active">
+            <div id="new" class="tab-pane fade in active">
                 <p><H4>Manually enter ticket the "classic/legacy" way.</H4>
                 <?php createTicketHeader("$lang_create $lang_ticket");
                 createSupporterInfo();

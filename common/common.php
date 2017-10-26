@@ -2425,7 +2425,7 @@ function sendmail($to, $from, $return, $id, $msg, $subject="")
 	fputs($fd, "$msg\n");
       pclose($fd);
 
-}
+    }
 
 function QueueMail($to, $from, $return, $id, $msg, $subject="")
 {

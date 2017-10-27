@@ -502,8 +502,8 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
         </div>
         <div id="extra" class="tab-pane fade">
             <h3>EXTRA</h3>
-            <p><H4>The extra tab is for tests right now"</H4>
-
+            <p><H4>The extra tab is for tests right now"</H4><br><br>
+            <LI><a href='http://odoo.casaria.net/survey/start/qf-emergency-generator-inspection-6'>Checklist/survey item</a></LI>
 
             </p>
         </div>

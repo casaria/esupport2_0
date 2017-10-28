@@ -245,9 +245,13 @@ $(function() {
             frequency: 10,
             decoder: {
                 readers : [{
-                    format: "code_128_reader",
+                    format: "EAN",
                     config: {}
-                }]
+                },
+                    [{
+                        format: "EAN8-8",
+                        config: {}
+                    }]
             },
             locate: true
         },

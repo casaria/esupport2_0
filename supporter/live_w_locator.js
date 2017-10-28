@@ -245,11 +245,11 @@ $(function() {
             frequency: 10,
             decoder: {
                 readers : [{
-                    format: "EAN",
+                    format: "UPC",
                     config: {}
                 },
                     [{
-                        format: "EAN8-8",
+                        format: "EAN-8",
                         config: {}
                     }]
             },

@@ -11,7 +11,7 @@
                     type: "LiveStream"
                 },
                 decoder: {
-                    readers: ["code_128_reader"]
+                    readers: ["UPC"]
                 }
             }, function() {
                 Quagga.start();
@@ -24,7 +24,7 @@
 </head>
 <body>
 <div id="interactive" class="viewport">
-    <video id="video" width="320" height="240" autoplay></video>
+    <video id="video" width="640" height="480" autoplay></video>
 </div>
 </body>
 </html>

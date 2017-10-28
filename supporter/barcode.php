@@ -39,7 +39,7 @@
                     <option value="code_39_vin">Code 39 VIN</option>
                     <option value="ean">EAN</option>
                     <option value="ean_extended">EAN-extended</option>
-                    <option value="ean_8" selected="selected">EAN-8</option>
+                    <option  selected="selected" value="ean_8">EAN-8</option>
                     <option value="upc">UPC</option>
                     <option value="upc_e">UPC-E</option>
                     <option value="codabar">Codabar</option>
@@ -52,9 +52,9 @@
                 <span>Resolution (width)</span>
                 <select name="input-stream_constraints">
                     <option value="320x240">320px</option>
-                    <option selected="selected" value="640x480">640px</option>
+                    <option value="640x480">640px</option>
                     <option value="800x600">800px</option>
-                    <option value="1280x720">1280px</option>
+                    <option value="1280x720"  selected="selected">1280px</option>
                     <option value="1600x960">1600px</option>
                     <option value="1920x1080">1920px</option>
                 </select>

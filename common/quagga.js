@@ -65,7 +65,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	};
 /******/
 /******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/ 	__webpack_require__.o = function(object, property) { return Object.protot;       ype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "/";
@@ -919,7 +919,7 @@ module.exports = isObjectLike;
 /* 7 */
 /***/ (function(module, exports) {
 
-module.exports = clone
+module.exports = clone;
 
 /**
  * Creates a new vec2 initialized with values from an existing vector
@@ -928,9 +928,9 @@ module.exports = clone
  * @returns {vec2} a new 2D vector
  */
 function clone(a) {
-    var out = new Float32Array(2)
-    out[0] = a[0]
-    out[1] = a[1]
+    var out = new Float32Array(2);
+    out[0] = a[0];
+    out[1] = a[1];
     return out
 }
 
@@ -1337,9 +1337,8 @@ function imageRef(x, y) {
         }
     };
     return that;
-};
-
-/**
+}
+        /**
  * Computes an integral image of a given grayscale image.
  * @param imageDataContainer {ImageDataContainer} the image to be integrated
  */
@@ -1389,9 +1388,8 @@ function computeIntegralImage2(imageWrapper, integralWrapper) {
             posD++;
         }
     }
-};
-
-function computeIntegralImage(imageWrapper, integralWrapper) {
+}
+        function computeIntegralImage(imageWrapper, integralWrapper) {
     var imageData = imageWrapper.data;
     var width = imageWrapper.size.x;
     var height = imageWrapper.size.y;
@@ -1411,9 +1409,8 @@ function computeIntegralImage(imageWrapper, integralWrapper) {
             integralImageData[v * width + u] = sum + integralImageData[(v - 1) * width + u];
         }
     }
-};
-
-function thresholdImage(imageWrapper, threshold, targetWrapper) {
+}
+        function thresholdImage(imageWrapper, threshold, targetWrapper) {
     if (!targetWrapper) {
         targetWrapper = imageWrapper;
     }
@@ -1424,9 +1421,8 @@ function thresholdImage(imageWrapper, threshold, targetWrapper) {
     while (length--) {
         targetData[length] = imageData[length] < threshold ? 1 : 0;
     }
-};
-
-function computeHistogram(imageWrapper, bitsPerPixel) {
+}
+        function computeHistogram(imageWrapper, bitsPerPixel) {
     if (!bitsPerPixel) {
         bitsPerPixel = 8;
     }
@@ -1440,9 +1436,8 @@ function computeHistogram(imageWrapper, bitsPerPixel) {
         hist[imageData[length] >> bitShift]++;
     }
     return hist;
-};
-
-function sharpenLine(line) {
+}
+        function sharpenLine(line) {
     var i,
         length = line.length,
         left = line[0],
@@ -1457,9 +1452,8 @@ function sharpenLine(line) {
         center = right;
     }
     return line;
-};
-
-function determineOtsuThreshold(imageWrapper, bitsPerPixel) {
+}
+        function determineOtsuThreshold(imageWrapper, bitsPerPixel) {
     if (!bitsPerPixel) {
         bitsPerPixel = 8;
     }
@@ -1516,15 +1510,13 @@ function determineOtsuThreshold(imageWrapper, bitsPerPixel) {
 
     threshold = determineThreshold();
     return threshold << bitShift;
-};
-
-function otsuThreshold(imageWrapper, targetWrapper) {
+}
+        function otsuThreshold(imageWrapper, targetWrapper) {
     var threshold = determineOtsuThreshold(imageWrapper);
 
     thresholdImage(imageWrapper, threshold, targetWrapper);
     return threshold;
-};
-
+}
 // local thresholding
 function computeBinaryImage(imageWrapper, integralWrapper, targetWrapper) {
     computeIntegralImage(imageWrapper, integralWrapper);
@@ -1575,9 +1567,8 @@ function computeBinaryImage(imageWrapper, integralWrapper, targetWrapper) {
             targetData[v * width + u] = imageData[v * width + u] > avg + 5 ? 0 : 1;
         }
     }
-};
-
-function cluster(points, threshold, property) {
+}
+        function cluster(points, threshold, property) {
     var i,
         k,
         cluster,
@@ -1608,9 +1599,8 @@ function cluster(points, threshold, property) {
         }
     }
     return clusters;
-};
-
-var Tracer = {
+}
+        var Tracer = {
     trace: function trace(points, vec) {
         var iteration,
             maxIterations = 10,
@@ -1714,9 +1704,8 @@ function dilate(inImageWrapper, outImageWrapper) {
             outImageData[v * width + u] = sum > 0 ? 1 : 0;
         }
     }
-};
-
-function erode(inImageWrapper, outImageWrapper) {
+}
+        function erode(inImageWrapper, outImageWrapper) {
     var v,
         u,
         inImageData = inImageWrapper.data,
@@ -1739,9 +1728,8 @@ function erode(inImageWrapper, outImageWrapper) {
             outImageData[v * width + u] = sum === 5 ? 1 : 0;
         }
     }
-};
-
-function subtract(aImageWrapper, bImageWrapper, resultImageWrapper) {
+}
+        function subtract(aImageWrapper, bImageWrapper, resultImageWrapper) {
     if (!resultImageWrapper) {
         resultImageWrapper = aImageWrapper;
     }
@@ -1753,9 +1741,8 @@ function subtract(aImageWrapper, bImageWrapper, resultImageWrapper) {
     while (length--) {
         cImageData[length] = aImageData[length] - bImageData[length];
     }
-};
-
-function bitwiseOr(aImageWrapper, bImageWrapper, resultImageWrapper) {
+}
+        function bitwiseOr(aImageWrapper, bImageWrapper, resultImageWrapper) {
     if (!resultImageWrapper) {
         resultImageWrapper = aImageWrapper;
     }
@@ -1767,9 +1754,8 @@ function bitwiseOr(aImageWrapper, bImageWrapper, resultImageWrapper) {
     while (length--) {
         cImageData[length] = aImageData[length] || bImageData[length];
     }
-};
-
-function countNonZero(imageWrapper) {
+}
+        function countNonZero(imageWrapper) {
     var length = imageWrapper.data.length,
         data = imageWrapper.data,
         sum = 0;
@@ -1778,9 +1764,8 @@ function countNonZero(imageWrapper) {
         sum += data[length];
     }
     return sum;
-};
-
-function topGeneric(list, top, scoreFunc) {
+}
+        function topGeneric(list, top, scoreFunc) {
     var i,
         minIdx = 0,
         min = 0,
@@ -1813,20 +1798,17 @@ function topGeneric(list, top, scoreFunc) {
     }
 
     return queue;
-};
-
-function grayArrayFromImage(htmlImage, offsetX, ctx, array) {
+}
+        function grayArrayFromImage(htmlImage, offsetX, ctx, array) {
     ctx.drawImage(htmlImage, offsetX, 0, htmlImage.width, htmlImage.height);
     var ctxData = ctx.getImageData(offsetX, 0, htmlImage.width, htmlImage.height).data;
     computeGray(ctxData, array);
-};
-
-function grayArrayFromContext(ctx, size, offset, array) {
+}
+        function grayArrayFromContext(ctx, size, offset, array) {
     var ctxData = ctx.getImageData(offset.x, offset.y, size.x, size.y).data;
     computeGray(ctxData, array);
-};
-
-function grayAndHalfSampleFromCanvasData(canvasData, size, outArray) {
+}
+        function grayAndHalfSampleFromCanvasData(canvasData, size, outArray) {
     var topRowIdx = 0;
     var bottomRowIdx = size.x;
     var endIdx = Math.floor(canvasData.length / 4);
@@ -1845,9 +1827,8 @@ function grayAndHalfSampleFromCanvasData(canvasData, size, outArray) {
         topRowIdx = topRowIdx + inWidth;
         bottomRowIdx = bottomRowIdx + inWidth;
     }
-};
-
-function computeGray(imageData, outArray, config) {
+}
+        function computeGray(imageData, outArray, config) {
     var l = imageData.length / 4 | 0,
         i,
         singleChannel = config && config.singleChannel === true;
@@ -1861,9 +1842,8 @@ function computeGray(imageData, outArray, config) {
             outArray[i] = 0.299 * imageData[i * 4 + 0] + 0.587 * imageData[i * 4 + 1] + 0.114 * imageData[i * 4 + 2];
         }
     }
-};
-
-function loadImageArray(src, callback, canvas) {
+}
+        function loadImageArray(src, callback, canvas) {
     if (!canvas) {
         canvas = document.createElement('canvas');
     }
@@ -1884,9 +1864,8 @@ function loadImageArray(src, callback, canvas) {
         }, this);
     };
     img.src = src;
-};
-
-/**
+}
+        /**
  * @param inImg {ImageWrapper} input image to be sampled
  * @param outImg {ImageWrapper} to be stored in
  */
@@ -1909,9 +1888,8 @@ function halfSample(inImgWrapper, outImgWrapper) {
         topRowIdx = topRowIdx + inWidth;
         bottomRowIdx = bottomRowIdx + inWidth;
     }
-};
-
-function hsv2rgb(hsv, rgb) {
+}
+        function hsv2rgb(hsv, rgb) {
     var h = hsv[0],
         s = hsv[1],
         v = hsv[2],
@@ -1947,9 +1925,8 @@ function hsv2rgb(hsv, rgb) {
     rgb[1] = (g + m) * 255 | 0;
     rgb[2] = (b + m) * 255 | 0;
     return rgb;
-};
-
-function _computeDivisors(n) {
+}
+        function _computeDivisors(n) {
     var largeDivisors = [],
         divisors = [],
         i;
@@ -1963,9 +1940,8 @@ function _computeDivisors(n) {
         }
     }
     return divisors.concat(largeDivisors);
-};
-
-function _computeIntersection(arr1, arr2) {
+}
+        function _computeIntersection(arr1, arr2) {
     var i = 0,
         j = 0,
         result = [];
@@ -1982,9 +1958,8 @@ function _computeIntersection(arr1, arr2) {
         }
     }
     return result;
-};
-
-function calculatePatchSize(patchSize, imgSize) {
+}
+        function calculatePatchSize(patchSize, imgSize) {
     var divisorsX = _computeDivisors(imgSize.x),
         divisorsY = _computeDivisors(imgSize.y),
         wideSide = Math.max(imgSize.x, imgSize.y),
@@ -2030,18 +2005,16 @@ function calculatePatchSize(patchSize, imgSize) {
         }
     }
     return optimalPatchSize;
-};
-
-function _parseCSSDimensionValues(value) {
+}
+        function _parseCSSDimensionValues(value) {
     var dimension = {
         value: parseFloat(value),
         unit: value.indexOf("%") === value.length - 1 ? "%" : "%"
     };
 
     return dimension;
-};
-
-var _dimensionsConverters = {
+}
+        var _dimensionsConverters = {
     top: function top(dimension, context) {
         if (dimension.unit === "%") {
             return Math.floor(context.height * (dimension.value / 100));
@@ -2082,9 +2055,8 @@ function computeImageArea(inputWidth, inputHeight, area) {
         sw: parsedArea.right - parsedArea.left,
         sh: parsedArea.bottom - parsedArea.top
     };
-};
-
-/***/ }),
+}
+        /***/ }),
 /* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3058,7 +3030,7 @@ Code39Reader.prototype._findStart = function () {
 /* 32 */
 /***/ (function(module, exports) {
 
-module.exports = dot
+module.exports = dot;
 
 /**
  * Calculates the dot product of two vec2's
@@ -4286,9 +4258,8 @@ function enumerateDevices() {
         return navigator.mediaDevices.enumerateDevices();
     }
     return Promise.reject(new Error('enumerateDevices is not defined'));
-};
-
-function getUserMedia(constraints) {
+}
+        function getUserMedia(constraints) {
     if (navigator.mediaDevices && typeof navigator.mediaDevices.getUserMedia === 'function') {
         return navigator.mediaDevices.getUserMedia(constraints);
     }
@@ -6718,7 +6689,7 @@ function Skeletonizer(stdlib, foreign, buffer) {
                 }
             }
         }
-        return;
+
     }
 
     function subtract(aImagePtr, bImagePtr, outImagePtr) {
@@ -6809,7 +6780,7 @@ function Skeletonizer(stdlib, foreign, buffer) {
                 }
             }
         }
-        return;
+
     }
 
     function memcpy(srcImagePtr, dstImagePtr) {
@@ -7911,8 +7882,7 @@ Code93Reader.prototype._decode = function () {
     result = result.slice(0, result.length - 2);
     if ((result = self._decodeExtended(result)) === null) {
         return null;
-    };
-
+    }
     return {
         code: result.join(""),
         start: start.start,
@@ -8749,7 +8719,7 @@ UPCReader.prototype._decode = function () {
 /* 78 */
 /***/ (function(module, exports) {
 
-module.exports = copy
+module.exports = copy;
 
 /**
  * Copy the values from one mat2 to another
@@ -8760,10 +8730,10 @@ module.exports = copy
  * @returns {mat2} out
  */
 function copy(out, a) {
-  out[0] = a[0]
-  out[1] = a[1]
-  out[2] = a[2]
-  out[3] = a[3]
+  out[0] = a[0];
+  out[1] = a[1];
+  out[2] = a[2];
+  out[3] = a[3];
   return out
 }
 
@@ -8772,7 +8742,7 @@ function copy(out, a) {
 /* 79 */
 /***/ (function(module, exports) {
 
-module.exports = create
+module.exports = create;
 
 /**
  * Creates a new identity mat2
@@ -8781,11 +8751,11 @@ module.exports = create
  * @returns {mat2} a new 2x2 matrix
  */
 function create() {
-  var out = new Float32Array(4)
-  out[0] = 1
-  out[1] = 0
-  out[2] = 0
-  out[3] = 1
+  var out = new Float32Array(4);
+  out[0] = 1;
+  out[1] = 0;
+  out[2] = 0;
+  out[3] = 1;
   return out
 }
 
@@ -8794,7 +8764,7 @@ function create() {
 /* 80 */
 /***/ (function(module, exports) {
 
-module.exports = invert
+module.exports = invert;
 
 /**
  * Inverts a mat2

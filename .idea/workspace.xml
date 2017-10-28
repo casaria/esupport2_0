@@ -16,19 +16,18 @@
     <bookmark url="file://$PROJECT_DIR$/common/common.php" line="3610" />
     <bookmark url="file://$PROJECT_DIR$/common/common.php" line="1806" />
     <bookmark url="file://$PROJECT_DIR$/common/common.php" line="2667" />
-    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="811" />
+    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="924" />
     <bookmark url="file://$PROJECT_DIR$/common/common.php" line="1934" />
     <bookmark url="file://$PROJECT_DIR$/supporter/tupdate.php" line="354" />
     <bookmark url="file://$PROJECT_DIR$/supporter/tupdate.php" line="285" />
-    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="1152" />
-    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="1594" />
+    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="1265" />
+    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="1707" />
     <bookmark url="file://$PROJECT_DIR$/supporter" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="switched database configuration to clone_hdesk1">
+    <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/config.php" afterPath="$PROJECT_DIR$/common/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/supporter/tcreate.php" afterPath="$PROJECT_DIR$/supporter/tcreate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/style.php" afterPath="$PROJECT_DIR$/common/style.php" />
     </list>
     <ignored mask="workspace.xml" />
     <ignored mask="error_log" />
@@ -261,7 +260,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tcreate.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tcreate.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/supporter/tcreate.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="147">
@@ -538,16 +537,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/style.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2240">
-              <caret line="341" column="0" lean-forward="false" selection-start-line="341" selection-start-column="0" selection-end-line="342" selection-end-column="0" />
+            <state relative-caret-position="-550">
+              <caret line="158" column="68" lean-forward="true" selection-start-line="158" selection-start-column="68" selection-end-line="158" selection-end-column="68" />
               <folding>
                 <element signature="e#7#1399#0#PHP" expanded="true" />
-                <marker date="1509057140436" expanded="true" signature="61911:61963" ph="select * fro... ${$mysql_themes_table}" />
-                <marker date="1509057140436" expanded="true" signature="62768:62828" ph="select theme... ${$mysql_users_table}" />
-                <marker date="1509057140436" expanded="true" signature="63074:63100" ph="select defau... ${$mysql_settings_table}" />
+                <marker date="1509195586330" expanded="true" signature="67232:67284" ph="select * fro... ${$mysql_themes_table}" />
+                <marker date="1509195586330" expanded="true" signature="68089:68149" ph="select theme... ${$mysql_users_table}" />
+                <marker date="1509195586330" expanded="true" signature="68395:68421" ph="select defau... ${$mysql_settings_table}" />
               </folding>
             </state>
           </provider>
@@ -628,8 +627,8 @@
       <find>update_log</find>
       <find>li</find>
       <find>hre</find>
-      <find>.con</find>
       <find>log2</find>
+      <find>.con</find>
     </findStrings>
     <replaceStrings>
       <replace>$summary = displayTicket($result);</replace>
@@ -759,11 +758,11 @@
         <option value="$PROJECT_DIR$/common/common.php" />
         <option value="$PROJECT_DIR$/../JSGRID-eval-casaria-esupport/supporter/tupdate.php" />
         <option value="$PROJECT_DIR$/supporter/updatelog.php" />
-        <option value="$PROJECT_DIR$/common/style.php" />
         <option value="$PROJECT_DIR$/supporter/tupdate.php" />
         <option value="$PROJECT_DIR$/supporter/index.php" />
         <option value="$PROJECT_DIR$/common/config.php" />
         <option value="$PROJECT_DIR$/supporter/tcreate.php" />
+        <option value="$PROJECT_DIR$/common/style.php" />
       </list>
     </option>
   </component>
@@ -1191,14 +1190,7 @@
       <workItem from="1508655613890" duration="57444000" />
       <workItem from="1508876407331" duration="44030000" />
       <workItem from="1508949626546" duration="1799000" />
-      <workItem from="1508952286099" duration="51055000" />
-    </task>
-    <task id="LOCAL-01410" summary="First try barcode">
-      <created>1508951341642</created>
-      <option name="number" value="01410" />
-      <option name="presentableId" value="LOCAL-01410" />
-      <option name="project" value="LOCAL" />
-      <updated>1508951341642</updated>
+      <workItem from="1508952286099" duration="51356000" />
     </task>
     <task id="LOCAL-01411" summary="First try barcode">
       <created>1508952594694</created>
@@ -1536,11 +1528,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509124062733</updated>
     </task>
-    <option name="localTasksCounter" value="1459" />
+    <task id="LOCAL-01459" summary="switched database configuration to clone_hdesk1">
+      <created>1509195320468</created>
+      <option name="number" value="01459" />
+      <option name="presentableId" value="LOCAL-01459" />
+      <option name="project" value="LOCAL" />
+      <updated>1509195320468</updated>
+    </task>
+    <option name="localTasksCounter" value="1460" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1014297000" />
+    <option name="totallyTimeSpent" value="1014598000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1565,7 +1564,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868022" sideWeight="0.49734244" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3379205" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32741117" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17431907" sideWeight="0.71319795" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17431907" sideWeight="0.71319795" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3248731" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38837922" sideWeight="0.49086162" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33584905" sideWeight="0.47666413" order="1" side_tool="false" content_ui="tabs" />
@@ -1740,7 +1739,7 @@
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/common/style.php</url>
-          <line>318</line>
+          <line>431</line>
           <option name="timeStamp" value="254" />
         </line-breakpoint>
         <line-breakpoint type="php">
@@ -2663,19 +2662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/style.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2240">
-          <caret line="341" column="0" lean-forward="false" selection-start-line="341" selection-start-column="0" selection-end-line="342" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#1399#0#PHP" expanded="true" />
-            <marker date="1509057140436" expanded="true" signature="61911:61963" ph="select * fro... ${$mysql_themes_table}" />
-            <marker date="1509057140436" expanded="true" signature="62768:62828" ph="select theme... ${$mysql_users_table}" />
-            <marker date="1509057140436" expanded="true" signature="63074:63100" ph="select defau... ${$mysql_settings_table}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MAILQ12425325150.99449100.TXT">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -3055,6 +3041,19 @@
             <marker date="1509195284346" expanded="true" signature="15990:16142" ph="..." />
             <marker date="1509195284346" expanded="true" signature="15990:16165" ph="..." />
             <marker date="1509195284346" expanded="true" signature="16068:16142" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/style.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-550">
+          <caret line="158" column="68" lean-forward="true" selection-start-line="158" selection-start-column="68" selection-end-line="158" selection-end-column="68" />
+          <folding>
+            <element signature="e#7#1399#0#PHP" expanded="true" />
+            <marker date="1509195586330" expanded="true" signature="67232:67284" ph="select * fro... ${$mysql_themes_table}" />
+            <marker date="1509195586330" expanded="true" signature="68089:68149" ph="select theme... ${$mysql_users_table}" />
+            <marker date="1509195586330" expanded="true" signature="68395:68421" ph="select defau... ${$mysql_settings_table}" />
           </folding>
         </state>
       </provider>

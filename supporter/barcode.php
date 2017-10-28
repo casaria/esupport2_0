@@ -34,12 +34,12 @@
             <label>
                 <span>Barcode-Type</span>
                 <select name="decoder_readers">
-                    <option value="code_128" selected="selected">Code 128</option>
+                    <option value="code_128">Code 128</option>
                     <option value="code_39">Code 39</option>
                     <option value="code_39_vin">Code 39 VIN</option>
                     <option value="ean">EAN</option>
                     <option value="ean_extended">EAN-extended</option>
-                    <option value="ean_8">EAN-8</option>
+                    <option value="ean_8" selected="selected">EAN-8</option>
                     <option value="upc">UPC</option>
                     <option value="upc_e">UPC-E</option>
                     <option value="codabar">Codabar</option>
@@ -111,7 +111,7 @@
 </footer>
 
 <script src="../common/jquery-1.9.0.min.js" type="text/javascript"></script>
-<script src="../common/adapter-latest.js" type="text/javascript"></script>
+    <script src="//webrtc.github.io/adapter/adapter-latest.js" type="text/javascript"></script>
 <script src="../common/quagga.js" type="text/javascript"></script>
 <script src="../common/live_w_locator.js" type="text/javascript"></script>
 </body>

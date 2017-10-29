@@ -54,11 +54,11 @@ $tablePadding = 6;
     <script src="../dylay/assets/vendor/jquery.easing.1.3.js"></script>
     <script src="../dylay/src/dylay.js"></script>
     <script src="../dylay/assets/js/main.js"></script>
-
+    <script src="../common/quagga.js" type="text/javascript"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <link href='http://fonts.googleapis.com/css?family=Titillium Web:300:400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Titillium Web:300:400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../dylay/assets/css/main.css" media="screen">
 
 
@@ -111,7 +111,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
             viewportmeta = document.querySelector('meta[name="viewport"]');
         }
-        viewportmeta.setAttribute('cont ent', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
+        viewportmeta.setAttribute('content', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
         console.log(document.querySelector('meta[name="viewport"]'));
 
 
@@ -138,7 +138,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
 
     </script>
-    <script type="text/javascript" src="quagga.js"></script>
+
     <style>
         #interactive.viewport {position: relative; width: 100%; height: auto; overflow: hidden; text-align: center;}
         #interactive.viewport > canvas, #interactive.viewport > video {max-width: 100%;width: 100%;}
@@ -445,7 +445,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     margin-right: 0px;
               /*      margin-left: 6px; */
               /*      width: 580px;   */
-              /*      position: fixed; */
+                  position: fixed;
                     width: 421px;
                     height: 756px;
                     left: 0%;

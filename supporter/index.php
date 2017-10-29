@@ -133,13 +133,13 @@ border=0>
                           </TR>
                           <TR> 
                             <TD class=subcat> 
-                              <form name=timelink method="post" action="http://cbb.casaria.net">';
+                              <form name=timelink method="post" action="https://cbb.casaria.net">';
                                  echo "<input type=hidden name=login value=$user_info[email]>
                                  <input type=hidden name=md5 value=$user_info[password]>";
                                  echo '<LI><a href="#" onclick="javascript:document.timelink.submit();">CBB Casaria Bulletin Board</a></LI>
                               </form>	
-                               <form novalidate name="login_form" id="login_form" action="http://www.casaria.net:2095/horde/index.php" method="post"  style="visibility:">';
-                                //<form name=emaillink method="post" action="http://www.casaria.net:2095/horde/index.php">';
+                               <form novalidate name="login_form" id="login_form" action="https://www.casaria.net:2095/horde/index.php" method="post"  style="visibility:">';
+                                //<form name=emaillink method="post" action="https://www.casaria.net:2095/horde/index.php">';
                                  echo "<input type=hidden name=user id=user value=$user_info[email]>
                                  <input type=hidden name=pass id=pass value=$user_info[password]>";
                                  echo '<LI><a href="#" onclick="javascript:document.login_form.submit();">'; echo $lang_lnk_email;

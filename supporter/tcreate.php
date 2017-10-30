@@ -193,6 +193,8 @@ else {
                     <li>PM schedules/taskds></li>
                     <li>Default Materials/Tools Packages</li>
                 </ul>
+
+                <a class="btn-floating btn-lg purple-gradient"><i class="fa fa-bolt"></i></a>
         </div>
     </div>
     </p>

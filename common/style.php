@@ -331,7 +331,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
             .text-login
             {
                 margin: 10px;
-                width: 120px;
+                width: 150px;
             }
 
             td.stats {
@@ -535,13 +535,13 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     -webkit-border-radius: 3px;
                     -moz-border-radius: 3px;
                     border-radius: 3px;
-                    font-size: 14px;
-                    padding: 2px 2px 2px 2px;
+                    font-size: 15px;
+                    padding: 4px 2px 2px 4px;
                     text-decoration: none;
 
                     display: inline-block;
                     text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
-                    font-weight: bold;
+                    font-weight: 600;
                     color: #313131;
                     background-color: <?php echo $theme['bg2']; ?>;
                     /*

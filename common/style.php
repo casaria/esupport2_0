@@ -51,15 +51,15 @@ $tablePadding = 6;
 
 
 
-    <script src="../dylay/assets/vendor/jquery.easing.1.3.js"></script>
-    <script src="../dylay/src/dylay.js"></script>
-    <script src="../dylay/assets/js/main.js"></script>
-    <script src="../common/quagga.js" type="text/javascript"></script>
+    <script src="/dylay/assets/vendor/jquery.easing.1.3.js"></script>
+    <script src="/dylay/src/dylay.js"></script>
+    <script src="/dylay/assets/js/main.js"></script>
+    <script src="/common/quagga.js" type="text/javascript"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href='https://fonts.googleapis.com/css?family=Titillium Web:300:400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="../dylay/assets/css/main.css" media="screen">
+    <link rel="stylesheet" href="/dylay/assets/css/main.css" media="screen">
 
 
     <script type="text/javascript">

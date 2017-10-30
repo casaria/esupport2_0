@@ -56,7 +56,7 @@ $tablePadding = 6;
     <script src="/dylay/assets/js/main.js"></script>
     <script src="/common/quagga.js" type="text/javascript"></script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport-d" content="width=device-width, initial-scale=1.0">
 
     <link href='https://fonts.googleapis.com/css?family=Titillium Web:300:400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/dylay/assets/css/main.css" media="screen">
@@ -272,7 +272,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
         <STYLE type="text/css">
 
-
+            * {margin:0; padding:0;}
 
             table {
                 border-spacing: 1px;
@@ -301,7 +301,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 -webkit-border-radius: 3px;
                 -moz-border-radius: 3px;
                 border-radius: 3px;
-                font-size: 15px;
+                font-size: 18px;
                 padding: 2px 2px 2px 2px;
                 margin: 5px;
                 text-decoration: none;
@@ -330,7 +330,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
             }
             .text-login
             {
-                margin: 10px;
+                margin: 6px;
                 width: 150px;
             }
 
@@ -423,6 +423,20 @@ console.log(document.querySelector('meta[name="viewport"]'));
             }
 
 
+            .container-login
+            {   width: 420px;
+                border-radius:5px;
+                border: #f4a62b;
+                border-width: 3px;
+                background-color: <?php echo $theme['bg2']; ?>;
+                margin: -5px;
+                -webkit-box-shadow: 13px 11px 7px -4px rgba(117,115,117,1);
+                -moz-box-shadow: 13px 11px 7px -4px rgba(117,115,117,1);
+                box-shadow: 13px 11px 7px -4px rgba(117,115,117,1);
+                Copy Text
+
+                }
+
             /*### Smartphones (portrait and landscape)(small)### */
             @media screen and (min-width : 0px) and (max-width : 767px){
                 /*Base Mobile Layout*/
@@ -448,7 +462,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     margin-right: 0px;
               /*      margin-left: 6px; */
               /*      width: 580px;   */
-                  position: fixed;
+              /*    position: fixed;   */
                     width: 421px;
                     height: 756px;
                     left: 0%;
@@ -574,10 +588,10 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
 
                 button, input[type=submit] {
-                    border: 2px solid #67bcd1;
-                    -webkit-box-shadow: #797991 1px 1px 1px;
-                    -moz-box-shadow: #797991 1px 1px 1px;
-                    box-shadow: #797991 1px 1px 1px;
+                    border: 2px solid #6974b5;
+                    -webkit-box-shadow: #797991 3px 3px 3px;
+                    -moz-box-shadow: #797991 3px 3px 3px;
+                    box-shadow: #797991 3px 3px 3px;
                     -webkit-border-radius: 4px;
                     -moz-border-radius: 4px;
                     border-radius: 4px;
@@ -1141,7 +1155,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     -webkit-border-radius: 3px;
                     -moz-border-radius: 3px;
                     border-radius: 3px;
-                    font-size: 14px;
+                    font-size: 16px;
                     padding-top: 2px;
                     padding-right: 2px;
                     padding-left: 2px;
@@ -1179,8 +1193,10 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     */
                 }
 
+
+
                 button, input[type=submit] {
-                    width: 150px;
+
                     border: 2px solid #67bcd1;
                     -webkit-box-shadow: #797991 3px 3px 3px;
                     -moz-box-shadow: #797991 3px 3px 3px;
@@ -1189,12 +1205,12 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     -moz-border-radius: 4px;
                     border-radius: 4px;
                     font-size: 16px;
-                    padding: 10px 10px 10px 10px;
-                    text-decoration: blink;
+                    padding: 6px 6px 6px 6px;
+                    text-decoration: none;
                     display: inline-block;
                     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
                     color:<?php echo $theme['text'];?>;
-                    background-color: #92cfde;
+                    background-color: #f3f3f3;
                     background-image: -webkit-gradient(linear, left top, left bottom, from(#92cfde), to(#76bdd1));
                     background-image: -webkit-linear-gradient(top, #92cfde, #76bdd1);
                     background-image: -moz-linear-gradient(top, #92cfde, #76bdd1);
@@ -1649,10 +1665,11 @@ console.log(document.querySelector('meta[name="viewport"]'));
         }
             .btn-login, pwd-login {
                 width: 150px;
-                height: 34px;
+                height: 40px;
                 padding-bottom: 10px;
                 margin-bottom: 35px;
-                margin-top: 25px;
+                margin-top: 20px;
+                margin-left: 6px;
             }
             .h3{
                 font-weight: 700;

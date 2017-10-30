@@ -163,30 +163,36 @@ echo'
 </head>
 <body bgcolor='.$theme['bgcolor'].' onload="setfocus()">
 <form name=login method=post>
-<TABLE class=border cellSpacing=0 cellPadding=0 width='.$theme['width'].' align=center border=0>
+<TABLE class=border cellSpacing=0 cellPadding=20 width='.$theme['width'].' align=center border=0>
   <TR>
     <TD>
       <TABLE cellSpacing=0 cellPadding=0 width="100%" align="center" border=0>
       
         <TR>
           <TD class=back align=center></TD>
+          <TR></TR>
         </TR>
         <TR>
           <TD class=back>
 			<TABLE border=0 width="100%" align="center">
               <TR></TR><tr>
                   <TD class=back vAlign="top" align="center">
-
-<TABLE class=border cellSpacing=0 cellPadding=0 width=280px align=center border=0>
+<div class="container-login" align="center">
+<TABLE class=border cellSpacing=0 cellPadding=5  align=center border=0	>
   <TR>
     <TD>
     
-    </TD></TR><TR><TD>
-      <TABLE style=\"margin:0px; Padding:0px; width=100%\" align=\"center\">
+    </TD></TR>
+    <TR><TD>
+     	
+      <TABLE style="margin:6px; Padding:0px; width=100%" align="center">
         <TR
-          <TD class=back2 align="right"><b>'.$helpdesk_name.' '.$lang_login.'</b></TD>
+          
         </TR>
-          <TD class=back2 style="\margin:10px \" align="center"> <IMG SRC='."$login_logo".'>
+    
+  
+    
+          <TD class="back2" style="margin:10px" align="center"> <IMG SRC='."$login_logo".'>
         <TR>
         </TR>
         <TR>
@@ -210,9 +216,11 @@ echo'
 		  </TD>
 		</TR>
 	  </TABLE>
+	 
 	 </TD>
 	</TR>
-</TABLE>';
+
+</TABLE> </div>';
 
 if($pubpriv == 'Private'){
 	echo '<br><div align=center>[ <a href="'.$site_url.'/index.php?reg=yes">'.$lang_registerforaccount.'</a> ]</div>';

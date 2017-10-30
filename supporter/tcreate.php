@@ -187,7 +187,7 @@ else {
                     <span class="caret"></span>
 
                 </button>
-                <a class="btn-floating btn-lg purple-gradient"><i class="fa fa-bolt"></i></a>
+
                 <ul class="dropdown-menu">
                     <li>Assigned cost centers
                     <li>

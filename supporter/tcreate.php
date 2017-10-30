@@ -173,6 +173,8 @@ else {
             <h3>SCAN</h3>
             <p>This is where the serviced asset is scanned or selected
             <?php createScanpage(); ?>
+
+                <a class="btn-floating btn-lg purple-gradient"><i class="fa fa-bolt"></i></a>
         </p>
     </div>
     <div id="extra" class="tab-pane fade">

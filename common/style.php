@@ -528,7 +528,6 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 input[type=text], textarea, select,
                 input[type=password]
                 {
-                    width: 200px;
                     border: 2px solid #67bcd1;
                     -webkit-box-shadow: #B4B5B5 3px 3px 3px;
                     -moz-box-shadow: #B4B5B5 3px 3px 3px;
@@ -536,14 +535,14 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     -webkit-border-radius: 3px;
                     -moz-border-radius: 3px;
                     border-radius: 3px;
-                    font-size: 13px;
+                    font-size: 14px;
                     padding: 2px 2px 2px 2px;
                     text-decoration: none;
 
                     display: inline-block;
                     text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
                     font-weight: bold;
-                    color: darkslateblue;
+                    color: #313131;
                     background-color: <?php echo $theme['bg2']; ?>;
                     /*
                     background-color: #AFE7F7; background-image: -webkit-gradient(linear, left top, left bottom, from(#AFE7F7), to(#90CDDD));

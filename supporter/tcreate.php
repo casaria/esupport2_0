@@ -212,7 +212,7 @@ else {
     </div>
     </div>
     </div>
-    </div><!-- page -->
+
     <?php
 }
 

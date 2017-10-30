@@ -296,7 +296,7 @@ if (isAdministrator($cookie_name) && $awaiting_approval){
                 echo '</TD>
                 <TD vAlign=top>
                 
-   
+       </div>'; //<!-- page -->
   
 
     } else $getstats=true;

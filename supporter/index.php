@@ -111,10 +111,18 @@ border=0>
     if (!$hidemenu) 
     {        
             echo '
+     <div data-role="page">
             <TABLE width="100%" align=center border=0>
               <TBODY> 
               <TR> 
                 <TD vAlign=top width="200"> 
+                
+         
+
+        <div data-role="panel" id="mypanel">
+        <!-- panel content goes here -->
+
+                      
                   <TABLE class=border cellSpacing=0 cellPadding=0 width="100%" 
                   align=center border=0>
                     <TBODY> 
@@ -248,8 +256,16 @@ border=0>
                       </TD>
                     </TR>
                     </TBODY> 
-                  </TABLE>';
+                  </TABLE>
+                 </div>';  ?><!-- /panel -->
 
+<!-- header -->
+<!-- content -->
+<!-- footer -->
+<?php
+
+                
+                        
 //this is ugly, but it works...i'll clean it up later.
 //if the admin is logged in, display a list of people/users who are awaiting approval.
 if (isAdministrator($cookie_name) && $awaiting_approval){
@@ -262,7 +278,7 @@ if (isAdministrator($cookie_name) && $awaiting_approval){
                         <TABLE cellSpacing=1 cellPadding=5 width="100%" border=0>
                           <TBODY> 
                           <TR> 
-                            <TD class=info align=center><B>'; echo $lang_awaitingapproval; echo '</B></TD>';
+                            <TD class=info align=center><B>'; echo $lang_awaitingapproval; echo   '</B></TD>';
                           echo '  
                           </TR>
                           <TR> 
@@ -275,12 +291,14 @@ if (isAdministrator($cookie_name) && $awaiting_approval){
 						  </tr>
 					  </table>
 					  </td></tr></table>';
-                 }  
-
-
+                 }
 
                 echo '</TD>
-                <TD vAlign=top>';
+                <TD vAlign=top>
+                
+   
+    </div><!-- page --> ';
+
     } else $getstats=true;
 ?>
 <?php

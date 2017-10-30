@@ -525,7 +525,9 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
                                   }*/
 
-                input[type=text], textarea, select {
+                input[type=text], textarea, select,
+                input[type=password]
+                {
                     width: 200px;
                     border: 2px solid #67bcd1;
                     -webkit-box-shadow: #B4B5B5 3px 3px 3px;
@@ -557,7 +559,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
 
 
-                input[type=text]:hover, textarea:hover, select:hover {
+                input[type=text]:hover, input[type=password]:hover,
+                textarea:hover, select:hover {
                     /* border: 2px dashed #ff9913; */
                     background-color: #ffaf46;
                     background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaf46), to(#e78404));

@@ -179,8 +179,10 @@ else {
         <h4>EXTRA</h4>
         <p><H4>Additional ticket details (PO/Customer reference, cost centers, time budget, due time,
             continuation/follow up </H4>
-        <div class="btn-group">
-            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+         <DIV>
+            <div class="btn-group">
+
+              <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                 <button class="btn.large dropdown-toggle" data-toggle="dropdown">
                     <span class="caret"></span>
                 </button>
@@ -194,7 +196,7 @@ else {
                     <li>Default Materials/Tools Packages</li>
                 </ul>
 
-                <a class="btn-floating btn-lg purple-gradient"><i class="fa fa-bolt"></i></a>
+            </DIV>
         </div>
     </div>
     </p>
@@ -202,14 +204,16 @@ else {
     <div id="asset" class="tab-pane fade">
         <h4>ASSET</h4>
         <p<H4>Asset sepcific, preconfigured defaults, this tab allows modification.</H4> <br><br>
-        <UL>
+        <DIV>
+            <UL>
             <li><H4><b>Assigned cost centers</H4></b></li>
             <li><H4><b>Class of Work (workers comp)</H4></b></li>
             <li><H4><b>Sub-Assets</H4></b></li>
             <li><H4><b>Survey links</H4></b></li>
             <li><H4><b>PM schedules/taskds</H4></b></li>
             <li><H4><b>Default Materials/Tools Packages</H4></b></li>
-        </UL>
+         </UL>
+        </div>
         </p>
     </div>
     </div>

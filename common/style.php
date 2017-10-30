@@ -328,7 +328,10 @@ console.log(document.querySelector('meta[name="viewport"]'));
             .text-3 {
                 width: 300px;
             }
-
+            .text-login
+            {
+                padding:25px;
+            }
 
 
             td.stats {

@@ -504,7 +504,6 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
             <h3>EXTRA</h3>
             <p><H4>The extra tab is for tests right now"</H4>
 
-               <?php //extraTab(); ?>
             </p>
         </div>
     </div>

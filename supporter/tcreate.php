@@ -185,7 +185,7 @@ else {
               <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                 <button class="btn.large dropdown-toggle" data-toggle="dropdown">
                     <span class="caret"></span>
-                </button>
+
                 <ul class="dropdown-menu">
                     <li>Assigned cost centers</li>
                     <li>YES</li>
@@ -195,7 +195,7 @@ else {
                     <li>PM schedules/taskds></li>
                     <li>Default Materials/Tools Packages</li>
                 </ul>
-
+                </button>
             </DIV>
         </div>
     </div>

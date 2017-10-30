@@ -184,9 +184,9 @@ echo'
     </TD></TR><TR><TD>
       <TABLE style=\"margin:0px; Padding:0px; width=100%\" align=\"center\">
         <TR
-          <TD class=back2 align="center"><b>'.$helpdesk_name.' '.$lang_login.'</b></TD>
+          <TD class=back2 align="right"><b>'.$helpdesk_name.' '.$lang_login.'</b></TD>
         </TR>
-          <TD class=back2 style="\padding:0 \" align="center"> <IMG SRC='."$login_logo".'>
+          <TD class=back2 style="\padding:	10px \" align="center"> <IMG SRC='."$login_logo".'>
         <TR>
         </TR>
         <TR>
@@ -194,11 +194,11 @@ echo'
 			<table width=100% border=0 cellspacing=0 cellpadding=0>
 				<tr>
 				 <td class=back2 align=right>'.$lang_username.':</td><td>
-					<input type=text name=user class="text-2" value='."$cookieuser".'></td>
+					<input type=text name=user class="text-login" value='."$cookieuser".'></td>
 				</tr>
 				<tr>
 				 <td class=back2 align=right>'.$lang_password.':</td><td>
-					<input type=password name=password class="pwd-login" value="'.$cookiepwd.'"></td>
+					<input type=password name=password class="text-login" value="'.$cookiepwd.'"></td>
 				</tr>
 				<tr>
 				 	<td class=back2 align=right></td><td>

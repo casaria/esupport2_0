@@ -273,7 +273,6 @@ console.log(document.querySelector('meta[name="viewport"]'));
         <STYLE type="text/css">
 
 
-            @import url(https://fonts.googleapis.com/css?family=Lato);
 
             table {
                 border-spacing: 1px;
@@ -293,7 +292,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
             }
 
-            .text-1, .text-2, .text-3 {
+            .text-1, .text-2, .text-3,
+            text-login {
                 border: 2px solid #ffad41;
                 -webkit-box-shadow: #B4B5B5 3px 3px 3px;
                 -moz-box-shadow: #B4B5B5 3px 3px 3px;
@@ -301,7 +301,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 -webkit-border-radius: 3px;
                 -moz-border-radius: 3px;
                 border-radius: 3px;
-                font-size: 14px;
+                font-size: 15px;
                 padding: 2px 2px 2px 2px;
                 margin: 5px;
                 text-decoration: none;
@@ -1267,7 +1267,6 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     margin-left: 0PX;
                     margin-right:6PX;
                     margin-top: 0;
-
                     color: black;
                     padding-left: 2px;
                     padding-bottom: 2px;

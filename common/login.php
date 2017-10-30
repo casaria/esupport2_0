@@ -186,7 +186,7 @@ echo'
         <TR
           <TD class=back2 align="right"><b>'.$helpdesk_name.' '.$lang_login.'</b></TD>
         </TR>
-          <TD class=back2 style="\padding:	10px \" align="center"> <IMG SRC='."$login_logo".'>
+          <TD class=back2 style="\margin:10px \" align="center"> <IMG SRC='."$login_logo".'>
         <TR>
         </TR>
         <TR>
@@ -198,7 +198,7 @@ echo'
 				</tr>
 				<tr>
 				 <td class=back2 align=right>'.$lang_password.':</td><td>
-					<input type=password name=password class="text-login" value="'.$cookiepwd.'"></td>
+					<input type=password name=password width="150px" class="text-login" value="'.$cookiepwd.'"></td>
 				</tr>
 				<tr>
 				 	<td class=back2 align=right></td><td>

@@ -330,9 +330,9 @@ console.log(document.querySelector('meta[name="viewport"]'));
             }
             .text-login
             {
-                padding:25px;
+                margin: 10px;
+                width: 120px;
             }
-
 
             td.stats {
                 background: <?php echo $theme['category']; ?>;

@@ -173,8 +173,6 @@ else {
             <h3>SCAN</h3>
             <p>This is where the serviced asset is scanned or selected
             <?php createScanpage(); ?>
-
-
         </p>
     </div>
     <div id="extra" class="tab-pane fade">
@@ -185,12 +183,10 @@ else {
             <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                 <button class="btn.large dropdown-toggle" data-toggle="dropdown">
                     <span class="caret"></span>
-
                 </button>
-
                 <ul class="dropdown-menu">
-                    <li>Assigned cost centers
-                    <li>
+                    <li>Assigned cost centers</li>
+                    <li>YES</li>
                     <li>Class of Work (workers comp)</li>
                     <li>Sub-Asset</li>
                     <li>Survey links</li>

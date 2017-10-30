@@ -26,9 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/style.php" afterPath="$PROJECT_DIR$/common/style.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/php.ini" afterPath="$PROJECT_DIR$/common/php.ini" />
     </list>
     <ignored mask="workspace.xml" />
     <ignored mask="error_log" />
@@ -82,7 +81,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/style.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -93,6 +92,16 @@
                 <marker date="1509325842369" expanded="true" signature="67593:67653" ph="select theme... ${$mysql_users_table}" />
                 <marker date="1509325842369" expanded="true" signature="67899:67925" ph="select defau... ${$mysql_settings_table}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="php.ini" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/php.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-91">
+              <caret line="1552" column="6" lean-forward="true" selection-start-line="1552" selection-start-column="6" selection-end-line="1552" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -290,18 +299,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="barcode.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/supporter/barcode.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55">
-              <caret line="94" column="26" lean-forward="true" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
-              <folding>
-                <element signature="n#style#0;n#label#7;n#fieldset#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/config.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -326,7 +323,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>table.bord</find>
       <find>form</find>
       <find>.c</find>
       <find>v</find>
@@ -353,9 +349,10 @@
       <find>quAGG</find>
       <find>cont</find>
       <find>quagga</find>
-      <find>boo</find>
       <find>qu</find>
       <find>http</find>
+      <find>boo</find>
+      <find>SESS</find>
     </findStrings>
     <replaceStrings>
       <replace>$summary = displayTicket($result);</replace>
@@ -457,7 +454,6 @@
         <option value="$PROJECT_DIR$/MAILQUEUE/MAILQ15080985500.62800600.TXT" />
         <option value="$PROJECT_DIR$/MAILQUEUE/MAILQ15080990260.35969200.TXT" />
         <option value="$PROJECT_DIR$/supporter/myopen.php" />
-        <option value="$PROJECT_DIR$/common/php.ini" />
         <option value="$PROJECT_DIR$/tcreate.php" />
         <option value="$PROJECT_DIR$/common/iFRAME.html" />
         <option value="$PROJECT_DIR$/supporter/announce.php" />
@@ -488,6 +484,7 @@
         <option value="$PROJECT_DIR$/common/config.php" />
         <option value="$PROJECT_DIR$/supporter/index.php" />
         <option value="$PROJECT_DIR$/common/style.php" />
+        <option value="$PROJECT_DIR$/common/php.ini" />
       </list>
     </option>
   </component>
@@ -922,14 +919,7 @@
       <workItem from="1508876407331" duration="44030000" />
       <workItem from="1508949626546" duration="1799000" />
       <workItem from="1508952286099" duration="68618000" />
-      <workItem from="1509259582896" duration="13981000" />
-    </task>
-    <task id="LOCAL-01429" summary="First try barcode">
-      <created>1509022067219</created>
-      <option name="number" value="01429" />
-      <option name="presentableId" value="LOCAL-01429" />
-      <option name="project" value="LOCAL" />
-      <updated>1509022067219</updated>
+      <workItem from="1509259582896" duration="14857000" />
     </task>
     <task id="LOCAL-01430" summary="ZOOM LOck for viewport container works">
       <created>1509022257431</created>
@@ -1267,11 +1257,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509325459508</updated>
     </task>
-    <option name="localTasksCounter" value="1478" />
+    <task id="LOCAL-01478" summary="index.php updates">
+      <created>1509326236466</created>
+      <option name="number" value="01478" />
+      <option name="presentableId" value="LOCAL-01478" />
+      <option name="project" value="LOCAL" />
+      <updated>1509326236466</updated>
+    </task>
+    <option name="localTasksCounter" value="1479" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1045841000" />
+    <option name="totallyTimeSpent" value="1046717000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -2554,14 +2551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/php.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="1588" column="57" lean-forward="true" selection-start-line="1588" selection-start-column="57" selection-end-line="1588" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2793,6 +2782,14 @@
             <marker date="1509325842369" expanded="true" signature="67593:67653" ph="select theme... ${$mysql_users_table}" />
             <marker date="1509325842369" expanded="true" signature="67899:67925" ph="select defau... ${$mysql_settings_table}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/php.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-91">
+          <caret line="1552" column="6" lean-forward="true" selection-start-line="1552" selection-start-column="6" selection-end-line="1552" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -54,7 +54,7 @@ function winPop(url)
         
 <?php  
 $language = getLanguage($cookie_name);
-
+//global $hidemenu;
 
 if($language == '')
 	require_once "../lang/$default_language.lang.php";
@@ -90,7 +90,7 @@ $enable_CloudControl = getCloudControlUserSetting($_SESSION['cookie_name']);
 
 ?>
 <BODY class=body>
-<TABLE class=border cellSpacing=-2 cellPadding=0 width="<?php echo $theme['width']; ?>" align=center
+<TABLE class=border cellSpacing=0 cellPadding=0 width="<?php echo $theme['width']; ?>" align=center
 border=0>
   <TBODY> 
   <TR> 
@@ -111,7 +111,7 @@ border=0>
     if (!$hidemenu) 
     {        
             echo '
-            <TABLE class=border width="100%" align=center border=0>
+            <TABLE width="100%" align=center border=0>
               <TBODY> 
               <TR> 
                 <TD vAlign=top width="200"> 

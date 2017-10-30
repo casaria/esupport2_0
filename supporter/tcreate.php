@@ -224,8 +224,6 @@ function createScanpage(){
 			<input id="scanner_input" class="form-control" placeholder="Click the button to scan an EAN..." type="text" /> 
 			<span class="input-group-btn"> 
 				<button class="btn btn-default" type="button" data-toggle="modal" data-target="#livestream_scanner">
-				
-<a class="btn-floating btn-lg purple-gradient"><i class="fa fa-bolt"></i></a>
 					<i class="fa fa-barcode"></i>
 				</button> 
 			</span>

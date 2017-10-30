@@ -39,7 +39,7 @@ if($SERVER_PORT == 80 && $enable_ssl == 'On' && (!isset($cookie_name) || $cookie
 }
                   
 require "../common/login.php";
-RewindSession();
+//RewindSession();
 ?>
 
 <script type="text/javascript">

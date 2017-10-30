@@ -164,11 +164,11 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 numOfWorkers: (navigator.hardwareConcurrency ? navigator.hardwareConcurrency : 4),
                 decoder: {
                     "readers":[
-                        {"format":"ean-8_reader","config":{}}
+                        {"format":"ean_8_reader","config":{}}
                     ]
-                },
-                locate: true
-            };
+                },r
+                locate;: true
+        }
             // The fallback to the file API requires a different inputStream option.
             // The rest is the same
             var fileConfig = $.extend(

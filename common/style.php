@@ -164,7 +164,10 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 numOfWorkers: (navigator.hardwareConcurrency ? navigator.hardwareConcurrency : 4),
                 decoder: {
                     "readers":[
-                        {"format":"ean_8_reader","config":{}}
+                        {"format":"ean_8_reader","config":{}},
+                        {"format":"upc_e_reader","config":{}},
+                        {"format":"i2of5_reader","config":{}},
+                        {"format":"2of5_reader","config":{}}
                     ]
                 },
                 locate: true

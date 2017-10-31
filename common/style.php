@@ -165,8 +165,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 decoder: {
                     "readers":[
                         {"format":"ean_8_reader","config":{}},
-                        {"format":"upc_e_reader","config":{}},
-                        {"format":"upc_reader","config":{}},
+                        {"format":"upc_e_reader","config":{}}
                     ]
                 },r
                 locate;: true

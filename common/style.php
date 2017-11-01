@@ -460,8 +460,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
                 .container {
                     background-color: whitesmoke;
-                    padding-right: 1px;
-                    padding-left: 1px;
+                    padding-right: 4px;
+                    padding-left: 4px;
                     margin-right: 0px;
               /*      margin-left: 6px; */
               /*      width: 580px;   */
@@ -470,7 +470,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     height: 756px;
                     left: 0%;
                     top: 0%;
-                    margin-left: 10px; /*half the width*/
+                    margin-left: 0px; /*half the width*/
                 }
                 #selectwidth {
                     background-color: #afe7f7;

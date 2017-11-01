@@ -343,7 +343,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
             .text-tag{
                 margin: 6px;
                 width: 200px;
-                height: 50px;
+                height: 40px;
                 padding: 6px;
 
             }

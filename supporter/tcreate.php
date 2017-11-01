@@ -148,7 +148,8 @@ else {
 
         <div class="tab-content">
             <div id="new" class="tab-pane fade in active">
-                <p><H4>Manually enter ticket the "classic/legacy" way.</H4>
+                <H4>Manually enter ticket the "classic/legacy" way.</H4>
+                <p>
                 <?php createTicketHeader("$lang_create $lang_ticket");
                 createSupporterInfo();
                 createNotificationPanel();
@@ -165,59 +166,44 @@ else {
                 echo "</form>";
                 //echo "</center>";
                 ?>
+                </p>
+            </div>
+            <div id="scan" class="tab-pane fade">
+                <h3>SCAN</h3>
+                <p>This is where the serviced asset is scanned or selected
+                    <?php createScanpage(); ?>
+                </p>
+            </div>
+            <div id="extra" class="tab-pane fade">
+                <h4>EXTRA</h4>
+                <H4>Additional ticket details (PO/Customer reference, cost centers, time budget, due time, continuation/follow up </H4>
+                <p>
+
 
 
                 </p>
             </div>
-            <div id="scan" class="tab-pane fade">
-            <h3>SCAN</h3>
-            <p>This is where the serviced asset is scanned or selected
-            <?php createScanpage(); ?>
-        </p>
-    </div>
-    <div id="extra" class="tab-pane fade">
-        <h4>EXTRA</h4>
-        <p><H4>Additional ticket details (PO/Customer reference, cost centers, time budget, due time,
-            continuation/follow up </H4>
-         <DIV>
-            <div class="btn-group">
 
-              <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                <button class="btn.large dropdown-toggle" data-toggle="dropdown">
-                    <span class="caret"></span>
-
-                <ul class="dropdown-menu">
-                    <li>Assigned cost centers</li>
-                    <li>YES</li>
-                    <li>Class of Work (workers comp)</li>
-                    <li>Sub-Asset</li>
-                    <li>Survey links</li>
-                    <li>PM schedules/taskds></li>
-                    <li>Default Materials/Tools Packages</li>
-                </ul>
-                </button>
-            </DIV>
         </div>
-        </p>
-    </div>
+        <div id="asset" class="tab-pane fade">
+            <h4>ASSET</h4>
+            <H4>Asset sepcific, preconfigured defaults, this tab allows modification.</H4>
+           <br><br>
+            <DIV>
+                <UL>
 
-    </div>
-    <div id="asset" class="tab-pane fade">
-        <h4>ASSET</h4>
-        <p<H4>Asset sepcific, preconfigured defaults, this tab allows modification.</H4> <br><br>
-        <DIV>
-            <UL>
-            <li><H4><b>Assigned cost centers</H4></b></li>
-            <li><H4><b>Class of Work (workers comp)</H4></b></li>
-            <li><H4><b>Sub-Assets</H4></b></li>
-            <li><H4><b>Survey links</H4></b></li>
-            <li><H4><b>PM schedules/taskds</H4></b></li>
-            <li><H4><b>Default Materials/Tools Packages</H4></b></li>
-         </UL>
-        </div>
-        </p>
-    </div>
-    </div>
+                    <li><H4><b>Assigned cost centers</H4></b></li>
+                    <li><H4><b>Class of Work (workers comp)</H4></b></li>
+                    <li><H4><b>Sub-Assets</H4></b></li>
+                    <li><H4><b>Survey links</H4></b></li>
+                    <li><H4><b>PM schedules/taskds</H4></b></li>
+                    <li><H4><b>Default Materials/Tools Packages</H4></b></li>
+
+                </UL>
+
+            </div>
+            </div>
+
     </div>
 
     <?php

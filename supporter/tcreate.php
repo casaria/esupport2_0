@@ -189,7 +189,7 @@ else {
             <h4>ASSET</h4>
             <H4>Asset sepcific, preconfigured defaults, this tab allows modification.</H4>
            <br><br>
-            <DIV>
+
                 <UL>
 
                     <li><H4><b>Assigned cost centers</H4></b></li>
@@ -201,8 +201,8 @@ else {
 
                 </UL>
 
-            </div>
-            </div>
+
+        </div>
 
     </div>
 

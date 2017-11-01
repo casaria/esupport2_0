@@ -37,16 +37,12 @@ $database = "mysql";					//database (mysql is the only one available
 $server_gmt_offset = -5; //Timezone GMT -5
 $db_host='localhost';
 $db_user = 'casaria_hdesk1';
-$db_pwd = '5XwoR]B';
-$db_name = 'casaria_hdesk3';
-$uploaddir = '/var/www/casaria/esupport2_0/uploads/';
+$db_pwd = '26XwoR]B';
+$db_name = 'hostgo_hdesk1';
+$uploaddir = '/var/www/casaria/support/uploads/';
 $session_time = 72000;
-$session_name = 'EVAL Casaaria';
-$MailQueuePath = '/var/www/casaria/esupport2_0/MAILQUEUE/';
-$includePath = '/var/www/casaria/esupport2_0/common/';
-
-
-
+$session_name = 'CasariaIncSupport';
+$MailQueuePath = "/var/www/casaria/support/MAILQUEUE/";
 
 /*********	You shouldn't need to change anything below here.	***********************************/
 /**********************************************************************************************************/

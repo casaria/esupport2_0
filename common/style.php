@@ -1690,7 +1690,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
             .btn-scan {
                 width: 120px;
                 height: 35px;
-                padding-bottom: 10px;
+                padding-bottom: 3px;
                 margin-bottom: 35px;
                 margin-top: 5px;
                 margin-left: 15px;

@@ -198,8 +198,9 @@ else {
                 </button>
             </DIV>
         </div>
+        </p>
     </div>
-    </p>
+
     </div>
     <div id="asset" class="tab-pane fade">
         <h4>ASSET</h4>
@@ -261,6 +262,19 @@ function createScanpage(){
 	</div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 ';
+}
+
+
+function createQRcode($url){
+?>
+    <table>
+	<tr>
+        <td>
+			<img src='https://barcode.tec-it.com/barcode.ashx?translate-esc=off&data=<?php Echo $url;?>%3Ft%3Dtupd%26id%3D5059&code=MobileQRUrl&unit=Fit&dpi=96&imagetype=Gif&rotation=0&color=%23000000&bgcolor=%23ffffff&qunit=Mm&quiet=0&eclevel=L' alt='Barcode Generator TEC-IT'/>
+		</td>
+	</tr>
+</table>
+<?php
 }
 
 

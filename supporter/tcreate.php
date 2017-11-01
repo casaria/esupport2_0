@@ -191,7 +191,6 @@ else {
            <br><br>
 
                 <UL>
-
                     <li><H4><b>Assigned cost centers</H4></b></li>
                     <li><H4><b>Class of Work (workers comp)</H4></b></li>
                     <li><H4><b>Sub-Assets</H4></b></li>

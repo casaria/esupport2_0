@@ -339,7 +339,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
             .text-tag{
                 margin: 6px;
                 width: 200px;
-                padding: 4px;
+                padding: 8px;
             }
 
             td.stats {

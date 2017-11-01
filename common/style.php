@@ -159,7 +159,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 },
                 locator: {
                     patchSize: "medium",
-                    halfSample: true
+                    halfSample: false
                 },
                 numOfWorkers: (navigator.hardwareConcurrency ? navigator.hardwareConcurrency : 4),
                 decoder: {

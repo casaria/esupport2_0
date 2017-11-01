@@ -42,7 +42,8 @@ $db_name = 'hostgo_hdesk1';
 $uploaddir = '/var/www/casaria/support/uploads/';
 $session_time = 72000;
 $session_name = 'CasariaIncSupport';
-$MailQueuePath = "/var/www/casaria/support/MAILQUEUE/";
+$MailQueuePath ="/var/www/casaria/support/MAILQUEUE/";
+$includePath = '/var/www/casaria/support/common/';
 
 /*********	You shouldn't need to change anything below here.	***********************************/
 /**********************************************************************************************************/
@@ -67,7 +68,7 @@ $mysql_platforms_table = "platforms";			//mysql platforms table
 $mysql_tickets_table = "tickets";				//mysql tickets table
 $mysql_settings_table = "settings";				//mysql settings table
 $mysql_themes_table = "themes";					//mysql themes table
-$mysql_time_table = "time_track";				//mysql table for keeping track of time spent on a ticket
+$mysql_time_table = "time_track";				//mysql table for keeping track of time spent onticket
 $mysql_whosonline_table = "whosonline";			//mysql whosonline table
 $mysql_survey_table = "survey";					//mysql survey table
 $mysql_kcategories_table = "kcategories";		//mysql knowledge base categories table

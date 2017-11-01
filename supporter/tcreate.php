@@ -210,7 +210,8 @@ function createScanpage(){
 		<span class="input-group-btn"> 
 			<input id="scanner_input" class="text-tag" placeholder="SCAN or ENTER CASTAG#..." type="text" /> 
 			
-				<button class="btn-scan" type="button" data-toggle="modal" data-target="#livestream_scanner">
+				<button class="btn btn-default" type="button" data-toggle="modal" data-target="#livestream_scanner">
+				<span> class="glyphicon glyphicon-search"></span>
 					<i class="fa fa-barcode"></i>
 				</button> 
 			</span>

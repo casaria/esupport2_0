@@ -338,7 +338,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
             }
             .text-tag{
                 margin: 6px;
-                width: 180px;
+                width: 200px;
             }
 
             td.stats {

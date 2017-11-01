@@ -336,6 +336,10 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 margin: 6px;
                 width: 150px;
             }
+            .text-tag{
+                margin: 6px;
+                width: 180px;
+            }
 
             td.stats {
                 background: <?php echo $theme['category']; ?>;

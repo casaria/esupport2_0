@@ -324,23 +324,27 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
             .text-1 {
                 width: 80px;
+                padding: 2px 2px 2px 2px;
             }
             .text-2 {
                 width: 150px;
+                padding: 2px 2px 2px 2px;
             }
             .text-3 {
                 width: 300px;
+                padding: 2px 2px 2px 2px;
             }
             .text-login
             {
                 margin: 6px;
                 width: 150px;
+                padding: 4px 4px 4px 4px;
             }
             .text-tag{
                 margin: 6px;
                 width: 200px;
-                height: 80px;
-                padding: 10px;
+                height: 50px;
+                padding: 6px;
 
             }
 

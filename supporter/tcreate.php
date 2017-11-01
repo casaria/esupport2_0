@@ -176,10 +176,7 @@ else {
             </div>
             <div id="extra" class="tab-pane fade">
                 <h4>EXTRA</h4>
-                <H4>Additional ticket details (PO/Customer reference, cost centers, time budget, due time, continuation/follow up </H44>
-            </div>
-
-
+                <H4>Additional ticket details (PO/Customer reference, cost centers, time budget, due time, continuation/follow up </H4>
             <div id="asset" class="tab-pane fade">
                 <h4>ASSET</h4>
                 <H4>Asset sepcific, preconfigured defaults, this tab allows modification.</H4>

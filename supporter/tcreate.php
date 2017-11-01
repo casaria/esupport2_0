@@ -205,13 +205,13 @@ function createScanpage(){
 
  echo '
     <div class="row">
-	<div class="col-xs-9">
+	<div class="col-xs-6">
 		<div class="input-group">
 		<span class="input-group-btn"> 
-			<input id="scanner_input" class="text-tag" placeholder="SCAN or ENTER CASTAG#..." type="text" /> 
-				<button class="btn btn-default" type="button" data-toggle="modal" data-target="#livestream_scanner">
+			<input id="scanner_input"  placeholder="SCAN or ENTER CASTAG#..." type="text" /> 
 			
-				 <i class="fa fa-barcode" aria-hidden="true"></i>
+				<button class="btn-scan" type="button" data-toggle="modal" data-target="#livestream_scanner">
+					<i class="fa fa-barcode"></i>
 				</button> 
 			</span>
 		</div><!-- /input-group -->

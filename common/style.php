@@ -470,7 +470,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     height: 756px;
                     left: 0%;
                     top: 0%;
-                    margin-left: 4px; /*half the width*/
+                    margin-left: 10px; /*half the width*/
                 }
                 #selectwidth {
                     background-color: #afe7f7;

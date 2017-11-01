@@ -185,6 +185,16 @@ else {
                 <H4>Asset sepcific, preconfigured defaults, this tab allows modification.</H4>
                <br><br>
 
+                <UL>
+                    <li><H4><b>Assigned cost centers</H4></b></li>
+                    <li><H4><b>Class of Work (workers comp)</H4></b></li>
+                    <li><H4><b>Sub-Assets</H4></b></li>
+                    <li><H4><b>Survey links</H4></b></li>
+                    <li><H4><b>PM schedules/taskds</H4></b></li>
+                    <li><H4><b>Default Materials/Tools Packages</H4></b></li>
+
+                </UL>
+
 
             </div>
 

@@ -1666,6 +1666,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
             }
             ?>
         }
+
             .btn-login, pwd-login {
                 width: 150px;
                 height: 40px;
@@ -1673,6 +1674,15 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 margin-bottom: 35px;
                 margin-top: 20px;
                 margin-left: 6px;
+            }
+
+            .btn-scan {
+                width: 120px;
+                height: 35px;
+                padding-bottom: 10px;
+                margin-bottom: 35px;
+                margin-top: 15px;
+                margin-left: 15px;
             }
             .h3{
                 font-weight: 700;

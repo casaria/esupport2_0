@@ -204,7 +204,7 @@ echo'
 				</tr>
 				<tr>
 				 <td class=back2 align=right>'.$lang_password.':</td><td>
-					<input type=password name=password width="150px" class="text-login" value="'.$cookiepwd.'"></td>
+					<input type=password name=password class="text-login" value="'.$cookiepwd.'"></td>
 				</tr>
 				<tr>
 				 	<td class=back2 align=right></td><td>

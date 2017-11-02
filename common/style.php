@@ -1212,7 +1212,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 }
 
                 input[type=text]:hover, textarea:hover, select:hover {
-                    border: 2px dashed #ff9913;
+                    border: 4px dashed rebeccapurple;
                     background-color: <?php echo $theme['bg2']; ?>;
                     color: <?php echo $theme['text']; ?>;
                     /*

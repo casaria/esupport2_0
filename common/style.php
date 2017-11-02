@@ -231,7 +231,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 if (result.codeResult.code){
                     $('#scanner_input').val(result.codeResult.code);
                     Quagga.stop();
-                    setTimeout(function(){ $('#livestream_scanner').modal('hide'); }, 1000);
+                    setTimeout(function(){ $('#livestream_scanner').modal('hide'); }, 20);
                 }
             });
 
@@ -476,7 +476,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     margin-right: 0px;
               /*      margin-left: 6px; */
               /*      width: 580px;   */
-              /*    position: fixed;  */
+                   position: fixed;
                     width: 421px;
                     height: 756px;
                     left: 0%;

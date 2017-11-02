@@ -304,8 +304,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 -webkit-border-radius: 3px;
                 -moz-border-radius: 3px;
                 border-radius: 3px;
-                font-size: 18px;
-                padding: 2px 2px 2px 2px;
+                font-size: 16px;
                 margin: 5px;
                 text-decoration: none;
                 color: darkslateblue;
@@ -321,30 +320,34 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 background-image: linear-gradient(to bottom, #ffc579, #fb9d23);
                 filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
             }
-
             .text-1 {
                 width: 80px;
                 padding: 2px 2px 2px 2px;
+                border-radius: 3px;
+                font-size: 16px;
             }
-            .text-2 {
+
+            .text-2,
+            .text-login {
                 width: 150px;
-                padding: 2px 2px 2px 2px;
+                padding: 2px 4px 4px 2px;
+                border-radius: 4px;
+                font-size: 18px;
             }
+
             .text-3 {
                 width: 300px;
                 padding: 2px 2px 2px 2px;
-            }
-            .text-login
-            {
-                margin: 6px;
                 width: 150px;
                 padding: 4px 4px 4px 4px;
             }
+
             .text-tag {
                 margin: 6px;
                 width: 200px;
                 height: 40px;
                 font-weight: 800;
+                font-size: 20px;
                 padding-top: 2px;
                 padding-right: 6px;
                 padding-left: 6px;

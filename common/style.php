@@ -31,6 +31,7 @@
  **
  ***************************************************************************************/
 
+// <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 //if the user is not logged in, set the default style sheet.
 //otherwise, grab the selected theme from the database.
@@ -48,7 +49,6 @@ $tablePadding = 6;
         <link rel="stylesheet" href="/common/bootstrap.css" media="screen">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 
 
     <script src="../dylay/assets/vendor/jquery.easing.1.3.js"></script>

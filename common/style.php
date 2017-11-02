@@ -345,7 +345,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
             .text-tag {
                 margin: 6px;
                 width: 200px;
-                height: 40px;
+                height: 35px;
                 font-weight: 800;
                 font-size: 20px;
                 padding-top: 2px;

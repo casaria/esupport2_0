@@ -1352,13 +1352,16 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     background: <?php echo $theme['bg1']; ?>;
                 }
 
+                td.back2 {
+                    padding: <?php echo $tablePadding; ?>px;
+                    line-height: <?php echo $lineHeight; ?>;
+                    background: <?php echo $theme['bg2']; ?>;
+                }
 
                 .answer td.back {
                     color: inherit;
                     font-weight: 500;
                 }
-
-
 
                 td.printback {
                     padding: <?php echo $tablePadding; ?>px;

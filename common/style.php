@@ -64,7 +64,7 @@ $tablePadding = 6;
 
     <script type="text/javascript">
         WebFontConfig = {
-            google: {families: ['Roboto::latin', 'Lato::latin', 'Titillium+Web:500,600,700,800:latin']}
+            google: {families: ['Roboto::latin', 'Lato::latin', 'Roboto+Condensed::latin', 'Ropa+Sans:latin', 'Titillium+Web:500,600,700,800:latin']}
         };
 
         (function () {
@@ -103,16 +103,16 @@ console.log(document.querySelector('meta[name="viewport"]'));
             return obj.offsetWidth > 0 && obj.offsetHeight > 0;
         }  */
 
-        let viewportmeta = document.querySelector('meta[name="viewport-d"]');
+        let viewportmeta = document.querySelector('meta[name="viewport"]');
         if(viewportmeta===null){
             viewportmeta = document.createElement("meta");
-            viewportmeta.setAttribute("name","viewport-d");
+            viewportmeta.setAttribute("name","viewport");
             document.head.appendChild(viewportmeta);
 
-            viewportmeta = document.querySelector('meta[name="viewport-d"]');
+            viewportmeta = document.querySelector('meta[name="viewport"]');
         }
         viewportmeta.setAttribute('content', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
-        console.log(document.querySelector('meta[name="viewport-d"]'));
+        console.log(document.querySelector('meta[name="viewport"]'));
 
 
         rtAt = 0;
@@ -231,7 +231,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 if (result.codeResult.code){
                     $('#scanner_input').val(result.codeResult.code);
                     Quagga.stop();
-                    setTimeout(function(){ $('#livestream_scanner').modal('hide'); }, 20);
+                    setTimeout(function(){ $('#livestream_scanner').modal('hide'); }, 1000);
                 }
             });
 
@@ -342,7 +342,12 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 padding: 2px 2px 2px 2px;
                 border-radius: 3px;
             }
-
+            .text-login
+            {
+                margin: 6px;
+                width: 150px;
+                padding: 4px 4px 4px 4px;
+            }
             .text-tag {
                 margin: 6px;
                 width: 200px;

@@ -1355,7 +1355,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
                 .answer td.back {
                     color: inherit;
-                    font-weight: 600;
+                    font-weight: 500;
                 }
 
 

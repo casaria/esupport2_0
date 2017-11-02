@@ -344,6 +344,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 margin: 6px;
                 width: 200px;
                 height: 40px;
+                font-weight: 800;
                 padding-top: 2px;
                 padding-right: 6px;
                 padding-left: 6px;

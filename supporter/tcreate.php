@@ -177,7 +177,7 @@ else {
             <div id="extra" class="tab-pane fade">
                 <h4>EXTRA</h4>
                 <H4>Ticket history</H4>
-                    <?php createDylay(); ?>
+                    <?php //createDylay(); ?>
 
             </div>
             <div id="asset" class="tab-pane fade">

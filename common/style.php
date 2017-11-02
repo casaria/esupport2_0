@@ -333,6 +333,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 padding: 2px 4px 4px 2px;
                 border-radius: 4px;
                 font-size: 18px;
+                margin: 12px;
             }
 
             .text-3 {
@@ -507,7 +508,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     background-color: #afe7f7;
                     border: 0 solid;
                     Vbackground-color: <?php echo $theme['subcategory']; ?> border: 2px solid;
-                    -webkit-box-shadow: #B4B5B5 3PX 3PX 3PX;
+                    -webkit-box-shadow: #333333 3PX 3PX 3PX;
                     -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
                     box-shadow: #B4B5B5 3PX 3PX 3PX;
                     -webkit-border-radius: 3px;
@@ -532,7 +533,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
                     background-color: <?php $theme['category']; ?>;
                     border: 0 solid;
-                    -webkit-box-shadow: #B4B5B5 3px 3PX 3PX;
+                    -webkit-box-shadow: #333333 3px 3PX 3PX;
                     -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
                     box-shadow: #B4B5B5 3PX 3PX 3PX;
                     -webkit-border-radius: 3px;
@@ -1215,6 +1216,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     border: 4px dashed rebeccapurple;
                     background-color: <?php echo $theme['bg2']; ?>;
                     color: <?php echo $theme['text']; ?>;
+
                     /*
                     background-color: #AFE7F7; background-image: -webkit-gradient(linear, left top, left bottom, from(#AFE7F7), to(#90CDDD));
                     background-image: -webkit-linear-gradient(top, #AFE7F7, #90CDDD);

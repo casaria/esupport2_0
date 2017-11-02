@@ -56,7 +56,7 @@ $tablePadding = 6;
     <script src="../dylay/assets/js/main.js"></script>
     <script src="/common/quagga.js" type="text/javascript"></script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport-d" content="width=device-width, initial-scale=1.0">
 
 
     <link rel="stylesheet" href="/dylay/assets/css/main.css" media="screen">
@@ -64,7 +64,7 @@ $tablePadding = 6;
 
     <script type="text/javascript">
         WebFontConfig = {
-            google: {families: ['Roboto::latin', 'Lato::latin', 'Roboto+Condensed::latin', 'Ropa+Sans:latin', 'Titillium+Web:500,600,700,800:latin']}
+            google: {families: ['Roboto::latin', 'Lato::latin', 'Titillium+Web:500,600,700,800:latin']}
         };
 
         (function () {
@@ -103,16 +103,16 @@ console.log(document.querySelector('meta[name="viewport"]'));
             return obj.offsetWidth > 0 && obj.offsetHeight > 0;
         }  */
 
-        let viewportmeta = document.querySelector('meta[name="viewport"]');
+        let viewportmeta = document.querySelector('meta[name="viewport-d"]');
         if(viewportmeta===null){
             viewportmeta = document.createElement("meta");
-            viewportmeta.setAttribute("name","viewport");
+            viewportmeta.setAttribute("name","viewport-d");
             document.head.appendChild(viewportmeta);
 
-            viewportmeta = document.querySelector('meta[name="viewport"]');
+            viewportmeta = document.querySelector('meta[name="viewport-d"]');
         }
         viewportmeta.setAttribute('content', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
-        console.log(document.querySelector('meta[name="viewport"]'));
+        console.log(document.querySelector('meta[name="viewport-d"]'));
 
 
         rtAt = 0;

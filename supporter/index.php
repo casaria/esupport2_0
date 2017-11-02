@@ -29,7 +29,7 @@
 			**
 			***************************************************************************************/
 
-\    require_once "../common/config.php";
+require_once "../common/config.php";
 require_once "../common/mysql.class.php";
 require_once "../common/common.php";
 

@@ -3,7 +3,7 @@
 	<head>
  <?php   echo '   
 		<meta charset="utf-8">
-		<title>Casaria Schedule</title>'; ?>
+		<title>Casaria Schedule</title>';  ?>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" media="screen">
         

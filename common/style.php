@@ -56,7 +56,7 @@ $tablePadding = 6;
     <script src="../dylay/assets/js/main.js"></script>
     <script src="/common/quagga.js" type="text/javascript"></script>
 
-    <meta name="viewport-d" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
     <link rel="stylesheet" href="/dylay/assets/css/main.css" media="screen">
@@ -502,7 +502,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     margin-right: 0px;
               /*      margin-left: 6px; */
               /*      width: 580px;   */
-                   position: fixed;
+               /*    position: fixed; */
                     width: 421px;
                     height: 756px;
                     left: 0%;

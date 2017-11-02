@@ -340,13 +340,26 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 width: 150px;
                 padding: 4px 4px 4px 4px;
             }
-            .text-tag{
+            .text-tag {
                 margin: 6px;
-                width: 20px;
+                width: 180px;
                 height: 40px;
                 padding: 6px;
-
             }
+
+            ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                color: yellow;
+            }
+            ::-moz-placeholder { /* Firefox 19+ */
+                color: pink;
+            }
+            :-ms-input-placeholder { /* IE 10+ */
+                color: pink;
+            }
+            :-moz-placeholder { /* Firefox 18- */
+                color: pink;
+            }
+
 
             td.stats {
                 background: <?php echo $theme['category']; ?>;

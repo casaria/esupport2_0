@@ -1360,8 +1360,6 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
 
 
-
-
                 td.printback {
                     padding: <?php echo $tablePadding; ?>px;
                     line-height: <?php echo $lineHeight; ?>;

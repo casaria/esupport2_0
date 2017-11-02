@@ -135,7 +135,7 @@ function showReportEntry($id)
 {
 	global $cookie_name, $supporter_site_url, $lang_editthis, $lang_reportthis;
 
-	echo "<tr><td class=answer align=right>";
+	echo "<tr><td class=back2 align=right>";
 	echo "<a href=\"index.php?t=repo&id=$id\">$lang_reportthis</a>";
 
 	 if(isSupporter($cookie_name)){

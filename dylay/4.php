@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" media="screen">
 	</head>
 	<body>
-		<div class="container">
+
 			<h1>Scheduler</h1>
 			<div id="sandbox">
 				<div class="row">
@@ -19,7 +19,7 @@
 						<h2>Filters</h2>
 						<ul id="filters">
 							<li>
-								<a href="#" data-filter="*">all</a>
+					    			<a href="#" data-filter="*">all</a>
 							</li>
 							<li>
 								<a href="#" data-filter=".overhead">Overhead</a>
@@ -97,7 +97,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="assets/vendor/jquery.easing.1.3.js"></script>
 		<script src="src/dylay.js"></script>

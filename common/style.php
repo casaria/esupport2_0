@@ -333,7 +333,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 padding: 2px 4px 4px 2px;
                 border-radius: 4px;
                 font-size: 18px;
-                margin: 10px;
+                margin: 5px;
             }
 
             .text-3 {

@@ -344,10 +344,10 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 margin: 6px;
                 width: 200px;
                 height: 40px;
-                padding-top: 4px;
+                padding-top: 2px;
                 padding-right: 6px;
                 padding-left: 6px;
-                padding-bottom: 4px;
+                padding-bottom: 2px;
 
             }
 

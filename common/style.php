@@ -336,10 +336,10 @@ console.log(document.querySelector('meta[name="viewport"]'));
             }
 
             .text-3 {
+                font-size: 16px;
                 width: 300px;
                 padding: 2px 2px 2px 2px;
-                width: 150px;
-                padding: 4px 4px 4px 4px;
+                border-radius: 3px;
             }
 
             .text-tag {
@@ -352,7 +352,6 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 padding-right: 6px;
                 padding-left: 6px;
                 padding-bottom: 2px;
-
             }
 
             ::-webkit-input-placeholder { /* Chrome/Opera/Safari */

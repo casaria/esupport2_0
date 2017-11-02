@@ -177,7 +177,7 @@ else {
             <div id="extra" class="tab-pane fade">
                 <h4>EXTRA</h4>
                 <H4>Ticket history</H4>
-                    <?php createDylay(); ?>
+                    <?php //createDylay(); ?>
 
             </div>
             <div id="asset" class="tab-pane fade">
@@ -250,7 +250,7 @@ echo '
 function createDylay(){
 
 ?>
-
+    <div class="container">
 			<h1>Scheduler</h1>
 			<div id="sandbox">
 				<div class="row">
@@ -286,7 +286,7 @@ function createDylay(){
 						</ul>
 					</div>
 				</div>
-
+				<div class="container">
 
 
 					<div id="dylay" class="row">
@@ -334,9 +334,9 @@ function createDylay(){
 							<span style="height: 40px;">#4000</span>
 						</div>
 					</div>
-
+				</div>
 			</div>
-
+		</div>
     <?php
 }
 

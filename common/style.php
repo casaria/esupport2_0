@@ -1182,7 +1182,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
                   }*/
                 input[type=text], textarea, select, input[type=submit] {
-                    border: -2px solid #ffad41;
+                    border: 3px solid #ffad41;
                     -webkit-box-shadow: #B4B5B5 3px 3px 3px;
                     -moz-box-shadow: #B4B5B5 3px 3px 3px;
                     box-shadow: #B4B5B5 3px 3px 3px;
@@ -1710,9 +1710,9 @@ console.log(document.querySelector('meta[name="viewport"]'));
             .btn-scan {
                 width: 120px;
                 height: 35px;
-                padding-bottom: 3px;
-                margin-bottom: 35px;
-                margin-top: 5px;
+                padding: 3px;
+                margin-bottom: 10px;
+                margin-top: 10px;
                 margin-left: 15px;
             }
             .h3{

@@ -31,6 +31,7 @@
  **
  ***************************************************************************************/
 
+//
 
 //if the user is not logged in, set the default style sheet.
 //otherwise, grab the selected theme from the database.
@@ -49,8 +50,7 @@ $tablePadding = 6;
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="../dylay/assets/vendor/jquery.easing.1.3.js"></script>
     <script src="../dylay/src/dylay.js"></script>
     <script src="../dylay/assets/js/main.js"></script>
@@ -58,7 +58,7 @@ $tablePadding = 6;
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- 
+
     <link rel="stylesheet" href="/dylay/assets/css/main.css" media="screen">
 
 
@@ -165,9 +165,9 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 decoder: {
                     "readers":[
                         {"format":"ean_8_reader","config":{}},
-                        {"format":"upc_e_reader","config":{}},
-                        {"format":"i2of5_reader","config":{}},
-                        {"format":"2of5_reader","config":{}}
+                        {"format":"upc_reader","config":{}},
+                     //   {"format":"i2of5_reader","config":{}},
+                     //   {"format":"2of5_reader","config":{}}
                     ]
                 },
                 locate: true
@@ -231,7 +231,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 if (result.codeResult.code){
                     $('#scanner_input').val(result.codeResult.code);
                     Quagga.stop();
-                    setTimeout(function(){ $('#livestream_scanner').modal('hide'); }, 20);
+                    setTimeout(function(){ $('#livestream_scanner').modal('hide'); }, 1000);
                 }
             });
 
@@ -304,8 +304,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 -webkit-border-radius: 3px;
                 -moz-border-radius: 3px;
                 border-radius: 3px;
-                font-size: 18px;
-                padding: 2px 2px 2px 2px;
+                font-size: 16px;
                 margin: 5px;
                 text-decoration: none;
                 color: darkslateblue;
@@ -321,18 +320,27 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 background-image: linear-gradient(to bottom, #ffc579, #fb9d23);
                 filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
             }
-
             .text-1 {
                 width: 80px;
                 padding: 2px 2px 2px 2px;
+                border-radius: 3px;
+                font-size: 16px;
             }
-            .text-2 {
+
+            .text-2,
+            .text-login {
                 width: 150px;
-                padding: 2px 2px 2px 2px;
+                padding: 2px 4px 4px 2px;
+                border-radius: 4px;
+                font-size: 18px;
+                margin: 5px;
             }
+
             .text-3 {
+                font-size: 16px;
                 width: 300px;
                 padding: 2px 2px 2px 2px;
+                border-radius: 3px;
             }
             .text-login
             {
@@ -340,13 +348,31 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 width: 150px;
                 padding: 4px 4px 4px 4px;
             }
-            .text-tag{
+            .text-tag {
                 margin: 6px;
-                width: 20px;
-                height: 40px;
-                padding: 6px;
-
+                width: 200px;
+                height: 35px;
+                font-weight: 800;
+                font-size: 20px;
+                padding-top: 2px;
+                padding-right: 6px;
+                padding-left: 6px;
+                padding-bottom: 2px;
             }
+
+            ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                color: #555555;
+            }
+            ::-moz-placeholder { /* Firefox 19+ */
+                color: #555555;
+            }
+            :-ms-input-placeholder { /* IE 10+ */
+                color: #555555;
+            }
+            :-moz-placeholder { /* Firefox 18- */
+                color: #555555;
+            }
+
 
             td.stats {
                 background: <?php echo $theme['category']; ?>;
@@ -476,7 +502,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     margin-right: 0px;
               /*      margin-left: 6px; */
               /*      width: 580px;   */
-                   position: fixed;
+               /*    position: fixed; */
                     width: 421px;
                     height: 756px;
                     left: 0%;
@@ -487,7 +513,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     background-color: #afe7f7;
                     border: 0 solid;
                     Vbackground-color: <?php echo $theme['subcategory']; ?> border: 2px solid;
-                    -webkit-box-shadow: #B4B5B5 3PX 3PX 3PX;
+                    -webkit-box-shadow: #333333 3PX 3PX 3PX;
                     -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
                     box-shadow: #B4B5B5 3PX 3PX 3PX;
                     -webkit-border-radius: 3px;
@@ -512,7 +538,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
                     background-color: <?php $theme['category']; ?>;
                     border: 0 solid;
-                    -webkit-box-shadow: #B4B5B5 3px 3PX 3PX;
+                    -webkit-box-shadow: #333333 3px 3PX 3PX;
                     -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
                     box-shadow: #B4B5B5 3PX 3PX 3PX;
                     -webkit-border-radius: 3px;
@@ -1162,7 +1188,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
                   }*/
                 input[type=text], textarea, select, input[type=submit] {
-                    border: -2px solid #ffad41;
+                    border: 3px solid #ffad41;
                     -webkit-box-shadow: #B4B5B5 3px 3px 3px;
                     -moz-box-shadow: #B4B5B5 3px 3px 3px;
                     box-shadow: #B4B5B5 3px 3px 3px;
@@ -1192,9 +1218,10 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 }
 
                 input[type=text]:hover, textarea:hover, select:hover {
-                    border: 2px dashed #ff9913;
+                    border: 4px dashed rebeccapurple;
                     background-color: <?php echo $theme['bg2']; ?>;
                     color: <?php echo $theme['text']; ?>;
+
                     /*
                     background-color: #AFE7F7; background-image: -webkit-gradient(linear, left top, left bottom, from(#AFE7F7), to(#90CDDD));
                     background-image: -webkit-linear-gradient(top, #AFE7F7, #90CDDD);
@@ -1334,6 +1361,11 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     padding: <?php echo $tablePadding; ?>px;
                     line-height: <?php echo $lineHeight; ?>;
                     background: <?php echo $theme['bg2']; ?>;
+                }
+
+                .answer td.back {
+                    color: inherit;
+                    font-weight: 500;
                 }
 
                 td.printback {
@@ -1690,9 +1722,9 @@ console.log(document.querySelector('meta[name="viewport"]'));
             .btn-scan {
                 width: 120px;
                 height: 35px;
-                padding-bottom: 3px;
-                margin-bottom: 35px;
-                margin-top: 5px;
+                padding: 3px;
+                margin-bottom: 10px;
+                margin-top: 10px;
                 margin-left: 15px;
             }
             .h3{

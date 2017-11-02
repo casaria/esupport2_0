@@ -344,7 +344,11 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 margin: 6px;
                 width: 200px;
                 height: 40px;
-                padding: 6px;
+                padding-top: 4px;
+                padding-right: 6px;
+                padding-left: 6px;
+                padding-bottom: 4px;
+
             }
 
             ::-webkit-input-placeholder { /* Chrome/Opera/Safari */

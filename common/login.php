@@ -38,6 +38,7 @@ $mtime1 = explode(" ", microtime());
 $starttime = $mtime1[0] + $mtime1[1];
 $username ='';
 $password ='';
+$referer ='';
 //require_once "../common/common.php";
 
 if(eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF)) {
@@ -62,10 +63,10 @@ if(isset($login))
 {
     $username  = strtolower (trim($_POST['user'],"((?=^)(\s*))|((\s*)(?>$))"));
     $password = trim ($_POST['password'],"((?=^)(\s*))|((\s*)(?>$))");
-
+    $referer = strtolower (trim($HTTP_REFERER,"((?=^)(\s*))|((\s*)(?>$))"));
 	//if admin is contained in the url, we need to make sure the user is an
 	//admin before letting them login.
-	if(ereg("/admin", $HTTP_REFERER)){
+	if(ereg("/admin", $referer)){
 		//check the user name and password against the database.
 		if(checkUser($username, md5($password))){
 			if(isAdministrator($username)){
@@ -75,7 +76,7 @@ if(isset($login))
 				$enc_pwd = md5($password);
 				//session_register ("enc_pwd");
 				$_SESSION ["enc_pwd"] = $enc_pwd;
-				$referer = $HTTP_REFERER;
+
 				//nov14 header("Location: $referer");
 			}
 			else{
@@ -90,7 +91,7 @@ if(isset($login))
 
 	}
 
-	elseif ( (ereg("/supporter", $HTTP_REFERER))  ){
+	elseif ( (ereg("/supporter", $referer))  ){
 		//check the user name and password against the database.
 		if(checkUser($username, md5($password))){
 			if(isSupporter($username)){
@@ -100,7 +101,7 @@ if(isset($login))
 				$enc_pwd = md5($password);
 				//session_register("enc_pwd");
 				$_SESSION ["enc_pwd"] = $enc_pwd;
-				$referer = $HTTP_REFERER;
+
 				//nov14 header("Location: $referer");
 				setcookie('supporter_usercookie', $cookie_name,  time()+ 60*60*24*7);
 				setcookie('supporter_pwdcookie', $password,  time()+ 60*60*24*7);
@@ -128,7 +129,7 @@ if(isset($login))
 				$enc_pwd = md5($password);
 				//session_register ("enc_pwd");
 				$_SESSION ['enc_pwd'] = $enc_pwd;
-                 $referer = "$HTTP_REFERER";
+
 				//nov14 header("Location: $referer");
 				//echo"<BR>$cookie_name $enc_pwd";
 				setcookie('cookieuser', $cookie_name,  time()+ 60*60*24*7);

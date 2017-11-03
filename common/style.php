@@ -49,11 +49,14 @@ $tablePadding = 6;
         <link rel="stylesheet" href="/common/bootstrap.css" media="screen">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<?php
+/*    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="../dylay/assets/vendor/jquery.easing.1.3.js"></script>
     <script src="../dylay/src/dylay.js"></script>
     <script src="../dylay/assets/js/main.js"></script>
+
+*/
+?>
     <script src="/common/quagga.js" type="text/javascript"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

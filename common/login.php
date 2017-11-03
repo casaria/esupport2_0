@@ -36,7 +36,8 @@ require_once "config.php";
 //set the start time so we can calculate how long it takes to load the page.
 $mtime1 = explode(" ", microtime());
 $starttime = $mtime1[0] + $mtime1[1];
-
+$username ='';
+$password ='';
 //require_once "../common/common.php";
 
 if(eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF)) {
@@ -59,17 +60,19 @@ $cookie_name = $_SESSION['cookie_name'];
 //if submit has been hit, set the cookie and reload the page immediately so the cookie takes effect.
 if(isset($login))
 {
-	
+    $username  = strtolower (trim($_POST['user'],"((?=^)(\s*))|((\s*)(?>$))"));
+    $password = trim ($_POST['password'],"((?=^)(\s*))|((\s*)(?>$))");
+
 	//if admin is contained in the url, we need to make sure the user is an
 	//admin before letting them login.
 	if(ereg("/admin", $HTTP_REFERER)){
 		//check the user name and password against the database.
-		if(checkUser($_POST['user'], md5($_POST['password']))){
-			if(isAdministrator($_POST['user'])){
-				$cookie_name = $_POST['user'];
+		if(checkUser($username, md5($password))){
+			if(isAdministrator($username)){
+				$cookie_name = $username;
 				//session_register ("cookie_name");
 				$_SESSION ["cookie_name"] = $cookie_name;
-				$enc_pwd = md5($_POST['password']);
+				$enc_pwd = md5($password);
 				//session_register ("enc_pwd");
 				$_SESSION ["enc_pwd"] = $enc_pwd;
 				$referer = $HTTP_REFERER;
@@ -89,18 +92,18 @@ if(isset($login))
 
 	elseif ( (ereg("/supporter", $HTTP_REFERER))  ){
 		//check the user name and password against the database.
-		if(checkUser($_POST['user'], md5($_POST['password']))){
-			if(isSupporter($_POST['user'])){
-				$cookie_name = $_POST['user'];
+		if(checkUser($username, md5($password))){
+			if(isSupporter($username)){
+				$cookie_name = $username;
 				//session_register("cookie_name");
 				$_SESSION ["cookie_name"] = $cookie_name;
-				$enc_pwd = md5($_POST['password']);
+				$enc_pwd = md5($password);
 				//session_register("enc_pwd");
 				$_SESSION ["enc_pwd"] = $enc_pwd;
 				$referer = $HTTP_REFERER;
 				//nov14 header("Location: $referer");
 				setcookie('supporter_usercookie', $cookie_name,  time()+ 60*60*24*7);
-				setcookie('supporter_pwdcookie', $_POST['password'],  time()+ 60*60*24*7);
+				setcookie('supporter_pwdcookie', $password,  time()+ 60*60*24*7);
 				
 			}
 			else{
@@ -118,18 +121,18 @@ if(isset($login))
 	//otherwise, the user is not logging in to the admin site.
 	else{
 		//check the user name and password against the database.
-		if(checkUser($_POST['user'], md5($_POST['password']))){
-				$cookie_name = $_POST['user'];
+		if(checkUser($username, md5($password))){
+				$cookie_name = $username;
 				//session_register ("cookie_name");
 				$_SESSION ['cookie_name'] = $cookie_name;
-				$enc_pwd = md5($_POST['password']);
+				$enc_pwd = md5($password);
 				//session_register ("enc_pwd");
 				$_SESSION ['enc_pwd'] = $enc_pwd;
-        $referer = "$HTTP_REFERER";
+                 $referer = "$HTTP_REFERER";
 				//nov14 header("Location: $referer");
 				//echo"<BR>$cookie_name $enc_pwd";
 				setcookie('cookieuser', $cookie_name,  time()+ 60*60*24*7);
-				setcookie('cookiepwd', $_POST['password'],  time()+ 60*60*24*7);
+				setcookie('cookiepwd', $password,  time()+ 60*60*24*7);
 		}
 		else{
 			echo $lang_wronglogin;

@@ -136,32 +136,33 @@ else {
         //--></script>
 
     <?php     echo "<form action=tcreate.php method=post enctype=\"multipart/form-data\">"; ?>
+
+
+
     <div class="container">
-
-
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <ul class="nav nav-tabs" id="pills-tab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" id="new-tab" data-toggle="tab" href="#new" role="tab" aria-controls="new" aria-selected="true"><h3>NEW</h3></a>
+                <a class="nav-link active" id="new-tab" data-toggle="pill" href="#new" role="tab" aria-controls="new" aria-selected="true"><h3>NEW</h3></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="scan-tab" data-toggle="tab" href="#scan" role="tab" aria-controls="scan" aria-selected="false"><h3>SCAN</h3></a>
+                <a class="nav-link" id="scan-tab" data-toggle="pill" href="#scan" role="tab" aria-controls="scan" aria-selected="false"><h3>SCAN</h3></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="extra-tab" data-toggle="tab" href="#extra" role="tab" aria-controls="extra" aria-selected="false"><h3>EXTRA</h3></a>
+                <a class="nav-link" id="extra-tab" data-toggle="pill" href="#extra" role="tab" aria-controls="extra" aria-selected="false"><h3>EXTRA</h3></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="asset-tab" data-toggle="tab" href="#asset" role="tab" aria-controls="asset" aria-selected="false"><h3>ASSET</h3></a>
+                <a class="nav-link" id="asset-tab" data-toggle="pill" href="#asset" role="tab" aria-controls="asset" aria-selected="false"><h3>ASSET</h3></a>
             </li>
         </ul>
 
 
 
 
-            <div class="tab-pane fade in show active" id="new" role="tabpanel" aria-labelledby="new-tab">
+            <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="new-tab">
                 <p><?php createTicketPage(); ?>
 
             </div>
-            <div class="tab-pane fade" id="scan" role="tabpanel" aria-labelledby="scan-tab" ALIGN="TOP">
+            <div class="tab-pane fade" id="scan" role="tabpanel" aria-labelledby="scan-tab">
 
                 <p>   <?php createScanpage();     ?>
             </div>

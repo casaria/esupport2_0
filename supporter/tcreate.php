@@ -161,7 +161,7 @@ else {
 
             </div>
             <div class="tab-pane fade" id="scan" role="tabpanel" aria-labelledby="scan-tab">
-
+                    <?php createScanpage(); ?>
             </div>
             <div class="tab-pane fade" id="extra" role="tabpanel" aria-labelledby="extra-tab">
 

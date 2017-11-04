@@ -125,9 +125,7 @@ if(isset($create)) {
 
 }
 else {
-    echo "<form action=tcreate.php method=post enctype=\"multipart/form-data\">";
-    ?>
-
+?>
     <script language="JavaScript">
         <!--
         function MM_jumpMenu(targ, selObj, restore) { //v3.0
@@ -139,6 +137,8 @@ else {
 
 
     <div class="container">
+        <?php     echo "<form action=tcreate.php method=post enctype=\"multipart/form-data\">"; ?>
+
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
                 <a class="nav-link active" id="new-tab" data-toggle="tab" href="#new" role="tab" aria-controls="new" aria-selected="true"><h3>NEW</h3></a>
@@ -179,7 +179,7 @@ else {
                 <H4>Asst sepcific, preconfigured defaults, this tab allows modification.</h4>
             </div>
 
-    </div>
+
 
     <?php
     echo "<input type=submit name=create value=\"$lang_create $lang_ticket\">";
@@ -190,7 +190,9 @@ else {
     echo "<input type=hidden name=userid value=" . $userid . ">";
     echo "<input type=hidden name=logged_in_user value=$cookie_name>";
     echo "</form>";
-    //echo "</center>";
+    ?>
+
+    </div>
 }
 
 function createTicketPage() {

@@ -194,7 +194,8 @@ border=0>
                                                <LI><A href="index.php?t=kbase&supkb=yes">'.$lang_Supporter . ' ' . $lang_kbase.'</A></LI>
                                                <LI><A href="index.php?t=kbase&act=kadd">'.$lang_addtokb.'</A></LI>
                                                <LI><A href="index.php?t=kbase&act=ksta">'.$lang_kbstats.'</A></LI>
-                                               <LI><A href="index.php?t=execute&act=fixit">'.'FixIt'.'</A></LI>
+                                               <LI><A href="index.php?t=execute&act=fixit">'.'DO NOT TOUCH 1'.'</A></LI>
+                                               <LI><A href="index.php?t=c&act=dylay">'.'DO NOT TOUCH 2'.'</A></LI>
                                            </TD>
                                         </TR>';
                               }
@@ -349,10 +350,15 @@ if (isAdministrator($cookie_name) && $awaiting_approval){
 						case("terr"):
 							printError("$lang_missing_info");
 							break;
-                        case("execute"):
+                         case("execute"):
                             //fixticketSeptember30(4996, 5051);
-                            fixUgroupsTable();
-                            break;
+                            //fixUgroupsTable();
+                             break;
+                         case("schedule"):
+                            //fixticketSeptember30(4996, 5051);
+                            //fixUgroupsTable();
+                             require "sched.php";
+                             break;
 						case ("memb"):
 							require "member.php";
 							break;

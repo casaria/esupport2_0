@@ -39,7 +39,7 @@ $starttime = $mtime1[0] + $mtime1[1];
 $username ='';
 $password ='';
 $referer ='';
-//require_once "../common/common.php";
+require_once "../common/common.php";
 
 if(eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF)) {
    require_once "../lang/$default_language.lang.php"; 
@@ -96,6 +96,7 @@ if(isset($login))
 		if(checkUser($username, md5($password))){
 			if(isSupporter($username)){
 				$cookie_name = $username;
+				$userIsSupporter = true;
 				//session_register("cookie_name");
 				$_SESSION ["cookie_name"] = $cookie_name;
 				$enc_pwd = md5($password);

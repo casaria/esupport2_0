@@ -78,27 +78,27 @@ $enable_CloudControl = getCloudControlUserSetting($_SESSION['cookie_name']);
 
 $last_active = getLastActiveTime($_SESSION['cookie_name']);
         	
-        	
-        	//get the users group (+++ uses only the first group as ticket group.
-        	$user_id = getUserID($cookie_name);
-        	$groups =  getUsersGroupList($user_id);
-        	
-        	if (sizeof ($groups) == 0) {
-        		$group_id = 0;	 
-        	} else {
-         		$group_id =  eregi_replace("ugroup", "", $groups[0]);
-        	}
 
-          $user_id = getUserID($cookie_name);
-        	$groups = getUsersGroupList($user_id);
-        	for ($i=0; $i< sizeof ($groups); $i++) {
-        		 $group_id =  eregi_replace("ugroup", "", $groups[$i]);
-        		 $groupname = getuGroup($group_id);
-        	}
-        	
-        	if($sg == ''){
-		        $sg = getDefaultSupporterGroupID($group_id);
-	        }
+//get the users group (+++ uses only the first group as ticket group.
+$user_id = getUserID($cookie_name);
+$groups =  getUsersGroupList($user_id);
+
+if (sizeof ($groups) == 0) {
+    $group_id = 0;
+} else {
+    $group_id =  eregi_replace("ugroup", "", $groups[0]);
+}
+
+$user_id = getUserID($cookie_name);
+$groups = getUsersGroupList($user_id);
+for ($i=0; $i< sizeof ($groups); $i++) {
+     $group_id =  eregi_replace("ugroup", "", $groups[$i]);
+     $groupname = getuGroup($group_id);
+}
+
+if($sg == ''){
+    $sg = getDefaultSupporterGroupID($group_id);
+}
 ?>
 <BODY class=body>
 
@@ -330,6 +330,35 @@ border=0>
 <?php
 
 require "common/footer.php";
+
+function showSupporterDialog(){
+
+echo '
+    <div class="modal" id="livestream_scanner">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Barcode Scanner</h4>
+                </div>
+                <div class="modal-body" style="position: static">
+                    <div id="interactive" class="viewport"></div>
+                    <div class="error"></div>
+                </div>
+                <div class="modal-footer">
+                    <label class="btn btn-default pull-left">
+                        <i class="fa fa-camera"></i> Use camera app
+                        <input type="file" accept="image/*;capture=camera" capture="camera" class="hidden" />
+                    </label>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    ';
+}
 
 ?>
 

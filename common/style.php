@@ -263,7 +263,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
         <TITLE> <?php echo $helpdesk_name; ?></TITLE>
         <?php
-        if ($theme['font'] == "Titillium+Web") {
+        if ($theme['font'] == "Titillium Web") {
             $lineHeight = 1.2;
             $tablePadding = 5;
         } else {
@@ -363,16 +363,16 @@ console.log(document.querySelector('meta[name="viewport"]'));
             }
 
             ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-                color: #555555;
+                color: lightsteelblue;
             }
             ::-moz-placeholder { /* Firefox 19+ */
-                color: #555555;
+                color: lightsteelblue;
             }
             :-ms-input-placeholder { /* IE 10+ */
-                color: #555555;
+                color: lightsteelblue;
             }
             :-moz-placeholder { /* Firefox 18- */
-                color: #555555;
+                color: lightsteelblue;
             }
 
 

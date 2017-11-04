@@ -60,13 +60,13 @@ $tablePadding = 6;
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href='https://fonts.googleapis.com/css?family=Titillium Web:300:400' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="/dylay/assets/css/main.css" media="screen">
 
 
     <script type="text/javascript">
         WebFontConfig = {
-            google: {families: ['Roboto::latin', 'Lato::latin', 'Roboto+Condensed::latin', 'Ropa+Sans:latin', 'Titillium Web:500,600,700,800:latin']}
+            google: {families: ['Roboto::latin', 'Lato::latin', 'Roboto+Condensed::latin', 'Ropa+Sans:latin', 'Titillium Web:400,500,600,700,800:latin']}
         };
 
         (function () {

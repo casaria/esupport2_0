@@ -88,7 +88,7 @@
                 <select name="input-stream_constraints" id="deviceSelection">
                 </select>
             </label>
-            <label style="display: block">
+            <label style="display: none">
                 <span>Zoom</span>
                 <select name="settings_zoom"></select>
             </label>

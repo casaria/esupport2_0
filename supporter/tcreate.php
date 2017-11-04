@@ -156,24 +156,39 @@ else {
 
 
 
-            <div class="tab-pane" id="new" role="tabpanel" aria-labelledby="new-tab">
+            <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="new-tab">
                 <H4>Manually enter ticket the "classic/legacy" way.</H4>
                 <p>
-
+                <?php createTicketHeader("$lang_create $lang_ticket");
+                createSupporterInfo();
+                //createNotificationPanel();
+                createUserInfo();
+                createTicketInfo('allow', $ug);
+                //echo "<center>";
+                echo "<input type=submit name=create value=\"$lang_create $lang_ticket\">";
+                echo "&nbsp;&nbsp;&nbsp;";
+                echo "<input type=reset name=reset value=$lang_reset>";
+                echo "<input type=hidden name=sg value=" . $sg . ">";
+                echo "<input type=hidden name=ug value=" . $ug . ">";
+                echo "<input type=hidden name=userid value=" . $userid . ">";
+                echo "<input type=hidden name=logged_in_user value=$cookie_name>";
+                echo "</form>";
+                //echo "</center>";
+                ?>
                 </p>
             </div>
-            <div class="tab-pane" id="scan" role="tabpanel" aria-labelledby="scan-tab">
+            <div class="tab-pane fade" id="scan" role="tabpanel" aria-labelledby="scan-tab">
                 <h3>SCAN</h3>
                 <p>This is where the serviced asset is scanned or selected
 
                 </p>
             </div>
-            <div class="tab-pane" id="extra" role="tabpanel" aria-labelledby="extra-tab">
+            <div class="tab-pane fade" id="extra" role="tabpanel" aria-labelledby="extra-tab">
                 <h4>EXTRA</h4>
                 <?php createNotificationPanel(); ?>
 
             </div>
-            <div class="tab-pane" id="asset" role="tabpanel" aria-labelledby="asset-tab">
+            <div class="tab-pane fade" id="asset" role="tabpanel" aria-labelledby="asset-tab">
                 <h4>ASSET</h4>
                 <H4>Asset sepcific, preconfigured defaults, this tab allows modification.</H4>
                <br><br>

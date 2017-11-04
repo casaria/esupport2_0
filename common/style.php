@@ -66,7 +66,7 @@ $tablePadding = 6;
 
     <script type="text/javascript">
         WebFontConfig = {
-            google: {families: ['Roboto::latin', 'Lato::latin', 'Roboto+Condensed::latin', 'Ropa+Sans:latin', 'Titillium Web:400,500,600,700,800:latin']}
+            google: {families: ['Roboto::latin', 'Lato::latin', 'Roboto+Condensed::latin', 'Ropa+Sans:latin', 'Titillium Web:400,500,600,700:latin']}
         };
 
         (function () {

@@ -161,7 +161,7 @@ else {
                 <p>
                 <?php createTicketHeader("$lang_create $lang_ticket");
                 createSupporterInfo();
-                createNotificationPanel();
+                //createNotificationPanel();
                 createUserInfo();
                 createTicketInfo('allow', $ug);
                 //echo "<center>";
@@ -185,8 +185,7 @@ else {
             </div>
             <div class="tab-pane" id="extra" role="tabpanel" aria-labelledby="extra-tab">
                 <h4>EXTRA</h4>
-                <H4>Ticket history</H4>
-
+                <?php createNotificationPanel(); ?>
 
             </div>
             <div class="tab-pane" id="asset" role="tabpanel" aria-labelledby="asset-tab">
@@ -194,14 +193,7 @@ else {
                 <H4>Asset sepcific, preconfigured defaults, this tab allows modification.</H4>
                <br><br>
 
-                <UL>
-                    <li><H5><b>Assigned cost centers</H5></b></li>
-                    <li><H5><b>Class of Work (workers comp)</H5></b></li>
-                    <li><H5><b>Sub-Assets</H5></b></li>
-                    <li><H5><b>Survey links</H5></b></li>
-                    <li><H5><b>PM schedules/taskds</H5></b></li>
-                    <li><H5><b>Default Materials/Tools Packages</H5></b></li>
-                </UL>
+
             </div>
 
     </div>

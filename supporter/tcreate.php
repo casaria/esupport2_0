@@ -180,7 +180,7 @@ else {
             <div class="tab-pane" id="scan" role="tabpanel" aria-labelledby="scan-tab">
                 <h3>SCAN</h3>
                 <p>This is where the serviced asset is scanned or selected
-                    <?php createScanpage(); ?>
+
                 </p>
             </div>
             <div class="tab-pane" id="extra" role="tabpanel" aria-labelledby="extra-tab">

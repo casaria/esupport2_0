@@ -140,16 +140,23 @@ else {
 
     <div class="container">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="active"><a data-toggle="tab" href="#new"><H3>NEW</H3></a></li>
-            <li><a data-toggle="tab" href="#scan"><h3>SCAN</h3></a></li>
-            <li><a data-toggle="tab" href="#extra"><H3>EXTRA</H3></a></li>
-            <li><a data-toggle="tab" href="#asset"><H3>ASSET</H3></a></li>
+            <li class="nav-item">
+                <a class="nav-link active" id="new-tab" data-toggle="tab" href="#new" role="tab" aria-controls="new" aria-selected="true">NEW</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="scan-tab" data-toggle="tab" href="#scan" role="tab" aria-controls="scan" aria-selected="false">SCAN</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="extra-tab" data-toggle="tab" href="#extra" role="tab" aria-controls="extra" aria-selected="false">EXTRA</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="asset-tab" data-toggle="tab" href="#asset" role="tab" aria-controls="asset" aria-selected="false">ASSET</a>
+            </li>
         </ul>
 
 
 
-        <div class="tab-content">
-            <div id="new" class="tab-pane fade in active">
+        <div class="tab-pane" id="new" role="tabpanel" aria-labelledby="new-tab">
                 <H4>Manually enter ticket the "classic/legacy" way.</H4>
                 <p>
                 <?php createTicketHeader("$lang_create $lang_ticket");
@@ -170,19 +177,19 @@ else {
                 ?>
                 </p>
             </div>
-            <div id="scan" class="tab-pane fade">
+            <div class="tab-pane" id="scan" role="tabpanel" aria-labelledby="scan-tab">
                 <h3>SCAN</h3>
                 <p>This is where the serviced asset is scanned or selected
                     <?php createScanpage(); ?>
                 </p>
             </div>
-            <div id="extra" class="tab-pane fade">
+              <div class="tab-pane" id="extra" role="tabpanel" aria-labelledby="extra-tab">
                 <h4>EXTRA</h4>
                 <H4>Ticket history</H4>
 
 
             </div>
-            <div id="asset" class="tab-pane fade">
+            <div class="tab-pane" id="asset" role="tabpanel" aria-labelledby="asset-tab">
                 <h4>ASSET</h4>
                 <H4>Asset sepcific, preconfigured defaults, this tab allows modification.</H4>
                <br><br>

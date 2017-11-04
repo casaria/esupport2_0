@@ -139,12 +139,14 @@ else {
 
 
     <div class="container">
-        <ul class="nav nav-pills">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="active"><a data-toggle="tab" href="#new"><H3>NEW</H3></a></li>
             <li><a data-toggle="tab" href="#scan"><h3>SCAN</h3></a></li>
             <li><a data-toggle="tab" href="#extra"><H3>EXTRA</H3></a></li>
             <li><a data-toggle="tab" href="#asset"><H3>ASSET</H3></a></li>
         </ul>
+
+
 
         <div class="tab-content">
             <div id="new" class="tab-pane fade in active">

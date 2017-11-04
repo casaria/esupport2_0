@@ -161,7 +161,8 @@ else {
                     <?php createTicketPage(); ?>
 
             </div>
-            <div class="tab-pane fade" id="scan" role="tabpanel" aria-labelledby="scan-tab">
+            <div class="tab-pane fade" id="scan" role="tabpanel" aria-labelledby="scan-tab" ALIGN="TOP">
+
                     <?php createScanpage();     ?>
             </div>
             <div class="tab-pane fade" id="extra" role="tabpanel" aria-labelledby="extra-tab">

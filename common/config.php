@@ -38,12 +38,13 @@ $server_gmt_offset = -5; //Timezone GMT -5
 $db_host='localhost';
 $db_user = 'casaria_hdesk1';
 $db_pwd = '26XwoR]B';
-$db_name = 'hostgo_hdesk1';
-$uploaddir = '/var/www/casaria/support/uploads/';
+$db_name = 'casaria_hdesk3';
+$uploaddir = '/var/www/casaria/esupport2_0/uploads/';
 $session_time = 72000;
-$session_name = 'CasariaIncSupport';
-$MailQueuePath ="/var/www/casaria/support/MAILQUEUE/";
-$includePath = '/var/www/casaria/support/common/';
+$session_name = 'EVAL Casaaria';
+$MailQueuePath = '/var/www/casaria/esupport2_0/MAILQUEUE/';
+$includePath = '/var/www/casaria/esupport2_0/common/';
+
 
 /*********	You shouldn't need to change anything below here.	***********************************/
 /**********************************************************************************************************/
@@ -68,7 +69,7 @@ $mysql_platforms_table = "platforms";			//mysql platforms table
 $mysql_tickets_table = "tickets";				//mysql tickets table
 $mysql_settings_table = "settings";				//mysql settings table
 $mysql_themes_table = "themes";					//mysql themes table
-$mysql_time_table = "time_track";				//mysql table for keeping track of time spent onticket
+$mysql_time_table = "time_track";				//mysql table for keeping track of time spent on a ticket
 $mysql_whosonline_table = "whosonline";			//mysql whosonline table
 $mysql_survey_table = "survey";					//mysql survey table
 $mysql_kcategories_table = "kcategories";		//mysql knowledge base categories table

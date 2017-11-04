@@ -159,22 +159,7 @@ else {
             <div class="tab-pane" id="new" role="tabpanel" aria-labelledby="new-tab">
                 <H4>Manually enter ticket the "classic/legacy" way.</H4>
                 <p>
-                <?php createTicketHeader("$lang_create $lang_ticket");
-                createSupporterInfo();
-                //createNotificationPanel();
-                createUserInfo();
-                createTicketInfo('allow', $ug);
-                //echo "<center>";
-                echo "<input type=submit name=create value=\"$lang_create $lang_ticket\">";
-                echo "&nbsp;&nbsp;&nbsp;";
-                echo "<input type=reset name=reset value=$lang_reset>";
-                echo "<input type=hidden name=sg value=" . $sg . ">";
-                echo "<input type=hidden name=ug value=" . $ug . ">";
-                echo "<input type=hidden name=userid value=" . $userid . ">";
-                echo "<input type=hidden name=logged_in_user value=$cookie_name>";
-                echo "</form>";
-                //echo "</center>";
-                ?>
+
                 </p>
             </div>
             <div class="tab-pane" id="scan" role="tabpanel" aria-labelledby="scan-tab">

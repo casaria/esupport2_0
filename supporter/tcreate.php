@@ -193,6 +193,7 @@ else {
     ?>
 
     </div>
+<?php
 }
 
 function createTicketPage() {

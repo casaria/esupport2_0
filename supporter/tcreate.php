@@ -158,14 +158,7 @@ else {
 
             <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="new-tab">
                 <H4>Manually enter ticket the "classic/legacy" way.</H4>
-                <?php createTicketHeader("$lang_create $lang_ticket");
-                createSupporterInfo();
-                //createNotificationPanel();
-                createUserInfo();
-                createTicketInfo('allow', $ug);
-                //echo "<center>";
 
-                ?>
 
             </div>
             <div class="tab-pane fade" id="scan" role="tabpanel" aria-labelledby="scan-tab">
@@ -198,6 +191,20 @@ else {
     echo "<input type=hidden name=logged_in_user value=$cookie_name>";
     echo "</form>";
     //echo "</center>";
+}
+
+function createTicketPage() {
+
+    global $lang_ticket, $lang_create, $ug;
+
+
+                createTicketHeader("$lang_create $lang_ticket");
+                createSupporterInfo();
+                //createNotificationPanel();
+                createUserInfo();
+                createTicketInfo('allow', $ug);
+                //echo "<center>";
+
 }
 
 function createScanpage(){

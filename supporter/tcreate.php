@@ -158,12 +158,12 @@ else {
 
 
             <div class="tab-pane fade in show active" id="new" role="tabpanel" aria-labelledby="new-tab">
-                    <?php createTicketPage(); ?>
+                <p><?php createTicketPage(); ?> </p>
 
             </div>
             <div class="tab-pane fade" id="scan" role="tabpanel" aria-labelledby="scan-tab" ALIGN="TOP">
 
-                    <?php createScanpage();     ?>
+                <p>   <?php createScanpage();     ?> </p>
             </div>
             <div class="tab-pane fade" id="extra" role="tabpanel" aria-labelledby="extra-tab">
 

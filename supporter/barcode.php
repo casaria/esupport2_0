@@ -88,11 +88,11 @@
                 <select name="input-stream_constraints" id="deviceSelection">
                 </select>
             </label>
-            <label style="display: none">
+            <label style="display: block">
                 <span>Zoom</span>
                 <select name="settings_zoom"></select>
             </label>
-            <label style="display: none">
+            <label style="display: block">
                 <span>Torch</span>
                 <input type="checkbox" name="settings_torch" />
             </label>

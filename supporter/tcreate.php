@@ -135,9 +135,9 @@ else {
 
         //--></script>
 
-
+    <?php     echo "<form action=tcreate.php method=post enctype=\"multipart/form-data\">"; ?>
     <div class="container">
-        <?php     echo "<form action=tcreate.php method=post enctype=\"multipart/form-data\">"; ?>
+
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
@@ -179,7 +179,7 @@ else {
                 <H4>Asst sepcific, preconfigured defaults, this tab allows modification.</h4>
             </div>
 
-
+    </div>
 
     <?php
     echo "<input type=submit name=create value=\"$lang_create $lang_ticket\">";
@@ -192,7 +192,7 @@ else {
     echo "</form>";
     ?>
 
-    </div>
+
 <?php
 }
 

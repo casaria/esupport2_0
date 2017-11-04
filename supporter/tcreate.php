@@ -141,22 +141,22 @@ else {
     <div class="container">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" id="new-tab" data-toggle="tab" href="#new" role="tab" aria-controls="new" aria-selected="true">NEW</a>
+                <a class="nav-link active" id="new-tab" data-toggle="tab" href="#new" role="tab" aria-controls="new" aria-selected="true"><h3>NEW</h3></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="scan-tab" data-toggle="tab" href="#scan" role="tab" aria-controls="scan" aria-selected="false">SCAN</a>
+                <a class="nav-link" id="scan-tab" data-toggle="tab" href="#scan" role="tab" aria-controls="scan" aria-selected="false"><h3>SCAN</h3></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="extra-tab" data-toggle="tab" href="#extra" role="tab" aria-controls="extra" aria-selected="false">EXTRA</a>
+                <a class="nav-link" id="extra-tab" data-toggle="tab" href="#extra" role="tab" aria-controls="extra" aria-selected="false"><h3>EXTRA</h3></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="asset-tab" data-toggle="tab" href="#asset" role="tab" aria-controls="asset" aria-selected="false">ASSET</a>
+                <a class="nav-link" id="asset-tab" data-toggle="tab" href="#asset" role="tab" aria-controls="asset" aria-selected="false"><h3>ASSET</h3></a>
             </li>
         </ul>
 
 
 
-        <div class="tab-pane" id="new" role="tabpanel" aria-labelledby="new-tab">
+            <div class="tab-pane" id="new" role="tabpanel" aria-labelledby="new-tab">
                 <H4>Manually enter ticket the "classic/legacy" way.</H4>
                 <p>
                 <?php createTicketHeader("$lang_create $lang_ticket");
@@ -183,7 +183,7 @@ else {
                     <?php createScanpage(); ?>
                 </p>
             </div>
-              <div class="tab-pane" id="extra" role="tabpanel" aria-labelledby="extra-tab">
+            <div class="tab-pane" id="extra" role="tabpanel" aria-labelledby="extra-tab">
                 <h4>EXTRA</h4>
                 <H4>Ticket history</H4>
 
@@ -195,16 +195,13 @@ else {
                <br><br>
 
                 <UL>
-                    <li><H4><b>Assigned cost centers</H4></b></li>
-                    <li><H4><b>Class of Work (workers comp)</H4></b></li>
-                    <li><H4><b>Sub-Assets</H4></b></li>
-                    <li><H4><b>Survey links</H4></b></li>
-                    <li><H4><b>PM schedules/taskds</H4></b></li>
-                    <li><H4><b>Default Materials/Tools Packages</H4></b></li>
-
+                    <li><H5><b>Assigned cost centers</H5></b></li>
+                    <li><H5><b>Class of Work (workers comp)</H5></b></li>
+                    <li><H5><b>Sub-Assets</H5></b></li>
+                    <li><H5><b>Survey links</H5></b></li>
+                    <li><H5><b>PM schedules/taskds</H5></b></li>
+                    <li><H5><b>Default Materials/Tools Packages</H5></b></li>
                 </UL>
-
-
             </div>
 
     </div>
@@ -216,7 +213,7 @@ function createScanpage(){
 
  echo '
     <div class="row">
-	<div class="col-xs-10">
+	<div class="col-xs-12">
 		<div class="input-group">
 		<span class="input-group-btn"> 
 			<input id="scanner_input" class="text-tag"  placeholder="SCAN or ENTER CASTAG#..." type="text" /> 

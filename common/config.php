@@ -41,7 +41,7 @@ $db_pwd = '26XwoR]B';
 $db_name = 'casaria_hdesk3';
 $uploaddir = '/var/www/casaria/esupport2_0/uploads/';
 $session_time = 72000;
-$session_name = 'EVAL Casaaria';
+$session_name = 'EVALCasaria';
 $MailQueuePath = '/var/www/casaria/esupport2_0/MAILQUEUE/';
 $includePath = '/var/www/casaria/esupport2_0/common/';
 

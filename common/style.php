@@ -78,6 +78,9 @@ $tablePadding = 6;
 
     <link rel="stylesheet" href="/dylay/assets/css/main.css" media="screen">
 
+    <link href='https://fonts.googleapis.com/css?family=Titillium Web:300:400:500:600:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/dylay/assets/css/main.css" media="screen">
+
 
     <script type="text/javascript">
         WebFontConfig = {

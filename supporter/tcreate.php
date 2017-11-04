@@ -158,7 +158,6 @@ else {
 
             <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="new-tab">
                 <H4>Manually enter ticket the "classic/legacy" way.</H4>
-                <p>
                 <?php createTicketHeader("$lang_create $lang_ticket");
                 createSupporterInfo();
                 //createNotificationPanel();
@@ -175,25 +174,24 @@ else {
                 echo "</form>";
                 //echo "</center>";
                 ?>
-                </p>
+
             </div>
             <div class="tab-pane fade" id="scan" role="tabpanel" aria-labelledby="scan-tab">
                 <h3>SCAN</h3>
-                <p>This is where the serviced asset is scanned or selected
+                <h4>.. where the serviced asset is scanned or selected</h4>
 
-                </p>
+
             </div>
             <div class="tab-pane fade" id="extra" role="tabpanel" aria-labelledby="extra-tab">
                 <h4>EXTRA</h4>
-                <?php createNotificationPanel(); ?>
+
+
 
             </div>
             <div class="tab-pane fade" id="asset" role="tabpanel" aria-labelledby="asset-tab">
                 <h4>ASSET</h4>
-                <H4>Asset sepcific, preconfigured defaults, this tab allows modification.</H4>
-               <br><br>
 
-
+                <H4>Asst sepcific, preconfigured defaults, this tab allows modification.</h4>
             </div>
 
     </div>

@@ -157,7 +157,7 @@ else {
 
 
             <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="new-tab">
-
+                    <?php createTicketPage(); ?>
 
             </div>
             <div class="tab-pane fade" id="scan" role="tabpanel" aria-labelledby="scan-tab">

@@ -1883,7 +1883,7 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 						</tr>		
 						<tr>';
 
-                          echo '	</td><td class=back2 width="180px" align=right>* '.$lang_category.':</td>
+                          echo '	<td class=back2 width="180px" align=right>* '.$lang_category.':</td>
 							<td class=back><select id="selectwidth" name=category>';  createCategoryMenu(0);
                           echo '	</select></td>';
 
@@ -1891,8 +1891,7 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
                              	<td class=back2 width="180px" align=right>* '.$lang_platform.':</td>
 							<td class=back><select id="selectwidth" name=platform>'; createPlatformMenu(0, "");
 
-						echo '
-                               </select>
+						echo '</select></TD>   
 						</tr>
 						<tr>
 							<td width=="180px" class=back2 align=right>* '.$lang_equipment.':</td>
@@ -1954,8 +1953,7 @@ echo '
 					</table>
 				</td>
 				</tr>
-			</table>
-		<br>';
+			</table>';
 
 }
 ?>

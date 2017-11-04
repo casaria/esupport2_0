@@ -39,7 +39,7 @@ require_once 'config.php';
 
 
 $pconnect = 0;
-$userIsSupporter = false;
+// +++ $userIsSupporter = false;
 $reg = 'no';
 $db = new $database();
 $db->connect($db_host, $db_user, $db_pwd, $db_name, $pconnect);

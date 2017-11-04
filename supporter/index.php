@@ -119,7 +119,7 @@ border=0>
                 
          
 
-        <div data-role="panel" id="mypanel">
+      <!---  <div data-role="panel" id="mypanel">
         <!-- panel content goes here -->
 
                       
@@ -447,9 +447,7 @@ if (isAdministrator($cookie_name) && $awaiting_approval){
         </TR>
         </TBODY> 
       </TABLE>
-  </TR>
-  </TBODY> 
-</TABLE>
+
 
 <?php
 

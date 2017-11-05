@@ -141,19 +141,20 @@ else {
 
 
 
+
     <div class="container">
-        <ul class="nav nav-tabs mb3" id="pills-tab" role="tablist">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" id="new-tab" data-toggle="pill" href="#new" role="tab" aria-controls="new" aria-selected="true"><h3>NEW</h3></a>
-            </li>`
-            <li class="nav-item">
-                <a class="nav-link" id="scan-tab" data-toggle="pill" href="#scan" role="tab" aria-controls="scan" aria-selected="false"><h3>SCAN</h3></a>
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#new" role="tab" aria-controls="pills-home" aria-selected="true"><h3>NEW</h3></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="extra-tab" data-toggle="pill" href="#extra" role="tab" aria-controls="extra" aria-selected="false"><h3>EXTRA</h3></a>
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#scan" role="tab" aria-controls="pills-profile" aria-selected="false"><h3>SCAN</h3></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="asset-tab" data-toggle="pill" href="#asset" role="tab" aria-controls="asset" aria-selected="false"><h3>ASSET</h3></a>
+                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#extra" role="tab" aria-controls="pills-contact" aria-selected="false"><h3>EXTRA</h3></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#asset" role="tab" aria-controls="pills-contact" aria-selected="false"><h3>ASSET</h3></a>
             </li>
         </ul>
 

@@ -28,7 +28,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/style.php" afterPath="$PROJECT_DIR$/common/style.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap.css" afterPath="$PROJECT_DIR$/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" />
     </list>
     <ignored mask="workspace.xml" />
     <ignored mask="error_log" />
@@ -82,11 +83,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/style.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="62" column="109" lean-forward="true" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="109" />
               <folding>
                 <element signature="e#7#1399#0#PHP" expanded="true" />
                 <marker date="1509892763109" expanded="true" signature="1918:2083" ph="..." />
@@ -98,12 +99,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="4099" column="14" lean-forward="true" selection-start-line="4099" selection-start-column="14" selection-end-line="4099" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="374">
+              <caret line="3574" column="21" lean-forward="true" selection-start-line="3574" selection-start-column="21" selection-end-line="3574" selection-end-column="21" />
+              <folding>
+                <element signature="e#63501#63701#2" expanded="true" />
+                <element signature="e#63838#63987#2" expanded="true" />
+                <element signature="e#64153#64299#2" expanded="true" />
+                <element signature="e#64806#64969#1" expanded="true" />
+                <element signature="e#76350#76593#2" expanded="true" />
+                <element signature="e#77605#77854#2" expanded="true" />
+                <element signature="e#108410#108600#2" expanded="true" />
+                <element signature="e#108655#108845#2" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,8 +121,8 @@
       <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="5" column="74498" lean-forward="false" selection-start-line="5" selection-start-column="74494" selection-end-line="5" selection-end-column="74498" />
+            <state relative-caret-position="178">
+              <caret line="5" column="55388" lean-forward="false" selection-start-line="5" selection-start-column="55388" selection-end-line="5" selection-end-column="55388" />
               <folding />
             </state>
           </provider>
@@ -423,7 +433,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>($_POST['password']</find>
       <find>($_POST['user']</find>
       <find>$_POST['user']</find>
       <find>$user_id</find>
@@ -449,10 +458,11 @@
       <find>/FO\RM</find>
       <find>submit</find>
       <find>css</find>
-      <find>edia</find>
       <find>CREATEtICKET</find>
       <find>pill</find>
       <find>7bff</find>
+      <find>edia</find>
+      <find>NAV-PI</find>
     </findStrings>
     <replaceStrings>
       <replace>$summary = displayTicket($result);</replace>
@@ -576,7 +586,6 @@
         <option value="$PROJECT_DIR$/supporter/shced.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/common/login.php" />
-        <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/common/config.php" />
         <option value="$PROJECT_DIR$/common/config.eval.php" />
         <option value="$PROJECT_DIR$/common/common.php" />
@@ -588,8 +597,9 @@
         <option value="$PROJECT_DIR$/common/camera.html" />
         <option value="$PROJECT_DIR$/supporter/barcode.php" />
         <option value="$PROJECT_DIR$/tcreate.php" />
-        <option value="$PROJECT_DIR$/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/common/style.php" />
+        <option value="$PROJECT_DIR$/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/css/bootstrap.css" />
       </list>
     </option>
   </component>
@@ -1069,14 +1079,7 @@
       <workItem from="1509600871952" duration="1593000" />
       <workItem from="1509605300428" duration="28665000" />
       <workItem from="1509764463680" duration="10775000" />
-      <workItem from="1509783491053" duration="40373000" />
-    </task>
-    <task id="LOCAL-01635" summary="Transition to Bootstrap 4.0">
-      <created>1509789935154</created>
-      <option name="number" value="01635" />
-      <option name="presentableId" value="LOCAL-01635" />
-      <option name="project" value="LOCAL" />
-      <updated>1509789935154</updated>
+      <workItem from="1509783491053" duration="40785000" />
     </task>
     <task id="LOCAL-01636" summary="Transition to Bootstrap 4.0">
       <created>1509790270538</created>
@@ -1414,11 +1417,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509892218655</updated>
     </task>
-    <option name="localTasksCounter" value="1684" />
+    <task id="LOCAL-01684" summary="quagga js and html moved to camera.js">
+      <created>1509892780256</created>
+      <option name="number" value="01684" />
+      <option name="presentableId" value="LOCAL-01684" />
+      <option name="project" value="LOCAL" />
+      <updated>1509892780256</updated>
+    </task>
+    <option name="localTasksCounter" value="1685" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1203078000" />
+    <option name="totallyTimeSpent" value="1203490000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -2662,22 +2672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="4099" column="14" lean-forward="true" selection-start-line="4099" selection-start-column="14" selection-end-line="4099" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="5" column="74498" lean-forward="false" selection-start-line="5" selection-start-column="74494" selection-end-line="5" selection-end-column="74498" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/bootstrap-theme.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2688,14 +2682,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/style.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="62" column="109" lean-forward="true" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="109" />
           <folding>
             <element signature="e#7#1399#0#PHP" expanded="true" />
             <marker date="1509892763109" expanded="true" signature="1918:2083" ph="..." />
             <marker date="1509892763109" expanded="true" signature="72069:72121" ph="select * fro... ${$mysql_themes_table}" />
             <marker date="1509892763109" expanded="true" signature="72926:72986" ph="select theme... ${$mysql_users_table}" />
             <marker date="1509892763109" expanded="true" signature="73232:73258" ph="select defau... ${$mysql_settings_table}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="5" column="55388" lean-forward="false" selection-start-line="5" selection-start-column="55388" selection-end-line="5" selection-end-column="55388" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="3574" column="21" lean-forward="true" selection-start-line="3574" selection-start-column="21" selection-end-line="3574" selection-end-column="21" />
+          <folding>
+            <element signature="e#63501#63701#2" expanded="true" />
+            <element signature="e#63838#63987#2" expanded="true" />
+            <element signature="e#64153#64299#2" expanded="true" />
+            <element signature="e#64806#64969#1" expanded="true" />
+            <element signature="e#76350#76593#2" expanded="true" />
+            <element signature="e#77605#77854#2" expanded="true" />
+            <element signature="e#108410#108600#2" expanded="true" />
+            <element signature="e#108655#108845#2" expanded="true" />
           </folding>
         </state>
       </provider>

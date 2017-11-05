@@ -20,14 +20,15 @@
     <bookmark url="file://$PROJECT_DIR$/common/common.php" line="1933" />
     <bookmark url="file://$PROJECT_DIR$/supporter/tupdate.php" line="354" />
     <bookmark url="file://$PROJECT_DIR$/supporter/tupdate.php" line="285" />
-    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="1816" />
+    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="1817" />
     <bookmark url="file://$PROJECT_DIR$/supporter" />
     <bookmark url="file://$PROJECT_DIR$/dylay/4.html" line="11" />
-    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="1365" />
+    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="1366" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/style.php" afterPath="$PROJECT_DIR$/common/style.php" />
     </list>
     <ignored mask="workspace.xml" />
     <ignored mask="error_log" />
@@ -81,23 +82,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/style.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="62" column="109" lean-forward="true" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="109" />
+            <state relative-caret-position="187">
+              <caret line="1117" column="32" lean-forward="false" selection-start-line="1117" selection-start-column="32" selection-end-line="1117" selection-end-column="32" />
               <folding>
                 <element signature="e#7#1399#0#PHP" expanded="true" />
-                <marker date="1509892763109" expanded="true" signature="1918:2083" ph="..." />
-                <marker date="1509892763109" expanded="true" signature="72069:72121" ph="select * fro... ${$mysql_themes_table}" />
-                <marker date="1509892763109" expanded="true" signature="72926:72986" ph="select theme... ${$mysql_users_table}" />
-                <marker date="1509892763109" expanded="true" signature="73232:73258" ph="select defau... ${$mysql_settings_table}" />
+                <marker date="1509893378368" expanded="true" signature="1918:2083" ph="..." />
+                <marker date="1509893378368" expanded="true" signature="72101:72153" ph="select * fro... ${$mysql_themes_table}" />
+                <marker date="1509893378368" expanded="true" signature="72958:73018" ph="select theme... ${$mysql_users_table}" />
+                <marker date="1509893378368" expanded="true" signature="73264:73290" ph="select defau... ${$mysql_settings_table}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
@@ -431,7 +432,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>($_POST['user']</find>
       <find>$_POST['user']</find>
       <find>$user_id</find>
       <find>$sg</find>
@@ -461,6 +461,7 @@
       <find>7bff</find>
       <find>edia</find>
       <find>NAV-PI</find>
+      <find>nav-pil</find>
     </findStrings>
     <replaceStrings>
       <replace>$summary = displayTicket($result);</replace>
@@ -595,9 +596,9 @@
         <option value="$PROJECT_DIR$/common/camera.html" />
         <option value="$PROJECT_DIR$/supporter/barcode.php" />
         <option value="$PROJECT_DIR$/tcreate.php" />
-        <option value="$PROJECT_DIR$/common/style.php" />
         <option value="$PROJECT_DIR$/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/common/style.php" />
       </list>
     </option>
   </component>
@@ -1077,14 +1078,7 @@
       <workItem from="1509600871952" duration="1593000" />
       <workItem from="1509605300428" duration="28665000" />
       <workItem from="1509764463680" duration="10775000" />
-      <workItem from="1509783491053" duration="40805000" />
-    </task>
-    <task id="LOCAL-01637" summary="Transition to Bootstrap 4.0">
-      <created>1509792481664</created>
-      <option name="number" value="01637" />
-      <option name="presentableId" value="LOCAL-01637" />
-      <option name="project" value="LOCAL" />
-      <updated>1509792481664</updated>
+      <workItem from="1509783491053" duration="40987000" />
     </task>
     <task id="LOCAL-01638" summary="Transition to Bootstrap 4.0">
       <created>1509793382346</created>
@@ -1422,11 +1416,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509893184387</updated>
     </task>
-    <option name="localTasksCounter" value="1686" />
+    <task id="LOCAL-01686" summary="quagga js and html moved to camera.js">
+      <created>1509893201010</created>
+      <option name="number" value="01686" />
+      <option name="presentableId" value="LOCAL-01686" />
+      <option name="project" value="LOCAL" />
+      <updated>1509893201010</updated>
+    </task>
+    <option name="localTasksCounter" value="1687" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1203510000" />
+    <option name="totallyTimeSpent" value="1203692000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1439,6 +1440,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1381" height="925" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3388325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2616352" sideWeight="0.5404384" order="8" side_tool="false" content_ui="tabs" />
@@ -1449,7 +1451,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868022" sideWeight="0.49734244" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33786848" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17913832" sideWeight="0.71319795" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3245283" sideWeight="0.59561604" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3245283" sideWeight="0.59561604" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38728324" sideWeight="0.49086162" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33584905" sideWeight="0.4648526" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2010582" sideWeight="0.493007" order="1" side_tool="false" content_ui="tabs" />
@@ -2677,20 +2679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/style.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="62" column="109" lean-forward="true" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="109" />
-          <folding>
-            <element signature="e#7#1399#0#PHP" expanded="true" />
-            <marker date="1509892763109" expanded="true" signature="1918:2083" ph="..." />
-            <marker date="1509892763109" expanded="true" signature="72069:72121" ph="select * fro... ${$mysql_themes_table}" />
-            <marker date="1509892763109" expanded="true" signature="72926:72986" ph="select theme... ${$mysql_users_table}" />
-            <marker date="1509892763109" expanded="true" signature="73232:73258" ph="select defau... ${$mysql_settings_table}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
@@ -2712,6 +2700,20 @@
             <element signature="e#77605#77854#2" expanded="true" />
             <element signature="e#108410#108600#2" expanded="true" />
             <element signature="e#108655#108845#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/style.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="1117" column="32" lean-forward="false" selection-start-line="1117" selection-start-column="32" selection-end-line="1117" selection-end-column="32" />
+          <folding>
+            <element signature="e#7#1399#0#PHP" expanded="true" />
+            <marker date="1509893378368" expanded="true" signature="1918:2083" ph="..." />
+            <marker date="1509893378368" expanded="true" signature="72101:72153" ph="select * fro... ${$mysql_themes_table}" />
+            <marker date="1509893378368" expanded="true" signature="72958:73018" ph="select theme... ${$mysql_users_table}" />
+            <marker date="1509893378368" expanded="true" signature="73264:73290" ph="select defau... ${$mysql_settings_table}" />
           </folding>
         </state>
       </provider>

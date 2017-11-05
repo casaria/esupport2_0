@@ -1114,7 +1114,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
 
             .H1, .H2, .h3 {
-                font-weight: 700 !important;
+                color: inherit;
+                font-weight: 800 !important;
             }
 
             .nav-pills > li.active > a,

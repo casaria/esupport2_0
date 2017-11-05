@@ -15,19 +15,19 @@
     <bookmark url="file://$PROJECT_DIR$/common/common.php" line="3608" />
     <bookmark url="file://$PROJECT_DIR$/common/common.php" line="1806" />
     <bookmark url="file://$PROJECT_DIR$/common/common.php" line="2665" />
-    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="1000" />
+    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="1003" />
     <bookmark url="file://$PROJECT_DIR$/common/common.php" line="1933" />
     <bookmark url="file://$PROJECT_DIR$/supporter/tupdate.php" line="354" />
     <bookmark url="file://$PROJECT_DIR$/supporter/tupdate.php" line="285" />
-    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="1797" />
+    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="1805" />
     <bookmark url="file://$PROJECT_DIR$/supporter" />
     <bookmark url="file://$PROJECT_DIR$/dylay/4.html" line="11" />
-    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="1344" />
+    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="1352" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/supporter/tcreate.php" afterPath="$PROJECT_DIR$/supporter/tcreate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/style.php" afterPath="$PROJECT_DIR$/common/style.php" />
     </list>
     <ignored mask="workspace.xml" />
     <ignored mask="error_log" />
@@ -136,27 +136,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/style.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="70" column="49" lean-forward="true" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
+            <state relative-caret-position="170">
+              <caret line="585" column="41" lean-forward="false" selection-start-line="585" selection-start-column="35" selection-end-line="585" selection-end-column="41" />
               <folding>
                 <element signature="e#7#1399#0#PHP" expanded="true" />
-                <marker date="1509875029120" expanded="true" signature="1918:2083" ph="..." />
-                <marker date="1509875029120" expanded="true" signature="70604:70656" ph="select * fro... ${$mysql_themes_table}" />
-                <marker date="1509875029120" expanded="true" signature="71461:71521" ph="select theme... ${$mysql_users_table}" />
-                <marker date="1509875029120" expanded="true" signature="71767:71793" ph="select defau... ${$mysql_settings_table}" />
+                <marker date="1509876818629" expanded="true" signature="1918:2083" ph="..." />
+                <marker date="1509876818629" expanded="true" signature="70839:70891" ph="select * fro... ${$mysql_themes_table}" />
+                <marker date="1509876818629" expanded="true" signature="71696:71756" ph="select theme... ${$mysql_users_table}" />
+                <marker date="1509876818629" expanded="true" signature="72002:72028" ph="select defau... ${$mysql_settings_table}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tcreate.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tcreate.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/supporter/tcreate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="158" column="13" lean-forward="true" selection-start-line="158" selection-start-column="13" selection-end-line="158" selection-end-column="13" />
+            <state relative-caret-position="119">
+              <caret line="185" column="33" lean-forward="false" selection-start-line="185" selection-start-column="33" selection-end-line="185" selection-end-column="33" />
               <folding>
                 <marker date="1509876446904" expanded="true" signature="2872:3535" ph="INSERT INTO ${$mysql_tickets_table}... " />
                 <marker date="1509876446904" expanded="true" signature="3665:3801" ph="SELECT id fr... ${$mysql_tickets_table}" />
@@ -556,8 +556,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>KANS</find>
-      <find>td</find>
       <find>http</find>
       <find>.cont</find>
       <find>.conta</find>
@@ -586,6 +584,8 @@
       <find>bootstrap.map</find>
       <find>data</find>
       <find>container</find>
+      <find>/FO\RM</find>
+      <find>submit</find>
     </findStrings>
     <replaceStrings>
       <replace>$summary = displayTicket($result);</replace>
@@ -721,8 +721,8 @@
         <option value="$PROJECT_DIR$/common/config.eval.php" />
         <option value="$PROJECT_DIR$/common/common.php" />
         <option value="$PROJECT_DIR$/supporter/index.php" />
-        <option value="$PROJECT_DIR$/common/style.php" />
         <option value="$PROJECT_DIR$/supporter/tcreate.php" />
+        <option value="$PROJECT_DIR$/common/style.php" />
       </list>
     </option>
   </component>
@@ -1197,14 +1197,7 @@
       <workItem from="1509600871952" duration="1593000" />
       <workItem from="1509605300428" duration="28665000" />
       <workItem from="1509764463680" duration="10775000" />
-      <workItem from="1509783491053" duration="28101000" />
-    </task>
-    <task id="LOCAL-01621" summary="Cleaned stage commit &#10;Scnaning works in all browesers,&#10;All libraries are loaded , Dylay works&#10;Angular? JSgrid ?&#10;Username issues with spaces and cpaitalization is fixed">
-      <created>1509774181770</created>
-      <option name="number" value="01621" />
-      <option name="presentableId" value="LOCAL-01621" />
-      <option name="project" value="LOCAL" />
-      <updated>1509774181771</updated>
+      <workItem from="1509783491053" duration="28477000" />
     </task>
     <task id="LOCAL-01622" summary="Cleaned stage commit &#10;Scnaning works in all browesers,&#10;All libraries are loaded , Dylay works&#10;Angular? JSgrid ?&#10;Username issues with spaces and cpaitalization is fixed">
       <created>1509774219692</created>
@@ -1542,11 +1535,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509876003027</updated>
     </task>
-    <option name="localTasksCounter" value="1670" />
+    <task id="LOCAL-01670" summary="NAV PILL OK">
+      <created>1509876462654</created>
+      <option name="number" value="01670" />
+      <option name="presentableId" value="LOCAL-01670" />
+      <option name="project" value="LOCAL" />
+      <updated>1509876462654</updated>
+    </task>
+    <option name="localTasksCounter" value="1671" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1190806000" />
+    <option name="totallyTimeSpent" value="1191182000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1659,7 +1659,6 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
-    <MESSAGE value="index.php updates" />
     <MESSAGE value="STYLE.php" />
     <MESSAGE value="BOOTSTRAP BUTTON" />
     <MESSAGE value="EAN_8 reader" />
@@ -1684,7 +1683,8 @@
     <MESSAGE value="``" />
     <MESSAGE value="TOP ALIGN" />
     <MESSAGE value="Tryoing NAV pills" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tryoing NAV pills" />
+    <MESSAGE value="NAV PILL OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="NAV PILL OK" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2829,24 +2829,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/style.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="70" column="49" lean-forward="true" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
-          <folding>
-            <element signature="e#7#1399#0#PHP" expanded="true" />
-            <marker date="1509875029120" expanded="true" signature="1918:2083" ph="..." />
-            <marker date="1509875029120" expanded="true" signature="70604:70656" ph="select * fro... ${$mysql_themes_table}" />
-            <marker date="1509875029120" expanded="true" signature="71461:71521" ph="select theme... ${$mysql_users_table}" />
-            <marker date="1509875029120" expanded="true" signature="71767:71793" ph="select defau... ${$mysql_settings_table}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/supporter/tcreate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="158" column="13" lean-forward="true" selection-start-line="158" selection-start-column="13" selection-end-line="158" selection-end-column="13" />
+        <state relative-caret-position="119">
+          <caret line="185" column="33" lean-forward="false" selection-start-line="185" selection-start-column="33" selection-end-line="185" selection-end-column="33" />
           <folding>
             <marker date="1509876446904" expanded="true" signature="2872:3535" ph="INSERT INTO ${$mysql_tickets_table}... " />
             <marker date="1509876446904" expanded="true" signature="3665:3801" ph="SELECT id fr... ${$mysql_tickets_table}" />
@@ -2925,6 +2911,20 @@
             <marker date="1509876446904" expanded="true" signature="18231:18307" ph="..." />
             <marker date="1509876446904" expanded="true" signature="18321:18473" ph="..." />
             <marker date="1509876446904" expanded="true" signature="18399:18473" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/style.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="585" column="41" lean-forward="false" selection-start-line="585" selection-start-column="35" selection-end-line="585" selection-end-column="41" />
+          <folding>
+            <element signature="e#7#1399#0#PHP" expanded="true" />
+            <marker date="1509876818629" expanded="true" signature="1918:2083" ph="..." />
+            <marker date="1509876818629" expanded="true" signature="70839:70891" ph="select * fro... ${$mysql_themes_table}" />
+            <marker date="1509876818629" expanded="true" signature="71696:71756" ph="select theme... ${$mysql_users_table}" />
+            <marker date="1509876818629" expanded="true" signature="72002:72028" ph="select defau... ${$mysql_settings_table}" />
           </folding>
         </state>
       </provider>

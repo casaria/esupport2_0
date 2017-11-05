@@ -648,7 +648,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
 
 
-                button, input[type=submit] {
+                button, input[type=submit],
+                input[type=reset] {
                     border: 2px solid #6974b5;
                     -webkit-box-shadow: #797991 3px 3px 3px;
                     -moz-box-shadow: #797991 3px 3px 3px;
@@ -673,7 +674,9 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#92cfde, endColorstr=#76bdd1);
                 }
 
-                button:hover, input[type=submit]:hover {
+                button:hover, input[type=submit]:hover,
+                input[type=reset]:hover
+                {
                     border: 2px solid #44adc6;
                     background-color: #6bbed2;
                     background-image: -webkit-gradient(linear, left top, left bottom, from(#6bbed2), to(#50abc4));
@@ -1208,7 +1211,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
 
                   }*/
-                input[type=text], textarea, select, input[type=submit] {
+                input[type=text], textarea, select, input[type=submit],
+                input[type=reset] {
                     border: 3px solid #ffad41;
                     -webkit-box-shadow: #B4B5B5 3px 3px 3px;
                     -moz-box-shadow: #B4B5B5 3px 3px 3px;
@@ -1257,7 +1261,9 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
 
 
-                button, input[type=submit] {
+                button, input[type=submit],
+                input[type=reset]
+                {
 
                     border: 2px solid #67bcd1;
                     -webkit-box-shadow: #797991 3px 3px 3px;
@@ -1282,7 +1288,9 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#92cfde, endColorstr=#76bdd1);
                 }
 
-                button:hover, input[type=submit]:hover {
+                button:hover, input[type=submit]:hover,
+                input[type=reset]:hover
+                {
                     border: 2px solid #44adc6;
                     background-color: #6bbed2;
                     background-image: -webkit-gradient(linear, left top, left bottom, from(#6bbed2), to(#50abc4));

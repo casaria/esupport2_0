@@ -135,14 +135,12 @@ else {
 
         //--></script>
 
-    <?php     echo "<form action=tcreate.php method=post enctype=\"multipart/form-data\">"; ?>
-
-
 
 
 
 
     <div class="container">
+        <?php     echo "<form action=tcreate.php method=post enctype=\"multipart/form-data\">"; ?>
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item">
                 <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#scan" role="tab" aria-controls="pills-home" aria-selected="true"><h3>SCAN</h3></a>
@@ -176,7 +174,7 @@ else {
                 <p>Asset</p>
             </div>
         </div>.
-    </div>
+
 
     <?php
     echo "<input type=submit name=create value=\"$lang_create $lang_ticket\">";
@@ -188,7 +186,7 @@ else {
     echo "<input type=hidden name=logged_in_user value=$cookie_name>";
     echo "</form>";
     ?>
-
+    </div>
 
 <?php
 }

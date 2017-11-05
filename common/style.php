@@ -502,14 +502,13 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 }
 
             /*### Smartphones (portrait and landscape)(small)### */
-            @media screen and (min-width : 0px) and (max-width : 767px){
+            @media screen and (min-width : 0px) and (max-width : 767px) {
                 /*Base Mobile Layout*/
                 .wrap {
                     /*width: 50%;  */
                     margin: 0 auto;
                     zoom: 0.25;
                 }
-
 
                 table {
                     -webkit-border-horizontal-spacing: 2px;
@@ -524,15 +523,16 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     padding-right: 4px;
                     padding-left: 4px;
                     margin-right: 0px;
-              /*      margin-left: 6px; */
-              /*      width: 580px;   */
-               /*    position: fixed; */
+                    /*      margin-left: 6px; */
+                    /*      width: 580px;   */
+                    /*    position: fixed; */
                     width: 421px;
                     height: 756px;
                     left: 0%;
                     top: 0%;
                     margin-left: 0px; /*half the width*/
                 }
+
                 #selectwidth {
                     background-color: #afe7f7;
                     border: 0 solid;
@@ -602,10 +602,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
 
                                   }*/
-
                 input[type=text], textarea, select,
-                input[type=password]
-                {
+                input[type=password] {
                     border: 2px solid #67bcd1;
                     -webkit-box-shadow: #B4B5B5 3px 3px 3px;
                     -moz-box-shadow: #B4B5B5 3px 3px 3px;
@@ -634,8 +632,6 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     */
                 }
 
-
-
                 input[type=text]:hover, input[type=password]:hover,
                 textarea:hover, select:hover {
                     /* border: 2px dashed #ff9913; */
@@ -648,8 +644,6 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     background-image: linear-gradient(to bottom, #ffaf46, #e78404);
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffaf46, endColorstr=#e78404);
                 }
-
-
 
                 button, input[type=submit],
                 input[type=reset] {
@@ -679,8 +673,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 }
 
                 button:hover, input[type=submit]:hover,
-                input[type=reset]:hover
-                {
+                input[type=reset]:hover {
                     border: 2px solid #44adc6;
                     background-color: #6bbed2;
                     background-image: -webkit-gradient(linear, left top, left bottom, from(#6bbed2), to(#50abc4));
@@ -691,6 +684,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     background-image: linear-gradient(to bottom, #6bbed2, #50abc4);
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#6bbed2, endColorstr=#50abc4);
                 }
+
                 BODY {
                     background: <?php echo $theme['bgcolor'];?>;
                     color: black;
@@ -743,10 +737,10 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 }
 
                 /*table.border {
-                    background: <?php echo $theme['table_border']; ?>;
+                    background:
+            <?php echo $theme['table_border']; ?>;
                     color: black;
                 } */
-
                 td {
                     color: #000000;
                     font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
@@ -873,14 +867,15 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     background: #feaa37;
                     font-weight: 600;
                 }
-        /*table tr:nth-child(odd) tr{background:
 
-         }
-        table tr:nth-child(even) tr{background:
+                /*table tr:nth-child(odd) tr{background:
+
+                 }
+                table tr:nth-child(even) tr{background:
 
 
-        }
-        */
+                }
+                */
                 td.back {
                     padding: <?php echo $tablePadding; ?>px;
                     line-height: <?php echo $lineHeight; ?>;
@@ -1004,7 +999,6 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     color: <?php echo $theme['header_text']; ?>;
                 }
 
-
                 td.info {
                     text-align: left;
                     background: <?php echo $theme['info_bg']; ?>;
@@ -1035,8 +1029,6 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     font-size: <?php echo $theme['font_size']; ?>px;
                     color: <?php echo $theme['info_text']; ?>;
                 }
-
-
 
             <?php if(eregi("IE", $HTTP_USER_AGENT)){ ?>
                 select, option, textarea, input {
@@ -1087,7 +1079,6 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     color: <?php echo $theme['info_text']; ?>;
                 }
 
-
             <?php       if(eregi("IE", $HTTP_USER_AGENT)){ ?>
                 select, option, textarea, input {
                     border: 1px solid <?php echo $theme['table_border']; ?>;
@@ -1112,18 +1103,6 @@ console.log(document.querySelector('meta[name="viewport"]'));
             }
             ?>
 
-
-            .H1, .H2, .h3 {
-                color: inherit;
-                font-weight: 800 !important;
-            }
-
-            .nav-pills > li.active > a,
-            .nav-pills > li.active > a:hover,
-            .nav-pills > li.active > a:focus {
-                color: #fff;
-                background-color: darkorange !important;
-            }
             }
 
             /*Wide Layout*/

@@ -145,10 +145,10 @@ else {
     <div class="container">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#new" role="tab" aria-controls="pills-home" aria-selected="true"><h3>NEW</h3></a>
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#scan" role="tab" aria-controls="pills-home" aria-selected="true"><h3>SCAN</h3></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#scan" role="tab" aria-controls="pills-profile" aria-selected="false"><h3>SCAN</h3></a>
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#tkt" role="tab" aria-controls="pills-profile" aria-selected="false"><h3>TKT</h3></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#extra" role="tab" aria-controls="pills-contact" aria-selected="false"><h3>EXTRA</h3></a>
@@ -161,16 +161,16 @@ else {
 
         <div class="tab-content" id="pills-tabContent">
 
-            <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="new-tab">
-                <p><?php createTicketPage(); ?>
-                </p>
+            <div class="tab-pane fade show active" id="scan" role="tabpanel" aria-labelledby="new-tab">
+                <p><?php createScanpage(); ?></p>
             </div>
-            <div class="tab-pane fade" id="scan" role="tabpanel" aria-labelledby="scan-tab">
+            <div class="tab-pane fade" id="tkt" role="tabpanel" aria-labelledby="scan-tab">
+                <p><?php createTicketPage(); ?></p>
 
-                <p>   <?php createScanpage(); ?></p>
             </div>
             <div class="tab-pane fade" id="extra" role="tabpanel" aria-labelledby="extra-tab">
-                <P>TEST</P>
+                <P><?php createNotificationPanel();
+                    createTicketInfo('allow', $ug); ?></P>
             </div>
             <div class="tab-pane fade" id="asset" role="tabpanel" aria-labelledby="asset-tab">
                 <p>Asset</p>
@@ -202,7 +202,7 @@ function createTicketPage() {
                 createSupporterInfo();
                 //createNotificationPanel();
                 createUserInfo();
-                createTicketInfo('allow', $ug);
+
                 //echo "<center>";
 
 }

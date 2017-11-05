@@ -1,6 +1,5 @@
-
-
-<script; src="/common/quagga.js"; type="text/javascript"></script>
+<!DOCTYPE html>
+<html lang="en">
 
 
 <script; type="text/javascript">
@@ -48,16 +47,16 @@
         liveStreamConfig,
         function(err) {
         if (err) {
-        $('#livestream_scanner .modal-body .error').html('<div class="alert alert-danger"><strong><i class="fa fa-exclamation-triangle"></i> '+err.name+'</strong>: '+err.message+'</div>');
+        $('#livestream_scanner .modal-body .error').html('<div class="alert alert-danger"><strong><i class="fa fa-exclamation-triangle"></i> '+err.name+'</s;trong>;: '+err.message+'</div>');
         Quagga.stop();
         return;
     }
         Quagga.start();
     }
-        );
-    });
+)
+})
 
-        // Make sure, QuaggaJS draws frames an lines around possible
+// Make sure, QuaggaJS draws frames an lines around possible
         // barcodes on the live stream
         Quagga.onProcessed(function(result) {
         var drawingCtx = Quagga.canvas.ctx.overlay,
@@ -110,11 +109,8 @@
     });
     })
 
-    </script>;;
-
-
-
-</script>
+    </script>
+\\
 <HTML>
 
 <section; id="container"; class="container">

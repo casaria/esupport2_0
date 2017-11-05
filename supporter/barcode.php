@@ -29,7 +29,7 @@
     </div>
 </header>
 
-<link rel="import" href="../common/camera.js">
+<link rel="import" href="../common/camera.html">
 <?php
 
 

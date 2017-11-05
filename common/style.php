@@ -651,6 +651,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 button, input[type=submit],
                 input[type=reset] {
                     border: 2px solid #6974b5;
+                    margin: 10px;
                     -webkit-box-shadow: #797991 3px 3px 3px;
                     -moz-box-shadow: #797991 3px 3px 3px;
                     box-shadow: #797991 3px 3px 3px;
@@ -1214,6 +1215,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 input[type=text], textarea, select, input[type=submit],
                 input[type=reset] {
                     border: 3px solid #ffad41;
+                    margin: 10px;
                     -webkit-box-shadow: #B4B5B5 3px 3px 3px;
                     -moz-box-shadow: #B4B5B5 3px 3px 3px;
                     box-shadow: #B4B5B5 3px 3px 3px;

@@ -139,11 +139,18 @@ else {
 
 
 
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+    </li>
+
+
+
     <div class="container">
         <ul class="nav nav-tabs mb3" id="pills-tab" role="tablist">
             <li class="nav-item">
                 <a class="nav-link active" id="new-tab" data-toggle="pill" href="#new" role="tab" aria-controls="new" aria-selected="true"><h3>NEW</h3></a>
-            </li>
+            </li>`
             <li class="nav-item">
                 <a class="nav-link" id="scan-tab" data-toggle="pill" href="#scan" role="tab" aria-controls="scan" aria-selected="false"><h3>SCAN</h3></a>
             </li>
@@ -156,7 +163,7 @@ else {
         </ul>
 
 
-
+        <div class="tab-content" id="pills-tabContent">
 
             <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="new-tab">
                 <p><?php createTicketPage(); ?>
@@ -172,7 +179,7 @@ else {
             <div class="tab-pane fade" id="asset" role="tabpanel" aria-labelledby="asset-tab">
                 <p>Asset</p>
             </div>
-
+        </div>.
     </div>
 
     <?php

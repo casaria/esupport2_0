@@ -340,6 +340,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 background-image: linear-gradient(to bottom, #ffc579, #fb9d23);
                 filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
             }
+
             .text-1 {
                 width: 80px;
                 padding: 2px 2px 2px 2px;

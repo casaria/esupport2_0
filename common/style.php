@@ -1110,8 +1110,16 @@ console.log(document.querySelector('meta[name="viewport"]'));
             ?>
 
 
+            .H1, .H2, .h3 {
+                font-weight: 700 !important;
+            }
 
-
+            .nav-pills > li.active > a,
+            .nav-pills > li.active > a:hover,
+            .nav-pills > li.active > a:focus {
+                color: #fff;
+                background-color: darkorange !important;
+            }
             }
 
             /*Wide Layout*/
@@ -1758,16 +1766,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 margin-top: 10px;
                 margin-left: 15px;
             }
-            .H1, .H2, .h3 {
-                font-weight: 700 !important;
-            }
 
-            .nav-pills > li.active > a,
-            .nav-pills > li.active > a:hover,
-            .nav-pills > li.active > a:focus {
-                color: #fff;
-                background-color: darkorange !important;
-            }
 
         </STYLE>
     </HEAD>

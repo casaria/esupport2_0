@@ -160,17 +160,17 @@ else {
 
             <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="new-tab">
                 <p><?php createTicketPage(); ?>
-
+                </p>
             </div>
             <div class="tab-pane fade" id="scan" role="tabpanel" aria-labelledby="scan-tab">
 
-                <p>   <?php createScanpage();     ?>
+                <p>   <?php createScanpage(); ?></p>
             </div>
             <div class="tab-pane fade" id="extra" role="tabpanel" aria-labelledby="extra-tab">
-
+                <P>TEST</P>
             </div>
             <div class="tab-pane fade" id="asset" role="tabpanel" aria-labelledby="asset-tab">
-
+                <p>Asset</p>
             </div>
 
     </div>

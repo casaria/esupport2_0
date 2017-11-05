@@ -10,6 +10,15 @@
 
     <meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="../common/styles.css" />
+
+
+    <style>;
+        #interactive.viewport; {relative; 100%; auto; hidden; text-align;: center;}
+        #interactive.viewport > canvas,; #interactive.viewport > video; {max-width;: 100%;100%;}
+        canvas.drawing, canvas.drawingBuffer; {absolute; 0; 0;}
+
+    </style>
+
 </head>
 
 <body>

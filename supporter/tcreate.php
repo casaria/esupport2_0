@@ -241,7 +241,7 @@ echo '
 			<div class="modal-footer">
 	
 				<label class="btn btn-outline-info">
-					<i class="fa fa-camera"></i>Use camera app instead
+					<span aria-hidden="true"><i class="fa fa-camera"></i>Use camera app instead..</span>
     <input type="file" accept="image/*;capture=camera" capture="camera" class="hidden" />
 				</label>
 				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>

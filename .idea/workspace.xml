@@ -82,11 +82,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/style.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="1072" column="18" lean-forward="false" selection-start-line="1072" selection-start-column="18" selection-end-line="1072" selection-end-column="18" />
+            <state relative-caret-position="408">
+              <caret line="1091" column="17" lean-forward="true" selection-start-line="1091" selection-start-column="17" selection-end-line="1091" selection-end-column="17" />
               <folding>
                 <element signature="e#7#1399#0#PHP" expanded="true" />
                 <marker date="1509893687830" expanded="true" signature="1918:2083" ph="..." />
@@ -94,6 +94,16 @@
                 <marker date="1509893687830" expanded="true" signature="72634:72694" ph="select theme... ${$mysql_users_table}" />
                 <marker date="1509893687830" expanded="true" signature="72940:72966" ph="select defau... ${$mysql_settings_table}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="5" column="5202" lean-forward="false" selection-start-line="5" selection-start-column="5202" selection-end-line="5" selection-end-column="5202" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -412,9 +422,9 @@
       <find>1.75</find>
       <find>CREATEtICKET</find>
       <find>css</find>
-      <find>.h1</find>
       <find>500</find>
       <find>pill</find>
+      <find>.h1</find>
     </findStrings>
     <replaceStrings>
       <replace>$summary = displayTicket($result);</replace>
@@ -1024,14 +1034,7 @@
       <workItem from="1509600871952" duration="1593000" />
       <workItem from="1509605300428" duration="28665000" />
       <workItem from="1509764463680" duration="10775000" />
-      <workItem from="1509783491053" duration="43838000" />
-    </task>
-    <task id="LOCAL-01643" summary="Transition to Bootstrap 4.0">
-      <created>1509795554046</created>
-      <option name="number" value="01643" />
-      <option name="presentableId" value="LOCAL-01643" />
-      <option name="project" value="LOCAL" />
-      <updated>1509795554046</updated>
+      <workItem from="1509783491053" duration="44021000" />
     </task>
     <task id="LOCAL-01644" summary="Transition to Bootstrap 4.0">
       <created>1509795822214</created>
@@ -1369,11 +1372,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509894739334</updated>
     </task>
-    <option name="localTasksCounter" value="1692" />
+    <task id="LOCAL-01692" summary="&#10;bootstrap patched">
+      <created>1509910048048</created>
+      <option name="number" value="01692" />
+      <option name="presentableId" value="LOCAL-01692" />
+      <option name="project" value="LOCAL" />
+      <updated>1509910048048</updated>
+    </task>
+    <option name="localTasksCounter" value="1693" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1206543000" />
+    <option name="totallyTimeSpent" value="1206726000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1486,7 +1496,6 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
-    <MESSAGE value="BOOTSTRAP BUTTON" />
     <MESSAGE value="EAN_8 reader" />
     <MESSAGE value="EAN_reader" />
     <MESSAGE value="tcreate update" />
@@ -1511,7 +1520,8 @@
     <MESSAGE value="Tryoing NAV pills" />
     <MESSAGE value="NAV PILL OK" />
     <MESSAGE value="quagga js and html moved to camera.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="quagga js and html moved to camera.js" />
+    <MESSAGE value="&#10;bootstrap patched" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;bootstrap patched" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2614,18 +2624,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="5" column="55402" lean-forward="false" selection-start-line="5" selection-start-column="55402" selection-end-line="5" selection-end-column="55402" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/style.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="1072" column="18" lean-forward="false" selection-start-line="1072" selection-start-column="18" selection-end-line="1072" selection-end-column="18" />
+        <state relative-caret-position="408">
+          <caret line="1091" column="17" lean-forward="true" selection-start-line="1091" selection-start-column="17" selection-end-line="1091" selection-end-column="17" />
           <folding>
             <element signature="e#7#1399#0#PHP" expanded="true" />
             <marker date="1509893687830" expanded="true" signature="1918:2083" ph="..." />
@@ -2633,6 +2635,14 @@
             <marker date="1509893687830" expanded="true" signature="72634:72694" ph="select theme... ${$mysql_users_table}" />
             <marker date="1509893687830" expanded="true" signature="72940:72966" ph="select defau... ${$mysql_settings_table}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="5" column="5202" lean-forward="false" selection-start-line="5" selection-start-column="5202" selection-end-line="5" selection-end-column="5202" />
+          <folding />
         </state>
       </provider>
     </entry>

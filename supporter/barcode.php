@@ -20,7 +20,7 @@
     </div>
 </header>
 
-<script src="/common/camera.js"></script>
+<link rel="import" href="../common/camera.js">
 <?php
 
 

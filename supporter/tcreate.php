@@ -229,8 +229,8 @@ echo '
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
+				<button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">CANCEL</span>
 				</button>
 				<h4 class="modal-title">Barcode Scanner</h4>
 			</div>
@@ -239,8 +239,9 @@ echo '
 				<div class="error"></div>
 			</div>
 			<div class="modal-footer">
-				<label class="btn btn-default pull-left">
-					<i class="fa fa-camera"></i> Use camera app
+	
+				<label class="btn btn-outline-info">
+					<i class="fa fa-camera"></i>Use camera app instead
     <input type="file" accept="image/*;capture=camera" capture="camera" class="hidden" />
 				</label>
 				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>

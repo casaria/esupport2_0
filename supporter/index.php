@@ -111,7 +111,11 @@ border=0>
     if (!$hidemenu) 
     {        
             echo '
-     <div data-role="page">
+
+     <!---  <div data-role="panel" id="mypanel">
+        <!-- panel content goes here -->
+
+>
             <TABLE width="100%" align=center border=0>
               <TBODY> 
               <TR> 
@@ -119,9 +123,7 @@ border=0>
                 
          
 
-      <!---  <div data-role="panel" id="mypanel">
-        <!-- panel content goes here -->
-
+ 
                       
                   <TABLE class=border cellSpacing=0 cellPadding=0 width="100%" 
                   align=center border=0>
@@ -257,8 +259,8 @@ border=0>
                       </TD>
                     </TR>
                     </TBODY> 
-                  </TABLE>
-                 </div>';  ?><!-- /panel -->
+                  </TABLE>';
+            ?><!-- /panel </DIV>  -->
 
 <!-- header -->
 <!-- content -->

@@ -28,7 +28,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/supporter/tcreate.php" afterPath="$PROJECT_DIR$/supporter/tcreate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/style.php" afterPath="$PROJECT_DIR$/common/style.php" />
     </list>
     <ignored mask="workspace.xml" />
     <ignored mask="error_log" />
@@ -82,17 +82,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/style.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="380" column="33" lean-forward="true" selection-start-line="380" selection-start-column="33" selection-end-line="380" selection-end-column="33" />
+            <state relative-caret-position="273">
+              <caret line="522" column="36" lean-forward="false" selection-start-line="522" selection-start-column="36" selection-end-line="522" selection-end-column="36" />
               <folding>
                 <element signature="e#7#1399#0#PHP" expanded="true" />
-                <marker date="1509931070476" expanded="true" signature="1918:2083" ph="..." />
-                <marker date="1509931070476" expanded="true" signature="71768:71820" ph="select * fro... ${$mysql_themes_table}" />
-                <marker date="1509931070476" expanded="true" signature="72625:72685" ph="select theme... ${$mysql_users_table}" />
-                <marker date="1509931070476" expanded="true" signature="72931:72957" ph="select defau... ${$mysql_settings_table}" />
+                <marker date="1509931675702" expanded="true" signature="1918:2083" ph="..." />
+                <marker date="1509931675702" expanded="true" signature="71768:71820" ph="select * fro... ${$mysql_themes_table}" />
+                <marker date="1509931675702" expanded="true" signature="72625:72685" ph="select theme... ${$mysql_users_table}" />
+                <marker date="1509931675702" expanded="true" signature="72931:72957" ph="select defau... ${$mysql_settings_table}" />
               </folding>
             </state>
           </provider>
@@ -306,7 +306,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tcreate.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tcreate.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/supporter/tcreate.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="239">
@@ -386,7 +386,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>billingstat</find>
       <find>fixit</find>
       <find>execute</find>
       <find>font-wei</find>
@@ -416,6 +415,7 @@
       <find>.h1</find>
       <find>.cont</find>
       <find>text-t</find>
+      <find>.CON</find>
     </findStrings>
     <replaceStrings>
       <replace>$summary = displayTicket($result);</replace>
@@ -551,8 +551,8 @@
         <option value="$PROJECT_DIR$/tcreate.php" />
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/css/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/common/style.php" />
         <option value="$PROJECT_DIR$/supporter/tcreate.php" />
+        <option value="$PROJECT_DIR$/common/style.php" />
       </list>
     </option>
   </component>
@@ -1026,14 +1026,7 @@
       <workItem from="1509605300428" duration="28665000" />
       <workItem from="1509764463680" duration="10775000" />
       <workItem from="1509783491053" duration="45153000" />
-      <workItem from="1509930819561" duration="703000" />
-    </task>
-    <task id="LOCAL-01651" summary="Transition to Bootstrap 4.0">
-      <created>1509799040045</created>
-      <option name="number" value="01651" />
-      <option name="presentableId" value="LOCAL-01651" />
-      <option name="project" value="LOCAL" />
-      <updated>1509799040045</updated>
+      <workItem from="1509930819561" duration="850000" />
     </task>
     <task id="LOCAL-01652" summary="Transition to Bootstrap 4.0">
       <created>1509799217933</created>
@@ -1371,11 +1364,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509931500047</updated>
     </task>
-    <option name="localTasksCounter" value="1700" />
+    <task id="LOCAL-01700" summary="&#10;bootstrap patched">
+      <created>1509931544019</created>
+      <option name="number" value="01700" />
+      <option name="presentableId" value="LOCAL-01700" />
+      <option name="project" value="LOCAL" />
+      <updated>1509931544019</updated>
+    </task>
+    <option name="localTasksCounter" value="1701" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1208561000" />
+    <option name="totallyTimeSpent" value="1208708000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -2511,20 +2511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/style.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="380" column="33" lean-forward="true" selection-start-line="380" selection-start-column="33" selection-end-line="380" selection-end-column="33" />
-          <folding>
-            <element signature="e#7#1399#0#PHP" expanded="true" />
-            <marker date="1509931070476" expanded="true" signature="1918:2083" ph="..." />
-            <marker date="1509931070476" expanded="true" signature="71768:71820" ph="select * fro... ${$mysql_themes_table}" />
-            <marker date="1509931070476" expanded="true" signature="72625:72685" ph="select theme... ${$mysql_users_table}" />
-            <marker date="1509931070476" expanded="true" signature="72931:72957" ph="select defau... ${$mysql_settings_table}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/supporter/tcreate.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -2575,6 +2561,20 @@
             <marker date="1509931529247" expanded="true" signature="18262:18338" ph="..." />
             <marker date="1509931529247" expanded="true" signature="18352:18504" ph="..." />
             <marker date="1509931529247" expanded="true" signature="18430:18504" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/style.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="522" column="36" lean-forward="false" selection-start-line="522" selection-start-column="36" selection-end-line="522" selection-end-column="36" />
+          <folding>
+            <element signature="e#7#1399#0#PHP" expanded="true" />
+            <marker date="1509931675702" expanded="true" signature="1918:2083" ph="..." />
+            <marker date="1509931675702" expanded="true" signature="71768:71820" ph="select * fro... ${$mysql_themes_table}" />
+            <marker date="1509931675702" expanded="true" signature="72625:72685" ph="select theme... ${$mysql_users_table}" />
+            <marker date="1509931675702" expanded="true" signature="72931:72957" ph="select defau... ${$mysql_settings_table}" />
           </folding>
         </state>
       </provider>

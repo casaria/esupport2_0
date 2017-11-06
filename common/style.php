@@ -520,8 +520,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
                 .container {
                     background-color: whitesmoke;
-                    padding-right: 4px;
-                    padding-left: 4px;
+                    padding-right: 6px;
+                    padding-left: 6px;
                     margin-right: 0px;
                     /*      margin-left: 6px; */
                     /*      width: 580px;   */

@@ -211,7 +211,7 @@ function createScanpage(){
     <div class="row">
 	<div class="col-xs-6">
 	
-			<input id="scanner_input" class="text-tag"  placeholder="SCAN/ENTER CASTAG#..." type="text"/> >]</div>
+			<input id="scanner_input" class="text-tag"  placeholder="SCAN/ENTER CASTAG#..." type="text"/></div>
 			
 				<button class="btn-scan" type="button" data-toggle="modal" data-target="#livestream_scanner">SCAN
 					

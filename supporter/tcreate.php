@@ -215,9 +215,8 @@ function createScanpage(){
 			<input id="scanner_input" class="text-tag"  placeholder="SCAN Casaria TAG #" type="text" /> 
 			
 				<button class="btn btn-default" type="button" data-toggle="modal" data-target="#livestream_scanner">
-				<span> class="glyphicon glyphicon-search"></span>
-					<i class="fa fa-barcode"></i>
-				<button class="btn-scan" type="button" data-toggle="modal" data-target="#livestream_scanner">SCAN
+				
+		        <button class="btn-scan" type="button" data-toggle="modal" data-target="#livestream_scanner">SCAN
 					<i class="fa fa-barcode"></i>
 				</button> 
 			</span>

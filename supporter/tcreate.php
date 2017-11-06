@@ -212,10 +212,11 @@ function createScanpage(){
 	<div class="col-xs-6">
 	
 			<input id="scanner_input" class="text-tag"  placeholder="SCAN/ENTER CASTAG#..." type="text"/></div>
-			
+			<div class="col-xs-6">
 				<button class="btn-scan" type="button" data-toggle="modal" data-target="#livestream_scanner">SCAN
 					
 				</button> 
+			</div>
 
 	</div><!-- /.col-lg-6 -->
 </div><!-- /.row -->';

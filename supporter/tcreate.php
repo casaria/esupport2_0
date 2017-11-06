@@ -203,9 +203,10 @@ function createTicketPage() {
 
 }
 
-function createScanpage(){
+function createScanpage()
+{
 
- echo '
+    echo '
     <div class="row">
 	    <div class="input-group">
 	        <div class="col-xs-6">
@@ -218,10 +219,10 @@ function createScanpage(){
 				</button> 
             </div>
         </div><!-- /input-group -->
-    </div><!-- /.col-lg-6 -->
+    <!-- /      col-lg-6   </div> -->
     </div><!-- /.row -->';
 
-echo '
+    echo '
 <div class="modal" id="livestream_scanner">
 	<div class="modal-dialog">
 		<div class="modal-content">

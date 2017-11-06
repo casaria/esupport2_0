@@ -385,16 +385,16 @@ console.log(document.querySelector('meta[name="viewport"]'));
             }
 
             ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-                color: orange;
+                color: grey;
             }
             ::-moz-placeholder { /* Firefox 19+ */
-                color: orange;
+                color: grey;
             }
             :-ms-input-placeholder { /* IE 10+ */
-                color: orange;
+                color: grey;
             }
             :-moz-placeholder { /* Firefox 18- */
-                color: orange;
+                color: grey;
             }
 
 

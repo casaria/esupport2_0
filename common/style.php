@@ -374,6 +374,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
             }
             .text-tag {
                 margin: 6px;
+                margin-top: 10px;
                 width: 150px;
                 height: 35px;
                 font-weight: 800;

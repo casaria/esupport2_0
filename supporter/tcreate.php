@@ -209,7 +209,7 @@ function createScanpage(){
 
  echo '
     <div class="row">
-	<div class="col-xs-9">
+	<div class="col-xs-6">
 		<div class="input-group">
 		<span class="input-group-btn"> 
 			<input id="scanner_input" class="text-tag"  placeholder="SCAN Casaria TAG #" type="text" /> 

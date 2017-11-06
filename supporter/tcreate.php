@@ -209,11 +209,11 @@ function createScanpage()
     echo '
     <div class="row">
 	    <div class="input-group">
-	        <div class="col-xs-6">
+	        <div class="col-xs-4">
 		
 		        	<input id="scanner_input" class="text-tag"  placeholder="SCAN/ENTER CASTAG#..." type="text"/> 
 	       	</div>
-	       	<div class="col-xs-6">	
+	       	<div class="col-xs-3">	
 				<button class="btn-scan" type="button" data-toggle="modal" data-target="#livestream_scanner">SCAN
 					<i class="fa fa-barcode"></i>
 				</button> 

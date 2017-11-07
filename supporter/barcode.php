@@ -6,7 +6,7 @@
 
     <title>index</title>
     <meta name="description" content="" />
-    <meta name="author" content="Christoph Oberhofer" />
+    <meta name="author" content="Peter Horrack, Christoph Oberhofer" />
 
     <meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="../common/styles.css" />

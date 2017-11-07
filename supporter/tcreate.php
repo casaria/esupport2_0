@@ -207,7 +207,7 @@ function createScanpage()
 {
 
     echo '
-    <div class="row">
+    <div class="back">
 	    <div class="input-group">
 	        <div class="col-XS-10">
 		

@@ -1747,7 +1747,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
             }
 
             .btn-scan {
-                width: 120px;
+                width: 90px;
                 height: 35px;
                 padding: 3px;
                 margin-bottom: 10px;

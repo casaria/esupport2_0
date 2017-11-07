@@ -928,6 +928,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
                     font-size: <?php echo ($theme['font_size'])+1; ?>px;
                     color: <?php echo $theme['header_text']; ?>;
+                    padding-left: 6px;
                 }
 
                 td.extra {
@@ -1041,11 +1042,11 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 }
 
                 table {
-                    -webkit-border-horizontal-spacing: 2px;
-                    -webkit-border-vertical-spacing: 1px;
+                    -webkit-border-horizontal-spacing: 0;
+                    -webkit-border-vertical-spacing: 0;
                     font-weight: 500;
-                    padding: 1px;
-                    margin: 1px;
+                    padding: 0px;
+                    margin: 0px;
                 }
 
 
@@ -1551,7 +1552,9 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
                     font-size: <?php echo ($theme['font_size'])+2; ?>px;
                     color: <?php echo $theme['header_text']; ?>;
-                    padding: 3px;
+                    padding-top: 3px;
+                    padding-right 3px;
+                    padding-bottom: 3px;
                     padding-left: 8px;
                 }
 

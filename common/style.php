@@ -301,9 +301,9 @@ console.log(document.querySelector('meta[name="viewport"]'));
             * {margin:0; padding:0;}
 
             table {
-                border-spacing: 1px;
+                border-spacing: 0px;
                 border-collapse: collapse;
-                margin: 1px;
+                margin: 0px;
             }
 
             td.cat {

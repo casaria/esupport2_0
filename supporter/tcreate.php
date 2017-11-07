@@ -209,7 +209,7 @@ function createScanpage()
     echo '
     <div class="back">
 	    <div class="input-group">
-	        <div class="col-XS-10">
+	        <div class="col-XS-6">
 		
 		        	<input id="scanner_input" class="text-tag"  placeholder="SCAN/ENTER CASTAG#..." type="text"/> 
 	       	</div>

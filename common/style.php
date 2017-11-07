@@ -353,7 +353,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
             .text-2,
             .text-login {
-                width: 150px;
+                width: 180px;
                 padding: 2px 4px 4px 2px;
                 border-radius: 4px;
                 font-size: 18px;
@@ -373,9 +373,9 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 padding: 4px 4px 4px 4px;
             }
             .text-tag {
-                margin: 6px;
+                margin: 5px;
                 margin-top: 10px;
-                width: 150px;
+                width: 180px;
                 height: 35px;
                 font-weight: 800;
                 font-size: 20px;

@@ -378,7 +378,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 width: 180px;
                 height: 35px;
                 font-weight: 800;
-                font-size: 24px;
+                font-size: 26px;
                 padding-top: 2px;
                 padding-right: 6px;
                 padding-left: 6px;

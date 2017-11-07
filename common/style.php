@@ -443,12 +443,13 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 .container {
                     background-color: whitesmoke;
                     padding-right: 6px;
-                    padding-left: 6px;
-                    margin-right: 0px;
+                    padding-left: 2px;
+                    margin-right: 2px;
                     /*      margin-left: 6px; */
                     /*      width: 580px;   */
                     position: fixed;
-                    width: 421px;
+                    width: 320px;
+                    margin-top: 2px; /*  width  421  */
                     height: 756px;
                     left: 0%;
                     top: 0%;

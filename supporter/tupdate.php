@@ -546,7 +546,7 @@ global $id, $lang_updateticket, $lang_printable, $enable_time_tracking, $support
                     echo '<a href="updatelog.php?cookie_name=' . $cookie_name . '&id=' .
                         $info['id'] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">
 
-<img border=0 src="../' . $theme['image_dir'] . 'orangeglow0_show_summary.png"></a> ';
+<img border=0 src="../' . $theme['image_dir'] . 'orangeglow_show_summary.png"></a> ';
                     echo "<div align=right><a href=\"$supporter_site_url/print.php?id=$id\">$lang_printable</a></div>";
                     createTicketDetails();
                     createSupporterInfo();

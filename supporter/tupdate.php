@@ -437,6 +437,7 @@ unset($update);
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-main-tab" role="tabpanel" aria-labelledby="pills-main">
                <p>main
+                   <?php createMAINtab();  ?>
                </p>
             </div>
             <div class="tab-pane fade" id="pills-time-tab" role="tabpanel" aria-labelledby="pills-time">

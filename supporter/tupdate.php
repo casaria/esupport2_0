@@ -448,18 +448,6 @@ unset($update);
             </p>
         </div>
 
-        <div class="tab-pane fade" id="pills-mat" role="tabpanel" aria-labelledby="pills-mat-tab">
-            <h3>Mat</h3>
-            <p>The material tab
-            </p>
-        </div>
-
-        <div class="tab-pane fade" id="pills-xtra" role="tabpanel" aria-labelledby="pills-xtra-tab">
-            <h3>Xtra</h3>
-            <p>Extra tab
-            </p>
-        </div>
-
     </div>
 <?php
 

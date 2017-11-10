@@ -414,9 +414,9 @@ unset($update);
 
     //--></script>
 
+<form name=form1 method=post enctype="multipart/form-data">
 
 <div class="container">
-    <form name=form1 method=post enctype="multipart/form-data">
 
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item">

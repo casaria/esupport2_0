@@ -414,10 +414,10 @@ unset($update);
 
     //--></script>
 
-<form name=form1 method=post enctype="multipart/form-data">
+
 
 <div class="container">
-
+    <form name=form1 method=post enctype="multipart/form-data">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item">
                 <a class="nav-link active" id="pills-main" data-toggle="pill" href="#pills-main-tab" role="tab" aria-controls="pills-main" aria-selected="true"><h3>Main</h3></a>

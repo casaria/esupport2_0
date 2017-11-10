@@ -424,21 +424,26 @@ unset($update);
 
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><h3>Main</h3></a>
+                <a class="nav-link active" id="pills-main-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-main" aria-selected="true"><h3>Main</h3></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><h3>Time</h3></a>
+                <a class="nav-link" id="pills-time-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-time" aria-selected="false"><h3>Time</h3></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false"><h3>Mat</h3></a>
+                <a class="nav-link" id="pills-mat-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-mat" aria-selected="false"><h3>Mat</h3></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-xtra-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-xtra" aria-selected="false"><h3>Xtra</h3></a>
             </li>
         </ul>
 
 
         <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+            <div class="tab-pane fade show active" id="pills-main" role="tabpanel" aria-labelledby="pills-main-tab">...</div>
+            <div class="tab-pane fade" id="pills-time" role="tabpanel" aria-labelledby="pills-time-tab">...</div>
+            <div class="tab-pane fade" id="pills-mat" role="tabpanel" aria-labelledby="pills-mat-tab">...</div>
+            <div class="tab-pane fade" id="pills-xtra" role="tabpanel" aria-labelledby="pills-xtra-tab">...</div>
+
         </div>
 
 

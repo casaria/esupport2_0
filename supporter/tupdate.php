@@ -416,7 +416,7 @@ unset($update);
 
 
 <div class="container">
-    <?php echo"<form name=form1 method=post enctype=\"multipart/form-data\">"; ?>
+    <form name=form1 method=post enctype="multipart/form-data">
 
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item">
@@ -478,7 +478,7 @@ unset($update);
 
     if ($enable_kbase == 'On') {
 
-        echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>&nbsp;&nbsp;";
+        echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>";
         echo "<input type=hidden name=platform value='$info[platform]'>";
         echo "<input type=hidden name=category value='$info[category]'>";
         echo "<input type=hidden name=short value='$info[short]'>";

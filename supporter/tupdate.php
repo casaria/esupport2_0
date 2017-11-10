@@ -416,7 +416,7 @@ unset($update);
 
 
 <div class="container">
-    <?php echo "<form name=form1 method=post enctype=\"multipart/form-data\">"; ?>
+    <?php echo"<form name=form1 method=post enctype=\"multipart/form-data\">"; ?>
 
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item">
@@ -437,26 +437,26 @@ unset($update);
 
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-main" role="tabpanel" aria-labelledby="pills-main-tab">
+            <h3>Main</h3>
             <p>Review and edit. Provide Instructions: The field sequence is now more intuitive.
-
 
             </p>
         </div>
 
         <div class="tab-pane fade" id="pills-time" role="tabpanel" aria-labelledby="pills-time-tab">
-            <h3>TIME</h3>
+            <h3>Time</h3>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, tota, rem aperiam
             </p>
         </div>
 
         <div class="tab-pane fade show active" id="pills-mat" role="tabpanel" aria-labelledby="pills-mat-tab">
-            <h3>MAT</h3>
+            <h3>Mat</h3>
             <p>The extra tab is for tests right now
             </p>
         </div>
 
         <div class="tab-pane fade show active" id="pills-xtra" role="tabpanel" aria-labelledby="pills-xtra-tab">
-            <h3>XTRA</h3>
+            <h3>Xtra</h3>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod consequat.
             </p>
         </div>

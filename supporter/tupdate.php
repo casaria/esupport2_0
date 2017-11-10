@@ -440,58 +440,29 @@ unset($update);
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-main" role="tabpanel" aria-labelledby="pills-main-tab">
             <p>Review and edit. Provide Instructions: The field sequence is now more intuitive.
+                <?php createMAINtab();  ?>
 
-                <?php
-                $info = getTicketInfo($id);
-
-                    $sg = $info['groupid'];
-
-                    createTicketHeader("$lang_updateticket");
-                    echo '<a href="updatelog.php?cookie_name=' . $cookie_name . '&id=' .
-                        $info['id'] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">
-
-<img border=0 src="../' . $theme['image_dir'] . 'orangeglow0_show_summary.png"></a> ';
-                    echo "<div align=right><a href=\"$supporter_site_url/print.php?id=$id\">$lang_printable</a></div>";
-                    createTicketDetails();
-                    createSupporterInfo();
-                    createUserInfo();
-                    createNotificationPanel();
-                    createTicketInfo();
-
-                    if ($enable_time_tracking == 'On') {
-                        $total_minutes = displayTimeHistory();
-                    }
-                    displayMaterials();s
-
-                    if ($enable_time_tracking == 'On') {
-                        createTimeUpdate();
-                    }
-                    if ($enable_time_tracking == 'On') {
-
-                        $minutes = $total_minutes['labor_minutes'] + $total_minutes['labor_after_hours'];
-                    } else {
-                        $minutes = $info['minutes_labor'];
-                    }
-                    endTable();  // createTimeUpdate();
-                ?>
             </p>
         </div>
 
         <div class="tab-pane fade" id="pills-time" role="tabpanel" aria-labelledby="pills-time-tab">
             <h3>TIME</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, tota, rem aperiam.
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, tota, rem aperiam
             </p>
         </div>
+
         <div class="tab-pane fade show active" id="pills-mat" role="tabpanel" aria-labelledby="pills-mat-tab">
             <h3>MAT</h3>
             <p>The extra tab is for tests right now
             </p>
         </div>
+
         <div class="tab-pane fade show active" id="pills-xtra" role="tabpanel" aria-labelledby="pills-xtra-tab">
             <h3>XTRA</h3>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod consequat.
             </p>
         </div>
+
     </div>
 <?php
 
@@ -508,20 +479,20 @@ unset($update);
     echo "</form>";
 
 
-        if ($enable_kbase == 'On') {
+    if ($enable_kbase == 'On') {
 
-            echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>&nbsp;&nbsp;";
-            echo "<input type=hidden name=platform value='$info[platform]'>";
-            echo "<input type=hidden name=category value='$info[category]'>";
-            echo "<input type=hidden name=short value='$info[short]'>";
-            echo "<input type=hidden name=description value='$info[description]'>";
-            echo "<input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\"></form>";
-        }
+        echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>&nbsp;&nbsp;";
+        echo "<input type=hidden name=platform value='$info[platform]'>";
+        echo "<input type=hidden name=category value='$info[category]'>";
+        echo "<input type=hidden name=short value='$info[short]'>";
+        echo "<input type=hidden name=description value='$info[description]'>";
+        echo "<input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\"></form>";
+    }
 ?>
 </div>
-
-
+}
 <?php
+
 
 function createSupporterInfo()
 {
@@ -575,6 +546,40 @@ ECHO '                <tr>
 
     }
 
+function createMAINtab(){
+global $id, $lang_updateticket, $lang_printable, $enable_time_tracking, $supporter_site_url, $lang_updateticket, $theme, $supporter_site_url, $cookie_name;
+                   $info = getTicketInfo($id);
+
+                    $sg = $info['groupid'];
+
+                    createTicketHeader("$lang_updateticket");
+                    echo '<a href="updatelog.php?cookie_name=' . $cookie_name . '&id=' .
+                        $info['id'] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">
+
+<img border=0 src="../' . $theme['image_dir'] . 'orangeglow0_show_summary.png"></a> ';
+                    echo "<div align=right><a href=\"$supporter_site_url/print.php?id=$id\">$lang_printable</a></div>";
+                    createTicketDetails();
+                    createSupporterInfo();
+                    createUserInfo();
+                    createNotificationPanel();
+                    createTicketInfo();
+
+                    if ($enable_time_tracking == 'On') {
+                        $total_minutes = displayTimeHistory();
+                    }
+                    displayMaterials();
+
+                    if ($enable_time_tracking == 'On') {
+                        createTimeUpdate();
+                    }
+                    if ($enable_time_tracking == 'On') {
+
+                        $minutes = $total_minutes['labor_minutes'] + $total_minutes['labor_after_hours'];
+                    } else {
+                        $minutes = $info['minutes_labor'];
+                    }
+                    endTable();  // createTimeUpdate();
+}
 
 
 function createSupporterMenu($group_id)

@@ -173,7 +173,7 @@ else {
             <div class="tab-pane fade" id="asset" role="tabpanel" aria-labelledby="asset-tab">
                 <p>Asset</p>
             </div>
-        </div>.
+        </div>
 
 
     <?php

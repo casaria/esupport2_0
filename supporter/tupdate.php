@@ -417,7 +417,7 @@ unset($update);
 
 <div class="container">
 
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item">
             <a class="nav-link active" id="pills-main-tab" data-toggle="pill" href="#pills-main" role="tab" aria-controls="pills-main" aria-selected="true"><h3>MAIN</h3></a>
         </li>
@@ -437,27 +437,28 @@ unset($update);
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-main" role="tabpanel" aria-labelledby="pills-main-tab">
             <p>Review and edit. Provide Instructions: The field sequence is now more intuitive.
+
                 <?php
                 $info = getTicketInfo($id);
 
-                $sg = $info['groupid'];
+                    $sg = $info['groupid'];
 
-                createTicketHeader("$lang_updateticket");
-                echo '<a href="updatelog.php?cookie_name=' . $cookie_name . '&id=' .
-                    $info['id'] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">
+                    createTicketHeader("$lang_updateticket");
+                    echo '<a href="updatelog.php?cookie_name=' . $cookie_name . '&id=' .
+                        $info['id'] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">
 
 <img border=0 src="../' . $theme['image_dir'] . 'orangeglow0_show_summary.png"></a> ';
-                echo "<div align=right><a href=\"$supporter_site_url/print.php?id=$id\">$lang_printable</a></div>";
-                createTicketDetails();
-                createSupporterInfo();
-                createUserInfo();
-                createNotificationPanel();
-                createTicketInfo();
+                    echo "<div align=right><a href=\"$supporter_site_url/print.php?id=$id\">$lang_printable</a></div>";
+                    createTicketDetails();
+                    createSupporterInfo();
+                    createUserInfo();
+                    createNotificationPanel();
+                    createTicketInfo();
 
-                if ($enable_time_tracking == 'On') {
-                    $total_minutes = displayTimeHistory();
-                }
-                displayMaterials();
+                    if ($enable_time_tracking == 'On') {
+                        $total_minutes = displayTimeHistory();
+                    }
+                    displayMaterials();
 
                 if ($enable_time_tracking == 'On') {
                     createTimeUpdate();
@@ -472,7 +473,6 @@ unset($update);
 
                 endTable();  // createTimeUpdate();
                 ?>
-
             </p>
         </div>
 

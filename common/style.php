@@ -1288,7 +1288,6 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     color: #000000;
                     font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
                     font-size: <?php echo $theme['font_size']; ?>px;
-
                 }
 
                 tr {

@@ -416,15 +416,26 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 
 
 <div class="container">
-    <ul class="nav nav-pills">
-        <li class="active"><a data-toggle="tab" href="#main"><H3>MAIN</H3></a></li>
-        <li><a data-toggle="tab" href="#time"><H3>TIME</H3></a></li>
-        <li><a data-toggle="tab" href="#material"><H3>MAT</H3></a></li>
-        <li><a data-toggle="tab" href="#extra"><H3>EXTRA</H3></a></li>
+
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="pills-main-tab" data-toggle="pill" href="#pills-main" role="tab" aria-controls="pills-main" aria-selected="true"><h3>MAIN</h3></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pills-time-tab" data-toggle="pill" href="#pills-time" role="tab" aria-controls="pills-time" aria-selected="false"><h3>TIME</h3</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-mat" role="tab" aria-controls="pills-mat" aria-selected="false"><h3>MAT</h3></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pills-xtra-tab" data-toggle="pill" href="#pills-xtra" role="tab" aria-controls="pills-xtra" aria-selected="false"><h3>XTRA</h3></a>
+        </li>
     </ul>
 
-    <div class="tab-content">
-        <div id="main" class="tab-pane fade in active">
+
+
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-main" role="tabpanel" aria-labelledby="pills-main-tab">
             <p>Review and edit. Provide Instucions: The field sequence is now more intuitive.
                 <?php
                 $info = getTicketInfo($id);
@@ -490,25 +501,25 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 
             </p>
         </div>
-        <div id="time" class="tab-pane fade">
+
+        <div class="tab-pane fade" id="pills-time" role="tabpanel" aria-labelledby="pills-time-tab">
             <h3>TIME</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, tota, rem aperiam.
+            </p>
+        </div>
+        <div class="tab-pane fade show active" id="pills-mat" role="tabpanel" aria-labelledby="pills-mat-tab">
+                    <h3>MAT</h3>
+                    <p>The extra tab is for tests right now"
+
+                    </p>
+        </div>
+        <div class="tab-pane fade show active" id="pills-xtra" role="tabpanel" aria-labelledby="pills-xtra-tab">
+            <h3>XTRA</h3>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat.</p>
         </div>
-        <div id="material" class="tab-pane fade">
-            <h3>MATERIAL</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                rem aperiam.</p>
-        </div>
-        <div id="extra" class="tab-pane fade">
-            <h3>EXTRA</h3>
-            <p><H4>The extra tab is for tests right now"</H4>
-
-            </p>
-        </div>
     </div>
 </div>
-
 
 <?php
 function createSupporterInfo()

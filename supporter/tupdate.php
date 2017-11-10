@@ -477,7 +477,7 @@ unset($update);
         ?>
 </div>
 
-<?php}
+<?php
 
 
 function createSupporterInfo()

@@ -435,16 +435,16 @@ unset($update);
 
 
         <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-main" role="tabpanel" aria-labelledby="pills-main">
+            <div class="tab-pane fade show active" id="pills-main-tab" role="tabpanel" aria-labelledby="pills-main">
                <p>main</p
             </div>
-            <div class="tab-pane fade" id="pills-time" role="tabpanel" aria-labelledby="pills-time">
+            <div class="tab-pane fade" id="pills-time-tab" role="tabpanel" aria-labelledby="pills-time">
                <p>time</p>
             </div>
-            <div class="tab-pane fade" id="pills-mat" role="tabpanel" aria-labelledby="pills-mat">
+            <div class="tab-pane fade" id="pills-mat-tab" role="tabpanel" aria-labelledby="pills-mat">
                 <p>material</p>
             </div>
-            <div class="tab-pane fade" id="pills-xtra" role="tabpanel" aria-labelledby="pills-xtra">
+            <div class="tab-pane fade" id="pills-xtra-tab" role="tabpanel" aria-labelledby="pills-xtra">
                 <p>Extra</p>
             </div>
 

@@ -439,7 +439,6 @@ unset($update);
         <div class="tab-pane fade show active" id="pills-main" role="tabpanel" aria-labelledby="pills-main-tab">
             <h3>Main</h3>
             <p>Review and edit. Provide Instructions: The field sequence is now more intuitive.
-
             </p>
         </div>
 

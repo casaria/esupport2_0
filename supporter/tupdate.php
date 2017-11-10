@@ -418,10 +418,6 @@ unset($update);
 <div class="container">
     <form name=form1 method=post enctype="multipart/form-data">
 
-
-
-
-
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item">
                 <a class="nav-link active" id="pills-main-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-main" aria-selected="true"><h3>Main</h3></a>
@@ -439,16 +435,16 @@ unset($update);
 
 
         <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-main" role="tabpanel" aria-labelledby="pills-main-tab">
+            <div class="tab-pane fade show active" id="pills-main" role="tabpanel" aria-labelledby="pills-main">
                <p>main</p
             </div>
-            <div class="tab-pane fade" id="pills-time" role="tabpanel" aria-labelledby="pills-time-tab">
+            <div class="tab-pane fade" id="pills-time" role="tabpanel" aria-labelledby="pills-time">
                <p>time</p>
             </div>
-            <div class="tab-pane fade" id="pills-mat" role="tabpanel" aria-labelledby="pills-mat-tab">
+            <div class="tab-pane fade" id="pills-mat" role="tabpanel" aria-labelledby="pills-mat">
                 <p>material</p>
             </div>
-            <div class="tab-pane fade" id="pills-xtra" role="tabpanel" aria-labelledby="pills-xtra-tab">
+            <div class="tab-pane fade" id="pills-xtra" role="tabpanel" aria-labelledby="pills-xtra">
                 <p>Extra</p>
             </div>
 

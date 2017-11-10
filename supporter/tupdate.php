@@ -437,15 +437,17 @@ unset($update);
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-main-tab" role="tabpanel" aria-labelledby="pills-main">
                <p>main
-                   <?php createMAINtab();  ?>
+                   <?php createMainTab();  ?>
                </p>
             </div>
             <div class="tab-pane fade" id="pills-time-tab" role="tabpanel" aria-labelledby="pills-time">
                <p>time
+                   <?php createTimeTab();  ?>
                </p>
             </div>
             <div class="tab-pane fade" id="pills-mat-tab" role="tabpanel" aria-labelledby="pills-mat">
-                <p>materia
+                <p>material
+                    <?php createMaterialTab();  ?>
                 </p>
             </div>
             <div class="tab-pane fade" id="pills-xtra-tab" role="tabpanel" aria-labelledby="pills-xtra">
@@ -536,7 +538,7 @@ ECHO '                <tr>
 
     }
 
-function createMAINtab(){
+function createMainTab(){
 global $id, $lang_updateticket, $lang_printable, $enable_time_tracking, $supporter_site_url, $lang_updateticket, $theme, $supporter_site_url, $cookie_name, $total_minutes, $info;
                    $info = getTicketInfo($id);
 
@@ -554,23 +556,33 @@ global $id, $lang_updateticket, $lang_printable, $enable_time_tracking, $support
                     createNotificationPanel();
                     createTicketInfo();
 
-                    if ($enable_time_tracking == 'On') {
-                        $total_minutes = displayTimeHistory();
-                    }
-                    displayMaterials();
 
-                    if ($enable_time_tracking == 'On') {
-                        createTimeUpdate();
-                    }
-                    if ($enable_time_tracking == 'On') {
 
-                        $minutes = $total_minutes['labor_minutes'] + $total_minutes['labor_after_hours'];
-                    } else {
-                        $minutes = $info['minutes_labor'];
-                    }
-                    endTable();  // createTimeUpdate();
 }
 
+
+function createTimeTab(){
+global $enable_time_tracking, $total_minutes, $info;
+    if ($enable_time_tracking == 'On') {
+        $total_minutes = displayTimeHistory();
+    }
+
+    if ($enable_time_tracking == 'On') {
+        createTimeUpdate();
+    }
+    if ($enable_time_tracking == 'On') {
+
+        $minutes = $total_minutes['labor_minutes'] + $total_minutes['labor_after_hours'];
+    } else {
+        $minutes = $info['minutes_labor'];
+    }
+    endTable();  // createTimeUpdate();
+
+}
+
+function createMaterialTab(){
+    displayMaterials();
+    }
 
 function createSupporterMenu($group_id)
 {

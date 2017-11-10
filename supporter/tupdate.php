@@ -418,46 +418,98 @@ unset($update);
 <div class="container">
     <form name=form1 method=post enctype="multipart/form-data">
 
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link active" id="pills-main-tab" data-toggle="pill" href="#pills-main" role="tab" aria-controls="pills-main" aria-selected="true"><h3>MAIN</h3></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="pills-time-tab" data-toggle="pill" href="#pills-time" role="tab" aria-controls="pills-time" aria-selected="false"><h3>TIME</h3</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="pills-mat-tab" data-toggle="pill" href="#pills-mat" role="tab" aria-controls="pills-mat" aria-selected="false"><h3>MAT</h3</a>
-        </li>
-    </ul>
 
 
 
-    <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-main" role="tabpanel" aria-labelledby="pills-main-tab">
 
-            <p>Review and edit. Provide Instructions: The field sequence is now more intuitive.
-            </p>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+            </li>
+        </ul>
+
+
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
         </div>
 
-        <div class="tab-pane fade" id="pills-time" role="tabpanel" aria-labelledby="pills-time-tab">
 
-            <p>The Time tab
-            </p>
-        </div>
+        <!--
+                <div class="container">
+                    <ul class="nav nav-tabs mb3" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="new-tab" data-toggle="pill" href="#new" role="tab" aria-controls="new" aria-selected="true"><h3>NEW</h3></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="scan-tab" data-toggle="pill" href="#scan" role="tab" aria-controls="scan" aria-selected="false"><h3>SCAN</h3></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="extra-tab" data-toggle="pill" href="#extra" role="tab" aria-controls="extra" aria-selected="false"><h3>EXTRA</h3></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="asset-tab" data-toggle="pill" href="#asset" role="tab" aria-controls="asset" aria-selected="false"><h3>ASSET</h3></a>
+                        </li>
+                    </ul>
 
-        <div class="tab-pane fade" id="pills-mat" role="tabpanel" aria-labelledby="pills-mat-tab">
 
-            <p>The material tab
-            </p>
-        </div>
 
-        <div class="tab-pane fade" id="pills-xtra" role="tabpanel" aria-labelledby="pills-xtra-tab">
 
-            <p>Extra tab
-            </p>
-        </div>
 
-    </div>
+
+
+
+
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-main-tab" data-toggle="pill" href="#pills-main" role="tab" aria-controls="pills-main" aria-selected="true"><h3>MAIN</h3></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-time-tab" data-toggle="pill" href="#pills-time" role="tab" aria-controls="pills-time" aria-selected="false"><h3>TIME</h3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-mat-tab" data-toggle="pill" href="#pills-mat" role="tab" aria-controls="pills-mat" aria-selected="false"><h3>MAT</h3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-xtra-tab" data-toggle="pill" href="#pills-xtra" role="tab" aria-controls="pills-mat" aria-selected="false"><h3>Xtra</h3</a>
+                </li>
+            </ul>
+
+
+
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-main" role="tabpanel" aria-labelledby="pills-main-tab">
+
+                    <p>Review and edit. Provide Instructions: The field sequence is now more intuitive.
+                    </p>
+                </div>
+
+                <div class="tab-pane fade" id="pills-time" role="tabpanel" aria-labelledby="pills-time-tab">
+
+                    <p>The Time tab
+                    </p>
+                </div>
+
+                <div class="tab-pane fade" id="pills-mat" role="tabpanel" aria-labelledby="pills-mat-tab">
+
+                    <p>The material tab
+                    </p>
+                </div>
+
+                <div class="tab-pane fade" id="pills-xtra" role="tabpanel" aria-labelledby="pills-xtra-tab">
+
+                    <p>Extra tab
+                    </p>
+                </div>
+
+            </div>//-->
 <?php
 
     echo "<input type=hidden name=sg value='" . $sg . "'>";

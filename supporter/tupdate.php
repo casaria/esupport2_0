@@ -436,6 +436,7 @@ unset($update);
 
 
     <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-main" role="tabpanel" aria-labelledby="pills-main-tab">
 
             <p>Review and edit. Provide Instructions: The field sequence is now more intuitive.
 
@@ -448,6 +449,7 @@ unset($update);
             </p>
         </div>
 
+        <div class="tab-pane fade show active" id="pills-mat" role="tabpanel" aria-labelledby="pills-mat-tab">
 
             <p>The extra tab is for tests right now
             </p>

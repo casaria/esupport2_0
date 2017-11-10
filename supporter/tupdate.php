@@ -400,7 +400,7 @@ if (isset($update)) {
 }
 
 unset($update);
-echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
+
 
 //set up the javascript function for creating a menu.
 ?>
@@ -471,28 +471,8 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
 
 
                 echo "<TR><td class=\"back\"></td><td VALIGN='TOP' class=\"back\">";
-                echo "<input type=hidden name=sg value='" . $sg . "'>";
-                echo "<input type=hidden name=id value='" . $info['id'] . "'>";
-                echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
-                echo "<input type=hidden name=old_pri value='" . $info['priority'] . "'>";
-                echo "<input type=hidden name=old_emailgroup value='" . $info['emailgroup'] . "'>";
-                echo "<input type=hidden name=old_emailstatuschange value='" . $info['emailstatuschange'] . "'>";
-                echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
-                echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
-                echo "<input type=hidden name=minutes_labor value=$minutes>";
-                echo "<input type=submit id=submit name=update height=80 value=\"$lang_updateticket\">";
-                echo "</form></td><td VALIGN='TOP' class=\"back\">";
 
-
-                if ($enable_kbase == 'On') {
-
-                    echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>&nbsp;&nbsp;";
-                    echo "<input type=hidden name=platform value='$info[platform]'>";
-                    echo "<input type=hidden name=category value='$info[category]'>";
-                    echo "<input type=hidden name=short value='$info[short]'>";
-                    echo "<input type=hidden name=description value='$info[description]'>";
-                    echo "<input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\">";
-                    echo "</form></td>";
+                    echo "</td>";
                 }
                 echo "</tr>";
 
@@ -508,17 +488,39 @@ echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
             </p>
         </div>
         <div class="tab-pane fade show active" id="pills-mat" role="tabpanel" aria-labelledby="pills-mat-tab">
-                    <h3>MAT</h3>
-                    <p>The extra tab is for tests right now"
-
-                    </p>
+            <h3>MAT</h3>
+            <p>The extra tab is for tests right now
+            </p>
         </div>
         <div class="tab-pane fade show active" id="pills-xtra" role="tabpanel" aria-labelledby="pills-xtra-tab">
             <h3>XTRA</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod consequat.
+            </p>
         </div>
     </div>
+
+    echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
+    echo "<input type=hidden name=sg value='" . $sg . "'>";
+    echo "<input type=hidden name=id value='" . $info['id'] . "'>";
+    echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
+    echo "<input type=hidden name=old_pri value='" . $info['priority'] . "'>";
+    echo "<input type=hidden name=old_emailgroup value='" . $info['emailgroup'] . "'>";
+    echo "<input type=hidden name=old_emailstatuschange value='" . $info['emailstatuschange'] . "'>";
+    echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
+    echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
+    echo "<input type=hidden name=minutes_labor value=$minutes>";
+    echo "<input type=submit id=submit name=update height=80 value=\"$lang_updateticket\">";
+    echo "</form></td><td VALIGN='TOP' class=\"back\">";
+
+
+        if ($enable_kbase == 'On') {
+
+        echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>&nbsp;&nbsp;";
+            echo "<input type=hidden name=platform value='$info[platform]'>";
+            echo "<input type=hidden name=category value='$info[category]'>";
+            echo "<input type=hidden name=short value='$info[short]'>";
+            echo "<input type=hidden name=description value='$info[description]'>";
+            echo "<input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\"></form>";
 </div>
 
 <?php

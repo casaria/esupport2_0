@@ -420,16 +420,16 @@ unset($update);
 
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" id="pills-main-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-main" aria-selected="true"><h3>Main</h3></a>
+                <a class="nav-link active" id="pills-main" data-toggle="pill" href="#pills-main-tab" role="tab" aria-controls="pills-main" aria-selected="true"><h3>Main</h3></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-time-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-time" aria-selected="false"><h3>Time</h3></a>
+                <a class="nav-link" id="pills-time" data-toggle="pill" href="#pills-time-tab" role="tab" aria-controls="pills-time" aria-selected="false"><h3>Time</h3></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-mat-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-mat" aria-selected="false"><h3>Mat</h3></a>
+                <a class="nav-link" id="pills-mat" data-toggle="pill" href="#pills-mat-tab" role="tab" aria-controls="pills-mat" aria-selected="false"><h3>Mat</h3></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-xtra-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-xtra" aria-selected="false"><h3>Xtra</h3></a>
+                <a class="nav-link" id="pills-xtra" data-toggle="pill" href="#pills-xtra-tab" role="tab" aria-controls="pills-xtra" aria-selected="false"><h3>Xtra</h3></a>
             </li>
         </ul>
 

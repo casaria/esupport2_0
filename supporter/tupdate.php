@@ -452,7 +452,7 @@ unset($update);
             </div>
             <div class="tab-pane fade" id="pills-xtra-tab" role="tabpanel" aria-labelledby="pills-xtra">
                 <p>
-                    <?php extraTab(); ?>
+
                 </p>
             </div>
         </div>

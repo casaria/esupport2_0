@@ -458,20 +458,18 @@ unset($update);
                     if ($enable_time_tracking == 'On') {
                         $total_minutes = displayTimeHistory();
                     }
-                    displayMaterials();
+                    displayMaterials();s
 
-                if ($enable_time_tracking == 'On') {
-                    createTimeUpdate();
-                }
-                if ($enable_time_tracking == 'On') {
+                    if ($enable_time_tracking == 'On') {
+                        createTimeUpdate();
+                    }
+                    if ($enable_time_tracking == 'On') {
 
-                    $minutes = $total_minutes['labor_minutes'] + $total_minutes['labor_after_hours'];
-                } else {
-                    $minutes = $info['minutes_labor'];
-                }
-
-
-                endTable();  // createTimeUpdate();
+                        $minutes = $total_minutes['labor_minutes'] + $total_minutes['labor_after_hours'];
+                    } else {
+                        $minutes = $info['minutes_labor'];
+                    }
+                    endTable();  // createTimeUpdate();
                 ?>
             </p>
         </div>
@@ -492,7 +490,7 @@ unset($update);
             </p>
         </div>
     </div>
-
+<?php
     echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
     echo "<input type=hidden name=sg value='" . $sg . "'>";
     echo "<input type=hidden name=id value='" . $info['id'] . "'>";
@@ -504,20 +502,24 @@ unset($update);
     echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
     echo "<input type=hidden name=minutes_labor value=$minutes>";
     echo "<input type=submit id=submit name=update height=80 value=\"$lang_updateticket\">";
-    echo "</form>
+    echo "</form>";
 
 
         if ($enable_kbase == 'On') {
 
-        echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>&nbsp;&nbsp;";
+            echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>&nbsp;&nbsp;";
             echo "<input type=hidden name=platform value='$info[platform]'>";
             echo "<input type=hidden name=category value='$info[category]'>";
             echo "<input type=hidden name=short value='$info[short]'>";
             echo "<input type=hidden name=description value='$info[description]'>";
             echo "<input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\"></form>";
+        }
+?>
 </div>
 
+
 <?php
+
 function createSupporterInfo()
 {
 global $sg, $lang_supporterinfo, $lang_supportergroup, $lang_supporter, $lang_ticket, $lang_priority, $lang_status;

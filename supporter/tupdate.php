@@ -696,7 +696,7 @@ function createTicketDetails()
     $attachments = '';
 
     //if there attachments, get them and setup the links to them.
-    $sql = "SELECT * from $mysql_attachments_table where 2tid=$id";
+    $sql = "SELECT * from $mysql_attachments_table where tid=$id";
     $result = $db->query($sql);
     $num_attachments = $db->num_rows($result);
     if ($num_attachments > 0) {

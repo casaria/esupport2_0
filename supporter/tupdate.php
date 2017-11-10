@@ -436,7 +436,7 @@ unset($update);
 
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-main" role="tabpanel" aria-labelledby="pills-main-tab">
-            <p>Review and edit. Provide Instucions: The field sequence is now more intuitive.
+            <p>Review and edit. Provide Instructions: The field sequence is now more intuitive.
                 <?php
                 $info = getTicketInfo($id);
 
@@ -469,12 +469,6 @@ unset($update);
                     $minutes = $info['minutes_labor'];
                 }
 
-
-                echo "<TR><td class=\"back\"></td><td VALIGN='TOP' class=\"back\">";
-
-                    echo "</td>";
-                }
-                echo "</tr>";
 
                 endTable();  // createTimeUpdate();
                 ?>
@@ -510,7 +504,7 @@ unset($update);
     echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
     echo "<input type=hidden name=minutes_labor value=$minutes>";
     echo "<input type=submit id=submit name=update height=80 value=\"$lang_updateticket\">";
-    echo "</form></td><td VALIGN='TOP' class=\"back\">";
+    echo "</form>
 
 
         if ($enable_kbase == 'On') {

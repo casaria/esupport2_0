@@ -416,9 +416,7 @@ unset($update);
 
 
 <div class="container">
-    <?php
-    echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
-    ?>
+    <?phpecho "<form name=form1 method=post enctype=\"multipart/form-data\">"; ?>
 
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item">
@@ -440,7 +438,7 @@ unset($update);
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-main" role="tabpanel" aria-labelledby="pills-main-tab">
             <p>Review and edit. Provide Instructions: The field sequence is now more intuitive.
-                <?php createMAINtab();  ?>
+
 
             </p>
         </div>
@@ -706,7 +704,7 @@ function createTicketDetails()
     $attachments = '';
 
     //if there attachments, get them and setup the links to them.
-    $sql = "SELECT * from $mysql_attachments_table where tid=$id";
+    $sql = "SELECT * from $mysql_attachments_table where 2tid=$id";
     $result = $db->query($sql);
     $num_attachments = $db->num_rows($result);
     if ($num_attachments > 0) {
@@ -945,7 +943,6 @@ function displayMaterials()
                         <div class="col-sm-12 billable" data-foo="17">
                             <span style="height: 80px;">#4000</span>
                         </div>
-
                         <div class="col-sm-12 overhead"  data-foo="5">
                             <span style="height: 200px;">#4530<br>Short dedcription<br>line 2</span>
                         </div>

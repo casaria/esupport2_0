@@ -425,12 +425,7 @@ unset($update);
         <li class="nav-item">
             <a class="nav-link" id="pills-time-tab" data-toggle="pill" href="#pills-time" role="tab" aria-controls="pills-time" aria-selected="false"><h3>TIME</h3</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-mat" role="tab" aria-controls="pills-mat" aria-selected="false"><h3>MAT</h3></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="pills-xtra-tab" data-toggle="pill" href="#pills-xtra" role="tab" aria-controls="pills-xtra" aria-selected="false"><h3>XTRA</h3></a>
-        </li>
+
     </ul>
 
 
@@ -445,6 +440,18 @@ unset($update);
         <div class="tab-pane fade" id="pills-time" role="tabpanel" aria-labelledby="pills-time-tab">
             <h3>Time</h3>
             <p>The Time tab
+            </p>
+        </div>
+
+        <div class="tab-pane fade" id="pills-mat" role="tabpanel" aria-labelledby="pills-mat-tab">
+            <h3>Mat</h3>
+            <p>The material tab
+            </p>
+        </div>
+
+        <div class="tab-pane fade" id="pills-xtra" role="tabpanel" aria-labelledby="pills-xtra-tab">
+            <h3>Xtra</h3>
+            <p>Extra tab
             </p>
         </div>
 

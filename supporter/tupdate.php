@@ -426,10 +426,7 @@ unset($update);
             <a class="nav-link" id="pills-time-tab" data-toggle="pill" href="#pills-time" role="tab" aria-controls="pills-time" aria-selected="false"><h3>TIME</h3</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-mat" role="tab" aria-controls="pills-mat" aria-selected="false"><h3>MAT</h3></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="pills-xtra-tab" data-toggle="pill" href="#pills-xtra" role="tab" aria-controls="pills-xtra" aria-selected="false"><h3>XTRA</h3></a>
+            <a class="nav-link" id="pills-mat-tab" data-toggle="pill" href="#pills-mat" role="tab" aria-controls="pills-mat" aria-selected="false"><h3>MAT</h3</a>
         </li>
     </ul>
 

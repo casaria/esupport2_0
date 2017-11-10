@@ -437,27 +437,27 @@ unset($update);
 
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-main" role="tabpanel" aria-labelledby="pills-main-tab">
-
+            <h3>Main</h3>
             <p>Review and edit. Provide Instructions: The field sequence is now more intuitive.
 
             </p>
         </div>
 
         <div class="tab-pane fade" id="pills-time" role="tabpanel" aria-labelledby="pills-time-tab">
-
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, tota, rem aperiam
+            <h3>Time</h3>
+            <p>The Time tab
             </p>
         </div>
 
-        <div class="tab-pane fade show active" id="pills-mat" role="tabpanel" aria-labelledby="pills-mat-tab">
-
-            <p>The extra tab is for tests right now
+        <div class="tab-pane fade" id="pills-mat" role="tabpanel" aria-labelledby="pills-mat-tab">
+            <h3>Mat</h3>
+            <p>The material tab
             </p>
         </div>
 
-        <div class="tab-pane fade show active" id="pills-xtra" role="tabpanel" aria-labelledby="pills-xtra-tab">
-
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod consequat.
+        <div class="tab-pane fade" id="pills-xtra" role="tabpanel" aria-labelledby="pills-xtra-tab">
+            <h3>Xtra</h3>
+            <p>Extra tab
             </p>
         </div>
 

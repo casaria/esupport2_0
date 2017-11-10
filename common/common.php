@@ -1689,7 +1689,7 @@ function displayTicket($result)
 
         echo $row['status'];
         echo "</a></td>";
-        echo "<td class=back align=center><img height=28 src=\"../$theme[image_dir].$bsIconRef\"></td>";
+        echo "<td class=back align=center><img height=28 src=\"../$theme[image_dir]$bsIconRef\"></td>";
 
         $response = setResponse($last_update, $row['priority'], $row['id']);
 

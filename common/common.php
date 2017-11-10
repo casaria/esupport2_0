@@ -1686,7 +1686,6 @@ function displayTicket($result)
         }
         echo '<a href="updatelog.php?&id=' . $row["id"] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',
 					\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">';
-
         echo $row['status'];
         echo "</a></td>";
         echo "<td class=back align=center><img height=28 src=\"../$theme[image_dir]$bsIconRef\"></td>";

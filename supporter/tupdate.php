@@ -416,6 +416,9 @@ unset($update);
 
 
 <div class="container">
+    <?php
+    echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
+    ?>
 
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item">
@@ -491,7 +494,7 @@ unset($update);
         </div>
     </div>
 <?php
-    echo "<form name=form1 method=post enctype=\"multipart/form-data\">";
+
     echo "<input type=hidden name=sg value='" . $sg . "'>";
     echo "<input type=hidden name=id value='" . $info['id'] . "'>";
     echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";

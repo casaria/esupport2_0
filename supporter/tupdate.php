@@ -436,18 +436,21 @@ unset($update);
 
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-main-tab" role="tabpanel" aria-labelledby="pills-main">
-               <p>main</p
+               <p>main
+               </p>
             </div>
             <div class="tab-pane fade" id="pills-time-tab" role="tabpanel" aria-labelledby="pills-time">
-               <p>time</p>
+               <p>time
+               </p>
             </div>
             <div class="tab-pane fade" id="pills-mat-tab" role="tabpanel" aria-labelledby="pills-mat">
-                <p>material</p>
+                <p>materia
+                </p>
             </div>
             <div class="tab-pane fade" id="pills-xtra-tab" role="tabpanel" aria-labelledby="pills-xtra">
-                <p>Extra</p>
+                <p>Extra
+                </p>
             </div>
-
         </div>
 
 <?php

@@ -450,91 +450,22 @@ unset($update);
 
         </div>
 
-
-        <!--
-                <div class="container">
-                    <ul class="nav nav-tabs mb3" id="pills-tab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="new-tab" data-toggle="pill" href="#new" role="tab" aria-controls="new" aria-selected="true"><h3>NEW</h3></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="scan-tab" data-toggle="pill" href="#scan" role="tab" aria-controls="scan" aria-selected="false"><h3>SCAN</h3></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="extra-tab" data-toggle="pill" href="#extra" role="tab" aria-controls="extra" aria-selected="false"><h3>EXTRA</h3></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="asset-tab" data-toggle="pill" href="#asset" role="tab" aria-controls="asset" aria-selected="false"><h3>ASSET</h3></a>
-                        </li>
-                    </ul>
-
-
-
-
-
-
-
-
-
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="pills-main-tab" data-toggle="pill" href="#pills-main" role="tab" aria-controls="pills-main" aria-selected="true"><h3>MAIN</h3></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-time-tab" data-toggle="pill" href="#pills-time" role="tab" aria-controls="pills-time" aria-selected="false"><h3>TIME</h3</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-mat-tab" data-toggle="pill" href="#pills-mat" role="tab" aria-controls="pills-mat" aria-selected="false"><h3>MAT</h3</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-xtra-tab" data-toggle="pill" href="#pills-xtra" role="tab" aria-controls="pills-mat" aria-selected="false"><h3>Xtra</h3</a>
-                </li>
-            </ul>
-
-
-
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-main" role="tabpanel" aria-labelledby="pills-main-tab">
-
-                    <p>Review and edit. Provide Instructions: The field sequence is now more intuitive.
-                    </p>
-                </div>
-
-                <div class="tab-pane fade" id="pills-time" role="tabpanel" aria-labelledby="pills-time-tab">
-
-                    <p>The Time tab
-                    </p>
-                </div>
-
-                <div class="tab-pane fade" id="pills-mat" role="tabpanel" aria-labelledby="pills-mat-tab">
-
-                    <p>The material tab
-                    </p>
-                </div>
-
-                <div class="tab-pane fade" id="pills-xtra" role="tabpanel" aria-labelledby="pills-xtra-tab">
-
-                    <p>Extra tab
-                    </p>
-                </div>
-
-            </div>//-->
 <?php
 
-    echo "<input type=hidden name=sg value='" . $sg . "'>";
-    echo "<input type=hidden name=id value='" . $info['id'] . "'>";
-    echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
-    echo "<input type=hidden name=old_pri value='" . $info['priority'] . "'>";
-    echo "<input type=hidden name=old_emailgroup value='" . $info['emailgroup'] . "'>";
-    echo "<input type=hidden name=old_emailstatuschange value='" . $info['emailstatuschange'] . "'>";
-    echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
-    echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
-    echo "<input type=hidden name=minutes_labor value=$minutes>";
-    echo "<input type=submit id=submit name=update height=80 value=\"$lang_updateticket\">";
-    echo "</form>";
+        echo "<input type=hidden name=sg value='" . $sg . "'>";
+        echo "<input type=hidden name=id value='" . $info['id'] . "'>";
+        echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
+        echo "<input type=hidden name=old_pri value='" . $info['priority'] . "'>";
+        echo "<input type=hidden name=old_emailgroup value='" . $info['emailgroup'] . "'>";
+        echo "<input type=hidden name=old_emailstatuschange value='" . $info['emailstatuschange'] . "'>";
+        echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
+        echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
+        echo "<input type=hidden name=minutes_labor value=$minutes>";
+        echo "<input type=submit id=submit name=update height=80 value=\"$lang_updateticket\">";
+        echo "</form>";
 
 
-    if ($enable_kbase == 'On') {
+        if ($enable_kbase == 'On') {
 
         echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>";
         echo "<input type=hidden name=platform value='$info[platform]'>";
@@ -542,11 +473,11 @@ unset($update);
         echo "<input type=hidden name=short value='$info[short]'>";
         echo "<input type=hidden name=description value='$info[description]'>";
         echo "<input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\"></form>";
-    }
-?>
+        }
+        ?>
 </div>
 
-<?php
+<?php}
 
 
 function createSupporterInfo()

@@ -419,9 +419,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 -webkit-box-shadow: 13px 11px 7px -4px rgba(117,115,117,1);
                 -moz-box-shadow: 13px 11px 7px -4px rgba(117,115,117,1);
                 box-shadow: 13px 11px 7px -4px rgba(117,115,117,1);
-                Copy Text
 
-                }
+            }
 
             /*### Smartphones (portrait and landscape)(small)### */
             @media screen and (min-width : 0px) and (max-width : 767px) {

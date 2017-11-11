@@ -1067,7 +1067,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     -webkit-border-radius: 3px;
                     -moz-border-radius: 3px;
                     width: 350px;
-                    font-size: <?php echo ($theme['font_size']); ?>px
+                    font-size: <?php (echo ($theme['font_size'])+3); ?>px
                     outline: 0;
                     overflow: hidden;
                     padding: 2px 2px 2px 2px;

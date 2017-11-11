@@ -43,7 +43,7 @@ require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 
 
 require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
-$login_logo = $_SERVER['DOCUMENT_ROOT']."/images/casariadefault/small-header-brown.gif";
+$login_logo = "images/casariadefault/small-header-brown.gif";
 
 $cookieuser = '';
 //common.php
@@ -98,8 +98,8 @@ if(isset($login))
 				$_SESSION ["enc_pwd"] = $enc_pwd;
 
 				//nov14 header("Location: $referer");
-				setcookie('supporter_usercookie', $cookie_name,  time()+ 60*60*24*7);
-				setcookie('supporter_pwdcookie', $password,  time()+ 60*60*24*7);
+				setcookie('supporter_usercookie', $cookie_name,  time()+ $session_time);
+				setcookie('supporter_pwdcookie', $password,  time()+ $session_time);
 				
 			}
 			else{

@@ -43,7 +43,7 @@ require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 
 
 require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
-$login_logo = __DIR__."images/casariadefault/small-header-brown.gif";
+$login_logo = __DIR__."../images/casariadefault/small-header-brown.gif";
 
 $cookieuser = '';
 //common.php

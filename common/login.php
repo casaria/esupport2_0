@@ -178,10 +178,8 @@ echo'
                   <TD class=back vAlign="top" align="center">
 <div class="container-login" align="center">
 <TABLE class=border cellSpacing=0 cellPadding=5  align=center border=0	>
-  <TR>
-    <TD>
-    
-    </TD></TR>
+  <TR><TD></TD></TR>
+  <TR></TR>
     <TR><TD>
      	
       <TABLE style="margin:6px; Padding:0px; width=100%" align="center">

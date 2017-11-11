@@ -39,17 +39,11 @@ $starttime = $mtime1[0] + $mtime1[1];
 $username ='';
 $password ='';
 $referer ='';
-require_once "../common/common.php";
+require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 
-if(eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF)) {
-   require_once "../lang/$default_language.lang.php"; 
-   $login_logo ="../images/casariadefault/small-header-brown.gif";
-}
-else {
-	require_once "lang/$default_language.lang.php";
-	$login_logo = "images/casariadefault/small-header-brown.gif";
-}
 
+require_once $_SERVER['DOCUMENT_ROOT']."lang/$default_language.lang.php";
+$login_logo = $_SERVER['DOCUMENT_ROOT']."images/casariadefault/small-header-brown.gif";
 
 $cookieuser = '';
 //common.php

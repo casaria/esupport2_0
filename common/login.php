@@ -183,7 +183,7 @@ echo'
   <TR></TR>
     <TR><TD>
      	
-      <TABLE style="margin:6px; Padding:0px; width=100%" align="center">
+      <TABLE style="margin:6px; Padding:0px; border:0px; width=100%" align="center">
         <TR
           
         </TR>

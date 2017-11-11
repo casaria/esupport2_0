@@ -1132,14 +1132,13 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 input[type=text], textarea, select, input[type=submit],
                 input[type=reset] {
                     border: 3px solid #ffad41;
-                    margin: 10px;
                     -webkit-box-shadow: #B4B5B5 3px 3px 3px;
                     -moz-box-shadow: #B4B5B5 3px 3px 3px;
                     box-shadow: #B4B5B5 3px 3px 3px;
                     -webkit-border-radius: 3px;
                     -moz-border-radius: 3px;
                     border-radius: 3px;
-                    font-size: 16px;
+                    font-size:  <?php echo ($theme['font_size']+1); ?>px;
                     padding-top: 2px;
                     padding-right: 2px;
                     padding-left: 2px;

@@ -109,7 +109,7 @@ startTable("$lang_editprofile", "center");
 			echo "<tr><td width=180 class=back2>$lang_emailaddy: </td>
 				<td class=back><input type=text size=30 name=email value=\"".$user_info['email']."\"></td></tr>\n";
 			echo "<tr><td width=180 class=back2>$lang_password: </td>
-			<td class=back> <input type=password class=text-login style='margin-left: 0' name=password><br>$lang_enterpwd</td></tr>\n";
+			<td class=back> <input type=password class=text-login style='margin-left: 0' name=password><br><b>$lang_enterpwd</b></td></tr>\n";
 		endTable();
 
 		startTable("$lang_editprofile - $lang_optional", "left", 100, 2);

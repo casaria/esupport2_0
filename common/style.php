@@ -469,7 +469,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     outline: 0;
                     overflow: hidden;
                     padding: 2px 2px 2px 2px;
-                    font-size: 16px;
+                    font-size: 13px;
 
                     /* background: transparent;
                      padding: 5px 10px 5px 5px;

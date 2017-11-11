@@ -127,8 +127,8 @@ if(isset($login))
 
 				//nov14 header("Location: $referer");
 				//echo"<BR>$cookie_name $enc_pwd";
-				setcookie('cookieuser', $cookie_name,  time()+ 60*60*24*7);
-				setcookie('cookiepwd', $password,  time()+ 60*60*24*7);
+				setcookie('cookieuser', $cookie_name,  time()+ $session_time);
+				setcookie('cookiepwd', $password,  time()+ $session_time);
 		}
 		else{
 			echo $lang_wronglogin;
@@ -163,7 +163,7 @@ echo'
 <body bgcolor='.$theme['bgcolor'].' onload="setfocus()">
 <form name=login method=post>
 <TABLE class=border cellSpacing=0 cellPadding=20 width='.$theme['width'].' align=center border=0>
-<TR><TD></TD></TR>
+<TR><TD></TD></TR>	
   <TR>
     <TD>
       <TABLE cellSpacing=0 cellPadding=0 width="100%" align="center" border=0>

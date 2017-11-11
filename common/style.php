@@ -504,7 +504,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     font-weight: 600;
                     color: darkslateblue;
                     padding: 5px;
-                    font-size: 13px;
+                    font-size: 18px;
                 }
 
                 /*
@@ -1007,7 +1007,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 select, option, textarea, input {
                     border: 1px solid <?php echo $theme['table_border']; ?>;
                     font-family: "<?php echo $theme['font']; ?>", arial, helvetica, sans-serif;
-                    font-size: 13px;
+                    font-size: 12px;
                     font-weight: bold;
                     background: <?php echo $theme['subcategory']; ?>;
                     color: <?php echo $theme['text']; ?>;
@@ -1018,7 +1018,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                    else{ ?>
                 select, option, textarea, input {
                     font-family: "<?php echo $theme['font']; ?>", arial, helvetica, sans-serif;
-                    font-size: 13px;
+                    font-size: 12px;
                     background: <?php echo $theme['subcategory']; ?>;
                     color: <?php echo $theme['text']; ?>;
                 }

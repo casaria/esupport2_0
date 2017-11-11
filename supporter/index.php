@@ -29,9 +29,9 @@
 			**
 			***************************************************************************************/
 
-require_once "../common/config.php";
-require_once "../common/mysql.class.php";
-require_once "../common/common.php";
+require_once $_SERVER['DOCUMENT_ROOT']."/common/config.php";
+require_once $_SERVER['DOCUMENT_ROOT']."/common/mysql.class.php";
+require_once $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 
 if($SERVER_PORT == 80 && $enable_ssl == 'On' && (!isset($cookie_name) || $cookie_name == '')){
 	$site = eregi_replace("http", "https", $supporter_site_url);

@@ -42,8 +42,8 @@ $referer ='';
 require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 
 
-require_once $_SERVER['DOCUMENT_ROOT']."lang/$default_language.lang.php";
-$login_logo = $_SERVER['DOCUMENT_ROOT']."images/casariadefault/small-header-brown.gif";
+require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
+$login_logo = $_SERVER['DOCUMENT_ROOT']."/images/casariadefault/small-header-brown.gif";
 
 $cookieuser = '';
 //common.php

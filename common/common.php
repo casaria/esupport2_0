@@ -1602,7 +1602,7 @@ function createTimeOffsetMenu($selected)
 		echo "<option value=\"$i\" ";
 		if($time_offset == $i)
 			echo "selected";
-		echo ">".$zone."</option>";
+		echo ">$zone</option>";
 		$j++;
 	}
 

@@ -1007,7 +1007,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 select, option, textarea, input {
                     border: 1px solid <?php echo $theme['table_border']; ?>;
                     font-family: "<?php echo $theme['font']; ?>", arial, helvetica, sans-serif;
-                    font-size: 11px;
+                    font-size: 13px;
                     font-weight: bold;
                     background: <?php echo $theme['subcategory']; ?>;
                     color: <?php echo $theme['text']; ?>;
@@ -1018,7 +1018,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                    else{ ?>
                 select, option, textarea, input {
                     font-family: "<?php echo $theme['font']; ?>", arial, helvetica, sans-serif;
-                    font-size: 11px;
+                    font-size: 13px;
                     background: <?php echo $theme['subcategory']; ?>;
                     color: <?php echo $theme['text']; ?>;
                 }
@@ -1067,7 +1067,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     -webkit-border-radius: 3px;
                     -moz-border-radius: 3px;
                     width: 350px;
-                    font-size: <?php echo ($theme['font_size']+3); ?>px
+                    font-size: <?php echo $theme['font_size']; ?>px
                     outline: 0;
                     overflow: hidden;
                     padding: 2px 2px 2px 2px;

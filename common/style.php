@@ -447,8 +447,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     margin-right: 2px;
                     /*      margin-left: 6px; */
                     /*      width: 580px;   */
-                    position: fixed;
-                   /* width: 421px;  */
+            /*    position: fixed;  */
+                    width: 421px;
                     margin-top: 2px; /*  width  421  */
                     height: 1000px;
                     left: 0%;

@@ -1598,7 +1598,7 @@ function createTimeOffsetMenu($selected)
 			$lang_timezone31, $lang_timezone32, $lang_timezone33, $db, $mysql_users_table, $time_offset;
 	$j=1;
 	for($i=-12; $i<14; $i++){
-		$zone = "lang_timezone" . $j;
+		$zone = "\$lang_timezone" . $j;
 		echo "<option value=\"$i\" ";
 		if($time_offset == $i)
 			echo "selected";

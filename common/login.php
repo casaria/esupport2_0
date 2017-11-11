@@ -163,6 +163,7 @@ echo'
 <body bgcolor='.$theme['bgcolor'].' onload="setfocus()">
 <form name=login method=post>
 <TABLE class=border cellSpacing=0 cellPadding=20 width='.$theme['width'].' align=center border=0>
+<TR><TD></TD></TR>
   <TR>
     <TD>
       <TABLE cellSpacing=0 cellPadding=0 width="100%" align="center" border=0>

@@ -58,6 +58,8 @@ if(eregi("supporter", $PHP_SELF))
 else
 	require_once "common/style.php";
 
+$offset = 0;
+
 if(isset($submit)){
 	//update the database with the information
 
@@ -116,9 +118,9 @@ startTable("$lang_editprofile", "center");
 			echo "<tr><td width=180 class=back2>$lang_theme: </td><td class=back><select name=new_theme>";
 				createThemeMenu();
 			echo "</select></td></tr>";
-			//echo "<tr><td width=180 class=back2>$lang_timeoffset: </td><td class=back><select name=offset>";
-			//	createTimeOffsetMenu($time_offset);
-			//echo "</select></td></tr>";
+			echo "<tr><td width=180 class=back2>$lang_timeoffset: </td><td class=back><select name=offset>";
+				createTimeOffsetMenu($time_offset);
+			echo "</select></td></tr>";
 			echo "<tr><td width=180 class=back2>$lang_language: </td><td class=back>";
 				if(eregi("supporter", $PHP_SELF))
 					createLanguageMenu(0);
@@ -138,7 +140,7 @@ startTable("$lang_editprofile", "center");
 			echo "<tr><td width=180 class=back2>$lang_msn: </td><td class=back> <input type=text size=30 name=msn value=\"".$user_info['msn']."\"></td></tr>";
 			echo "<tr><td width=180 class=back2>$lang_icq: </td><td class=back> <input type=text size=30 name=icq value=\"".$user_info['icq']."\"></td></tr>";
 			echo "<tr><td width=180 class=back2>$lang_lastactive: </td><td class=back>";
-				//echo gmdate("n-d-Y \a\\t h:i a", $last_active + ($time_offset * 3600));
+			//echo gmdate("n-d-Y \a\\t h:i a", $last_active + ($time_offset * 3600));
 				echo  date("F j, Y, g:i a", $last_active);
 			echo "</td></tr>";
 		endTable();

@@ -442,13 +442,13 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
                 .container {
                     background-color: whitesmoke;
-                    padding-right: 6px;
+                    padding-right: 2px;
                     padding-left: 2px;
                     margin-right: 2px;
                     /*      margin-left: 6px; */
                     /*      width: 580px;   */
                     position: fixed;
-                    width: 421px;
+                   /* width: 421px;  */
                     margin-top: 2px; /*  width  421  */
                     height: 1000px;
                     left: 0%;

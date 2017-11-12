@@ -457,7 +457,7 @@ unset($update);
 
 <?php
 
-        echo "<input type=hidden name=sg value='" . $sg . "'>";
+        echo "<input class='col-xs-6' type=hidden name=sg value='" . $sg . "'>";
         echo "<input type=hidden name=id value='" . $info['id'] . "'>";
         echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
         echo "<input type=hidden name=old_pri value='" . $info['priority'] . "'>";
@@ -466,7 +466,7 @@ unset($update);
         echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
         echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
         echo "<input type=hidden name=minutes_labor value=$minutes>";
-        echo "<input type=submit id=submit name=update height=80 value=\"$lang_updateticket\">";
+        echo "<div class=\"col-md-4\"><input type=submit id=submit name=update height=80 value=\"$lang_updateticket\"></div>";
         echo "</form>";
 
 

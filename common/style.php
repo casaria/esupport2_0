@@ -76,13 +76,16 @@ $tablePadding =2;
 
     <script src="/common/quagga.js" type="text/javascript"></script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 
     <link rel="stylesheet" href="/dylay/assets/css/main.css" media="screen">
 
     <link href='https://fonts.googleapis.com/css?family=Titillium Web:300:400:500:600:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/dylay/assets/css/main.css" media="screen">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
     <script type="text/javascript">
@@ -125,6 +128,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
         function isvisible(obj) {
             return obj.offsetWidth > 0 && obj.offsetHeight > 0;
         }  */
+
 
         let viewportmeta = document.querySelector('meta[name="viewport"]');
         if(viewportmeta===null){
@@ -447,11 +451,12 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     /*      margin-left: 6px; */
                     /*      width: 580px;   */
             /*    position: fixed;  */
+                    position: fixed;
                     width: 421px;
                     margin-top: 2px; /*  width  421  */
                     height: 2800px;
                     left: 0%;
-                    top: 0%;
+                  /*  top: 0%; */
                     margin-left: 0px; /*half the width*/
                 }
 

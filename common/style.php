@@ -449,7 +449,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
             /*    position: fixed;  */
                     width: 421px;
                     margin-top: 2px; /*  width  421  */
-                    height: 1000px;
+                    height: 1800px;
                     left: 0%;
                     top: 0%;
                     margin-left: 0px; /*half the width*/

@@ -3107,7 +3107,7 @@ function displayUserTicket($result)
             $minutes = "0";
         }
         */
-        $minutes = $row[labor_minutes];
+        $minutes = $row[labor_minutes_total];
         $labor_minutes_total += $minutes;
         echo '<td class=back2 align=right>';
         showFormattedTime($minutes * 60, 1, 1);

@@ -32,7 +32,7 @@
 
 /**************************************************************************************************/
 
-$num_to_show = 250;		//this limits the number of tickets to display so that users with thousands
+$num_to_show = 500;		//this limits the number of tickets to display so that users with thousands
 						//of tickets don't have to view all of their previous tickets.
 
 /**************************************************************************************************/

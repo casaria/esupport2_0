@@ -477,7 +477,7 @@ unset($update);
         echo "<input type=hidden name=category value='$info[category]'>";
         echo "<input type=hidden name=short value='$info[short]'>";
         echo "<input type=hidden name=description value='$info[description]'>";
-        echo "<input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\"></form>";
+        echo "<div class=\"col-md-4 ml-auto\"><input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\"></form></div>";
         }
         ?>
 </div>

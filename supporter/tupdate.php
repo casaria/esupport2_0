@@ -753,12 +753,19 @@ function createTimeUpdate()
 
 
 // Time spent updates
-    startTable("$lang_timespent", "left", 100, 5);
+    startTable("$lang_timespent", "left", 100, 4);
 
     echo ' <tr>
-	<td width="180px" class=back2 align=right>' . $lang_timespent1 . ':<BR> <class=back2 align=left>' .
-        $lang_timespent2 .
-        '</td><td width=10% class=back >';
+	<td width="180px" class=back2 align=right>' . $lang_timespent1 . ':<BR> <class=back2 align=right>' .
+        $lang_timespent2 . '</td>';
+
+    echo '<td class=back align="left" colspan="3">';
+    echo 'Work order / reference<BR>';
+    echo '<textarea  name=reference rows=2 cols=40>' . '</textarea></td>';
+    echo '</tr><tr>';
+
+
+	echo '<td width=10% class=back >';
     echo 'minutes<BR>';
     echo '<input type=text size=6 name=time_spent>';
     echo '</td>';
@@ -804,12 +811,8 @@ function createTimeUpdate()
     echo '>' . ($today['year']) . '</option>
 							</select>';
 
-    echo '</td>';
+    echo '</td></tr>';
 
-    echo '<td class=back align="left" >';
-    echo 'Work order / reference<BR>';
-    echo '<textarea  name=reference rows=2 cols=40>' . '</textarea></td>';
-    echo '</tr>';
 
     echo '<tr><td width=20% class=back2 align=right>';
     echo 'Special rate </td>';

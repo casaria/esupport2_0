@@ -772,12 +772,8 @@ function createTimeUpdate()
     echo '</td>';
 
 	echo '<td width=10% class=back  colspan="3">';
-    echo 'minutes<BR>';
+    echo 'minutes      DATE<BR>';
     echo '<input type=text size=6 name=time_spent>';
-    echo '</td>';
-
-
-    echo 'DATE <BR>';
 
     $today = getdate($timestamp);
     echo '<select name=womonth>';

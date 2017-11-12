@@ -457,7 +457,7 @@ unset($update);
 
 <?php
         echo "<div class=\"row\"w>";
-        echo "<input class='col-xs-6' type=hidden name=sg value='" . $sg . "'>";
+        echo "<input class='col-xs-2' type=hidden name=sg value='" . $sg . "'>";
         echo "<input type=hidden name=id value='" . $info['id'] . "'>";
         echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
         echo "<input type=hidden name=old_pri value='" . $info['priority'] . "'>";
@@ -466,7 +466,7 @@ unset($update);
         echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
         echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
         echo "<input type=hidden name=minutes_labor value=$minutes>";
-        echo "<div class=\"col-md-4\"><input type=submit id=submit name=update height=80 value=\"$lang_updateticket\"></div>";
+        echo "<div class=\"col-xs-4\"><input type=submit id=submit name=update height=80 value=\"$lang_updateticket\"></div>";
         echo "</form>";
 
 
@@ -477,7 +477,7 @@ unset($update);
         echo "<input type=hidden name=category value='$info[category]'>";
         echo "<input type=hidden name=short value='$info[short]'>";
         echo "<input type=hidden name=description value='$info[description]'>";
-        echo "<div class=\"col-md-4 ml-auto\"><input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\"></form></div>";
+        echo "<div class=\"col-xs-4 ml-auto\"><input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\"></form></div>";
         }
         Echo "</div>";
         ?>

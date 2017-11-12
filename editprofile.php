@@ -119,7 +119,7 @@ startTable("$lang_editprofile", "center");
 				createThemeMenu();
 			echo "</select></td></tr>";
 			echo "<tr><td width=180 class=back2>$lang_timeoffset: </td><td class=back><select name=offset>";
-				createTimeOffsetMenu($time_offset);
+				createTimeOffsetMenu($user_info['time_offset']);
 			echo "</select></td></tr>";
 			echo "<tr><td width=180 class=back2>$lang_language: </td><td class=back>";
 				if(eregi("supporter", $PHP_SELF))

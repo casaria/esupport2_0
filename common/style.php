@@ -138,7 +138,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
         console.log(document.querySelector('meta[name="viewport"]'));
 
 
-        rtAt = 0;
+      /*  rtAt = 0;
         let lastTouchStartAt = 0;
         const delay = 200;
 
@@ -157,7 +157,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
             //document.body.style.transform = 'scale(1)'
         }
-        })
+        })    */
 
 
     </script>

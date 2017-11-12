@@ -45,8 +45,9 @@ else
 	require_once "../lang/$language".".lang.php";
 require_once "../common/style.php";
 
-$time_offset = getTimeOffset($cookie_name);
-$time = time() + ($time_offset * 3600);
+//$time_offset = getTimeOffset($cookie_name);
+//$time = time() + ($time_offset * 3600);
+$time =  getTimeStampUserLocal($cookie_name);
 
 $sql = "select update_log from $mysql_tickets_table where id=$id";
 $result = $db->query($sql);

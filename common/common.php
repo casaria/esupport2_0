@@ -2844,6 +2844,14 @@ function getTimeOffset($name)
 		return $row[0];
 }
 
+
+function getTimeStampUserLocal ($name){
+
+    $GMT_offset = getTimeOffset($name);
+    date_default_timezone_set("UTC");
+    return time() + $GMT_offset;
+}
+
 function getLastActiveTime($name)
 {
 	global $db, $mysql_users_table;

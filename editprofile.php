@@ -58,7 +58,6 @@ if(eregi("supporter", $PHP_SELF))
 else
 	require_once "common/style.php";
 
-$offset = 0;
 
 if(isset($submit)){
 	//update the database with the information

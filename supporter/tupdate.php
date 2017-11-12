@@ -430,7 +430,6 @@ unset($update);
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="pills-xtra" data-toggle="pill" href="#pills-xtra-tab" role="tab" aria-controls="pills-xtra" aria-selected="false"><h3>Xtra</h3></a>
-                <?php createNotificationPanel();?>
             </li>
         </ul>
 
@@ -455,7 +454,7 @@ unset($update);
             </div>
             <div class="tab-pane fade" id="pills-xtra-tab" role="tabpanel" aria-labelledby="pills-xtra">
                 <p>
-
+                    <?php// createNotificationPanel();?>
                 </p>
             </div>
         </div>

@@ -764,17 +764,19 @@ function createTimeUpdate()
     echo '<textarea  name=reference rows=2 cols=40>' . '</textarea></td>';
     echo '</tr><tr>';
 
+    echo '<td width=15% class=back >';
+
+    echo 'supporter<BR><select name=supporter1>';
+    createSupporterMenu($sg);
+    echo '</select>';
+    echo '</td>';
 
 	echo '<td width=10% class=back >';
     echo 'minutes<BR>';
     echo '<input type=text size=6 name=time_spent>';
     echo '</td>';
 
-    echo '<td width=15% class=back >';
-    echo 'supporter<BR><select name=supporter1>';
-    createSupporterMenu($sg);
-    echo '</select>';
-    echo '</td>';
+
 
 
     echo '<td width=25% class=back >';

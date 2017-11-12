@@ -456,7 +456,7 @@ unset($update);
         </div>
 
 <?php
-
+        echo "<div class=\"row\"w>";
         echo "<input class='col-xs-6' type=hidden name=sg value='" . $sg . "'>";
         echo "<input type=hidden name=id value='" . $info['id'] . "'>";
         echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
@@ -479,6 +479,7 @@ unset($update);
         echo "<input type=hidden name=description value='$info[description]'>";
         echo "<div class=\"col-md-4 ml-auto\"><input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\"></form></div>";
         }
+        Echo "</div>";
         ?>
 </div>
 

@@ -771,15 +771,12 @@ function createTimeUpdate()
     echo '</select>';
     echo '</td>';
 
-	echo '<td width=10% class=back >';
+	echo '<td width=10% class=back  colspan="3">';
     echo 'minutes<BR>';
     echo '<input type=text size=6 name=time_spent>';
     echo '</td>';
 
 
-
-
-    echo '<td width=25% class=back >';
     echo 'DATE <BR>';
 
     $today = getdate($timestamp);

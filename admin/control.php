@@ -39,6 +39,7 @@ if($SERVER_PORT == 80 && (!isset($cookie_name) || $cookie_name == '') && $enable
 	$site = eregi_replace("http", "https", $admin_site_url);
 	header("Location: $site");
 }
+
 require_once "../lang/$default_language.lang.php";
 require "../common/login.php";
 
@@ -709,16 +710,13 @@ if($t == 'templates'){
 							echo "<input type=submit name=delete_tpl value=\"$lang_delete\">";
 							echo "&nbsp;&nbsp;&nbsp;";
 							echo "<input type=submit name=restore_tpl value=\"$lang_restoretemplates\">";
-							
-						?> <center>
-
-					</td></tr>
+                    echo "    </td></tr>
 					</form>
-				</tr>
-				</table>
-				</td></tr>
-				</table>
-				<?php  
+				</tr>	
+                </table>
+                </td></tr>
+            </table>";
+                    
 					if($restored == 1)
 						echo "<div align=\"center\"><font color=\"green\"><b>$lang_restored</b></font></div>";
 				?>

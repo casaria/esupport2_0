@@ -1896,7 +1896,7 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 							<td width="180px" class=back2 align=right>* '.$lang_shortdesc.':</td>
 							<td class=back>
 						
-							<input type=text name=short value="'.stripslashes($info['short']).'">
+							<input type=text name=short size="20" value="'.stripslashes($info['short']).'">
 							</td>
 						
 						</tr>

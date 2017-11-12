@@ -436,25 +436,21 @@ unset($update);
 
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-main-tab" role="tabpanel" aria-labelledby="pills-main">
-               <p>
-                   <?php createMainTab();  ?>
+               <p><?php createMainTab();  ?>
                </p>
             </div>
             <div class="tab-pane fade" id="pills-time-tab" role="tabpanel" aria-labelledby="pills-time">
-               <p>
-                   <?php createTimeTab();  ?>
+               <p><?php createTimeTab();  ?>
                </p>
             </div>
             <div class="tab-pane fade" id="pills-mat-tab" role="tabpanel" aria-labelledby="pills-mat">
-                <p>
-                    <?php createMaterialTab();
+                <p><?php createMaterialTab();
                     extraTab2();?>
 
                 </p>
             </div>
             <div class="tab-pane fade" id="pills-xtra-tab" role="tabpanel" aria-labelledby="pills-xtra">
-                <p>
-                    <?php createNotificationPanel();?>
+                <p><?php createNotificationPanel();?>
                 </p>
             </div>
         </div>

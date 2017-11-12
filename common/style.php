@@ -456,7 +456,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     margin-top: 2px; /*  width  421  */
                     height: 2800px;
                     left: 0px;
-                   /*top: 0%; */
+                    top: 0px;
                     margin-left: 0px; /*half the width*/
                 }
 

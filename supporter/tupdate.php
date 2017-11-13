@@ -318,7 +318,6 @@ if (isset($update)) {
         //compare the ticket count to the ticket ratings count.
         if ($enable_ratings == 'On' && $closed_ticket_count == $rating_interval && ($enable_smtp == 'win' || $enable_smtp == 'lin')) {
 
-            if ($closed_ticket_count > $ratings_interval) {
                 resetRatingsCounter();
             }
 
@@ -536,7 +535,7 @@ ECHO '                <tr>
     }
 
 function createMainTab(){
-global $id, $lang_updateticket, $lang_printable, $enable_time_tracking, $supporter_site_url, $lang_updateticket, $theme, $supporter_site_url, $cookie_name, $total_minutes, $info;
+global $id, $lang_updateticket, $lang_printable, $enable_time_tracking, $supporter_site_url, $lang_updateticket, $theme, $supporter_site_url, $cookie_name, $total_minutes, $info, $sg;
                    $info = getTicketInfo($id);
 
                     $sg = $info['groupid'];

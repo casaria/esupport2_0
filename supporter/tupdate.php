@@ -453,53 +453,12 @@ unset($update);
         </div>
 
 <?php
-        echo "<div class=\"row\">";
-                 ?> <select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)"><?php
-                    createGroupMenu(1);
-                    echo '
-							</select>
-							</td></tr><tr>
-							<td class=back2 align=right width="180Ppx">' . $lang_supporter . ' </td>
-							<td class=back align="left">
-                                
-			
-							<select id="selectwidth" name=supporter_id>';
-                    createSupporterMenu($sg);
-
-    echo '				
-							</select>
-							</td>
-                              </tr><tr>
-					
-							<td class=back2 align=right>' . $lang_ticket . ' ' . $lang_priority . ':</td>
-							<td class=back align="left">
-							
-							<select id="selectwidth" name=prio>';
-    createPriorityMenu(0);
-
-    echo '
-							</select>
-							</td>
-							</tr><tr>
-
-							<td class=back2 align=right>' . $lang_ticket . ' ' . $lang_status . ':</td>
-							<td class=back align="left">
-							
-							<select id="selectwidth2" name=status>';
-    createStatusMenu(0);
-
-
-    echo '                    </select>
-							</td></tr>';
-
-
-    endTable();
 
 
 
 
 function createMainTab(){
-global $id, $lang_updateticket, $lang_printable, $enable_time_tracking, $supporter_site_url, $lang_updateticket, $theme, $supporter_site_url, $cookie_name, $total_minutes, $info;
+global $id, $sg, $lang_updateticket, $lang_printable, $enable_time_tracking, $supporter_site_url, $lang_updateticket, $theme, $supporter_site_url, $cookie_name, $total_minutes, $info;
 
                     $info = getTicketInfo($id);
                     $sg = $info['groupid'];

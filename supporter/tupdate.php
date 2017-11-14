@@ -454,13 +454,90 @@ unset($update);
 
 <?php
 
+        echo "<input type=hidden name=sg value='" . $sg . "'>";
+        echo "<input type=hidden name=id value='" . $info['id'] . "'>";
+        echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
+        echo "<input type=hidden name=old_pri value='" . $info['priority'] . "'>";
+        echo "<input type=hidden name=old_emailgroup value='" . $info['emailgroup'] . "'>";
+        echo "<input type=hidden name=old_emailstatuschange value='" . $info['emailstatuschange'] . "'>";
+        echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
+        echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
+        echo "<input type=hidden name=minutes_labor value=$minutes>";
+        echo "<input type=submit id=submit name=update height=80 value=\"$lang_updateticket\">";
+        echo "</form>";
 
+
+        if ($enable_kbase == 'On') {
+
+        echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>";
+        echo "<input type=hidden name=platform value='$info[platform]'>";
+        echo "<input type=hidden name=category value='$info[category]'>";
+        echo "<input type=hidden name=short value='$info[short]'>";
+        echo "<input type=hidden name=description value='$info[description]'>";
+        echo "<input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\"></form>";
+        }
+        ?>
+</div>
+
+<?php
+
+
+function createSupporterInfo()
+{
+global $sg, $lang_supporterinfo, $lang_supportergroup, $lang_supporter, $lang_ticket, $lang_priority, $lang_status;
+
+startTable("$lang_supporterinfo", "left", 100, 4);
+
+ECHO '                <tr>                              
+							<td class=back2 align=right>' . $lang_supportergroup . '</td>
+							<td class=back align="left">';
+                 ?> <select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)"><?php
+                    createGroupMenu(1);
+                    echo '
+							</select>
+							</td></tr><tr>
+							<td class=back2 align=right width="180Ppx">' . $lang_supporter . ' </td>
+							<td class=back align="left">
+                                
+			
+							<select id="selectwidth" name=supporter_id>';
+                    createSupporterMenu($sg);
+
+    echo '				
+							</select>
+							</td>
+                              </tr><tr>
+					
+							<td class=back2 align=right>' . $lang_ticket . ' ' . $lang_priority . ':</td>
+							<td class=back align="left">
+							
+							<select id="selectwidth" name=prio>';
+    createPriorityMenu(0);
+
+    echo '
+							</select>
+							</td>
+							</tr><tr>
+
+							<td class=back2 align=right>' . $lang_ticket . ' ' . $lang_status . ':</td>
+							<td class=back align="left">
+							
+							<select id="selectwidth2" name=status>';
+    createStatusMenu(0);
+
+
+    echo '                    </select>
+							</td></tr>';
+
+
+    endTable();
+
+    }
 
 
 function createMainTab(){
 global $id, $sg, $lang_updateticket, $lang_printable, $enable_time_tracking, $supporter_site_url, $lang_updateticket, $theme, $supporter_site_url, $cookie_name, $total_minutes, $info;
-
-                    $info = getTicketInfo($id);
+                   $info = getTicketInfo($id);
                     $sg = $info['groupid'];
 
                     createTicketHeader("$lang_updateticket");
@@ -480,7 +557,8 @@ global $id, $sg, $lang_updateticket, $lang_printable, $enable_time_tracking, $su
 }
 
 
-function createTimeTab(){
+function createTimeTab()
+{
     global $enable_time_tracking, $total_minutes, $info;
     if ($enable_time_tracking == 'On') {
         createTimeUpdate();
@@ -490,8 +568,9 @@ function createTimeTab(){
         $minutes = $total_minutes['labor_minutes'] + $total_minutes['labor_after_hours'];
     } else {
         $minutes = $info['minutes_labor'];
+        endTable();  // createTimeUpdate();
+
     }
-    endTable();  // createTimeUpdate();
 }
 
 function createMaterialTab(){
@@ -520,51 +599,6 @@ function createSupporterMenu($group_id)
 
 }
 
-
-
-function createSupporterInfo()
-{
-global $sg, $lang_supporterinfo, $lang_supportergroup, $lang_supporter, $lang_ticket, $lang_priority, $lang_status;
-startTable("$lang_supporterinfo", "left", 100, 4);
-ECHO '                <tr>                              
-							<td class=back2 align=right>' . $lang_supportergroup . '</td>
-							<td class=back align="left">';
-?> <select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)"><?php
-                createGroupMenu(1);
-                echo '
-							</select>
-							</td></tr><tr>
-							<td class=back2 align=right width="180Ppx">' . $lang_supporter . ' </td>
-							<td class=back align="left">
-                                
-			
-							<select id="selectwidth" name=supporter_id>';
-                createSupporterMenu($sg);
-                echo '				
-							</select>
-							</td>
-                              </tr><tr>
-					
-							<td class=back2 align=right>' . $lang_ticket . ' ' . $lang_priority . ':</td>
-							<td class=back align="left">
-							
-							<select id="selectwidth" name=prio>';
-                createPriorityMenu(0);
-                echo '
-							</select>
-							</td>
-							</tr><tr>
-							<td class=back2 align=right>' . $lang_ticket . ' ' . $lang_status . ':</td>
-							<td class=back align="left">
-							
-							<select id="selectwidth2" name=status>';
-                createStatusMenu(0);
-                echo '                    </select>
-							</td></tr>';
-                endTable();
-    }
-
-
 function createNotificationPanel()
 {
     global $info, $lang_emailgroup, $lang_emailstatuschange, $lang_notification, $lang_emailcc, $lang_pagesupporter;
@@ -578,7 +612,7 @@ function createNotificationPanel()
     if ($info['emailgroup'] == "On") {
         echo " checked";
     }
-    echo " name=emailgroup></td>" .
+    echo "name=emailgroup></td>" .
         '</tr><tr>
      <td class="back2" width="180px">' . $lang_emailstatuschange . ': </td>
      <td class="back" colspan="4">' .

@@ -535,11 +535,13 @@ ECHO '                <tr>
 
     }
 
+
 function createMainTab(){
 global $id, $lang_updateticket, $lang_printable, $enable_time_tracking, $supporter_site_url, $lang_updateticket, $theme, $supporter_site_url, $cookie_name, $total_minutes, $info;
                    $info = getTicketInfo($id);
 
-                    global $sg = $info['groupid'];
+                    global $sg;
+                    $sg = $info['groupid'];
 
                     createTicketHeader("$lang_updateticket");
                     echo '<a href="updatelog.php?cookie_name=' . $cookie_name . '&id=' .

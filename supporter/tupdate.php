@@ -603,7 +603,7 @@ ECHO '                <tr>
                 echo '                    </select>
 							</td></tr>';
                 endTable();
-                }
+    }
 
 
 function createNotificationPanel()

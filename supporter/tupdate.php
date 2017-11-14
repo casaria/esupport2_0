@@ -318,7 +318,6 @@ if (isset($update)) {
         //compare the ticket count to the ticket ratings count.
         if ($enable_ratings == 'On' && $closed_ticket_count == $rating_interval && ($enable_smtp == 'win' || $enable_smtp == 'lin')) {
 
-            if ($closed_ticket_count > $ratings_interval) {
                 resetRatingsCounter();
             }
 
@@ -453,7 +452,7 @@ unset($update);
         </div>
 
 <?php
-
+        echo "<div class=\"row\"w>";
         echo "<input type=hidden name=sg value='" . $sg . "'>";
         echo "<input type=hidden name=id value='" . $info['id'] . "'>";
         echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
@@ -463,7 +462,7 @@ unset($update);
         echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
         echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
         echo "<input type=hidden name=minutes_labor value=$minutes>";
-        echo "<input type=submit id=submit name=update height=80 value=\"$lang_updateticket\">";
+        echo "<div class=\"col-xs-6\"><input type=submit id=submit name=update height=80 value=\"$lang_updateticket\"></div>";
         echo "</form>";
 
 
@@ -474,8 +473,9 @@ unset($update);
         echo "<input type=hidden name=category value='$info[category]'>";
         echo "<input type=hidden name=short value='$info[short]'>";
         echo "<input type=hidden name=description value='$info[description]'>";
-        echo "<input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\"></form>";
+        echo "<div class=\"col-xs-6\"><input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\"></form></div>";
         }
+        Echo "</div>";
         ?>
 </div>
 
@@ -491,7 +491,7 @@ startTable("$lang_supporterinfo", "left", 100, 4);
 ECHO '                <tr>                              
 							<td class=back2 align=right>' . $lang_supportergroup . '</td>
 							<td class=back align="left">';
-                 ?> <select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)"><?php
+                ?> <select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)"><?php
                     createGroupMenu(1);
                     echo '
 							</select>
@@ -534,10 +534,10 @@ ECHO '                <tr>
 
     }
 
-
 function createMainTab(){
-global $id, $sg, $lang_updateticket, $lang_printable, $enable_time_tracking, $supporter_site_url, $lang_updateticket, $theme, $supporter_site_url, $cookie_name, $total_minutes, $info;
+global $id, $lang_updateticket, $lang_printable, $enable_time_tracking, $supporter_site_url, $lang_updateticket, $theme, $supporter_site_url, $cookie_name, $total_minutes, $info, $sg;
                    $info = getTicketInfo($id);
+
                     $sg = $info['groupid'];
 
                     createTicketHeader("$lang_updateticket");
@@ -557,9 +557,12 @@ global $id, $sg, $lang_updateticket, $lang_printable, $enable_time_tracking, $su
 }
 
 
-function createTimeTab()
-{
-    global $enable_time_tracking, $total_minutes, $info;
+function createTimeTab(){
+global $enable_time_tracking, $total_minutes, $info;
+    if ($enable_time_tracking == 'On') {
+        $total_minutes = displayTimeHistory();
+    }
+
     if ($enable_time_tracking == 'On') {
         createTimeUpdate();
     }
@@ -568,9 +571,9 @@ function createTimeTab()
         $minutes = $total_minutes['labor_minutes'] + $total_minutes['labor_after_hours'];
     } else {
         $minutes = $info['minutes_labor'];
-        endTable();  // createTimeUpdate();
-
     }
+    endTable();  // createTimeUpdate();
+
 }
 
 function createMaterialTab(){
@@ -612,7 +615,7 @@ function createNotificationPanel()
     if ($info['emailgroup'] == "On") {
         echo " checked";
     }
-    echo "name=emailgroup></td>" .
+    echo " name=emailgroup></td>" .
         '</tr><tr>
      <td class="back2" width="180px">' . $lang_emailstatuschange . ': </td>
      <td class="back" colspan="4">' .
@@ -1040,3 +1043,6 @@ function listGroupMembers($group) {
 }
 
 ?>
+
+
+

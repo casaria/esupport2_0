@@ -453,46 +453,8 @@ unset($update);
         </div>
 
 <?php
-        echo "<div class=\"row\"w>";
-        echo "<input type=hidden name=sg value='" . $sg . "'>";
-        echo "<input type=hidden name=id value='" . $info['id'] . "'>";
-        echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
-        echo "<input type=hidden name=old_pri value='" . $info['priority'] . "'>";
-        echo "<input type=hidden name=old_emailgroup value='" . $info['emailgroup'] . "'>";
-        echo "<input type=hidden name=old_emailstatuschange value='" . $info['emailstatuschange'] . "'>";
-        echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
-        echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
-        echo "<input type=hidden name=minutes_labor value=$minutes>";
-        echo "<div class=\"col-xs-6\"><input type=submit id=submit name=update height=80 value=\"$lang_updateticket\"></div>";
-        echo "</form>";
-
-
-        if ($enable_kbase == 'On') {
-
-        echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>";
-        echo "<input type=hidden name=platform value='$info[platform]'>";
-        echo "<input type=hidden name=category value='$info[category]'>";
-        echo "<input type=hidden name=short value='$info[short]'>";
-        echo "<input type=hidden name=description value='$info[description]'>";
-        echo "<div class=\"col-xs-6\"><input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\"></form></div>";
-        }
-        Echo "</div>";
-        ?>
-</div>
-
-<?php
-
-
-function createSupporterInfo()
-{
-global $sg, $lang_supporterinfo, $lang_supportergroup, $lang_supporter, $lang_ticket, $lang_priority, $lang_status;
-
-startTable("$lang_supporterinfo", "left", 100, 4);
-
-ECHO '                <tr>                              
-							<td class=back2 align=right>' . $lang_supportergroup . '</td>
-							<td class=back align="left">';
-                ?> <select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)"><?php
+        echo "<div class=\"row\">";
+                 ?> <select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)"><?php
                     createGroupMenu(1);
                     echo '
 							</select>
@@ -561,11 +523,7 @@ global $id, $lang_updateticket, $lang_printable, $enable_time_tracking, $support
 
 
 function createTimeTab(){
-global $enable_time_tracking, $total_minutes, $info;
-    if ($enable_time_tracking == 'On') {
-        $total_minutes = displayTimeHistory();
-    }
-
+    global $enable_time_tracking, $total_minutes, $info;
     if ($enable_time_tracking == 'On') {
         createTimeUpdate();
     }
@@ -1046,6 +1004,3 @@ function listGroupMembers($group) {
 }
 
 ?>
-
-
-

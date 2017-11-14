@@ -500,9 +500,8 @@ unset($update);
 
 function createMainTab(){
 global $id, $lang_updateticket, $lang_printable, $enable_time_tracking, $supporter_site_url, $lang_updateticket, $theme, $supporter_site_url, $cookie_name, $total_minutes, $info;
-                   $info = getTicketInfo($id);
 
-                    global $sg;
+                    $info = getTicketInfo($id);
                     $sg = $info['groupid'];
 
                     createTicketHeader("$lang_updateticket");

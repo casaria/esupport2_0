@@ -495,7 +495,7 @@ unset($update);
 
     endTable();
 
-    }
+
 
 
 function createMainTab(){

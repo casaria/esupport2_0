@@ -533,7 +533,7 @@ function createTimeTab(){
     } else {
         $minutes = $info['minutes_labor'];
     }
-    endTable();  // createTimeUpdate()
+    endTable();  // createTimeUpdate();
 }
 
 function createMaterialTab(){

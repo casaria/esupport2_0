@@ -318,6 +318,7 @@ if (isset($update)) {
         //compare the ticket count to the ticket ratings count.
         if ($enable_ratings == 'On' && $closed_ticket_count == $rating_interval && ($enable_smtp == 'win' || $enable_smtp == 'lin')) {
 
+            if ($closed_ticket_count > $ratings_interval) {
                 resetRatingsCounter();
             }
 

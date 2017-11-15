@@ -491,7 +491,6 @@ unset($update);
     echo '                    </select>
 							</td></tr>';
 
-
     endTable();
 
     }

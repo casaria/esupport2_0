@@ -394,6 +394,7 @@ if (isset($update)) {
     //check and enter attachment files to db if any
     ProcessAttachment();
 
+}
 
 unset($update);
 
@@ -495,7 +496,6 @@ unset($update);
 
     }
 
-
 function createMainTab(){
 global $id, $sg, $lang_updateticket, $lang_printable, $enable_time_tracking, $supporter_site_url, $lang_updateticket, $theme, $supporter_site_url, $cookie_name, $total_minutes, $info;
                    $info = getTicketInfo($id);
@@ -520,6 +520,10 @@ global $id, $sg, $lang_updateticket, $lang_printable, $enable_time_tracking, $su
 
 function createTimeTab(){
     global $enable_time_tracking, $total_minutes, $info;
+    if ($enable_time_tracking == 'On') {
+        $total_minutes = displayTimeHistory();
+    }
+
     if ($enable_time_tracking == 'On') {
         createTimeUpdate();
     }

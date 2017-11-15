@@ -402,61 +402,60 @@ unset($update);
 //set up the javascript function for creating a menu.
 ?>
 
-<script language="JavaScript">
-    <!--
-    function MM_jumpMenu(targ, selObj, restore) { //v3.0
-        eval(targ + ".location='" + selObj.options[selObj.selectedIndex].value + "'");
-        if (restore) selObj.selectedIndex = 0;
-    }
+    <script language="JavaScript">
+        <!--
+        function MM_jumpMenu(targ, selObj, restore) { //v3.0
+            eval(targ + ".location='" + selObj.options[selObj.selectedIndex].value + "'");
+            if (restore) selObj.selectedIndex = 0;
+        }
 
-    //--></script>
+        //--></script>
 
 
 
-<div class="container">
+    <div class="container">
     <form name=form1 method=post enctype="multipart/form-data">
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" id="pills-main" data-toggle="pill" href="#pills-main-tab" role="tab" aria-controls="pills-main" aria-selected="true"><h3>Main</h3></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="pills-time" data-toggle="pill" href="#pills-time-tab" role="tab" aria-controls="pills-time" aria-selected="false"><h3>Time</h3></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="pills-mat" data-toggle="pill" href="#pills-mat-tab" role="tab" aria-controls="pills-mat" aria-selected="false"><h3>Mat</h3></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="pills-xtra" data-toggle="pill" href="#pills-xtra-tab" role="tab" aria-controls="pills-xtra" aria-selected="false"><h3>Xtra</h3></a>
-            </li>
-        </ul>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="pills-main" data-toggle="pill" href="#pills-main-tab" role="tab" aria-controls="pills-main" aria-selected="true"><h3>Main</h3></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pills-time" data-toggle="pill" href="#pills-time-tab" role="tab" aria-controls="pills-time" aria-selected="false"><h3>Time</h3></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pills-mat" data-toggle="pill" href="#pills-mat-tab" role="tab" aria-controls="pills-mat" aria-selected="false"><h3>Mat</h3></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pills-xtra" data-toggle="pill" href="#pills-xtra-tab" role="tab" aria-controls="pills-xtra" aria-selected="false"><h3>Xtra</h3></a>
+        </li>
+    </ul>
 
 
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-main-tab" role="tabpanel" aria-labelledby="pills-main">
-               <p><?php createMainTab();  ?>
-               </p>
-            </div>
-            <div class="tab-pane fade" id="pills-time-tab" role="tabpanel" aria-labelledby="pills-time">
-               <p><?php createTimeTab();  ?>
-               </p>
-            </div>
-            <div class="tab-pane fade" id="pills-mat-tab" role="tabpanel" aria-labelledby="pills-mat">
-                <p><?php createMaterialTab();
-                    extraTab2();?>
-
-                </p>
-            </div>
-            <div class="tab-pane fade" id="pills-xtra-tab" role="tabpanel" aria-labelledby="pills-xtra">
-                <p><?php createNotificationPanel();?>
-                </p>
-            </div>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-main-tab" role="tabpanel" aria-labelledby="pills-main">
+            <p><?php createMainTab();  ?>
+            </p>
         </div>
+        <div class="tab-pane fade" id="pills-time-tab" role="tabpanel" aria-labelledby="pills-time">
+            <p><?php createTimeTab();  ?>
+            </p>
+        </div>
+        <div class="tab-pane fade" id="pills-mat-tab" role="tabpanel" aria-labelledby="pills-mat">
+            <p><?php createMaterialTab();
+                extraTab2();?>
+            </p>
+        </div>
+        <div class="tab-pane fade" id="pills-xtra-tab" role="tabpanel" aria-labelledby="pills-xtra">
+            <p><?php createNotificationPanel();?>
+            </p>
+        </div>
+    </div>
 
 <?php
-        echo "<div class=\"row\">";
-                 ?> <select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)"><?php
-                    createGroupMenu(1);
-                    echo '
+echo "<div class=\"row\">";
+?> <select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)"><?php
+createGroupMenu(1);
+echo '
 							</select>
 							</td></tr><tr>
 							<td class=back2 align=right width="180Ppx">' . $lang_supporter . ' </td>
@@ -464,9 +463,9 @@ unset($update);
                                 
 			
 							<select id="selectwidth" name=supporter_id>';
-                    createSupporterMenu($sg);
+createSupporterMenu($sg);
 
-    echo '				
+echo '				
 							</select>
 							</td>
                               </tr><tr>
@@ -475,9 +474,9 @@ unset($update);
 							<td class=back align="left">
 							
 							<select id="selectwidth" name=prio>';
-    createPriorityMenu(0);
+createPriorityMenu(0);
 
-    echo '
+echo '
 							</select>
 							</td>
 							</tr><tr>
@@ -486,32 +485,32 @@ unset($update);
 							<td class=back align="left">
 							
 							<select id="selectwidth2" name=status>';
-    createStatusMenu(0);
+createStatusMenu(0);
 
 
-    echo '                    </select>
+echo '                    </select>
 							</td></tr>';
 
-    endTable();
+endTable();
 
 
 
 function createMainTab(){
-global $id, $sg, $lang_updateticket, $lang_printable, $enable_time_tracking, $supporter_site_url, $lang_updateticket, $theme, $supporter_site_url, $cookie_name, $total_minutes, $info;
-                   $info = getTicketInfo($id);
-                    $sg = $info['groupid'];
+    global $id, $sg, $lang_updateticket, $lang_printable, $enable_time_tracking, $supporter_site_url, $lang_updateticket, $theme, $supporter_site_url, $cookie_name, $total_minutes, $info;
+    $info = getTicketInfo($id);
+    $sg = $info['groupid'];
 
-                    createTicketHeader("$lang_updateticket");
-                    echo '<a href="updatelog.php?cookie_name=' . $cookie_name . '&id=' .
-                        $info['id'] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">
+    createTicketHeader("$lang_updateticket");
+    echo '<a href="updatelog.php?cookie_name=' . $cookie_name . '&id=' .
+        $info['id'] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">
 
 <img border=0 src="../' . $theme['image_dir'] . 'orangeglow0_show_summary.png"></a> ';
-                    echo "<div align=right><a href=\"$supporter_site_url/print.php?id=$id\">$lang_printable</a></div>";
-                    createTicketDetails();
-                    createSupporterInfo();
-                    createUserInfo();
-                    //createNotificationPanel();
-                    createTicketInfo();
+    echo "<div align=right><a href=\"$supporter_site_url/print.php?id=$id\">$lang_printable</a></div>";
+    createTicketDetails();
+    createSupporterInfo();
+    createUserInfo();
+    //createNotificationPanel();
+    createTicketInfo();
 
 
 
@@ -990,8 +989,7 @@ function createTimeTab()
 
         $group_id = eregi_replace("sgroup", "", $group);
 
-        $sql = "SELECT * FROM `users`\n"
-            . "INNER JOIN `sgroup2` ON `sgroup2`.`user_name` = `users`.`user_name` ";
+        $sql = "SELECT * FROM `users` INNER JOIN `sgroup2` ON `sgroup2`.`user_name` = `users`.`user_name` ";
 
         $result = $db->query($sql);
         startTable("$lang_group  --  " . getsGroup($group_id), "left");
@@ -1005,7 +1003,7 @@ function createTimeTab()
 
             echo "<div class=\"col-xs-12 col-sm-6 col-md-3 " . ($row['supporter'] >= 1 ? "active" : "inactive") . "\" username=\"$row[user_name]\">";
             echo "<span style=height:60px;>";
-            echo "$row[first_name] $row[last_name] <b>($row[user_name])</b><br>$row[email] " . date("m/d/Y", $row[lastactive]) . "</span></div>";
+            echo "$row[first_name] $row[last_name] <b>($row[user_name])</b><br>$row[email] " . date("m/d/Y",$row[lastactive]) . "</span></div>";
 
         }
         echo '</div></div></div>';

@@ -34,7 +34,6 @@ if(!eregi("index.php", $PHP_SELF) && !eregi("control.php", $PHP_SELF)){
 	echo "$lang_noaccess";
 	exit;
 }
-
 require_once "../common/config.php";
 require_once "../common/$database.class.php";
 require_once "../common/common.php";

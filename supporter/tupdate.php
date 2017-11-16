@@ -772,7 +772,8 @@ function createTimeTab()
         startTable("$lang_timespent", "left", 100, 4);
 
         echo ' <tr>
-	<td width="180px" class=back2 align=right>' . $lang_timespent1 . ':<BR> <class=back2 align=right>' . $lang_timespent2 . '</td>';
+	<td width="180px" class=back2 align=right>' . $lang_timespent1 . ':
+	<BR> <class=back2 align=right>' . $lang_timespent2 . '</td>';
 
         echo '<td class=back align="left" colspan="3">';
         echo 'Work order / reference<BR>';
@@ -781,14 +782,14 @@ function createTimeTab()
 
         echo '<td width=15% class=back >';
 
-        echo 'supporter<BR><select class="tkt-date" name=supporter1>';
+        echo 'supporter<BR><select name=supporter1>';
         createSupporterMenu($sg);
         echo '</select>';
         echo '</td>';
 
-        echo '<td width="35px" class=back  colspan="1">';
+        echo '<td width=15% class=back  colspan="1">';
         echo 'minutes<br>';
-        echo '<input class="tkt-date" type=text size=6 name=time_spent></td>';
+        echo '<input type=text size=6 name=time_spent></td>';
 
         echo '<td class=back  colspan="2">';
         echo 'Work DATE<br>';

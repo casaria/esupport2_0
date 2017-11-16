@@ -611,7 +611,7 @@ function createTimeTab()
         echo '
     <tr>
      <td class="back2" width="180px">' . $lang_emailgroup . ': </td>
-     <td class="back" colspan="4">' .
+     <td class="back" colspan="2>' .
             "<input class=box type=checkbox";
         if ($info['emailgroup'] == "On") {
             echo " checked";
@@ -619,7 +619,7 @@ function createTimeTab()
         echo "name=emailgroup></td>" .
             '</tr><tr>
      <td class="back2" width="180px">' . $lang_emailstatuschange . ': </td>
-     <td class="back" colspan="4">' .
+     <td class="back" colspan="2">' .
             "<input class=box type=checkbox";
         if ($info['emailstatuschange'] == "On") {
             echo " checked";
@@ -629,7 +629,7 @@ function createTimeTab()
     </tr>
     <tr>
      <td class="back2" width="180px" valign="top">' . $lang_pagesupporter . ': </td>
-     <td class="back" colspan="4">' . "<input class=box type=checkbox name=mms></td>";
+     <td class="back" colspan="2">' . "<input class=box type=checkbox name=mms></td>";
 
 
         echo '

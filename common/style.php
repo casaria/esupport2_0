@@ -462,7 +462,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     height: 2000px;
                     left: 0px;
                     top: 0px;
-                    margin-left: 0px; /*half the width*/
+                    margin-left: 4px; /*half the width*/
                 }
 
                 #selectwidth {

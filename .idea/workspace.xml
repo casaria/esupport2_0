@@ -26,7 +26,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/common.php" afterPath="$PROJECT_DIR$/common/common.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/style.php" afterPath="$PROJECT_DIR$/common/style.php" />
     </list>
     <ignored mask="workspace.xml" />
     <ignored mask="error_log" />
@@ -310,16 +310,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/style.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="464" column="35" lean-forward="false" selection-start-line="464" selection-start-column="35" selection-end-line="464" selection-end-column="35" />
+            <state relative-caret-position="6334">
+              <caret line="444" column="32" lean-forward="true" selection-start-line="444" selection-start-column="32" selection-end-line="444" selection-end-column="32" />
               <folding>
-                <marker date="1510868182584" expanded="true" signature="1917:2082" ph="..." />
-                <marker date="1510868182584" expanded="true" signature="72440:72492" ph="select * fro... ${$mysql_themes_table}" />
-                <marker date="1510868182584" expanded="true" signature="73297:73357" ph="select theme... ${$mysql_users_table}" />
-                <marker date="1510868182584" expanded="true" signature="73603:73629" ph="select defau... ${$mysql_settings_table}" />
+                <marker date="1510869149246" expanded="true" signature="1917:2082" ph="..." />
+                <marker date="1510869149246" expanded="true" signature="72445:72497" ph="select * fro... ${$mysql_themes_table}" />
+                <marker date="1510869149246" expanded="true" signature="73302:73362" ph="select theme... ${$mysql_users_table}" />
+                <marker date="1510869149246" expanded="true" signature="73608:73634" ph="select defau... ${$mysql_settings_table}" />
               </folding>
             </state>
           </provider>
@@ -365,7 +365,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="common.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/common.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="164">
@@ -751,8 +751,8 @@
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/common/config.php" />
         <option value="$PROJECT_DIR$/supporter/tupdate.php" />
-        <option value="$PROJECT_DIR$/common/style.php" />
         <option value="$PROJECT_DIR$/common/common.php" />
+        <option value="$PROJECT_DIR$/common/style.php" />
       </list>
     </option>
   </component>
@@ -1206,14 +1206,7 @@
       <workItem from="1510717267656" duration="198000" />
       <workItem from="1510719419605" duration="16572000" />
       <workItem from="1510820420030" duration="20459000" />
-      <workItem from="1510850832919" duration="17548000" />
-    </task>
-    <task id="LOCAL-01948" summary="Release 1.5.1b">
-      <created>1510855324787</created>
-      <option name="number" value="01948" />
-      <option name="presentableId" value="LOCAL-01948" />
-      <option name="project" value="LOCAL" />
-      <updated>1510855324787</updated>
+      <workItem from="1510850832919" duration="17621000" />
     </task>
     <task id="LOCAL-01949" summary="Release 1.5.1b">
       <created>1510856031160</created>
@@ -1551,11 +1544,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510868950711</updated>
     </task>
-    <option name="localTasksCounter" value="1997" />
+    <task id="LOCAL-01997" summary="Cleaned up release 1.5.1b">
+      <created>1510869085590</created>
+      <option name="number" value="01997" />
+      <option name="presentableId" value="LOCAL-01997" />
+      <option name="project" value="LOCAL" />
+      <updated>1510869085590</updated>
+    </task>
+    <option name="localTasksCounter" value="1998" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1419961000" />
+    <option name="totallyTimeSpent" value="1420034000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2421,19 +2421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/style.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="464" column="35" lean-forward="false" selection-start-line="464" selection-start-column="35" selection-end-line="464" selection-end-column="35" />
-          <folding>
-            <marker date="1510868182584" expanded="true" signature="1917:2082" ph="..." />
-            <marker date="1510868182584" expanded="true" signature="72440:72492" ph="select * fro... ${$mysql_themes_table}" />
-            <marker date="1510868182584" expanded="true" signature="73297:73357" ph="select theme... ${$mysql_users_table}" />
-            <marker date="1510868182584" expanded="true" signature="73603:73629" ph="select defau... ${$mysql_settings_table}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/supporter/tupdate.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
@@ -2806,6 +2793,19 @@
             <marker date="1510869075834" expanded="true" signature="125334:125394" ph="update ${$my... " />
             <marker date="1510869075834" expanded="true" signature="125635:125656" ph="select * fro... ugroups" />
             <marker date="1510869075834" expanded="true" signature="126024:126084" ph="update ${$my... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/style.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6334">
+          <caret line="444" column="32" lean-forward="true" selection-start-line="444" selection-start-column="32" selection-end-line="444" selection-end-column="32" />
+          <folding>
+            <marker date="1510869149246" expanded="true" signature="1917:2082" ph="..." />
+            <marker date="1510869149246" expanded="true" signature="72445:72497" ph="select * fro... ${$mysql_themes_table}" />
+            <marker date="1510869149246" expanded="true" signature="73302:73362" ph="select theme... ${$mysql_users_table}" />
+            <marker date="1510869149246" expanded="true" signature="73608:73634" ph="select defau... ${$mysql_settings_table}" />
           </folding>
         </state>
       </provider>

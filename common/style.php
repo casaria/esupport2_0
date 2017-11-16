@@ -454,7 +454,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                  /*   position: fixed;  */
                /*    position: absolkl; */
                    /* width: 321px;  */
-                    position: relative ;
+                /*    position: relative ; */
                     width: 421px;
                     overflow-y: scroll;
                     max-height:680px;

@@ -787,7 +787,7 @@ function createTimeTab()
         echo '</select>';
         echo '</td>';
 
-        echo '<td width=15% class=back  colspan="1">';
+        echo '<td width=50px class=back  colspan="1">';
         echo 'minutes<br>';
         echo '<input type=text size=6 name=time_spent></td>';
 

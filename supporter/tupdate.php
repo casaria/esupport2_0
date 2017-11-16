@@ -445,7 +445,10 @@ unset($update);
             </p>
         </div>
         <div class="tab-pane fade" id="pills-xtra-tab" role="tabpanel" aria-labelledby="pills-xtra">
-            <p><?php createNotificationPanel();?>
+            <p><?php
+                createSupporterInfo();
+                createUserInfo();
+                createNotificationPanel();?>
             </p>
         </div>
     </div>
@@ -546,8 +549,8 @@ function createMainTab()
 <img border=0 src="../' . $theme['image_dir'] . 'orangeglow0_show_summary.png"></a> ';
     echo "<div align=right><a href=\"$supporter_site_url/print.php?id=$id\">$lang_printable</a></div>";
     createTicketDetails();
-    createSupporterInfo();
-    createUserInfo();
+    //createSupporterInfo();
+    //createUserInfo();
     //createNotificationPanel();
     createTicketInfo();
 

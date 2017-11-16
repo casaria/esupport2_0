@@ -456,7 +456,7 @@ unset($update);
         <?php
         echo "<div class=\"row\">";
         echo "<div class=\"row justify-content-center\">";
-        echo "<input class=\"col-xs-4\" type=hidden name=sg value='" . $sg . "'>";
+        echo "<input type=hidden name=sg value='" . $sg . "'>";
         echo "<input type=hidden name=id value='" . $info['id'] . "'>";
         echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
         echo "<input type=hidden name=old_pri value='" . $info['priority'] . "'>";
@@ -478,7 +478,7 @@ unset($update);
         echo "<input type=hidden name=description value='$info[description]'>";
         echo "<div class=\"col-xs-4 ml-auto\"><input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\"></form></div>";
         }
-        Echo "</div>";
+        Echo "</div></div>";
         ?>
 </div>
 

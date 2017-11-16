@@ -559,8 +559,8 @@ function createMainTab()
 
 function createTimeTab()
 {
-    global $enable_time_tracking, $total_minutes, $info, $minutes;'
-    '
+    global $enable_time_tracking, $total_minutes, $info, $minutes;
+
     if ($enable_time_tracking == 'On') {
         $total_minutes = displayTimeHistory();
     }

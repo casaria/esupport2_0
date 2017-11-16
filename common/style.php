@@ -454,8 +454,10 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     /*      width: 580px;   */
                     position: fixed;  */
                /*    position: absolkl; */
-                   width: 100%;
+                   /* width: 321px;  */
+                    width: device-width;
                     overflow-y: scroll;
+                    max-height:
                     margin-top: 0px; /*  width  421  */
                     height: 2800px;
                     left: 0px;

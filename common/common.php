@@ -71,6 +71,10 @@ $users_limit = $var['users_per'];				//number of users to list in a user/support
 							//5 seems to almost fit on a single page
 $enable_ratings = $var['ratings'];			//use the ticket rating system?
 $helpdesk_name = $var['name'];				//name of the helpdesk
+
+$TITLE = $helpdesk_name;
+
+
 $address_name = $var['a_name'];				// Company Name
 $address_street1 = $var['a_street1'];
 $address_street2 = $var['a_street2'];

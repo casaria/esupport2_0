@@ -286,7 +286,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
     <HEAD>
 
 
-        <TITLE> <?php echo $helpdesk_name; ?></TITLE>
+        <TITLE> <?php echo $TITLE; ?></TITLE>
         <?php
         if ($theme['font'] == "Titillium Web") {
             $lineHeight = 1.2;

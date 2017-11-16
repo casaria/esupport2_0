@@ -51,7 +51,6 @@ $includePath = '/var/www/casaria/esupport2_0/common/';
 /**********************************************************************************************************/
 /**********************************************************************************************************/
 
-
 $base_dir  = __DIR__; // Absolute path to your installation, ex: /var/www/mywebsite
 $doc_root  = preg_replace("!${_SERVER['SCRIPT_NAME']}$!", '', $_SERVER['SCRIPT_FILENAME']); # ex: /var/www
 $base_url  = preg_replace("!^${doc_root}!", '', $base_dir); # ex: '' or '/mywebsite'

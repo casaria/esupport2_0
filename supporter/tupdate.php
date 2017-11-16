@@ -455,7 +455,7 @@ unset($update);
 
         <?php
         echo "<div class=\"row\">";
-        echo "<input class='col-xs-2' type=hidden name=sg value='" . $sg . "'>";
+        echo "<input class=\"col-xs-2\" type=hidden name=sg value='" . $sg . "'>";
         echo "<input type=hidden name=id value='" . $info['id'] . "'>";
         echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
         echo "<input type=hidden name=old_pri value='" . $info['priority'] . "'>";

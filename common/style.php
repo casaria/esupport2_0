@@ -453,8 +453,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     /*      margin-left: 6px; */
                     /*      width: 580px;   */
             /*    position: fixed;  */
-               /*    position: absolkl;
-                 /*   width: 320px; */
+               /*    position: absolkl; */
+                   width: 100%;
                     overflow-y: scroll;
                     margin-top: 0px; /*  width  421  */
                     height: 2800px;

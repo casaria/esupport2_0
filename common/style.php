@@ -933,8 +933,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 }
 
                 .tkt-textarea {
-                    rows: 5;
-                    cols: 35;
+                    rows: 25;
+                    cols: 120;
 
 
                 }

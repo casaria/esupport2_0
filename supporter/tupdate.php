@@ -675,7 +675,7 @@ function createTimeTab()
         startTable("$lang_userinfo     - Member of group(s): $groupname", "left", 100, 4);
 
         echo '			<tr>
-							<td width="180px" class=back2 align=right>' . $lang_username . ':</td>
+							<td width="120px" class=back2 align=right>' . $lang_username . ':</td>
 						
 							<td class=back>
 								<input type=text size=20 name=username value="' . $info['user'] . '">
@@ -738,7 +738,7 @@ function createTimeTab()
 							</td></tr>';
         echo '
     <tr>
-     <td class="back2" width="180px">' . $lang_ticket . ' ' . $lang_opened . ': </td>
+     <td class="back2" width="120px" align="right">' . $lang_ticket . ' ' . $lang_opened . ': </td>
      <td class="back">' . $info['create_date'] . '</td>
     </tr>
     <tr>

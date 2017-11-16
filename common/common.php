@@ -1917,7 +1917,7 @@ if(isset($info)){
 		echo '
 
 			<tr>
-				<td class=back2 align=right width="180px\\> '.$lang_email.' '. $lang_user.': </td>
+				<td class=back2 align=right width="180px> '.$lang_email.' '. $lang_user.': </td>
 				<td class=back> <textarea class="tkt-textarea" name=email_msg ></textarea> </td>
 			</tr>';
 	}

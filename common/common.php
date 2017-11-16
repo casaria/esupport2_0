@@ -2353,7 +2353,7 @@ function validEmail($address)
 **	header.
 ************************************************************************************************************/
 function startTable($msg, $align, $width=100, $colspan=1, $class='info')
-{
+{1``
 	if($width == '')
 		$width = '100';
 

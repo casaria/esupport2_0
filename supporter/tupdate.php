@@ -495,9 +495,10 @@ endTable();
 
 
 
-function createMainTab() {
+function createMainTab()
+{
 
-global $id, $sg, $lang_updateticket, $lang_printable, $enable_time_tracking, $supporter_site_url, $lang_updateticket, $theme, $supporter_site_url, $cookie_name, $total_minutes, $info;
+    global $id, $sg, $lang_updateticket, $lang_printable, $enable_time_tracking, $supporter_site_url, $lang_updateticket, $theme, $supporter_site_url, $cookie_name, $total_minutes, $info;
     $info = getTicketInfo($id);
     $sg = $info['groupid'];
 
@@ -505,7 +506,7 @@ global $id, $sg, $lang_updateticket, $lang_printable, $enable_time_tracking, $su
     echo '<a href="updatelog.php?cookie_name=' . $cookie_name . '&id=' .
         $info['id'] . '\" target=\"myWindow\" onClick=\"window.open(\'\', \'myWindow\',\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')\">';
 
-ECHO '<img border=0 src="../' . $theme['image_dir'] . 'orangeglow0_show_summary.png"></a> ';
+    ECHO '<img border=0 src="../' . $theme['image_dir'] . 'orangeglow0_show_summary.png"></a> ';
     echo "<div align=right><a href=\"$supporter_site_url/print.php?id=$id\">$lang_printable</a></div>";
     createTicketDetails();
     createSupporterInfo();
@@ -513,7 +514,7 @@ ECHO '<img border=0 src="../' . $theme['image_dir'] . 'orangeglow0_show_summary.
     //createNotificationPanel();
     createTicketInfo();
 
-
+}
 
 
 

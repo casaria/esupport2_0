@@ -493,7 +493,7 @@ echo '                    </select>
 
 endTable();
 
-    }
+
 
 
 function createMainTab()

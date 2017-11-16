@@ -518,17 +518,19 @@ unset($update);
             echo '
 							</select>
 							</td>
-							</tr><tr>
+							</tr>';
+
+/*            echo '<tr>
 
 							<td class=back2 align=right>' . $lang_ticket . ' ' . $lang_status . ':</td>
 							<td class=back align="left">
-							
+
 							<select id="selectwidth2" name=status>';
             createStatusMenu(0);
 
 
             echo '                    </select>
-							</td></tr>';
+							</td></tr>'; */
 
             endTable();
 
@@ -538,7 +540,7 @@ unset($update);
 function createMainTab()
 {
 
-    global $id, $sg, $lang_updateticket, $lang_printable, $enable_time_tracking, $supporter_site_url, $lang_updateticket, $theme, $supporter_site_url, $cookie_name, $total_minutes, $info;
+    global $id, $sg, $lang_updateticket, $lang_printable, $enable_time_tracking, $supporter_site_url, $lang_updateticket, $theme, $supporter_site_url, $cookie_name, $total_minutes, $info, $lang_ticket, $padded_id, $lang_status;
     $info = getTicketInfo($id);
     $sg = $info['groupid'];
 
@@ -548,6 +550,21 @@ function createMainTab()
 
 <img border=0 src="../' . $theme['image_dir'] . 'orangeglow0_show_summary.png"></a> ';
     echo "<div align=right><a href=\"$supporter_site_url/print.php?id=$id\">$lang_printable</a></div>";
+
+    startTable("$lang_ticket #$padded_id", "left", 100, 2, "extra");
+
+    echo '<tr>
+
+							<td class=back2 align=right>' . $lang_ticket . ' ' . $lang_status . ':</td>
+							<td class=back align="left">
+							
+							<select id="selectwidth2" name=status>';
+    createStatusMenu(0);
+
+
+    echo '                    </select>
+							</td></tr>';
+    endTable();
     createTicketDetails();
     //createSupporterInfo();
     //createUserInfo();

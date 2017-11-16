@@ -1876,28 +1876,28 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 				<td> 
 					<table cellSpacing=1 cellPadding=5  width="100%" border=0>
 						<tr> 
-							<td class=info width="180px" align=left colspan=2><b>'.$lang_ticketinfo.'</b></td>
+							<td class=info width="90px" align=left colspan=2><b>'.$lang_ticketinfo.'</b></td>
 						</tr>		
 						<tr>';
 
-                          echo '	<td class=back2 width="180px" align=right>* '.$lang_category.':</td>
+                          echo '	<td class=back2 align=right>* '.$lang_category.':</td>
 							<td class=back><select id="selectwidth" name=category>';  createCategoryMenu(0);
                           echo '	</select></td>';
 
 						echo '</tr><tr>
-                             	<td class=back2 width="180px" align=right>* '.$lang_platform.':</td>
+                             	<td align=right>* '.$lang_platform.':</td>
 							<td class=back><select id="selectwidth" name=platform>'; createPlatformMenu(0, "");
 
 						echo '</select></TD>   
 						</tr>
 						<tr>
-							<td width=="180px" class=back2 align=right>* '.$lang_equipment.':</td>
+							<td class=back2 align=right>* '.$lang_equipment.':</td>
 							<td class=back><select id="selectwidth" name=equipment>';  createEquipmentMenu(0,$equipmentgroupid);
 							echo '	</select></td>
 						    
 						</tr>
 						<tr>
-							<td width="180px" class=back2 align=right>* '.$lang_shortdesc.':</td>
+							<td class=back2 align=right>* '.$lang_shortdesc.':</td>
 							<td class=back>
 						
 							<input type=text name=short size="50" value="'.stripslashes($info['short']).'">
@@ -1906,7 +1906,7 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 						</tr>
 						<tr>
 
-							<td class=back2 align=right width="180px">* '.$lang_desc.': </td>
+							<td class=back2 align=right>* '.$lang_desc.': </td>
 							<td class=back><textarea class="tkt-textarea" name=description >'.stripslashes($info['description']).'</textarea></td>
 
 

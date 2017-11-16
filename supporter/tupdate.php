@@ -459,7 +459,7 @@ unset($update);
         echo "<input type=hidden name=sg value='" . $sg . "'>";
         echo "<input type=hidden name=id value='" . $info['id'] . "'>";
         echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
-        echo "<input typ`e=hidden name=old_pri value='" . $info['priority'] . "'>";
+        echo "<input type=hidden name=old_pri value='" . $info['priority'] . "'>";
         echo "<input type=hidden name=old_emailgroup value='" . $info['emailgroup'] . "'>";
         echo "<input type=hidden name=old_emailstatuschange value='" . $info['emailstatuschange'] . "'>";
         echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";

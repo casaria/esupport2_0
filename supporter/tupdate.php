@@ -780,7 +780,7 @@ function createTimeTab()
         echo '<textarea  name=reference rows=2 cols=36>' . '</textarea></td>';
         echo '</tr><tr>';
 
-        echo '<td width=15% class=back >';
+        echo '<td width="50px" class=back >';
 
         echo 'supporter<BR><select name=supporter1>';
         createSupporterMenu($sg);

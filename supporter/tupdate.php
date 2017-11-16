@@ -772,15 +772,15 @@ function createTimeTab()
         startTable("$lang_timespent", "left", 100, 4);
 
         echo ' <tr>
-	<td width="180px" class=back2 align=right>' . $lang_timespent1 . ':
+	<td width="120px" class=back2 align=right>' . $lang_timespent1 . ':
 	<BR> <class=back2 align=right>' . $lang_timespent2 . '</td>';
 
         echo '<td class=back align="left" colspan="3">';
         echo 'Work order / reference<BR>';
-        echo '<textarea  name=reference rows=2 cols=36>' . '</textarea></td>';
+        echo '<textarea  name=reference rows=3 cols=50>' . '</textarea></td>';
         echo '</tr><tr>';
 
-        echo '<td width="50px" class=back >';
+        echo '<td class=back >';
 
         echo 'supporter<BR><select name=supporter1>';
         createSupporterMenu($sg);

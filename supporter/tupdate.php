@@ -789,7 +789,7 @@ function createTimeTab()
 
         echo '<td width=50px class=back  colspan="1">';
         echo 'minutes<br>';
-        echo '<input type=text size=6 name=time_spent></td>';
+        echo '<input class="tkt-date" type=text size=6 name=time_spent></td>';
 
         echo '<td class=back  colspan="2">';
         echo 'Work DATE<br>';

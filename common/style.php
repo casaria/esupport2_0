@@ -85,6 +85,7 @@ $tablePadding =2;
     <link rel="stylesheet" href="/dylay/assets/css/main.css" media="screen">
 
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
     <script type="text/javascript">

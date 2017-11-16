@@ -467,8 +467,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
                 #selectwidth {
                     background-color: #afe7f7;
-                    border: 0 solid;
-                    Vbackground-color: <?php echo $theme['subcategory']; ?> border: 2px solid;
+                    Vbackground-color: <?php echo $theme['subcategory']; ?>
+                    border: 2px solid;
                     -webkit-box-shadow: #333333 3PX 3PX 3PX;
                     -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
                     box-shadow: #B4B5B5 3PX 3PX 3PX;

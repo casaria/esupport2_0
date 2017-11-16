@@ -847,8 +847,7 @@ function createTimeTab()
             echo "<option value=$i";
             if ($today['minutes'] == $i)
                 echo ' selected';
-            echo ">" . 'today[minutes]</option></select>';
-            echo '';
+            echo ">" .$today[minutes].'</option></select>';
             echo '</td></tr><tr>';
 
             echo '<td width=20% class=back2 align=right>';

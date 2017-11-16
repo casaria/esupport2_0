@@ -426,7 +426,7 @@ unset($update);
             <a class="nav-link" id="pills-mat" data-toggle="pill" href="#pills-mat-tab" role="tab" aria-controls="pills-mat" aria-selected="false"><h3>Mat</h3></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="pills-xtra" data-toggle="pill" href="#pills-xtra-tab" role="tab" aria-controls="pills-xtra" aria-selected="false"><h3>Xtra</h3></a>
+            <a class="nav-link" id="pills-xtra" data-toggle="pill" href="#pills-xtra-tab" role="tab" aria-controls="pills-xtra" aria-selected="false"><h4>Xtra</h4></a>
         </li>
     </ul>
 

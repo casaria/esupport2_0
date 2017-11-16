@@ -702,7 +702,7 @@ function createTimeTab()
 
 //Thanks to SteveW for providing this great function
     function createTicketDetails()
-    {
+{
         global $info, $db, $lang_never, $mysql_attachments_table, $id, $lang_ticket, $lang_opened, $lang_attachments, $lang_lastupdate, $lang_status;
 
         $padded_id = str_pad($id, 5, '0', STR_PAD_LEFT);
@@ -795,7 +795,6 @@ function createTimeTab()
         echo 'Work DATE<br>';
 
 
-
         $today = getdate($timestamp);
         echo '<select class="tkt-date" name=womonth>';
         for ($i = 1; $i < 13; $i++) {
@@ -834,7 +833,6 @@ function createTimeTab()
         echo 'TIME Finished<br>';
 
 
-
         echo '<select class="tkt-date" name=woHHend>';
         for ($i = 0; $i < 24; $i++) {
             echo "<option value=$i";
@@ -849,88 +847,88 @@ function createTimeTab()
             echo "<option value=$i";
             if ($today['minutes'] == $i)
                 echo ' selected';
-                echo ">".'today[minutes]</option></select>';
-        echo '';
-        echo '</td></tr><tr>';
+            echo ">" . 'today[minutes]</option></select>';
+            echo '';
+            echo '</td></tr><tr>';
 
-        echo '<td width=20% class=back2 align=right>';
-        echo "Labor Rate modifier</td>";
+            echo '<td width=20% class=back2 align=right>';
+            echo "Labor Rate modifier</td>";
 
-        echo '<td width=15% class=back align=left style="padding: 4px">';
-        echo "<input class=box type=checkbox name=after_hours>";
-        echo "AFTR-HRS";
-        echo '</td>';
+            echo '<td width=15% class=back align=left style="padding: 4px">';
+            echo "<input class=box type=checkbox name=after_hours>";
+            echo "AFTR-HRS";
+            echo '</td>';
 
-        echo '<td width=15% class=back align=left>';
-        echo "<input class=box type=checkbox name=engineer_rate>";
-        echo "SPECIAL";
-        echo '</td>';
+            echo '<td width=15% class=back align=left>';
+            echo "<input class=box type=checkbox name=engineer_rate>";
+            echo "SPECIAL";
+            echo '</td>';
 
-        echo '<td width=15% class=back align=left colspan=2>';
-        echo '</td>';
+            echo '<td width=15% class=back align=left colspan=2>';
+            echo '</td>';
 
-        //endtable();
-    }
-
-
-    function displayMaterials()
-    {
-        global $id, $db;
-        global $lang_materialhistory;
-
-
-        startTable("$lang_materialhistory", "left", 100, 5);
-
-        $sql = "select mat.material_id, mat.date, mat.count, mat.reference from tickets as tkt, material_track as mat where (tkt.id=mat.ticket_id AND tkt.id=$id)";
-        $resultmaterials = $db->query($sql);
-
-
-        while ($row = $db->fetch_array($resultmaterials)) {
-            if ($row[count] != 0) {
-
-                $sql = "select * from tmaterial where id=$row[material_id]";
-                $result = $db->query($sql);
-                $sup_row = $db->fetch_array($result);
-
-                echo '<tr>
-    		<td width=10% class=back2 align=right>';
-                if ($row['work_date'])
-                    echo date("F j, Y", $row[date]);
-                else
-                    echo "- No Date -";
-                echo '</td>';
-                echo '<td width=4% class=back>';
-                echo $row[count];
-                echo '</td>';
-                echo '<td width=15% class=back2>';
-                echo "$sup_row[ourpartnum]";
-                echo '</td>';
-                echo '<td class=back>';
-                echo "$sup_row[short]";
-                echo '</td>';
-                echo '<td class=back2>';
-                echo "$row[reference]";
-                echo '</td>';
-            }
+            //endtable();
         }
 
-        echo '<tr><td width=24% class=back2 align=right><B>Total pcs:</B>';
-        echo '</td> <td class=back >';
-        echo '</td> <td class=back colspan=3>';
+
+        function displayMaterials()
+        {
+            global $id, $db;
+            global $lang_materialhistory;
 
 
-        echo '<B>';
-        echo "coming soon";
-        echo '</B></td>';
+            startTable("$lang_materialhistory", "left", 100, 5);
 
-        endTable();
+            $sql = "select mat.material_id, mat.date, mat.count, mat.reference from tickets as tkt, material_track as mat where (tkt.id=mat.ticket_id AND tkt.id=$id)";
+            $resultmaterials = $db->query($sql);
 
-    }
 
-    function extraTab()
-    {
+            while ($row = $db->fetch_array($resultmaterials)) {
+                if ($row[count] != 0) {
 
-        ECHO '<div class="container">
+                    $sql = "select * from tmaterial where id=$row[material_id]";
+                    $result = $db->query($sql);
+                    $sup_row = $db->fetch_array($result);
+
+                    echo '<tr>
+    		<td width=10% class=back2 align=right>';
+                    if ($row['work_date'])
+                        echo date("F j, Y", $row[date]);
+                    else
+                        echo "- No Date -";
+                    echo '</td>';
+                    echo '<td width=4% class=back>';
+                    echo $row[count];
+                    echo '</td>';
+                    echo '<td width=15% class=back2>';
+                    echo "$sup_row[ourpartnum]";
+                    echo '</td>';
+                    echo '<td class=back>';
+                    echo "$sup_row[short]";
+                    echo '</td>';
+                    echo '<td class=back2>';
+                    echo "$row[reference]";
+                    echo '</td>';
+                }
+            }
+
+            echo '<tr><td width=24% class=back2 align=right><B>Total pcs:</B>';
+            echo '</td> <td class=back >';
+            echo '</td> <td class=back colspan=3>';
+
+
+            echo '<B>';
+            echo "coming soon";
+            echo '</B></td>';
+
+            endTable();
+
+        }
+
+        function extraTab()
+        {
+
+            ECHO '<div class="container">
             <h1>Scheduler</h1>
             <div id="sandbox">
                 <div class="row">
@@ -1019,88 +1017,87 @@ function createTimeTab()
         </div>';
 
 
-    }
+        }
 
-    function extraTab2()
-    {
+        function extraTab2()
+        {
 
-        ?>
-        <div class="progress">
+            ?>
+            <div class="progress">
 
-            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40"
-                 aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                <span class="sr-only">40% Complete (success)</span>
+                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                     aria-valuenow="40"
+                     aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                    <span class="sr-only">40% Complete (success)</span>
+                </div>
             </div>
-        </div>
-        <div class="progress">
-            <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20"
-                 aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                <span class="sr-only">20% Complete</span>
+            <div class="progress">
+                <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20"
+                     aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                    <span class="sr-only">20% Complete</span>
+                </div>
             </div>
-        </div>
-        <div class="progress">
-            <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60"
-                 aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                <span class="sr-only">60% Complete (warning)</span>
+            <div class="progress">
+                <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar"
+                     aria-valuenow="60"
+                     aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                    <span class="sr-only">60% Complete (warning)</span>
+                </div>
             </div>
-        </div>
-        <div class="progress">
-            <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80"
-                 aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                <span class="sr-only">80% Complete (danger)</span>
-            </div>
-        </div
+            <div class="progress">
+                <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80"
+                     aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                    <span class="sr-only">80% Complete (danger)</span>
+                </div>
+            </div
 
-        <?php
-
-    }
-
-
-    function materialTab()
-    {
-        global $lang_groupslists, $lang_groupslists2;
-
-        startTable("$lang_groupslists", "center");
-        echo "<tr><td class=cat> $lang_groupslists2 </td></tr>";
-        //echo "<tr><td class=back2>";
-
-        listGroupMembers("sgroup2");
-        echo "</td></tr>";
-        endTable();
-        return;
-    }
-
-
-    function listGroupMembers($group)
-    {
-        global $supporter_site_url, $db, $lang_group;
-
-        $group_id = eregi_replace("sgroup", "", $group);
-
-        $sql = "SELECT * FROM `users`\n"
-            . "INNER JOIN `sgroup2` ON `sgroup2`.`user_name` = `users`.`user_name` ";
-
-        $result = $db->query($sql);
-        startTable("$lang_group  --  " . getsGroup($group_id), "left");
-        echo "<tr><td class=back>";
-
-        echo '<div class="container">';
-
-        echo '<div id="dylay" class="row no-gutters">';
-        while ($row = $db->fetch_array($result)) {
-
-
-            echo "<div class=\"col-xs-12 col-sm-6 col-md-3 " . ($row['supporter'] >= 1 ? "active" : "inactive") . "\" username=\"$row[user_name]\">";
-            echo "<span style=height:60px;>";
-            echo "$row[first_name] $row[last_name] <b>($row[user_name])</b><br>$row[email] " . date("m/d/Y",$row[lastactive]) . "</span></div>";
+            <?php
 
         }
-        echo '</div></div></div>';
-        echo "</td></tr>";
-        endTable();
-    }
-
-?>
 
 
+        function materialTab()
+        {
+            global $lang_groupslists, $lang_groupslists2;
 
+            startTable("$lang_groupslists", "center");
+            echo "<tr><td class=cat> $lang_groupslists2 </td></tr>";
+            //echo "<tr><td class=back2>";
+
+            listGroupMembers("sgroup2");
+            echo "</td></tr>";
+            endTable();
+            return;
+        }
+
+
+        function listGroupMembers($group)
+        {
+            global $supporter_site_url, $db, $lang_group;
+
+            $group_id = eregi_replace("sgroup", "", $group);
+
+            $sql = "SELECT * FROM `users`\n"
+                . "INNER JOIN `sgroup2` ON `sgroup2`.`user_name` = `users`.`user_name` ";
+
+            $result = $db->query($sql);
+            startTable("$lang_group  --  " . getsGroup($group_id), "left");
+            echo "<tr><td class=back>";
+
+            echo '<div class="container">';
+
+            echo '<div id="dylay" class="row no-gutters">';
+            while ($row = $db->fetch_array($result)) {
+
+
+                echo "<div class=\"col-xs-12 col-sm-6 col-md-3 " . ($row['supporter'] >= 1 ? "active" : "inactive") . "\" username=\"$row[user_name]\">";
+                echo "<span style=height:60px;>";
+                echo "$row[first_name] $row[last_name] <b>($row[user_name])</b><br>$row[email] " . date("m/d/Y", $row[lastactive]) . "</span></div>";
+
+            }
+            echo '</div></div></div>';
+            echo "</td></tr>";
+            endTable();
+        }
+
+    }    ?>

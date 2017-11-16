@@ -453,7 +453,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     /*      margin-left: 6px; */
                     /*      width: 580px;   */
             /*    position: fixed;  */
-                    position: fixed;
+                  /*  position: fixed;
                  /*   width: 320px; */
                     margin-top: 0px; /*  width  421  */
                     height: 2800px;

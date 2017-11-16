@@ -454,7 +454,7 @@ unset($update);
 
 
         <?php
-        echo "<div class=\"row\">";
+
         echo "<div class=\"row justify-content-center\">";
         echo "<input type=hidden name=sg value='" . $sg . "'>";
         echo "<input type=hidden name=id value='" . $info['id'] . "'>";
@@ -465,7 +465,7 @@ unset($update);
         echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
         echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
         echo "<input type=hidden name=minutes_labor value=$minutes>";
-        echo "<div class=\"col-3 ml-auto\"><input type=submit id=submit name=update height=80 value=\"$lang_updateticket\"></div>";
+        echo "<div class=\"col-3 ml-auto\"><input type=submit id=submit name=update height=80 value=\"$lang_updateticket\">";
         echo "</form>";
 
 
@@ -476,13 +476,11 @@ unset($update);
         echo "<input type=hidden name=category value='$info[category]'>";
         echo "<input type=hidden name=short value='$info[short]'>";
         echo "<input type=hidden name=description value='$info[description]'>";
-        echo "<input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\"></form>";
+        echo "<input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\"></div></form>";
         }
-        Echo "</div></div>";
-        ?>
-</div>
+        Echo "</div>";
 
-<?php
+
 
 
         function createSupporterInfo()

@@ -933,8 +933,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 }
 
                 .tkt-textarea {
-                    width: 160px;
-                    height: 100px;
+                    width: 180px;
+                    height: 90px;
 
 
                 }

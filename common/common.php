@@ -3480,7 +3480,7 @@ function displayTimeHistory()
   while($row = $db->fetch_array($resultsupporters)){
     if ($row['minutes'] != 0) {
     	echo '<tr>
-    		<td width=20% class=back2 align=right>';
+    		<td width=10% class=back2 align=right>';
     		if ($row['work_date'])
     		    echo date("F j, Y", $row['work_date']);
     		  else
@@ -3511,7 +3511,7 @@ function displayTimeHistory()
 			    echo ">engineer_rate";
     	echo '</td>';
 
-    	echo '<td width=15% class=back2>';
+    	echo '<td width=10% class=back2>';
     			showFormattedTime($row['minutes'] * 60, 0, 1);
     	echo '</td>';
     	echo '<td class=back>';

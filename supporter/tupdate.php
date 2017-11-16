@@ -825,16 +825,16 @@ function createTimeTab()
 
 
         echo '<tr><td width=20% class=back2 align=right>';
-        echo "Special rate </td>";
+        echo "Labor Rate modifier</td>";
 
         echo '<td width=15% class=back align=left>';
         echo "<input class=box type=checkbox name=after_hours>";
-        echo "after_hrs";
+        echo "AFTR-HRS";
         echo '</td>';
 
         echo '<td width=15% class=back align=left>';
         echo "<input class=box type=checkbox name=engineer_rate>";
-        echo "engineer rate";
+        echo "SPECIAL";
         echo '</td>';
 
         echo '<td width=15% class=back align=left colspan=2>';

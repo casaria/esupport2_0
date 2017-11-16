@@ -3482,9 +3482,10 @@ function displayTimeHistory()
     	echo '<tr>
     		<td width=10% class=back2 align=right>';
     		if ($row['work_date'])
-    		    echo date("F j, Y", $row['work_date']);
+    		    //echo date("F j, Y", $row['work_date']);
+                echo date("m/j/y", $row['work_date']);
     		  else
-    		    echo "- No Date -";
+    		    echo "DATE?";
     	echo '</td>';
     	echo '<td width=10% class=back>';
     		  $sql = "select * from $mysql_users_table where id=$row[supporter_id]";

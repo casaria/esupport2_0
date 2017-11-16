@@ -932,6 +932,13 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     color: <?php echo $theme['header_text']; ?>;
                 }
 
+                .tkt-textarea {
+                    rows: 5;
+                    cols: 35;
+
+
+                }
+
                 td.info {
                     text-align: left;
                     background: <?php echo $theme['info_bg']; ?>;

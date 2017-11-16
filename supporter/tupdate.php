@@ -720,6 +720,13 @@ function createTimeTab()
         echo 'Work order / reference<BR>';
         echo '<textarea  name=reference rows=2 cols=36>' . '</textarea></td>';
         echo '</tr><tr>';
+        echo'
+	<td width="180px" class=back2 align=right>' . $lang_timespent1 . ':<BR> <class=back2 align=left>' .
+        $lang_timespent2 .
+        '</td><td width=10% class=back >';
+    echo 'minutes<BR>';
+    echo '<input type=text size=6 name=time_spent>';
+    echo '</td>';
 
         echo '<td width=15% class=back >';
 
@@ -767,7 +774,7 @@ function createTimeTab()
 
 
         echo '<tr><td width=20% class=back2 align=right>';
-        echo 'Special rate </td>';
+        echo "Special rate </td>";
 
         echo '<td width=15% class=back align=left>';
         echo "<input class=box type=checkbox name=after_hours>";

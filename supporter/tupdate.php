@@ -493,6 +493,7 @@ echo '                    </select>
 
 endTable();
 
+    }
 
 
 function createMainTab()
@@ -504,9 +505,9 @@ function createMainTab()
 
         createTicketHeader("$lang_updateticket");
     echo '<a href="updatelog.php?cookie_name=' . $cookie_name . '&id=' .
-        $info['id'] . '\" target=\"myWindow\" onClick=\"window.open(\'\', \'myWindow\',\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')\">';
+                        $info['id'] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">
 
-    ECHO '<img border=0 src="../' . $theme['image_dir'] . 'orangeglow0_show_summary.png"></a> ';
+<img border=0 src="../' . $theme['image_dir'] . 'orangeglow0_show_summary.png"></a> ';
     echo "<div align=right><a href=\"$supporter_site_url/print.php?id=$id\">$lang_printable</a></div>";
     createTicketDetails();
     createSupporterInfo();
@@ -533,6 +534,7 @@ function createTimeTab()
         $minutes = $total_minutes['labor_minutes'] + $total_minutes['labor_after_hours'];
     } else {
         $minutes = $info['minutes_labor'];
+    }
         endTable();  // createTimeUpdate();
 
     }
@@ -720,13 +722,6 @@ function createTimeTab()
         echo 'Work order / reference<BR>';
         echo '<textarea  name=reference rows=2 cols=36>' . '</textarea></td>';
         echo '</tr><tr>';
-        echo'
-	<td width="180px" class=back2 align=right>' . $lang_timespent1 . ':<BR> <class=back2 align=left>' .
-        $lang_timespent2 .
-        '</td><td width=10% class=back >';
-    echo 'minutes<BR>';
-    echo '<input type=text size=6 name=time_spent>';
-    echo '</td>';
 
         echo '<td width=15% class=back >';
 
@@ -997,7 +992,8 @@ function createTimeTab()
 
         $group_id = eregi_replace("sgroup", "", $group);
 
-        $sql = "SELECT * FROM `users` INNER JOIN `sgroup2` ON `sgroup2`.`user_name` = `users`.`user_name` ";
+        $sql = "SELECT * FROM `users`\n"
+            . "INNER JOIN `sgroup2` ON `sgroup2`.`user_name` = `users`.`user_name` ";
 
         $result = $db->query($sql);
         startTable("$lang_group  --  " . getsGroup($group_id), "left");
@@ -1019,4 +1015,7 @@ function createTimeTab()
         endTable();
     }
 
-}?>
+?>
+
+
+

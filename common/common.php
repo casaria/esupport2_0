@@ -1880,7 +1880,7 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 						</tr>		
 						<tr>';
 
-                          echo '<td class=back2 align=right>* '.$lang_category.':</td>
+                          echo '<td class=back2 width="90px" align=right>* '.$lang_category.':</td>
 							<td class=back><select id="selectwidth" name=category>';  createCategoryMenu(0);
                           echo '</select></td>';
 
@@ -1914,7 +1914,7 @@ if(isset($info)){
 		echo '
 
 			<tr>
-				<td class=back2 align=right width="180px> '.$lang_email.' '. $lang_user.': </td>
+				<td class=back2 align=right> '.$lang_email.' '. $lang_user.': </td>
 				<td class=back> <textarea class="tkt-textarea" name=email_msg ></textarea> </td>
 			</tr>';
 	}

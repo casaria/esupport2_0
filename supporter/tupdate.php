@@ -775,8 +775,6 @@ function createTimeTab()
 	<td width="180px" class=back2 align=right>' . $lang_timespent1 . ':<BR> <class=back2 align=right>' . $lang_timespent2 . '</td>';
 
         echo '<td class=back align="left" colspan="3">';
-        createSupporterMenu($sg);
-        echo '</select>';
         echo 'Work order / reference<BR>';
         echo '<textarea  name=reference rows=2 cols=36>' . '</textarea></td>';
         echo '</tr><tr>';
@@ -784,6 +782,8 @@ function createTimeTab()
         echo '<td width=15% class=back >';
 
         echo 'supporter<BR><select name=supporter1>';
+        createSupporterMenu($sg);
+        echo '</select>';
         echo '</td>';
 
         echo '<td width=10% class=back  colspan="3">';

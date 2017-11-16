@@ -932,13 +932,6 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     color: <?php echo $theme['header_text']; ?>;
                 }
 
-                .tkt-textarea {
-                    width: 220px;
-                    height: 60px;
-
-
-                }
-
                 td.info {
                     text-align: left;
                     background: <?php echo $theme['info_bg']; ?>;
@@ -969,6 +962,11 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     font-family: "<?php echo $theme['font']; ?>";
                     font-size: <?php echo $theme['font_size']; ?>px;
                     color: <?php echo $theme['info_text']; ?>;
+                }
+
+                .tkt-textarea {
+                    width: 200px;
+                    height: 60px;
                 }
 
             <?php if(eregi("IE", $HTTP_USER_AGENT)){ ?>

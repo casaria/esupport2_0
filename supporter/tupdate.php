@@ -417,10 +417,10 @@ unset($update);
     <form name=form1 method=post enctype="multipart/form-data">
     <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" id="pills-main" data-toggle="pill" href="#pills-main-tab" role="tab" aria-controls="pills-main" aria-selected="true"><h3>Main</h3></a>
+            <a class="nav-link active" id="pills-main" data-toggle="pill" href="#pills-main-tab" role="tab" aria-controls="pills-main" aria-selected="true"><h4>Main</h4></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="pills-time" data-toggle="pill" href="#pills-time-tab" role="tab" aria-controls="pills-time" aria-selected="false"><h3>Time</h3></a>
+            <a class="nav-link" id="pills-time" data-toggle="pill" href="#pills-time-tab" role="tab" aria-controls="pills-time" aria-selected="false"><h4>Time</h4></a>
         </li>
         <li class="nav-item">
             <a class="nav-link" id="pills-mat" data-toggle="pill" href="#pills-mat-tab" role="tab" aria-controls="pills-mat" aria-selected="false"><h3>Mat</h3></a>

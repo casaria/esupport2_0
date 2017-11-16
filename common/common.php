@@ -1900,7 +1900,7 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 							<td class=back2 align=right>* '.$lang_shortdesc.':</td>
 							<td class=back>
 						
-							<input type=text name=short size="50" value="'.stripslashes($info['short']).'">
+							<textarea class="tkt-textarea" name=short  value="'.stripslashes($info['short']).'">
 							</td>
 						
 						</tr>

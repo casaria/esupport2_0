@@ -1918,7 +1918,7 @@ if(isset($info)){
 			</tr>';
 	}
 	echo '
-		<tr>\
+		<tr>
 			<td class=back2 align=right valign=top> '.$lang_update.': </td>
 			<td class=back valign=bottom> <textarea class="tkt-textarea" name=update_log></textarea>
 

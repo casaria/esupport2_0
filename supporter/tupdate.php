@@ -469,7 +469,7 @@ unset($update);
         echo "</div></form";
 
 
-        if ($enable_kbase == 'On') {
+            if ($enable_kbase == 'On') {
 
         echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>";
         echo "<input type=hidden name=platform value='$info[platform]'>";

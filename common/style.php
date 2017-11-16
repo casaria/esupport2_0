@@ -102,6 +102,8 @@ $tablePadding =2;
             s.parentNode.insertBefore(wf, s);
         })();
 
+
+        var devicewidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 /*let viewportmeta = document.querySelector('meta[name="viewport"]');
 if(viewportmeta===null){
   viewportmeta = document.createElement("meta");

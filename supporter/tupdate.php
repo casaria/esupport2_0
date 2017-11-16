@@ -742,7 +742,7 @@ function createTimeTab()
      <td class="back">' . $info['create_date'] . '</td>
     </tr>
     <tr>
-     <td class="back2" align="right">' . $lang_lastupdate . ': </td>
+     <td class="back2" align="  right">' . $lang_lastupdate . ': </td>
      <td class="back">' . $info['lastupdate'] . '</td>
     </tr>
     <tr>

@@ -465,7 +465,7 @@ unset($update);
         echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
         echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
         echo "<input type=hidden name=minutes_labor value=$minutes>";
-        echo "<div class=\"col-5><input type=submit id=submit name=update height=80 value=\"$lang_updateticket\">";
+        echo "<div class=\"col align-self-start\"><input type=submit id=submit name=update height=80 value=\"$lang_updateticket\">";
         echo "</div></form";
 
 
@@ -476,7 +476,7 @@ unset($update);
         echo "<input type=hidden name=category value='$info[category]'>";
         echo "<input type=hidden name=short value='$info[short]'>";
         echo "<input type=hidden name=description value='$info[description]'>";
-        echo "<div class=\"col-3\"><input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\"></div></form>";
+        echo "<div class=\"col align-self-end\"><input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\"></div></form>";
         }
         Echo "</div>";
 

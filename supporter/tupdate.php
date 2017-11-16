@@ -787,7 +787,7 @@ function createTimeTab()
         echo '</select>';
         echo '</td>';
 
-        echo '<td width=50px class=back  colspan="1">';
+        echo '<td width=35px class=back  colspan="1">';
         echo 'minutes<br>';
         echo '<input class="tkt-date" type=text size=6 name=time_spent></td>';
 
@@ -835,8 +835,21 @@ function createTimeTab()
 
 
 
+        echo '<select class="tkt-date" name=woHHend>';
+        for ($i = 0; $i < 24; $i++) {
+            echo "<option value=$i";
+            if ($today['hours'] == $i)
+                echo ' selected';
+            echo ">" . $today[hours] . "</option>";
+        }
 
 
+        echo '<select class="tkt-date" name=woMMend>';
+        for ($i = 0; $i < 60; $i++) {
+            echo "<option value=$i";
+            if ($today['minutes'] == $i)
+                echo ' selected';
+                echo ">".'today[minutes]</option>';
 
         echo '</td></tr><tr>';
 

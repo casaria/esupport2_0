@@ -454,9 +454,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
                  /*   position: fixed;  */
                /*    position: absolkl; */
                    /* width: 321px;  */
-                /*    position: relative ; */
-
-                    width:421px;
+                    position: relative ;
+                    width: 421px;
                     overflow-y: scroll;
                     max-height:680px;
                     margin-top: 0px; /*  width  421  */
@@ -470,7 +469,11 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     background-color: #afe7f7;
                     border: 0 solid;
                     Vbackground-color: <?php echo $theme['subcategory']; ?> border: 2px solid;
-                    -webkit-box-shadow: #3333 3px;
+                    -webkit-box-shadow: #333333 3PX 3PX 3PX;
+                    -moz-box-shadow: #B4B5B5 3PX 3PX 3PX;
+                    box-shadow: #B4B5B5 3PX 3PX 3PX;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
                     width: 200px;
                     outline: 0;
                     overflow: hidden;

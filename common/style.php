@@ -934,7 +934,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
                 .tkt-textarea {
                     width: 220px;
-                    height: 80px;
+                    height: 60px;
 
 
                 }
@@ -1597,7 +1597,10 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     color: <?php echo $theme['info_text']; ?>;
                 }
 
-
+                .tkt-textarea {
+                    width: 480px;
+                    height: 80px;
+                }
 
             <?php if(eregi("IE", $HTTP_USER_AGENT)){ ?>
                 select, option, textarea, input {

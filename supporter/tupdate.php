@@ -502,7 +502,7 @@ function createMainTab()
     $info = getTicketInfo($id);
     $sg = $info['groupid'];
 
-    createTicketHeader("$lang_updateticket");
+        createTicketHeader("$lang_updateticket");
     echo '<a href="updatelog.php?cookie_name=' . $cookie_name . '&id=' .
         $info['id'] . '\" target=\"myWindow\" onClick=\"window.open(\'\', \'myWindow\',\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')\">';
 

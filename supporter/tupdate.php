@@ -738,7 +738,7 @@ function createTimeTab()
 							</td></tr>';
         echo '
     <tr>
-     <td class="back2" width="120px" align="right">' . $lang_ticket . ' ' . $lang_opened . ': </td>
+     <td class="back2" width="100px" align="right">' . $lang_ticket . ' ' . $lang_opened . ': </td>
      <td class="back">' . $info['create_date'] . '</td>
     </tr>
     <tr>

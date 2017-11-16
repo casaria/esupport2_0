@@ -465,8 +465,8 @@ unset($update);
         echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
         echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
         echo "<input type=hidden name=minutes_labor value=$minutes>";
-        echo "<div class=\"col-11 ml-auto\"><input type=submit id=submit name=update height=80 value=\"$lang_updateticket\">";
-        echo "</form>";
+        echo "<div class=\"col-4\">< == nput type=submit id=submit name=update height=80 value=\"$lang_updateticket\">";
+        echo "</div></form";
 
 
         if ($enable_kbase == 'On') {
@@ -476,9 +476,9 @@ unset($update);
         echo "<input type=hidden name=category value='$info[category]'>";
         echo "<input type=hidden name=short value='$info[short]'>";
         echo "<input type=hidden name=description value='$info[description]'>";
-        echo "<input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\"></div></form>";
+        echo "<div class=\"col-4\"><input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\"></div></form>";
         }
-        Echo "</div>";
+        Echo "</div>"; // row
 
 
 

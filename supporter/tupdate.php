@@ -611,7 +611,7 @@ function createTimeTab()
         echo '
     <tr>
      <td class="back2" width="180px">' . $lang_emailgroup . ': </td>
-     <td class="back" colspan="2>' .
+     <td class="back" colspan="2">' .
             "<input class=box type=checkbox";
         if ($info['emailgroup'] == "On") {
             echo " checked";

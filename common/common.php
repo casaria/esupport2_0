@@ -1900,7 +1900,7 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 							<td class=back2 align=right>* '.$lang_shortdesc.':</td>
 							<td class=back>
 						
-							<textarea class="tkt-textarea" name=short  value="'.stripslashes($info['short']).'">
+							<textarea class="tkt-textarea" name=short value="'.stripslashes($info['short']).'">
 							</td>
 						
 						</tr>
@@ -1917,14 +1917,14 @@ if(isset($info)){
 		echo '
 
 			<tr>
-				<td class=back2 align=right width="180px"> '.$lang_email.' '. $lang_user.': </td>
+				<td class=back2 align=right> '.$lang_email.' '. $lang_user.': </td>
 				<td class=back> <textarea class="tkt-textarea" name=email_msg ></textarea> </td>
 			</tr>';
 	}
 	echo '
 		<tr>
 
-			<td class=back2 align=right valign=top width="180px"> '.$lang_update.': </td>
+			<td class=back2 align=right valign=top> '.$lang_update.': </td>
 			<td class=back valign=bottom> <textarea class="tkt-textarea" name=update_log></textarea>
 
 				<a href="updatelog.php?cookie_name='.$cookie_name.'&id='.$info['id'].'" target="myWindow" onClick="window.open(\'\', \'myWindow\',
@@ -1936,7 +1936,7 @@ if(isset($info)){
 }
 		if($enable_tattachments == 'On' && $flag == 'allow'){
 			echo '<tr>
-				<td class=back2 align=right valign=top width="180px">'.$lang_attachment.': </td>';
+				<td class=back2 align=right valign=top>'.$lang_attachment.': </td>';
 
 			echo "<td class=back colspan=2 valign=bottom>";
 			//echo "<input type=hidden name=\"MAX_FILE_SIZE\" value=\"1000000\">";

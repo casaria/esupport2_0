@@ -1607,7 +1607,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 }
 
                 .tkt-date{
-                    margin: 4px;
+                    margin: 4px;    
                 }
 
             <?php if(eregi("IE", $HTTP_USER_AGENT)){ ?>

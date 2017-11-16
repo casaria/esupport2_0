@@ -787,7 +787,7 @@ function createTimeTab()
         echo '</td>';
 
         echo '<td width=10% class=back  colspan="3">';
-        echo 'minutes      DATE<BR>';
+        echo 'minutes        DATE<BR>';
         echo '<input type=text size=6 name=time_spent>';
 
         $today = getdate($timestamp);

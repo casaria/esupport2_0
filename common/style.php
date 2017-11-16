@@ -972,7 +972,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
                 .tkt-date{
                     margin: 4px;
-                    height: 35px;
+                    height: 34px;
                 }
 
             <?php if(eregi("IE", $HTTP_USER_AGENT)){ ?>
@@ -1604,6 +1604,10 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 .tkt-textarea {
                     width: 350px;
                     height: 80px;
+                }
+
+                .tkt-date{
+                    margin: 4px;
                 }
 
             <?php if(eregi("IE", $HTTP_USER_AGENT)){ ?>

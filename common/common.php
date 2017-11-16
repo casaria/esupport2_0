@@ -1907,7 +1907,7 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 						<tr>
 
 							<td class=back2 align=right width="180px">* '.$lang_desc.': </td>
-							<td class=back><textarea name=description rows=5; cols="55">'.stripslashes($info['description']).'</textarea></td>
+							<td class=back><textarea class="tkt-textarea" name=description >'.stripslashes($info['description']).'</textarea></td>
 
 
 						</tr>';
@@ -1925,7 +1925,7 @@ if(isset($info)){
 		<tr>
 
 			<td class=back2 align=right valign=top width="180px"> '.$lang_update.': </td>
-			<td class=back valign=bottom> <textarea name=update_log rows=5 cols="55"></textarea>
+			<td class=back valign=bottom> <textarea class="tkt-textarea" name=update_log></textarea>
 
 				<a href="updatelog.php?cookie_name='.$cookie_name.'&id='.$info['id'].'" target="myWindow" onClick="window.open(\'\', \'myWindow\',
 					\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">

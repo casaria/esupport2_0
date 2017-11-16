@@ -551,20 +551,9 @@ function createMainTab()
 <img border=0 src="../' . $theme['image_dir'] . 'orangeglow0_show_summary.png"></a> ';
     echo "<div align=right><a href=\"$supporter_site_url/print.php?id=$id\">$lang_printable</a></div>";
 
-    startTable("$lang_ticket #$padded_id", "left", 100, 2, "extra");
-
-    echo '<tr>
-
-							<td class=back2 align=right>' . $lang_ticket . ' ' . $lang_status . ':</td>
-							<td class=back align="left">
-							
-							<select id="selectwidth2" name=status>';
-    createStatusMenu(0);
 
 
-    echo '                    </select>
-							</td></tr>';
-    endTable();
+
     createTicketDetails();
     //createSupporterInfo();
     //createUserInfo();
@@ -714,7 +703,7 @@ function createTimeTab()
 //Thanks to SteveW for providing this great function
     function createTicketDetails()
     {
-        global $info, $db, $lang_never, $mysql_attachments_table, $id, $lang_ticket, $lang_opened, $lang_attachments, $lang_lastupdate;
+        global $info, $db, $lang_never, $mysql_attachments_table, $id, $lang_ticket, $lang_opened, $lang_attachments, $lang_lastupdate, $lang_status;
 
         $padded_id = str_pad($id, 5, '0', STR_PAD_LEFT);
             $info['create_date'] = date("F j, Y, g:i a", $info['create_date']);
@@ -736,6 +725,17 @@ function createTimeTab()
         }
 
         startTable("$lang_ticket #$padded_id", "left", 100, 2, "extra");
+        echo '<tr>
+
+							<td class=back2 align=right>' . $lang_ticket . ' ' . $lang_status . ':</td>
+							<td class=back align="left">
+							
+							<select id="selectwidth2" name=status>';
+        createStatusMenu(0);
+
+
+        echo '                    </select>
+							</td></tr>';
         echo '
     <tr>
      <td class="back2" width="180px">' . $lang_ticket . ' ' . $lang_opened . ': </td>

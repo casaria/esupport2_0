@@ -791,7 +791,7 @@ function createTimeTab()
         echo '<input type=text size=6 name=time_spent>';
 
         $today = getdate($timestamp);
-        echo '<select name=womonth>';
+        echo '<select class="tkt-date" name=womonth>';
         for ($i = 1; $i < 13; $i++) {
             echo "<option value=$i";
             if ($today['mon'] == $i)
@@ -799,8 +799,8 @@ function createTimeTab()
             echo ">" . $lang_month[$i] . "</option>";
         }
 
-        echo '					</select>
-							<select name=woday>
+        echo '</select>
+			<select class="tkt-date"  name=woday>
 								<option></option>';
         for ($i = 1; $i < 32; $i++) {
             echo "<option value=$i";
@@ -810,8 +810,8 @@ function createTimeTab()
         }
 
         echo '			
-							</select>
-							<select name=woyear>';
+            </select>
+            <select class="tkt-date" name=woyear>';
         echo "<option value=" . (string)($today['year'] - 1);
         echo '>' . ($today['year'] - 1) . '</option>';
 

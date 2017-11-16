@@ -970,6 +970,10 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     height: 60px;
                 }
 
+                .tkt-date{
+                    margin: 3px;
+                }
+
             <?php if(eregi("IE", $HTTP_USER_AGENT)){ ?>
                 select, option, textarea, input {
                     border: 1px solid <?php echo $theme['table_border']; ?>;

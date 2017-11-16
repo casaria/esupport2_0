@@ -451,7 +451,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     padding: 2px;
                     /*      margin-left: 6px; */
                     /*      width: 580px;   */
-                    position: fixed;  */
+                 /*   position: fixed;  */
                /*    position: absolkl; */
                    /* width: 321px;  */
                     width: device-width;

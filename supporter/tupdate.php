@@ -413,7 +413,7 @@ unset($update);
 
 
 
-    <div class="container position-absolute>
+    <div class="container position-absolute">
     <form name=form1 method=post enctype="multipart/form-data">
     <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
         <li class="nav-item">

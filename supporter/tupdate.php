@@ -465,7 +465,7 @@ unset($update);
         echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";
         echo "<input type=hidden name=old_status value='" . $info['status'] . "'>";
         echo "<input type=hidden name=minutes_labor value=$minutes>";
-        echo "<div class=\"col-2\"><input type=submit id=submit name=update height=80 value=\"$lang_updateticket\">";
+        echo "<div class=\"col-5><input type=submit id=submit name=update height=80 value=\"$lang_updateticket\">";
         echo "</div></form";
 
 

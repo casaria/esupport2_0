@@ -1596,8 +1596,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 }
 
                 .tkt-textarea {
-                    width: 480px;
-                    height: 80px;
+                    width: 350px;
+                    height: 70px;
                 }
 
             <?php if(eregi("IE", $HTTP_USER_AGENT)){ ?>

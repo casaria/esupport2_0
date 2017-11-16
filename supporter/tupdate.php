@@ -451,11 +451,17 @@ unset($update);
         </div>
     </div>
 
-<?php
-echo "<div class=\"row\">";
-?> <select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)"><?php
-createGroupMenu(1);
-echo '
+        <?php
+        function createSupporterInfo()
+        {
+        global $sg, $lang_supporterinfo, $lang_supportergroup, $lang_supporter, $lang_ticket, $lang_priority, $lang_status;
+        startTable("$lang_supporterinfo", "left", 100, 4);
+        ECHO '                <tr>                              
+							<td class=back2 align=right>' . $lang_supportergroup . '</td>
+							<td class=back align="left">';
+        ?> <select id="selectwidth" name=group onChange="MM_jumpMenu('parent', this, 0)"><?php
+            createGroupMenu(1);
+            echo '
 							</select>
 							</td></tr><tr>
 							<td class=back2 align=right width="180Ppx">' . $lang_supporter . ' </td>
@@ -463,9 +469,9 @@ echo '
                                 
 			
 							<select id="selectwidth" name=supporter_id>';
-createSupporterMenu($sg);
+            createSupporterMenu($sg);
 
-echo '				
+            echo '				
 							</select>
 							</td>
                               </tr><tr>
@@ -474,9 +480,9 @@ echo '
 							<td class=back align="left">
 							
 							<select id="selectwidth" name=prio>';
-createPriorityMenu(0);
+            createPriorityMenu(0);
 
-echo '
+            echo '
 							</select>
 							</td>
 							</tr><tr>
@@ -485,15 +491,15 @@ echo '
 							<td class=back align="left">
 							
 							<select id="selectwidth2" name=status>';
-createStatusMenu(0);
+            createStatusMenu(0);
 
 
-echo '                    </select>
+            echo '                    </select>
 							</td></tr>';
 
-endTable();
+            endTable();
 
-
+            }
 
 
 function createMainTab()
@@ -660,7 +666,7 @@ function createTimeTab()
         global $info, $db, $lang_never, $mysql_attachments_table, $id, $lang_ticket, $lang_opened, $lang_attachments, $lang_lastupdate;
 
         $padded_id = str_pad($id, 5, '0', STR_PAD_LEFT);
-        $info['create_date'] = date("F j, Y, g:i a", $info['create_date']);
+            $info['create_date'] = date("F j, Y, g:i a", $info['create_date']);
         if ($info['lastupdate'] != 0)
             $info['lastupdate'] = date("F j, Y, g:i a", $info['lastupdate']);
         else

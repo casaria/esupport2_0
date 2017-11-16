@@ -456,7 +456,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                    /* width: 321px;  */
                     width: device-width;
                     overflow-y: scroll;
-                    max-height:700px;
+                    max-height:680px;
                     margin-top: 0px; /*  width  421  */
                     height: 2000px;
                     left: 0px;

@@ -786,9 +786,14 @@ function createTimeTab()
         echo '</select>';
         echo '</td>';
 
-        echo '<td width=10% class=back  colspan="3">';
-        echo 'minutes        DATE<BR>';
-        echo '<input type=text size=6 name=time_spent>';
+        echo '<td width=15% class=back  colspan="1">';
+        echo 'minutes<br>';
+        echo '<input type=text size=6 name=time_spent></td>';
+
+        echo '<td class=back  colspan="2">';
+        echo 'Work DATE<br>';
+
+
 
         $today = getdate($timestamp);
         echo '<select class="tkt-date" name=womonth>';
@@ -821,10 +826,20 @@ function createTimeTab()
         echo '>' . ($today['year']) . '</option>
 							</select>';
 
-        echo '</td></tr>';
+        echo '</td></tr><tr>';
+
+        echo '<td class=back colspan="2" ></td>';
+        echo '<td class=back  colspan="2">';
+        echo 'TIME Finished<br>';
 
 
-        echo '<tr><td width=20% class=back2 align=right>';
+
+
+
+
+        echo '</td></tr><tr>';
+
+        echo '<td width=20% class=back2 align=right>';
         echo "Labor Rate modifier</td>";
 
         echo '<td width=15% class=back align=left style="padding: 4px">';

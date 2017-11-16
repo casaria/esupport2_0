@@ -746,7 +746,7 @@ function createTimeTab()
      <td class="back">' . $info['lastupdate'] . '</td>
     </tr>
     <tr>
-     <td class="back2 align="right"  valign="top">' . $lang_attachments . ': </td>
+     <td class="back2" align="right">' . $lang_attachments . ': </td>
      <td class="back">' . $attachments . '</td>
     </tr>';
         endTable();

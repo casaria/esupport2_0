@@ -455,7 +455,7 @@ unset($update);
 
         <?php
 
-        echo "<div class=\"row justify-content-center\">";
+        echo "<div class=\"row\"\">";
         echo "<input type=hidden name=sg value='" . $sg . "'>";
         echo "<input type=hidden name=id value='" . $info['id'] . "'>";
         echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";

@@ -415,7 +415,7 @@ unset($update);
 
     <div class="container">
     <form name=form1 method=post enctype="multipart/form-data">
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
         <li class="nav-item">
             <a class="nav-link active" id="pills-main" data-toggle="pill" href="#pills-main-tab" role="tab" aria-controls="pills-main" aria-selected="true"><h3>Main</h3></a>
         </li>
@@ -459,7 +459,7 @@ unset($update);
         echo "<input type=hidden name=sg value='" . $sg . "'>";
         echo "<input type=hidden name=id value='" . $info['id'] . "'>";
         echo "<input type=hidden name=old_supporter value='" . $info['supporter'] . "'>";
-        echo "<input type=hidden name=old_pri value='" . $info['priority'] . "'>";
+        echo "<input typ`e=hidden name=old_pri value='" . $info['priority'] . "'>";
         echo "<input type=hidden name=old_emailgroup value='" . $info['emailgroup'] . "'>";
         echo "<input type=hidden name=old_emailstatuschange value='" . $info['emailstatuschange'] . "'>";
         echo "<input type=hidden name=old_emailcc value='" . $info['emailcc'] . "'>";

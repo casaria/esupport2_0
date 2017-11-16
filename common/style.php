@@ -459,7 +459,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     overflow-y: scroll;
                     max-height:680px;
                     margin-top: 0px; /*  width  421  */
-                    height: 2000px;
+                    height: 1000px;
                     left: 0px;
                     top: 0px;
                     margin-left: 4px; /*half the width*/

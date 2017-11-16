@@ -85,7 +85,6 @@ $tablePadding =2;
     <link rel="stylesheet" href="/dylay/assets/css/main.css" media="screen">
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
     <script type="text/javascript">
@@ -133,6 +132,11 @@ console.log(document.querySelector('meta[name="viewport"]'));
         }  */
 
 
+/* THIS WAS ACTIVCE UNTIL =1.5.1b
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
         let viewportmeta = document.querySelector('meta[name="viewport"]');
         if(viewportmeta===null){
             viewportmeta = document.createElement("meta");
@@ -144,6 +148,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
         viewportmeta.setAttribute('content', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
         console.log(document.querySelector('meta[name="viewport"]'));
 
+*/
 
       /*  rtAt = 0;
         let lastTouchStartAt = 0;

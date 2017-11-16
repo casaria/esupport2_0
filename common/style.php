@@ -104,6 +104,7 @@ $tablePadding =2;
 
 
         var devicewidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        var container = document.querySelector('footer');
         container.style.setProperty('--devicewidth', devicewidth);
 
 /*let viewportmeta = document.querySelector('meta[name="viewport"]');

@@ -36,9 +36,9 @@ require_once "config.php";
 //set the start time so we can calculate how long it takes to load the page.
 $mtime1 = explode(" ", microtime());
 $starttime = $mtime1[0] + $mtime1[1];
-$username ='';
-$password ='';
-$referer ='';
+$normalized_username ='';
+$normalized_password ='';
+$normalized_referer ='';
 require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 
 
@@ -50,24 +50,27 @@ $cookieuser = '';
 session_status() === PHP_SESSION_ACTIVE  ? $cookieuser = '' : startSession();
 
 $cookie_name = $_SESSION['cookie_name'];
+$normalized_username  = strtolower (trim($_POST['user'],"((?=^)(\s*))|((\s*)(?>$))"));
+$normalized_password = $_POST['password'];
+/*  Not a good ides
+ *  trim ($_POST['password'],"((?=^)(\s*))|((\s*)(?>$))"); *
+ */
+$normalized_referer = strtolower (trim($HTTP_REFERER,"((?=^)(\s*))|((\s*)(?>$))"));
 //echo "cookie_name = $cookie_name <br>";
 //echo "session ID =" . session_id(). " <br>";
 //if submit has been hit, set the cookie and reload the page immediately so the cookie takes effect.
 if(isset($login))
 {
-    $username  = strtolower (trim($_POST['user'],"((?=^)(\s*))|((\s*)(?>$))"));
-    $password = trim ($_POST['password'],"((?=^)(\s*))|((\s*)(?>$))");
-    $referer = strtolower (trim($HTTP_REFERER,"((?=^)(\s*))|((\s*)(?>$))"));
 	//if admin is contained in the url, we need to make sure the user is an
 	//admin before letting them login.
-	if(ereg("/admin", $referer)){
+	if(ereg("/admin", $normalized_referer)){
 		//check the user name and password against the database.
-		if(checkUser($username, md5($password))){
-			if(isAdministrator($username)){
-				$cookie_name = $username;
+		if(checkUser($normalized_username, md5($normalized_password))){
+			if(isAdministrator($normalized_username)){
+				$cookie_name = $normalized_username;
 				//session_register ("cookie_name");
 				$_SESSION ["cookie_name"] = $cookie_name;
-				$enc_pwd = md5($password);
+				$enc_pwd = md5($normalized_password);
 				//session_register ("enc_pwd");
 				$_SESSION ["enc_pwd"] = $enc_pwd;
 
@@ -85,21 +88,21 @@ if(isset($login))
 
 	}
 
-	elseif ( (ereg("/supporter", $referer))  ){
+	elseif ( (ereg("/supporter", $normalized_referer))  ){
 		//check the user name and password against the database.
-		if(checkUser($username, md5($password))){
-			if(isSupporter($username)){
-				$cookie_name = $username;
+		if(checkUser($normalized_username, md5($normalized_password))){
+			if(isSupporter($normalized_username)){
+				$cookie_name = $normalized_username;
 				$userIsSupporter = true;
 				//session_register("cookie_name");
 				$_SESSION ["cookie_name"] = $cookie_name;
-				$enc_pwd = md5($password);
+				$enc_pwd = md5($normalized_password);
 				//session_register("enc_pwd");
 				$_SESSION ["enc_pwd"] = $enc_pwd;
 
 				//nov14 header("Location: $referer");
 				setcookie('supporter_usercookie', $cookie_name,  time()+ $session_time);
-				setcookie('supporter_pwdcookie', $password,  time()+ $session_time);
+				setcookie('supporter_pwdcookie', $normalized_password,  time()+ $session_time);
 				
 			}
 			else{
@@ -117,18 +120,18 @@ if(isset($login))
 	//otherwise, the user is not logging in to the admin site.
 	else{
 		//check the user name and password against the database.
-		if(checkUser($username, md5($password))){
-				$cookie_name = $username;
+		if(checkUser($normalized_username, md5($normalized_password))){
+				$cookie_name = $normalized_username;
 				//session_register ("cookie_name");
 				$_SESSION ['cookie_name'] = $cookie_name;
-				$enc_pwd = md5($password);
+				$enc_pwd = md5($normalized_password);
 				//session_register ("enc_pwd");
 				$_SESSION ['enc_pwd'] = $enc_pwd;
 
 				//nov14 header("Location: $referer");
 				//echo"<BR>$cookie_name $enc_pwd";
 				setcookie('cookieuser', $cookie_name,  time()+ $session_time);
-				setcookie('cookiepwd', $password,  time()+ $session_time);
+				setcookie('cookiepwd', $normalized_password,  time()+ $session_time);
 		}
 		else{
 			echo $lang_wronglogin;
@@ -259,12 +262,10 @@ echo '
 else{
 		
 	//if submit has not been pressed, check the cookie against the database.
-	if(ereg("/supporter/i", $PHP_SELF) && !isSupporter($cookie_name) && $cookie_name != ''){
-		echo "$lang_notsupporter";
-		exit;
-	}
 
-	if(preg_match("/admin/i", $PHP_SELF) && !isAdministrator($cookie_name) && $cookie_name != ''){
+	if(preg_match("/admin/i", $PHP_SELF) && !isAdministrator($cookie_name) && $cookie_name !=
+
+''){
 		echo "$lang_notadmin";
 		exit;
 	}

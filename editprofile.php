@@ -61,16 +61,21 @@ else
 
 if(isset($submit)){
 	//update the database with the information
+    $normalized_username  = strtolower (trim($_POST['user'],"((?=^)(\s*))|((\s*)(?>$))"));
+    $normalizsd_password =  $_POST['password'];
+	/* not a googd idea
+	 * trim ($_POST['password'],"((?=^)(\s*))|((\s*)(?>$))");
+ 	*/
 
 	$id = getUserID($cookie_name);
 
-	if($password == '' || !isset($password)){
-		$sql = "update $mysql_users_table set user_name='$user', first_name='$first', last_name='$last', office='$office',
+	if($normalized_password == '' || !isset($normalized_password)){
+		$sql = "update $mysql_users_table set user_name='$normalized_username', first_name='$first', last_name='$last', office='$office',
 				theme='$new_theme', yahoo='$yahoo', msn='$msn', icq='$icq', pager_email='$pager', email='$email', phone='$phone', language='$langfile', time_offset='$offset' where id=$id";
 	}
 	else{
-		$pwd = md5($password);
-		$sql = "update $mysql_users_table set user_name='$user', first_name='$first', last_name='$last', office='$office',
+		$pwd = md5($normalized_password);
+		$sql = "update $mysql_users_table set user_name='$normalized_username', first_name='$first', last_name='$last', office='$office',
 				theme='$new_theme', yahoo='$yahoo', msn='$msn', icq='$icq', password='$pwd', pager_email='$pager', email='$email',
 				phone='$phone', language='$langfile', time_offset='$offset' where id=$id";
 	}
@@ -78,7 +83,7 @@ if(isset($submit)){
 	$db->query($sql);
 
 	//if the user name is changed, we need to log that user out
-	if($cookie_name != $user){
+	if($cookie_name != $normalized_username){
 		echo "<meta HTTP-EQUIV=\"refresh\" content=\"0; url=".$site_url."/common/logout.php\">";
 		exit;
 	}

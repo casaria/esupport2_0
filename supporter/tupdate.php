@@ -208,14 +208,14 @@ if (isset($update)) {
         $description = addslashes(stripScripts($description));
 
         $sql = "update $mysql_tickets_table set groupid='$sg', supporter='" . $name['user_name'] . "', supporter_id='$supporter_id',
-				priority='$prio', status='$status', user='$username', email='$user_email', office='$office', phone='$phone',
+				priority='$prio', status='$status', user='$normalized_username', email='$user_email', office='$office', phone='$phone',
 				minutes_labor=$minutes_labor, equipment='$equipment', category='$category',platform='$plform', short='$short', description='$description', update_log='$log2'
                 WHERE id=$id";
     } else {
         $short = addslashes(stripScripts($short));
         $description = addslashes(stripScripts($description));
         $sql = "update $mysql_tickets_table set groupid='$sg', supporter='" . $name['user_name'] . "', supporter_id='$supporter_id',
-				priority='$prio', status='$status', user='$username', email='$user_email', office='$office', phone='$phone',
+				priority='$prio', status='$status', user='$normalized_username', email='$user_email', office='$office', phone='$phone',
 				emailgroup='$emailgroupbox', emailstatuschange='$emailstatuschangebox', emailcc='$emailcc', category='$category',
 				platform='$platform', short='$short', description='$description', minutes_labor=$minutes_labor where id=$id";
     }
@@ -693,7 +693,7 @@ function createTimeTab()
 							</td></tr><tr>
 
 							<td class=back2 align=right>' . $lang_phoneext . ':</td>
-							<td class=back>
+							<td cl-ass=back>
 								<input type=text size=20 name=phone value="' . $info['phone'] . '">
 							</td>';
 

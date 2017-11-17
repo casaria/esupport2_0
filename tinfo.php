@@ -93,12 +93,12 @@ if(isset($send_mail)){
     	if($ticket[supporter] != 'support_pool'){
     
     		//to, from, return, id, message
-    		sendGroupPage( $template_name, $sg, $username, $short, $priority, $id, $subject, $ticket[supporter]);
+    		sendGroupPage( $template_name, $sg, $normalized_username, $short, $priority, $id, $subject, $ticket[supporter]);
     
     	}
     	else // no supporter assigned, send update to all
     	{
-     		sendGroupPage( $template_name, $sg, $username, $short, $priority, $id, $subject);
+     		sendGroupPage( $template_name, $sg, $normalized_username, $short, $priority, $id, $subject);
      	}
     }
   }

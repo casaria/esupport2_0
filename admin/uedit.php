@@ -68,10 +68,15 @@ if(isset($submit)){
 		$user = 0;
 	}
 
-	if($password != ''){
-		$pwd = md5($_POST[password]);
+    $normalized_username  = strtolower (trim($_POST['user_name'],"((?=^)(\s*))|((\s*)(?>$))"));
+    $normalized_password = $_POST['password'];
+    /* seems unnecessary
+     * trim ($_POST['password'],"((?=^)(\s*))|((\s*)(?>$))"); */
+
+	if($normalized_password != ''){
+		$pwd = md5($normalized_password);
 		$sql = "UPDATE $mysql_users_table set first_name='$_POST[first_name]',last_name='$_POST[last_name]',";
-		$sql .= "user_name='$_POST[user_name]',phone='$_POST[phone]',";
+		$sql .= "user_name='$normalized_username',phone='$_POST[phone]',";
 		$sql .= "office='$_POST[office]', email='$_POST[email]',admin='$admin', ";
 		$sql .= "user='$user', supporter='$supporter', password='$pwd', CloudControl='$CloudControl'";
 		 if($enable_pager == 'On')
@@ -80,7 +85,7 @@ if(isset($submit)){
 	}
 	else{
 		$sql = "UPDATE $mysql_users_table set first_name='$_POST[first_name]',last_name='$_POST[last_name]'";
-		$sql .= ",user_name='$_POST[user_name]',phone='$_POST[phone]',";
+		$sql .= ",user_name='$normalized_username',phone='$_POST[phone]',";
 		$sql .= "office='$_POST[office]', email='$_POST[email]',admin='$admin', ";
 		$sql .= "user='$user', supporter='$supporter', CloudControl='$CloudControl'";
 		 if($enable_pager == 'On')
@@ -94,19 +99,19 @@ if(isset($submit)){
 	$row = $db->fetch_array($result);
 	$old_username = $row['user_name'];
 
-	if($old_username != $user_name)
+	if($old_username != $normalized_username)
 	{
 		//usernames do not match, so we need to update all of the user/supporter groups.
 		$sgroup_list = getGroupList("");
 		$ugroup_list = getUGroupList();
 
 		for($i=0; $i<sizeof($sgroup_list); $i++){
-			$query = "UPDATE " . $sgroup_list[$i] . " set user_name='$user_name' where user_name='$old_username'";
+			$query = "UPDATE " . $sgroup_list[$i] . " set user_name='$normalized_username' where user_name='$old_username'";
 			$db->query($query);
 		}
 
 		for($i=0; $i<sizeof($ugroup_list); $i++){
-			$query = "UPDATE " . $ugroup_list[$i] . " set user_name='$user_name' where user_name='$old_username'";
+			$query = "UPDATE " . $ugroup_list[$i] . " set user_name='$normalized_username' where user_name='$old_username'";
 			$db->query($query);
 		}
 	}
@@ -127,12 +132,12 @@ if(isset($submit)){
 		$inp = "sbox" . $j;
 		if($$inp != ''){
 			//echo "sgroup is: $sgroup[$i] <br>";
-			$user_id = getUserID($user_name);
-			$sql = "INSERT IGNORE into sgroup" . $$inp . " VALUES(NULL, '$user_id', '$user_name')";
+			$user_id = getUserID($normalized_username);
+			$sql = "INSERT IGNORE into sgroup" . $$inp . " VALUES(NULL, '$user_id', '$normalized_username')";
 			$db->query($sql);
 		}
 		else{
-			$user_id = getUserID($user_name);
+			$user_id = getUserID($normalized_username);
 			$sql = "DELETE from sgroup" . $sgroup[$i] ." where user_id=$user_id";
 			$db->query($sql);
 		}
@@ -154,12 +159,12 @@ if(isset($submit)){
 	for($j=1; $j<=$num_uboxes; $j++){
 		$inp = "ubox" . $j;
 		if($$inp != ''){
-			$user_id = getUserID($user_name);
-			$sql = "INSERT IGNORE into ugroup" . $$inp . " VALUES(NULL, '$user_id', '$user_name')";
+			$user_id = getUserID($normalized_username);
+			$sql = "INSERT IGNORE into ugroup" . $$inp . " VALUES(NULL, '$user_id', '$normalized_username')";
 			$db->query($sql);
 		}
 		else{
-			$user_id = getUserID($user_name);
+			$user_id = getUserID($normalized_username);
 			$sql = "DELETE from ugroup" . $ugroup[$i] ." where user_id=$user_id";
 			$db->query($sql);
 		}

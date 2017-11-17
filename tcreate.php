@@ -49,14 +49,14 @@ else
 if(isset($create)){
 
 	//if the system is public, set some cookies so user information will be recorded for next time
-	setcookie("cookie_user_name", $username, time()+31536000);
+	setcookie("cookie_user_name", $normalized_username, time()+31536000);
 	setcookie("cookie_email", $email, time()+31536000);
 	setcookie("cookie_office", $office, time()+31536000);
 	setcookie("cookie_phone", $phone, time()+31536000);
 
 	$time = time() + ($time_offset * 3600);
 	
-	if($group == '' || $priority == '' || $username == '' || $description == ''){
+	if($group == '' || $priority == '' || $normalized_username == '' || $description == ''){
 		header("Location: index.php?t=terr");
 	}
 	else{
@@ -88,7 +88,7 @@ if(isset($create)){
 		$billing_status = "0";
 		//enter fixed values for support pool and group
 		$sql = "INSERT into $mysql_tickets_table values(NULL, $time, $sg, $group_id, 'support_pool', 1, '$priority', '$status',
-				'$billing_status','$username', '$email', '$office', '$phone', '$equipment', '$category', '$platform', '$short', '$description', NULL, 0, '$time', '$emailgroup', '$emailstatuschange', '$emailcc',0,0,0)";
+				'$billing_status','$normalized_username', '$email', '$office', '$phone', '$equipment', '$category', '$platform', '$short', '$description', NULL, 0, '$time', '$emailgroup', '$emailstatuschange', '$emailcc',0,0,0)";
 
 
 		$db->query($sql);
@@ -114,7 +114,7 @@ if(isset($create)){
 
 		if($enable_pager == 'On' && (getRank($priority, $mysql_tpriorities_table) <= $pager_rank_low) ){
 	  	$template_name = 'email_group_page';
-			sendGroupPage( $template_name, $sg, $username, $short, $priority, $id);
+			sendGroupPage( $template_name, $sg, $normalized_username, $short, $priority, $id);
 		}
 
 		$groupemail_template_name = 'group_cc_template';

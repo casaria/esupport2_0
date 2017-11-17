@@ -1920,21 +1920,19 @@ if(isset($info)){
 	echo '
 		<tr>
 			<td class=back2 width=90 align=right valign=top> '.$lang_update.': </td>
-			<td class=back valign=bottom> <textarea class="tkt-textarea" name=update_log></textarea>
-
-				<a href="updatelog.php?cookie_name='.$cookie_name.'&id='.$info['id'].'" target="myWindow" onClick="window.open(\'\', \'myWindow\',
-					\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">
-					<img border=0 src="../'.$theme['image_dir'].'log_button.jpg"></a>
-
+			<td class=back valign=bottom> <textarea class="tkt-textarea" name=update_log></textarea><a href="updatelog.php?cookie_name='.$cookie_name.'&id='.$info[id]. '.$theme[image_dir].'log_button.jpg"></a>
 			</td>
 		</tr>';
+		
 }
 		if($enable_tattachments == 'On' && $flag == 'allow'){
 			echo '<tr>
 				<td class=back2 align=right width=90 valign=top>'.$lang_attachment.': </td>';
 
 			echo "<td class=back colspan=2 valign=bottom>";
-			//echo "<input type=hidden name=\"MAX_FILE_SIZE\" value=\"1000000\">";
+			
+			
+			echo "<input type=hidden name=\"MAX_FILE_SIZE\" value=\"1000000\">";
 			echo "<input type=\"file\" name=\"the_file\" size=\"55\">";
 
 			echo '</td></tr>';

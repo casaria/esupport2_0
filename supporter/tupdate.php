@@ -725,7 +725,7 @@ function createTimeTab()
                 $attachments .= "<a target=_blank href=\"../tinfo.php?action=download&id=$attachment[id]\">$attachment[filename] </a> ($attachment[filesize]) - " . date("n/j/Y", $attachment['timestamp']) . "<br>";
             }
         }
-        $uGroupName= getUserGroupName($info['ugroupid']);
+        $uGroupName = getUserGroupName($info['ugroupid']);
         startTable("$lang_ticket #$padded_id  Usergroup:$uGroupName", "left", 100, 2, "extra");
         echo '<tr>
 

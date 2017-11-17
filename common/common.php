@@ -744,7 +744,7 @@ function getUGroupID($name)
 **		Takes an integer as an argument.  Takes the group id and returns the name of that group in the group
 **	table in the database.
 ************************************************************************************************************/
-function getGroupName($id)
+function getUserGroupName($id)
 {
 	global $mysql_ugroups_table, $db;
 

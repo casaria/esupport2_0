@@ -1931,7 +1931,7 @@ if(isset($info)){
 }
 		if($enable_tattachments == 'On' && $flag == 'allow'){
 			echo '<tr>
-				<td class=back2 align=right width=90px valign=top>'.$lang_attachment.': </td>';
+				<td class=back2 align=right width="90" valign=top>'.$lang_attachment.': </td>';
 
 			echo "<td class=back colspan=2 valign=bottom>";
 			//echo "<input type=hidden name=\"MAX_FILE_SIZE\" value=\"1000000\">";

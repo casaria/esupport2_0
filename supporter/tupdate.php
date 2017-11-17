@@ -831,7 +831,7 @@ function createTimeTab()
         echo '<td class=back colspan="2" ></td>';
         echo '<td class=back  colspan="2">';
         echo 'TIME Finished<br>';
-
+/*
 
         echo '<select class="tkt-date" name=woHHend>';
         for ($i = 0; $i < 24; $i++) {
@@ -848,7 +848,7 @@ function createTimeTab()
             if ($today['minutes'] == $i)
                 echo ' selected';
             echo ">" .$today[minutes].'</option></select>';
-            echo '</td></tr><tr>';
+            echo '</td></tr><tr>'; */
 
             echo '<td width=20% class=back2 align=right>';
             echo "Labor Rate modifier</td>";

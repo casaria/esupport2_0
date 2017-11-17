@@ -649,11 +649,11 @@ function createTimeTab()
         endTable();
     }
 
-
+     /* depreciated   */
     function createUserInfo()
     {
         global $info, $lang_userinfo, $lang_email, $lang_username, $lang_phoneext, $lang_office;
-// Get User group name and id associate with use
+// Get User group name and id associate with user
         $groupname = '';
         $ugroups = getUGroupList();
         $user = $info['user'];
@@ -671,6 +671,8 @@ function createTimeTab()
 //for ($i=0; $i<sizeof($grpid_list); $i++){
 //  echo $grpid_list[$i];
 //}
+
+        $groupname= getUserGroupName($info['ugroupid']);
 
         startTable("$lang_userinfo     - Member of group(s): $groupname", "left", 100, 4);
 
@@ -723,8 +725,8 @@ function createTimeTab()
                 $attachments .= "<a target=_blank href=\"../tinfo.php?action=download&id=$attachment[id]\">$attachment[filename] </a> ($attachment[filesize]) - " . date("n/j/Y", $attachment['timestamp']) . "<br>";
             }
         }
-
-        startTable("$lang_ticket #$padded_id", "left", 100, 2, "extra");
+        $uGroupName= getUserGroupName($info['ugroupid']);
+        startTable("$lang_ticket #$padded_id  Usergroup:$uGroupName", "left", 100, 2, "extra");
         echo '<tr>
 
 							<td class=back2 align=right>' . $lang_ticket . ' ' . $lang_status . ':</td>

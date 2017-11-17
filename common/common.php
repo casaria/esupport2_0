@@ -31,7 +31,7 @@
 			**
 			***************************************************************************************/
 
-$version='1.5.1b';
+$version='1.5.1c';
 
 //create the connection to the database.
 
@@ -740,15 +740,15 @@ function getUGroupID($name)
 }
 
 /***********************************************************************************************************
-**	function getGroupName():
+**	function getUserGroupName():
 **		Takes an integer as an argument.  Takes the group id and returns the name of that group in the group
 **	table in the database.
 ************************************************************************************************************/
 function getGroupName($id)
 {
-	global $mysql_sgroups_table, $db;
+	global $mysql_ugroups_table, $db;
 
-	$sql = "select group_name from $mysql_sgroups_table where id=$id";
+	$sql = "select group_name from $mysql_ugroups_table where id=$id";
 	$result = $db->query($sql);
 	$row = $db->fetch_row($result);
 
@@ -756,6 +756,22 @@ function getGroupName($id)
 
 }
 
+/***********************************************************************************************************
+ **	function getGroupName(): Supporter
+ **		Takes an integer as an argument.  Takes the group id and returns the name of that group in the group
+ **	table in the database.
+ ************************************************************************************************************/
+function getGroupName($id)
+{
+    global $mysql_sgroups_table, $db;
+
+    $sql = "select group_name from $mysql_sgroups_table where id=$id";
+    $result = $db->query($sql);
+    $row = $db->fetch_row($result);
+
+    return $row[0];
+
+}
 
 /***********************************************************************************************************
 **	function groupExists():
@@ -1930,7 +1946,7 @@ if(isset($info)){
 				<td class=back2 align=right width=90 valign=top>'.$lang_attachment.': </td>';
 
 			echo "<td class=back colspan=2 valign=bottom>";
-			
+			    
 			
 			echo "<input type=hidden name=\"MAX_FILE_SIZE\" value=\"1000000\">";
 			echo "<input type=\"file\" name=\"the_file\" size=\"55\">";

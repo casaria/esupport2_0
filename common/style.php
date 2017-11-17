@@ -968,11 +968,13 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 .tkt-textarea {
                     width: 200px;
                     height: 60px;
+                    font-size: <?php echo ($theme['font_size']+1); ?>px;
                 }
 
                 .tkt-date{
                     margin: 4px;
                     height: 34px;
+                    font-size: <?php echo ($theme['font_size']+1); ?>px;
                 }
 
             <?php if(eregi("IE", $HTTP_USER_AGENT)){ ?>
@@ -1604,10 +1606,12 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 .tkt-textarea {
                     width: 350px;
                     height: 80px;
+                    font-size: <?php echo ($theme['font_size']+1); ?>px;
                 }
 
                 .tkt-date{
-                    margin: 4px;    
+                    margin: 4px;
+                    ont-size: <?php echo ($theme['font_size']+1); ?>px;
                 }
 
             <?php if(eregi("IE", $HTTP_USER_AGENT)){ ?>

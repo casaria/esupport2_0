@@ -1876,33 +1876,33 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 				<td> 
 					<table cellSpacing=1 cellPadding=5  width="100%" border=0>
 						<tr> 
-							<td class=info width=90px align=left colspan=2><b>'.$lang_ticketinfo.'</b></td>
+							<td class=info width=90 align=left colspan=2><b>'.$lang_ticketinfo.'</b></td>
 						</tr>		
 						<tr>';
 
-                          echo '<td class=back2 width=90px align=right>* '.$lang_category.':</td>
+                          echo '<td class=back2 width=90 align=right>* '.$lang_category.':</td>
 							<td class=back><select id="selectwidth" name=category>';  createCategoryMenu(0);
                           echo '</select></td>';
 
 						echo '</tr><tr>
-                             	<td class=back2 align=right>* '.$lang_platform.':</td>
+                             	<td class=back2 width=90 align=right>* '.$lang_platform.':</td>
 							<td class=back><select id="selectwidth" name=platform>'; createPlatformMenu(0, '');
 
 						echo '</select></TD>   
 						</tr>
 						<tr>
-							<td class=back2 align=right>* '.$lang_equipment.':</td>
+							<td class=back2 width=90 align=right>* '.$lang_equipment.':</td>
 							<td class=back><select id="selectwidth" name=equipment>';  createEquipmentMenu(0,$equipmentgroupid);
 							echo '</select></td>
 						</tr>
 						<tr>
-							<td class=back2 align=right>* '.$lang_shortdesc.':</td>
+							<td class=back2 width=90 align=right>* '.$lang_shortdesc.':</td>
 							<td class=back><textarea class="tkt-textarea" name=short >'.stripslashes($info['short']).'</textarea></td>
 						
 						</tr>
 						<tr>
 
-							<td class=back2 align=right>* '.$lang_desc.':</td>
+							<td class=back2 width=90 align=right>* '.$lang_desc.':</td>
 							<td class=back><textarea class="tkt-textarea" name=description >'.stripslashes($info['description']).'</textarea></td>
 
 
@@ -1913,13 +1913,13 @@ if(isset($info)){
 		echo '
 
 			<tr>
-				<td class=back2 align=right> '.$lang_email.' '. $lang_user.': </td>
+				<td class=back2 width=90 align=right> '.$lang_email.' '. $lang_user.': </td>
 				<td class=back> <textarea class="tkt-textarea" name=email_msg ></textarea> </td>
 			</tr>';
 	}
 	echo '
 		<tr>
-			<td class=back2 align=right valign=top> '.$lang_update.': </td>
+			<td class=back2 width=90 align=right valign=top> '.$lang_update.': </td>
 			<td class=back valign=bottom> <textarea class="tkt-textarea" name=update_log></textarea>
 
 				<a href="updatelog.php?cookie_name='.$cookie_name.'&id='.$info['id'].'" target="myWindow" onClick="window.open(\'\', \'myWindow\',

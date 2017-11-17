@@ -782,7 +782,7 @@ function createTimeTab()
 
         echo '<td class=back >';
 
-        echo 'supporter<BR><select name=supporter1>';
+        echo 'supporter<BR><select class="tkt-date" name=supporter1>';
         createSupporterMenu($sg);
         echo '</select>';
         echo '</td>';

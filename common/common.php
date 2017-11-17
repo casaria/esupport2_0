@@ -1876,11 +1876,11 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 				<td> 
 					<table cellSpacing=1 cellPadding=5  width="100%" border=0>
 						<tr> 
-							<td class=info width="90px" align=left colspan=2><b>'.$lang_ticketinfo.'</b></td>
+							<td class=info width=90px align=left colspan=2><b>'.$lang_ticketinfo.'</b></td>
 						</tr>		
 						<tr>';
 
-                          echo '<td class=back2 width="90px" align=right>* '.$lang_category.':</td>
+                          echo '<td class=back2 width=90px align=right>* '.$lang_category.':</td>
 							<td class=back><select id="selectwidth" name=category>';  createCategoryMenu(0);
                           echo '</select></td>';
 
@@ -1931,7 +1931,7 @@ if(isset($info)){
 }
 		if($enable_tattachments == 'On' && $flag == 'allow'){
 			echo '<tr>
-				<td class=back2 align=right width=90px valign=top>'.$lang_attachment.': </td>';
+				<td class=back2 align=right width=90 valign=top>'.$lang_attachment.': </td>';
 
 			echo "<td class=back colspan=2 valign=bottom>";
 			//echo "<input type=hidden name=\"MAX_FILE_SIZE\" value=\"1000000\">";

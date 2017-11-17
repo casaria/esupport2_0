@@ -1919,7 +1919,7 @@ if(isset($info)){
 	}
 	echo '
 		<tr>
-			<td class=back2 align=right width="auto" ovalign=top> '.$lang_update.': </td>
+			<td class=back2 align=right valign=top> '.$lang_update.': </td>
 			<td class=back valign=bottom> <textarea class="tkt-textarea" name=update_log></textarea>
 
 				<a href="updatelog.php?cookie_name='.$cookie_name.'&id='.$info['id'].'" target="myWindow" onClick="window.open(\'\', \'myWindow\',
@@ -1931,7 +1931,7 @@ if(isset($info)){
 }
 		if($enable_tattachments == 'On' && $flag == 'allow'){
 			echo '<tr>
-				<td class=back2 align=right width="90" valign=top>'.$lang_attachment.': </td>';
+				<td class=back2 align=right width=90px valign=top>'.$lang_attachment.': </td>';
 
 			echo "<td class=back colspan=2 valign=bottom>";
 			//echo "<input type=hidden name=\"MAX_FILE_SIZE\" value=\"1000000\">";

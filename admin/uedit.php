@@ -44,28 +44,67 @@ require_once "../common/common.php";
 
 if(isset($submit)){
 
-	if($level == "admin"){
-		$admin = 1;
-		$supporter=1;
-		$user = 1;
-	}
+    if($level == "superadmin"){
+        $admin = 1;
+        $supporter=1;
+        $user = 1;
+        $super = 1;
+        $accountant = 1;
+        $superadmin = 1;
+    }
+
+    if($level == "accountant"){
+        $admin = 1;
+        $supporter=1;
+        $user = 1;
+        $super = 1;
+        $accountant = 1;
+        $superadmin = 0;
+    }
+
+    if($level == "admin"){
+        $admin = 1;
+        $supporter=1;
+        $user = 1;
+        $super = 0;
+        $accountant = 0;
+        $superadmin = 0;
+    }
 
 	if($level == "supporter"){
 		$admin = 0;
-		$supporter = 1;
+		$supporter=1;
 		$user = 1;
+        $super = 0;
+        $accountant = 0;
+        $superadmin = 0;
 	}
 
-	if($level == "user"){
+	if($level == "supervisor"){
 		$admin = 0;
 		$supporter = 0;
 		$user = 1;
+        $super = 1;
+        $accountant = 0;
+        $superadmin = 0;
+	}
+
+	if($level == "User"){
+		$admin = 0;
+		$supporter = 0;
+		$user = 1;
+		$super = 0;
+		$accountant = 0;
+		$superadmin = 0;
 	}
 
 	if($level == "inactive"){
 		$admin = 0;
 		$supporter = 0;
 		$user = 0;
+        $super = 0;
+        $accountant = 0;
+        $superadmin = 0;
 	}
 
     $normalized_username  = strtolower (trim($_POST['user_name'],"((?=^)(\s*))|((\s*)(?>$))"));
@@ -79,6 +118,7 @@ if(isset($submit)){
 		$sql .= "user_name='$normalized_username',phone='$_POST[phone]',";
 		$sql .= "office='$_POST[office]', email='$_POST[email]',admin='$admin', ";
 		$sql .= "user='$user', supporter='$supporter', password='$pwd', CloudControl='$CloudControl'";
+		$sql .= "supervisor=$super'', accountant='$accountant', superuser='$superadmin'";
 		 if($enable_pager == 'On')
 			 $sql .= ", pager_email='$pager'";
 		 $sql .= " where id=$id";
@@ -88,6 +128,7 @@ if(isset($submit)){
 		$sql .= ",user_name='$normalized_username',phone='$_POST[phone]',";
 		$sql .= "office='$_POST[office]', email='$_POST[email]',admin='$admin', ";
 		$sql .= "user='$user', supporter='$supporter', CloudControl='$CloudControl'";
+        $sql .= "supervisor=$super'', accountant='$accountant', superuser='$superadmin'";
 		 if($enable_pager == 'On')
 			 $sql .= ", pager_email='$_POST[pager]'";
 		 $sql .= " where id=$id";
@@ -236,14 +277,26 @@ startTable("$lang_edit $lang_user", "center", "100%", 2);
 				//to be selected instead of doing browser check hacks that tend to fail
 				$valueset = false;
 				echo "	
-					<option value=admin";
-						if($info['admin'] == 1 && $valueset == false){ 
+					<option value=superadmin";
+						if($info['superuser'] == 1 && $valueset == false){
+							$valueset = true; echo ' selected';}
+						echo ">$lang_superadmin</option>
+					<option value=accountant";
+						if($info['accountant'] == 1 && $valueset == false){
 							$valueset = true; echo ' selected';} 
+						echo ">$lang_accountant</option>
+					<option value=admin";
+						if($info['admin'] == 1 && $valueset == false){
+							$valueset = true; echo ' selected';}
 						echo ">$lang_admin</option>
 					<option value=supporter";
-						if($info['supporter'] == 1 && $valueset == false){ 
-							$valueset = true; echo 'ed';} 
-						echo ">$lang_Supporter</op selecttion>
+						if($info['supporter'] == 1 && $valueset == false){
+							$valueset = true; echo ' selected';}
+						echo ">$lang_Supporter</option>
+					<option value=supervisor";
+						if($info['supervisor'] == 1 && $valueset == false){
+							$valueset = true; echo ' selected';}
+						echo ">$lang_supervisor</option>
 					<option value=user";
 						if($info['user'] == 1 && $valueset == false){
  							$valueset = true; echo ' selected';}

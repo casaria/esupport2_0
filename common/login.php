@@ -50,12 +50,12 @@ $cookieuser = '';
 session_status() === PHP_SESSION_ACTIVE  ? $cookieuser = '' : startSession();
 
 $cookie_name = $_SESSION['cookie_name'];
-$normalized_username  = strtolower (trim($_POST['user'],"((?=^)(\s*))|((\s*)(?>$))"));
-$normalized_password = $_POST['password'];
+$normalized_username  = strtolower (trim($_POST['user_name']);
+$normalized_password = trim($_POST['password']);
 /*  Not a good ides
  *  trim ($_POST['password'],"((?=^)(\s*))|((\s*)(?>$))"); *
  */
-$normalized_referer = strtolower (trim($HTTP_REFERER,"((?=^)(\s*))|((\s*)(?>$))"));
+$normalized_referer = strtolower (trim($HTTP_REFERER));
 //echo "cookie_name = $cookie_name <br>";
 //echo "session ID =" . session_id(). " <br>";
 //if submit has been hit, set the cookie and reload the page immediately so the cookie takes effect.

@@ -166,6 +166,10 @@ if(isset($done)){
 					if($row['supporter'] == 1 && $valueset == false){
 						$valueset = true; echo ' selected';}
 					echo ">$lang_Supporter</option>
+				<option value=supporter";
+					if($row['supervisor'] == 1 && $valueset == false){
+						$valueset = true; echo ' selected';}
+					echo ">$lang_Supdrvior</option>
 				<option value=user";
 					if($row['user'] == 1 && $valueset == false){
 						$valueset = true; echo ' selected';} 

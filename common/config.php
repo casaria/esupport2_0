@@ -44,7 +44,7 @@ $session_time = 72000;
 $session_name = 'EVALCasaria';
 $MailQueuePath = '/var/www/casaria/esupport2_0/MAILQUEUE/';
 $includePath = '/var/www/casaria/esupport2_0/common/';
-
+        
 
 /*********	You shouldn't need to change anything below here.	***********************************/
 /**********************************************************************************************************/

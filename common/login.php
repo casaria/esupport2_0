@@ -50,7 +50,7 @@ $cookieuser = '';
 session_status() === PHP_SESSION_ACTIVE  ? $cookieuser = '' : startSession();
 
 $cookie_name = $_SESSION['cookie_name'];
-$normalized_username  = strtolower (trim($_POST['user_name']);
+$normalized_username  = strtolower (trim($_POST['user_name']));
 $normalized_password = trim($_POST['password']);
 /*  Not a good ides
  *  trim ($_POST['password'],"((?=^)(\s*))|((\s*)(?>$))"); *

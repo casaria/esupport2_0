@@ -120,7 +120,7 @@ if(isset($submit)){
 		$sql .= "user='$user', supporter='$supporter', password='$pwd', CloudControl='$CloudControl'";
 		$sql .= "supervisor='$super', accountant='$accountant', superuser='$superadmin'";
 		 if($enable_pager == 'On')
-			 $sql .= ", pager_email='$pager'";
+			 $sql .= ", pager_email='$_POST[pager]'";
 		 $sql .= " where id=$id";
 	}
 	else{

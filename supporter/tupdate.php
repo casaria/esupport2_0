@@ -232,8 +232,8 @@ if (isset($update)) {
     //if the supporter name is different update the log to reflect the transfer
     if ($old_supporter != $name['user_name']) {
         $msg = "\$lang_transferred " . $name['user_name'];
-        $log = updateLog($id, $msg);
-        $sql = "update $mysql_tickets_table set update_log=$log where id=$id";
+        $log = mysql_escape_string(updateLog($id, $msg));
+        $sql = "update $mysql_tickets_table set update_log='".$log."' where id=$id";
         $db->query($sql);
         $updated = 1;
 

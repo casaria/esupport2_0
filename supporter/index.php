@@ -52,7 +52,7 @@ function winPop(url)
 }
 </script>
         
-<?php  
+<?php
 $language = getLanguage($cookie_name);
 //global $hidemenu;
 

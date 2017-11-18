@@ -117,8 +117,8 @@ if(isset($submit)){
 		$sql = "UPDATE $mysql_users_table set first_name='$_POST[first_name]',last_name='$_POST[last_name]',";
 		$sql .= "user_name='$normalized_username',phone='$_POST[phone]',";
 		$sql .= "office='$_POST[office]', email='$_POST[email]',admin='$admin', ";
-		$sql .= "user='$user', supporter='$supporter', password='$pwd', CloudControl='$CloudControl'";
-		$sql .= "supervisor='$super', accountant='$accountant', superuser='$superadmin'";
+		$sql .= "user='$user', supporter='$supporter', password='$pwd', CloudControl='$CloudControl',";
+		$sql .= " supervisor='$super', accountant='$accountant', superuser='$superadmin'";
 		 if($enable_pager == 'On')
 			 $sql .= ", pager_email='$_POST[pager]'";
 		 $sql .= " where id=$id";
@@ -127,8 +127,8 @@ if(isset($submit)){
 		$sql = "UPDATE $mysql_users_table set first_name='$_POST[first_name]',last_name='$_POST[last_name]'";
 		$sql .= ",user_name='$normalized_username',phone='$_POST[phone]',";
 		$sql .= "office='$_POST[office]', email='$_POST[email]',admin='$admin', ";
-		$sql .= "user='$user', supporter='$supporter', CloudControl='$CloudControl'";
-        $sql .= "supervisor='$super', accountant='$accountant', superuser='$superadmin'";
+		$sql .= "user='$user', supporter='$supporter', CloudControl='$CloudControl',";
+        $sql .= " supervisor='$super', accountant='$accountant', superuser='$superadmin'";
 		 if($enable_pager == 'On')
 			 $sql .= ", pager_email='$_POST[pager]'";
 		 $sql .= " where id=$id";

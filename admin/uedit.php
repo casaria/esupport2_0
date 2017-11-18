@@ -118,7 +118,7 @@ if(isset($submit)){
 		$sql .= "user_name='$normalized_username',phone='$_POST[phone]',";
 		$sql .= "office='$_POST[office]', email='$_POST[email]',admin='$admin', ";
 		$sql .= "user='$user', supporter='$supporter', password='$pwd', CloudControl='$CloudControl',";
-		$sql .= " supervisor='$super', accountant='$accountant', superuser='$superadmin'";
+		$sql .= "   supervisor='$super', accountant='$accountant', superuser='$superadmin'";
 		 if($enable_pager == 'On')
 			 $sql .= ", pager_email='$_POST[pager]'";
 		 $sql .= " where id=$id";

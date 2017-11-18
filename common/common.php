@@ -2197,19 +2197,19 @@ function updateLog($ticket_id, $msg)
 	$log = addslashes($log);
 
 	//add italics for the transferred/status change/priority change message.
-	if(preg_match("/^\$lang_transferred/", $msg) || preg_match("/^\$lang_statuschange/", $msg) || preg_match("/^\$lang_prioritychange/", $msg)){
+	if((preg_match("/^\$lang_transferred/i", $msg)) || (preg_match("/^\$lang_statuschange/i", $msg)) || (preg_match("/^\$lang_prioritychange/i", $msg))) {
+
 		$msg = "<i>" . $msg . "</i>";
 	}
 
-	if($msg != ''){	//only if the message actually contains text do we want to add it to the update log.
-		if(preg_match("/$lang_createdbyweb/i",  $msg))
-			$log .= $time . "$delimiter" . addslashes($msg) . "$delimiter";
-		else
-			$log .= "$time \$lang_by $cookie_name $delimiter" . addslashes($msg) . "$delimiter";
+	if($msg != '') {    //only if the message actually contains text do we want to add it to the update log.
+        if (preg_match("/$lang_createdbyweb/i", $msg)) {
+            $log .= $time . "$delimiter" . addslashes($msg) . "$delimiter";
+        } else {
+        $log .= "$time \$lang_by $cookie_name $delimiter" . addslashes($msg) . "$delimiter";
+        }
 	}
-
 	return $log;
-
 }
 
 /***********************************************************************************************************

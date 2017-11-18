@@ -367,7 +367,7 @@ function checkUser($name, $pwd)
 	//compare $name to what's in the database.
 	//return true if the name is found in the database and the password matches.
 
-	$sql = "select * from " . $mysql_users_table . " where user_name='" . $name . "'";
+	$sql = "select * from " . $mysql_users_table . " where LCASE(user_name)='" . $name . "'";
 	$result = $db->query($sql);
 	$num_rows = $db->num_rows($result);
 

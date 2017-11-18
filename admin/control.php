@@ -69,7 +69,7 @@ $last_active = getLastActiveTime($cookie_name);
 				a_name='$aname', a_street1='$astreet1',a_street2='$astreet2', a_city='$acity', a_state='$astate',
 				a_zip='$azip', users_per='$users_per', announcements_per='$announcements_per', ratings='$ratings', stats='$stats',
 				supporter_site_url='$supporter_url', ticket_interval='$interval', socket='$socket', forum='$forum', 
-				forum_site='$forum_site', smtp='$smtp', sendmail_path='$mail_path', on_off='$on_off', reason='$reason',
+				forum_site='$forum_site', smtp='$smtp', sendmail_path='$mail_path', on_off='$on_off', reason='$reason',    
 				whosonline='$whosonline', default_theme='$theme_default', time_tracking='$time_tracking', kbase='$kbase',
 				pubpriv='$public', default_language='$langfile', tattachments='$tattachments', kattachments='$kattachments',
 				kpurge='$kpurge_level', uattachments='$uattachments',

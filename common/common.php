@@ -3505,8 +3505,8 @@ function DrawTableSupporterTotals($array, $id, $title)
 
 function displayTimeHistory()
 {
-	global $sg, $info, $id, $mysql_users_table, $mysql_settings_table, $db, $lang_timespent, $lang_timespent1, $lang_timespent2;
-  global $lang_timehistory, $lang_month, $timestamp, $g_tkt_uGoup_name, $g_tkt_id_padded;
+	global $sg, $info, $id, $mysql_users_table, $db;
+  global $lang_timehistory, $g_tkt_uGoup_name, $g_tkt_id_padded;
 
 
 	startTable("$lang_timehistory #$g_tkt_id_padded / $g_tkt_uGoup_name", "left", 100, 6, "extra");
@@ -3533,16 +3533,14 @@ function displayTimeHistory()
 
     	echo '</td>';
    	  echo '<td width=10% class=back2>';
-    		  //
           echo "<input class=box type=checkbox";
-				     if($row['aftr_hrs'] != "0"){
+				     if($row['after_hours'] != "0"){
 					   echo " checked";
 			     	}
-			    echo ">after_hrs";
+			    echo ">AFTR_HRS";
     	echo '</td>';
 
    	  echo '<td width=10% class=back>';
-    		  //
           echo "<input class=box type=checkbox";
 				     if($row['engineer_rate'] != "0"){
 					   echo " checked";

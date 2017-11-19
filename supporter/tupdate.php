@@ -778,8 +778,8 @@ function createTimeTab()
 	<BR> <class=back2 align=right>' . $lang_timespent2 . '</td>';
 
         echo '<td class=back align="left" colspan="3">';
-        echo 'Work order / reference<BR>';
-        echo '<textarea  name=reference rows=3 cols=50>' . '</textarea></td>';
+        echo 'Work tasks / reference<BR>';
+        echo '<textarea  name=reference rows=3 cols=44>' . '</textarea></td>';
         echo '</tr><tr>';
 
         echo '<td class=back >';

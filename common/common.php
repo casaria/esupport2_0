@@ -3569,7 +3569,7 @@ function displayTimeHistory()
   echo "After Hours (multiplied):";
   echo '</td> <td class=back  colspan=1>';
   echo 'Straight Time:';
-  echo '</td> <td class=back2  colspan=1>';
+  echo '</td> <td class=back  colspan=1>';
   echo '<B>Grand Total:</B>';
 
   echo '<tr><td width=20% class=back2 align=right><B>Total Time:</B>';
@@ -3591,7 +3591,7 @@ function displayTimeHistory()
 	showFormattedTime($minutes * 60, 0,1);
 	echo '</td>';
 
-	echo'</td> <td class=back2> <B>';
+	echo'</td> <td class=back> <B>';
 	showFormattedTime(($minutes * 60 )+ ($minutes_after_hours  * 60), 0);
 	echo '</B></td>';
 

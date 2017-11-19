@@ -3506,7 +3506,7 @@ function displayTimeHistory()
    	  echo '<td width=10% class=back2>';
     		  //
           echo "<input class=box type=checkbox";
-				     if($row['aftr-hrs'] != "0"){
+				     if($row['aftr_hrs'] != "0"){
 					   echo " checked";
 			     	}
 			    echo ">after_hrs";
@@ -3515,7 +3515,7 @@ function displayTimeHistory()
    	  echo '<td width=10% class=back>';
     		  //
           echo "<input class=box type=checkbox";
-				     if($row['SPECIAL'] != "0"){
+				     if($row['engineer_rate'] != "0"){
 					   echo " checked";
 			     	}
 			    echo ">SPECIAL";

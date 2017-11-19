@@ -3477,7 +3477,7 @@ function DrawTableSupporterTotals($array, $id, $title)
 function displayTimeHistory()
 {
 	global $sg, $info, $id, $mysql_users_table, $mysql_settings_table, $db, $lang_timespent, $lang_timespent1, $lang_timespent2;
-  global $lang_timehistory, $lang_month, $timestamp;
+  global $lang_timehistory, $lang_month, $timestamp, $tkt_padded_id;
 
 
 	startTable("$lang_timehistory", "left", 100, 6);

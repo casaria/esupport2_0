@@ -705,9 +705,9 @@ function createTimeTab()
 //Thanks to SteveW for providing this great function
     function createTicketDetails()
 {
-        global $info, $db, $lang_never, $mysql_attachments_table, $id, $lang_ticket, $lang_opened, $lang_attachments, $lang_lastupdate, $lang_status;
+        global $info, $db, $lang_never, $mysql_attachments_table, $id, $lang_ticket, $lang_opened, $lang_attachments, $lang_lastupdate, $lang_status, $tkt_padded_id;
 
-        $padded_id = str_pad($id, 5, '0', STR_PAD_LEFT);
+        $tkt_padded_id = str_pad($id, 5, '0', STR_PAD_LEFT);
             $info['create_date'] = date("F j, Y, g:i a", $info['create_date']);
         if ($info['lastupdate'] != 0)
             $info['lastupdate'] = date("F j, Y, g:i a", $info['lastupdate']);
@@ -726,7 +726,7 @@ function createTimeTab()
             }
         }
         $uGroupName = getUserGroupName($info['ugroupid']);
-        startTable("$lang_ticket #$padded_id  Usergroup:$uGroupName", "left", 100, 2, "extra");
+        startTable("$lang_ticket #$tkt_padded_id  &nbsp&nbsp Usergroup:$uGroupName", "left", 100, 2, "extra");
         echo '<tr>
 
 							<td class=back2 align=right>' . $lang_ticket . ' ' . $lang_status . ':</td>

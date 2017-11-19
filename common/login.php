@@ -121,6 +121,16 @@ if(isset($login))
 	else{
 		//check the user name and password against the database.
 		if(checkUser($normalized_username, md5($normalized_password))){
+            if(isSupporter($normalized_username))
+
+
+
+
+
+
+
+
+
 				$cookie_name = $normalized_username;
 				//session_register ("cookie_name");
 				$_SESSION ['cookie_name'] = $cookie_name;

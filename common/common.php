@@ -129,6 +129,10 @@ $site_url = eregi_replace("/supporter.*", "", $supporter_site_url);
 $time_format = "h:i A";
 $current_time = gmdate("$time_format");
 
+//Globals
+$g_tkt_id_padded = '';
+$g_tkt_uGoup_name ='';
+
 class SendPreferences {
 
   public $HonorSupporterPrivacy = false;
@@ -835,6 +839,7 @@ function getStatus($id)
 
 
 
+
 /***********************************************************************************************************
 **	function isSupporter():
 **		Takes a string as an argument.  Queries the database and returns true if the supporter flag is set
@@ -856,6 +861,30 @@ function isSupporter($name)
 	}
 	return false;		//just in case.
 }
+
+
+/***********************************************************************************************************
+ **	function isSupporterOrBetter():
+ **		Takes a string as an argument.  Queries the database and returns true if the supporter flag is set
+ **	to 1.  Else, returns false.
+ ************************************************************************************************************/
+function isSupporterOrBetter($name)
+{
+    global $mysql_users_table, $db;
+
+    $sql = "select supporter, admin, accountant, superuser from $mysql_users_table where user_name='$name'";
+    $result = $db->query($sql);
+    $row = $db->fetch_array($result);
+
+    if($row['supporter']||$row['admin']||$row['accountant']||$row['superuser']) {
+        return true;
+    }
+    else{
+        return false;
+    }
+    return false;		//just in case.
+}
+
 
 /***********************************************************************************************************
 **	function isAdministrator():
@@ -3477,10 +3506,10 @@ function DrawTableSupporterTotals($array, $id, $title)
 function displayTimeHistory()
 {
 	global $sg, $info, $id, $mysql_users_table, $mysql_settings_table, $db, $lang_timespent, $lang_timespent1, $lang_timespent2;
-  global $lang_timehistory, $lang_month, $timestamp, $tkt_padded_id;
+  global $lang_timehistory, $lang_month, $timestamp, $g_tkt_uGoup_name, $g_tkt_id_padded;
 
 
-	startTable("$lang_timehistory", "left", 100, 6);
+	startTable("$lang_timehistory #$g_tkt_id_padded / $g_tkt_uGoup_name", "left", 100, 6);
 
 	$sql = "select trk.supporter_id, trk.work_date, trk.reference,  trk.minutes, trk.after_hours, trk.engineer_rate from tickets as tkt, time_track as trk where (tkt.id=trk.ticket_id AND tkt.id=$id)";
 	$resultsupporters = $db->query($sql);

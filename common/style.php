@@ -459,7 +459,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     overflow-y: scroll;
                     max-height:680px;  */
                     margin-top: 0px; /*  width  421  */
-                    height: 1000px;
+                    width: 421px;
+                    height: 1800px;
                     left: 0px;
                     top: 0px;
                     margin-left: 4px; /*half the width*/
@@ -1078,7 +1079,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     padding-left: 5px;
                     margin-right: 2px;
                     margin-left: 2px;
-                    width: 780px;
+                    width: 680px;
                 }
                 #selectwidth {
                 /*    background-color: #afe7f7;   */

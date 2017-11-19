@@ -705,7 +705,7 @@ function createTimeTab()
 //Thanks to SteveW for providing this great function
     function createTicketDetails()
 {
-        global $info, $db, $lang_never, $mysql_attachments_table, $id, $lang_ticket, $lang_opened, $lang_attachments, $lang_lastupdate, $lang_status, $tkt_padded_id;
+        global $info, $db, $lang_never, $mysql_attachments_table, $id, $lang_ticket, $lang_opened, $lang_attachments, $lang_lastupdate, $lang_status, $tkt_padded_id, $uGroupName;
 
         $tkt_padded_id = str_pad($id, 5, '0', STR_PAD_LEFT);
             $info['create_date'] = date("F j, Y, g:i a", $info['create_date']);
@@ -767,14 +767,14 @@ function createTimeTab()
     function createTimeUpdate()
     {
         global $sg, $lang_timespent, $lang_timespent1, $lang_timespent2;
-        global $lang_month, $timestamp;
+        global $lang_month, $timestamp, $tkt_padded_id, $uGroupName, $lang_ticket;
 
 
 // Time spent updates
         startTable("$lang_timespent", "left", 100, 4);
 
         echo ' <tr>
-	<td width="120px" class=back2 align=right>' . $lang_timespent1 . ':
+	<td width="120px" class=back2 align=right>'.$lang_ticket.' #'.$tkt_padded_id.' / '.$uGroupName. ' '.$lang_timespent1.':
 	<BR> <class=back2 align=right>' . $lang_timespent2 . '</td>';
 
         echo '<td class=back align="left" colspan="3">';

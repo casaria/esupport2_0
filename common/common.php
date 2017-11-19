@@ -3509,7 +3509,7 @@ function displayTimeHistory()
   global $lang_timehistory, $lang_month, $timestamp, $g_tkt_uGoup_name, $g_tkt_id_padded;
 
 
-	startTable("$lang_timehistory #$g_tkt_id_padded / $g_tkt_uGoup_name", "left", 100, 6);
+	startTable("$lang_timehistory <b>#$g_tkt_id_padded / $g_tkt_uGoup_name</b>", "left", 100, 6);
 
 	$sql = "select trk.supporter_id, trk.work_date, trk.reference,  trk.minutes, trk.after_hours, trk.engineer_rate from tickets as tkt, time_track as trk where (tkt.id=trk.ticket_id AND tkt.id=$id)";
 	$resultsupporters = $db->query($sql);

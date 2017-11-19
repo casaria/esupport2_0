@@ -726,7 +726,7 @@ function createTimeTab()
             }
         }
         $g_tkt_uGoup_name = getUserGroupName($info['ugroupid']);
-        startTable("$lang_ticket #$g_tkt_id_padded  &nbsp&nbsp Usergroup:$g_tkt_uGoup_name", "left", 100, 2, "extra");
+        startTable("$lang_ticket #$g_tkt_id_padded  &nbsp&nbsp GROUP: $g_tkt_uGoup_name", "left", 100, 2, "extra");
         echo '<tr>
 
 							<td class=back2 align=right>' . $lang_ticket . ' ' . $lang_status . ':</td>

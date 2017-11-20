@@ -64,7 +64,7 @@ if(isset($getstats)){
 			$log = getTicketLogInfo($value);
 			$uGroupName =  getUserGroupName($ticket['ugroupid']);
 			$bStatus = getBillingStatus($ticket['BILLING_STATUS']);
-			$bsIconRef = $bStatus['icon_ref'];
+			$bsIconRef = $bStatus[4]; //+++ assoc
 		
 			startTable("<a href=\"".$supporter_site_url."/index.php?t=tupd&id=".$value."\"><b>$lang_ticket $value:</b></a> $uGroupName / <img height=28 src=\"../$theme[image_dir]$bsIconRef\"> / $ticket[equipment] / $ticket[short] ", "left", 100, 2, "extra");
 

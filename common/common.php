@@ -1253,7 +1253,7 @@ function getBillingStatus($bstatus)
 
     $sql = "select * from $mysql_BillingStatus_table where id='$bstatus'";
     $result = $db->query($sql, $mysql_BillingStatus_table);
-    $row = $db->fetch_assoc($result);
+    $row = $db->fetch_row($result);
     return $row;
 
 }

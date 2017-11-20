@@ -501,7 +501,7 @@ if(isset($search) || isset($s)) {
 						<TR>
 						<TD class=back2 align=right>'.$lang_ticket.' '.$lang_priority.': </td>
 						<td class=back><select name=priority>';
-    							createPriorityMenu(2);
+    							createPriorityMenu(1,NULL ,NULL);
 	echo '
 						</select>
 						</td>

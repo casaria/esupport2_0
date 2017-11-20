@@ -61,10 +61,10 @@ if(isset($getstats)){
 			$ticket_data = getTicketTimeInfo($value);
 			$ticket = getTicketInfo($value);
 			$log = getTicketLogInfo($value);
-
+			$uGroupName =  getUserGroupName($ticket['ugroupid']);
 		
-			startTable("<a href=\"".$supporter_site_url."/index.php?t=tupd&id=".$value."\">$lang_ticket $value:</a>
-			           : $ticket[equipment] / $ticket[short]
+			startTable("<a href=\"".$supporter_site_url."/index.php?t=tupd&id=".$value."\"><b>$lang_ticket $value:</b></a>
+			           : $uGroupName / $ticket[equipment] / $ticket[short]
 			           ", "left", 100, 2);
 				
 				echo "<tr><td class=back2 width=27%>$lang_created:</td><td class=back>". date("F j, Y, g:i a", $create_date)."</td></tr>";

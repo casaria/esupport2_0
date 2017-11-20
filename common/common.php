@@ -1516,7 +1516,7 @@ function createPriorityMenu($flag=0, $maxRank = 999999, $ticket=NULL)
     }
 
     while($row = $db->fetch_row($result)){
-		echo "<option value=\"$row[2]\" ";
+		echo "<option value=\"$row[2]\"";
 		     if (isset($ticket)) {
                  if (($select >0) && ($i == $select)) {
                      echo " selected";}

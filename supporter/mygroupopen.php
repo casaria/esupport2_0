@@ -184,7 +184,7 @@ if($no_groups != 1){
 	endTable();
 	}
 
-endTable();
+
 
 
 
@@ -238,7 +238,7 @@ function listOpenTickets($id, $sort, $groups, $filter)
 			//+++ add all rows with groupid = 1 
 			$sql2 .="1 or groupid=";
 		}
-		
+		$flag = 0;
 		//finish setting up the sql2 statement.
 		for($i=0; $i<sizeof($groups);$i++){
 			//special case:  sgroup1 is in the list means no other groups are present at all.
@@ -428,6 +428,7 @@ function listByPriority($id, $query, $order)
 function listByStatus($id, $query, $order)
 {
 	global $mysql_tstatus_table, $mysql_tickets_table, $db;
+	$flag =0;
 
 	$sql = "select status from $mysql_tstatus_table order by rank $order";
 	$result = $db->query($sql);

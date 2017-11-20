@@ -126,11 +126,6 @@ if(isset($login))
 
 
 
-
-
-
-
-
 				$cookie_name = $normalized_username;
 				//session_register ("cookie_name");
 				$_SESSION ['cookie_name'] = $cookie_name;

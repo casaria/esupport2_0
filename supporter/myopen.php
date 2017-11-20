@@ -157,8 +157,8 @@
 		$summary = listOpenTickets($supporter_id, $s, $filter);
 
 		endTable();
-		endTable();
-    endTable();
+
+
 
 
 	function listOpenTickets($id, $sort, $filter)

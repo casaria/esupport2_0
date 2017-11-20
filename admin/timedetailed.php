@@ -66,7 +66,7 @@ if(isset($getstats)){
 			$bStatus = getBillingStatus($ticket['BILLING_STATUS']);
 			$bsIconRef = $bStatus[4]; //+++ assoc
 		
-			startTable("<a href=\"".$supporter_site_url."/index.php?t=tupd&id=".$value."\"><b>$lang_ticket $value:</b></a> <img height=20 src=\"../$theme[image_dir]$bsIconRef\"> / $uGroupName / $ticket[equipment] / $ticket[short] ", "left", 100, 2, "extra");
+			startTable("<a href=\"".$supporter_site_url."/index.php?t=tupd&id=".$value."\"><b>$lang_ticket $value:</b></a> <img height=30 src=\"../$theme[image_dir]$bsIconRef\"> / $uGroupName / $ticket[equipment] / $ticket[short] ", "left", 100, 2, "extra");
 
 				echo "<tr><td class=back2 width=27%>$lang_created:</td><td class=back>". date("F j, Y, g:i a", $create_date)."</td></tr>";
 				echo "<tr><td class=back2 width=27%>$lang_firstresponse:</td>";

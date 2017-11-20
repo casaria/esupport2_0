@@ -707,9 +707,9 @@ echo'
                     <input type = hidden value ="<?php echo $query;?>" name=query>
                      </td></tr>
 <?php       echo '                 </form>
-                </table>
+                </table>';
 
-			</table>';
+		//	</table>';
 
 }
 

@@ -158,7 +158,7 @@
 
 		endTable();
 		endTable();
-
+    endTable();
 
 
 	function listOpenTickets($id, $sort, $filter)

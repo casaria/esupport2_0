@@ -130,6 +130,7 @@ $lang_keywords = "Keywords";
 $lang_sqlstmt = "SQL Statement";
 $lang_sqlstmt2 = "SELECT * from"." ";
 $lang_sqlstmt3 = " where";
+$lang_sql_example = "example with quotes";
 $lang_addtokb = "Add to Knowledge Base";
 $lang_editkb = "Edit Knowledge Base";
 $lang_editprofile = "Edit Profile";

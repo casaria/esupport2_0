@@ -702,7 +702,7 @@ echo'
 							<input type=text name=input>';
 echo'					</td>
 						</tr>
-						<TD class=back2 align=right>'.$lang_sqlstmt.': </td>
+						<TD class=back2 align=right>'.$lang_sql_example.': </td>
 						<td class=back> `update_log` like \'%glass%\'
 						</td>
 						</tr>

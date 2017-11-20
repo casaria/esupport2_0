@@ -42,6 +42,7 @@ require_once "../common/common.php";
 
 
 
+
 if(isset($getstats)){
 
 	//put the tids into an array

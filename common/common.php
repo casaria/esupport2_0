@@ -1245,6 +1245,21 @@ function getSecondStatus()
 }
 
 /***********************************************************************************************************
+ **	function geBillingStatus():
+ **		Takes one argument.  BILLING_STATUS (index) and returns all columns from BillingStatusTable matching
+ ************************************************************************************************************/
+function getBillingStatus($bstatus)
+{
+    global $mysql_BillingStatus_table, $db;
+
+    $sql = "select * from $mysql_BillingStatus_table where id='$bstatus'";
+    $row = $db->query($sql, $mysql_BillingStatus_table);
+
+    return $row;
+
+}
+
+/***********************************************************************************************************
 **	function getSecondStatus():
 **		Takes no arguments.  Selects the second item in the table that has the lowest rank and returns the
 **	status.

@@ -62,10 +62,11 @@ if(isset($getstats)){
 			$ticket = getTicketInfo($value);
 			$log = getTicketLogInfo($value);
 			$uGroupName =  getUserGroupName($ticket['ugroupid']);
-			$bStatus = '';//getBillingStatus
+			$bStatus = getBillingStatus($ticket['BILLING_STATUS']);
+			$bsIconRef = $bStatus['icon_ref'];
 		
-			startTable("<a href=\"".$supporter_site_url."/index.php?t=tupd&id=".$value."\"><b>$lang_ticket $value:</b></a> $uGroupName / $bStatus / $ticket[equipment] / $ticket[short] ", "left", 100, 2, "extra");
-				
+			startTable("<a href=\"".$supporter_site_url."/index.php?t=tupd&id=".$value."\"><b>$lang_ticket $value:</b></a> $uGroupName / <img height=28 src=\"../$theme[image_dir]$bsIconRef\"> / $ticket[equipment] / $ticket[short] ", "left", 100, 2, "extra");
+
 				echo "<tr><td class=back2 width=27%>$lang_created:</td><td class=back>". date("F j, Y, g:i a", $create_date)."</td></tr>";
 				echo "<tr><td class=back2 width=27%>$lang_firstresponse:</td>";
 

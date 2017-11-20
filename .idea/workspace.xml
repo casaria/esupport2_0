@@ -470,15 +470,15 @@
       <file leaf-file-name="timedetailed.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/timedetailed.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="66" column="38" lean-forward="false" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
+            <state relative-caret-position="221">
+              <caret line="64" column="28" lean-forward="false" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
               <folding>
-                <marker date="1511168074100" expanded="true" signature="8047:8053" ph=" " />
-                <marker date="1511168074100" expanded="true" signature="8053:8059" ph=" " />
-                <marker date="1511168074100" expanded="true" signature="8059:8065" ph=" " />
-                <marker date="1511168074100" expanded="true" signature="8065:8071" ph=" " />
-                <marker date="1511168074100" expanded="true" signature="11071:11130" ph="SELECT creat... ${$mysql_tickets_table}" />
-                <marker date="1511168074100" expanded="true" signature="11316:11369" ph="select updat... ${$mysql_tickets_table}" />
+                <marker date="1511168450612" expanded="true" signature="8073:8079" ph=" " />
+                <marker date="1511168450612" expanded="true" signature="8079:8085" ph=" " />
+                <marker date="1511168450612" expanded="true" signature="8085:8091" ph=" " />
+                <marker date="1511168450612" expanded="true" signature="8091:8097" ph=" " />
+                <marker date="1511168450612" expanded="true" signature="11097:11156" ph="SELECT creat... ${$mysql_tickets_table}" />
+                <marker date="1511168450612" expanded="true" signature="11342:11395" ph="select updat... ${$mysql_tickets_table}" />
               </folding>
             </state>
           </provider>
@@ -1172,14 +1172,7 @@
       <workItem from="1510910304738" duration="40894000" />
       <workItem from="1510990655510" duration="8291000" />
       <workItem from="1511041825522" duration="18767000" />
-      <workItem from="1511120668037" duration="5536000" />
-    </task>
-    <task id="LOCAL-02022" summary="Cleaned up release 1.5.1b">
-      <created>1510876927417</created>
-      <option name="number" value="02022" />
-      <option name="presentableId" value="LOCAL-02022" />
-      <option name="project" value="LOCAL" />
-      <updated>1510876927417</updated>
+      <workItem from="1511120668037" duration="5912000" />
     </task>
     <task id="LOCAL-02023" summary="``">
       <created>1510877088524</created>
@@ -1517,11 +1510,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511167317753</updated>
     </task>
-    <option name="localTasksCounter" value="2071" />
+    <task id="LOCAL-02071" summary="fixed duplicate endtable(); in myopen and mygroupopen">
+      <created>1511168080911</created>
+      <option name="number" value="02071" />
+      <option name="presentableId" value="LOCAL-02071" />
+      <option name="project" value="LOCAL" />
+      <updated>1511168080911</updated>
+    </task>
+    <option name="localTasksCounter" value="2072" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1506345000" />
+    <option name="totallyTimeSpent" value="1506721000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1537,9 +1537,9 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33836478" sideWeight="0.6855631" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26415095" sideWeight="0.4814815" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26415095" sideWeight="0.4814815" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33836478" sideWeight="0.31443688" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31572327" sideWeight="0.51927435" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31572327" sideWeight="0.51927435" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8754717" sideWeight="0.7792895" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29308176" sideWeight="0.553288" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.48223734" order="9" side_tool="false" content_ui="tabs" />
@@ -3018,15 +3018,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/timedetailed.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="66" column="38" lean-forward="false" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
+        <state relative-caret-position="221">
+          <caret line="64" column="28" lean-forward="false" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
           <folding>
-            <marker date="1511168074100" expanded="true" signature="8047:8053" ph=" " />
-            <marker date="1511168074100" expanded="true" signature="8053:8059" ph=" " />
-            <marker date="1511168074100" expanded="true" signature="8059:8065" ph=" " />
-            <marker date="1511168074100" expanded="true" signature="8065:8071" ph=" " />
-            <marker date="1511168074100" expanded="true" signature="11071:11130" ph="SELECT creat... ${$mysql_tickets_table}" />
-            <marker date="1511168074100" expanded="true" signature="11316:11369" ph="select updat... ${$mysql_tickets_table}" />
+            <marker date="1511168450612" expanded="true" signature="8073:8079" ph=" " />
+            <marker date="1511168450612" expanded="true" signature="8079:8085" ph=" " />
+            <marker date="1511168450612" expanded="true" signature="8085:8091" ph=" " />
+            <marker date="1511168450612" expanded="true" signature="8091:8097" ph=" " />
+            <marker date="1511168450612" expanded="true" signature="11097:11156" ph="SELECT creat... ${$mysql_tickets_table}" />
+            <marker date="1511168450612" expanded="true" signature="11342:11395" ph="select updat... ${$mysql_tickets_table}" />
           </folding>
         </state>
       </provider>

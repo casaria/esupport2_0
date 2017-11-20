@@ -458,7 +458,7 @@ if(isset($search) || isset($s)) {
 							<input type=text size=52% name=csvlist value='$summary[tktlist]'>
 		</td></td></tr>";
         endTable();
-        endTable();
+       // endTable();
     }
 } else {
 	echo "<form method=post>";
@@ -707,9 +707,9 @@ echo'
                     <input type = hidden value ="<?php echo $query;?>" name=query>
                      </td></tr>
 <?php       echo '                 </form>
-                </table>';
+                </table>
 
-		//	</table>';
+			</table>';
 
 }
 

@@ -1485,34 +1485,44 @@ function createGroupMenu($flagUpdate=0)
 
 /***********************************************************************************************************
 **	function createPriorityMenu():
-**		Takes no arguments.  Creates the drop down menu for the list of priorities.
+**		Takes two arguments.  Creates the drop down menu for the list of priorities.
+ *   $flag = 0    do not add empty option
+ *   $flag = 1    add empty option
+ *
+ *  OPTIONAL arguments
+ *   $maxRank     limits the max to priority level
+ *   $ticket      selects the priority based on a $ticket result row (associative)
 ************************************************************************************************************/
-function createPriorityMenu($flag=0, $maxRank = 999999)
+function createPriorityMenu($flag=0, $maxRank = 999999, $ticket=NULL)
 {
 
-	global $mysql_tpriorities_table, $info, $db;
-	$i=0;
+	global $mysql_tpriorities_table, $db;
+	$i=0; $select=0;
 
-		$sql = "select priority from $mysql_tpriorities_table where rank < $maxRank order by rank desc";
+		$sql = "select * from $mysql_tpriorities_table where rank < $maxRank order by rank desc";
 
 	$result = $db->query($sql, $mysql_tpriorities_table);
 	$num_rows = $db->num_rows($result);
 
-	if($info['priority'] == '' && $flag != 2){
-		$select = floor($num_rows / 2);
-		$i=0;
-	}
+	//automatically select medium priority if ticket has no priority yet
+    if (isset($ticket)) {
+        if ($ticket['priority'] == '') {
+            $select = floor($num_rows / 2);
+        }
+    }
 
-	if($flag == 1 || $flag == 2)
-        echo "<option></option> ";
+	if($flag == 1) {
+        echo "<option></option> ";  //add empty option
+    }
 
-        while($row = $db->fetch_row($result)){
+    while($row = $db->fetch_row($result)){
 		echo "<option value=\"$row[0]\" ";
-			if($info['priority'] == '' && $i == $select && isset($i))
-				echo "selected";
-			if($info['priority'] == $row[0])
-				echo "selected";
-
+		     if (isset($ticket)) {
+                 if (($select >0) && ($i == $select)) {
+                     echo " selected";}
+                 if ($ticket['priority'] == $row[0])
+                     echo " selected";
+             }
 			echo "> $row[0] </option>";
 			$i++;
 	}

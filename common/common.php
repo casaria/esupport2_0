@@ -1516,14 +1516,14 @@ function createPriorityMenu($flag=0, $maxRank = 999999, $ticket=NULL)
     }
 
     while($row = $db->fetch_row($result)){
-		echo "<option value=\"$row[0]\" ";
+		echo "<option value=\"$row[2]\" ";
 		     if (isset($ticket)) {
                  if (($select >0) && ($i == $select)) {
                      echo " selected";}
-                 if ($ticket['priority'] == $row[0])
+                 if ($ticket['priority'] == $row[2])
                      echo " selected";
              }
-			echo "> $row[0] </option>";
+			echo "> $row[2] </option>";
 			$i++;
 	}
 }

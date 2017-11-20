@@ -699,11 +699,14 @@ echo'
 						<TR>
 						<TD class=back2 align=right>'.$lang_sqlstmt.': </td>
 						<td class=back>'.$lang_sqlstmt2 . $mysql_tickets_table . $lang_sqlstmt3 . '
-							<input type=text name=input>
-						</tr><tr>';
-						    echo "`update_log` like '%glass%'";
+							<input type=text name=input>';
 echo'					</td>
-						</tr>';?>
+						</tr>
+						<TD class=back2 align=right>'.$lang_sqlstmt.': </td>
+						<td class=back> `update_log` like \'%glass%\'
+						</td>
+						</tr>
+						';?>
 
                     <tr><td class=back2 align="right"></td><td class="back" align="left"><input type=submit value='<?php echo $lang_searchforticket;?>' name = search>
                     <input type = hidden value ="<?php echo $query;?>" name=query>

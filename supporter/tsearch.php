@@ -700,7 +700,9 @@ echo'
 						<TD class=back2 align=right>'.$lang_sqlstmt.': </td>
 						<td class=back>'.$lang_sqlstmt2 . $mysql_tickets_table . $lang_sqlstmt3 . '
 							<input type=text name=input>
-						</td>
+						</tr><tr>';
+						    echo "`update_log` like '%glass%'";
+echo'					</td>
 						</tr>';?>
 
                     <tr><td class=back2 align="right"></td><td class="back" align="left"><input type=submit value='<?php echo $lang_searchforticket;?>' name = search>

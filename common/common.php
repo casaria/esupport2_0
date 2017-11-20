@@ -36,7 +36,6 @@ $version='1.5.1c';
 //create the connection to the database.
 
 require_once 'config.php';
-require_once 'style.php';
 
 $pconnect = 0;
 // +++ $userIsSupporter = false;

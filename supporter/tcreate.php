@@ -39,7 +39,9 @@ if($language == '')
 else
 	require_once "../lang/$language.lang.php";
 
-	
+use PostgresDB\PGConnection as Connection;
+
+
 
 if(isset($create)) {
     //after all error checking...insert into the database.
@@ -248,6 +250,13 @@ function createScanpage()
 	</div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 ';
+    try {
+        Connection::get()->connect();
+        echo 'A connection to the PostgreSQL database sever has been established successfully.';
+    } catch (\PDOException $e) {
+        echo $e->getMessage();
+    }
+
 }
 
 function createDylay(){

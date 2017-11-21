@@ -25,12 +25,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/PostgresDB.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/postgres.ini" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/.gitignore" afterPath="$PROJECT_DIR$/common/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/config.php" afterPath="$PROJECT_DIR$/common/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/supporter/tcreate.php" afterPath="$PROJECT_DIR$/supporter/tcreate.php" />
     </list>
     <ignored mask="workspace.xml" />
     <ignored mask="error_log" />
@@ -1344,14 +1340,7 @@
       <workItem from="1511041825522" duration="18767000" />
       <workItem from="1511120668037" duration="15069000" />
       <workItem from="1511219189653" duration="653000" />
-      <workItem from="1511220507310" duration="7393000" />
-    </task>
-    <task id="LOCAL-02041" summary="Corrected normaized passoword , user_name, referrer -&gt; 1.5.1c">
-      <created>1510969443677</created>
-      <option name="number" value="02041" />
-      <option name="presentableId" value="LOCAL-02041" />
-      <option name="project" value="LOCAL" />
-      <updated>1510969443677</updated>
+      <workItem from="1511220507310" duration="7428000" />
     </task>
     <task id="LOCAL-02042" summary="Corrected normaized passoword , user_name, referrer -&gt; 1.5.1c">
       <created>1510977673664</created>
@@ -1689,11 +1678,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511202848389</updated>
     </task>
-    <option name="localTasksCounter" value="2090" />
+    <task id="LOCAL-02090" summary="PGConnection added">
+      <created>1511298552840</created>
+      <option name="number" value="02090" />
+      <option name="presentableId" value="LOCAL-02090" />
+      <option name="project" value="LOCAL" />
+      <updated>1511298552841</updated>
+    </task>
+    <option name="localTasksCounter" value="2091" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1523924000" />
+    <option name="totallyTimeSpent" value="1523959000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1713,19 +1709,19 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33836478" sideWeight="0.6855631" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33836478" sideWeight="0.31443688" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5343915" sideWeight="0.49086162" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31572327" sideWeight="0.51625097" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8754717" sideWeight="0.7792895" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3018868" sideWeight="0.54270595" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31572327" sideWeight="0.48374906" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1632653" sideWeight="0.493007" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.48223734" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.133031" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3018868" sideWeight="0.45729402" order="14" side_tool="false" content_ui="tabs" x="41" y="96" width="1325" height="317" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3018868" sideWeight="0.45729402" order="14" side_tool="false" content_ui="tabs" x="41" y="96" width="1325" height="317" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26415095" sideWeight="0.46258503" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32578617" sideWeight="0.49357522" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31572327" sideWeight="0.51927435" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955974" sideWeight="0.4973545" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32741117" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1832,7 +1828,6 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
-    <MESSAGE value="Version 1.5.1" />
     <MESSAGE value="Version 1.5.1a" />
     <MESSAGE value="tupdate" />
     <MESSAGE value="tupdate RESTORED" />
@@ -1857,7 +1852,8 @@
     <MESSAGE value="timedetails RELEASE 1.5.1e" />
     <MESSAGE value="timedetails RELEASE 1.5.1e&#10;Corrections logo size, footer in  Tsearch" />
     <MESSAGE value="timedetails RELEASE 1.5.1e&#10;Corrections logo size, footer in  Tsearch&#10;createPriorityMenu  corrected and improved" />
-    <option name="LAST_COMMIT_MESSAGE" value="timedetails RELEASE 1.5.1e&#10;Corrections logo size, footer in  Tsearch&#10;createPriorityMenu  corrected and improved" />
+    <MESSAGE value="PGConnection added" />
+    <option name="LAST_COMMIT_MESSAGE" value="PGConnection added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

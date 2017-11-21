@@ -173,7 +173,16 @@ else {
                     createTicketInfo('allow', $ug); ?></P>
             </div>
             <div class="tab-pane fade" id="asset" role="tabpanel" aria-labelledby="asset-tab">
-                <p>Asset</p>
+                <p>Asset Database
+                <?php
+                    try {
+                    Connection::get()->connect();
+                    echo 'A connection to the PostgreSQL database sever has been established successfully.';
+                    } catch (\PDOException $e) {
+                    echo $e->getMessage();
+                    }
+                  ?>
+                </p>
             </div>
         </div>
 

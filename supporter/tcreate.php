@@ -224,6 +224,15 @@ function createScanpage()
     <!-- /      col-lg-6   </div> -->
     </div><!-- /.row -->';
 
+    try {
+        Connection::get()->connect();
+        echo 'A connection to the PostgreSQL database sever has been established successfully.';
+    } catch (\PDOException $e) {
+        echo $e->getMessage();
+    }
+
+
+
     echo '
 <div class="modal" id="livestream_scanner">
 	<div class="modal-dialog">
@@ -250,12 +259,6 @@ function createScanpage()
 	</div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 ';
-    try {
-        Connection::get()->connect();
-        echo 'A connection to the PostgreSQL database sever has been established successfully.';
-    } catch (\PDOException $e) {
-        echo $e->getMessage();
-    }
 
 }
 

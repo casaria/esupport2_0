@@ -42,7 +42,6 @@ else
 use PostgresDB\PGConnection as Connection;
 
 
-
 if(isset($create)) {
     //after all error checking...insert into the database.
 

@@ -106,7 +106,7 @@ startTable("$lang_yourrecent", "center");
 	listRecentTickets($supporter_id, $s);
 
 	endTable();
-endTable();
+//endTable();
 
 
 
@@ -172,6 +172,7 @@ function listByPriority($id, $order)
 {
 	global $mysql_tpriorities_table, $mysql_tickets_table, $mysql_tstatus_table, $db, $limit;
 	$updatelimit = time() - (30*60*60*24);
+	$flag = 0;
 
 	$high_status = getRStatus(getHighestRank($mysql_tstatus_table));
 	$sql = "select priority from $mysql_tpriorities_table order by rank $order limit $limit";

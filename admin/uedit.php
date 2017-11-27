@@ -89,7 +89,7 @@ if(isset($submit)){
         $superadmin = 0;
 	}
 
-	if($level == "User"){
+	if($level == "user"){
 		$admin = 0;
 		$supporter = 0;
 		$user = 1;

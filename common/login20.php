@@ -15,7 +15,7 @@
 
  */
 
-require_once "style.php";
+
 require_once "config.php";
 require_once "$database.class.php";
 require_once "common.php";
@@ -38,13 +38,14 @@ require_once "common.php";
 
 
 <?php
+require_once "style.php";
+
 if($enable_helpdesk == 'Off'){
     printerror($on_off_reason);
     exit;
 }
 ?>
 
-</head>
 <?php
 //set the start time so we can calculate how long it takes to load the page.
 $mtime1 = explode(" ", microtime());

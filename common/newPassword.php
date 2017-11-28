@@ -15,7 +15,7 @@ $starttime = $mtime1[0] + $mtime1[1];
 //require_once "common.php";
 
 ?>
-<HEADER>
+
 <style>
 .intro-2 {
     background: url("https://mdbootstrap.com/img/Photos/Others/img%20(46).jpg")no-repeat center center;
@@ -59,7 +59,8 @@ if($enable_helpdesk == 'Off'){
 
 
 ?>
-
+<html lang="en" class="full-height">
+<HEADER>
 <!--Main Navigation-->
 <header>
 

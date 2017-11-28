@@ -12,7 +12,7 @@
     <style>
 
         .intro-2 {
-            background: url("https://mdbootstrap.com/img/Photos/Others/img%20(46).jpg")no-repeat center center;
+            background: url("https://mdbootstrap.com/img/Photos/Others/img%20(45).jpg")no-repeat center center;
             background-size: cover;
         }
         .top-nav-collapse {

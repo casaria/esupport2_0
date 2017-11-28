@@ -429,6 +429,29 @@ console.log(document.querySelector('meta[name="viewport"]'));
             /*### Smartphones (portrait and landscape)(small)### */
             @media screen and (min-width : 0px) and (max-width : 767px) {
                 /*Base Mobile Layout*/
+                .navbar:not(.top-nav-collapse) {
+                    background-color: #32383e !important;
+                    /*   background: #3f51b5 !important; */
+                }
+            }
+
+            .card {
+                background-color: rgba(73, 60, 78, 0.55);
+            }
+
+            .md-form .prefix {
+                font-size: 1.5rem;
+                margin-top: 1rem;
+            }
+            .md-form label {
+                color: #ffffff;
+            }
+            h6 {
+                line-height: 1.7;
+            }
+
+
+
                 .wrap {
                     /*width: 50%;  */
                     margin: 0 auto;
@@ -1808,26 +1831,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 background: transparent !important;
             }
             @media (max-width: 768px) {
-                .navbar:not(.top-nav-collapse) {
-                    background-color: #32383e !important;
-                    /*   background: #3f51b5 !important; */
-                }
-            }
 
-            .card {
-                background-color: rgba(73, 60, 78, 0.55);
-            }
-
-            .md-form .prefix {
-                font-size: 1.5rem;
-                margin-top: 1rem;
-            }
-            .md-form label {
-                color: #ffffff;
-            }
-            h6 {
-                line-height: 1.7;
-            }
             @media (max-width: 740px) {
                 .full-height,
                 .full-height body,

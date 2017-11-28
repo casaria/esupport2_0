@@ -9,11 +9,48 @@
 $mtime1 = explode(" ", microtime());
 $starttime = $mtime1[0] + $mtime1[1];
 
-require_once "style.php";
+//require_once "style.php";
 require_once "config.php";
 require_once "$database.class.php";
 require_once "common.php";
 
+?>
+
+<style>
+.intro-2 {
+    background: url("https://mdbootstrap.com/img/Photos/Others/img%20(46).jpg")no-repeat center center;
+    background-size: cover;
+}
+.top-nav-collapse {
+    background-color: #ff8a65 !important;
+}
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+}
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #ff8a65 !important;
+    }
+}
+.md-form .prefix {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+h6 {
+    line-height: 1.7;
+}
+@media (max-width: 740px) {
+    .full-height,
+    .full-height body,
+    .full-height header,
+    .full-height header .view {
+        height: 1150px;
+    }
+}
+
+</style>
+
+<?php
 
 if($enable_helpdesk == 'Off'){
     printerror($on_off_reason);

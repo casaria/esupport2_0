@@ -278,8 +278,8 @@ else{
 
 }
 //get some globals about the user
+if ($cookie_name != '') {
  $user_id = getUserId($cookie_name);
- $ugID_list = getUsersGroupIDList($user_id);
-
+ $ugID_list = getUsersGroupIDList($user_id);}
 //this returns back to the page that called it.
 ?>

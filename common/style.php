@@ -547,7 +547,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
 
                                   }*/
-                input[type=text], textarea, select,
+                .cas-tb1, textarea, select,
                 input[type=password] {
                     border: 2px solid #67bcd1;
                     -webkit-box-shadow: #B4B5B5 3px 3px 3px;
@@ -577,7 +577,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     */
                 }
 
-                .cas-tb1 text-2:hover, input[type=password]:hover,
+                .cas-tb1:hover, input[type=password]:hover,
                 textarea:hover, select:hover {
                     /* border: 2px dashed #ff9913; */
                     background-color: #ffaf46;
@@ -1162,7 +1162,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
 
                   }*/
-                .cas-tb1 text-2, textarea, select, input[type=submit],
+                .cas-tb1, .text-2, textarea, select, input[type=submit],
                 input[type=reset] {
                     border: 3px solid #ffad41;
                     -webkit-box-shadow: #B4B5B5 3px 3px 3px;
@@ -1193,7 +1193,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
                 }
 
-                .cas-tb1 text-2:hover, textarea:hover, select:hover {
+                cas-tb1:hover, text-2:hover, textarea:hover, select:hover {
                     border: 4px dashed rebeccapurple;
                     background-color: <?php echo $theme['bg2']; ?>;
                     color: <?php echo $theme['text']; ?>;

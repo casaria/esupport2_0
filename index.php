@@ -160,7 +160,7 @@ border=0>
             														<LI><A href="index.php?t=tclo"><?php echo $lang_myclosed; ?></A></LI>
             														<br><form name=formTicketSearch action="index.php" method=get>
             															<input type=hidden name=t value=tinf>
-            															<?php echo $lang_ticket; ?> # : <inout type=text class=cas-tb1 text-2  name=id size=5>
+            															<?php echo $lang_ticket; ?> # : <inout type=text class="cas-tb1 text-2"  name=id size=5>
             															<a href="#" onClick="document.formTicketSearch.submit();"> <?php echo $lang_go; ?>!</a>
             
             														</form>

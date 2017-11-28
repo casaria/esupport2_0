@@ -8,6 +8,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Material Design Bootstrap Template</title>
 
+
+    <style>
+        * {margin: 0; padding: 0;}
+    </style>
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -18,7 +23,7 @@
     <link href="../mdb/css/style.css" rel="stylesheet">
     <style>
 
-        .intro-2 {
+        .intro-2 {Y
             background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img%20(11).jpg")no-repeat center center;
             background-size: cover;
         }

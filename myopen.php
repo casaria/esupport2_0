@@ -50,7 +50,7 @@ if(!isset($username) && $cookie_name == ''){
 	startTable("Your User Name", "center");
 		echo '<tr><td class=back2><center><br><b>'.$lang_namesearch.':</b><br>';
 		 echo "<form method=post>
-				<input type=text name=username>";
+				<inout type=text class=cas-tb1  name=username>";
 		echo "<br><br>";
 		 echo "<input type=submit name=submit value=$lang_submit>";
 		 echo "</form></center></td></tr>";

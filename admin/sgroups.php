@@ -122,8 +122,8 @@ $num_rows = listsGroups();
 echo '</tr></td>
 		 <tr><td class=back2 colspan=2><form method=post action="'.$admin_site_url.'/control.php?t=users&act=sgrp">
 			'.$lang_addgroup.': 
-			<input type=text name=group></input>
-			'.$lang_rank.': <input type=text name=rank size=2></input><br>
+			<inout type=text class=cas-tb1  name=group></input>
+			'.$lang_rank.': <inout type=text class=cas-tb1  name=rank size=2></input><br>
 			<input type=submit name=alter value="'.$lang_addgroup.'"></form>';
 endTable();
 
@@ -156,8 +156,8 @@ function listsGroups()
 				echo " checked";
 			}
 			echo "></td><td class=back width=\"100%\">";
-			echo "\n<input type=text name=group$i value=\"$row[2]\">";
-			echo "\n&nbsp;&nbsp; $lang_rank: <input type=text size=2 value='$row[1]' name=rank".$i.">\n";
+			echo "\n<inout type=text class=cas-tb1  name=group$i value=\"$row[2]\">";
+			echo "\n&nbsp;&nbsp; $lang_rank: <inout type=text class=cas-tb1  size=2 value='$row[1]' name=rank".$i.">\n";
 			//echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=sgroups.php?t=delete&id=$row[0]>Delete</a>?";
 			echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=control.php?t=users&act=sgrp&rm=delete&id=$row[0]>$lang_delete</a>?";
 			echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";

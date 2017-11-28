@@ -187,7 +187,7 @@ if($break != 'yes'){
 			createKCategoryMenu();
 		echo '</select></td></tr>';
 		echo '<tr><td class=back2 align=right width=27%>
-			'.$lang_question.': </td><td colspan=3 class=back><input type=text size=60 name=question value="' . $info['question'] . '"></input></td></tr>';
+			'.$lang_question.': </td><td colspan=3 class=back><inout type=text class=cas-tb1  size=60 name=question value="' . $info['question'] . '"></input></td></tr>';
 		echo '<tr valign=top><td align=right class=back2 width=27%>
 			'.$lang_answer.': </td><td colspan=3 class=back> <textarea name=answer rows=15 cols=60>'.$info['answer'].'</textarea><br></td></tr>';
 		echo '</td></tr>';

@@ -177,7 +177,7 @@ border=0>
                               echo '<LI><A href="index.php?t=tsrc">'; echo $lang_searchforticket; echo '</A></LI>';
                               echo '<br><form name=formTicketSearch action="index.php" method=get>
                                     <input type=hidden name=t value=tupd>';
-                                    echo $lang_ticket; echo ' # : <input type=text name=id size=5>
+                                    echo $lang_ticket; echo ' # : <inout type=text class=cas-tb1  name=id size=5>
                                     <a href="#" onClick="javascript:document.formTicketSearch.submit();">';  echo $lang_go; echo'!</a>';
                               echo'      
                                   </form>

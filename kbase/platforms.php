@@ -74,8 +74,8 @@ startTable("$lang_platform $lang_options", "center");
 
 echo '<tr><td class=back2>
 	'.$lang_addplatform.': 
-	<input type=text name=platform></input>
-	'.$lang_rank.': <input type=text name=rank size=2></input><br>
+	<inout type=text class=cas-tb1  name=platform></input>
+	'.$lang_rank.': <inout type=text class=cas-tb1  name=rank size=2></input><br>
 	<input type=submit name=m value="'.$lang_addplatform.'"></input>
 	</form></td></tr>';
 

@@ -80,9 +80,9 @@ startTable("$lang_ticket $lang_priorities", "center", "100%", 1);
 	echo '</tr></td>
 		 <tr><td class=back2>
 		'.$lang_addpriority.': 
-		<input type=text name=priority></input><br>
-		'.$lang_responsetime.': <input type=text name=response size=2></input> '.$lang_hours.'<br>
-		'.$lang_rank.': <input type=text name=rank size=2></input><br>
+		<inout type=text class=cas-tb1  name=priority></input><br>
+		'.$lang_responsetime.': <inout type=text class=cas-tb1  name=response size=2></input> '.$lang_hours.'<br>
+		'.$lang_rank.': <inout type=text class=cas-tb1  name=rank size=2></input><br>
 		<input type=submit name=submit value="'.$lang_addpriority.'"></input>';
 
 endTable();
@@ -106,9 +106,9 @@ function listtPriorities()
 		while($row = $db->fetch_array($result)){
 			echo "<input type=hidden name=id$i value='".$row[id]."'></input>";
 			echo "<tr><td class=back>";
-			echo "<input type=text name=priority$i value=\"".$row['priority']."\">";
-			echo "&nbsp;&nbsp; $lang_responsetime: <input type=text size=2 value='".toHours($row['response_time'])."' name=response".$i."> $lang_hours ";
-			echo "&nbsp;&nbsp; $lang_rank: <input type=text size=2 value='$row[1]' name=rank".$i.">";
+			echo "<inout type=text class=cas-tb1  name=priority$i value=\"".$row['priority']."\">";
+			echo "&nbsp;&nbsp; $lang_responsetime: <inout type=text class=cas-tb1  size=2 value='".toHours($row['response_time'])."' name=response".$i."> $lang_hours ";
+			echo "&nbsp;&nbsp; $lang_rank: <inout type=text class=cas-tb1  size=2 value='$row[1]' name=rank".$i.">";
 			echo "&nbsp;&nbsp;<a href=control.php?t=topts&act=tpri&rm=delete&id=$row[0]>$lang_delete</a>?";
 			echo "</td>";
 			echo "</tr>";

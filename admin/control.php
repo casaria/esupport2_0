@@ -167,43 +167,43 @@ echo "<tr><td width=60% height=40 class=cat> $lang_setting: </td> <td class=cat>
 		//helpdesk name
 		echo "<tr>";
 			echo "<td width=60% class=back2>$lang_hdname: </td>";
-			echo "<td class=back2> <input type=text size=40 name=helpdesk value='$helpdesk_name'></td>";
+			echo "<td class=back2> <inout type=text class=cas-tb1  size=40 name=helpdesk value='$helpdesk_name'></td>";
 		echo "</tr>";
 
 		//address_name
 		echo "<tr>";
 			echo "<td width=60% class=back2>$lang_aname: </td>";
-			echo "<td class=back2> <input type=text size=40 name=aname value='$address_name'></td>";
+			echo "<td class=back2> <inout type=text class=cas-tb1  size=40 name=aname value='$address_name'></td>";
 		echo "</tr>";
 		
 		//street1
 		echo "<tr>";
 			echo "<td width=60% class=back2>$lang_street1: </td>";
-			echo "<td class=back2> <input type=text size=40 name=astreet1 value='$address_street1'></td>";
+			echo "<td class=back2> <inout type=text class=cas-tb1  size=40 name=astreet1 value='$address_street1'></td>";
 		echo "</tr>";
 		
 		//street2
 		echo "<tr>";
 			echo "<td width=60% class=back2>$lang_street2: </td>";
-			echo "<td class=back2> <input type=text size=40 name=astreet2 value='$address_street2'></td>";
+			echo "<td class=back2> <inout type=text class=cas-tb1  size=40 name=astreet2 value='$address_street2'></td>";
 		echo "</tr>";
 		
 		//city
 		echo "<tr>";
 			echo "<td width=60% class=back2>$lang_city: </td>";
-			echo "<td class=back2> <input type=text size=40 name=acity value='$address_city'></td>";
+			echo "<td class=back2> <inout type=text class=cas-tb1  size=40 name=acity value='$address_city'></td>";
 		echo "</tr>";
 		
 		//state
 		echo "<tr>";
 			echo "<td width=60% class=back2>$lang_state: </td>";
-			echo "<td class=back2> <input type=text size=40 name=astate value='$address_state'></td>";
+			echo "<td class=back2> <inout type=text class=cas-tb1  size=40 name=astate value='$address_state'></td>";
 		echo "</tr>";
 		
 		//zip
 		echo "<tr>";
 			echo "<td width=60% class=back2>$lang_zip: </td>";
-			echo "<td class=back2> <input type=text size=40 name=azip value='$address_zip'></td>";
+			echo "<td class=back2> <inout type=text class=cas-tb1  size=40 name=azip value='$address_zip'></td>";
 		echo "</tr>";
 				
 		
@@ -211,7 +211,7 @@ echo "<tr><td width=60% height=40 class=cat> $lang_setting: </td> <td class=cat>
 		//full site url
 		echo "<tr>";
 			echo "<td width=60% class=back2>$lang_supporterurl: </td>";
-			echo "<td class=back2> <input type=text size=40 name=supporter_url ";
+			echo "<td class=back2> <inout type=text class=cas-tb1  size=40 name=supporter_url ";
 				if(!isset($supporter_site_url))
 					echo "value=\"http://\"></td>";
 				else
@@ -221,7 +221,7 @@ echo "<tr><td width=60% height=40 class=cat> $lang_setting: </td> <td class=cat>
 		//full admin site url
 		echo "<tr>";
 			echo "<td width=60% class=back2>$lang_adminurl: </td>";
-			echo "<td class=back2> <input type=text size=40 name=admin_url ";
+			echo "<td class=back2> <inout type=text class=cas-tb1  size=40 name=admin_url ";
 				if(!isset($admin_site_url))
 					echo "value=\"http://\"></td>";
 				else
@@ -231,7 +231,7 @@ echo "<tr><td width=60% height=40 class=cat> $lang_setting: </td> <td class=cat>
 		//administrator email
 		echo "<tr>";
 			echo "<td width=60% class=back2>$lang_adminemail: </td>";
-			echo "<td class=back2> <input type=text name=email value='$admin_email'></td>";
+			echo "<td class=back2> <inout type=text class=cas-tb1  name=email value='$admin_email'></td>";
 		echo "</tr>";
 
 		//helpdesk public/private
@@ -291,7 +291,7 @@ echo "<tr><td width=60% height=40 class=cat> $lang_setting: </td> <td class=cat>
 			echo "<tr>";
 				echo "<td width=60% class=back2>$lang_forumurl: </td>";
 				echo "<td class=back2>
-						<input type=text size=40 name=forum_site value=".$forum_site_url.">
+						<inout type=text class=cas-tb1  size=40 name=forum_site value=".$forum_site_url.">
 					</select></td>";
 			echo "</tr>";
 
@@ -328,7 +328,7 @@ echo "<tr><td width=60% height=40 class=cat> $lang_setting: </td> <td class=cat>
 		echo "<tr>";
 			echo "<td width=60% class=back2>$lang_ticketinterval: </td>";
 			echo "<td class=back2>
-					<input type=text size=3 name=interval value=".$rating_interval.">
+					<inout type=text class=cas-tb1  size=3 name=interval value=".$rating_interval.">
 				</select></td>";
 		echo "</tr>";
 		*/
@@ -374,7 +374,7 @@ echo "<tr><td width=60% height=40 class=cat> $lang_setting: </td> <td class=cat>
 			echo "<tr>";
 				echo "<td width=60% class=back2>$lang_sendmailpath: &nbsp;&nbsp;&nbsp;<font size=1>$lang_sendmailex</font></td>";
 				echo "<td class=back2>
-						<input type=text size=40 name=mail_path value=".$sendmail_path.">
+						<inout type=text class=cas-tb1  size=40 name=mail_path value=".$sendmail_path.">
 					</select></td>";
 			echo "</tr>";
 
@@ -691,7 +691,7 @@ if($t == 'templates'){
 					  <TD class=info align=left><b> $lang_templates </b></TD>";
 						echo "<form name=temp2 action=control.php?t=templates method=post>";
 						echo "<tr><td colspan=1 class=cat>";
-						echo "<input type=text size=30 maxlength=60 name=tpl> &nbsp;&nbsp;&nbsp;";
+						echo "<inout type=text class=cas-tb1  size=30 maxlength=60 name=tpl> &nbsp;&nbsp;&nbsp;";
 						echo "<input type=submit name=create_tpl value=\"$lang_newtpl\">";
 						echo "</td></tr>";
 						echo "</form>";

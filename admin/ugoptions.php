@@ -78,7 +78,7 @@ echo ' </b>'.$lang_group2.'.<br><br>
 
 	echo "<tr><td class=back2>";
         echo "$lang_addusertogroup: ";
-	echo "<input type=text name=groupy>&nbsp;&nbsp;&nbsp;&nbsp; <font size=1>($lang_username)</font>";
+	echo "<inout type=text class=cas-tb1  name=groupy>&nbsp;&nbsp;&nbsp;&nbsp; <font size=1>($lang_username)</font>";
 	echo "<input type=hidden name=table value=$group_table><br>";
         echo "<input type=hidden name=g value=$g><br>";
 	echo "<input type=submit name=add value=\"$lang_addusertogroup\"><br><br>";

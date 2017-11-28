@@ -577,7 +577,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     */
                 }
 
-                input[type=text]:hover, input[type=password]:hover,
+                .cas-tb1:hover, input[type=password]:hover,
                 textarea:hover, select:hover {
                     /* border: 2px dashed #ff9913; */
                     background-color: #ffaf46;
@@ -1162,7 +1162,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
 
                   }*/
-                input[type=text], textarea, select, input[type=submit],
+                .cas-tb1, textarea, select, input[type=submit],
                 input[type=reset] {
                     border: 3px solid #ffad41;
                     -webkit-box-shadow: #B4B5B5 3px 3px 3px;
@@ -1193,7 +1193,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
                 }
 
-                input[type=text]:hover, textarea:hover, select:hover {
+                .cas-tb1:hover, textarea:hover, select:hover {
                     border: 4px dashed rebeccapurple;
                     background-color: <?php echo $theme['bg2']; ?>;
                     color: <?php echo $theme['text']; ?>;
@@ -1858,12 +1858,12 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
             }
 
-            .md-form input[type=text]:focus:not([readonly]),
+            .md-form .cas-tb1:focus:not([readonly]),
             .md-form input[type=password]:focus:not([readonly]) {
                 border-bottom: 1px solid #8EDEF8;
                 box-shadow: 0 1px 0 0 #8EDEF8;
             }
-            .md-form input[type=text]:focus:not([readonly])+label,
+            .md-form .cas-tb1:focus:not([readonly])+label,
             .md-form input[type=password]:focus:not([readonly])+label {
                 color: #8EDEF8;
             }

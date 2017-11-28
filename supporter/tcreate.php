@@ -515,7 +515,7 @@ echo '
     <tr>
      <td class="back2" align="left" width="180px">'.$lang_emailcc.': </td>
      <td class="back">
-			<input type=text size=55 name=emailcc value="'.'">			
+			<inout type=text class=cas-tb1  size=55 name=emailcc value="'.'">			
 	</td>
     </tr>';
 endTable();
@@ -588,19 +588,19 @@ function createUserInfo()
                  </tr><tr>   
 				<td class=back2 align=right>".$lang_email.": </td>
 				<td class=back align=left>
-					<input type=text size=24 name=email value=\"$row[email]\">
+					<inout type=text class=cas-tb1  size=24 name=email value=\"$row[email]\">
 				</td>
 				
 				</tr>
 				<tr>
 				<td class=back2 align=right>".$lang_office.":</td>
 				<td class=back>
-					<input type=text size=24 name=office value=\"$row[office]\">
+					<inout type=text class=cas-tb1  size=24 name=office value=\"$row[office]\">
 				</td>
 				</tr><tr> 
 				<td class=back2 align=right>".$lang_phoneext.":</td>
 				<td class=back>
-					<input type=text size=24 name=phone value=\"$row[phone]\">
+					<inout type=text class=cas-tb1  size=24 name=phone value=\"$row[phone]\">
 				</td>";
 
 	endTable();

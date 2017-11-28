@@ -83,7 +83,7 @@ else{
 
 		echo "<tr><td class=cat> <br>$lang_describeproblem<br><br>";
 		echo "</td></tr>";
-		echo "<tr><td class=back2><b>$lang_emailaddy: </b><input type=text name=user_email>";
+		echo "<tr><td class=back2><b>$lang_emailaddy: </b><inout type=text class=cas-tb1  name=user_email>";
 		echo "<font size=1> ( $lang_emailaddy2 )</font></td></tr>";
 
 		echo "<tr><td class=back2><br><b>$lang_briefdesc:</b></td></tr>";

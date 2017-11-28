@@ -45,7 +45,7 @@ require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
 $login_logo = "../images/casariadefault/small-header-brown.gif";
 
-//$cookieuser = '';
+$cookieuser = '';
 //common.php
 session_status() === PHP_SESSION_ACTIVE  ? $cookieuser == '' : startSession();
 
@@ -148,17 +148,17 @@ $normalized_referer = strtolower (trim($HTTP_REFERER));
 }
 
 //check the cookie first.
-if(!isSet($_SESSION ['cookie_name'])){
-	if(eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
-		$sup = 1;
-	else
-		$sup = 0;
+if(!isSet($_SESSION ['cookie_name'])) {
+    if (eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
+        $sup = 1;
+    else
+        $sup = 0;
 
-	require_once $includePath."style.php";
-if (isset($_COOKIE['supporter_usercookie'])) 
-   $cookie_name = $_COOKIE['supporter_usercookie'];
-if (isset($_COOKIE['supporter_pwdcookie'])) 
-   $cookiepwd = $_COOKIE['supporter_pwdcookie'];
+    require_once $includePath . "style.php";
+    if (isset($_COOKIE['supporter_usercookie']))
+        $cookie_name = $_COOKIE['supporter_usercookie'];
+    if (isset($_COOKIE['supporter_pwdcookie']))
+        $cookiepwd = $_COOKIE['supporter_pwdcookie'];
 
 
 echo 
@@ -265,7 +265,7 @@ echo '
         exit;
 
 }
-else{
+else{  //Cookie was set
 		
 	//if submit has not been pressed, check the cookie against the database.
 

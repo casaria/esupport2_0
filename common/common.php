@@ -31,7 +31,7 @@
 			**
 			***************************************************************************************/
 
-$version='1.5.1c';
+$version='1.5.1d';
 
 //create the connection to the database.
 
@@ -269,6 +269,18 @@ function isEmpty($table)
 	else{
 		return true;
 	}
+}
+
+
+/***********************************************************************************************************
+ **	function randomPassword():
+ **		Takes two arguments, both strings.  If strings are equal to each other, return boolean true.  Else,
+ **	return boolean false.
+ ************************************************************************************************************/
+function randomPassword( $length = 8 ) {
+    $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-=+;:,.?";
+    $password = substr( str_shuffle( $chars ), 0, $length );
+    return $password;
 }
 
 /***********************************************************************************************************

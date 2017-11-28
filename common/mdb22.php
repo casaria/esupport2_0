@@ -2,33 +2,44 @@
 <html lang="en" class="full-height">
 
 <head>
+    <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
+    <title>Material Design Bootstrap Template</title>
 
-
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../css/mdb.min.css" rel="stylesheet">
 
     <style>
 
         .intro-2 {
-            background: url("https://mdbootstrap.com/img/Photos/Others/img%20(45).jpg")no-repeat center center;
+            background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img%20(11).jpg")no-repeat center center;
             background-size: cover;
         }
         .top-nav-collapse {
-            background-color: #ff8a65 !important;
+            background-color: #3f51b5 !important;
         }
         .navbar:not(.top-nav-collapse) {
             background: transparent !important;
         }
         @media (max-width: 768px) {
             .navbar:not(.top-nav-collapse) {
-                background: #ff8a65 !important;
+                background: #3f51b5 !important;
             }
         }
+
+        .card {
+            background-color: rgba(229, 228, 255, 0.2);
+        }
+
         .md-form .prefix {
             font-size: 1.5rem;
             margin-top: 1rem;
+        }
+        .md-form label {
+            color: #ffffff;
         }
         h6 {
             line-height: 1.7;
@@ -38,30 +49,43 @@
             .full-height body,
             .full-height header,
             .full-height header .view {
-                height: 1150px;
+                height: 750px;
             }
         }
+        @media (min-width: 741px) and (max-height: 638px) {
+            .full-height,
+            .full-height body,
+            .full-height header,
+            .full-height header .view {
+                height: 750px;
+            }
+        }
+
+        .card {
+            margin-top: 30px;
+            /*margin-bottom: -45px;*/
+
+        }
+
+        .md-form input[type=text]:focus:not([readonly]),
+        .md-form input[type=password]:focus:not([readonly]) {
+            border-bottom: 1px solid #8EDEF8;
+            box-shadow: 0 1px 0 0 #8EDEF8;
+        }
+        .md-form input[type=text]:focus:not([readonly])+label,
+        .md-form input[type=password]:focus:not([readonly])+label {
+            color: #8EDEF8;
+        }
+
+        .md-form .form-control {
+            color: #fff;
+        }
+
     </style>
-
-
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link href="../mdb/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="../mdb/css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="../mdb/css/style.css" rel="stylesheet">
-
-
 
 </head>
 
 <body>
-
-<!-- Start your project here-->
-
 
 
 <!--Main Navigation-->
@@ -93,64 +117,53 @@
     </nav>
 
     <!--Intro Section-->
-    <section class="view intro-2 hm-gradient">
-        <div class="full-bg-img">
-            <div class="container flex-center">
-                <div class="d-flex align-items-center content-height">
-                    <div class="row flex-center pt-5 mt-3">
-                        <div class="col-md-6 text-center text-md-left mb-5">
-                            <div class="white-text">
-                                <h1 class="h1-responsive font-bold wow fadeInLeft" data-wow-delay="0.3s">Sign up right now! </h1>
-                                <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
-                                <h6 class="wow fadeInLeft" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea dolor molestiae, quisquam iste, maiores. Nulla.</h6>
-                                <br>
-                                <a class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.3s">Learn more</a>
-                            </div>
-                        </div>
+    <section class="view intro-2 hm-stylish-strong">
+        <div class="full-bg-img flex-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-lg-5">
 
-                        <div class="col-md-6 col-xl-5 offset-xl-1">
-                            <!--Form-->
-                            <div class="card wow fadeInRight" data-wow-delay="0.3s">
-                                <div class="card-body">
-                                    <!--Header-->
-                                    <div class="text-center">
-                                        <h3 class="white-text"><i class="fa fa-user white-text"></i> Register:</h3>
-                                        <hr class="hr-light">
-                                    </div>
+                        <!--Form with header-->
+                        <div class="card wow fadeIn" data-wow-delay="0.3s">
+                            <div class="card-body">
 
-                                    <!--Body-->
-                                    <div class="md-form">
-                                        <i class="fa fa-user prefix white-text"></i>
-                                        <input type="text" id="form3" class="form-control">
-                                        <label for="form3">Your name</label>
-                                    </div>
-                                    <div class="md-form">
-                                        <i class="fa fa-envelope prefix white-text"></i>
-                                        <input type="text" id="form2" class="form-control">
-                                        <label for="form2">Your email</label>
-                                    </div>
-
-                                    <div class="md-form">
-                                        <i class="fa fa-lock prefix white-text"></i>
-                                        <input type="password" id="form4" class="form-control">
-                                        <label for="form4">Your password</label>
-                                    </div>
-
-                                    <div class="text-center">
-                                        <button class="btn btn-indigo">Sign up</button>
-                                        <hr class="hr-light mb-3 mt-4">
-
-                                        <div class="inline-ul text-center d-flex justify-content-center">
-                                            <a class="icons-sm tw-ic"><i class="fa fa-twitter white-text"></i></a>
-                                            <a class="icons-sm li-ic"><i class="fa fa-linkedin white-text"> </i></a>
-                                            <a class="icons-sm ins-ic"><i class="fa fa-instagram white-text"> </i></a>
-                                        </div>
-                                    </div>
-
+                                <!--Header-->
+                                <div class="form-header purple-gradient">
+                                    <h3><i class="fa fa-user mt-2 mb-2"></i> Log in:</h3>
                                 </div>
+
+                                <!--Body-->
+                                <div class="md-form">
+                                    <i class="fa fa-user prefix white-text"></i>
+                                    <input type="text" id="orangeForm-name" class="form-control">
+                                    <label for="orangeForm-name">Your name</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fa fa-envelope prefix white-text"></i>
+                                    <input type="text" id="orangeForm-email" class="form-control">
+                                    <label for="orangeForm-email">Your email</label>
+                                </div>
+
+                                <div class="md-form">
+                                    <i class="fa fa-lock prefix white-text"></i>
+                                    <input type="password" id="orangeForm-pass" class="form-control">
+                                    <label for="orangeForm-pass">Your password</label>
+                                </div>
+
+                                <div class="text-center">
+                                    <button class="btn purple-gradient btn-lg">Sign up</button>
+                                    <hr>
+                                    <div class="inline-ul text-center d-flex justify-content-center">
+                                        <a class="icons-sm tw-ic"><i class="fa fa-twitter white-text"></i></a>
+                                        <a class="icons-sm li-ic"><i class="fa fa-linkedin white-text"> </i></a>
+                                        <a class="icons-sm ins-ic"><i class="fa fa-instagram white-text"> </i></a>
+                                    </div>
+                                </div>
+
                             </div>
-                            <!--/.Form-->
                         </div>
+                        <!--/Form with header-->
+
                     </div>
                 </div>
             </div>
@@ -159,17 +172,12 @@
 
 </header>
 <!--Main Navigation-->
-<!-- /Start your project here-->
+
 
 <!-- SCRIPTS -->
-<!-- JQuery -->
-<script type="text/javascript" src="../mdb/js/jquery-3.2.1.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="../mdb/js/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="../mdb/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
 <script type="text/javascript" src="../mdb/js/mdb.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
-
 </html>

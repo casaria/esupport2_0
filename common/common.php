@@ -1930,7 +1930,7 @@ function displayTicket($result)
     echo "<tr><td class=back><br>";
     startTable("$lang_selecttickets", "center", "80%");
     echo "<tr><td class=cat>$lang_selectticketsexp</td></tr>";
-    echo "<tr><td class=back2><br>$lang_ticket $lang_ids: <inout type=text class=cas-tb1  name=tids size=60% value=$csv_string><br><br></td></tr>";
+    echo "<tr><td class=back2><br>$lang_ticket $lang_ids: <inout type=text class=cas-tb1 text-2  name=tids size=60% value=$csv_string><br><br></td></tr>";
     endTable();
     echo "<center><input type=submit value=\"$lang_getstats\" name=\"getstats\"> ";
     echo "<input type=submit value=\"$lang_printstats\" name=\"hidemenu\"></center><br>";
@@ -2636,8 +2636,8 @@ function showFormattedTime($seconds, $daysEnabled = FALSE, $DontRound15min = FAL
                 while($row = $db->fetch_row($result)){
                     echo "<input type=hidden name=id$i value='$row[0]'></input>";
                     echo "<tr><td class=back>";
-                    echo "<inout type=text class=cas-tb1  name=platform$i value=\"$row[2]\">";
-                    echo "&nbsp;&nbsp; $lang_rank: <inout type=text class=cas-tb1  size=2 value='$row[1]' name=rank".$i.">";
+                    echo "<inout type=text class=cas-tb1 text-2  name=platform$i value=\"$row[2]\">";
+                    echo "&nbsp;&nbsp; $lang_rank: <inout type=text class=cas-tb1 text-2  size=2 value='$row[1]' name=rank".$i.">";
 
                     if(!eregi("kbase", $HTTP_REFERER))
                         echo "&nbsp;&nbsp;<a href=control.php?t=topts&act=tpla&rm=delete&id=$row[0]>$lang_delete</a>?";
@@ -2681,8 +2681,8 @@ function showFormattedTime($seconds, $daysEnabled = FALSE, $DontRound15min = FAL
                 while($row = $db->fetch_array($result)){
                     echo "<input type=hidden name=id$i value='".$row['id']."'></input>";
                     echo "<tr><td class=back>";
-                    echo "<inout type=text class=cas-tb1  name=category$i value=\"".$row['category']."\">";
-                    //echo "&nbsp;&nbsp; Rank: <inout type=text class=cas-tb1  size=2 value='$row[1]' name=rank".$i.">";
+                    echo "<inout type=text class=cas-tb1 text-2  name=category$i value=\"".$row['category']."\">";
+                    //echo "&nbsp;&nbsp; Rank: <inout type=text class=cas-tb1 text-2  size=2 value='$row[1]' name=rank".$i.">";
                     echo "&nbsp;&nbsp;<a href=control.php?t=kbase&act=cate&rm=delete&id=".$row['id'].">$lang_delete</a>?";
                     echo "</td>";
                     echo "</tr>";
@@ -2711,7 +2711,7 @@ function showFormattedTime($seconds, $daysEnabled = FALSE, $DontRound15min = FAL
             global $mysql_kcategories_table, $mysql_platforms_table, $lang_searchfor, $lang_incategory, $lang_under;
 
             echo "<b>$lang_searchfor: </b>";
-            echo "<inout type=text class=cas-tb1  name=item> $lang_incategory <select name=category>";
+            echo "<inout type=text class=cas-tb1 text-2  name=item> $lang_incategory <select name=category>";
                 createKCategoryMenu(1);
             echo "</select> $lang_under ";
             echo "<select name=platform>";

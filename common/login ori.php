@@ -157,7 +157,7 @@ echo '
 			<table width=100% border=0 cellspacing=0 cellpadding=6>
 				<tr>
 				 <td class=back2 align=right>'.$lang_username.':</td><td>
-					<inout type=text class=cas-tb1  name=user size=12></td>
+					<inout type=text class=cas-tb1 text-2  name=user size=12></td>
 				</tr>
 				<tr>
 				 <td class=back2 align=right>'.$lang_password.':</td><td>

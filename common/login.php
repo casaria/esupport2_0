@@ -207,7 +207,7 @@ echo'
 			<table width=100% border=0 cellspacing=0 cellpadding=0>
 				<tr>
 				 <td class=back2 align=right>'.$lang_username.':</td><td>
-					<inout type=text class=cas-tb1  name=user class="text-login" value='."$cookie_name".'></td>
+					<inout type=text class=cas-tb1 text-2  name=user class="text-login" value='."$cookie_name".'></td>
 				</tr>
 				<tr>
 				 <td class=back2 align=right>'.$lang_password.':</td><td>

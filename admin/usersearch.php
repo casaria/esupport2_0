@@ -197,7 +197,7 @@ else{	//if $done is not set
 		echo "<tr><td class=back align=center>";
 		echo "<form method=\"post\" action=\"control.php?t=users&act=srch&done=done\">";
 		//Search for users:
-		echo "$lang_searchforuser: <inout type=text class=cas-tb1  name=user> $lang_withlevel:";
+		echo "$lang_searchforuser: <inout type=text class=cas-tb1 text-2  name=user> $lang_withlevel:";
 			echo " <select name=level>
 						<option>$lang_alllevels</option>
 						<option value=admin>$lang_admin</option>

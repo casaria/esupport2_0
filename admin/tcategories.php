@@ -79,8 +79,8 @@ $num_rows = listtCategories();
 echo '</tr></td>
 		 <tr><td class=back2>
 			'.$lang_addcategory.': 
-			<inout type=text class=cas-tb1  name=category></input>
-			'.$lang_rank.': <inout type=text class=cas-tb1  name=rank size=2></input><br>
+			<inout type=text class=cas-tb1 text-2  name=category></input>
+			'.$lang_rank.': <inout type=text class=cas-tb1 text-2  name=rank size=2></input><br>
 			<input type=submit name=submit value="'.$lang_addcategory.'"></input>';
 
 endTable();
@@ -106,8 +106,8 @@ function listtCategories()
 
 			echo "<input type=hidden name=id$i value='$row[0]'></input>";
 			echo "<tr><td class=back>";
-			echo "<inout type=text class=cas-tb1  name=category$i value=\"$row[2]\">";
-			echo "&nbsp;&nbsp; $lang_rank: <inout type=text class=cas-tb1  size=2 value='$row[1]' name=rank".$i.">";
+			echo "<inout type=text class=cas-tb1 text-2  name=category$i value=\"$row[2]\">";
+			echo "&nbsp;&nbsp; $lang_rank: <inout type=text class=cas-tb1 text-2  size=2 value='$row[1]' name=rank".$i.">";
 			echo "&nbsp;&nbsp;<a href=control.php?t=topts&act=tcat&rm=delete&id=$row[0]>$lang_delete</a>?";
 			echo "</td>";
 			echo "</tr>";

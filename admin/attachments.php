@@ -67,11 +67,11 @@ if(!isset($search)){
 						</TR>
 						<TR>
 							<TD class=back2 align=left>Where filename contains:</td>
-							<td class=back align=left><inout type=text class=cas-tb1  name=filename size=30></td>
+							<td class=back align=left><inout type=text class=cas-tb1 text-2  name=filename size=30></td>
 						</TR>
 						<TR>
                                                         <TD class=back2 align=left>$lang_uploader:</td>
-							<td class=back align=left><inout type=text class=cas-tb1  name=uploader size=30></td>
+							<td class=back align=left><inout type=text class=cas-tb1 text-2  name=uploader size=30></td>
 						</TR>
 						<TR>
 							<TD class=back2 align=left>Search in:</td>
@@ -83,23 +83,23 @@ if(!isset($search)){
 						</TR>
 						<TR>
 							<TD class=back2 align=left>Where filesize is less than (bytes):</td>
-							<td class=back align=left><inout type=text class=cas-tb1  name=size_less></td>
+							<td class=back align=left><inout type=text class=cas-tb1 text-2  name=size_less></td>
 						</TR>
 						<TR>
 							<TD class=back2 align=left>Where filesize is greater than (bytes):</td>
-							<td class=back align=left><inout type=text class=cas-tb1  name=size_greater></td>
+							<td class=back align=left><inout type=text class=cas-tb1 text-2  name=size_greater></td>
 						</TR>
 						<TR>
 							<TD class=back2 align=left>Where download count is less than:</td>
-							<td class=back align=left><inout type=text class=cas-tb1  name=down_less size=8></td>
+							<td class=back align=left><inout type=text class=cas-tb1 text-2  name=down_less size=8></td>
 						</TR>
 						<TR>
 							<TD class=back2 align=left>Where download count is greater than:</td>
-							<td class=back align=left><inout type=text class=cas-tb1  name=down_greater size=8></td>
+							<td class=back align=left><inout type=text class=cas-tb1 text-2  name=down_greater size=8></td>
 						</TR>
 						<TR>
 							<TD class=back2 align=left>Where file is this many days old:</td>
-							<td class=back align=left><inout type=text class=cas-tb1  name=days_old size=8></td>
+							<td class=back align=left><inout type=text class=cas-tb1 text-2  name=days_old size=8></td>
 						</TR>
 						
 					</table>

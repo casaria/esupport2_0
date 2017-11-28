@@ -121,7 +121,7 @@ border=0>
                               <LI><A href="index.php?t=tsrc"><?php echo $lang_searchforticket; ?></A></LI>
                               <br><form name=formTicketSearch action="index.php" method=get>
                                     <input type=hidden name=t value=tupd>
-                                    <?php echo $lang_ticket; ?> # : <inout type=text class=cas-tb1  name=id size=5>
+                                    <?php echo $lang_ticket; ?> # : <inout type=text class=cas-tb1 text-2  name=id size=5>
                                     <a href="#" onClick="submit()"> <?php echo $lang_go; ?>!</a>
                                     <script>document.formTicketSearch.id.focus();</script>
                                   </form>

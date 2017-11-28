@@ -255,7 +255,7 @@ function createUserInfo()
 			echo "<tr>
 				<td width=27% class=back2 align=right>$lang_username:</td>
 				<td class=back width=20%>
-					<inout type=text class=cas-tb1  size=16 name=username value=\"$cookie_user_name\">
+					<inout type=text class=cas-tb1 text-2  size=16 name=username value=\"$cookie_user_name\">
 				</td>";
 		}
 
@@ -263,17 +263,17 @@ function createUserInfo()
 			echo "
 				<td class=back2 align=right width=100> $lang_email: </td>
 				<td class=back align=left>
-					<inout type=text class=cas-tb1  name=email value=\"$cookie_email\">
+					<inout type=text class=cas-tb1 text-2  name=email value=\"$cookie_email\">
 				</td>
 				</tr>
 				<tr>
 				<td width=27% class=back2 align=right>$lang_office:</td>
 				<td class=back>
-					<inout type=text class=cas-tb1  size=16 name=office value=\"$cookie_office\">
+					<inout type=text class=cas-tb1 text-2  size=16 name=office value=\"$cookie_office\">
 				</td>
 				<td class=back2 align=right width=100>$lang_phoneext:</td>
 				<td class=back>
-					<inout type=text class=cas-tb1  name=phone value=\"$cookie_phone\">
+					<inout type=text class=cas-tb1 text-2  name=phone value=\"$cookie_phone\">
 				</td>";
 
 	endTable();

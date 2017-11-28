@@ -177,18 +177,18 @@ echo '
 			
 
 			echo '
-				<tr><td class=cat align=right width=20%><b>'.$lang_firstname.': </b></td><td class=back><inout type=text class=cas-tb1  name=first_name></td></tr>
-				<tr><td class=cat align=right width=20%><b>'.$lang_lastname.': </b></td><td class=back><inout type=text class=cas-tb1  name=last_name></td></tr>
-				<tr><td class=cat align=right width=20%><b>'.$lang_username.': </b></td><td class=back><inout type=text class=cas-tb1  name=user_name></td></tr>
-				<tr><td class=cat align=right width=20%><b>'.$lang_emailaddy.': </b></td><td class=back><inout type=text class=cas-tb1  name=email></td></tr>';
+				<tr><td class=cat align=right width=20%><b>'.$lang_firstname.': </b></td><td class=back><inout type=text class=cas-tb1 text-2  name=first_name></td></tr>
+				<tr><td class=cat align=right width=20%><b>'.$lang_lastname.': </b></td><td class=back><inout type=text class=cas-tb1 text-2  name=last_name></td></tr>
+				<tr><td class=cat align=right width=20%><b>'.$lang_username.': </b></td><td class=back><inout type=text class=cas-tb1 text-2  name=user_name></td></tr>
+				<tr><td class=cat align=right width=20%><b>'.$lang_emailaddy.': </b></td><td class=back><inout type=text class=cas-tb1 text-2  name=email></td></tr>';
 			if($enable_pager == 'On'){
-				echo "<tr><td class=cat align=right width=20%><b> $lang_pager $lang_email: </b></td><td class=back><inout type=text class=cas-tb1  name=pager></td></tr>";
+				echo "<tr><td class=cat align=right width=20%><b> $lang_pager $lang_email: </b></td><td class=back><inout type=text class=cas-tb1 text-2  name=pager></td></tr>";
 			}
 			echo '
 				<tr><td class=cat align=right width=20%><b>'.$lang_password.': </b></td><td class=back><input type=password name=pass1></td></tr>
 				<tr><td class=cat align=right width=20%><b>'.$lang_password.' '.$lang_again.': </b></td><td class=back><input type=password name=pass2></td></tr>
-				<tr><td class=cat align=right width=20%><b>'.$lang_office.': </b></td><td class=back><inout type=text class=cas-tb1  name=office></td></tr>
-				<tr><td class=cat align=right width=20%><b>'.$lang_phoneext.' </b></td><td class=back><inout type=text class=cas-tb1  name=phone></td></tr>
+				<tr><td class=cat align=right width=20%><b>'.$lang_office.': </b></td><td class=back><inout type=text class=cas-tb1 text-2  name=office></td></tr>
+				<tr><td class=cat align=right width=20%><b>'.$lang_phoneext.' </b></td><td class=back><inout type=text class=cas-tb1 text-2  name=phone></td></tr>
 				<tr><td class=cat align=right width=20%><b> '.$lang_texttimezone.' </b></td>
 				<td class=back><select name=timezone>
 								<option value=-12>'.$lang_timezone1.'</option>

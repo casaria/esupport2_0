@@ -275,7 +275,7 @@ startTable("$lang_timetracking", "center");
 	echo "<tr><td class=back><br>";
 	startTable("$lang_selecttickets", "center", "80%");
 		echo "<tr><td class=cat>$lang_selectticketsexp</td></tr>";
-		echo "<tr><td class=back2><br>$lang_ticket $lang_ids: <inout type=text class=cas-tb1  name=tids size=60%><br><br></td></tr>";
+		echo "<tr><td class=back2><br>$lang_ticket $lang_ids: <inout type=text class=cas-tb1 text-2  name=tids size=60%><br><br></td></tr>";
 	endTable();
 	echo "<center><input type=submit value=\"$lang_getstats\" name=\"getstats\"> ";
 	echo "<input type=submit value=\"$lang_printstats\" name=\"hidemenu\"></center><br>";

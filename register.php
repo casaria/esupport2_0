@@ -61,21 +61,21 @@ startTable("$lang_register", "left", 80, 1);
 
 		startTable("$lang_register - $lang_required", "left", 80, 2);
 			echo "<tr><td width=27% class=back2>$lang_username: </td>
-				<td class=back> <inout type=text class=cas-tb1  size=30 name=user></td></tr>\n";
+				<td class=back> <inout type=text class=cas-tb1 text-2  size=30 name=user></td></tr>\n";
 			echo "<tr><td width=27% class=back2>$lang_firstname: </td>
-				<td class=back> <inout type=text class=cas-tb1  size=30 name=first></td></tr>\n";
+				<td class=back> <inout type=text class=cas-tb1 text-2  size=30 name=first></td></tr>\n";
 			echo "<tr><td width=27% class=back2>$lang_lastname: </td>
-				<td class=back><inout type=text class=cas-tb1  size=30 name=last></td></tr>\n";
+				<td class=back><inout type=text class=cas-tb1 text-2  size=30 name=last></td></tr>\n";
 			echo "<tr><td width=27% class=back2>$lang_emailaddy: </td>
-				<td class=back><inout type=text class=cas-tb1  size=30 name=email></td></tr>\n";
+				<td class=back><inout type=text class=cas-tb1 text-2  size=30 name=email></td></tr>\n";
 			echo "<tr><td width=27% class=back2>$lang_password: </td>
 				<td class=back> <input type=password size=30 name=password></td></tr>\n";
 			echo "<tr><td width=27% class=back2>$lang_password $lang_again: </td>
 				<td class=back> <input type=password size=30 name=password2></td></tr>\n";
 			echo "<tr><td class=back2 align=left width=27%> $lang_office: </td>
-				<td class=back><inout type=text class=cas-tb1  size=30 name=office></td></tr>";
+				<td class=back><inout type=text class=cas-tb1 text-2  size=30 name=office></td></tr>";
 			echo "<tr><td class=back2 align=left width=27%> $lang_phoneext: </td>
-				<td class=back><inout type=text class=cas-tb1  size=30 name=phone></td></tr>";
+				<td class=back><inout type=text class=cas-tb1 text-2  size=30 name=phone></td></tr>";
 		endTable();
 
 	echo "<div align=\"center\"><input type=submit name=register value='$lang_register'></div>";

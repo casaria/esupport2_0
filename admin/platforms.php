@@ -83,8 +83,8 @@ startTable("$lang_platforms", "center", "100%", 1);
 	echo '</tr></td>
 		 <tr><td class=back2>
 		'.$lang_addplatform.': 
-		<inout type=text class=cas-tb1  name=platform></input>
-		'.$lang_rank.': <inout type=text class=cas-tb1  name=rank size=2></input><br>
+		<inout type=text class=cas-tb1 text-2  name=platform></input>
+		'.$lang_rank.': <inout type=text class=cas-tb1 text-2  name=rank size=2></input><br>
 		<input type=submit name=submit value="'.$lang_addplatform.'"></input>';
 
 endTable();

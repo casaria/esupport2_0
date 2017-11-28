@@ -81,7 +81,7 @@ echo '<tr><td class=cat><br>
 
 	echo "<tr><td class=back2>	<form action=control.php?t=users&act=sopt method=post>";
         echo "$lang_addusertogroup: ";
-	echo "<inout type=text class=cas-tb1  name=groupy>&nbsp;&nbsp;&nbsp;&nbsp; <font size=1>($lang_username)</font>";
+	echo "<inout type=text class=cas-tb1 text-2  name=groupy>&nbsp;&nbsp;&nbsp;&nbsp; <font size=1>($lang_username)</font>";
 	echo "<input type=hidden name=table value=$group_table><br>";
         echo "<input type=hidden name=g value=$g><br>";
 	echo "<input type=submit name=submit2 value=\"$lang_addusertogroup\"><br><br>";

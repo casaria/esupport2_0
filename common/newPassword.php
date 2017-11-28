@@ -65,7 +65,7 @@ $starttime = $mtime1[0] + $mtime1[1];
         }
 
         .card {
-            background-color: rgba(60, 60, 65, 0.37);
+            background-color: rgba(60, 60, 65, 0.47);
         }
 
         .md-form .prefix {

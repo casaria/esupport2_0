@@ -39,8 +39,7 @@ $starttime = $mtime1[0] + $mtime1[1];
 ?>
 
     <style>
-
-        .intro-2 {Y
+    .intro-2 {
         background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img%20(46).jpg")no-repeat center center;
             background-size: cover;
         }

@@ -65,7 +65,7 @@ $starttime = $mtime1[0] + $mtime1[1];
         }
 
         .card {
-            background-color: rgba(60, 60, 65, 0.87);
+            background-color: rgba(60, 60, 65, 0.37);
         }
 
         .md-form .prefix {
@@ -174,7 +174,7 @@ if($enable_helpdesk == 'Off'){
                                 <div class="md-form">
                                     <i class="fa fa-user prefix white-text"></i>
                                     <input type="text" id="orangeForm-name" class="form-control">
-                                    <label for="orangeForm-name">Your name</label>
+                                    <label for="orangeForm-name">Your user name</label>
                                 </div>
 
                                 <div class="md-form">

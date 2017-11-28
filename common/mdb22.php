@@ -24,7 +24,7 @@
     <style>
 
         .intro-2 {
-            background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img%20(11).jpg")no-repeat center center;
+            background: url("https://mdbootstrap.com/img/Photos/Others/img%20(46).jpg")no-repeat center center;
             background-size: cover;
         }
         .top-nav-collapse {

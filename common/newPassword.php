@@ -20,7 +20,6 @@
     <link href="../mdb/css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="../mdb/css/style.css" rel="stylesheet">
-    <style>
 
 <?php
 /*
@@ -39,7 +38,8 @@ $starttime = $mtime1[0] + $mtime1[1];
 ?>
 
     <style>
-    .intro-2 {
+
+        .intro-2 {
         background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img%20(46).jpg")no-repeat center center;
             background-size: cover;
         }

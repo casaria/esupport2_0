@@ -174,11 +174,6 @@ if($enable_helpdesk == 'Off'){
                                     <input type="text" id="orangeForm-name" class="form-control">
                                     <label for="orangeForm-name">Your name</label>
                                 </div>
-                                <div class="md-form">
-                                    <i class="fa fa-envelope prefix white-text"></i>
-                                    <input type="text" id="orangeForm-email" class="form-control">
-                                    <label for="orangeForm-email">Your email</label>
-                                </div>
 
                                 <div class="md-form">
                                     <i class="fa fa-lock prefix white-text"></i>
@@ -187,7 +182,7 @@ if($enable_helpdesk == 'Off'){
                                 </div>
 
                                 <div class="text-center">
-                                    <button class="btn orange-gradient btn-lg">Sign up</button>
+                                    <button class="btn orange-gradient btn-lg">LOGIN</button>
                                     <hr>
                                     <div class="inline-ul text-center d-flex justify-content-center">
                                         <a class="icons-sm tw-ic"><i class="fa fa-twitter white-text"></i></a>

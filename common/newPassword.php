@@ -1,9 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" class="full-height">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap Template</title>
+
+
+    <style>
+        * {margin: 0; padding: 0;}
+    </style>
 <?php
-/**
- * Created by PhpStorm.
- * User: horra
- * Date: 11/27/2017
- * Time: 6:09 PM
+/*
+ * Created by
+
  */
 //set the start time so we can calculate how long it takes to load the page.
 $mtime1 = explode(" ", microtime());
@@ -16,45 +28,78 @@ $starttime = $mtime1[0] + $mtime1[1];
 
 ?>
 
+    <style>
 
-<!--Animations init-->
-new WOW().init();
+        .intro-2 {Y
+        background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img%20(11).jpg")no-repeat center center;
+            background-size: cover;
+        }
+        .top-nav-collapse {
+            background-color: #ff8a65 !important;
+            /*  background-color: #3f51b5 !important; */
+        }
+        .navbar:not(.top-nav-collapse) {
+            background: transparent !important;
+        }
+        @media (max-width: 768px) {
+            .navbar:not(.top-nav-collapse) {
+                background-color: #ff8a65 !important;
+                /*   background: #3f51b5 !important; */
+            }
+        }
 
-<style>
+        .card {
+            background-color: rgba(229, 228, 255, 0.2);
+        }
 
+        .md-form .prefix {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+        .md-form label {
+            color: #ffffff;
+        }
+        h6 {
+            line-height: 1.7;
+        }
+        @media (max-width: 740px) {
+            .full-height,
+            .full-height body,
+            .full-height header,
+            .full-height header .view {
+                height: 750px;
+            }
+        }
+        @media (min-width: 741px) and (max-height: 638px) {
+            .full-height,
+            .full-height body,
+            .full-height header,
+            .full-height header .view {
+                height: 750px;
+            }
+        }
 
-.intro-2 {
-    background: url("https://mdbootstrap.com/img/Photos/Others/img%20(46).jpg")no-repeat center center;
-    background-size: cover;
-}
-.top-nav-collapse {
-    background-color: #ff8a65 !important;
-}
-.navbar:not(.top-nav-collapse) {
-    background: transparent !important;
-}
-@media (max-width: 768px) {
-    .navbar:not(.top-nav-collapse) {
-        background: #ff8a65 !important;
-    }
-}
-.md-form .prefix {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-}
-h6 {
-    line-height: 1.7;
-}
-@media (max-width: 740px) {
-    .full-height,
-    .full-height body,
-    .full-height header,
-    .full-height header .view {
-        height: 1150px;
-    }
-}
+        .card {
+            margin-top: 30px;
+            /*margin-bottom: -45px;*/
 
-</style>
+        }
+
+        .md-form input[type=text]:focus:not([readonly]),
+        .md-form input[type=password]:focus:not([readonly]) {
+            border-bottom: 1px solid #8EDEF8;
+            box-shadow: 0 1px 0 0 #8EDEF8;
+        }
+        .md-form input[type=text]:focus:not([readonly])+label,
+        .md-form input[type=password]:focus:not([readonly])+label {
+            color: #8EDEF8;
+        }
+
+        .md-form .form-control {
+            color: #fff;
+        }
+
+    </style>
 
 <?php
 
@@ -65,15 +110,16 @@ if($enable_helpdesk == 'Off'){
 
 
 ?>
-<html lang="en" class="full-height">
-<HEADER>
+
+    </head>
+
+<body>
 <!--Main Navigation-->
 <header>
 
-    <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
         <div class="container">
-            <a class="navbar-brand" href="#"><strong>MDB</strong></a>
+            <a class="navbar-brand" href="#"><strong>eSupport</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -98,79 +144,77 @@ if($enable_helpdesk == 'Off'){
 
     <!--Intro Section-->
     <section class="view intro-2 hm-stylish-strong">
-        <div class="full-bg-img">
-            <div class="container flex-center">
-                <div class="d-flex align-items-center">
-                    <div class="row flex-center pt-5 mt-3">
-                        <div class="col-md-6 text-center text-md-left mb-5">
-                            <div class="white-text">
-                                <h1 class="display-4 wow fadeInLeft" data-wow-delay="0.3s">Lorem ipsum</h1>
-                                <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
-                                <h6 class="wow fadeInLeft" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea dolor molestiae, quisquam iste.</h6>
-                                <br>
-                                <a class="btn peach-gradient wow fadeInLeft" data-wow-delay="0.3s">Learn more</a>
-                            </div>
-                        </div>
+        <div class="full-bg-img flex-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-lg-5">
 
-                        <div class="col-md-6 col-xl-5 offset-xl-1">
-                            <!--Form-->
-                            <div class="card wow fadeInRight" data-wow-delay="0.3s">
-                                <div class="card-body z-depth-2">
-                                    <!--Header-->
-                                    <div class="text-center">
-                                        <h3>Write to us:</h3>
-                                        <hr>
-                                    </div>
+                        <!--Form with header-->
+                        <div class="card wow fadeIn" data-wow-delay="0.3s">
+                            <div class="card-body">
 
-                                    <!--Body-->
-                                    <div class="md-form">
-                                        <i class="fa fa-user prefix grey-text"></i>
-                                        <input type="text" id="form3" class="form-control">
-                                        <label for="form3">Your name</label>
-                                    </div>
-                                    <div class="md-form">
-                                        <i class="fa fa-envelope prefix grey-text"></i>
-                                        <input type="text" id="form2" class="form-control">
-                                        <label for="form2">Your email</label>
-                                    </div>
-
-                                    <!--Textarea with icon prefix-->
-                                    <div class="md-form">
-                                        <i class="fa fa-pencil prefix grey-text"></i>
-                                        <textarea type="text" id="form8" class="md-textarea"></textarea>
-                                        <label for="form8">Your message</label>
-                                    </div>
-
-                                    <div class="text-center">
-                                        <button class="btn peach-gradient">Send</button>
-                                        <hr>
-                                        <fieldset class="form-group">
-                                            <input type="checkbox" id="checkbox1">
-                                            <label for="checkbox1">Subscribe me to the newsletter</label>
-                                        </fieldset>
-                                    </div>
-
+                                <!--Header-->
+                                <div class="form-header orange-gradient">
+                                    <h3><i class="fa fa-user mt-2 mb-2"></i> Log in:</h3>
                                 </div>
+
+                                <!--Body-->
+                                <div class="md-form">
+                                    <i class="fa fa-user prefix white-text"></i>
+                                    <input type="text" id="orangeForm-name" class="form-control">
+                                    <label for="orangeForm-name">Your name</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fa fa-envelope prefix white-text"></i>
+                                    <input type="text" id="orangeForm-email" class="form-control">
+                                    <label for="orangeForm-email">Your email</label>
+                                </div>
+
+                                <div class="md-form">
+                                    <i class="fa fa-lock prefix white-text"></i>
+                                    <input type="password" id="orangeForm-pass" class="form-control">
+                                    <label for="orangeForm-pass">Your password</label>
+                                </div>
+
+                                <div class="text-center">
+                                    <button class="btn orange-gradient btn-lg">Sign up</button>
+                                    <hr>
+                                    <div class="inline-ul text-center d-flex justify-content-center">
+                                        <a class="icons-sm tw-ic"><i class="fa fa-twitter white-text"></i></a>
+                                        <a class="icons-sm li-ic"><i class="fa fa-linkedin white-text"> </i></a>
+                                        <a class="icons-sm ins-ic"><i class="fa fa-instagram white-text"> </i></a>
+                                    </div>
+                                </div>
+
                             </div>
-                            <!--/.Form-->
                         </div>
+                        <!--/Form with header-->
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="../mdb/js/jquery-3.2.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="../mdb/js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="../mdb/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="../mdb/js/mdb.min.js"></script>
+
 </header>
 <!--Main Navigation-->
 
+
+<!-- SCRIPTS -->
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="../mdb/js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="../mdb/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="../mdb/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="../mdb/js/mdb.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+</body>
+</html>
 
 
 

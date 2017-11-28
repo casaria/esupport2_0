@@ -51,7 +51,7 @@ $starttime = $mtime1[0] + $mtime1[1];
         }
 
         .top-nav-collapse {
-            background-color: #ff8a65 !important;
+            background-color: #284175 !important;
             /*  background-color: #3f51b5 !important; */
         }
         .navbar:not(.top-nav-collapse) {
@@ -59,7 +59,7 @@ $starttime = $mtime1[0] + $mtime1[1];
         }
         @media (max-width: 768px) {
             .navbar:not(.top-nav-collapse) {
-                background-color: #ff8a65 !important;
+                background-color: #32383e !important;
                 /*   background: #3f51b5 !important; */
             }
         }

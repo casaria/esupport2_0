@@ -41,7 +41,7 @@ $starttime = $mtime1[0] + $mtime1[1];
     <style>
         .intro-2 {
 
-            background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("https://mdbootstrap.com/img/Photos/Others/img%20(46).jpg");
+            background-image: linear-gradient(rgba(56,56,65, 0.5), rgba(67, 69, 34, 0.7)), url("https://mdbootstrap.com/img/Photos/Others/img%20(11).jpg");
             background-repeat: no-repeat;
             background-size: cover;
         }

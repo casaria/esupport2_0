@@ -40,7 +40,7 @@ $starttime = $mtime1[0] + $mtime1[1];
 
     <style>
         .intro-2 {
-        background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img%20(46).jpg")no-repeat center center;
+            background: url("https://mdbootstrap.com/img/Photos/Others/img%20(46).jpg")no-repeat center center;
             background-size: cover;
         }
         .top-nav-collapse {
@@ -110,20 +110,17 @@ $starttime = $mtime1[0] + $mtime1[1];
     </style>
 
 <?php
-
 if($enable_helpdesk == 'Off'){
     printerror($on_off_reason);
     exit;
 }
-
-
 ?>
 
 </head>
 
 <body>
 <!--Main Navigation-->
-<header>
+    <header>
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
         <div class="container">
@@ -199,7 +196,7 @@ if($enable_helpdesk == 'Off'){
         </div>
     </section>
 
-</header>
+    </header>
 <!--Main Navigation-->
 
 

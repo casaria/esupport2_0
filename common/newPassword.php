@@ -40,7 +40,9 @@ $starttime = $mtime1[0] + $mtime1[1];
 
     <style>
         .intro-2 {
-            background: url("https://mdbootstrap.com/img/Photos/Others/img%20(46).jpg")no-repeat center center;
+
+            background-image: background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+                                url("https://mdbootstrap.com/img/Photos/Others/img%20(46).jpg")no-repeat center center;
             background-size: cover;
         }
         .top-nav-collapse {

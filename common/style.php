@@ -1790,6 +1790,16 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
             /*  MDB LOGON  */
 
+            .intro-2 {
+                background: url("https://mdbootstrap.com/img/Photos/Others/img%20(46).jpg")no-repeat center center;
+                background-size: cover;
+            }
+            .top-nav-collapse {
+                background-color: #ff8a65 !important;
+            }
+            .navbar:not(.top-nav-collapse) {
+                background: transparent !important;
+            }
             @media (max-width: 768px) {
                 .navbar:not(.top-nav-collapse) {
                     background: #ff8a65 !important;
@@ -1810,6 +1820,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     height: 1150px;
                 }
             }
+
 
         </STYLE>
     </HEAD>

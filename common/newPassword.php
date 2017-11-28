@@ -41,12 +41,12 @@ $starttime = $mtime1[0] + $mtime1[1];
     <style>
         .intro-3 {
 
-            background-image: linear-gradient(rgba(56,35,35, 0.5), rgba(67, 69, 34, 0.9)), url("../img/bg1.png");
+            background-image: linear-gradient(rgba(56,35,35, 0.5), rgba(67, 69, 34, 0.9)), url("../img/svg/bg1.png");
             background-repeat: no-repeat;
             background-size: cover;
         }
         .intro-2 {
-            background: url("../img/bg1.png")no-repeat center center;
+            background: url("../img/svg/IMG_3629.png")no-repeat center center;
             background-size: cover;
         }
 

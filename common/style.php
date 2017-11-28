@@ -1053,21 +1053,6 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
             /*Wide Layout*/
             @media screen and (min-width: 768px) {
-
-
-                .intro-2 {
-                    background: url("https://mdbootstrap.com/img/Photos/Others/img%20(46).jpg")no-repeat center center;
-                    background-size: cover;
-                }
-                .top-nav-collapse {
-                    background-color: #ff8a65 !important;
-                }
-                .navbar:not(.top-nav-collapse) {
-                    background: transparent !important;
-                }
-
-
-
                 .wrap {
                     width: 1140px;
                     margin: 0 auto;

@@ -45,9 +45,9 @@ require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
 $login_logo = "../images/casariadefault/small-header-brown.gif";
 
-$cookieuser = '';
+//$cookieuser = '';
 //common.php
-session_status() === PHP_SESSION_ACTIVE  ? $cookieuser = '' : startSession();
+session_status() === PHP_SESSION_ACTIVE  ? $cookieuser == '' : startSession();
 
 $cookie_name = strtolower($_SESSION['cookie_name']);
 $normalized_username  = strtolower (trim($_POST['user']));
@@ -156,7 +156,7 @@ if(!isSet($_SESSION ['cookie_name'])){
 
 	require_once $includePath."style.php";
 if (isset($_COOKIE['supporter_usercookie'])) 
-   $cookieuser = $_COOKIE['supporter_usercookie'];
+   $cookie_name = $_COOKIE['supporter_usercookie'];
 if (isset($_COOKIE['supporter_pwdcookie'])) 
    $cookiepwd = $_COOKIE['supporter_pwdcookie'];
 
@@ -207,7 +207,7 @@ echo'
 			<table width=100% border=0 cellspacing=0 cellpadding=0>
 				<tr>
 				 <td class=back2 align=right>'.$lang_username.':</td><td>
-					<input type=text name=user class="text-login" value='."$cookieuser".'></td>
+					<input type=text name=user class="text-login" value='."$cookie_name".'></td>
 				</tr>
 				<tr>
 				 <td class=back2 align=right>'.$lang_password.':</td><td>

@@ -6,6 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Material Design Bootstrap</title>
+
+
+
+    <style>
+
+        .intro-2 {
+            background: url("https://mdbootstrap.com/img/Photos/Others/img%20(46).jpg")no-repeat center center;
+            background-size: cover;
+        }
+        .top-nav-collapse {
+            background-color: #ff8a65 !important;
+        }
+        .navbar:not(.top-nav-collapse) {
+            background: transparent !important;
+        }
+        @media (max-width: 768px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #ff8a65 !important;
+            }
+        }
+        .md-form .prefix {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+        h6 {
+            line-height: 1.7;
+        }
+        @media (max-width: 740px) {
+            .full-height,
+            .full-height body,
+            .full-height header,
+            .full-height header .view {
+                height: 1150px;
+            }
+        }
+    </style>
+
+
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -15,39 +54,6 @@
     <!-- Your custom styles (optional) -->
     <link href="../mdb/css/style.css" rel="stylesheet">
 
-    <style>
-
-    .intro-2 {
-    background: url("https://mdbootstrap.com/img/Photos/Others/img%20(46).jpg")no-repeat center center;
-    background-size: cover;
-    }
-    .top-nav-collapse {
-    background-color: #ff8a65 !important;
-    }
-    .navbar:not(.top-nav-collapse) {
-    background: transparent !important;
-    }
-    @media (max-width: 768px) {
-    .navbar:not(.top-nav-collapse) {
-    background: #ff8a65 !important;
-    }
-    }
-    .md-form .prefix {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    }
-    h6 {
-    line-height: 1.7;
-    }
-    @media (max-width: 740px) {
-    .full-height,
-    .full-height body,
-    .full-height header,
-    .full-height header .view {
-    height: 1150px;
-    }
-    }
-    </style>
 
 
 </head>

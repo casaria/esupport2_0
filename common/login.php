@@ -63,7 +63,7 @@ if(isset($login))
 {
 	//if admin is contained in the url, we need to make sure the user is an
 	//admin before letting them login.
-    $cookie_name = $normalized_username;
+    if ($$cookie_name=='')  {$cookie_name= $normalized_username;}
 	if(ereg("/admin", $normalized_referer)){
 		//check the user name and password against the database.
 		if(checkUser($normalized_username, md5($normalized_password))){

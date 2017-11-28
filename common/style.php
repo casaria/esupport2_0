@@ -1726,7 +1726,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
             }
 
-            .text-1 {
+            .text-1
+            .cas-tb1 {
                 width: 80px;
                 padding: 2px 2px 2px 2px;
                 border-radius: 3px;

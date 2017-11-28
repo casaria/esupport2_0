@@ -83,6 +83,18 @@ $tablePadding =2;
     <link rel="stylesheet" href="/dylay/assets/css/main.css" media="screen">
 
 
+
+    <!-- Font Awesome  MDB Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../mdb/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../mdb/css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../mdb/css/style.css" rel="stylesheet">
+
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 

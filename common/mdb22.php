@@ -23,7 +23,7 @@
     <link href="../mdb/css/style.css" rel="stylesheet">
     <style>
 
-        .intro-2 {Y
+        .intro-2 {
             background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img%20(11).jpg")no-repeat center center;
             background-size: cover;
         }

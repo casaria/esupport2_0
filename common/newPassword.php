@@ -6,12 +6,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap Template</title>
-
+    <title>eSupport-2 LOGIN</title>
 
     <style>
         * {margin: 0; padding: 0;}
     </style>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../mdb/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../mdb/css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../mdb/css/style.css" rel="stylesheet">
+    <style>
+
 <?php
 /*
  * Created by
@@ -111,7 +121,7 @@ if($enable_helpdesk == 'Off'){
 
 ?>
 
-    </head>
+</head>
 
 <body>
 <!--Main Navigation-->
@@ -215,6 +225,4 @@ if($enable_helpdesk == 'Off'){
 </script>
 </body>
 </html>
-
-
 

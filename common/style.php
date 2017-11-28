@@ -1858,7 +1858,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
             }
 
-            .md-form .cas-tb1 text-2:focus:not([readonly]),
+            .md-form input[type=text]:focus:not([readonly]),
             .md-form input[type=password]:focus:not([readonly]) {
                 border-bottom: 1px solid #8EDEF8;
                 box-shadow: 0 1px 0 0 #8EDEF8;

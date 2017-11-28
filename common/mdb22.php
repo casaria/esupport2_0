@@ -23,14 +23,16 @@
             background-size: cover;
         }
         .top-nav-collapse {
-            background-color: #3f51b5 !important;
+            background-color: #ff8a65 !important;
+          /*  background-color: #3f51b5 !important; */
         }
         .navbar:not(.top-nav-collapse) {
             background: transparent !important;
         }
         @media (max-width: 768px) {
             .navbar:not(.top-nav-collapse) {
-                background: #3f51b5 !important;
+                background-color: #ff8a65 !important;
+                /*   background: #3f51b5 !important; */
             }
         }
 

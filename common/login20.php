@@ -35,8 +35,7 @@ require_once "common.php";
     <!-- Your custom styles (optional) -->
     <link href="../mdb/css/style.css" rel="stylesheet">
 
-    <style>
-    </style>
+
 
 <?php
 if($enable_helpdesk == 'Off'){

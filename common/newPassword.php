@@ -8,18 +8,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>eSupport-2 LOGIN</title>
 
-    <style>
-        * {margin: 0; padding: 0;}
-    </style>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link href="../mdb/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="../mdb/css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="../mdb/css/style.css" rel="stylesheet">
 
 <?php
 /*
@@ -38,7 +26,19 @@ $starttime = $mtime1[0] + $mtime1[1];
 ?>
 
     <style>
+        * {margin: 0; padding: 0;}
+    </style>
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../mdb/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../mdb/css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../mdb/css/style.css" rel="stylesheet">
+
+    <style>
         .intro-2 {
         background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img%20(46).jpg")no-repeat center center;
             background-size: cover;
@@ -107,7 +107,6 @@ $starttime = $mtime1[0] + $mtime1[1];
         .md-form .form-control {
             color: #fff;
         }
-
     </style>
 
 <?php

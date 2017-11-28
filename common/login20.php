@@ -22,9 +22,7 @@ require_once "common.php";
 
 ?>
 
-    <style>
-        * {margin: 0; padding: 0;}
-    </style>
+
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">

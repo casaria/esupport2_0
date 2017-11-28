@@ -59,7 +59,7 @@ $normalized_referer = strtolower (trim($HTTP_REFERER));
 //echo "cookie_name = $cookie_name <br>";
 //echo "session ID =" . session_id(). " <br>";
 //if submit has been hit, set the cookie and reload the page immediately so the cookie takes effect.
-if(isset($login))
+	if(isset($login))
 {
 	//if admin is contained in the url, we need to make sure the user is an
 	//admin before letting them login.
@@ -280,6 +280,11 @@ else{
 //get some globals about the user
 if ($cookie_name != '') {
  $user_id = getUserId($cookie_name);
- $ugID_list = getUsersGroupIDList($user_id);}
+ $ugID_list = getUsersGroupIDList($user_id);
+
+} else {
+    echo $lang_wronglogin;
+	exit;
+}
 //this returns back to the page that called it.
 ?>

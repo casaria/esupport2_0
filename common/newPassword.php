@@ -46,7 +46,7 @@ $starttime = $mtime1[0] + $mtime1[1];
             background-size: cover;
         }
         .intro-2 {
-            background: url("../img/svg/IMG_3629.png")no-repeat center center;
+            background: url("../img/IMG_3629.png")no-repeat center center;
             background-size: cover;
         }
 

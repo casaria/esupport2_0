@@ -97,7 +97,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
         <div class="container">
-            <a class="navbar-brand" href="#"><strong>MDB</strong></a>
+            <a class="navbar-brand" href="#"><strong>eSupport</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -132,7 +132,7 @@
                             <div class="card-body">
 
                                 <!--Header-->
-                                <div class="form-header purple-gradient">
+                                <div class="form-header orange-gradient">
                                     <h3><i class="fa fa-user mt-2 mb-2"></i> Log in:</h3>
                                 </div>
 
@@ -155,7 +155,7 @@
                                 </div>
 
                                 <div class="text-center">
-                                    <button class="btn purple-gradient btn-lg">Sign up</button>
+                                    <button class="btn orange-gradient btn-lg">Sign up</button>
                                     <hr>
                                     <div class="inline-ul text-center d-flex justify-content-center">
                                         <a class="icons-sm tw-ic"><i class="fa fa-twitter white-text"></i></a>

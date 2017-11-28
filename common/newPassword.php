@@ -16,7 +16,13 @@ $starttime = $mtime1[0] + $mtime1[1];
 
 ?>
 
+
+<!--Animations init-->
+new WOW().init();
+
 <style>
+
+
 .intro-2 {
     background: url("https://mdbootstrap.com/img/Photos/Others/img%20(46).jpg")no-repeat center center;
     background-size: cover;

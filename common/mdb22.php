@@ -57,8 +57,6 @@
 <!-- Start your project here-->
 
 
-<!--Animations init-->
-new WOW().init();
 
 <!--Main Navigation-->
 <header>

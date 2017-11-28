@@ -18,7 +18,7 @@
 $mtime1 = explode(" ", microtime());
 $starttime = $mtime1[0] + $mtime1[1];
 
-//require_once "style.php";
+require_once "style.php";
 require_once "config.php";
 require_once "$database.class.php";
 require_once "common.php";

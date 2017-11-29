@@ -141,12 +141,12 @@ if($enable_helpdesk == 'Off'){
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="jumbotron text-center">
-                                        <h1 class="h3-responsive">Premium Bootstrap Templates &amp; Themes</h1>
+                                        <h4 class="h3-responsive">Password requirements</h4>
                                         <br>
 
-                                        <p>Have a look at our collection of advanced and stunning Bootstrap themes. <strong>Each of the pack contains dozens of premium templates</strong></p>
+                                        <p>To increase security we require all passowrds to be at least <strong>8 characters long</strong></p>
                                         <hr>
-                                        <p>Or maybe you prefer to create templates on your own? Get our powerful <strong>Material Design UI KIT for Bootstrap</strong></p>
+                                        <p>Passwords must contain letters, at least on upper case, one symbok and numbers</p>
                                         <a id="templates-jumbotron-mdb" href="https://mdbootstrap.com/product/material-design-for-bootstrap-pro/" class="btn btn-dtc waves-effect waves-light">Material Design for Bootstrap <i class="fa fa-diamond right"></i></a>
                                     </div>
 

@@ -96,8 +96,8 @@ require_once "common.php";
         }
 
         .card {
-            margin-top: 30px;
-            /*margin-bottom: -45px;*/
+            margin-top: 20px;
+            margin-bottom: 30px;
 
         }
 
@@ -167,7 +167,7 @@ if($enable_helpdesk == 'Off'){
 
                                 <!--Header-->
                                 <div class="form-header orange-gradient">
-                                    <h4><i class="fa fa-user mt-2 mb-2"></i> Casaria eSupport 2.0 </h4>
+                                    <h5><i class="fa id-card-o mt-2 mb-2"></i> Casaria eSupport 2.0 </h5>
                                 </div>
 
                                 <!--Body-->

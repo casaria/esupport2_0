@@ -135,9 +135,9 @@ if($enable_helpdesk == 'Off'){
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="passwordModalLabel">Password Guidelines</h5>
-                            <div class="row">
-                                <div class="col-md-12">
 
+                            <div class="col-md-12">
+                                <div class="row">
                                         <h4 class="h3-responsive">Password requirements</h4>
                                         <br>
 
@@ -145,7 +145,7 @@ if($enable_helpdesk == 'Off'){
                                         <hr>
                                         <p>Passwords must contain letters &amp; numbers, at least one upper case letter and one symbol!</p>
                                     <p><strong>Do not use names or simple number comnbinations such as 12345!</strong></p>
-                                </div>
+                                 </div>
                             </div>
 
                         <span aria-hidden="true">&times;</span>

@@ -62,7 +62,7 @@ $tablePadding =2;
 
 
 
-    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css" > -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" >
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -71,7 +71,7 @@ $tablePadding =2;
 
     <!-- THeSE ARE WORKING (All 4 sources   -->
 
-    <!--  <script src="../dylay/assets/vendor/jquery.easing.1.3.js"></script> -->
+    <script src="../dylay/assets/vendor/jquery.easing.1.3.js"></script>
     <script src="../dylay/src/dylay.js"></script>
     <script src="../dylay/assets/js/main.js"></script>
 
@@ -87,15 +87,6 @@ $tablePadding =2;
 
 
 
-    <!-- Font Awesome  MDB Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link href="../mdb/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="../mdb/css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <!-- <link href="../mdb/css/style.css" rel="stylesheet">
-    -->
 
 
 

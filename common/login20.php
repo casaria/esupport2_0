@@ -147,10 +147,10 @@ if($enable_helpdesk == 'Off'){
                         <div class="text-center">
                             <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
                             <br>
-                            <p>To increase security we now require that all passowrdsa are at least <strong>8 characters long.</strong></p>
+                            <p>To increase security we now require that all passowrds are at least <strong>8 characters long.</strong></p>
                             <hr>
                             <p>Passwords must contain letters &amp; numbers, at least one upper case letter, one lower case letter, and one symbol!</p>
-                            <p><strong>Please do not use names or simple number comnbinations such as 12345! If you neglect secure password principles, your account will sooner or later be compromised! Therefore use strong passwords!</strong></p>
+                            <p><strong>Please do not use names or simple number comnbinations such as 12345! If you neglect secure password principles, your account will sooner or later be compromised! Therefore use strong passwords!</strong></p>If you have not yet changed your password please go to the profile link in the menu and change your password. Thank you!
                         </div>
                     </div>
 

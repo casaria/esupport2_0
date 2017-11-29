@@ -143,11 +143,7 @@ if($enable_helpdesk == 'Off'){
                     </div>
                     <!--Body-->
                     <div class="modal-body">
-                        <div class="md-form form-sm">
-                            <i class="fa fa-envelope prefix"></i>
-                            <input type="text" id="form32" class="form-control">
-                            <label for="form32">Your email</label>
-                        </div>
+
 
                         <div class="md-form form-sm">
                             <i class="fa fa-lock prefix"></i>
@@ -162,7 +158,7 @@ if($enable_helpdesk == 'Off'){
                         </div>
 
                         <div class="text-center mt-2">
-                            <button class="btn btn-info">Sign up <i class="fa fa-sign-in ml-1"></i></button>
+                            <button class="btn btn-elegant btn-deep-orange">Validate<i class="fa fa-sign-in ml-1"></i></button>
                         </div>
 
                     </div>

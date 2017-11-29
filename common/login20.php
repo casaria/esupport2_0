@@ -157,7 +157,7 @@ if($enable_helpdesk == 'Off'){
     <!--Intro Section-->
     <section class="view intro-2 hm-stylish-strong">
         <div class="full-bg-img flex-center">
-            <div class="container">
+            <div class="container" style="margin-top: 45px;">
                 <div class="row">
                     <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-lg-5">
 

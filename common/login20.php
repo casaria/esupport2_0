@@ -135,7 +135,6 @@ if($enable_helpdesk == 'Off'){
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="passwordModalLabel">Password Guidelines</h5>
-                           <<div class="container-fluid">
                             <div class="row">
                                 <div class="col-md-12">
 
@@ -150,7 +149,7 @@ if($enable_helpdesk == 'Off'){
 
                                 </div>
                             </div>
-                        </div>
+
                         <span aria-hidden="true">&times;</span>
 
                     </div>

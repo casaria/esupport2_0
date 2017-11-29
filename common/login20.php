@@ -138,7 +138,7 @@ if($enable_helpdesk == 'Off'){
                     <div class="modal-header orange-gradient darken-3 white-text">
                         <h4 class="title"><i class="fa fa-user-plus"></i> Create Secure Password</h4>
                         <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                            <span aria-hidden="false">&times;</span>
                         </button>
                     </div>
                     <!--Body-->

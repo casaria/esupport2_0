@@ -1738,8 +1738,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 font-size: 16px;
             }
 
-            .text-2,
-            .text-login {
+            .text-2 {
                 width: 180px;
                 padding: 2px 4px 4px 2px;
                 border-radius: 4px;

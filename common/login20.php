@@ -145,7 +145,7 @@ if($enable_helpdesk == 'Off'){
                     <!--Body-->
                     <div class="modal-body">
                         <div class="text-center">
-                            <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
+                            <i class="fa fa-refresh fa-4x mb-3 animated rotateIn"></i>
                             <br>
                             <p>To increase security we now require that all passowrds are at least <strong>8 characters long.</strong></p>
                             <hr>
@@ -182,7 +182,7 @@ if($enable_helpdesk == 'Off'){
                     <!--Body-->
                     <div class="modal-body">
                         <div class="text-center">
-                            <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
+                            <i class="fa fa-question-o fa-4x mb-3 animated rotateIn"></i>
                             <br>
                             <p>To maintain established site sfety standards we recently switched to secure servers with 256 bit encryption (same standard used for online banking). All transactions are now fully end to end encrypted and secure. The <strong>final step to tigthen up security</strong> and discourage brute forcing passwords, is the use of strong passwords.
                             <hr>

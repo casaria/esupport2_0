@@ -167,7 +167,7 @@ if($enable_helpdesk == 'Off'){
 
                                 <!--Header-->
                                 <div class="form-header orange-gradient">
-                                    <h3><i class="fa fa-user mt-2 mb-2"></i> Casaria eSupport 2.0 </h3>
+                                    <h4><i class="fa fa-user mt-2 mb-2"></i> Casaria eSupport 2.0 </h4>
                                 </div>
 
                                 <!--Body-->

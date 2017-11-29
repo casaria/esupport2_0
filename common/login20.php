@@ -128,6 +128,42 @@ if($enable_helpdesk == 'Off'){
 <body>
 <!--Main Navigation-->
     <header>
+        <!-- Central Modal Medium Info -->
+        <div class="modal fade" id="passwordModalInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-notify modal-info" role="document">
+                <!--Content-->
+                <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                        <p class="heading lead">Password requirements</p>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="white-text">&times;</span>
+                        </button>
+                    </div>
+
+                    <!--Body-->
+                    <div class="modal-body">
+                        <div class="text-center">
+                            <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
+                            <br>
+                            <p>To increase security we now require that all passowrdsa are at least <strong>8 characters long.</strong></p>
+                            <hr>
+                            <p>Passwords must contain letters &amp; numbers, at least one upper case letter, one lower case letter, and one symbol!</p>
+                            <p><strong>Please do not use names or simple number comnbinations such as 12345! Your account will sooner or later be compromised if you neglect secure password principles/strong></p>
+                        </div>
+                    </div>
+
+                    <!--Footer-->
+                    <div class="modal-footer justify-content-center">
+                        <a type="button" class="btn btn-outline-secondary-modal waves-effect" data-dismiss="modal">Close</a>
+                    </div>
+                </div>
+                <!--/.Content-->
+            </div>
+        </div>
+        <!-- Central Modal Medium Info-->
+
 
         <!-- Modal -->
         <div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="passwordModalLabel" aria-hidden="true">
@@ -197,7 +233,7 @@ if($enable_helpdesk == 'Off'){
                         <a class="nav-link" href="#" data-toggle="modal" data-target="#securityModal">Security information <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" data-toggle="modal" data-target="#passwordModal">password guidelines</a>
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#passwordModalInfo">password guidelines</a>
                     </li>
 
                 </ul>

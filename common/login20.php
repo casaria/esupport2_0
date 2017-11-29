@@ -135,12 +135,10 @@ if($enable_helpdesk == 'Off'){
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-
-
+                           <<div class="container-fluid">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div class="jumbotron text-center">
+
                                         <h4 class="h3-responsive">Password requirements</h4>
                                         <br>
 
@@ -148,14 +146,13 @@ if($enable_helpdesk == 'Off'){
                                         <hr>
                                         <p>Passwords must contain letters, at least on upper case, one symbok and numbers</p>
                                         <a id="templates-jumbotron-mdb" href="https://mdbootstrap.com/product/material-design-for-bootstrap-pro/" class="btn btn-dtc waves-effect waves-light">Material Design for Bootstrap <i class="fa fa-diamond right"></i></a>
-                                    </div>
+
 
                                 </div>
                             </div>
+                        </div>
+                        <span aria-hidden="true">&times;</span>
 
-
-                            <span aria-hidden="true">&times;</span>
-                        </button>
                     </div>
                     <div class="modal-body">
                         ...

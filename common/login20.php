@@ -149,7 +149,37 @@ if($enable_helpdesk == 'Off'){
                             </div>
 
                         <span aria-hidden="true">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Modal -->
+        <div class="modal fade" id="securityModal" tabindex="-1" role="dialog" aria-labelledby="securityModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="securityModalLabel">Enhanced site security</h5>
+
+                        <div class="col-md-12">
+                            <div class="row">
+                                <h4 class="h3-responsive">Password requirements</h4>
+                                <br>
+
+                                <p>To increase security we require all passowrds to be at least <strong>8 characters long.</strong></p>
+                                <hr>
+                                <p>Passwords must contain letters &amp; numbers, at least one upper case letter and one symbol!</p>
+                                <p><strong>Do not use names or simple number comnbinations such as 12345!</strong></p>
+                            </div>
+                        </div>
+
+                        <span aria-hidden="true">&times;</span>
                     </div>
                     <div class="modal-body">
                         ...

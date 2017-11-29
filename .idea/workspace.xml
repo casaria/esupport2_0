@@ -153,11 +153,13 @@
       <file leaf-file-name="login20.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/login20.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="149" column="0" lean-forward="true" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+            <state relative-caret-position="32">
+              <caret line="172" column="36" lean-forward="true" selection-start-line="172" selection-start-column="36" selection-end-line="172" selection-end-column="36" />
               <folding>
                 <element signature="e#4332#4337#0#HTML" expanded="true" />
                 <element signature="e#4646#4653#1#HTML" expanded="true" />
+                <element signature="e#5890#5895#0#HTML" expanded="true" />
+                <element signature="e#6191#6198#1#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -597,7 +599,7 @@
       <file leaf-file-name="login ori.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/login ori.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
+            <state relative-caret-position="-782">
               <caret line="159" column="43" lean-forward="false" selection-start-line="159" selection-start-column="43" selection-end-line="159" selection-end-column="43" />
               <folding>
                 <marker date="1511055303948" expanded="true" signature="4131:4197" ph="..." />
@@ -1324,14 +1326,7 @@
       <workItem from="1511397684196" duration="9388000" />
       <workItem from="1511824328583" duration="36038000" />
       <workItem from="1511906939164" duration="1904000" />
-      <workItem from="1511950556142" duration="12620000" />
-    </task>
-    <task id="LOCAL-02168" summary="login colors">
-      <created>1511902699738</created>
-      <option name="number" value="02168" />
-      <option name="presentableId" value="LOCAL-02168" />
-      <option name="project" value="LOCAL" />
-      <updated>1511902699739</updated>
+      <workItem from="1511950556142" duration="13126000" />
     </task>
     <task id="LOCAL-02169" summary="login colors">
       <created>1511903827306</created>
@@ -1669,11 +1664,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511964195310</updated>
     </task>
-    <option name="localTasksCounter" value="2217" />
+    <task id="LOCAL-02217" summary="login screen woith modal dialogs">
+      <created>1511964352892</created>
+      <option name="number" value="02217" />
+      <option name="presentableId" value="LOCAL-02217" />
+      <option name="project" value="LOCAL" />
+      <updated>1511964352893</updated>
+    </task>
+    <option name="localTasksCounter" value="2218" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1589495000" />
+    <option name="totallyTimeSpent" value="1590001000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1786,7 +1788,6 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
-    <MESSAGE value="Release 1.5.1b" />
     <MESSAGE value="`1`" />
     <MESSAGE value="Cleaned up release 1.5.1b" />
     <MESSAGE value="Corrected 1.5.1b" />
@@ -1811,7 +1812,8 @@
     <MESSAGE value="login" />
     <MESSAGE value="login colors" />
     <MESSAGE value="login colors`" />
-    <option name="LAST_COMMIT_MESSAGE" value="login colors`" />
+    <MESSAGE value="login screen woith modal dialogs" />
+    <option name="LAST_COMMIT_MESSAGE" value="login screen woith modal dialogs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3105,9 +3107,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/ugoptions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+          <folding>
+            <marker date="1507424517115" expanded="true" signature="1798:1845" ph="insert into ${$table}... " />
+            <marker date="1507424517115" expanded="true" signature="1954:1982" ph="delete from " />
+            <marker date="1507424517115" expanded="true" signature="2493:2499" ph=" " />
+            <marker date="1507424517115" expanded="true" signature="2499:2505" ph=" " />
+            <marker date="1507424517115" expanded="true" signature="2505:2511" ph=" " />
+            <marker date="1507424517115" expanded="true" signature="2511:2517" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/login ori.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
+        <state relative-caret-position="-782">
           <caret line="159" column="43" lean-forward="false" selection-start-line="159" selection-start-column="43" selection-end-line="159" selection-end-column="43" />
           <folding>
             <marker date="1511055303948" expanded="true" signature="4131:4197" ph="..." />
@@ -3143,28 +3160,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/ugoptions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-          <folding>
-            <marker date="1507424517115" expanded="true" signature="1798:1845" ph="insert into ${$table}... " />
-            <marker date="1507424517115" expanded="true" signature="1954:1982" ph="delete from " />
-            <marker date="1507424517115" expanded="true" signature="2493:2499" ph=" " />
-            <marker date="1507424517115" expanded="true" signature="2499:2505" ph=" " />
-            <marker date="1507424517115" expanded="true" signature="2505:2511" ph=" " />
-            <marker date="1507424517115" expanded="true" signature="2511:2517" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/login20.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="149" column="0" lean-forward="true" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+        <state relative-caret-position="32">
+          <caret line="172" column="36" lean-forward="true" selection-start-line="172" selection-start-column="36" selection-end-line="172" selection-end-column="36" />
           <folding>
             <element signature="e#4332#4337#0#HTML" expanded="true" />
             <element signature="e#4646#4653#1#HTML" expanded="true" />
+            <element signature="e#5890#5895#0#HTML" expanded="true" />
+            <element signature="e#6191#6198#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

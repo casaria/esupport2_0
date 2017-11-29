@@ -1761,7 +1761,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
             .text-tag {
                 margin: 5px;
                 margin-top: 10px;
-                width: 80px;
+                width: 50px;
                 height: 35px;
                 font-weight: 800;
                 font-size: 26px;

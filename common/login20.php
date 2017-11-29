@@ -141,10 +141,10 @@ if($enable_helpdesk == 'Off'){
                                         <h4 class="h3-responsive">Password requirements</h4>
                                         <br>
 
-                                        <p>To increase security we require all passowrds to be at least <strong>8 characters long</strong></p>
+                                        <p>To increase security we require all passowrds to be at least <strong>8 characters long.</strong></p>
                                         <hr>
-                                        <p>Passwords must contain letters, at least on upper case, one symbok and numbers</p>
-
+                                        <p>Passwords must contain letters &amp; numbers, at least one upper case letter and one symbol!</p>
+                                    <p><strong>Do not use names or simple number comnbinations such as 12345!</strong></p>
                                 </div>
                             </div>
 
@@ -156,7 +156,6 @@ if($enable_helpdesk == 'Off'){
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
                 </div>
             </div>

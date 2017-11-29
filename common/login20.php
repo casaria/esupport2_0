@@ -96,7 +96,7 @@ require_once "common.php";
         }
 
         .card {
-            margin-top: 20px;
+            margin-top: 30px;
          /*   margin-bottom: 30px; */
 
         }

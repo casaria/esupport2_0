@@ -200,7 +200,7 @@ if($enable_helpdesk == 'Off'){
             <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#" data-toggle="modal" data-target="securityModal">Security information <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#securityModal">Security information <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-toggle="modal" data-target="#passwordModal">password guidelines</a>

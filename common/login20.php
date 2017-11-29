@@ -176,11 +176,7 @@ if($enable_helpdesk == 'Off'){
                                 <p>Finally, we also monitor login attempts and multiple successive, failed login attempts will lockout your site's IP address permanently (This will poterntially lock out all your co-workers from using eSupport as well, until verified and manually reset). Therefore, if your login credentials do not work after a few attempts, please contact us imemdiately and do not retry exessively until your IP becomes blacklisted.<br>Thank you!</p>
                             </div>
                         </div>
-
                         <span aria-hidden="true">&times;</span>
-                    </div>
-                    <div class="modal-body">
-                        ...
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

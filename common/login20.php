@@ -144,8 +144,6 @@ if($enable_helpdesk == 'Off'){
                                         <p>To increase security we require all passowrds to be at least <strong>8 characters long</strong></p>
                                         <hr>
                                         <p>Passwords must contain letters, at least on upper case, one symbok and numbers</p>
-                                        <a id="templates-jumbotron-mdb" href="https://mdbootstrap.com/product/material-design-for-bootstrap-pro/" class="btn btn-dtc waves-effect waves-light">Material Design for Bootstrap <i class="fa fa-diamond right"></i></a>
-
 
                                 </div>
                             </div>

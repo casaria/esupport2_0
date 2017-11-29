@@ -171,9 +171,9 @@ if($enable_helpdesk == 'Off'){
                                 <h4 class="h3-responsive">Why the changes?</h4>
                                 <br>
 
-                                <p>To maintain established site sfety standards we recently switched to secure servers with 256 bit encryption (same standard used for online banking). All transactions are fully end to end encrypted and secure. The final step to tigthen up security and discourage brute forcing passwords is to increase password security by requiringf strong passwords.
+                                <p>To maintain established site sfety standards we recently switched to secure servers with 256 bit encryption (same standard used for online banking). All transactions are now fully end to end encrypted and secure. The <strong>final step to tigthen up security</strong> and discourage brute forcing passwords, is the use of strong passwords.
                                 <hr>
-                                <p>Lastly we also monitor login attempts. Multiple successive, failed login attempts will lockout your sites IP address (and poterntially lock out all your co-workers from using eSupport as well, until verified and manually reset. Therefore, if your login credentials do not work after a fewe attempts, please contact us imemdiately and do not retry exessively until your IP becomes blacklisted.<br>Thank you!</p>
+                                <p>Finally, we also monitor login attempts and multiple successive, failed login attempts will lockout your site's IP address permanently (This will poterntially lock out all your co-workers from using eSupport as well, until verified and manually reset). Therefore, if your login credentials do not work after a few attempts, please contact us imemdiately and do not retry exessively until your IP becomes blacklisted.<br>Thank you!</p>
                             </div>
                         </div>
 

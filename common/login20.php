@@ -162,7 +162,7 @@ if($enable_helpdesk == 'Off'){
                     <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-lg-5">
 
                         <!--Form with header-->
-                        <div class="card wow fadeIn" data-wow-delay="0.3s">
+                        <div class="card wow fadeIn" data-wow-delay="0.7s">
                             <div class="card-body">
 
                                 <!--Header-->
@@ -173,13 +173,13 @@ if($enable_helpdesk == 'Off'){
                                 <!--Body-->
                                 <div class="md-form">
                                     <i class="fa fa-user prefix white-text"></i>
-                                    <input type="text" id="username" class="form-control">
+                                    <input type="text" id="orangeForm-name" name="user" class="form-control">
                                     <label for="orangeForm-name">Your user name</label>
                                 </div>
 
                                 <div class="md-form">
                                     <i class="fa fa-lock prefix white-text"></i>
-                                    <input type="password" id="password" class="form-control">
+                                    <input type="password" id="orangeForm-pass" name="password" class="form-control">
                                     <label for="orangeForm-pass">Your password</label>
                                 </div>
 

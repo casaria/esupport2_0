@@ -130,7 +130,7 @@ if($enable_helpdesk == 'Off'){
     <header>
 
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="passordModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -162,7 +162,7 @@ if($enable_helpdesk == 'Off'){
                         <a class="nav-link" href="#">Security information <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">password guidelines</a>
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#passwordModal">password guidelines</a>
                     </li>
 
                 </ul>

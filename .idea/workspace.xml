@@ -25,7 +25,7 @@
     <bookmark url="file://$PROJECT_DIR$/common/style.php" line="1826" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="login colors">
+    <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/login20.php" afterPath="$PROJECT_DIR$/common/login20.php" />
     </list>
@@ -153,8 +153,8 @@
       <file leaf-file-name="login20.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/login20.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="99" column="32" lean-forward="true" selection-start-line="99" selection-start-column="32" selection-end-line="99" selection-end-column="32" />
+            <state relative-caret-position="171">
+              <caret line="99" column="37" lean-forward="false" selection-start-line="99" selection-start-column="37" selection-end-line="99" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -163,9 +163,16 @@
       <file leaf-file-name="ugoptions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/ugoptions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="80" column="33" lean-forward="false" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="153">
+              <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+              <folding>
+                <marker date="1507424517115" expanded="true" signature="1798:1845" ph="insert into ${$table}... " />
+                <marker date="1507424517115" expanded="true" signature="1954:1982" ph="delete from " />
+                <marker date="1507424517115" expanded="true" signature="2493:2499" ph=" " />
+                <marker date="1507424517115" expanded="true" signature="2499:2505" ph=" " />
+                <marker date="1507424517115" expanded="true" signature="2505:2511" ph=" " />
+                <marker date="1507424517115" expanded="true" signature="2511:2517" ph=" " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -653,9 +660,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>$lang_ticket #$g_tkt_id_padded  &amp;nbsp&amp;nbsp Usergroup:$g_tkt_uGoup_name</find>
-      <find>padded</find>
-      <find>progress</find>
       <find>footer</find>
       <find>$g_</find>
       <find>billingsta</find>
@@ -683,6 +687,9 @@
       <find>inp</find>
       <find>style=</find>
       <find>fade</find>
+      <find>fadez</find>
+      <find>fa-</find>
+      <find>fa</find>
     </findStrings>
     <replaceStrings>
       <replace>$summary = displayTicket($result);</replace>
@@ -1314,14 +1321,7 @@
       <workItem from="1511397684196" duration="9388000" />
       <workItem from="1511824328583" duration="36038000" />
       <workItem from="1511906939164" duration="1904000" />
-      <workItem from="1511950556142" duration="8957000" />
-    </task>
-    <task id="LOCAL-02154" summary="login colors">
-      <created>1511861441687</created>
-      <option name="number" value="02154" />
-      <option name="presentableId" value="LOCAL-02154" />
-      <option name="project" value="LOCAL" />
-      <updated>1511861441687</updated>
+      <workItem from="1511950556142" duration="9299000" />
     </task>
     <task id="LOCAL-02155" summary="login colors">
       <created>1511861557780</created>
@@ -1659,11 +1659,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511960371276</updated>
     </task>
-    <option name="localTasksCounter" value="2203" />
+    <task id="LOCAL-02203" summary="login colors">
+      <created>1511960653092</created>
+      <option name="number" value="02203" />
+      <option name="presentableId" value="LOCAL-02203" />
+      <option name="project" value="LOCAL" />
+      <updated>1511960653092</updated>
+    </task>
+    <option name="localTasksCounter" value="2204" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1585832000" />
+    <option name="totallyTimeSpent" value="1586174000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -2599,14 +2606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/ugoptions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="80" column="33" lean-forward="false" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/ugroups.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1343">
@@ -3141,10 +3140,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/ugoptions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+          <folding>
+            <marker date="1507424517115" expanded="true" signature="1798:1845" ph="insert into ${$table}... " />
+            <marker date="1507424517115" expanded="true" signature="1954:1982" ph="delete from " />
+            <marker date="1507424517115" expanded="true" signature="2493:2499" ph=" " />
+            <marker date="1507424517115" expanded="true" signature="2499:2505" ph=" " />
+            <marker date="1507424517115" expanded="true" signature="2505:2511" ph=" " />
+            <marker date="1507424517115" expanded="true" signature="2511:2517" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/login20.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="99" column="32" lean-forward="true" selection-start-line="99" selection-start-column="32" selection-end-line="99" selection-end-column="32" />
+        <state relative-caret-position="171">
+          <caret line="99" column="37" lean-forward="false" selection-start-line="99" selection-start-column="37" selection-end-line="99" selection-end-column="37" />
           <folding />
         </state>
       </provider>

@@ -97,7 +97,7 @@ require_once "common.php";
 
         .card {
             margin-top: 20px;
-            margin-bottom: 30px;
+         /*   margin-bottom: 30px; */
 
         }
 
@@ -167,7 +167,7 @@ if($enable_helpdesk == 'Off'){
 
                                 <!--Header-->
                                 <div class="form-header orange-gradient">
-                                    <h5><i class="fa id-card-o mt-2 mb-2"></i> Casaria eSupport 2.0 </h5>
+                                    <h5><i class="fa fa-user-secret mt-2 mb-2"></i> Casaria eSupport 2.0 </h5>
                                 </div>
 
                                 <!--Body-->
@@ -187,9 +187,7 @@ if($enable_helpdesk == 'Off'){
                                     <button class="btn orange-gradient btn-lg">LOGIN</button>
                                     <hr>
                                     <div class="inline-ul text-center d-flex justify-content-center">
-                                        <a class="icons-sm tw-ic"><i class="fa fa-twitter white-text"></i></a>
-                                        <a class="icons-sm li-ic"><i class="fa fa-linkedin white-text"> </i></a>
-                                        <a class="icons-sm ins-ic"><i class="fa fa-instagram white-text"> </i></a>
+
                                     </div>
                                 </div>
 

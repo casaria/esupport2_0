@@ -150,7 +150,7 @@ if($enable_helpdesk == 'Off'){
                             <p>To increase security we now require that all passowrdsa are at least <strong>8 characters long.</strong></p>
                             <hr>
                             <p>Passwords must contain letters &amp; numbers, at least one upper case letter, one lower case letter, and one symbol!</p>
-                            <p><strong>Please do not use names or simple number comnbinations such as 12345! Your account will sooner or later be compromised if you neglect secure password principles/strong></p>
+                            <p><strong>Please do not use names or simple number comnbinations such as 12345! If you neglect secure password principles, your account will sooner or later be compromised! Therefore use strong passwords!</strong></p>
                         </div>
                     </div>
 

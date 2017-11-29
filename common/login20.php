@@ -165,7 +165,7 @@ if($enable_helpdesk == 'Off'){
         <!-- Central Modal Medium Info-->
         <!-- Central Modal Medium Info -->
         <div class="modal fade" id="securityModalInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-notify modal-info" role="document">
+            <div class="modal-dialog modal-warning modal-info" role="document">
                 <!--Content-->
                 <div class="modal-content">
                     <!--Header-->

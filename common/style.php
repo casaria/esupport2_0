@@ -1071,7 +1071,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
             /*Wide Layout*/
             @media screen and (min-width: 768px) {
                 .wrap {
-                    width: 1140px;
+                    width: 1024px;
                     margin: 0 auto;
                     zoom: 0.9;
                 }

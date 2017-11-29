@@ -138,14 +138,13 @@ if($enable_helpdesk == 'Off'){
 
                             <div class="col-md-12">
                                 <div class="row">
-                                        <h4 class="h3-responsive">Password requirements</h4>
-                                        <br>
-
-                                        <p>To increase security we require all passowrds to be at least <strong>8 characters long.</strong></p>
-                                        <hr>
-                                        <p>Passwords must contain letters &amp; numbers, at least one upper case letter and one symbol!</p>
-                                    <p><strong>Do not use names or simple number comnbinations such as 12345!</strong></p>
-                                 </div>
+                                    <h4 class="h3-responsive">Password requirements</h4>
+                                    <br>
+                                    <p>To increase security we now require that all passowrdsa are at least <strong>8 characters long.</strong></p>
+                                    <hr>
+                                    <p>Passwords must contain letters &amp; numbers, at least one upper case letter, one lower case letter, and one symbol!</p>
+                                    <p><strong>Please do not use names or simple number comnbinations such as 12345! Your account will sooner or later be compromised if you neglect secure password principles/strong></p>
+                                </div>
                             </div>
 
                         <span aria-hidden="true">&times;</span>
@@ -169,13 +168,12 @@ if($enable_helpdesk == 'Off'){
 
                         <div class="col-md-12">
                             <div class="row">
-                                <h4 class="h3-responsive">Password requirements</h4>
+                                <h4 class="h3-responsive">Why the changes?</h4>
                                 <br>
 
-                                <p>To increase security we require all passowrds to be at least <strong>8 characters long.</strong></p>
+                                <p>To maintain established site sfety standards we recently switched to secure servers with 256 bit encryption (same standard used for online banking). All transactions are fully end to end encrypted and secure. The final step to tigthen up security and discourage brute forcing passwords is to increase password security by requiringf strong passwords.
                                 <hr>
-                                <p>Passwords must contain letters &amp; numbers, at least one upper case letter and one symbol!</p>
-                                <p><strong>Do not use names or simple number comnbinations such as 12345!</strong></p>
+                                <p>Lastly we also monitor login attempts. Multiple successive, failed login attempts will lockout your sites IP address (and poterntially lock out all your co-workers from using eSupport as well, until verified and manually reset. Therefore, if your login credentials do not work after a fewe attempts, please contact us imemdiately and do not retry exessively until your IP becomes blacklisted.<br>Thank you!</p>
                             </div>
                         </div>
 

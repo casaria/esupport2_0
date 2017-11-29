@@ -18,7 +18,7 @@
 $mtime1 = explode(" ", microtime());
 $starttime = $mtime1[0] + $mtime1[1];
 
-require_once "style.php";
+//require_once "style.php";
 require_once "config.php";
 require_once "$database.class.php";
 require_once "common.php";
@@ -39,7 +39,12 @@ require_once "common.php";
     <link href="../mdb/css/style.css" rel="stylesheet">
 
     <style>
+        .intro-3 {
 
+            background-image: linear-gradient(rgba(56,35,35, 0.5), rgba(67, 69, 34, 0.9)), url("../img/svg/bg1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
         .intro-2 {
             background: url("../img/IMG_3629.png")no-repeat center center;
             background-size: cover;

@@ -64,6 +64,10 @@ require_once "config.php";
 //set the variables from the database if not running the install
 $var = getVariables();
 
+class approveResult {
+    public $pass;
+    public $message;
+}
 
 $announcements_limit = $var['announcements_per'];		//number of announcements to display on the main page.
 $users_limit = $var['users_per'];				//number of users to list in a user/supporter list
@@ -271,7 +275,37 @@ function isEmpty($table)
 	}
 }
 
+/***********************************************************************************************************
+ **	function approvePassword():
+ **		Takes two arguments, password tring, and minimum length, return boolean true. and  Else,
+ **	return boolean false.
+ ************************************************************************************************************/
+function approvePassword($pwd, $minlength)
+{
+    $error='';
 
+if (strlen($pwd) > 20 ) {
+    $error .= "Password too long! ";}
+
+if (strlen($pwd) <  $minlenght ) {
+    $error .= "Password too short! ";}
+
+if (!preg_match("#[0-9]+#", $pwd)) {
+    $error .= "Password must include at least one number! ";}
+
+if (!preg_match("#[a-z]+#", $pwd)) {
+    $error .= "Password must include at least one letter! ";}
+
+if (!preg_match("#[A-Z]+#", $pwd)) {
+    $error .= "Password must include at least one CAPS! ";}
+
+if (!preg_match("#\W+#", $pwd)) {
+    $error .= "Password must include at least one symbol! ";}
+    $result = new approveResult();
+    $result->message = $error;
+    $error == '' ? $result->pass=true : $result->pass=false;
+
+}
 /***********************************************************************************************************
  **	function randomPassword():
  **		Takes two arguments, both strings.  If strings are equal to each other, return boolean true.  Else,

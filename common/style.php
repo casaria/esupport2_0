@@ -1811,6 +1811,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 background-color: #284175 !important;
                 /*  background-color: #3f51b5 !important; */
             }
+
             .navbar:not(.top-nav-collapse) {
                 background: transparent !important;
             }
@@ -1820,7 +1821,6 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     /*   background: #3f51b5 !important; */
                 }
             }
-
             .card {
                 background-color: rgba(73, 60, 78, 0.55);
             }
@@ -1863,7 +1863,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 border-bottom: 1px solid #8EDEF8;
                 box-shadow: 0 1px 0 0 #8EDEF8;
             }
-            .md-form .cas-tb1 text-2:focus:not([readonly])+label,
+            .md-form input[type=text]:focus:not([readonly])+label,
             .md-form input[type=password]:focus:not([readonly])+label {
                 color: #8EDEF8;
             }
@@ -1880,7 +1880,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 function getThemeVars($name)
 {
     global $mysql_themes_table, $db;
-
+  
     if ($name == '') {
         return 'default';
     } else {

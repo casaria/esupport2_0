@@ -136,6 +136,24 @@ if($enable_helpdesk == 'Off'){
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="jumbotron text-center">
+                                        <h1 class="h3-responsive">Premium Bootstrap Templates &amp; Themes</h1>
+                                        <br>
+
+                                        <p>Have a look at our collection of advanced and stunning Bootstrap themes. <strong>Each of the pack contains dozens of premium templates</strong></p>
+                                        <hr>
+                                        <p>Or maybe you prefer to create templates on your own? Get our powerful <strong>Material Design UI KIT for Bootstrap</strong></p>
+                                        <a id="templates-jumbotron-mdb" href="https://mdbootstrap.com/product/material-design-for-bootstrap-pro/" class="btn btn-dtc waves-effect waves-light">Material Design for Bootstrap <i class="fa fa-diamond right"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>

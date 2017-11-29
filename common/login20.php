@@ -14,165 +14,117 @@
  * Created by
 
  */
+//set the start time so we can calculate how long it takes to load the page.
+$mtime1 = explode(" ", microtime());
+$starttime = $mtime1[0] + $mtime1[1];
 
-
+//require_once "style.php";
 require_once "config.php";
 require_once "$database.class.php";
 require_once "common.php";
 
 ?>
 
+    <style>
+        * {margin: 0; padding: 0;}
+    </style>
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../mdb/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../mdb/css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../mdb/css/style.css" rel="stylesheet">
 
+    <style>
+        .intro-3 {
 
+            background-image: linear-gradient(rgba(56,35,35, 0.5), rgba(67, 69, 34, 0.9)), url("../img/svg/bg1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .intro-2 {
+            background: url("../img/IMG_3629.png")no-repeat center center;
+            background-size: cover;
+        }
 
+        .top-nav-collapse {
+            background-color: #284175 !important;
+            /*  background-color: #3f51b5 !important; */
+        }
+        .navbar:not(.top-nav-collapse) {
+            background: transparent !important;
+        }
+        @media (max-width: 768px) {
+            .navbar:not(.top-nav-collapse) {
+                background-color: #32383e !important;
+                /*   background: #3f51b5 !important; */
+            }
+        }
+
+        .card {
+            background-color: rgba(73, 60, 78, 0.55);
+        }
+
+        .md-form .prefix {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+        .md-form label {
+            color: #ffffff;
+        }
+        h6 {
+            line-height: 1.7;
+        }
+        @media (max-width: 740px) {
+            .full-height,
+            .full-height body,
+            .full-height header,
+            .full-height header .view {
+                height: 750px;
+            }
+        }
+        @media (min-width: 741px) and (max-height: 638px) {
+            .full-height,
+            .full-height body,
+            .full-height header,
+            .full-height header .view {
+                height: 750px;
+            }
+        }
+
+        .card {
+            margin-top: 30px;
+            /*margin-bottom: -45px;*/
+
+        }
+
+        .md-form input[type=text]:focus:not([readonly]),
+        .md-form input[type=password]:focus:not([readonly]) {
+            border-bottom: 1px solid #8EDEF8;
+            box-shadow: 0 1px 0 0 #8EDEF8;
+        }
+        .md-form input[type=text]:focus:not([readonly])+label,
+        .md-form input[type=password]:focus:not([readonly])+label {
+            color: #8EDEF8;
+        }
+
+        .md-form .form-control {
+            color: #fff;
+        }
+    </style>
 
 <?php
-require_once "style.php";
-
 if($enable_helpdesk == 'Off'){
     printerror($on_off_reason);
     exit;
 }
 ?>
 
-<?php
-//set the start time so we can calculate how long it takes to load the page.
-$mtime1 = explode(" ", microtime());
-$starttime = $mtime1[0] + $mtime1[1];
-$normalized_username ='';
-$normalized_password ='';
-$normalized_referer ='';
-require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
+</head>
 
-
-require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
-$login_logo = "../images/casariadefault/small-header-brown.gif";
-
-$cookieuser = '';
-//common.php
-session_status() === PHP_SESSION_ACTIVE  ? $cookieuser == '' : startSession();
-
-$cookie_name = strtolower($_SESSION['cookie_name']);
-$normalized_username  = strtolower (trim($_POST['user']));
-$normalized_password = trim($_POST['password']);
-/*  Not a good ides
- *  trim ($_POST['password'],"((?=^)(\s*))|((\s*)(?>$))"); *
- */
-$normalized_referer = strtolower (trim($HTTP_REFERER));
-//echo "cookie_name = $cookie_name <br>";
-//echo "session ID =" . session_id(). " <br>";
-//if submit has been hit, set the cookie and reload the page immediately so the cookie takes effect.
-if(isset($login))
-{
-    //if admin is contained in the url, we need to make sure the user is an
-    //admin before letting them login.
-    if ($$cookie_name=='')  {$cookie_name= $normalized_username;}
-    if(ereg("/admin", $normalized_referer)){
-        //check the user name and password against the database.
-        if(checkUser($normalized_username, md5($normalized_password))){
-            if(isAdministrator($normalized_username)){
-
-                //session_register ("cookie_name");
-                $_SESSION ["cookie_name"] = $cookie_name;
-                $enc_pwd = md5($normalized_password);
-                //session_register ("enc_pwd");
-                $_SESSION ["enc_pwd"] = $enc_pwd;
-
-                //nov14 header("Location: $referer");
-            }
-            else{
-                echo $lang_notadmin;
-                exit;
-            }
-        }
-        else{
-            echo $lang_wronglogin;
-            exit;
-        }
-
-    }
-
-    elseif ( (ereg("/supporter", $normalized_referer))  ){
-        //check the user name and password against the database.
-        if(checkUser($normalized_username, md5($normalized_password))){
-            if(isSupporter($normalized_username)){
-                $cookie_name = $normalized_username;
-                $userIsSupporter = true;
-                //session_register("cookie_name");
-                $_SESSION ["cookie_name"] = $cookie_name;
-                $enc_pwd = md5($normalized_password);
-                //session_register("enc_pwd");
-                $_SESSION ["enc_pwd"] = $enc_pwd;
-
-                //nov14 header("Location: $referer");
-                setcookie('supporter_usercookie', $cookie_name,  time()+ $session_time);
-                setcookie('supporter_pwdcookie', $normalized_password,  time()+ $session_time);
-
-            }
-            else{
-                echo $lang_notsupporter;
-                exit;
-            }
-        }
-        else{
-            echo $lang_wronglogin;
-            exit;
-        }
-
-    }
-
-    //otherwise, the user is not logging in to the admin site.
-    else{
-        //check the user name and password against the database.
-        if(checkUser($normalized_username, md5($normalized_password))){
-            if(isSupporter($normalized_username))
-
-
-
-
-                $cookie_name = $normalized_username;
-            //session_register ("cookie_name");
-            $_SESSION ['cookie_name'] = $cookie_name;
-            $enc_pwd = md5($normalized_password);
-            //session_register ("enc_pwd");
-            $_SESSION ['enc_pwd'] = $enc_pwd;
-
-            //nov14 header("Location: $referer");
-            //echo"<BR>$cookie_name $enc_pwd";
-            setcookie('cookieuser', $cookie_name,  time()+ $session_time);
-            setcookie('cookiepwd', $normalized_password,  time()+ $session_time);
-        }
-        else{
-            echo $lang_wronglogin;
-            exit;
-        }
-    }
-
-}
-
-//check the cookie first.
-if(!isSet($_SESSION ['cookie_name'])) {
-if (eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
-    $sup = 1;
-else
-    $sup = 0;
-
-require_once $includePath . "style.php";
-if (isset($_COOKIE['supporter_usercookie']))
-    $cookie_name = $_COOKIE['supporter_usercookie'];
-if (isset($_COOKIE['supporter_pwdcookie']))
-    $cookiepwd = $_COOKIE['supporter_pwdcookie'];
-
-
-echo
-'<script language="JavaScript">
-	function setfocus(){
-		document.login.user.focus();
-	} </script>';
-
-
-?>
 <body>
 <!--Main Navigation-->
     <header>
@@ -253,43 +205,6 @@ echo
 
     </header>
 <!--Main Navigation-->
-<?php
-
-if(eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
-    require "../common/footer.php";
-else
-    require "common/footer.php";
-
-exit;
-
-}
-else{  //Cookie was set
-
-    //if submit has not been pressed, check the cookie against the database.
-
-    if(preg_match("/admin/i", $PHP_SELF) && !isAdministrator($cookie_name) && $cookie_name !=
-
-        ''){
-        echo "$lang_notadmin";
-        exit;
-    }
-
-}
-//get some globals about the user
-if ($cookie_name != '') {
-    $user_id = getUserId($cookie_name);
-    $ugID_list = getUsersGroupIDList($user_id);
-
-} else {
-    echo $lang_wronglogin;
-    exit;
-}
-//this returns back to the page that called it.
-
-?>
-
-
-
 
 
 <!-- SCRIPTS -->

@@ -93,7 +93,7 @@ unset($number, $carrier, $message, $amount, $from, $headers, $to);
 Phone Number:
 </td>
 <td align=left valign=top>
-<inout type=text class=cas-tb1 text-2  name=number>
+<input type=text name=number>
 </td>
 </tr>
 
@@ -121,7 +121,7 @@ Carrier:
 From:
 </td>
 <td align=left valign=top>
-<inout type=text class=cas-tb1 text-2  name=from>
+<input type=text name=from>
 </td>
 </tr>
 
@@ -130,7 +130,7 @@ From:
 Subject:
 </td>
 <td align=left valign=top>
-<inout type=text class=cas-tb1 text-2  name=subject>
+<input type=text name=subject>
 </td>
 </tr>
 
@@ -148,7 +148,7 @@ Message:
 <td align=right valign=top>
 Amount: </td>
 <td align=left valign=top>
-<inout type=text class=cas-tb1 text-2  name=amount>
+<input type=text name=amount>
 </td>
 </tr>
 

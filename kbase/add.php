@@ -80,12 +80,12 @@ else{
 			createKCategoryMenu(0, $category);
 		echo '</select></td></tr>';
 		echo '<tr><td class=back2 align=right width=20%>
-			'.$lang_question.': </td><td colspan=1 class=back><inout type=text class=cas-tb1 text-2  size=60 name=question value="'.$short.'"></input></td></tr>';
+			'.$lang_question.': </td><td colspan=1 class=back><input type=text size=60 name=question value="'.$short.'"></input></td></tr>';
 		echo '<tr valign=top><td align=right class=back2 width=20%>
 			'.$lang_answer.': </td><td colspan=1 class=back> <textarea name=answer rows=15 cols=60>'.$description.'</textarea><br></td></tr>';
 		echo '</td></tr>';
 		echo '<tr><td class=back2 align=right width=20%>'.$lang_keywords.': <font size=1>('.$lang_sepbycomma.')</font></td> <td colspan=3 class=back>';
-		echo '<inout type=text class=cas-tb1 text-2  size=60 name=keywords></input></td></tr>';
+		echo '<input type=text size=60 name=keywords></input></td></tr>';
 		echo '<tr><td class=back2 align=right width=20%>'.$lang_viewableby.':</td> <td colspan=3 class=back>';
         echo '<select name=view>';
             createViewableByMenu();

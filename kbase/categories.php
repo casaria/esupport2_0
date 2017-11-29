@@ -71,7 +71,7 @@ startTable("$lang_category $lang_options", "center");
 	echo '
 		<tr><td class=back2>'.
 		$lang_addcat.':
-		<inout type=text class=cas-tb1 text-2  name=category></input>';
+		<input type=text name=category></input>';
 		echo '<br><input type=submit name=m value="'.$lang_addcat.'"></input>
 		
 		</form></td></tr>';

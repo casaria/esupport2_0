@@ -645,7 +645,7 @@ function createTimeTab()
     </tr>
     <tr>
      <td class="back2" width="180px">' . $lang_emailcc . ': </td>
-     <td class="back" colspan="4"><inout type=text class=cas-tb1 text-2  size=30 name=emailcc value="' . $info['emailcc'] . '"></td></tr>';
+     <td class="back" colspan="4"><input type=text size=30 name=emailcc value="' . $info['emailcc'] . '"></td></tr>';
         endTable();
     }
 
@@ -680,23 +680,23 @@ function createTimeTab()
 							<td width="120px" class=back2 align=right>' . $lang_username . ':</td>
 						
 							<td class=back>
-								<inout type=text class=cas-tb1 text-2  size=20 name=username value="' . $info['user'] . '">
+								<input type=text size=20 name=username value="' . $info['user'] . '">
 							</td></tr><tr>
 							<td class=back2 align=right>' . $lang_email . ': </td>
 							<td class=back align=left>
-								<inout type=text class=cas-tb1 text-2  size=20 name=user_email value="' . $info['email'] . '">
+								<input type=text size=20 name=user_email value="' . $info['email'] . '">
 							</td>
 
 						</tr>
 						<tr>    
 							<td class=back2 align=right>' . $lang_office . ':</td>
 							<td class=back>
-								<inout type=text class=cas-tb1 text-2  size=20 name=office value="' . $info['office'] . '">
+								<input type=text size=20 name=office value="' . $info['office'] . '">
 							</td></tr><tr>
 
 							<td class=back2 align=right>' . $lang_phoneext . ':</td>
 							<td cl-ass=back>
-								<inout type=text class=cas-tb1 text-2  size=20 name=phone value="' . $info['phone'] . '">
+								<input type=text size=20 name=phone value="' . $info['phone'] . '">
 							</td>';
 
         endTable();

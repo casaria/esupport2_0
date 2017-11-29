@@ -50,53 +50,53 @@ echo "<form method=\"post\" action=\"control.php?modify=yes&t=theme&tid=$tid\">"
 				startTable("$lang_createtheme:", "left", "90%", 3);
 					echo "<tr><td class=cat>$lang_desc:</td><td class=cat colspan=2>$lang_setting:</td></tr>";
 
-					echo "<tr><td class=subcat>$lang_themename:</td><td class=back2 colspan=2><inout type=text class=cas-tb1 text-2  name=name></td></tr>";
+					echo "<tr><td class=subcat>$lang_themename:</td><td class=back2 colspan=2><input type=text name=name></td></tr>";
 
-					echo "<tr><td class=subcat>$lang_bg $lang_color:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=bgcolor></td>";
+					echo "<tr><td class=subcat>$lang_bg $lang_color:</td><td class=back2><input type=text name=bgcolor></td>";
 					echo "<td bgcolor=".$row['bgcolor'].">&nbsp;</td></tr>";
 
-					echo "<tr><td class=subcat>$lang_text $lang_color:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=text></td>";
+					echo "<tr><td class=subcat>$lang_text $lang_color:</td><td class=back2><input type=text name=text></td>";
 					echo "<td bgcolor=".$row['text'].">&nbsp;</td></tr>";
 
-					echo "<tr><td class=subcat>$lang_link $lang_color:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=link></td>";
+					echo "<tr><td class=subcat>$lang_link $lang_color:</td><td class=back2><input type=text name=link></td>";
 					echo "<td bgcolor=".$row['link'].">&nbsp;</td></tr>";
 
-					echo "<tr><td class=subcat>$lang_tableborder $lang_color:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=border></td>";
+					echo "<tr><td class=subcat>$lang_tableborder $lang_color:</td><td class=back2><input type=text name=border></td>";
 					echo "<td bgcolor=".$row['table_border'].">&nbsp;</td></tr>";
 
-					echo "<tr><td class=subcat>$lang_bg $lang_color 1:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=bg1></td>";
+					echo "<tr><td class=subcat>$lang_bg $lang_color 1:</td><td class=back2><input type=text name=bg1></td>";
 					echo "<td bgcolor=".$row['bg1'].">&nbsp;</td></tr>";
 
-					echo "<tr><td class=subcat>$lang_bg $lang_color 2:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=bg2></td>";
+					echo "<tr><td class=subcat>$lang_bg $lang_color 2:</td><td class=back2><input type=text name=bg2></td>";
 					echo "<td bgcolor=".$row['bg2'].">&nbsp;</td></tr>";
 
-					echo "<tr><td class=subcat>$lang_header $lang_bg $lang_color:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=header_bg></td>";
+					echo "<tr><td class=subcat>$lang_header $lang_bg $lang_color:</td><td class=back2><input type=text name=header_bg></td>";
 					echo "<td bgcolor=".$row['header_bg'].">&nbsp;</td></tr>";
 
-					echo "<tr><td class=subcat>$lang_header $lang_text $lang_color:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=header_text ></td>";
+					echo "<tr><td class=subcat>$lang_header $lang_text $lang_color:</td><td class=back2><input type=text name=header_text ></td>";
 					echo "<td bgcolor=".$row['header_text'].">&nbsp;</td></tr>";
 
-					echo "<tr><td class=subcat>$lang_info $lang_bg $lang_color:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=info_bg ></td>";
+					echo "<tr><td class=subcat>$lang_info $lang_bg $lang_color:</td><td class=back2><input type=text name=info_bg ></td>";
 					echo "<td bgcolor=".$row['info_bg'].">&nbsp;</td></tr>";
 
-					echo "<tr><td class=subcat>$lang_info $lang_text $lang_color:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=info_text ></td>";
+					echo "<tr><td class=subcat>$lang_info $lang_text $lang_color:</td><td class=back2><input type=text name=info_text ></td>";
 					echo "<td bgcolor=".$row['info_text'].">&nbsp;</td></tr>";
 
-					echo "<tr><td class=subcat>$lang_category $lang_color:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=cat></td>";
+					echo "<tr><td class=subcat>$lang_category $lang_color:</td><td class=back2><input type=text name=cat></td>";
 					echo "<td bgcolor=".$row['category'].">&nbsp;</td></tr>";
 
-					echo "<tr><td class=subcat>$lang_subcat $lang_color:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=subcat></td>";
+					echo "<tr><td class=subcat>$lang_subcat $lang_color:</td><td class=back2><input type=text name=subcat></td>";
 					echo "<td bgcolor=".$row['subcategory'].">&nbsp;</td></tr>";
 
-					echo "<tr><td class=subcat>$lang_font:</td><td class=back2 colspan=2><inout type=text class=cas-tb1 text-2  name=font></td></tr>";
+					echo "<tr><td class=subcat>$lang_font:</td><td class=back2 colspan=2><input type=text name=font></td></tr>";
 
-					echo "<tr><td class=subcat>$lang_font $lang_size:</td><td class=back2 colspan=2><inout type=text class=cas-tb1 text-2  name=size></td></tr>";
+					echo "<tr><td class=subcat>$lang_font $lang_size:</td><td class=back2 colspan=2><input type=text name=size></td></tr>";
 
-					echo "<tr><td class=subcat>$lang_tablewidth</td><td class=back2 colspan=2><inout type=text class=cas-tb1 text-2  name=width></td></tr>";
+					echo "<tr><td class=subcat>$lang_tablewidth</td><td class=back2 colspan=2><input type=text name=width></td></tr>";
 
-					echo "<tr><td class=subcat>$lang_hdlogo:</td><td class=back2 colspan=2><inout type=text class=cas-tb1 text-2  name=logo_path></td></tr>";
+					echo "<tr><td class=subcat>$lang_hdlogo:</td><td class=back2 colspan=2><input type=text name=logo_path></td></tr>";
 
-					echo "<tr><td class=subcat>$lang_imagesdir:</td><td class=back2 colspan=2><inout type=text class=cas-tb1 text-2  name=image_dir></td></tr>";
+					echo "<tr><td class=subcat>$lang_imagesdir:</td><td class=back2 colspan=2><input type=text name=image_dir></td></tr>";
 
 
 				echo "</td></tr></table><tr><td class=back><br>";
@@ -132,44 +132,44 @@ echo "<form method=\"post\" action=\"control.php?modify=yes&t=theme&tid=$tid\">"
 			startTable("$lang_theme $lang_settings", "left", "90%", 3);
 				echo "<tr><td class=cat>$lang_desc:</td><td class=cat colspan=2>Setting:</td></tr>";
 				echo "<tr><td class=subcat>$lang_themename:</td><td class=back2 colspan=2><b>".$row['name']."</b></td></tr>";
-				echo "<tr><td class=subcat>$lang_bg $lang_color:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=bgcolor value='".$row['bgcolor']."'></td>";
+				echo "<tr><td class=subcat>$lang_bg $lang_color:</td><td class=back2><input type=text name=bgcolor value='".$row['bgcolor']."'></td>";
 				echo "<td bgcolor=".$row['bgcolor'].">&nbsp;</td></tr>";
-				echo "<tr><td class=subcat>$lang_text $lang_color:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=text value='".$row['text']."'></td>";
+				echo "<tr><td class=subcat>$lang_text $lang_color:</td><td class=back2><input type=text name=text value='".$row['text']."'></td>";
 				echo "<td bgcolor=".$row['text'].">&nbsp;</td></tr>";
-				echo "<tr><td class=subcat>$lang_link $lang_color:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=link value='".$row['link']."'></td>";
+				echo "<tr><td class=subcat>$lang_link $lang_color:</td><td class=back2><input type=text name=link value='".$row['link']."'></td>";
 				echo "<td bgcolor=".$row['link'].">&nbsp;</td></tr>";
-				echo "<tr><td class=subcat>$lang_tableborder $lang_color:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=border value='".$row['table_border']."'></td>";
+				echo "<tr><td class=subcat>$lang_tableborder $lang_color:</td><td class=back2><input type=text name=border value='".$row['table_border']."'></td>";
 				echo "<td bgcolor=".$row['table_border'].">&nbsp;</td></tr>";
-				echo "<tr><td class=subcat>$lang_bg $lang_color 1:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=bg1 value='".$row['bg1']."'></td>";
+				echo "<tr><td class=subcat>$lang_bg $lang_color 1:</td><td class=back2><input type=text name=bg1 value='".$row['bg1']."'></td>";
 				echo "<td bgcolor=".$row['bg1'].">&nbsp;</td></tr>";
-				echo "<tr><td class=subcat>$lang_bg $lang_color 2:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=bg2 value='".$row['bg2']."'></td>";
+				echo "<tr><td class=subcat>$lang_bg $lang_color 2:</td><td class=back2><input type=text name=bg2 value='".$row['bg2']."'></td>";
 				echo "<td bgcolor=".$row['bg2'].">&nbsp;</td></tr>";
-				echo "<tr><td class=subcat>$lang_header $lang_bg $lang_color:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=header_bg value='".$row['header_bg']."'></td>";
+				echo "<tr><td class=subcat>$lang_header $lang_bg $lang_color:</td><td class=back2><input type=text name=header_bg value='".$row['header_bg']."'></td>";
 				echo "<td bgcolor=".$row['header_bg'].">&nbsp;</td></tr>";
-				echo "<tr><td class=subcat>$lang_header $lang_text $lang_color:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=header_text value='".$row['header_text']."'></td>";
+				echo "<tr><td class=subcat>$lang_header $lang_text $lang_color:</td><td class=back2><input type=text name=header_text value='".$row['header_text']."'></td>";
 				echo "<td bgcolor=".$row['header_text'].">&nbsp;</td></tr>";
 
-				echo "<tr><td class=subcat>$lang_info $lang_bg $lang_color:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=info_bg value='".$row['info_bg']."'></td>";
+				echo "<tr><td class=subcat>$lang_info $lang_bg $lang_color:</td><td class=back2><input type=text name=info_bg value='".$row['info_bg']."'></td>";
 				echo "<td bgcolor=".$row['info_bg'].">&nbsp;</td></tr>";
 
-				echo "<tr><td class=subcat>$lang_info $lang_text $lang_color:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=info_text value='".$row['info_text']."'></td>";
+				echo "<tr><td class=subcat>$lang_info $lang_text $lang_color:</td><td class=back2><input type=text name=info_text value='".$row['info_text']."'></td>";
 				echo "<td bgcolor=".$row['info_text'].">&nbsp;</td></tr>";
 
-				echo "<tr><td class=subcat>$lang_category $lang_color:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=cat value='".$row['category']."'></td>";
+				echo "<tr><td class=subcat>$lang_category $lang_color:</td><td class=back2><input type=text name=cat value='".$row['category']."'></td>";
 				echo "<td bgcolor=".$row['category'].">&nbsp;</td></tr>";
 
-				echo "<tr><td class=subcat>$lang_subcat $lang_color:</td><td class=back2><inout type=text class=cas-tb1 text-2  name=subcat value='".$row['subcategory']."'></td>";
+				echo "<tr><td class=subcat>$lang_subcat $lang_color:</td><td class=back2><input type=text name=subcat value='".$row['subcategory']."'></td>";
 				echo "<td bgcolor=".$row['subcategory'].">&nbsp;</td></tr>";
 
-				echo "<tr><td class=subcat>$lang_font:</td><td class=back2 colspan=2><inout type=text class=cas-tb1 text-2  name=font value='".$row['font']."'></td></tr>";
+				echo "<tr><td class=subcat>$lang_font:</td><td class=back2 colspan=2><input type=text name=font value='".$row['font']."'></td></tr>";
 
-				echo "<tr><td class=subcat>$lang_font $lang_size:</td><td class=back2 colspan=2><inout type=text class=cas-tb1 text-2  name=size value='".$row['font_size']."'></td></tr>";
+				echo "<tr><td class=subcat>$lang_font $lang_size:</td><td class=back2 colspan=2><input type=text name=size value='".$row['font_size']."'></td></tr>";
 
-				echo "<tr><td class=subcat>$lang_tablewidth:</td><td class=back2 colspan=2><inout type=text class=cas-tb1 text-2  name=width value='".$row['width']."'></td></tr>";
+				echo "<tr><td class=subcat>$lang_tablewidth:</td><td class=back2 colspan=2><input type=text name=width value='".$row['width']."'></td></tr>";
 
-				echo "<tr><td class=subcat>$lang_hdlogo:</td><td class=back2 colspan=2><inout type=text class=cas-tb1 text-2  name=logo_path value='".$row['logo_path']."'></td></tr>";
+				echo "<tr><td class=subcat>$lang_hdlogo:</td><td class=back2 colspan=2><input type=text name=logo_path value='".$row['logo_path']."'></td></tr>";
 
-				echo "<tr><td class=subcat>$lang_imagesdir:</td><td class=back2 colspan=2><inout type=text class=cas-tb1 text-2  name=image_dir value='".$row['image_dir']."'></td></tr>";
+				echo "<tr><td class=subcat>$lang_imagesdir:</td><td class=back2 colspan=2><input type=text name=image_dir value='".$row['image_dir']."'></td></tr>";
 
 			endTable();
 			echo "<input type=hidden name=details value=change>";
@@ -228,7 +228,7 @@ echo "<form method=\"post\" action=\"control.php?modify=yes&t=theme&tid=$tid\">"
 				$i=0;
 				while($row = $db->fetch_array($result)){
 					echo "<tr><td class=subcat align=center><input class=box type=checkbox name=del".$i."></td>";
-					echo "<td class=back2><inout type=text class=cas-tb1 text-2  name=name".$i." value='".$row['name']."'>";
+					echo "<td class=back2><input type=text name=name".$i." value='".$row['name']."'>";
 					echo "<input type=hidden name=tid".$i." value=".$row['id'].">";
 					echo "<input type=hidden name=oldtheme".$i." value='".$row['name']."'>";
 					echo "&nbsp;&nbsp;&nbsp;<a href=\"control.php?tid=".$row['id']."&modify=yes&t=theme&details=change\">$lang_modify</a></td></tr>";

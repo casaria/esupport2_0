@@ -455,7 +455,7 @@ if(isset($search) || isset($s)) {
         echo "$lang_summary: $lang_recordcount $summary[recordcount] $summary[remarks]  <BR>";
 
         echo "<tr><td><td class=back>
-							<inout type=text class=cas-tb1 text-2  size=52% name=csvlist value='$summary[tktlist]'>
+							<input type=text size=52% name=csvlist value='$summary[tktlist]'>
 		</td></td></tr>";
         endTable();
        // endTable();
@@ -495,7 +495,7 @@ if(isset($search) || isset($s)) {
 						<TR>
 						<TD class=back2 align=right>'.$lang_Supporter.': </td>
 						<td class=back>
-							<inout type=text class=cas-tb1 text-2  name=supporter>
+							<input type=text name=supporter>
 						</td>
 						</tr>
 						<TR>
@@ -539,13 +539,13 @@ if(isset($search) || isset($s)) {
 						<TR>
 						<TD class=back2 align=right>'.$lang_username.': </td>
 						<td class=back>
-							<inout type=text class=cas-tb1 text-2  name=user>
+							<input type=text name=user>
 						</td>
 						</tr>
 						<TR>
 						<TD class=back2 align=right>'.$lang_office.': </td>
 						<td class=back>
-							<inout type=text class=cas-tb1 text-2  name=office>
+							<input type=text name=office>
 						</td>
 						</tr>
 						<TR>
@@ -693,13 +693,13 @@ echo'
 	        				<TR>
 						<TD class=back2 align=right>'.$lang_keywords.': </td>
 						<td class=back>
-							<inout type=text class=cas-tb1 text-2   name=keywords>
+							<input type=text  name=keywords>
 						</td>
 						</tr>
 						<TR>
 						<TD class=back2 align=right>'.$lang_sqlstmt.': </td>
 						<td class=back>'.$lang_sqlstmt2 . $mysql_tickets_table . $lang_sqlstmt3 . '
-							<inout type=text class=cas-tb1 text-2  name=input>';
+							<input type=text name=input>';
 echo'					</td>
 						</tr>
 						<TD class=back2 align=right>'.$lang_sql_example.': </td>

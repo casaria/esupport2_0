@@ -596,7 +596,7 @@ echo '
     <tr>
      <td class="back2" width="27%">'.$lang_emailcc.': </td>
      <td class="back" colspan=3>
-								<inout type=text class=cas-tb1 text-2  size=80 name=emailcc value="'.$info[emailcc].'">
+								<input type=text size=80 name=emailcc value="'.$info[emailcc].'">
 		 </td>
 		 
     </tr>';
@@ -629,23 +629,23 @@ startTable("$lang_userinfo     - Member of group(s): $groupname", "left", 100, 4
 		echo '			<tr>
 							<td width=27% class=back2 align=right>'.$lang_username.':</td>
 							<td class=back width=23%>
-								<inout type=text class=cas-tb1 text-2  size=20 name=username value="'.$info['user'].'">
+								<input type=text size=20 name=username value="'.$info['user'].'">
 							</td>
 							<td class=back2 align=right width=100>'.$lang_email.': </td>
 							<td class=back align=left>
-								<inout type=text class=cas-tb1 text-2  size=20 name=user_email value="'.$info['email'].'">
+								<input type=text size=20 name=user_email value="'.$info['email'].'">
 							</td>
 
 						</tr>
 						<tr>
 							<td width=27% class=back2 align=right>'.$lang_office.':</td>
 							<td class=back>
-								<inout type=text class=cas-tb1 text-2  size=20 name=office value="'.$info['office'].'">
+								<input type=text size=20 name=office value="'.$info['office'].'">
 							</td>
 
 							<td class=back2 align=right width=100>'.$lang_phoneext.':</td>
 							<td class=back>
-								<inout type=text class=cas-tb1 text-2  size=20 name=phone value="'.$info['phone'].'">
+								<input type=text size=20 name=phone value="'.$info['phone'].'">
 							</td>';
 
 endTable();
@@ -728,7 +728,7 @@ function createTimeUpdate()
 		'</td>
 	<td width=25% class=back >';
 	echo 'minutes - supporter<BR>';
-	echo '<inout type=text class=cas-tb1 text-2  size=6 name=time_spent>  <select name=supporter1>'; createSupporterMenu($sg);
+	echo '<input type=text size=6 name=time_spent>  <select name=supporter1>'; createSupporterMenu($sg);
 	echo '</td>';
 	
 	echo '<td width=25% class=back >';
@@ -768,7 +768,7 @@ function createTimeUpdate()
 
 	echo '<td class=back >';
 	echo 'Work order / reference<BR>';
-	echo '<inout type=text class=cas-tb1 text-2  size=12 name=reference></td>';
+	echo '<input type=text size=12 name=reference></td>';
 	
 	endtable();
 }

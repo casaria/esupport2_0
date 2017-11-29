@@ -104,8 +104,8 @@ echo '<tr><td class=cat><br>
 echo '</tr></td>
 	 <tr><td class=back2><form action=control.php?t=users&act=ugrp method=post>
 		'.$lang_addgroup.': 
-		<inout type=text class=cas-tb1 text-2  name=group></input>
-		'.$lang_rank.': <inout type=text class=cas-tb1 text-2  name=rank size=2></input>';
+		<input type=text name=group></input>
+		'.$lang_rank.': <input type=text name=rank size=2></input>';
 
 echo "  $lang_email_all: <select name=emailtoggle <option value=\"OFF\" selected> $lang_off </option>";
 echo "<br> <option value=\"On\"> $lang_on </option></select>";
@@ -136,9 +136,9 @@ function listuGroups()
 			echo "\n<input type=hidden name=id$i value='$row[0]'>";
 			echo "\n<tr><td class=back>";
 	
-			echo "\n<inout type=text class=cas-tb1 text-2  name=group$i value=\"$row[2]\">";
+			echo "\n<input type=text name=group$i value=\"$row[2]\">";
 			
-			echo " $lang_rank: <inout type=text class=cas-tb1 text-2  size=2 value='$row[1]' name=rank".$i.">";
+			echo " $lang_rank: <input type=text size=2 value='$row[1]' name=rank".$i.">";
 			echo " $lang_email_all: ";
 			echo "<select name=emailtoggle$i>
 				   	<option value='Off'  "; if($row[3] == $lang_off) echo "selected"; echo ">$lang_off</option>

@@ -31,7 +31,7 @@ if(isset($search)) {
     echo '<TABLE class=border cellSpacing=0 cellPadding=0 width="100%" align=center border=0>';
     echo '<tr><td>';
     echo '<tr><<td class=back width="100%" >';
-    echo '<inout type=text class=cas-tb1 text-2  size=52% name="csvlist" value="$summary[tktlist]"></td></tr>';
+    echo '<input type=text size=52% name="csvlist" value="$summary[tktlist]"></td></tr>';
     endTable();
 }  ELSE {
 

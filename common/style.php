@@ -59,9 +59,6 @@ $tablePadding =2;
     <!--  <script src="../js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
-
-
-
     <link rel="stylesheet" href="/css/bootstrap.min.css" >
 
 
@@ -69,9 +66,9 @@ $tablePadding =2;
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-    <!-- THeSE ARE WORKING (All 4 sources   -->
+    <!-- THeSE ARE WORKING (ll 4 sources   -->
 
-    <script src="../dylay/assets/vendor/jquery.easing.1.3.js"></script>
+    <!--  <script src="../dylay/assets/vendor/jquery.easing.1.3.js"></script> -->
     <script src="../dylay/src/dylay.js"></script>
     <script src="../dylay/assets/js/main.js"></script>
 
@@ -84,11 +81,6 @@ $tablePadding =2;
 
     <link href='https://fonts.googleapis.com/css?family=Titillium Web:300:400:500:600:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/dylay/assets/css/main.css" media="screen">
-
-
-
-
-
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -543,7 +535,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
 
                                   }*/
-                .cas-tb1, textarea, select,
+                input[type=text], textarea, select,
                 input[type=password] {
                     border: 2px solid #67bcd1;
                     -webkit-box-shadow: #B4B5B5 3px 3px 3px;
@@ -573,7 +565,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     */
                 }
 
-                .cas-tb1:hover, input[type=password]:hover,
+                input[type=text]:hover, input[type=password]:hover,
                 textarea:hover, select:hover {
                     /* border: 2px dashed #ff9913; */
                     background-color: #ffaf46;
@@ -1062,7 +1054,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
             /*Wide Layout*/
             @media screen and (min-width: 768px) {
                 .wrap {
-                    width: 1024px;
+                    width: 1140px;
                     margin: 0 auto;
                     zoom: 0.9;
                 }
@@ -1158,7 +1150,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
 
                   }*/
-                .cas-tb1, .text-2, textarea, select, input[type=submit],
+                input[type=text], textarea, select, input[type=submit],
                 input[type=reset] {
                     border: 3px solid #ffad41;
                     -webkit-box-shadow: #B4B5B5 3px 3px 3px;
@@ -1189,7 +1181,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffc579, endColorstr=#fb9d23);
                 }
 
-                cas-tb1:hover, text-2:hover, textarea:hover, select:hover {
+                input[type=text]:hover, textarea:hover, select:hover {
                     border: 4px dashed rebeccapurple;
                     background-color: <?php echo $theme['bg2']; ?>;
                     color: <?php echo $theme['text']; ?>;
@@ -1729,7 +1721,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 font-size: 16px;
             }
 
-            .text-2 {
+            .text-2,
+            .text-login {
                 width: 180px;
                 padding: 2px 4px 4px 2px;
                 border-radius: 4px;
@@ -1752,7 +1745,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
             .text-tag {
                 margin: 5px;
                 margin-top: 10px;
-                width: 50px; !important;
+                width: 180px;
                 height: 35px;
                 font-weight: 800;
                 font-size: 26px;
@@ -1798,34 +1791,23 @@ console.log(document.querySelector('meta[name="viewport"]'));
             /*  MDB LOGON  */
 
             .intro-2 {
-                background: url("../img/IMG_3629.png")no-repeat center center;
+                background: url("https://mdbootstrap.com/img/Photos/Others/img%20(46).jpg")no-repeat center center;
                 background-size: cover;
             }
-
             .top-nav-collapse {
-                background-color: #284175 !important;
-                /*  background-color: #3f51b5 !important; */
+                background-color: #ff8a65 !important;
             }
-
             .navbar:not(.top-nav-collapse) {
                 background: transparent !important;
             }
             @media (max-width: 768px) {
                 .navbar:not(.top-nav-collapse) {
-                    background-color: #32383e !important;
-                    /*   background: #3f51b5 !important; */
+                    background: #ff8a65 !important;
                 }
             }
-            .card {
-                background-color: rgba(73, 60, 78, 0.55);
-            }
-
             .md-form .prefix {
                 font-size: 1.5rem;
                 margin-top: 1rem;
-            }
-            .md-form label {
-                color: #ffffff;
             }
             h6 {
                 line-height: 1.7;
@@ -1835,36 +1817,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 .full-height body,
                 .full-height header,
                 .full-height header .view {
-                    height: 750px;
+                    height: 1150px;
                 }
-            }
-            @media (min-width: 741px) and (max-height: 638px) {
-                .full-height,
-                .full-height body,
-                .full-height header,
-                .full-height header .view {
-                    height: 750px;
-                }
-            }
-
-            .card {
-                margin-top: 30px;
-                /*margin-bottom: -45px;*/
-
-            }
-
-            .md-form input[type=text]:focus:not([readonly]),
-            .md-form input[type=password]:focus:not([readonly]) {
-                border-bottom: 1px solid #8EDEF8;
-                box-shadow: 0 1px 0 0 #8EDEF8;
-            }
-            .md-form input[type=text]:focus:not([readonly])+label,
-            .md-form input[type=password]:focus:not([readonly])+label {
-                color: #8EDEF8;
-            }
-
-            .md-form .form-control {
-                color: #fff;
             }
 
 
@@ -1875,7 +1829,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 function getThemeVars($name)
 {
     global $mysql_themes_table, $db;
-  
+
     if ($name == '') {
         return 'default';
     } else {

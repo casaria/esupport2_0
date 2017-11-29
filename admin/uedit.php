@@ -244,23 +244,23 @@ startTable("$lang_edit $lang_user", "center", "100%", 2);
 
 			echo "
 				<tr><td class=cat align=right width=20%><b> $lang_firstname: </b></td><td class=back>
-					<inout type=text class=cas-tb1 text-2  value='".$info['first_name']."' name=first_name></td></tr>
+					<input type=text value='".$info['first_name']."' name=first_name></td></tr>
 				<tr><td class=cat align=right width=20%><b> $lang_lastname: </b></td><td class=back>
-					<inout type=text class=cas-tb1 text-2  value='".$info['last_name']."' name=last_name></td></tr>
+					<input type=text value='".$info['last_name']."' name=last_name></td></tr>
 				<tr><td class=cat align=right width=20%><b> $lang_username: </b></td><td class=back>
-					<inout type=text class=cas-tb1 text-2  value='".$info['user_name']."' name=user_name></td></tr>
+					<input type=text value='".$info['user_name']."' name=user_name></td></tr>
 				<tr><td class=cat align=right width=20%><b> $lang_emailaddy: </b></td><td class=back>
-					<inout type=text class=cas-tb1 text-2  value='".$info['email']."' name=email></td></tr>";
+					<input type=text value='".$info['email']."' name=email></td></tr>";
 				
 				if($enable_pager == 'On'){
 					echo "<tr><td class=cat align=right width=20%><b> $lang_pager $lang_email: </b></td><td class=back>
-						<inout type=text class=cas-tb1 text-2  value='".$info['pager_email']."' name=pager></td></tr>";
+						<input type=text value='".$info['pager_email']."' name=pager></td></tr>";
 				}
 				echo "
 				<tr><td class=cat align=right width=20%><b> $lang_office:</b></td><td class=back>
-					<inout type=text class=cas-tb1 text-2  value='".$info['office']."' name=office></td></tr>
+					<input type=text value='".$info['office']."' name=office></td></tr>
 				<tr><td class=cat align=right width=20%><b> $lang_phoneext:</b></td><td class=back>
-					<inout type=text class=cas-tb1 text-2  value='".$info['phone']."' name=phone></td></tr>
+					<input type=text value='".$info['phone']."' name=phone></td></tr>
 				<tr><td class=cat align=right width=20%><b>";
 					if($info[user] == 0){
 						echo "<font color=\"red\">";

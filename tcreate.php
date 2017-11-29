@@ -264,7 +264,7 @@ echo '
     <tr>
      <td class="back2" width="20%">'.$lang_emailcc.': </td>
      <td class="back">
-								<inout type=text class=cas-tb1 text-2  size=72 name=emailcc value="'.'">
+								<input type=text size=72 name=emailcc value="'.'">
 							</td>
     </tr>';
 endTable();
@@ -303,7 +303,7 @@ function createUserInfo($groupname)
 			echo "<tr>
 				<td width=100 class=back2 align=right>* $lang_username:</td>
 				<td width=190 class=back align=left>
-					<inout type=text class=cas-tb1 text-2  size=16 name=username value=\"$cookie_user_name\">
+					<input type=text size=16 name=username value=\"$cookie_user_name\">
 				</td>";
 		}
 
@@ -311,17 +311,17 @@ function createUserInfo($groupname)
 			echo "
 				<td class=back2 align=right width=20%> $lang_email: </td>
 				<td class=back width=25% align=left>
-					<inout type=text class=cas-tb1 text-2  name=email value=\"$cookie_email\">
+					<input type=text name=email value=\"$cookie_email\">
 				</td>
 				</tr>
 				<tr>
 				<td width=20% class=back2 align=RIGHT>* $lang_office:</td>
 				<td class=back width=25%>
-					<inout type=text class=cas-tb1 text-2  size=16 name=office value=\"$cookie_office\">
+					<input type=text size=16 name=office value=\"$cookie_office\">
 				</td>
 				<td class=back2 align=right> $lang_phoneext:</td>
 				<td class=back width=25%>
-					<inout type=text class=cas-tb1 text-2  name=phone value=\"$cookie_phone\">
+					<input type=text name=phone value=\"$cookie_phone\">
 				</td>";
 
 	endTable();

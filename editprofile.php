@@ -109,11 +109,11 @@ startTable("$lang_editprofile", "center");
 				<td class=back> <input type=hidden name=user value=\"".$user_info['user_name']."\">$user_info[user_name]</td></tr>\n";
 
 			echo "<tr><td width=180 class=back2>$lang_firstname: </td>
-				<td class=back> <inout type=text class=cas-tb1 text-2  size=30 name=first value=\"".$user_info['first_name']."\"></td></tr>\n";
+				<td class=back> <input type=text size=30 name=first value=\"".$user_info['first_name']."\"></td></tr>\n";
 			echo "<tr><td width=180 class=back2>$lang_lastname: </td>
-				<td class=back><inout type=text class=cas-tb1 text-2  size=30 name=last value=\"".$user_info['last_name']."\"></td></tr>\n";
+				<td class=back><input type=text size=30 name=last value=\"".$user_info['last_name']."\"></td></tr>\n";
 			echo "<tr><td width=180 class=back2>$lang_emailaddy: </td>
-				<td class=back><inout type=text class=cas-tb1 text-2  size=30 name=email value=\"".$user_info['email']."\"></td></tr>\n";
+				<td class=back><input type=text size=30 name=email value=\"".$user_info['email']."\"></td></tr>\n";
 			echo "<tr><td width=180 class=back2>$lang_password: </td>
 			<td class=back> <input type=password class=text-login style='margin-left: 4px' name=password><br>$lang_enterpwd</td></tr>\n";
 		endTable();
@@ -133,16 +133,16 @@ startTable("$lang_editprofile", "center");
 			echo "</td></tr>";
 			if($enable_pager == 'On' && isSupporter($cookie_name)){
 				echo "<tr><td width=180 class=back2>$lang_pager $lang_email: </td><td class=back>
-				      <inout type=text class=cas-tb1 text-2  size=30 name=pager value=\"".$user_info['pager_email']."\"></td></tr>";
+				      <input type=text size=30 name=pager value=\"".$user_info['pager_email']."\"></td></tr>";
 			}
 			echo "<tr><td width=180 class=back2>$lang_office: </td>
-				<td class=back> <inout type=text class=cas-tb1 text-2  size=30 name=office value=\"".$user_info['office']."\"></td></tr>\n";
+				<td class=back> <input type=text size=30 name=office value=\"".$user_info['office']."\"></td></tr>\n";
 			echo "<tr><td width=180 class=back2>$lang_phoneext: </td>
-				<td class=back> <inout type=text class=cas-tb1 text-2  size=30 name=phone value=\"".$user_info['phone']."\"></td></tr>\n";
+				<td class=back> <input type=text size=30 name=phone value=\"".$user_info['phone']."\"></td></tr>\n";
 			echo "<tr><td width=180 class=back2>$lang_yahoo: </td><td class=back>
-					<inout type=text class=cas-tb1 text-2  size=30 name=yahoo value=\"".$user_info['yahoo']."\"></td></tr>";
-			echo "<tr><td width=180 class=back2>$lang_msn: </td><td class=back> <inout type=text class=cas-tb1 text-2  size=30 name=msn value=\"".$user_info['msn']."\"></td></tr>";
-			echo "<tr><td width=180 class=back2>$lang_icq: </td><td class=back> <inout type=text class=cas-tb1 text-2  size=30 name=icq value=\"".$user_info['icq']."\"></td></tr>";
+					<input type=text size=30 name=yahoo value=\"".$user_info['yahoo']."\"></td></tr>";
+			echo "<tr><td width=180 class=back2>$lang_msn: </td><td class=back> <input type=text size=30 name=msn value=\"".$user_info['msn']."\"></td></tr>";
+			echo "<tr><td width=180 class=back2>$lang_icq: </td><td class=back> <input type=text size=30 name=icq value=\"".$user_info['icq']."\"></td></tr>";
 			echo "<tr><td width=180 class=back2>$lang_lastactive: </td><td class=back>";
 			//echo gmdate("n-d-Y \a\\t h:i a", $last_active + ($time_offset * 3600));
 				echo  date("F j, Y, g:i a", $last_active);

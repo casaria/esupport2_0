@@ -163,7 +163,46 @@ if($enable_helpdesk == 'Off'){
             </div>
         </div>
         <!-- Central Modal Medium Info-->
+        <!-- Central Modal Medium Info -->
+        <div class="modal fade" id="securityModalInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-notify modal-info" role="document">
+                <!--Content-->
+                <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                        <p class="heading lead">Why the changes?</p>
+                        <h4 class="h3-responsive"></h4>
+                        <br>
 
+                        <p>To maintain established site sfety standards we recently switched to secure servers with 256 bit encryption (same standard used for online banking). All transactions are now fully end to end encrypted and secure. The <strong>final step to tigthen up security</strong> and discourage brute forcing passwords, is the use of strong passwords.
+                        <hr>
+                        <p>Finally, we also monitor login attempts and multiple successive, failed login attempts will lockout your site's IP address permanently (This will poterntially lock out all your co-workers from using eSupport as well, until verified and manually reset). Therefore, if your login credentials do not work after a few attempts, please contact us imemdiately and do not retry exessively until your IP becomes blacklisted.<br>Thank you!</p>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="white-text">&times;</span>
+                        </button>
+                    </div>
+
+                    <!--Body-->
+                    <div class="modal-body">
+                        <div class="text-center">
+                            <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
+                            <br>
+                            <p>To increase security we now require that all passowrdsa are at least <strong>8 characters long.</strong></p>
+                            <hr>
+                            <p>Passwords must contain letters &amp; numbers, at least one upper case letter, one lower case letter, and one symbol!</p>
+                            <p><strong>Please do not use names or simple number comnbinations such as 12345! If you neglect secure password principles, your account will sooner or later be compromised! Therefore use strong passwords!</strong></p>
+                        </div>
+                    </div>
+
+                    <!--Footer-->
+                    <div class="modal-footer justify-content-center">
+                        <a type="button" class="btn btn-outline-secondary-modal waves-effect" data-dismiss="modal">Close</a>
+                    </div>
+                </div>
+                <!--/.Content-->
+            </div>
+        </div>
+        <!-- Central Modal Medium Info-->
 
         <!-- Modal -->
         <div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="passwordModalLabel" aria-hidden="true">
@@ -230,7 +269,7 @@ if($enable_helpdesk == 'Off'){
             <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#" data-toggle="modal" data-target="#securityModal">Security information <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#securityModalInfo">Security information <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-toggle="modal" data-target="#passwordModalInfo">password guidelines</a>

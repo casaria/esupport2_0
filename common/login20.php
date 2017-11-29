@@ -130,11 +130,11 @@ if($enable_helpdesk == 'Off'){
     <header>
 
         <!-- Modal -->
-        <div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="passordModalLabel" aria-hidden="true">
+        <div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="passwordModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <h5 class="modal-title" id="passwordModalLabel">Password Guidelines</h5>
                            <<div class="container-fluid">
                             <div class="row">
                                 <div class="col-md-12">

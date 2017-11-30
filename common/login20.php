@@ -158,11 +158,19 @@ require_once "common.php";
                         minlength: 8,
                         maxlength: 20,
                         validpassword: true,
-                        equalTo: "#pass1"
+                        NotequalTo: "#pass1"
+                    },
+                    pass3: {
+                        required: true,
+                        minlength: 8,
+                        maxlength: 20,
+                        validpassword: true,
+                        equalTo: "#pass2"
                     }
+
                 },
                 // Specify validation error messages
-                messages: {
+               /* messages: {
                         form33: {
                             required: "Please provide a password",
                             minlength: "Password must be at least 5 characters"
@@ -171,7 +179,7 @@ require_once "common.php";
                             required: "Please repeat  the password",
                             minlength: "Password must be at least 5 characters"
                         }
-                },
+                }, */
 
                 // Make sure the form is submitted to the destination defined
                 // in the "action" attribute of the form when valid

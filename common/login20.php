@@ -141,13 +141,14 @@ require_once "common.php";
                     /^.*(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[\W]).*$/.test(value);
             }, "The password must contain a minimum of one lower case character," +
                 " one upper case character, one digit and one special character..");
-                    $("form[name='newPassForm']").validate({
+            $("form[name='newPassForm']").validate
+            ({
                 // Specify validation rules
                 rules: {
                     // The key name on the left side is the name attribute
                     // of an input field. Validation rules are defined
                     // on the right side
-                    pass1:{
+                    pass1: {
                         required: true,
                         minlength: 1,
                         maxlength: 20,
@@ -168,21 +169,21 @@ require_once "common.php";
                         equalTo: "#pass2"
                     }
 
-                },
+                }
                 // Specify validation error messages
-               /* messages: {
-                        form33: {
-                            required: "Please provide a password",
-                            minlength: "Password must be at least 5 characters"
-                        },
-                        form34: {
-                            required: "Please repeat  the password",
-                            minlength: "Password must be at least 5 characters"
-                        }
-                }, */
+                /* messages: {
+                         form33: {
+                             required: "Please provide a password",
+                             minlength: "Password must be at least 5 characters"
+                         },
+                         form34: {
+                             required: "Please repeat  the password",
+                             minlength: "Password must be at least 5 characters"
+                         }
+                 }, */
+            });
 
-
-        });
+        };
         // Set jQuery.validate settings for bootstrap integration
         jQuery.validator.setDefaults({
             highlight: function(element) {
@@ -237,17 +238,17 @@ if($enable_helpdesk == 'Off'){
                             <div class="md-form form-sm">
                                 <i class="fa fa-lock prefix"></i>
                                 <input type="password" id="form31" name="pass1" class="form-control">
-                                <label for="form31" class="active"}>Your current password</label>
+                                <label for="form31" class="active">Your current password</label>
                             </div>
                             <div class="md-form form-sm">
                                 <i class="fa fa-lock prefix"></i>
                                 <input type="password" name="pass2" id="form34" class="form-control">
-                                <label for="form34" class="active"}>New password</label>
+                                <label for="form34" class="active">New password</label>
                             </div>
                             <div class="md-form form-sm">
                                 <i class="fa fa-lock prefix"></i>
                                 <input type="password" name="pass3" id="form35" class="form-control">
-                                <label for="form35" class="active"}>Repeat New password</label>
+                                <label for="form35" class="active">Repeat New password</label>
                             </div>
                             <div class="text-center mt-2">
                                 <button type="submit"  id="validate" class="btn peach-gradient btn-rounded">Validate<i class="fa fa-sign-in ml-1"></i></button>

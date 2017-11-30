@@ -49,6 +49,9 @@ require_once "common.php";
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="../mdb/js/mdb.min.js"></script>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+
+
     <style>
         .intro-3 {
 
@@ -128,55 +131,43 @@ require_once "common.php";
     </style>
 
     <script type="text/javascript">
-        $(document).ready(function(){
-            $("#submit").click(function(){
-                let pass1_value = $("#pass1").val();
-                let pass2_value = $("#pass2").val();
-                let url = $form.attr('action');
-                formSuccess();
-
-                $.post(URL, { password1: pass1_value, password2: pass2_value }).done(function(data) {
-                    $("#response").html(data);
-                });
-            });
-        });
-
-        function submitMSG(valid, msg){
-            if(valid){
-                let msgClasses = "h3 text-center tada animated text-success";
-            } else {
-                let msgClasses = "h3 text-center text-danger";
-            }
-            $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
-        }
-
-
-        function formSuccess(){
-            $("#newPassForm")[0].reset();
-            submitMSG(true, "Message Submitted!")
-        }
-
-        function submitForm(){
-            // Initiate Variables With Form Content
-            let name = $("#pwd1").val();
-            let email = $("#pwd2").val();
-
-
-            $.ajax({
-                type: "POST",
-                url: "php/form-process.php",
-                data: "name=" + name + "&email=" + email + "&message=" + message,
-                success : function(text){
-                    if (text == "success"){
-                        formSuccess();
-                    } else {
-                        formError();
-                        submitMSG(false,text);
+        // Wait for the DOM to be ready
+        $(function() {
+            // Initialize form validation on the registration form.
+            // It has the name attribute "registration"
+            $("form[name='newPassForm']").validate({
+                // Specify validation rules
+                rules: {
+                    // The key name on the left side is the name attribute
+                    // of an input field. Validation rules are defined
+                    // on the right side
+                    pass1:{
+                        required: true,
+                        minlength: 5
+                    },
+                    pass2: {
+                        required: true,
+                        minlength: 5
                     }
+                },
+                // Specify validation error messages
+                messages: {,
+                        pass1: {
+                            required: "Please provide a password",
+                            minlength: "Your password must be at least 5 characters long"
+                        },
+                        pass2: {
+                            required: "Please repeat  the password",
+                            minlength: "Your password must be at least 5 characters long"
+                        }
+                },
+                // Make sure the form is submitted to the destination defined
+                // in the "action" attribute of the form when valid
+                submitHandler;: function(form) {
+                    form.submit();
                 }
-            });
-        }
-
+        })
+        });
 
     </script>
 
@@ -239,14 +230,7 @@ if($enable_helpdesk == 'Off'){
                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                         <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
                     </div>
-                    <form id="registrationForm" class="form-horizontal">
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">Username</label>
-                            <div class="col-lg-5">
-                                <input type="text" class="form-control" name="username" />
-                            </div>
-                        </div>
-                    </form>
+
                 </div>
                 <!--/.Content-->
             </div>

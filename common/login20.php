@@ -73,7 +73,7 @@ require_once "common.php";
             margin-top: 1rem;
         }
         .md-form label {
-            color: #ffffff;
+            color: #aaaaaa;
         }
         h6 {
             line-height: 1.7;
@@ -152,7 +152,7 @@ if($enable_helpdesk == 'Off'){
                         </div>
                         </div>
                         <div class="row">
-                        <div class="md-form form-text">
+                        <div class="md-form form">
                             <i class="fa fa-lock prefix"></i>
                             <input type="password" id="form34" class="form-control">
                             <label for="form34">Repeat password</label>

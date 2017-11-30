@@ -149,9 +149,7 @@ if($enable_helpdesk == 'Off'){
                             <input type="password" id="form33" class="form-control validate">
                             <label for="form33" data-error="wrong" data-success="strong">your new password</label>
                         </div>
-                        <div>
-                        <a class="btn-floating btn-lg purple-gradient"><i class="fa fa-bolt"></i></a>
-                        </div>
+
                         <div class="md-form form-sm grey-text">
                             <i class="fa fa-lock prefix"></i>
                             <input type="password" id="form34" class="form-control">
@@ -160,6 +158,8 @@ if($enable_helpdesk == 'Off'){
 
                         <div class="text-center mt-2">
                             <button class="btn btn-elegant btn-deep-orange">Validate<i class="fa fa-sign-in ml-1"></i></button>
+
+                                <a class="btn-floating btn-lg purple-gradient"><i class="fa fa-bolt"></i></a>
                         </div>
 
                     </div>

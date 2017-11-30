@@ -180,8 +180,10 @@ if($enable_helpdesk == 'Off'){
                         </div>
                     </div>
                 <!--/.Content-->
+                </div>
             </div>
         </div>
+
         <!--Modal: Register Form-->
 
 

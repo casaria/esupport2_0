@@ -121,8 +121,8 @@ require_once "common.php";
             $("#submit").click(function(){
                 let pass1_value = $("#pass1").val();
                 let pass2_value = $("#pass2").val();
-                let message_value = $("#message").val();
-                $.post("assets/email.php", { name: name_value, email: email_value, message: message_value }).done(function(data) {
+                formSuccess();
+                $.post("validatePWD.php", { password1: pass1_value, password2: pass2_value }).done(function(data) {
                     $("#response").html(data);
                 });
             });
@@ -135,6 +135,12 @@ require_once "common.php";
                 let msgClasses = "h3 text-center text-danger";
             }
             $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+        }
+
+
+        function formSuccess(){
+            $("#newPassForm")[0].reset();
+            submitMSG(true, "Message Submitted!")
         }
 
     </script>
@@ -152,7 +158,7 @@ if($enable_helpdesk == 'Off'){
 <body>
 <!--Main Navigation-->
     <header>
-        <!--Modal: Register Form-->
+        <!--Modal: new Password Form-->
         <div class="card modal fade" id="newpasswordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog cascading-modal   col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-lg-5" role="document">
                 <!--Content-->
@@ -167,24 +173,25 @@ if($enable_helpdesk == 'Off'){
                     </div>
                     <!--Body-->
                     <div class="modal-body">
+                        <form role="form" id="newPassForm">
+                            <div class="md-form form-sm grey-text">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" name="pass1" id="form33" class="form-control validate">
+                                <label for="form33" data-error="wrong" data-success="strong">your new password</label>
+                            </div>
 
-                        <div class="md-form form-sm grey-text">
-                            <i class="fa fa-lock prefix"></i>
-                            <input type="password" name="pass1" id="form33" class="form-control validate">
-                            <label for="form33" data-error="wrong" data-success="strong">your new password</label>
-                        </div>
+                            <div class="md-form form-sm grey-text">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" name="pass2" id="form34" class="form-control">
+                                <label for="form34">Repeat password</label>
+                            </div>
 
-                        <div class="md-form form-sm grey-text">
-                            <i class="fa fa-lock prefix"></i>
-                            <input type="password" name="pass2" id="form34" class="form-control">
-                            <label for="form34">Repeat password</label>
-                        </div>
+                            <div class="text-center mt-2">
+                                <button type="submit"  id="validate" class="btn peach-gradient btn-rounded">Validate<i class="fa fa-sign-in ml-1"></i></button>
 
-                        <div class="text-center mt-2">
-                            <button class="btn peach-gradient btn-rounded">Validate<i class="fa fa-sign-in ml-1"></i></button>
-
-                                <a class="btn blue-gradient btn-rounded"><i class="fa fa-bolt"></i></a>
-                        </div>
+                                    <a class="btn blue-gradient btn-rounded"><i class="fa fa-bolt"></i></a>
+                            </div>
+                        </form>
 
                     </div>
                     <!--Footer-->

@@ -126,7 +126,17 @@ require_once "common.php";
                     $("#response").html(data);
                 });
             });
-        })
+        });
+
+        function submitMSG(valid, msg){
+            if(valid){
+                var msgClasses = "h3 text-center tada animated text-success";
+            } else {
+                var msgClasses = "h3 text-center text-danger";
+            }
+            $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+        }
+
     </script>
 
 

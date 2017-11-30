@@ -119,9 +119,9 @@ require_once "common.php";
     <script type="text/javascript">
         $(document).ready(function(){
             $("#submit").click(function(){
-                var pass1_value = $("#pass1").val();
-                var pass2_value = $("#pass2").val();
-                var message_value = $("#message").val();
+                let pass1_value = $("#pass1").val();
+                let pass2_value = $("#pass2").val();
+                let message_value = $("#message").val();
                 $.post("assets/email.php", { name: name_value, email: email_value, message: message_value }).done(function(data) {
                     $("#response").html(data);
                 });
@@ -130,9 +130,9 @@ require_once "common.php";
 
         function submitMSG(valid, msg){
             if(valid){
-                var msgClasses = "h3 text-center tada animated text-success";
+                let msgClasses = "h3 text-center tada animated text-success";
             } else {
-                var msgClasses = "h3 text-center text-danger";
+                let msgClasses = "h3 text-center text-danger";
             }
             $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
         }

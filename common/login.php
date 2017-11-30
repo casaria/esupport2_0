@@ -47,7 +47,7 @@ $login_logo = "../images/casariadefault/small-header-brown.gif";
 
 $cookieuser = '';
 //common.php
-session_status() === PHP_SESSION_ACTIVE  ? $cookieuser == '' : startSession();
+session_status() === PHP_SESSION_ACTIVE  ? $cookieuser = '' : startSession();
 
 $cookie_name = strtolower($_SESSION['cookie_name']);
 $normalized_username  = strtolower (trim($_POST['user']));
@@ -78,6 +78,7 @@ $normalized_referer = strtolower (trim($HTTP_REFERER));
 				//nov14 header("Location: $referer");
 			}
 			else{
+				header("location:../index.php");
 				echo $lang_notadmin;
 				exit;
 			}

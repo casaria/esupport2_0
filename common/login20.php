@@ -131,21 +131,62 @@ require_once "common.php";
     </style>
 
     <script type="text/javascript">
+
+        jQuery.validator.addMethod("require_from_group", function(value, element, options) {
+            let $fields = jQuery(options[1], element.form),
+                $fieldsFirst = $fields.eq(0),
+                validator = $fieldsFirst.data('valid_req_grp') ? $fieldsFirst.data('valid_req_grp') : jQuery.extend({}, this),
+                isValid = $fields.filter(function() {
+                    return validator.elementValue(this);
+                }).length >= options[0];
+
+            // Store the cloned validator for future validation
+            $fieldsFirst.data('valid_req_grp', validator);
+            // If element isn't being validated, run each require_from_group field's validation rules
+            if (!jQuery(element).data('being_validated')) {
+                $fields.data('being_validated', true);
+                $fields.each(function() {
+                    validator.element(this);
+                });
+                $fields.data('being_validated', false);
+            }
+            return isValid;
+        },
+        jQuery.format("Please fill at least {0} of these fields.");
+
+        // Require old password when setting new one.
+
+        jQuery.validator.addMethod("old_pass_if_changing", function(value, element, options) {
+
+            let validator = this,
+                oldpass = jQuery(options[0]),
+                newpass = jQuery(options[1]);
+            if (!oldpass.val() && newpass.val()) let valid = false;
+            else let valid = true;
+
+            return valid;
+        },
+        jQuery.format("Old password must be supplied when setting new one.");
+
+        iQuery.validator.addMethod("notEqual", function(value, element, param) {
+            return this.optional(element) || (value != param);
+        },
+        jQuery.format("New Password cannot be the same as current.");
+
+
+
+        jQuery.validator.addMethod("validpassword", function(value, element) {
+            return this.optional(element) ||
+                /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$/.test(value);
+        },
+        jQuery.format("Password must contain a minimum of 1 lower case letter," +
+            " 1 upper case letter, 1 numeric and 1 special character.");
+
+
         // Wait for the DOM to be ready
         $(function() {
             // Initialize form validation on the registration form.
             // It has the name attribute "registration"
-            $.validator.addMethod("notEqual", function(value, element, param) {
-                return this.optional(element) || (value != param);
-            }, "New Password cannot be the same as current");
-
-
-            $.validator.addMethod("validpassword", function(value, element) {
-                return this.optional(element) ||
-                    /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$/.test(value);
-            }, "Password must contain a minimum of 1 lower case letter," +
-                " 1 upper case letter, 1 numeric and 1 special character.");
-
             $("form[name='newPassForm']").validate
             ({
                 // Specify validation rules

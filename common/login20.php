@@ -135,6 +135,10 @@ require_once "common.php";
         $(function() {
             // Initialize form validation on the registration form.
             // It has the name attribute "registration"
+            $.validator.addMethod("notEqual", function(value, element, param) {
+                return this.optional(element) || (value != param);
+            }, "new Password must be different different");
+
 
             $.validator.addMethod("validpassword", function(value, element) {
                 return this.optional(element) ||
@@ -153,13 +157,14 @@ require_once "common.php";
                         minlength: 2,
                         maxlength: 20,
                         validpassword: false,
-                        NotequalTo: "#pass2"
+                        notEqual: '#pass2'
                     },
                     pass2: {
                         required: true,
                         minlength: 8,
                         maxlength: 20,
                         validpassword: true
+                        equalTo: '#pass1'
 
                     },
                     pass3: {

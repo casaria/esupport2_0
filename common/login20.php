@@ -177,6 +177,15 @@ require_once "common.php";
                 submitHandler: function(form) {
                     form.submit();
                 }
+
+
+                        errorPlacement: function(error, element) {
+                            if (element.attr("name") == "gender") {
+                                error.insertAfter("#gendererror");
+                            } else {
+                                error.insertAfter(element);
+                            }
+                        }
         })
         });
 
@@ -224,7 +233,7 @@ if($enable_helpdesk == 'Off'){
                                 <input type="password" name="pass2" id="form34" class="form-control">
                                 <label for="form34">Repeat password</label>
                             </div>
-                            <div class="md-form form-sm grey-text">
+                            <div class="md-form form-sm">
                                 <i class="fa fa-lock prefix"></i>
                                 <input type="password" name="pass3" id="form35" class="form-control">
                                 <label for="form35">Repeat password</label>
@@ -243,6 +252,7 @@ if($enable_helpdesk == 'Off'){
                         <div id="response" class="options text-center text-md-right mt-1">
                             <p>Enter a new PWD</p>
                         </div>
+                        <div id="gendererror"></div>
                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                         <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
                     </div>

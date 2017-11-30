@@ -112,7 +112,7 @@ require_once "common.php";
         }
 
         .md-form .form-control {
-            color: #fff;
+            color: #546;
         }
     </style>
 
@@ -129,7 +129,7 @@ if($enable_helpdesk == 'Off'){
 <!--Main Navigation-->
     <header>
         <!--Modal: Register Form-->
-        <div class="modal fade" id="newpasswordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="card modal fade" id="newpasswordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog cascading-modal" role="document">
                 <!--Content-->
                 <div class="modal-content">

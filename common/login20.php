@@ -165,14 +165,14 @@ require_once "common.php";
                         minlength: 8,
                         maxlength: 20,
                         validpassword: true,
-                        notEqual: '#form31'
+                        notEqual: "#pass1"
                     },
                     pass3: {
                         required: true,
                         minlength: 8,
                         maxlength: 20,
                         validpassword: true,
-                        equalTo: '#form34'
+                        equalTo:  "pass2"
                     }
 
                 }

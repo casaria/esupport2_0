@@ -56,6 +56,25 @@ $normalized_password = trim($_POST['password']);
  *  trim ($_POST['password'],"((?=^)(\s*))|((\s*)(?>$))"); *
  */
 $normalized_referer = strtolower (trim($HTTP_REFERER));
+
+function setUserCookie()
+{
+	global $normalized_username, $normalized_password, $session_time;
+    $cookie_name = $normalized_username;
+//session_register ("cookie_name");
+    $_SESSION ['cookie_name'] = $cookie_name;
+    $enc_pwd = md5($normalized_password);
+//session_register ("enc_pwd");
+    $_SESSION ['enc_pwd'] = $enc_pwd;
+
+//nov14 header("Location: $referer");
+//echo"<BR>$cookie_name $enc_pwd";
+    setcookie('cookieuser', $cookie_name, time() + $session_time);
+    setcookie('cookiepwd', $normalized_password, time() + $session_time);
+}
+
+
+
 //echo "cookie_name = $cookie_name <br>";
 //echo "session ID =" . session_id(). " <br>";
 //if submit has been hit, set the cookie and reload the page immediately so the cookie takes effect.
@@ -108,6 +127,7 @@ $normalized_referer = strtolower (trim($HTTP_REFERER));
 				
 			}
 			else{
+				setUserCookie();
                 header("location:../index.php");
 				echo $lang_notsupporter;
 				exit;
@@ -128,18 +148,8 @@ $normalized_referer = strtolower (trim($HTTP_REFERER));
 
 
 
+				setUserCookie();
 
-				$cookie_name = $normalized_username;
-				//session_register ("cookie_name");
-				$_SESSION ['cookie_name'] = $cookie_name;
-				$enc_pwd = md5($normalized_password);
-				//session_register ("enc_pwd");
-				$_SESSION ['enc_pwd'] = $enc_pwd;
-
-				//nov14 header("Location: $referer");
-				//echo"<BR>$cookie_name $enc_pwd";
-				setcookie('cookieuser', $cookie_name,  time()+ $session_time);
-				setcookie('cookiepwd', $normalized_password,  time()+ $session_time);
 		}
 		else{
 			echo $lang_wronglogin;

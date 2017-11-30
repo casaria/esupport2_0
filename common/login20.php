@@ -236,27 +236,6 @@ if($enable_helpdesk == 'Off'){
             </div>
         </div>
         <!--Modal: Register Form-->
-        <script>
-            $(document).ready(function() {
-                $('#registrationForm').formValidation({
-                    framework: 'bootstrap',
-                    fields: {
-                        username: {
-                            message: 'The username is not valid',
-                            validators: {
-                                // The validator will create an Ajax request
-                                // sending { username: 'its value' } to the back-end
-                                remote: {
-                                    message: 'The username is not available',
-                                    url: 'verifybackend.php',
-                                    type: 'POST'
-                                }
-                            }
-                        }
-                    }
-                });
-            });
-        </script>
 
 
         <!-- Central Modal Medium Info -->

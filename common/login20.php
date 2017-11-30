@@ -153,7 +153,7 @@ if($enable_helpdesk == 'Off'){
 
 
 
-                        <div class="md-form grey-text">
+                        <div class="md-form form-sm grey-text">
                             <i class="fa fa-lock prefix"></i>
                             <input type="password" id="form34" class="form-control">
                             <label for="form34">Repeat password</label>

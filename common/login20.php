@@ -182,12 +182,6 @@ require_once "common.php";
                 }, */
 
 
-                        errorPlacement: function(error, element) {
-                            if (element.attr("pass1") == "gender") {
-                                error.insertAfter("#gendererror");
-                            } else {
-                                error.insertAfter(element);
-                            }
         });
         // Set jQuery.validate settings for bootstrap integration
         jQuery.validator.setDefaults({
@@ -239,7 +233,6 @@ if($enable_helpdesk == 'Off'){
                     <!--Body-->
                     <div class="modal-body">
                         <form action="" role="form" id="newPassForm" name="newPassForm" novalidate>
-                            <input type="radio" name="gender" value="m" data-toggle="radio">
                             <div id="gendererror"></div>
                             <div class="md-form form-sm">
                                 <i class="fa fa-lock prefix"></i>

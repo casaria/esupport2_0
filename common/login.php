@@ -73,7 +73,21 @@ function setUserCookie()
     setcookie('cookiepwd', $normalized_password, time() + $session_time);
 }
 
+function setSupporterCookie()
+{
+	global  $normalized_username, $normalized_password, $session_time;
+		$cookie_name = $normalized_username;
+		$userIsSupporter = true;
+		//session_register("cookie_name");
+		$_SESSION ["cookie_name"] = $cookie_name;
+		$enc_pwd = md5($normalized_password);
+		//session_register("enc_pwd");
+		$_SESSION ["enc_pwd"] = $enc_pwd;
 
+		//nov14 header("Location: $referer");
+		setcookie('supporter_usercookie', $cookie_name,  time()+ $session_time);
+		setcookie('supporter_pwdcookie', $normalized_password,  time()+ $session_time);
+}
 
 //echo "cookie_name = $cookie_name <br>";
 //echo "session ID =" . session_id(). " <br>";
@@ -113,18 +127,7 @@ function setUserCookie()
 		//check the user name and password against the database.
 		if(checkUser($normalized_username, md5($normalized_password))){
 			if(isSupporter($normalized_username)){
-				$cookie_name = $normalized_username;
-				$userIsSupporter = true;
-				//session_register("cookie_name");
-				$_SESSION ["cookie_name"] = $cookie_name;
-				$enc_pwd = md5($normalized_password);
-				//session_register("enc_pwd");
-				$_SESSION ["enc_pwd"] = $enc_pwd;
-
-				//nov14 header("Location: $referer");
-				setcookie('supporter_usercookie', $cookie_name,  time()+ $session_time);
-				setcookie('supporter_pwdcookie', $normalized_password,  time()+ $session_time);
-				
+				setSupporterCookie();
 			}
 			else{
 				setUserCookie();
@@ -144,13 +147,18 @@ function setUserCookie()
 	else{
 		//check the user name and password against the database.
 		if(checkUser($normalized_username, md5($normalized_password))){
-            if(isSupporter($normalized_username))
+            if(isSupporter($normalized_username)) {
+
+                setSupporterCookie();
+                header("location:supporter/index.php");
+
+            }
+
+            setUserCookie();
 
 
 
-				setUserCookie();
-
-		}
+        }
 		else{
 			echo $lang_wronglogin;
 			exit;

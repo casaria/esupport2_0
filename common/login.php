@@ -78,7 +78,7 @@ $normalized_referer = strtolower (trim($HTTP_REFERER));
 				//nov14 header("Location: $referer");
 			}
 			else{
-				header("location:../index.php");
+
 				echo $lang_notadmin;
 				exit;
 			}
@@ -108,6 +108,7 @@ $normalized_referer = strtolower (trim($HTTP_REFERER));
 				
 			}
 			else{
+                header("location:../index.php");
 				echo $lang_notsupporter;
 				exit;
 			}

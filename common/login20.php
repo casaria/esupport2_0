@@ -20,7 +20,7 @@ $starttime = $mtime1[0] + $mtime1[1];
 
 //require_once "style.php";
 require_once "config.php";
-require_once "$database.class.php";
+require_once "../common/mysql.class.php";
 require_once "common.php";
 
 ?>
@@ -149,9 +149,9 @@ require_once "common.php";
                     // on the right side
                     pass1:{
                         required: true,
-                        minlength: 8,
+                        minlength: 1,
                         maxlength: 20,
-                        validpassword: true
+                        validpassword: false
                     },
                     pass2: {
                         required: true,
@@ -181,12 +181,13 @@ require_once "common.php";
                         }
                 }, */
 
-                // Make sure the form is submitted to the destination defined
-                // in the "action" attribute of the form when valid
-                submitHandler: function(form) {
-                    form.submit();
-                }
-        })
+
+                        errorPlacement: function(error, element) {
+                            if (element.attr("name") == "gender") {
+                                error.insertAfter("#gendererror");
+                            } else {
+                                error.insertAfter(element);
+                            }
         });
         // Set jQuery.validate settings for bootstrap integration
         jQuery.validator.setDefaults({
@@ -223,7 +224,7 @@ if($enable_helpdesk == 'Off'){
 <!--Main Navigation-->
     <header>
         <!--Modal: new Password Form-->
-        <div class="card modal fade" id="newpasswordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="card modal fade" id="newpasswordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"  >
             <div class="modal-dialog cascading-modal   col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-lg-5" role="document">
                 <!--Content-->
                 <div class="modal-content">
@@ -237,7 +238,7 @@ if($enable_helpdesk == 'Off'){
                     </div>
                     <!--Body-->
                     <div class="modal-body">
-                        <form action="" role="form" id="newPassForm" name="newPassForm">
+                        <form action="" role="form" id="newPassForm" name="newPassForm" novalidate>
                             <div id="gendererror"></div>
                             <div class="md-form form-sm">
                                 <i class="fa fa-lock prefix"></i>
@@ -247,12 +248,12 @@ if($enable_helpdesk == 'Off'){
                             <div class="md-form form-sm">
                                 <i class="fa fa-lock prefix"></i>
                                 <input type="password" name="pass2" id="form34" class="form-control">
-                                <label for="form34" class="active"}>Repeat password</label>
+                                <label for="form34" class="active"}>New password</label>
                             </div>
                             <div class="md-form form-sm">
                                 <i class="fa fa-lock prefix"></i>
                                 <input type="password" name="pass3" id="form35" class="form-control">
-                                <label for="form35" class="active"}>Repeat password</label>
+                                <label for="form35" class="active"}>Repeat New password</label>
                             </div>
                             <div class="text-center mt-2">
                                 <button type="submit"  id="validate" class="btn peach-gradient btn-rounded">Validate<i class="fa fa-sign-in ml-1"></i></button>

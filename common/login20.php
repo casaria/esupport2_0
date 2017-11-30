@@ -144,23 +144,19 @@ if($enable_helpdesk == 'Off'){
                     <!--Body-->
                     <div class="modal-body">
 
-                        <div class="row">
-                            <div class="md-form form-sm">
-                                <i class="fa fa-lock prefix"></i>
-                                <input type="password" id="form33" class="form-control">
-                                <label for="form33" data-error="wrong" data-success="strong">your new password</label>
-                             </div>
+                        <div class="md-form form-sm grey-text">
+                            <i class="fa fa-lock prefix"></i>
+                            <input type="password" id="form33" class="form-control validate">
+                            <label for="form33" data-error="wrong" data-success="strong">your new password</label>
                         </div>
 
 
 
 
-                        <div class="row">
                         <div class="md-form grey-text">
                             <i class="fa fa-lock prefix"></i>
                             <input type="password" id="form34" class="form-control">
                             <label for="form34">Repeat password</label>
-                        </div>
                         </div>
 
                         <div class="text-center mt-2">

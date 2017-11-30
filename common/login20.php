@@ -157,7 +157,7 @@ if($enable_helpdesk == 'Off'){
                         </div>
 
                         <div class="text-center mt-2">
-                            <button class="btn btn-elegant btn-deep-orange">Validate<i class="fa fa-sign-in ml-1"></i></button>
+                            <button class="btn-floating btn-lg btn-deep-orange">Validate<i class="fa fa-sign-in ml-1"></i></button>
 
                                 <a class="btn-floating btn-lg purple-gradient"><i class="fa fa-bolt"></i></a>
                         </div>

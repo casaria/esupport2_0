@@ -164,7 +164,7 @@ require_once "common.php";
                         required: true,
                         minlength: 8,
                         maxlength: 20,
-                        validpassword: ,
+                        validpassword: true,
                         notEqual: '#pass1'
                     },
                     pass3: {

@@ -172,20 +172,19 @@ require_once "common.php";
                             minlength: "Password must be at least 5 characters"
                         }
                 },
+
                 // Make sure the form is submitted to the destination defined
                 // in the "action" attribute of the form when valid
                 submitHandler: function(form) {
                     form.submit();
-                }
-
-
-                        errorPlacement: function(error, element) {
-                            if (element.attr("name") == "gender") {
-                                error.insertAfter("#gendererror");
-                            } else {
-                                error.insertAfter(element);
-                            }
-                        }
+                },
+                errorPlacement: function(error, element) {
+                    if (element.attr("name") == "minlength") {
+                        error.insertAfter("#gendererror");
+                    } else {
+                        error.insertAfter(element);
+                    }
+                }m
         })
         });
 

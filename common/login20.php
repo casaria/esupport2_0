@@ -116,6 +116,20 @@ require_once "common.php";
         }
     </style>
 
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#submit").click(function(){
+                var pass1_value = $("#pass1").val();
+                var pass2_value = $("#pass2").val();
+                var message_value = $("#message").val();
+                $.post("assets/email.php", { name: name_value, email: email_value, message: message_value }).done(function(data) {
+                    $("#response").html(data);
+                });
+            });
+        })
+    </script>
+
+
 <?php
 if($enable_helpdesk == 'Off'){
     printerror($on_off_reason);
@@ -146,13 +160,13 @@ if($enable_helpdesk == 'Off'){
 
                         <div class="md-form form-sm grey-text">
                             <i class="fa fa-lock prefix"></i>
-                            <input type="password" id="form33" class="form-control validate">
+                            <input type="password" name="pass1" id="form33" class="form-control validate">
                             <label for="form33" data-error="wrong" data-success="strong">your new password</label>
                         </div>
 
                         <div class="md-form form-sm grey-text">
                             <i class="fa fa-lock prefix"></i>
-                            <input type="password" id="form34" class="form-control">
+                            <input type="password" name="pass2" id="form34" class="form-control">
                             <label for="form34">Repeat password</label>
                         </div>
 
@@ -165,9 +179,10 @@ if($enable_helpdesk == 'Off'){
                     </div>
                     <!--Footer-->
                     <div class="modal-footer">
-                        <div class="options text-center text-md-right mt-1 hiddendiv">
+                        <div class="options text-center text-md-right mt-1">
                             <p>Enter a new PWD</p>
                         </div>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div>
                         <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
                     </div>
                 </div>

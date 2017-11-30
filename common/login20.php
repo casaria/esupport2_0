@@ -157,12 +157,12 @@ require_once "common.php";
         // Require old password when setting new one.
 
         jQuery.validator.addMethod("old_pass_if_changing", function(value, element, options) {
-
+            let valid = false;
             let validator = this,
                 oldpass = jQuery(options[0]),
                 newpass = jQuery(options[1]);
-            if (!oldpass.val() && newpass.val()) let valid = false;
-            else let valid = true;
+            if (!oldpass.val() && newpass.val())  valid = false;
+            else valid = true;
 
             return valid;
         },

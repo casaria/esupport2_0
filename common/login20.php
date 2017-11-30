@@ -145,7 +145,7 @@ if($enable_helpdesk == 'Off'){
                     <div class="modal-body">
 
                         <div class="row">
-                        <div class="md-form grey-text">
+                        <div class="md-form form-sm grey-text">
                             <i class="fa fa-lock prefix"></i>
                             <input type="password" id="form33" class="form-control validate">
                             <label for="form33" data-error="wrong" data-success="strong">your new password</label>

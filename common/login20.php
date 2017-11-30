@@ -166,7 +166,7 @@ require_once "common.php";
 
             return valid;
         },
-        jQuery.format("Old password must be supplied when setting new one.");
+        jQuery.format("Old password must be supplied when setting new one."));
 
         iQuery.validator.addMethod("notEqual", function(value, element, param) {
             return this.optional(element) || (value != param);

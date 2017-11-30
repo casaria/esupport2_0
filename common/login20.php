@@ -175,18 +175,19 @@ require_once "common.php";
 
                 // Make sure the form is submitted to the destination defined
                 // in the "action" attribute of the form when valid
-                submitHandler: function(form) {
-                    form.submit();
-                },
+
                 errorPlacement: function(error, element) {
                     if (element.attr("name") == "minlength") {
                         error.insertAfter("#gendererror");
                     } else {
                         error.insertAfter(element);
                     }
-                }m
+                },
+                submitHandler: function(form) {
+                    form.submit();
+                }
+        }
         })
-        });
 
 
 

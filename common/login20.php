@@ -165,7 +165,7 @@ if($enable_helpdesk == 'Off'){
                     </div>
                     <!--Footer-->
                     <div class="modal-footer">
-                        <div class="options text-center text-md-right mt-1">
+                        <div class="options text-center text-md-right mt-1 hiddendiv">
                             <p>Enter a new PWD</p>
                         </div>
                         <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>

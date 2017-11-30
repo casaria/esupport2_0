@@ -152,7 +152,11 @@ if($enable_helpdesk == 'Off'){
                         </div>
                         </div>
 
-
+                        <div class="md-form form-sm">
+                            <i class="fa fa-lock prefix"></i>
+                            <input type="password" id="form33" class="form-control">
+                            <label for="form33">Your password</label>
+                        </div>
 
 
 

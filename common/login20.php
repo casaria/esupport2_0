@@ -137,14 +137,15 @@ require_once "common.php";
             // It has the name attribute "registration"
             $.validator.addMethod("notEqual", function(value, element, param) {
                 return this.optional(element) || (value != param);
-            }, "new Password must be different different");
+            }, "New Password cannot be the same as current");
 
 
             $.validator.addMethod("validpassword", function(value, element) {
                 return this.optional(element) ||
                     /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$/.test(value);
             }, "Password must contain a minimum of 1 lower case letter," +
-                " 1 upper case letter, 1 numeric and 1 special character..");
+                " 1 upper case letter, 1 numeric and 1 special character.");
+
             $("form[name='newPassForm']").validate
             ({
                 // Specify validation rules
@@ -164,8 +165,6 @@ require_once "common.php";
                         minlength: 8,
                         maxlength: 20,
                         validpassword: true
-                        equalTo: '#pass1'
-
                     },
                     pass3: {
                         required: true,

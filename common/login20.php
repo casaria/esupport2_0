@@ -253,10 +253,6 @@ if($enable_helpdesk == 'Off'){
 
                                     <a class="btn blue-gradient btn-rounded"><i class="fa fa-bolt"></i></a>
                             </div>
-
-                            <input type="email" name="email" required>
-                            <input class="phone-group" name="phonehome">
-                            <input class="phone-group" name="phonecell">
                         </form>
 
                     </div>

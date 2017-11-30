@@ -177,8 +177,7 @@ require_once "common.php";
                 // in the "action" attribute of the form when valid
                 submitHandler: function(form) {
                     form.submit();
-                }
-        }
+        })
         });
         // Set jQuery.validate settings for bootstrap integration
         jQuery.validator.setDefaults({

@@ -159,8 +159,8 @@ require_once "common.php";
                         required: true,
                         minlength: 8,
                         maxlength: 20,
-                        validpassword: true,
-                        equalTo: "#pass3"
+                        validpassword: true
+
                     },
                     pass3: {
                         required: true,

@@ -152,7 +152,7 @@ require_once "common.php";
             }
             return isValid;
         },
-        jQuery.format("Please fill at least {0} of these fields.");
+        jQuery.format("Please fill at least {0} of these fields."));
 
         // Require old password when setting new one.
 
@@ -171,7 +171,7 @@ require_once "common.php";
         iQuery.validator.addMethod("notEqual", function(value, element, param) {
             return this.optional(element) || (value != param);
         },
-        jQuery.format("New Password cannot be the same as current.");
+        jQuery.format("New Password cannot be the same as current."));
 
 
 
@@ -180,7 +180,7 @@ require_once "common.php";
                 /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$/.test(value);
         },
         jQuery.format("Password must contain a minimum of 1 lower case letter," +
-            " 1 upper case letter, 1 numeric and 1 special character.");
+            " 1 upper case letter, 1 numeric and 1 special character."));
 
 
         // Wait for the DOM to be ready

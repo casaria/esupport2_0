@@ -199,7 +199,7 @@ if($enable_helpdesk == 'Off'){
                     </div>
                     <!--Body-->
                     <div class="modal-body">
-                        <form action="" role="form" id="newPassForm">
+                        <form action="" role="form" id="newPassForm" name="newPassForm">
                             <div class="md-form form-sm grey-text">
                                 <i class="fa fa-lock prefix"></i>
                                 <input type="password" name="pass1" id="form33" class="form-control validate">

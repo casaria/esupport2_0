@@ -130,54 +130,55 @@ if($enable_helpdesk == 'Off'){
     <header>
         <!--Modal: Register Form-->
         <div class="card modal fade" id="newpasswordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog cascading-modal modal-sm"= role="document">
-                <!--Content-->
-                <div class="modal-content">
+            <div class="modal-dialog cascading-modal"= role="document">
+                <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-lg-5">
+                    <!--Content-->
+                    <div class="modal-content">
 
-                    <!--Header-->
-                    <div class="modal-header orange-gradient darken-3">
-                        <h4 class="title"><i class="fa fa-user-plus"></i> Create Secure Password</h4>
-                        <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="false">&times;</span>
-                        </button>
+                        <!--Header-->
+                        <div class="modal-header orange-gradient darken-3">
+                            <h4 class="title"><i class="fa fa-user-plus"></i> Create Secure Password</h4>
+                            <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="false">&times;</span>
+                            </button>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body">
+
+                            <div class="row">
+                            <div class="md-form grey-text">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" id="form33" class="form-control validate">
+                                <label for="form33" data-error="wrong" data-success="strong">your new password</label>
+                            </div>
+                            </div>
+
+
+
+
+
+
+                            <div class="row">
+                            <div class="md-form grey-text">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" id="form34" class="form-control">
+                                <label for="form34">Repeat password</label>
+                            </div>
+                            </div>
+
+                            <div class="text-center mt-2">
+                                <button class="btn btn-elegant btn-deep-orange">Validate<i class="fa fa-sign-in ml-1"></i></button>
+                            </div>
+
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                            <div class="options text-center text-md-right mt-1">
+                                <p>Enter a new PWD</p>
+                            </div>
+                            <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                        </div>
                     </div>
-                    <!--Body-->
-                    <div class="modal-body">
-
-                        <div class="row">
-                        <div class="md-form grey-text">
-                            <i class="fa fa-lock prefix"></i>
-                            <input type="password" id="form33" class="form-control validate">
-                            <label for="form33" data-error="wrong" data-success="strong">your new password</label>
-                        </div>
-                        </div>
-
-
-
-
-
-
-                        <div class="row">
-                        <div class="md-form grey-text">
-                            <i class="fa fa-lock prefix"></i>
-                            <input type="password" id="form34" class="form-control">
-                            <label for="form34">Repeat password</label>
-                        </div>
-                        </div>
-
-                        <div class="text-center mt-2">
-                            <button class="btn btn-elegant btn-deep-orange">Validate<i class="fa fa-sign-in ml-1"></i></button>
-                        </div>
-
-                    </div>
-                    <!--Footer-->
-                    <div class="modal-footer">
-                        <div class="options text-center text-md-right mt-1">
-                            <p>Enter a new PWD</p>
-                        </div>
-                        <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
                 <!--/.Content-->
             </div>
         </div>

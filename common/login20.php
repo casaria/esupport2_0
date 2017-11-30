@@ -130,8 +130,9 @@ if($enable_helpdesk == 'Off'){
     <header>
         <!--Modal: Register Form-->
         <div class="card modal fade" id="newpasswordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-lg-5">
             <div class="modal-dialog cascading-modal"= role="document">
-                <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-lg-5">
+
                     <!--Content-->
                     <div class="modal-content">
 

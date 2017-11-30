@@ -23,10 +23,11 @@
     <bookmark url="file://$PROJECT_DIR$/supporter/tupdate.php" line="0" />
     <bookmark url="file://$PROJECT_DIR$/common/style.php" line="1272" />
     <bookmark url="file://$PROJECT_DIR$/common/style.php" line="1826" />
-    <bookmark url="file://$PROJECT_DIR$/common/login20.php" line="201" />
+    <bookmark url="file://$PROJECT_DIR$/common/login20.php" line="238" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
+    <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="login screen woith modal dialogs">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/verifybackend.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/login20.php" afterPath="$PROJECT_DIR$/common/login20.php" />
     </list>
@@ -110,7 +111,7 @@
       <file leaf-file-name="uedit.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/uedit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3723">
+            <state relative-caret-position="0">
               <caret line="246" column="43" lean-forward="false" selection-start-line="246" selection-start-column="43" selection-end-line="246" selection-end-column="43" />
               <folding>
                 <marker date="1511826726983" expanded="true" signature="3193:3285" ph="UPDATE ${$my... " />
@@ -154,16 +155,16 @@
       <file leaf-file-name="login20.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/login20.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-510">
-              <caret line="140" column="31" lean-forward="true" selection-start-line="140" selection-start-column="31" selection-end-line="140" selection-end-column="31" />
+            <state relative-caret-position="364">
+              <caret line="246" column="34" lean-forward="true" selection-start-line="246" selection-start-column="34" selection-end-line="246" selection-end-column="34" />
               <folding>
-                <element signature="e#5136#5143#1#HTML" expanded="true" />
-                <marker date="1512027681980" expanded="false" signature="7789:7796" ph="×" />
-                <marker date="1512027681980" expanded="false" signature="8347:8352" ph="&amp;" />
-                <marker date="1512027681980" expanded="false" signature="9993:10000" ph="×" />
-                <marker date="1512027681980" expanded="false" signature="12532:12537" ph="&amp;" />
-                <marker date="1512027681980" expanded="false" signature="12966:12973" ph="×" />
-                <marker date="1512027681980" expanded="false" signature="14963:14970" ph="×" />
+                <element signature="e#6145#6152#1#HTML" expanded="true" />
+                <marker date="1512044191947" expanded="false" signature="10182:10189" ph="×" />
+                <marker date="1512044191947" expanded="false" signature="10740:10745" ph="&amp;" />
+                <marker date="1512044191947" expanded="false" signature="12386:12393" ph="×" />
+                <marker date="1512044191947" expanded="false" signature="14925:14930" ph="&amp;" />
+                <marker date="1512044191947" expanded="false" signature="15359:15366" ph="×" />
+                <marker date="1512044191947" expanded="false" signature="17356:17363" ph="×" />
               </folding>
             </state>
           </provider>
@@ -502,16 +503,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tstatus.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/tstatus.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="78" column="31" lean-forward="false" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -649,7 +640,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/common/config.eval.php" />
         <option value="$PROJECT_DIR$/myopen.php" />
         <option value="$PROJECT_DIR$/supporter/updatelog.php" />
         <option value="$PROJECT_DIR$/supporter/updatelogprint.php" />
@@ -699,6 +689,7 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/common/style.php" />
         <option value="$PROJECT_DIR$/common/common.php" />
+        <option value="$PROJECT_DIR$/common/verifybackend.php" />
         <option value="$PROJECT_DIR$/common/login20.php" />
       </list>
     </option>
@@ -924,28 +915,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
-            <path>
-              <item name="" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-              <item name="com.intellij.database" type="61db50fb:ScratchProjectViewPane$MyPsiNode" />
-            </path>
-            <path>
-              <item name="" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-              <item name="com.intellij.database" type="61db50fb:ScratchProjectViewPane$MyPsiNode" />
-              <item name="schema" type="61db50fb:ScratchProjectViewPane$MyPsiNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -972,6 +941,28 @@
               <item name="esupport2_0" type="b2602c69:ProjectViewProjectNode" />
               <item name="esupport2_0" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="mdb" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+            <path>
+              <item name="" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="com.intellij.database" type="61db50fb:ScratchProjectViewPane$MyPsiNode" />
+            </path>
+            <path>
+              <item name="" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="com.intellij.database" type="61db50fb:ScratchProjectViewPane$MyPsiNode" />
+              <item name="schema" type="61db50fb:ScratchProjectViewPane$MyPsiNode" />
             </path>
           </expand>
           <select />
@@ -1188,14 +1179,7 @@
       <workItem from="1511824328583" duration="36038000" />
       <workItem from="1511906939164" duration="1904000" />
       <workItem from="1511950556142" duration="24313000" />
-      <workItem from="1512000772107" duration="12054000" />
-    </task>
-    <task id="LOCAL-02225" summary="login screen woith modal dialogs">
-      <created>1511967397028</created>
-      <option name="number" value="02225" />
-      <option name="presentableId" value="LOCAL-02225" />
-      <option name="project" value="LOCAL" />
-      <updated>1511967397028</updated>
+      <workItem from="1512000772107" duration="18063000" />
     </task>
     <task id="LOCAL-02226" summary="login screen woith modal dialogs">
       <created>1511968056666</created>
@@ -1533,11 +1517,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512026463328</updated>
     </task>
-    <option name="localTasksCounter" value="2274" />
+    <task id="LOCAL-02274" summary="login screen woith modal dialogs">
+      <created>1512027698760</created>
+      <option name="number" value="02274" />
+      <option name="presentableId" value="LOCAL-02274" />
+      <option name="project" value="LOCAL" />
+      <updated>1512027698760</updated>
+    </task>
+    <option name="localTasksCounter" value="2275" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1613242000" />
+    <option name="totallyTimeSpent" value="1619251000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1552,16 +1543,17 @@
     <frame x="-6" y="-6" width="1381" height="925" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.025699168" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.16780046" sideWeight="0.71319795" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33836478" sideWeight="0.6855631" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33836478" sideWeight="0.31443688" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5343915" sideWeight="0.49086162" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10314465" sideWeight="0.4814815" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8754717" sideWeight="0.7792895" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3018868" sideWeight="0.5578231" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1632653" sideWeight="0.493007" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.48223734" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.025699168" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.16780046" sideWeight="0.71319795" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5343915" sideWeight="0.49086162" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29308176" sideWeight="0.44066516" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1632653" sideWeight="0.493007" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.133031" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3018868" sideWeight="0.44217688" order="14" side_tool="false" content_ui="tabs" x="41" y="96" width="1325" height="317" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1574,7 +1566,6 @@
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32741117" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3245283" sideWeight="0.58427817" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29308176" sideWeight="0.44066516" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1858,13 +1849,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modal_dialog_with_supporter_choice_for_user_level_site.patch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -2586,7 +2570,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/uedit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3723">
+        <state relative-caret-position="0">
           <caret line="246" column="43" lean-forward="false" selection-start-line="246" selection-start-column="43" selection-end-line="246" selection-end-column="43" />
           <folding>
             <marker date="1511826726983" expanded="true" signature="3193:3285" ph="UPDATE ${$my... " />
@@ -2879,18 +2863,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/common/verifybackend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/login20.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510">
-          <caret line="140" column="31" lean-forward="true" selection-start-line="140" selection-start-column="31" selection-end-line="140" selection-end-column="31" />
+        <state relative-caret-position="364">
+          <caret line="246" column="34" lean-forward="true" selection-start-line="246" selection-start-column="34" selection-end-line="246" selection-end-column="34" />
           <folding>
-            <element signature="e#5136#5143#1#HTML" expanded="true" />
-            <marker date="1512027681980" expanded="false" signature="7789:7796" ph="×" />
-            <marker date="1512027681980" expanded="false" signature="8347:8352" ph="&amp;" />
-            <marker date="1512027681980" expanded="false" signature="9993:10000" ph="×" />
-            <marker date="1512027681980" expanded="false" signature="12532:12537" ph="&amp;" />
-            <marker date="1512027681980" expanded="false" signature="12966:12973" ph="×" />
-            <marker date="1512027681980" expanded="false" signature="14963:14970" ph="×" />
+            <element signature="e#6145#6152#1#HTML" expanded="true" />
+            <marker date="1512044191947" expanded="false" signature="10182:10189" ph="×" />
+            <marker date="1512044191947" expanded="false" signature="10740:10745" ph="&amp;" />
+            <marker date="1512044191947" expanded="false" signature="12386:12393" ph="×" />
+            <marker date="1512044191947" expanded="false" signature="14925:14930" ph="&amp;" />
+            <marker date="1512044191947" expanded="false" signature="15359:15366" ph="×" />
+            <marker date="1512044191947" expanded="false" signature="17356:17363" ph="×" />
           </folding>
         </state>
       </provider>

@@ -121,8 +121,10 @@ require_once "common.php";
             $("#submit").click(function(){
                 let pass1_value = $("#pass1").val();
                 let pass2_value = $("#pass2").val();
+                let url = $form.attr('action');
                 formSuccess();
-                $.post("validatePWD.php", { password1: pass1_value, password2: pass2_value }).done(function(data) {
+
+                $.post(URL, { password1: pass1_value, password2: pass2_value }).done(function(data) {
                     $("#response").html(data);
                 });
             });
@@ -142,6 +144,39 @@ require_once "common.php";
             $("#newPassForm")[0].reset();
             submitMSG(true, "Message Submitted!")
         }
+
+        function submitForm(){
+            // Initiate Variables With Form Content
+            let name = $("#pwd1").val();
+            let email = $("#pwd2").val();
+
+
+            $.ajax({
+                type: "POST",
+                url: "php/form-process.php",
+                data: "name=" + name + "&email=" + email + "&message=" + message,
+                success : function(text){
+                    if (text == "success"){
+                        formSuccess();
+                    } else {
+                        formError();
+                        submitMSG(false,text);
+                    }
+                }
+            });
+        }
+
+        posting.done(function( data )
+        {
+            /* Put the results in a div */
+            $( "#contactResponse" ).html(data);
+
+            /* Change the button text. */
+            $submit.text('Sent, Thank you');
+
+            /* Disable the button. */
+            $submit.attr("disabled", true);
+        });
 
     </script>
 
@@ -199,15 +234,45 @@ if($enable_helpdesk == 'Off'){
                         <div class="options text-center text-md-right mt-1">
                             <p>Enter a new PWD</p>
                         </div>
+                        <div id="response"></div>
+
                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                         <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
                     </div>
+                    <form id="registrationForm" class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Username</label>
+                            <div class="col-lg-5">
+                                <input type="text" class="form-control" name="username" />
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <!--/.Content-->
             </div>
         </div>
         <!--Modal: Register Form-->
-
+        <script>
+            $(document).ready(function() {
+                $('#registrationForm').formValidation({
+                    framework: 'bootstrap',
+                    fields: {
+                        username: {
+                            message: 'The username is not valid',
+                            validators: {
+                                // The validator will create an Ajax request
+                                // sending { username: 'its value' } to the back-end
+                                remote: {
+                                    message: 'The username is not available',
+                                    url: '/path/to/backend/',
+                                    type: 'POST'
+                                }
+                            }
+                        }
+                    }
+                });
+            });
+        </script>
 
 
         <!-- Central Modal Medium Info -->

@@ -183,7 +183,7 @@ require_once "common.php";
                  }, */
             });
 
-        };
+        });
         // Set jQuery.validate settings for bootstrap integration
         jQuery.validator.setDefaults({
             highlight: function(element) {

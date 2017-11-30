@@ -150,7 +150,7 @@ require_once "common.php";
                     // on the right side
                     pass1: {
                         required: true,
-                        minlength: 1,
+                        minlength: 2,
                         maxlength: 20,
                         validpassword: false
                     },

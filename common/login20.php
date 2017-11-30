@@ -180,6 +180,24 @@ require_once "common.php";
         })
         });
 
+        $('#newPassForm')
+            .formValidation({
+                // Don't use the `err.container` option
+                // so the error messages are shown below the field as usual
+            })
+            .on('err.form.fv', function(e) {
+                // Reset the errors inside the modal first
+                $('#errors').html('');
+
+                $('#newPassForm')
+                // Find all the error messages
+                    .find('[data-fv-validator][data-fv-result="INVALID"]')
+                    // And update the error inside the modal body
+                    .clone().appendTo('#errors');
+
+
+            });
+
     </script>
 
 

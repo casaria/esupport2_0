@@ -244,6 +244,7 @@ if($enable_helpdesk == 'Off'){
 
                                     <a class="btn blue-gradient btn-rounded"><i class="fa fa-bolt"></i></a>
                             </div>
+                            <div id="gendererror"></div>
                         </form>
 
                     </div>
@@ -252,7 +253,7 @@ if($enable_helpdesk == 'Off'){
                         <div id="response" class="options text-center text-md-right mt-1">
                             <p>Enter a new PWD</p>
                         </div>
-                        <div id="gendererror"></div>
+
                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                         <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
                     </div>

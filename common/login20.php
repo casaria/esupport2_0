@@ -215,19 +215,19 @@ if($enable_helpdesk == 'Off'){
                         <form action="" role="form" id="newPassForm" name="newPassForm">
                             <div class="md-form form-sm">
                                 <i class="fa fa-lock prefix"></i>
-                                <input type="password" name="pass1" id="form33" class="form-control validate">
-                                <label for="form33" data-error="wrong" data-success="strong">your `new password</label>
+                                <input type="password" id="form31" name="pass1" class="form-control">
+                                <label for="form31">Your current password</label>
                             </div>
 
                             <div class="md-form form-sm">
                                 <i class="fa fa-lock prefix"></i>
-                                <input type="password" name="pass2" id="form35" class="form-control">
+                                <input type="password" name="pass2" id="form34" class="form-control">
                                 <label for="form34">Repeat password</label>
                             </div>
                             <div class="md-form form-sm grey-text">
                                 <i class="fa fa-lock prefix"></i>
-                                <input type="password" name="pass3" id="form34" class="form-control">
-                                <label for="form34">Repeat password</label>
+                                <input type="password" name="pass3" id="form35" class="form-control">
+                                <label for="form35">Repeat password</label>
                             </div>
 
                             <div class="text-center mt-2">

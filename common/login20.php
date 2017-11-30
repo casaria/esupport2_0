@@ -173,7 +173,7 @@ if($enable_helpdesk == 'Off'){
                     <!--Footer-->
                     <div class="modal-footer">
                         <div class="options text-center text-md-right mt-1">
-                            <p>Already have an account? <a href="#">Log In</a></p>
+                            <p>Enter a new PWD</p>
                         </div>
                         <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
                     </div>

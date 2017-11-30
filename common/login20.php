@@ -230,6 +230,7 @@ if($enable_helpdesk == 'Off'){
                     <!--Body-->
                     <div class="modal-body">
                         <form action="" role="form" id="newPassForm" name="newPassForm">
+                            <div id="gendererror"></div>
                             <div class="md-form form-sm">
                                 <i class="fa fa-lock prefix"></i>
                                 <input type="password" id="form31" name="pass1" class="form-control">
@@ -252,7 +253,7 @@ if($enable_helpdesk == 'Off'){
 
                                     <a class="btn blue-gradient btn-rounded"><i class="fa fa-bolt"></i></a>
                             </div>
-                            <div id="gendererror"></div>
+
                             <input type="email" name="email" required>
                             <input class="phone-group" name="phonehome">
                             <input class="phone-group" name="phonecell">

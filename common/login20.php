@@ -138,9 +138,9 @@ require_once "common.php";
 
             $.validator.addMethod("validpassword", function(value, element) {
                 return this.optional(element) ||
-                    /^.*(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[\W]).*$/.test(value);
-            }, "The password must contain a minimum of one lower case character," +
-                " one upper case character, one digit and one special character..");
+                    /^.*(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[\W]).*$/.test(value);
+            }, "Password must contain a minimum of 1 lower case letter," +
+                " 1 upper case letter, 1 numeric and 1 special character..");
             $("form[name='newPassForm']").validate
             ({
                 // Specify validation rules

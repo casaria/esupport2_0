@@ -7,7 +7,7 @@
 $username = $_POST['username'];
 
 // Check its existence (for example, execute a query from the database) ...
-$isAvailable = true; // or false
+$isAvailable = false; // or false
 
 // Finally, return a JSON
 echo json_encode(array(

@@ -264,7 +264,7 @@ if($enable_helpdesk == 'Off'){
                                 // sending { username: 'its value' } to the back-end
                                 remote: {
                                     message: 'The username is not available',
-                                    url: '/path/to/backend/',
+                                    url: 'verifybackend.php',
                                     type: 'POST'
                                 }
                             }

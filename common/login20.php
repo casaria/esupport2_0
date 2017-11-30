@@ -172,7 +172,7 @@ require_once "common.php";
                         minlength: 8,
                         maxlength: 20,
                         validpassword: true,
-                        equalTo: '#pass2'
+                        equalTo: 'pass2'
                     }
 
                 }

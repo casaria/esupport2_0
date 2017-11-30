@@ -152,7 +152,7 @@ require_once "common.php";
             }
             return isValid;
         },
-        jQuery.format("Please fill at least {0} of these fields."));
+        jQuery.format("Please fIL ALL of these fields."));
 
         // Require old password when setting new one.
 

@@ -151,7 +151,7 @@ require_once "common.php";
                     }
                 },
                 // Specify validation error messages
-                messages: {,
+                messages: {
                         pass1: {
                             required: "Please provide a password",
                             minlength: "Your password must be at least 5 characters long"

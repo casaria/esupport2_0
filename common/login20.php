@@ -141,7 +141,7 @@ require_once "common.php";
                     /^.*(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[\W]).*$/.test(value);
             }, "The password must contain a minimum of one lower case character," +
                 " one upper case character, one digit and one special character..");
-            $("form[name='newPassForm']").validate({
+                    $("form[name='newPassForm']").validate({
                 // Specify validation rules
                 rules: {
                     // The key name on the left side is the name attribute
@@ -217,9 +217,14 @@ if($enable_helpdesk == 'Off'){
                                 <label for="form33" data-error="wrong" data-success="strong">your new password</label>
                             </div>
 
+                            <div class="md-form form-sm">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" name="pass2" id="form35" class="form-control">
+                                <label for="form34">Repeat password</label>
+                            </div>
                             <div class="md-form form-sm grey-text">
                                 <i class="fa fa-lock prefix"></i>
-                                <input type="password" name="pass2" id="form34" class="form-control">
+                                <input type="password" name="pass3" id="form34" class="form-control">
                                 <label for="form34">Repeat password</label>
                             </div>
 

@@ -49,7 +49,7 @@ require_once "common.php";
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="../mdb/js/mdb.min.js"></script>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
 
 
     <style>
@@ -135,6 +135,12 @@ require_once "common.php";
         $(function() {
             // Initialize form validation on the registration form.
             // It has the name attribute "registration"
+
+            $.validator.addMethod("validpassword", function(value, element) {
+                return this.optional(element) ||
+                    /^.*(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[\W]).*$/.test(value);
+            }, "The password must contain a minimum of one lower case character," +
+                " one upper case character, one digit and one special character..");
             $("form[name='newPassForm']").validate({
                 // Specify validation rules
                 rules: {
@@ -143,22 +149,27 @@ require_once "common.php";
                     // on the right side
                     pass1:{
                         required: true,
-                        minlength: 5
+                        minlength: 8,
+                        maxlength: 20,
+                        validpassword: true
                     },
                     pass2: {
                         required: true,
-                        minlength: 5
+                        minlength: 8,
+                        maxlength: 20,
+                        validpassword: true,
+                        equalTo: "#pass1"
                     }
                 },
                 // Specify validation error messages
                 messages: {
                         pass1: {
                             required: "Please provide a password",
-                            minlength: "Your password must be at least 5 characters long"
+                            minlength: "Password must be at least 5 characters"
                         },
                         pass2: {
                             required: "Please repeat  the password",
-                            minlength: "Your password must be at least 5 characters long"
+                            minlength: "Password must be at least 5 characters"
                         }
                 },
                 // Make sure the form is submitted to the destination defined

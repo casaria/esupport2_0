@@ -177,17 +177,6 @@ require_once "common.php";
             });
         }
 
-        posting.done(function( data )
-        {
-            /* Put the results in a div */
-            $( "#contactResponse" ).html(data);
-
-            /* Change the button text. */
-            $submit.text('Sent, Thank you');
-
-            /* Disable the button. */
-            $submit.attr("disabled", true);
-        });
 
     </script>
 

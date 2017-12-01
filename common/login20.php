@@ -194,21 +194,20 @@ require_once "common.php";
                     // The key name on the left side is the name attribute
                     // of an input field. Validation rules are defined
                     // on the right side
-                    pass1: {
+                    form31: {
                         required: true,
                         minlength: 2,
                         maxlength: 20,
                         validpassword: false
 
                     },
-                    pass2: {
-                        required: true,
+                    form32: {required: true,
                         minlength: 8,
                         maxlength: 20,
                         validpassword: true,
                         notEqual: "#pass1"
                     },
-                    pass3: {
+                    form33: {
                         required: true,
                         minlength: 8,
                         maxlength: 20,
@@ -289,13 +288,13 @@ if($enable_helpdesk == 'Off'){
                             </div>
                             <div class="md-form form-sm">
                                 <i class="fa fa-lock prefix"></i>
-                                <input type="password" name="pass2" id="form34" class="form-control">
-                                <label for="form34" class="active">New password</label>
+                                <input type="password" name="pass2" id="form32" class="form-control">
+                                <label for="form32" class="active">New password</label>
                             </div>
                             <div class="md-form form-sm">
                                 <i class="fa fa-lock prefix"></i>
-                                <input type="password" name="pass3" id="form35" class="form-control">
-                                <label for="form35" class="active">Repeat New password</label>
+                                <input type="password" name="pass3" id="form33" class="form-control">
+                                <label for="form33" class="active">Repeat New password</label>
                             </div>
                             <div class="text-center mt-2">
                                 <button type="submit"  id="validate" class="btn peach-gradient btn-rounded">Validate<i class="fa fa-sign-in ml-1"></i></button>

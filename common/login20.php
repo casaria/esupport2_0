@@ -206,7 +206,7 @@ require_once "common.php";
                         minlength: 8,
                         maxlength: 20,
                         validpassword: true,
-                        equalTo:  "pass2"
+                        equalTo:  "#pass2"
                     }
 
                 }
@@ -222,8 +222,6 @@ require_once "common.php";
                          }
                  }, */
             });
-
-        })
         // Set jQuery.validate settings for bootstrap integration
         jQuery.validator.setDefaults({
             highlight: function(element) {

@@ -151,8 +151,7 @@ require_once "common.php";
                 $fields.data('being_validated', false);
             }
             return isValid;
-        },
-        jQuery.format("Please fIL ALL of these fields."));
+        },"Please fill ALL of these fields.");
 
         // Require old password when setting new one.
 
@@ -165,28 +164,23 @@ require_once "common.php";
             else valid = true;
 
             return valid;
-        },
-        jQuery.format("Old password must be supplied when setting new one."));
+        },"Old password must be supplied when setting new one.");
 
         iQuery.validator.addMethod("notEqual", function(value, element, param) {
             return this.optional(element) || (value != param);
-        },
-        jQuery.format("New Password cannot be the same as current."));
+        },"New Password cannot be the same as current.");
 
 
 
         jQuery.validator.addMethod("validpassword", function(value, element) {
             return this.optional(element) ||
                 /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$/.test(value);
-        },
-        jQuery.format("Password must contain a minimum of 1 lower case letter," +
-            " 1 upper case letter, 1 numeric and 1 special character."));
+        },"Password must contain a minimum of 1 lower case letter," +
+            " 1 upper case letter, 1 numeric and 1 special character.");
 
 
         // Wait for the DOM to be ready
-        $(function() {
-            // Initialize form validation on the registration form.
-            // It has the name attribute "registration"
+
             $("form[name='newPassForm']").validate
             ({
                 // Specify validation rules
@@ -229,7 +223,7 @@ require_once "common.php";
                  }, */
             });
 
-        });
+        })
         // Set jQuery.validate settings for bootstrap integration
         jQuery.validator.setDefaults({
             highlight: function(element) {
@@ -268,7 +262,7 @@ if($enable_helpdesk == 'Off'){
         <div class="card modal fade" id="newpasswordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"  >
             <div class="modal-dialog cascading-modal   col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-lg-5" role="document">
                 <!--Content-->
-                <div class="modal-content">
+                 <div class="modal-content">
 
                     <!--Header-->
                     <div class="modal-header orange-gradient darken-3  ">

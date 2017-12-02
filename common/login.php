@@ -638,6 +638,9 @@
 <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
 <!-- SCRIPTS -->
+<script>
+    new WOW().init();
+</script>
 <!--suppress JSUnusedGlobalSymbols, JSUnusedGlobalSymbols -->
 <script type="text/javascript">
 
@@ -748,9 +751,7 @@
 
 </script>
 
-    <script>
-        new WOW().init();
-    </script>
+
 
 
 

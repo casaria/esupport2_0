@@ -3253,7 +3253,7 @@ function getUsersGroupList($id)
 
 
 	//if($num_groups == 1)
-		$sql = "select id from $mysql_ugroups_table";
+    		$sql = "select id from $mysql_ugroups_table";
 	//else
 	//	$sql = "select id from $mysql_ugroups_table where id != 1";
 

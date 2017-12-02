@@ -102,8 +102,8 @@ function setSupporterCookie()
 
 
     <style>
-        .intro-3 {
-            background: linear-gradient(rgba(112, 99, 141, 0.5), rgba(67, 20, 34, 0.9)), url("../img/svg/bg1.png") no-repeat;
+        .intro-1{
+            background:  url("../img/svg/bg1.png") no-repeat, linear-gradient(rgba(63, 81, 181, 0.5), rgba(67, 20, 34, 0.9)) !important;
             background-size: cover;
         }
         .intro-2 {
@@ -518,7 +518,7 @@ if($enable_helpdesk == 'Off'){
     </nav>
 
     <!--Intro Section-->
-    <section class="view intro-6 .pattern7 hm-indigo-plus">
+    <section class="view intro-1">
         <div class="full-bg-img flex-center">
             <div class="container">
                 <div class="row">

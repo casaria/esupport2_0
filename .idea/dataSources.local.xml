@@ -17,6 +17,7 @@
         <secret-storage>master_key</secret-storage>
         <user>casaria</user>
         <use-password>true</use-password>
+        <auth-type>PASSWORD</auth-type>
       </ssh-properties>
     </data-source>
     <data-source name="casaria5@odoo.casaria.net" uuid="f2a9dadb-f91a-45a1-b38e-43ce7b00e939">
@@ -31,6 +32,7 @@
         <secret-storage>master_key</secret-storage>
         <user>root</user>
         <use-password>true</use-password>
+        <auth-type>PASSWORD</auth-type>
       </ssh-properties>
     </data-source>
     <data-source name="MySQL hostgo-hdesk1  @ Nextday" uuid="f5a594a7-31d9-494d-a74e-43164176beae">
@@ -48,6 +50,7 @@
         <proxy-port>22</proxy-port>
         <user>root</user>
         <use-password>false</use-password>
+        <auth-type>KEY_PAIR</auth-type>
         <private-key-path>C:\Users\horra\Desktop\nextday-nopass-phrase.ppk</private-key-path>
       </ssh-properties>
     </data-source>

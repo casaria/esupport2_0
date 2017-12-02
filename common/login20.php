@@ -23,8 +23,7 @@ $normalized_username ='';
 $normalized_password ='';
 $normalized_referer ='';
 require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
-
-
+require_once  $_SERVER['DOCUMENT_ROOT']."/common/$database.class.php";
 /** @noinspection PhpIncludeInspection */
 require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
 $login_logo = "../images/casariadefault/small-header-brown.gif";

@@ -641,7 +641,7 @@ echo
                                     </div>
 
                                     <div class="text-center">
-                                        <button type="submit" class="btn orange-gradient btn-lg">LOGIN</button>
+                                        <button type="submit" name="login" class="btn orange-gradient btn-lg">LOGIN</button>
                                         <hr>
                                         <div class="inline-ul text-center d-flex justify-content-center">
 

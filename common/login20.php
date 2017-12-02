@@ -107,6 +107,13 @@ function setSupporterCookie()
             background-size: cover;
         }
         .intro-2 {
+            background: background: -moz-linear-gradient(top, rgba(30,27,107,1) 0%, rgba(44,178,158,1) 47%, rgba(44,178,158,1) 53%, rgba(255,197,112,1) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(30,27,107,1) 0%,rgba(44,178,158,1) 47%,rgba(44,178,158,1) 53%,rgba(255,197,112,1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(30,27,107,1) 0%,rgba(44,178,158,1) 47%,rgba(44,178,158,1) 53%,rgba(255,197,112,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1b6b', endColorstr='#ffc570',GradientType=0 ); /* IE6-9 */;
+            background-size: cover;
+        }
+        .intro-3 {
             background: url("../img/IMG_3629.png")no-repeat center center;
             background-size: cover;
         }
@@ -518,7 +525,7 @@ if($enable_helpdesk == 'Off'){
     </nav>
 
     <!--Intro Section-->
-    <section class="view intro-1">
+    <section class="view intro-1    ">
         <div class="full-bg-img flex-center">
             <div class="container">
                 <div class="row">

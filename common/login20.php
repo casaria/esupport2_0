@@ -153,7 +153,7 @@ function setSupporterCookie()
         }
 
         .card {
-            background-color: rgba(229, 228, 255, 0.2);
+            background-color: rgba(124, 124, 122, 0.7);
         }
 
         .md-form .prefix {
@@ -542,7 +542,7 @@ if($enable_helpdesk == 'Off'){
 
                                     <!--Header-->
                                     <div class="form-header orange-gradient">
-                                        <h5><i class="fa fa-user-secret mt-3 mb-3"></i> Casaria eSupport 2.0 </h5>
+                                        <h4><i class="fa fa-user-secret mt-3 mb-3"></i> Casaria eSupport 2.0 login</h4>
                                     </div>
 
                                     <!--Body-->

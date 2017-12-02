@@ -525,7 +525,7 @@ if($enable_helpdesk == 'Off'){
     </nav>
 
     <!--Intro Section-->
-    <section class="view intro-1    ">
+    <section class="view intro-2">
         <div class="full-bg-img flex-center">
             <div class="container">
                 <div class="row">

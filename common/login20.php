@@ -513,41 +513,41 @@ if($enable_helpdesk == 'Off'){
             <div class="container">
                 <div class="row">
                     <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-lg-5">
-
+                        <form method="post" role="form" id="newPassForm" name="newPassForm" novalidate>
                         <!--Form with header-->
-                        <div class="card wow zoomIn" data-wow-delay="0.7s">
-                            <div class="card-body z-depth-4">
+                            <div class="card wow zoomIn" data-wow-delay="0.7s">
+                                <div class="card-body z-depth-4">
 
-                                <!--Header-->
-                                <div class="form-header orange-gradient">
-                                    <h5><i class="fa fa-user-secret mt-2 mb-2"></i> Casaria eSupport 2.0 </h5>
-                                </div>
-
-                                <!--Body-->
-                                <div class="md-form">
-                                    <i class="fa fa-user prefix white-text"></i>
-                                    <input type="text" id="orangeForm-name" name="user" class="form-control">
-                                    <label for="orangeForm-name">Your user name</label>
-                                </div>
-
-                                <div class="md-form">
-                                    <i class="fa fa-lock prefix white-text"></i>
-                                    <input type="password" id="orangeForm-pass" name="password" class="form-control">
-                                    <label for="orangeForm-pass">Your password</label>
-                                </div>
-
-                                <div class="text-center">
-                                    <button class="btn orange-gradient btn-lg">LOGIN</button>
-                                    <hr>
-                                    <div class="inline-ul text-center d-flex justify-content-center">
-
+                                    <!--Header-->
+                                    <div class="form-header orange-gradient">
+                                        <h5><i class="fa fa-user-secret mt-2 mb-2"></i> Casaria eSupport 2.0 </h5>
                                     </div>
+
+                                    <!--Body-->
+                                    <div class="md-form">
+                                        <i class="fa fa-user prefix white-text"></i>
+                                        <input type="text" id="orangeForm-name" name="user" class="form-control">
+                                        <label for="orangeForm-name">Your user name</label>
+                                    </div>
+
+                                    <div class="md-form">
+                                        <i class="fa fa-lock prefix white-text"></i>
+                                        <input type="password" id="orangeForm-pass" name="password" class="form-control">
+                                        <label for="orangeForm-pass">Your password</label>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button class="btn orange-gradient btn-lg">LOGIN</button>
+                                        <hr>
+                                        <div class="inline-ul text-center d-flex justify-content-center">
+
+                                        </div>
+                                    </div>
+
                                 </div>
-
                             </div>
-                        </div>
                         <!--/Form with header-->
-
+                        </form>
                     </div>
                 </div>
             </div>

@@ -556,26 +556,20 @@ if($enable_helpdesk == 'Off'){
 
                                     <!--Header-->
                                     <div class="form-header orange-gradient">
-                                        <h5><i class="fa fa-user-secret mt-2 mb-2"></i> Casaria eSupport 2.0 </h5>
+                                        <h5><i class="fa fa-user-secret mt-3 mb-3"></i> Casaria eSupport 2.0 </h5>
                                     </div>
 
                                     <!--Body-->
                                     <div class="md-form">
                                         <i class="fa fa-user prefix white-text"></i>
-                                        <input type="text" id="orangeForm-name" name="user" class="form-control">
-                                        <label for="orangeForm-name">Your user name</label>
-                                    </div>
-
-                                    <div class="md-form form-sm">
-                                        <i class="fa fa-lock prefix"></i>
-                                        <input type="password" id="form33" class="form-control">
-                                        <label for="form33">Your password</label>
+                                        <input type="text" id="form1" name="user" class="form-control">
+                                        <label for="form1">Your user name</label>
                                     </div>
 
                                     <div class="md-form">
                                         <i class="fa fa-lock prefix white-text"></i>
-                                        <input type="password" id="orangeForm-pass" name="password" class="form-control">
-                                        <label for="orangeForm-pass">Your password</label>
+                                        <input type="password" id="form2" name="password" class="form-control">
+                                        <label for="form2">Your password</label>
                                     </div>
 
                                     <div class="text-center">

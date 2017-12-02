@@ -759,9 +759,11 @@
 
 
 
-    $cookie_name = strtolower($_SESSION['cookie_name']);
-    $normalized_username = strtolower(trim($_POST['user']));
-    $normalized_password = trim($_POST['password']);
+//    $cookie_name = strtolower($_SESSION['cookie_name']);
+//    $normalized_username = strtolower(trim($_POST['user']));
+
+
+//    $normalized_password = trim($_POST['password']);
 
 //    session_commit() === PHP_SESSION_ACTIVE ? $cookieuser = '' : startSession();
 

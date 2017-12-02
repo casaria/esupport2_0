@@ -83,7 +83,7 @@ function setSupporterCookie()
     <!-- Bootstrap core CSS -->
     <link href="../mdb/css/bootstrap.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-    <link href="../mdb/css/mdb.min.css" rel="stylesheet">
+    <link href="../mdb/css/mdb.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="../mdb/css/style.css" rel="stylesheet">
 
@@ -104,7 +104,7 @@ function setSupporterCookie()
     <style>
         .intro-2 {
 
-            background: linear-gradient(rgba(56, 35, 35, 0.5), rgba(67, 20, 34, 0.2)), url("../img/svg/bg1.png") no-repeat;
+            background: linear-gradient(rgba(56, 35, 35, 0.5), rgba(67, 20, 34, 0.9)), url("../img/svg/bg1.png") no-repeat;
             background-size: cover;
         }
         .intro-3 {
@@ -508,7 +508,7 @@ if($enable_helpdesk == 'Off'){
     </nav>
 
     <!--Intro Section-->
-    <section class="view intro-2 hm-indigo-strong">
+    <section class="view intro-2 hm-indigo-slight">
         <div class="full-bg-img flex-center">
             <div class="container">
                 <div class="row">

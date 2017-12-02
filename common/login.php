@@ -26,7 +26,7 @@
     require_once $_SERVER['DOCUMENT_ROOT'] . "/common/$database.class.php";
     require_once $_SERVER['DOCUMENT_ROOT'] . "/common/common.php";
     /** @noinspection PhpIncludeInspection */
-   // require_once $_SERVER['DOCUMENT_ROOT'] . "/lang/$default_language.lang.php";
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/lang/$default_language.lang.php";
 
     function setUserCookie()
     {
@@ -762,7 +762,7 @@
     $normalized_username = strtolower(trim($_POST['user']));
     $normalized_password = trim($_POST['password']);
 
-    session_commit() === PHP_SESSION_ACTIVE ? $cookieuser = '' : startSession();
+//    session_commit() === PHP_SESSION_ACTIVE ? $cookieuser = '' : startSession();
 
     /*  Not a good ides7
      *  trim ($_POST['password'],"((?=^)(\s*))|((\s*)(?>$))"); *

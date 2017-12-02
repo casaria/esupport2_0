@@ -108,6 +108,7 @@ $enable_time_tracking = $var['time_tracking'];		//enable time tracking per ticke
 $enable_kbase = $var['kbase'];						//enable knowledge base
 //$enable_attachments = $var['attachments'];			//enable attachments +++ not a field in settings
 $default_theme = $var['default_theme'];				//the name of the default theme that is set by the admin
+$default_language = "English";          //required to avoid warrnings
 $default_language = $var['default_language'];			//the default language
 
 //$version = $var['version'];							//version number of the helpdesk software
@@ -280,7 +281,7 @@ function isEmpty($table)
  **		Takes two arguments, password tring, and minimum length, return boolean true. and  Else,
  **	return boolean false.
  ************************************************************************************************************/
-function approvePassword($pwd, $minlength)
+function approvePassword($pwd, $minlength=6)
 {
     $error='';
 
@@ -2038,15 +2039,15 @@ if(isset($info)){
 			<td class=back valign=bottom> <textarea class="tkt-textarea" name=update_log></textarea><a href="updatelog.php?cookie_name='.$cookie_name.'&id='.$info[id]. '.$theme[image_dir].$log_button.jpg"></a>
 			</td>
 		</tr>';
-		
+
 }
 		if($enable_tattachments == 'On' && $flag == 'allow'){
 			echo '<tr>
 				<td class=back2 align=right width=90 valign=top>'.$lang_attachment.': </td>';
 
 			echo "<td class=back colspan=2 valign=bottom>";
-			    
-			
+
+
 			echo "<input type=hidden name=\"MAX_FILE_SIZE\" value=\"1000000\">";
 			echo "<input type=\"file\" name=\"the_file\" size=\"55\">";
 

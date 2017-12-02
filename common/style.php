@@ -1160,10 +1160,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     -moz-border-radius: 3px;
                     border-radius: 3px;
                     font-size:  <?php echo ($theme['font_size']+1); ?>px;
-                    padding-top: 2px;
-                    padding-right: 2px;
-                    padding-left: 2px;
-                    padding-bottom: 2px;
+                    padding: 2px;
                     margin: 5px;
                     text-decoration: none;
 
@@ -1610,7 +1607,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
                 .tkt-date{
                     margin: 4px;
-                    ont-size: <?php echo ($theme['font_size']+1); ?>px;
+                    font-size: <?php echo ($theme['font_size']+1); ?>px;
                 }
 
             <?php if(eregi("IE", $HTTP_USER_AGENT)){ ?>

@@ -15,14 +15,63 @@
 
  */
 //set the start time so we can calculate how long it takes to load the page.
+require_once "config.php";
+//set the start time so we can calculate how long it takes to load the page.
 $mtime1 = explode(" ", microtime());
 $starttime = $mtime1[0] + $mtime1[1];
+$normalized_username ='';
+$normalized_password ='';
+$normalized_referer ='';
+require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 
-//require_once "style.php";
-require_once "config.php";
-require_once "../common/mysql.class.php";
-require_once "common.php";
 
+/** @noinspection PhpIncludeInspection */
+require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
+$login_logo = "../images/casariadefault/small-header-brown.gif";
+
+$cookieuser = '';
+//common.php
+session_status() === PHP_SESSION_ACTIVE  ? $cookieuser = '' : startSession();
+
+$cookie_name = strtolower($_SESSION['cookie_name']);
+$normalized_username  = strtolower (trim($_POST['user']));
+$normalized_password = trim($_POST['password']);
+/*  Not a good ides
+ *  trim ($_POST['password'],"((?=^)(\s*))|((\s*)(?>$))"); *
+ */
+$normalized_referer = strtolower (trim($HTTP_REFERER));
+
+function setUserCookie()
+{
+    global $normalized_username, $normalized_password, $session_time;
+    $cookie_name = $normalized_username;
+//session_register ("cookie_name");
+    $_SESSION ['cookie_name'] = $cookie_name;
+    $enc_pwd = md5($normalized_password);
+//session_register ("enc_pwd");
+    $_SESSION ['enc_pwd'] = $enc_pwd;
+
+//nov14 header("Location: $referer");
+//echo"<BR>$cookie_name $enc_pwd";
+    setcookie('cookieuser', $cookie_name, time() + $session_time);
+    setcookie('cookiepwd', $normalized_password, time() + $session_time);
+}
+
+function setSupporterCookie()
+{
+    global  $normalized_username, $normalized_password, $session_time;
+    $cookie_name = $normalized_username;
+    $userIsSupporter = true;
+    //session_register("cookie_name");
+    $_SESSION ["cookie_name"] = $cookie_name;
+    $enc_pwd = md5($normalized_password);
+    //session_register("enc_pwd");
+    $_SESSION ["enc_pwd"] = $enc_pwd;
+
+    //nov14 header("Location: $referer");
+    setcookie('supporter_usercookie', $cookie_name,  time()+ $session_time);
+    setcookie('supporter_pwdcookie', $normalized_password,  time()+ $session_time);
+}
 ?>
 
     <style>
@@ -55,8 +104,7 @@ require_once "common.php";
     <style>
         .intro-3 {
 
-            background-image: linear-gradient(rgba(56,35,35, 0.5), rgba(67, 69, 34, 0.9)), url("../img/svg/bg1.png");
-            background-repeat: no-repeat;
+            background: linear-gradient(rgba(56, 35, 35, 0.5), rgba(67, 69, 34, 0.9)), url("../img/svg/bg1.png") no-repeat;
             background-size: cover;
         }
         .intro-2 {
@@ -130,6 +178,7 @@ require_once "common.php";
         }
     </style>
 
+    <!--suppress JSUnusedGlobalSymbols, JSUnusedGlobalSymbols -->
     <script type="text/javascript">
 
         jQuery.validator.addMethod("require_from_group", function(value, element, options) {
@@ -156,18 +205,14 @@ require_once "common.php";
         // Require old password when setting new one.
 
         jQuery.validator.addMethod("old_pass_if_changing", function(value, element, options) {
-            let valid = false;
-            let validator = this,
-                oldpass = jQuery(options[0]),
-                newpass = jQuery(options[1]);
-            if (!oldpass.val() && newpass.val())  valid = false;
-            else valid = true;
+                let oldpass = jQuery(options[0]);
+                let newpass = jQuery(options[1]);
+            return (!oldpass.val() && newpass.val()) //return true or falsse
 
-            return valid;
         },"Old password must be supplied when setting new one.");
 
-        iQuery.validator.addMethod("notEqual", function(value, element, param) {
-            return this.optional(element) || (value != param);
+        jQuery.validator.addMethod("notEqual", function(value, element, param) {
+            return this.optional(element) || (value !== param);
         },"New Password cannot be the same as current.");
 
 

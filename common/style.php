@@ -127,7 +127,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
             return obj.offsetWidth > 0 && obj.offsetHeight > 0;
         }  */
 
-/* ########################## OBSOLET DUE TO bOOTSTRP #####################
+/* ########################## OBSOLETE DUE TO BOOTSTRAP #####################
 
         let viewportmeta = document.querySelector('meta[name="viewport"]');
         if(viewportmeta===null){

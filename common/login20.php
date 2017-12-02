@@ -81,7 +81,7 @@ function setSupporterCookie()
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
-    <link href="../mdb/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../mdb/css/bootstrap.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="../mdb/css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
@@ -95,8 +95,8 @@ function setSupporterCookie()
     <script type="text/javascript" src="../mdb/js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="../mdb/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="../mdb/js/mdb.min.js"></script>
+    <!-- MDB core JavaScript    +++   mdb.min -->
+    <script type="text/javascript" src="../mdb/js/mdb.js"></script>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
 

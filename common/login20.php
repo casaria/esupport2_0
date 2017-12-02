@@ -115,11 +115,11 @@ function setSupporterCookie()
             background-size: cover;
         }
         .intro-5 {
-            background: url("../img/WAVE.png")no-repeat center center;
+            background: url("../img/wave55.jpg")no-repeat center center;
             background-size: cover;
         }
         .intro-6 {
-            background: url("../img/wave55.jpg")no-repeat center center;
+            background: url("../img/wormholke.jpg")no-repeat center center;
             background-size: cover;
         }
 

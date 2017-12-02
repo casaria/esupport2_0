@@ -776,113 +776,8 @@
     </div>
 </nav>
 
-<!-- SCRIPTS -->
 
-
-<!-- JQuery -->
-<script type="text/javascript" src="../mdb/js/jquery-3.2.1.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="../mdb/js/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="../mdb/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript    +++   mdb.min -->
-<script type="text/javascript" src="../mdb/js/mdb.js"></script>
-
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
-<!-- SCRIPTS -->
-
-<body>
-<!--Main Navigation-->
-<header>
-
-    <?php
-    //if submit has been hit, set the cookie and reload the page immediately so the cookie takes effect.
-    if (isset($login)) {
-        //if admin is contained in the url, we need to make sure the user is an
-        //admin before letting them login.
-        if ($$cookie_name == '') {
-            $cookie_name = $normalized_username;
-        }
-        if (ereg("/admin", $normalized_referer)) {
-            //check the user name and password against the database.
-            if (checkUser($normalized_username, md5($normalized_password))) {
-                if (isAdministrator($normalized_username)) {
-
-                    //session_register ("cookie_name");
-                    $_SESSION ["cookie_name"] = $cookie_name;
-                    $enc_pwd = md5($normalized_password);
-                    //session_register ("enc_pwd");
-                    $_SESSION ["enc_pwd"] = $enc_pwd;
-
-                    //nov14 header("Location: $referer");
-                } else {
-
-                    echo $lang_notadmin;
-                    exit;
-                }
-            } else {
-                echo $lang_wronglogin;
-                exit;
-            }
-
-        } elseif ((ereg("/supporter", $normalized_referer))) {
-            //check the user name and password against the database.
-            if (checkUser($normalized_username, md5($normalized_password))) {
-                if (isSupporter($normalized_username)) {
-                    setSupporterCookie();
-                } else {
-                    setUserCookie();
-                    header("location:../index.php");
-                    echo $lang_notsupporter;
-                    exit;
-                }
-            } else {
-                echo $lang_wronglogin;
-                exit;
-            }
-
-        } //otherwise, the user is not logging in to the admin site.
-        else {
-            //check the user name and password against the database.
-            if (checkUser($normalized_username, md5($normalized_password))) {
-                if (isSupporter($normalized_username)) {
-                    setSupporterCookie();
-                    header("location:supporter/index.php");
-                }
-                setUserCookie();
-            } else {
-                echo $lang_wronglogin;
-                exit;
-            }
-        }
-
-    }
-
-    //check the cookie first.
-    if (!isSet($_SESSION ['cookie_name']))
-    {
-    if (eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
-        $sup = 1;
-    else
-        $sup = 0;
-
-    if (isset($_COOKIE['supporter_usercookie']))
-        $cookie_name = $_COOKIE['supporter_usercookie'];
-    if (isset($_COOKIE['supporter_pwdcookie']))
-        $cookiepwd = $_COOKIE['supporter_pwdcookie'];
-
-
-    echo
-    '<script language="JavaScript">
-            function setfocus(){
-                document.login.user.focus();
-             } 
-    </script>';
-
-
-    echo '
-    <!--Intro Section-->
+<!--Intro Section-->
 <section class="view intro-9 hm-indigo-light">
     <div class="full-bg-img flex-center">
         <div class="container">
@@ -930,33 +825,22 @@
     </div>
 </section>
 
-';
+
+<!-- SCRIPTS -->
 
 
-    }
-    else {  //Cookie was set
+<!-- JQuery -->
+<script type="text/javascript" src="../mdb/js/jquery-3.2.1.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="../mdb/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="../mdb/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript    +++   mdb.min -->
+<script type="text/javascript" src="../mdb/js/mdb.js"></script>
 
-            //if submit has not been pressed, check the cookie against the database.
-
-            if (preg_match("/admin/i", $PHP_SELF) && !isAdministrator($cookie_name) && $cookie_name !=
-
-                '') {
-                echo "$lang_notadmin";
-                exit;
-            }
-
-        }
-        //get some globals about the user
-        if ($cookie_name != '') {
-            $user_id = getUserId($cookie_name);
-            $ugID_list = getUsersGroupIDList($user_id);
-
-        } else {
-            echo $lang_wronglogin;
-            exit;
-        }
-        //this returns back to the page that called it.
-        ?>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+<!-- SCRIPTS -->
 
 
     <script>
@@ -1071,6 +955,124 @@
         });
 
     </script>
+
+<body>
+<!--Main Navigation-->
+<header>
+
+    <?php
+    //if submit has been hit, set the cookie and reload the page immediately so the cookie takes effect.
+    if (isset($login)) {
+        //if admin is contained in the url, we need to make sure the user is an
+        //admin before letting them login.
+        if ($$cookie_name == '') {
+            $cookie_name = $normalized_username;
+        }
+        if (ereg("/admin", $normalized_referer)) {
+            //check the user name and password against the database.
+            if (checkUser($normalized_username, md5($normalized_password))) {
+                if (isAdministrator($normalized_username)) {
+
+                    //session_register ("cookie_name");
+                    $_SESSION ["cookie_name"] = $cookie_name;
+                    $enc_pwd = md5($normalized_password);
+                    //session_register ("enc_pwd");
+                    $_SESSION ["enc_pwd"] = $enc_pwd;
+
+                    //nov14 header("Location: $referer");
+                } else {
+
+                    echo $lang_notadmin;
+                    exit;
+                }
+            } else {
+                echo $lang_wronglogin;
+                exit;
+            }
+
+        } elseif ((ereg("/supporter", $normalized_referer))) {
+            //check the user name and password against the database.
+            if (checkUser($normalized_username, md5($normalized_password))) {
+                if (isSupporter($normalized_username)) {
+                    setSupporterCookie();
+                } else {
+                    setUserCookie();
+                    header("location:../index.php");
+                    echo $lang_notsupporter;
+                    exit;
+                }
+            } else {
+                echo $lang_wronglogin;
+                exit;
+            }
+
+        } //otherwise, the user is not logging in to the admin site.
+        else {
+            //check the user name and password against the database.
+            if (checkUser($normalized_username, md5($normalized_password))) {
+                if (isSupporter($normalized_username)) {
+                    setSupporterCookie();
+                    header("location:supporter/index.php");
+                }
+                setUserCookie();
+            } else {
+                echo $lang_wronglogin;
+                exit;
+            }
+        }
+
+    }
+
+    //check the cookie first.
+    if (!isSet($_SESSION ['cookie_name']))
+    {
+        if (eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
+            $sup = 1;
+        else
+            $sup = 0;
+
+        if (isset($_COOKIE['supporter_usercookie']))
+            $cookie_name = $_COOKIE['supporter_usercookie'];
+        if (isset($_COOKIE['supporter_pwdcookie']))
+            $cookiepwd = $_COOKIE['supporter_pwdcookie'];
+
+
+        echo
+        '<script language="JavaScript">
+            function setfocus(){
+                document.login.user.focus();
+              } 
+         </script>';
+
+
+
+
+    }
+    else {  //Cookie was set
+
+        //if submit has not been pressed, check the cookie against the database.
+
+        if (preg_match("/admin/i", $PHP_SELF) && !isAdministrator($cookie_name) && $cookie_name !=
+
+            '') {
+            echo "$lang_notadmin";
+            exit;
+        }
+
+    }
+    //get some globals about the user
+    if ($cookie_name != '') {
+        $user_id = getUserId($cookie_name);
+        $ugID_list = getUsersGroupIDList($user_id);
+
+    } else {
+        echo $lang_wronglogin;
+        exit;
+    }
+    //this returns back to the page that called it.
+    ?>
+
+
 </header>
 <!--Main Navigation-->
 

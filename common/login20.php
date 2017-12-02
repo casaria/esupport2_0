@@ -560,6 +560,29 @@ if($enable_helpdesk == 'Off'){
                                     </div>
 
                                     <!--Body-->
+
+
+                                    <div class="md-form">
+                                        <i class="fa fa-user prefix white-text"></i>
+                                        <input type="text" id="orangeForm-name" class="form-control">
+                                        <label for="orangeForm-name">Your name</label>
+                                    </div>
+                                    <div class="md-form">
+                                        <i class="fa fa-envelope prefix white-text"></i>
+                                        <input type="text" id="orangeForm-email" class="form-control">
+                                        <label for="orangeForm-email">Your email</label>
+                                    </div>
+
+                                    <div class="md-form">
+                                        <i class="fa fa-lock prefix white-text"></i>
+                                        <input type="password" id="orangeForm-pass" class="form-control">
+                                        <label for="orangeForm-pass">Your password</label>
+                                    </div>
+
+
+
+                                    <!--Body
+
                                     <div class="md-form">
                                         <i class="fa fa-user prefix white-text"></i>
                                         <input type="text" id="form1" name="user" class="form-control">
@@ -570,7 +593,7 @@ if($enable_helpdesk == 'Off'){
                                         <i class="fa fa-lock prefix white-text"></i>
                                         <input type="password" id="form2" name="password" class="form-control">
                                         <label for="form2">Your password</label>
-                                    </div>
+                                    </div>  -->
 
                                     <div class="text-center">
                                         <button type="submit" class="btn orange-gradient btn-lg">LOGIN</button>

@@ -28,18 +28,6 @@
     /** @noinspection PhpIncludeInspection */
     require_once $_SERVER['DOCUMENT_ROOT'] . "/lang/$default_language.lang.php";
 
-
-    $cookie_name = strtolower($_SESSION['cookie_name']);
-    $normalized_username = strtolower(trim($_POST['user']));
-    $normalized_password = trim($_POST['password']);
-
-    session_commit() === PHP_SESSION_ACTIVE ? $cookieuser = '' : startSession();
-
-    /*  Not a good ides7
-     *  trim ($_POST['password'],"((?=^)(\s*))|((\s*)(?>$))"); *
-     */
-    $normalized_referer = strtolower(trim($HTTP_REFERER));
-
     function setUserCookie()
     {
         global $normalized_username, $normalized_password, $session_time;
@@ -767,6 +755,20 @@
 
 
     <?php
+
+
+
+    $cookie_name = strtolower($_SESSION['cookie_name']);
+    $normalized_username = strtolower(trim($_POST['user']));
+    $normalized_password = trim($_POST['password']);
+
+    session_commit() === PHP_SESSION_ACTIVE ? $cookieuser = '' : startSession();
+
+    /*  Not a good ides7
+     *  trim ($_POST['password'],"((?=^)(\s*))|((\s*)(?>$))"); *
+     */
+    $normalized_referer = strtolower(trim($HTTP_REFERER));
+
     //if submit has been hit, set the cookie and reload the page immediately so the cookie takes effect.
     /*
     if (isset($login)) {

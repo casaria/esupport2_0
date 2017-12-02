@@ -61,7 +61,7 @@ function setSupporterCookie()
 {
     global  $normalized_username, $normalized_password, $session_time;
     $cookie_name = $normalized_username;
-    $userIsSupporter = true;
+            $userIsSupporter = true;
     //session_register("cookie_name");
     $_SESSION ["cookie_name"] = $cookie_name;
     $enc_pwd = md5($normalized_password);
@@ -172,10 +172,10 @@ function setSupporterCookie()
             margin-top: 1rem;
         }
         .md-form label {
-            color: #bbbbbb;
+            color: #cccccc;
         }
         h6 {
-            line-height: 1.7;
+            line-height: 1.9;
         }
         @media (max-width: 740px) {
             .full-height,
@@ -207,11 +207,11 @@ function setSupporterCookie()
         }
         .md-form input[type=text]:focus:not([readonly])+label,
         .md-form input[type=password]:focus:not([readonly])+label {
-            color: #8EDEF8;
+            color: lightblue;
         }
 
         .md-form .form-control {
-            color: #546;
+            color: lightsalmon;
         }
     </style>
 
@@ -549,7 +549,7 @@ if($enable_helpdesk == 'Off'){
             <div class="container">
                 <div class="row">
                     <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-lg-5">
-                        <form method="post" role="form" id="newPassForm" name="newPassForm" novalidate>
+                        <form method="post" role="form" id="newPassForm" name="newPassForm" >
                         <!--Form with header-->
                             <div class="card wow zoomIn" data-wow-delay="0.7s">
                                 <div class="card-body z-depth-4">
@@ -573,7 +573,7 @@ if($enable_helpdesk == 'Off'){
                                     </div>
 
                                     <div class="text-center">
-                                        <button class="btn orange-gradient btn-lg">LOGIN</button>
+                                        <input> <button class="btn orange-gradient btn-lg">LOGIN</button>
                                         <hr>
                                         <div class="inline-ul text-center d-flex justify-content-center">
 

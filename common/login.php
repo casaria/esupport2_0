@@ -29,13 +29,12 @@ require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
 
 
-$cookieuser = '';
-//common.php
-session_commit() === PHP_SESSION_ACTIVE  ? $cookieuser = '' : startSession();
-
 $cookie_name = strtolower($_SESSION['cookie_name']);
 $normalized_username  = strtolower (trim($_POST['user']));
 $normalized_password = trim($_POST['password']);
+
+session_commit() === PHP_SESSION_ACTIVE  ? $cookieuser = '' : startSession();
+
 /*  Not a good ides
  *  trim ($_POST['password'],"((?=^)(\s*))|((\s*)(?>$))"); *
  */

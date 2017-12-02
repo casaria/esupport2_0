@@ -110,7 +110,10 @@ function setSupporterCookie()
             background: url("../img/IMG_3629.png")no-repeat center center;
             background-size: cover;
         }
-
+        .intro-4 {
+            background: url("../img/wormhole.png")no-repeat center center;
+            background-size: cover;
+        }
         .top-nav-collapse {
             background-color: #284175 !important;
             /*  background-color: #3f51b5 !important; */
@@ -506,7 +509,7 @@ if($enable_helpdesk == 'Off'){
     </nav>
 
     <!--Intro Section-->
-    <section class="view intro-3 .pattern7 hm-indigo-light">
+    <section class="view intro-4 .pattern7 hm-indigo-light">
         <div class="full-bg-img flex-center">
             <div class="container">
                 <div class="row">

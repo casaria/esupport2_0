@@ -218,6 +218,9 @@
 
     </style>
 
+<body>
+<!--Main Navigation-->
+<header>
 
 <!--Modal: new Password Form-->
 <div class="card modal fade" id="newpasswordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -755,9 +758,6 @@
 
     </script>
 
-<body>
-<!--Main Navigation-->
-<header>
 
     <?php
     //if submit has been hit, set the cookie and reload the page immediately so the cookie takes effect.

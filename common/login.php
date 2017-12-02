@@ -761,6 +761,7 @@
 
     <?php
     //if submit has been hit, set the cookie and reload the page immediately so the cookie takes effect.
+    /*
     if (isset($login)) {
         //if admin is contained in the url, we need to make sure the user is an
         //admin before letting them login.
@@ -869,6 +870,7 @@
         exit;
     }
     //this returns back to the page that called it.
+    */
     ?>
 
 

@@ -150,7 +150,7 @@ function setSupporterCookie()
         }
 
         .top-nav-collapse {
-            background-color: #284175 !important;
+            background-color: #ff8a65 !important;
             /*  background-color: #3f51b5 !important; */
         }
         .navbar:not(.top-nav-collapse) {
@@ -158,13 +158,13 @@ function setSupporterCookie()
         }
         @media (max-width: 768px) {
             .navbar:not(.top-nav-collapse) {
-                background-color: #32383e !important;
+                background-color: #ff8a65 !important;
                 /*   background: #3f51b5 !important; */
             }
         }
 
         .card {
-            background-color: rgba(68, 60, 78, 0.95);
+            background-color: rgba(229, 228, 255, 0.2);
         }
 
         .md-form .prefix {
@@ -172,10 +172,10 @@ function setSupporterCookie()
             margin-top: 1rem;
         }
         .md-form label {
-            color: #cccccc;
+            color: #ffffff;
         }
         h6 {
-            line-height: 1.9;
+            line-height: 1.7;
         }
         @media (max-width: 740px) {
             .full-height,
@@ -196,7 +196,7 @@ function setSupporterCookie()
 
         .card {
             margin-top: 30px;
-         /*   margin-bottom: 30px; */
+            /*margin-bottom: -45px;*/
 
         }
 
@@ -207,12 +207,9 @@ function setSupporterCookie()
         }
         .md-form input[type=text]:focus:not([readonly])+label,
         .md-form input[type=password]:focus:not([readonly])+label {
-            color: lightblue;
+            color: #8EDEF8;
         }
 
-        .md-form .form-control {
-            color: lightsalmon;
-        }
     </style>
 
     <!--suppress JSUnusedGlobalSymbols, JSUnusedGlobalSymbols -->

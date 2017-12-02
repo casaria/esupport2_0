@@ -103,7 +103,6 @@ function setSupporterCookie()
 
     <style>
         .intro-2 {
-
             background: linear-gradient(rgba(112, 99, 141, 0.5), rgba(67, 20, 34, 0.9)), url("../img/svg/bg1.png") no-repeat;
             background-size: cover;
         }

@@ -111,7 +111,7 @@ function setSupporterCookie()
             background-size: cover;
         }
         .intro-4 {
-            background: url("../img/wormhole.png")no-repeat center center;
+            background: url("../img/wormhole.png    ")no-repeat center center;
             background-size: cover;
         }
         .top-nav-collapse {
@@ -129,7 +129,7 @@ function setSupporterCookie()
         }
 
         .card {
-            background-color: rgba(73, 60, 78, 0.55);
+            background-color: rgba(73, 60, 78, 0.95);
         }
 
         .md-form .prefix {

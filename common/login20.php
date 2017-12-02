@@ -658,6 +658,26 @@ echo
                 </div>
             </div>
 
+        <!-- SCRIPTS -->
+
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="../mdb/js/jquery-3.2.1.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="../mdb/js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="../mdb/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript    +++   mdb.min -->
+        <script type="text/javascript" src="../mdb/js/mdb.js"></script>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+        <!-- SCRIPTS -->
+
+        <script>
+            new WOW().init();
+        </script>
+
+
         <?php }
         else {  //Cookie was set
 
@@ -687,24 +707,6 @@ echo
 <!--Main Navigation-->
 
 
-<!-- SCRIPTS -->
-
-
-<!-- JQuery -->
-<script type="text/javascript" src="../mdb/js/jquery-3.2.1.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="../mdb/js/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="../mdb/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript    +++   mdb.min -->
-<script type="text/javascript" src="../mdb/js/mdb.js"></script>
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
-<!-- SCRIPTS -->
-
-<script>
-    new WOW().init();
-</script>
 </body>
 </html>
 

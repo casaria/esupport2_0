@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="utf-8">
@@ -22,6 +22,17 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script>    $(document).ready(function(){
+    $("button").click(function(){
+    $(".test").hide();
+    });
+    });
+
+    </script>
+
+
+
 </head>
 
 <body>
@@ -45,7 +56,7 @@
             <h4 class="card-title">Card title</h4>
             <!--Text-->
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Button</a>
+            <button><a href="#" class="btn btn-primary">Button</a></button>
         </div>
 
     </div>

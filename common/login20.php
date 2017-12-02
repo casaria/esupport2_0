@@ -542,23 +542,22 @@ if($enable_helpdesk == 'Off'){
 
     <!--Intro Section-->
     <section class="view intro-9 hm-indigo-light">
-        <div class="full-bg-img flex-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-lg-5">
-                        <form method="post" role="form" id="loginForm" name="LoginForm" >
-                        <!--Form with header-->
-                            <div class="card wow zoomIn" data-wow-delay="0.7s">
-                                <div class="card-body z-depth-4">
+        <!--Intro Section-->
+            <div class="full-bg-img flex-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-lg-5">
+
+                            <!--Form with header-->
+                            <div class="card wow fadeIn" data-wow-delay="0.7s">
+                                <div class="card-body">
 
                                     <!--Header-->
                                     <div class="form-header orange-gradient">
-                                        <h4><i class="fa fa-user-secret mt-3 mb-3"></i> Casaria eSupport 2.0 </h4>
+                                        <h3><i class="fa fa-user mt-2 mb-2"></i> Log in:</h3>
                                     </div>
 
                                     <!--Body-->
-
-
                                     <div class="md-form">
                                         <i class="fa fa-user prefix white-text"></i>
                                         <input type="text" id="orangeForm-name" class="form-control">
@@ -576,39 +575,26 @@ if($enable_helpdesk == 'Off'){
                                         <label for="orangeForm-pass">Your password</label>
                                     </div>
 
-
-
-                                    <!--Body
-
-                                    <div class="md-form">
-                                        <i class="fa fa-user prefix white-text"></i>
-                                        <input type="text" id="form1" name="user" class="form-control">
-                                        <label for="form1">Your user name</label>
-                                    </div>
-
-                                    <div class="md-form">
-                                        <i class="fa fa-lock prefix white-text"></i>
-                                        <input type="password" id="form2" name="password" class="form-control">
-                                        <label for="form2">Your password</label>
-                                    </div>  -->
-
                                     <div class="text-center">
-                                        <button type="submit" class="btn orange-gradient btn-lg">LOGIN</button>
+                                        <button class="btn orange-gradient btn-lg">Sign up</button>
                                         <hr>
                                         <div class="inline-ul text-center d-flex justify-content-center">
-
+                                            <a class="icons-sm tw-ic"><i class="fa fa-twitter white-text"></i></a>
+                                            <a class="icons-sm li-ic"><i class="fa fa-linkedin white-text"> </i></a>
+                                            <a class="icons-sm ins-ic"><i class="fa fa-instagram white-text"> </i></a>
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
-                        <!--/Form with header-->
-                        </form>
+                            <!--/Form with header-->
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
 
     </header>
 <!--Main Navigation-->

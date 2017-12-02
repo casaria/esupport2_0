@@ -578,11 +578,6 @@ if($enable_helpdesk == 'Off'){
                                     <div class="text-center">
                                         <button class="btn orange-gradient btn-lg">Sign up</button>
                                         <hr>
-                                        <div class="inline-ul text-center d-flex justify-content-center">
-                                            <a class="icons-sm tw-ic"><i class="fa fa-twitter white-text"></i></a>
-                                            <a class="icons-sm li-ic"><i class="fa fa-linkedin white-text"> </i></a>
-                                            <a class="icons-sm ins-ic"><i class="fa fa-instagram white-text"> </i></a>
-                                        </div>
                                     </div>
 
                                 </div>

@@ -164,7 +164,7 @@ function setSupporterCookie()
         }
 
         .card {
-            background-color: rgba(73, 60, 78, 0.95);
+            background-color: rgba(68, 60, 78, 0.95);
         }
 
         .md-form .prefix {
@@ -172,7 +172,7 @@ function setSupporterCookie()
             margin-top: 1rem;
         }
         .md-form label {
-            color: #aaaaaa;
+            color: #bbbbbb;
         }
         h6 {
             line-height: 1.7;
@@ -544,7 +544,7 @@ if($enable_helpdesk == 'Off'){
     </nav>
 
     <!--Intro Section-->
-    <section class="view intro-10 hm-indigo-strong">
+    <section class="view intro-10 hm-indigo-plus">
         <div class="full-bg-img flex-center">
             <div class="container">
                 <div class="row">

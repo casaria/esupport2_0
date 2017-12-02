@@ -88,9 +88,6 @@
             color: #8EDEF8;
         }
 
-        .md-form .form-control {
-            color: #fff;
-        }
 
     </style>
 

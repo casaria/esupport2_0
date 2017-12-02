@@ -219,12 +219,6 @@
     </style>
 
 
-    <?php
-    if ($enable_helpdesk == 'Off') {
-        printerror($on_off_reason);
-        exit;
-    } ?>
-    </head>
 <!--Modal: new Password Form-->
 <div class="card modal fade" id="newpasswordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
      aria-hidden="true">
@@ -879,8 +873,6 @@
 
 
 </header>
-<!--Main Navigation-->
-
 
 </body>
 </html>

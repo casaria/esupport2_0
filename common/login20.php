@@ -61,7 +61,7 @@ function setSupporterCookie()
 {
     global  $normalized_username, $normalized_password, $session_time;
     $cookie_name = $normalized_username;
-            $userIsSupporter = true;
+
     //session_register("cookie_name");
     $_SESSION ["cookie_name"] = $cookie_name;
     $enc_pwd = md5($normalized_password);
@@ -153,18 +153,18 @@ function setSupporterCookie()
         }
 
         .card {
-            background-color: rgba(124, 124, 122, 0.7);
+            background-color: rgba(124, 124, 122, 0.65);
         }
 
         .md-form .prefix {
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             margin-top: 1rem;
         }
         .md-form label {
             color: #ffffff;
         }
         h6 {
-            line-height: 1.7;
+            line-height: 1.9;
         }
         @media (max-width: 740px) {
             .full-height,
@@ -316,7 +316,90 @@ if($enable_helpdesk == 'Off'){
     printerror($on_off_reason);
     exit;
 }
+
+
+//if submit has been hit, set the cookie and reload the page immediately so the cookie takes effect.
+if (isset($login)) {
+    //if admin is contained in the url, we need to make sure the user is an
+    //admin before letting them login.
+    if ($$cookie_name == '') {
+        $cookie_name = $normalized_username;
+    }
+    if (ereg("/admin", $normalized_referer)) {
+        //check the user name and password against the database.
+        if (checkUser($normalized_username, md5($normalized_password))) {
+            if (isAdministrator($normalized_username)) {
+
+                //session_register ("cookie_name");
+                $_SESSION ["cookie_name"] = $cookie_name;
+                $enc_pwd = md5($normalized_password);
+                //session_register ("enc_pwd");
+                $_SESSION ["enc_pwd"] = $enc_pwd;
+
+                //nov14 header("Location: $referer");
+            } else {
+
+                echo $lang_notadmin;
+                exit;
+            }
+        } else {
+            echo $lang_wronglogin;
+            exit;
+        }
+
+    } elseif ((ereg("/supporter", $normalized_referer))) {
+        //check the user name and password against the database.
+        if (checkUser($normalized_username, md5($normalized_password))) {
+            if (isSupporter($normalized_username)) {
+                setSupporterCookie();
+            } else {
+                setUserCookie();
+                header("location:../index.php");
+                echo $lang_notsupporter;
+                exit;
+            }
+        } else {
+            echo $lang_wronglogin;
+            exit;
+        }
+
+    } //otherwise, the user is not logging in to the admin site.
+    else {
+        //check the user name and password against the database.
+        if (checkUser($normalized_username, md5($normalized_password))) {
+            if (isSupporter($normalized_username)) {
+                setSupporterCookie();
+                header("location:supporter/index.php");
+            }
+            setUserCookie();
+        } else {
+            echo $lang_wronglogin;
+            exit;
+        }
+    }
+
+}
+
+//check the cookie first.
+if (!isSet($_SESSION ['cookie_name'])) {
+if (eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
+    $sup = 1;
+else
+    $sup = 0;
+
+if (isset($_COOKIE['supporter_usercookie']))
+    $cookie_name = $_COOKIE['supporter_usercookie'];
+if (isset($_COOKIE['supporter_pwdcookie']))
+    $cookiepwd = $_COOKIE['supporter_pwdcookie'];
+
+
+echo
+'<script language="JavaScript">
+        function setfocus(){
+            document.login.user.focus();
+        } </script>';
 ?>
+
 
 </head>
 
@@ -574,9 +657,32 @@ if($enable_helpdesk == 'Off'){
                     </div>
                 </div>
             </div>
-        </section>
 
+        <?php }
+        else {  //Cookie was set
 
+            //if submit has not been pressed, check the cookie against the database.
+
+            if (preg_match("/admin/i", $PHP_SELF) && !isAdministrator($cookie_name) && $cookie_name !=
+
+                '') {
+                echo "$lang_notadmin";
+                exit;
+            }
+
+        }
+        //get some globals about the user
+        if ($cookie_name != '') {
+            $user_id = getUserId($cookie_name);
+            $ugID_list = getUsersGroupIDList($user_id);
+
+        } else {
+            echo $lang_wronglogin;
+            exit;
+        }
+        //this returns back to the page that called it.
+        ?>
+    </section>
     </header>
 <!--Main Navigation-->
 

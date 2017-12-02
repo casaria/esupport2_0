@@ -217,7 +217,7 @@
         }
 
     </style>
-
+</head>
 <body>
 <!--Main Navigation-->
 <header>

@@ -136,6 +136,11 @@ function setSupporterCookie()
             background: linear-gradient(to bottom, rgba(30,27,107,1) 0%,rgba(116,56,137,1) 47%,rgba(136,44,178,1) 53%,rgba(255,197,112,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1b6b', endColorstr='#ffc570',GradientType=0 ); /* IE6-9 */
         }
+        .intro-8 {
+            background: url("../img/KTMduke.jpg")no-repeat center center;
+            background-size: cover;
+        }
+
         .top-nav-collapse {
             background-color: #284175 !important;
             /*  background-color: #3f51b5 !important; */
@@ -531,7 +536,7 @@ if($enable_helpdesk == 'Off'){
     </nav>
 
     <!--Intro Section-->
-    <section class="view intro-7">
+    <section class="view intro-7 hm-indigo-plus">
         <div class="full-bg-img flex-center">
             <div class="container">
                 <div class="row">

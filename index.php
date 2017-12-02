@@ -68,7 +68,7 @@ require_once "common/style.php";
 
 $time_offset = getTimeOffset($_SESSION['cookie_name']);
 
-if(isset($cookie_name)){
+if($cookie_name !== ''){
 	//update the lastactive time in the database.
 	$sql = "UPDATE $mysql_users_table set lastactive='".time()."' where user_name='".$cookie_name."'";
 	$db->query($sql);

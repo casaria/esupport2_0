@@ -613,19 +613,19 @@ if($t == "topts"){
 	switch($act){
 
 		case('tpla'):
-			require "../admin/platforms.php";
+			require "../admin23/platforms.php";
 			break;
 
 		case('tcat'):
-			require "../admin/tcategories.php";
+			require "../admin23/tcategories.php";
 			break;
 
 		case('tsta'):
-			require "../admin/tstatus.php";
+			require "../admin23/tstatus.php";
 			break;
 
 		case('tpri'):
-			require "../admin/tpriorities.php";
+			require "../admin23/tpriorities.php";
 			break;
 
 		default:

@@ -288,7 +288,7 @@ function approvePassword($pwd, $minlength=6)
 if (strlen($pwd) > 20 ) {
     $error .= "Password too long! ";}
 
-if (strlen($pwd) <  $minlenght ) {
+if (strlen($pwd) <      $minlenght ) {
     $error .= "Password too short! ";}
 
 if (!preg_match("#[0-9]+#", $pwd)) {

@@ -365,13 +365,13 @@ if (isAdministrator($cookie_name) && $awaiting_approval){
 							require "member.php";
 							break;
 						case ("tstats"):
-							require "../admin/tstats.php";
+							require "../admin23/tstats.php";
 							break;
 						case ("tsur"):
-							require "../admin/sstats.php";
+							require "../admin23/sstats.php";
 							break;
 						case ("gstats"):
-							require "../admin/gstats.php";
+							require "../admin23/gstats.php";
 							break;
 
 
@@ -380,10 +380,10 @@ if (isAdministrator($cookie_name) && $awaiting_approval){
                             break;
 
 						case ("slist"):
-							require "../admin/slist.php";
+							require "../admin23/slist.php";
 							break;
 						case ("time"):						
-    							require "../admin/timedetailed.php";
+    							require "../admin23/timedetailed.php";
 							break;
 						case("cccheater"):
 							require "../CCC/jheater.php";
@@ -392,7 +392,7 @@ if (isAdministrator($cookie_name) && $awaiting_approval){
 							require "../CCC/jcontrol.php";
 							break;	
 						case ("uedit"):
-							require "../admin/uedit.php";
+							require "../admin23/uedit.php";
 							break;
 						case("repo"):
 							require "../kbase/report.php";

@@ -118,6 +118,10 @@ function setSupporterCookie()
             background: url("../img/WAVE.png")no-repeat center center;
             background-size: cover;
         }
+        .intro-6 {
+            background: url("../img/wave55.jpg")no-repeat center center;
+            background-size: cover;
+        }
 
         .top-nav-collapse {
             background-color: #284175 !important;
@@ -514,7 +518,7 @@ if($enable_helpdesk == 'Off'){
     </nav>
 
     <!--Intro Section-->
-    <section class="view intro-5 .pattern7 hm-indigo-light">
+    <section class="view intro-6 .pattern7 hm-indigo-light">
         <div class="full-bg-img flex-center">
             <div class="container">
                 <div class="row">

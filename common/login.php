@@ -650,7 +650,115 @@
 <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
 <!-- SCRIPTS -->
+<!--suppress JSUnusedGlobalSymbols, JSUnusedGlobalSymbols -->
+<script type="text/javascript">
 
+    jQuery.validator.addMethod("require_from_group", function(value, element, options) {
+        let $fields = jQuery(options[1], element.form),
+            $fieldsFirst = $fields.eq(0),
+            validator = $fieldsFirst.data('valid_req_grp') ? $fieldsFirst.data('valid_req_grp') : jQuery.extend({}, this),
+            isValid = $fields.filter(function() {
+                return validator.elementValue(this);
+            }).length >= options[0];
+
+        // Store the cloned validator for future validation
+        $fieldsFirst.data('valid_req_grp', validator);
+        // If element isn't being validated, run each require_from_group field's validation rules
+        if (!jQuery(element).data('being_validated')) {
+            $fields.data('being_validated', true);
+            $fields.each(function() {
+                validator.element(this);
+            });
+            $fields.data('being_validated', false);
+        }
+        return isValid;
+    },"Please fill ALL of these fields.");
+
+    // Require old password when setting new one.
+
+    jQuery.validator.addMethod("old_pass_if_changing", function(value, element, options) {
+        let oldpass = jQuery(options[0]);
+        let newpass = jQuery(options[1]);
+        return (!oldpass.val() && newpass.val()) //return true or falsse
+
+    },"Old password must be supplied when setting new one.");
+
+    jQuery.validator.addMethod("notEqual", function(value, element, param) {
+        return this.optional(element) || (value !== param);
+    },"New Password cannot be the same as current.");
+
+
+
+    jQuery.validator.addMethod("validpassword", function(value, element) {
+        return this.optional(element) ||
+            /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$/.test(value);
+    },"Password must contain a minimum of 1 lower case letter," +
+        " 1 upper case letter, 1 numeric and 1 special character.");
+
+
+    // Wait for the DOM to be ready
+
+    $("form[name='newPassForm']").validate
+    ({
+        // Specify validation rules
+        rules: {
+            // The key name on the left side is the name attribute
+            // of an input field. Validation rules are defined
+            // on the right side
+            form31: {
+                required: true,
+                minlength: 2,
+                maxlength: 20,
+                validpassword: false
+
+            },
+            form32: {required: true,
+                minlength: 8,
+                maxlength: 20,
+                validpassword: true,
+                notEqual: "#pass1"
+            },
+            form33: {
+                required: true,
+                minlength: 8,
+                maxlength: 20,
+                validpassword: true,
+                equalTo:  "#pass2"
+            }
+
+        }
+        // Specify validation error messages
+        /* messages: {
+                 form33: {
+                     required: "Please provide a password",
+                     minlength: "Password must be at least 5 characters"
+                 },
+                 form34: {
+                     required: "Please repeat  the password",
+                     minlength: "Password must be at least 5 characters"
+                 }
+         }, */
+    });
+    // Set jQuery.validate settings for bootstrap integration
+    jQuery.validator.setDefaults({
+        highlight: function(element) {
+            jQuery(element).closest('.form-group').addClass('has-error');
+        },
+        unhighlight: function(element) {
+            jQuery(element).closest('.form-group').removeClass('has-error');
+        },
+        errorElement: 'span',
+        errorClass: 'label label-danger',
+        errorPlacement: function(error, element) {
+            if(element.parent('.input-group').length) {
+                error.insertAfter(element.parent());
+            } else {
+                error.insertAfter(element);
+            }
+        }
+    });
+
+</script>
 
     <script>
         new WOW().init();

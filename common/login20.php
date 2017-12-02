@@ -546,14 +546,14 @@ if($enable_helpdesk == 'Off'){
             <div class="container">
                 <div class="row">
                     <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-lg-5">
-                        <form method="post" role="form" id="newPassForm" name="newPassForm" >
+                        <form method="post" role="form" id="loginForm" name="LoginForm" >
                         <!--Form with header-->
                             <div class="card wow zoomIn" data-wow-delay="0.7s">
                                 <div class="card-body z-depth-4">
 
                                     <!--Header-->
                                     <div class="form-header orange-gradient">
-                                        <h5><i class="fa fa-user-secret mt-3 mb-3"></i> Casaria eSupport 2.0 </h5>
+                                        <h4><i class="fa fa-user-secret mt-3 mb-3"></i> Casaria eSupport 2.0 </h4>
                                     </div>
 
                                     <!--Body-->

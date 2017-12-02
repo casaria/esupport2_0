@@ -626,7 +626,7 @@
                     </div>
                 </section>
 
-
+</header>
 
 <!-- SCRIPTS -->
 
@@ -874,7 +874,7 @@
     ?>
 
 
-</header>
+
 
 </body>
 </html>

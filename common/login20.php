@@ -90,7 +90,7 @@ function setSupporterCookie()
 
 
     <!-- JQuery -->
-    <script type="text/javascript" src="../mdb/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../mdb/js/jquery-3.2.1.js"></script>
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="../mdb/js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->

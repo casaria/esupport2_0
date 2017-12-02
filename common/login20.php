@@ -573,7 +573,7 @@ if($enable_helpdesk == 'Off'){
                                     </div>
 
                                     <div class="text-center">
-                                        <input> <button class="btn orange-gradient btn-lg">LOGIN</button>
+                                        <input type="button" name="submnit" class="btn orange-gradient btn-lg">LOGIN
                                         <hr>
                                         <div class="inline-ul text-center d-flex justify-content-center">
 

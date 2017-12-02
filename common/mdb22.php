@@ -135,7 +135,7 @@
                     <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-lg-5">
 
                         <!--Form with header-->
-                        <div class="card wow fadeIn" data-wow-delay="0.3s">
+                        <div class="card wow fadeIn" data-wow-delay="0.7s">
                             <div class="card-body">
 
                                 <!--Header-->

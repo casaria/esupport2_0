@@ -566,6 +566,12 @@ if($enable_helpdesk == 'Off'){
                                         <label for="orangeForm-name">Your user name</label>
                                     </div>
 
+                                    <div class="md-form form-sm">
+                                        <i class="fa fa-lock prefix"></i>
+                                        <input type="password" id="form33" class="form-control">
+                                        <label for="form33">Your password</label>
+                                    </div>
+
                                     <div class="md-form">
                                         <i class="fa fa-lock prefix white-text"></i>
                                         <input type="password" id="orangeForm-pass" name="password" class="form-control">

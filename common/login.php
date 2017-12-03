@@ -19,10 +19,10 @@ require_once "config.php";
 //set the start time so we can calculate how long it takes to load the page.
 $mtime1 = explode(" ", microtime());
 $starttime = $mtime1[0] + $mtime1[1];
-$normalized_username ='';
-$normalized_password ='';
-$normalized_referer ='';
-require_once  $_SERVER['DOCUMENT_ROOT']."/common/config.php";
+//$normalized_username ='';
+//$normalized_password ='';
+//$normalized_referer ='';
+//require_once  $_SERVER['DOCUMENT_ROOT']."/common/config.php";
 require_once  $_SERVER['DOCUMENT_ROOT']."/common/$database.class.php";
 require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 /** @noinspection PhpIncludeInspection */

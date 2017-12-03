@@ -453,7 +453,7 @@ else
 
         }
         //get some globals about the user
-7        if ($cookie_name != '') {
+       if ($cookie_name != '') {
             $user_id = getUserId($cookie_name);
             $ugID_list = getUsersGroupIDList($user_id);
 

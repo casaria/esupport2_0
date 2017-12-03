@@ -329,96 +329,6 @@ function setSupporterCookie()
 </head>
 
 <body>
-<?php
-if($enable_helpdesk == 'Off'){
-    printerror($on_off_reason);
-    exit;
-}
-
-
-//if submit has been hit, set the cookie and reload the page immediately so the cookie takes effect.
-if (isset($login)) {
-    //if admin is contained in the url, we need to make sure the user is an
-    //admin before letting them login.
-    if ($$cookie_name == '') {
-        $cookie_name = $normalized_username;
-    }
-    if (ereg("/admin", $normalized_referer)) {
-        //check the user name and password against the database.
-        if (checkUser($normalized_username, md5($normalized_password))) {
-            if (isAdministrator($normalized_username)) {
-
-                //session_register ("cookie_name");
-                $_SESSION ["cookie_name"] = $cookie_name;
-                $enc_pwd = md5($normalized_password);
-                //session_register ("enc_pwd");
-                $_SESSION ["enc_pwd"] = $enc_pwd;
-
-                //nov14 header("Location: $referer");
-            } else {
-
-                echo $lang_notadmin;
-                exit;
-            }
-        } else {
-            echo $lang_wronglogin;
-            exit;
-        }
-
-    } elseif ((ereg("/supporter", $normalized_referer))) {
-        //check the user name and password against the database.
-        if (checkUser($normalized_username, md5($normalized_password))) {
-            if (isSupporter($normalized_username)) {
-                setSupporterCookie();
-            } else {
-                setUserCookie();
-                header("location:../index.php");
-                echo $lang_notsupporter;
-                exit;
-            }
-        } else {
-            echo $lang_wronglogin;
-            exit;
-        }
-
-    } //otherwise, the user is not logging in to the admin site.
-    else {
-        //check the user name and password against the database.
-        if (checkUser($normalized_username, md5($normalized_password))) {
-            if (isSupporter($normalized_username)) {
-                setSupporterCookie();
-                header("location:supporter/index.php");
-            }
-            setUserCookie();
-        } else {
-            echo $lang_wronglogin;
-            exit;
-        }
-    }
-
-}
-
-//check the cookie first.
-if (!isSet($_SESSION ['cookie_name'])) {
-if (eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
-    $sup = 1;
-else
-    $sup = 0;
-
-if (isset($_COOKIE['supporter_usercookie']))
-    $cookie_name = $_COOKIE['supporter_usercookie'];
-if (isset($_COOKIE['supporter_pwdcookie']))
-    $cookiepwd = $_COOKIE['supporter_pwdcookie'];
-
-
-echo
-'<script language="JavaScript">
-        function setfocus(){
-            document.login.user.focus();
-        } </script>';
-?>
-
-
 
 <!--Main Navigation-->
     <header>
@@ -680,8 +590,94 @@ echo
     <script>
         new WOW().init();
     </script>
+<?php
+if($enable_helpdesk == 'Off'){
+    printerror($on_off_reason);
+    exit;
+}
 
-        <?php }
+
+//if submit has been hit, set the cookie and reload the page immediately so the cookie takes effect.
+if (isset($login)) {
+    //if admin is contained in the url, we need to make sure the user is an
+    //admin before letting them login.
+    if ($$cookie_name == '') {
+        $cookie_name = $normalized_username;
+    }
+    if (ereg("/admin", $normalized_referer)) {
+        //check the user name and password against the database.
+        if (checkUser($normalized_username, md5($normalized_password))) {
+            if (isAdministrator($normalized_username)) {
+
+                //session_register ("cookie_name");
+                $_SESSION ["cookie_name"] = $cookie_name;
+                $enc_pwd = md5($normalized_password);
+                //session_register ("enc_pwd");
+                $_SESSION ["enc_pwd"] = $enc_pwd;
+
+                //nov14 header("Location: $referer");
+            } else {
+
+                echo $lang_notadmin;
+                exit;
+            }
+        } else {
+            echo $lang_wronglogin;
+            exit;
+        }
+
+    } elseif ((ereg("/supporter", $normalized_referer))) {
+        //check the user name and password against the database.
+        if (checkUser($normalized_username, md5($normalized_password))) {
+            if (isSupporter($normalized_username)) {
+                setSupporterCookie();
+            } else {
+                setUserCookie();
+                header("location:../index.php");
+                echo $lang_notsupporter;
+                exit;
+            }
+        } else {
+            echo $lang_wronglogin;
+            exit;
+        }
+
+    } //otherwise, the user is not logging in to the admin site.
+    else {
+        //check the user name and password against the database.
+        if (checkUser($normalized_username, md5($normalized_password))) {
+            if (isSupporter($normalized_username)) {
+                setSupporterCookie();
+                header("location:supporter/index.php");
+            }
+            setUserCookie();
+        } else {
+            echo $lang_wronglogin;
+            exit;
+        }
+    }
+
+}
+
+//check the cookie first.
+if (!isSet($_SESSION ['cookie_name'])) {
+    if (eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
+        $sup = 1;
+    else
+        $sup = 0;
+
+    if (isset($_COOKIE['supporter_usercookie']))
+        $cookie_name = $_COOKIE['supporter_usercookie'];
+    if (isset($_COOKIE['supporter_pwdcookie']))
+        $cookiepwd = $_COOKIE['supporter_pwdcookie'];
+
+
+    echo
+    '<script language="JavaScript">
+        function setfocus(){
+            document.login.user.focus();
+        } </script>';
+    }
         else {  //Cookie was set
 
             //if submit has not been pressed, check the cookie against the database.

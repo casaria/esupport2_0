@@ -224,10 +224,6 @@ function setSupporterCookie()
     // jQuery methods go here...
         new WOW().init();
 
-
-
-
-
         jQuery.validator.addMethod("require_from_group", function(value, element, options) {
             let $fields = jQuery(options[1], element.form),
                 $fieldsFirst = $fields.eq(0),
@@ -272,7 +268,7 @@ function setSupporterCookie()
 
 
         // Wait for the DOM to be ready
-
+/*
             $("form[name='newPassForm']").validate
             ({
                 // Specify validation rules
@@ -302,20 +298,13 @@ function setSupporterCookie()
                     }
 
                 }
-                // Specify validation error messages
-                /* messages: {
-                         form33: {
-                             required: "Please provide a password",
-                             minlength: "Password must be at least 5 characters"
-                         },
-                         form34: {
-                             required: "Please repeat  the password",
-                             minlength: "Password must be at least 5 characters"
-                         }
-                 }, */
+
+
             });
-        // Set jQuery.validate settings for bootstrap integration
-        jQuery.validator.setDefaults({
+*/
+
+
+/*         jQuery.validator.setDefaults({
             highlight: function(element) {
                 jQuery(element).closest('.form-group').addClass('has-error');
             },
@@ -331,7 +320,10 @@ function setSupporterCookie()
                     error.insertAfter(element);
                 }
             }
-        });
+        }); */
+
+
+
     }); //$(document).ready(function()
     </script>
 </head>

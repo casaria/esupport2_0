@@ -657,7 +657,8 @@ echo
                     </div>
                 </div>
             </div>
-
+    </section>
+    </header>
         <!-- SCRIPTS -->
 
 
@@ -702,8 +703,7 @@ echo
         }
         //this returns back to the page that called it.
         ?>
-    </section>
-    </header>
+
 <!--Main Navigation-->
 
 

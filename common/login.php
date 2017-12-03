@@ -11,7 +11,6 @@ ob_start(PHP_OUTPUT_HANDLER_FLUSHABLE, PHP_OUTPUT_HANDLER_CLEANABLE, PHP_OUTPUT_
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>eSupport-2 LOGIN</title>
 
-
 <?php
 /*
  * Created by

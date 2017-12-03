@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-ob_start();
+ob_start( );
 ?>
 <html lang="en" class="full-height">
 <head>
@@ -332,7 +332,7 @@ function setSupporterCookie()
     </script>
 </head>
 
-
+<body>
 
 
 
@@ -412,7 +412,9 @@ if (isset($login)) {
     }
 
 }
-
+?>
+<header>
+<?php
 
 //check the cookie first.
 if (!isSet($_SESSION ['cookie_name'])) {
@@ -432,28 +434,18 @@ echo
         function setfocus(){
             document.login.user.focus();
         } </script>';
-?>
 
-<body>
-    <?php
 ob_end_flush();
+
 require "mdblogin.php";
 
 
 ?>
 <script Src="../mdb/js/mdb.js">
-
+        new WOW().init();
 </script>
 <?php
     echo'</header>';
-?>
-<script>  new WOW().init();
-</script>
-
-<?php
-
-
-
 }
 else
 {

@@ -449,7 +449,6 @@ require "mdblogin.php";
 ?>
 <script>  new WOW().init();
 </script>
-</body>
 
 <?php
 
@@ -481,4 +480,6 @@ else
         }
         //this returns back to the page that called it.
         ?>
+</body>
+
 </HTML>

@@ -208,7 +208,7 @@ function setSupporterCookie()
     <!-- Bootstrap core JavaScript -->
     <script src="../mdb/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript    +++   mdb.min -->
-    <script  rc="../mdb/js/mdb.js"></script>
+    <script Src="../mdb/js/mdb.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
     <!-- SCRIPTS -->

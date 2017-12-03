@@ -217,7 +217,6 @@ function setSupporterCookie()
 
     <!--suppress JSUnusedGlobalSymbols, JSUnusedGlobalSymbols -->
     <script type="text/javascript">
-        new WOW().init();
 
 
     $(document).ready(function(){

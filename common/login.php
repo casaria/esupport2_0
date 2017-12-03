@@ -330,8 +330,8 @@
                     error.insertAfter(element);
                 }
             }
-        });
-
+         });
+    })
     </script>
 
 </head>

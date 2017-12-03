@@ -377,7 +377,7 @@ if (isset($login)) {
                 setSupporterCookie();
             } else {
                 setUserCookie();
-                header("location:../index.php");
+                header("location: ../index.php");
                 echo $lang_notsupporter;
                 exit;
             }
@@ -392,7 +392,7 @@ if (isset($login)) {
         if (checkUser($normalized_username, md5($normalized_password))) {
             if (isSupporter($normalized_username)) {
                 setSupporterCookie();
-                header("location:../supporter/index.php");
+                header("location: ../supporter/index.php");
             }
             setUserCookie();
         } else {
@@ -453,7 +453,7 @@ else
 
         }
         //get some globals about the user
-        if ($cookie_name != '') {
+7        if ($cookie_name != '') {
             $user_id = getUserId($cookie_name);
             $ugID_list = getUsersGroupIDList($user_id);
 

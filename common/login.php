@@ -428,16 +428,19 @@ echo
 
 
 require "mdblogin.php";
-echo'    </header> ';
+
 
 ?>
 <script Src="../mdb/js/mdb.js">
         new WOW().init();
 </script>
 <?php
+    echo'</header>';
 }
 else
-{  //Cookie was set
+{
+    echo'</header>';
+    //Cookie was set
 
             //if s
             //ubmit has not been pressed, check the cookie against the database.

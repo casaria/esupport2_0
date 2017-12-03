@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="full-height">
+< lang="en" class="full-height">
 
 <head>
     <!-- Required meta tags always come first -->
@@ -329,7 +329,7 @@ function setSupporterCookie()
     </script>
 </head>
 
-<body>
+
 
 
 
@@ -404,9 +404,7 @@ if (isset($login)) {
     }
 
 }
-?>
-<header>
-<?php
+
 
 //check the cookie first.
 if (!isSet($_SESSION ['cookie_name'])) {
@@ -426,21 +424,32 @@ echo
         function setfocus(){
             document.login.user.focus();
         } </script>';
+?>
 
+<body>
+    <?php
 
 require "mdblogin.php";
 
 
 ?>
 <script Src="../mdb/js/mdb.js">
-        new WOW().init();
+
 </script>
 <?php
     echo'</header>';
+?>
+<script>  new WOW().init();
+</script>
+</body>
+
+<?php
+
+
+
 }
 else
 {
-    echo'</header>';
     //Cookie was set
 
             //if s
@@ -452,8 +461,7 @@ else
                 echo "$lang_notadmin";
                 exit;
             }
-
-        }
+}
         //get some globals about the user
        if ($cookie_name != '') {
             $user_id = getUserId($cookie_name);
@@ -465,10 +473,4 @@ else
         }
         //this returns back to the page that called it.
         ?>
-
-<!--Main Navigation-->
-
-
-</body>
-</html>
-
+</HTML>

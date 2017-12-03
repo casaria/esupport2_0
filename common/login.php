@@ -677,10 +677,16 @@ if (!isSet($_SESSION ['cookie_name'])) {
         function setfocus(){
             document.login.user.focus();
         } </script>';
-    }
-        else {  //Cookie was set
 
-            //if submit has not been pressed, check the cookie against the database.
+    echo '
+    <script>
+        new WOW().init();
+    </script> ';
+    }
+    else {  //Cookie was set
+
+            //if s
+            //ubmit has not been pressed, check the cookie against the database.
 
             if (preg_match("/admin/i", $PHP_SELF) && !isAdministrator($cookie_name) && $cookie_name !=
 

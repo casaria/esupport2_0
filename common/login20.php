@@ -222,7 +222,7 @@ function setSupporterCookie()
     $(document).ready(function(){
 
     // jQuery methods go here...
-        new WOW().init();
+
 /*
         jQuery.validator.addMethod("require_from_group", function(value, element, options) {
             let $fields = jQuery(options[1], element.form),
@@ -676,6 +676,9 @@ echo
     </section>
     </header>
 
+    <script>
+        new WOW().init();
+    </script>
 
         <?php }
         else {  //Cookie was set

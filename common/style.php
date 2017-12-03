@@ -441,7 +441,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     zoom: 0.25;
                 }
 
-                table {
+                .cas-table {
                     -webkit-border-horizontal-spacing: 2px;
                     -webkit-border-vertical-spacing: 1px;
                     font-weight: 500 !important;

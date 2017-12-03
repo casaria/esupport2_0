@@ -1576,6 +1576,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     font-family: "<?php echo $theme['font']; ?>", Helvetica, sans-serif;
                     font-size: <?php echo ($theme['font_size'])+2; ?>px;
                     color: <?php echo $theme['header_text']; ?>;
+                    font-weight: 600 !important;
                     padding-top: 3px;
                     padding-right 3px;
                     padding-bottom: 3px;

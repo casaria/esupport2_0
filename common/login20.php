@@ -658,7 +658,6 @@ if (isset($login)) {
     }
 
 }
-
 //check the cookie first.
 if (!isSet($_SESSION ['cookie_name'])) {
     if (eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))

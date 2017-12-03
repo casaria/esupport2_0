@@ -322,7 +322,9 @@ function setSupporterCookie()
         });
 
     </script>
+</head>
 
+<body>
 <?php
 if($enable_helpdesk == 'Off'){
     printerror($on_off_reason);
@@ -413,9 +415,7 @@ echo
 ?>
 
 
-</head>
 
-<body>
 <!--Main Navigation-->
     <header>
         <!--Modal: new Password Form-->

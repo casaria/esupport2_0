@@ -27,6 +27,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/common/mdblogin.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/common/login.php" afterPath="$PROJECT_DIR$/common/login.php" />
     </list>
@@ -125,8 +126,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1177">
-              <caret line="340" column="0" lean-forward="true" selection-start-line="340" selection-start-column="0" selection-end-line="340" selection-end-column="0" />
+            <state relative-caret-position="682">
+              <caret line="259" column="20" lean-forward="false" selection-start-line="259" selection-start-column="20" selection-end-line="259" selection-end-column="20" />
               <folding>
                 <marker date="1512266444541" expanded="true" signature="2423:2511" ph="UPDATE ${$my... " />
                 <marker date="1512266444541" expanded="true" signature="6023:6127" ph="..." />
@@ -214,30 +215,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="whosonline.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/whosonline.php">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="50" column="11" lean-forward="false" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+            <state relative-caret-position="462">
+              <caret line="432" column="0" lean-forward="true" selection-start-line="432" selection-start-column="0" selection-end-line="432" selection-end-column="0" />
               <folding>
-                <marker date="1512265276894" expanded="true" signature="1730:1831" ph="INSERT IGNOR... ${$mysql_whosonline_table}" />
-                <marker date="1512265276894" expanded="true" signature="1848:1900" ph="DELETE FROM ${$mysql_whosonline_table}... " />
-                <marker date="1512265276894" expanded="true" signature="1935:2002" ph="SELECT DISTI... ${$mysql_whosonline_table}" />
+                <marker date="1512268540383" expanded="true" signature="14584:14674" ph="..." />
+                <marker date="1512268540383" expanded="true" signature="14613:14665" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/common/login.php">
+      <file leaf-file-name="mdblogin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/mdblogin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="590" column="0" lean-forward="true" selection-start-line="590" selection-start-column="0" selection-end-line="590" selection-end-column="0" />
-              <folding>
-                <marker date="1512267401693" expanded="true" signature="29721:29811" ph="..." />
-                <marker date="1512267401693" expanded="true" signature="29750:29802" ph="{...}" />
-                <marker date="1512267401693" expanded="true" signature="29838:29878" ph="..." />
-              </folding>
+            <state relative-caret-position="-1188">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -636,7 +632,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/tstats.php" />
         <option value="$PROJECT_DIR$/common/mysql.class.php" />
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/editprofile.php" />
@@ -686,6 +681,7 @@
         <option value="$PROJECT_DIR$/common/common.php" />
         <option value="$PROJECT_DIR$/common/whosonline.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/common/mdblogin.php" />
         <option value="$PROJECT_DIR$/common/login.php" />
       </list>
     </option>
@@ -751,10 +747,10 @@
   </component>
   <component name="PhpWebServerValidation" deployment_server_id="9deab245-d07f-43d6-a845-9ff5082b2e69" path_to_validation_script="C:\Users\horra\PhpstormProjects\esupport2_0" selected_validation_type="REMOTE" web_path_to_validation_script="http://127.0.0.1/" />
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-13" />
     <option name="width" value="2639" />
-    <option name="height" value="1835" />
+    <option name="height" value="1828" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1063,14 +1059,7 @@
       <workItem from="1512183893332" duration="54000" />
       <workItem from="1512184310044" duration="28683000" />
       <workItem from="1512226886308" duration="140000" />
-      <workItem from="1512227553014" duration="27226000" />
-    </task>
-    <task id="LOCAL-02412" summary="After surgery">
-      <created>1512239958467</created>
-      <option name="number" value="02412" />
-      <option name="presentableId" value="LOCAL-02412" />
-      <option name="project" value="LOCAL" />
-      <updated>1512239958467</updated>
+      <workItem from="1512227553014" duration="28362000" />
     </task>
     <task id="LOCAL-02413" summary="After surgery">
       <created>1512240087439</created>
@@ -1408,11 +1397,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512267233748</updated>
     </task>
-    <option name="localTasksCounter" value="2461" />
+    <task id="LOCAL-02461" summary="After surgery">
+      <created>1512267407860</created>
+      <option name="number" value="02461" />
+      <option name="presentableId" value="LOCAL-02461" />
+      <option name="project" value="LOCAL" />
+      <updated>1512267407860</updated>
+    </task>
+    <option name="localTasksCounter" value="2462" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1710638000" />
+    <option name="totallyTimeSpent" value="1711774000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1424,7 +1420,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="-13" width="2762" height="1850" extended-state="6" />
+    <frame x="-13" y="0" width="2639" height="1828" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33831522" sideWeight="0.6818527" order="7" side_tool="false" content_ui="tabs" />
@@ -1432,7 +1428,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33836478" sideWeight="0.31443688" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.102756895" sideWeight="0.45864946" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7011278" sideWeight="0.7744875" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31954888" sideWeight="0.570997" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32401526" sideWeight="0.5706931" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769424" sideWeight="0.48223734" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.025679758" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.16691843" sideWeight="0.71319795" order="2" side_tool="false" content_ui="combo" />
@@ -1442,7 +1438,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29135337" sideWeight="0.4324018" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17522658" sideWeight="0.493007" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13293052" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31954888" sideWeight="0.42900303" order="15" side_tool="false" content_ui="tabs" x="41" y="96" width="1325" height="317" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32401526" sideWeight="0.42930692" order="15" side_tool="false" content_ui="tabs" x="41" y="96" width="1325" height="317" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1465,15 +1461,15 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5343915" sideWeight="0.49086162" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17522658" sideWeight="0.493007" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31954888" sideWeight="0.4305136" order="15" side_tool="false" content_ui="tabs" x="41" y="96" width="1325" height="317" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32401526" sideWeight="0.42930692" order="15" side_tool="false" content_ui="tabs" x="41" y="96" width="1325" height="317" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33831522" sideWeight="0.6818527" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35526314" sideWeight="0.43768883" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32578617" sideWeight="0.49357522" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.102756895" sideWeight="0.45864946" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955974" sideWeight="0.4973545" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.701731" sideWeight="0.7744875" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31954888" sideWeight="0.5694864" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7011278" sideWeight="0.7744875" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32401526" sideWeight="0.5706931" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769424" sideWeight="0.48223734" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32741117" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.16691843" sideWeight="0.71319795" order="2" side_tool="false" content_ui="combo" />
@@ -1744,11 +1740,6 @@
           <option name="timeStamp" value="489" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>599</line>
-          <option name="timeStamp" value="490" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/common/login-legacy.php</url>
           <line>44</line>
           <option name="timeStamp" value="493" />
@@ -1825,13 +1816,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin23/addsupporter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -2421,33 +2405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1177">
-          <caret line="340" column="0" lean-forward="true" selection-start-line="340" selection-start-column="0" selection-end-line="340" selection-end-column="0" />
-          <folding>
-            <marker date="1512266444541" expanded="true" signature="2423:2511" ph="UPDATE ${$my... " />
-            <marker date="1512266444541" expanded="true" signature="6023:6127" ph="..." />
-            <marker date="1512266444541" expanded="true" signature="6157:6412" ph="..." />
-            <marker date="1512266444541" expanded="true" signature="6200:6381" ph="..." />
-            <marker date="1512266444541" expanded="true" signature="6230:6337" ph="..." />
-            <marker date="1512266444541" expanded="true" signature="6233:6306" ph="..." />
-            <marker date="1512266444541" expanded="true" signature="6547:6656" ph="..." />
-            <marker date="1512266444541" expanded="true" signature="6686:6955" ph="..." />
-            <marker date="1512266444541" expanded="true" signature="6729:6924" ph="..." />
-            <marker date="1512266444541" expanded="true" signature="6759:6880" ph="..." />
-            <marker date="1512266444541" expanded="true" signature="6762:6849" ph="..." />
-            <marker date="1512266444541" expanded="true" signature="7133:7241" ph="..." />
-            <marker date="1512266444541" expanded="true" signature="7271:7531" ph="..." />
-            <marker date="1512266444541" expanded="true" signature="7314:7500" ph="..." />
-            <marker date="1512266444541" expanded="true" signature="7344:7456" ph="..." />
-            <marker date="1512266444541" expanded="true" signature="7347:7425" ph="..." />
-            <marker date="1512266444541" expanded="true" signature="9363:9382" ph="..." />
-            <marker date="1512266444541" expanded="true" signature="9568:9620" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/supporter/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6006">
@@ -2540,14 +2497,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="259" column="20" lean-forward="false" selection-start-line="259" selection-start-column="20" selection-end-line="259" selection-end-column="20" />
+          <folding>
+            <marker date="1512266444541" expanded="true" signature="2423:2511" ph="UPDATE ${$my... " />
+            <marker date="1512266444541" expanded="true" signature="6023:6127" ph="..." />
+            <marker date="1512266444541" expanded="true" signature="6157:6412" ph="..." />
+            <marker date="1512266444541" expanded="true" signature="6200:6381" ph="..." />
+            <marker date="1512266444541" expanded="true" signature="6230:6337" ph="..." />
+            <marker date="1512266444541" expanded="true" signature="6233:6306" ph="..." />
+            <marker date="1512266444541" expanded="true" signature="6547:6656" ph="..." />
+            <marker date="1512266444541" expanded="true" signature="6686:6955" ph="..." />
+            <marker date="1512266444541" expanded="true" signature="6729:6924" ph="..." />
+            <marker date="1512266444541" expanded="true" signature="6759:6880" ph="..." />
+            <marker date="1512266444541" expanded="true" signature="6762:6849" ph="..." />
+            <marker date="1512266444541" expanded="true" signature="7133:7241" ph="..." />
+            <marker date="1512266444541" expanded="true" signature="7271:7531" ph="..." />
+            <marker date="1512266444541" expanded="true" signature="7314:7500" ph="..." />
+            <marker date="1512266444541" expanded="true" signature="7344:7456" ph="..." />
+            <marker date="1512266444541" expanded="true" signature="7347:7425" ph="..." />
+            <marker date="1512266444541" expanded="true" signature="9363:9382" ph="..." />
+            <marker date="1512266444541" expanded="true" signature="9568:9620" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/mdblogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1188">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="590" column="0" lean-forward="true" selection-start-line="590" selection-start-column="0" selection-end-line="590" selection-end-column="0" />
+        <state relative-caret-position="462">
+          <caret line="432" column="0" lean-forward="true" selection-start-line="432" selection-start-column="0" selection-end-line="432" selection-end-column="0" />
           <folding>
-            <marker date="1512267401693" expanded="true" signature="29721:29811" ph="..." />
-            <marker date="1512267401693" expanded="true" signature="29750:29802" ph="{...}" />
-            <marker date="1512267401693" expanded="true" signature="29838:29878" ph="..." />
+            <marker date="1512268540383" expanded="true" signature="14584:14674" ph="..." />
+            <marker date="1512268540383" expanded="true" signature="14613:14665" ph="{...}" />
           </folding>
         </state>
       </provider>

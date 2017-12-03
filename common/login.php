@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
-ob_start( );
+
+ob_start(PHP_OUTPUT_HANDLER_FLUSHABLE, PHP_OUTPUT_HANDLER_CLEANABLE, PHP_OUTPUT_HANDLER_REMOVABLE);
 ?>
 <html lang="en" class="full-height">
 <head>
@@ -435,7 +436,7 @@ echo
             document.login.user.focus();
         } </script>';
 
-ob_end_flush();
+ob_flush();
 
 require "mdblogin.php";
 

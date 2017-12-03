@@ -105,7 +105,7 @@ border=0>
   <TBODY>
   <TR>
     <TD>
-      <TABLE cellSpacing=1 cellPadding=5 width="100%" border=0>
+      <TABLE class=cas-table cellSpacing=1 cellPadding=5 width="100%" border=0>
         <TBODY>
         <TR>
           <TD class=hf align=right>

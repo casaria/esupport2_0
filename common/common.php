@@ -58,8 +58,6 @@ $crm_name = $var['name'];
 //+++
 $logfile = "logfile.txt";
 
-require_once "config.php";
-
 /****************************	Other Variables	***********************************************************/
 //set the variables from the database if not running the install
 $var = getVariables();
@@ -432,7 +430,7 @@ function checkUser($name, $pwd)
 	}
 
 	if($row[user] == 0 && $name != ''){
-		require_once "../common/style.php";
+	    //	require_once "../common/style.php";
 		printerror("Your account is not active.");
 		exit;
 	}

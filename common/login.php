@@ -588,9 +588,7 @@ function setSupporterCookie()
     </header>
 
     <script Src="../mdb/js/mdb.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+
 <?php
 if($enable_helpdesk == 'Off'){
     printerror($on_off_reason);

@@ -202,21 +202,21 @@ function setSupporterCookie()
     </style>
 
     <!-- JQuery -->
-    <script type="text/javascript" src="../mdb/js/jquery-3.2.1.js"></script>
+    <script src="../mdb/js/jquery-3.2.1.js"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="../mdb/js/popper.min.js"></script>
+    <script src="../mdb/js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="../mdb/js/bootstrap.min.js"></script>
+    <script src="../mdb/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript    +++   mdb.min -->
-    <script type="text/javascript" src="../mdb/js/mdb.js"></script>
+    <script  rc="../mdb/js/mdb.js"></script>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
     <!-- SCRIPTS -->
 
     <!-- SCRIPTS -->
 
     <!--suppress JSUnusedGlobalSymbols, JSUnusedGlobalSymbols -->
-    <script type="text/javascript">
+    <script>
 
 
     $(document).ready(function(){

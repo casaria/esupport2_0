@@ -223,7 +223,7 @@ function setSupporterCookie()
 
     // jQuery methods go here...
         new WOW().init();
-
+/*
         jQuery.validator.addMethod("require_from_group", function(value, element, options) {
             let $fields = jQuery(options[1], element.form),
                 $fieldsFirst = $fields.eq(0),
@@ -265,7 +265,7 @@ function setSupporterCookie()
                 /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$/.test(value);
         },"Password must contain a minimum of 1 lower case letter," +
             " 1 upper case letter, 1 numeric and 1 special character.");
-
+*/
 
         // Wait for the DOM to be ready
 /*

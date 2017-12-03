@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <?php
-
 ob_start(PHP_OUTPUT_HANDLER_FLUSHABLE, PHP_OUTPUT_HANDLER_CLEANABLE, PHP_OUTPUT_HANDLER_REMOVABLE);
 ?>
 <html lang="en" class="full-height">
@@ -77,6 +76,20 @@ function setSupporterCookie()
     setcookie('supporter_usercookie', $cookie_name,  time()+ $session_time);
     setcookie('supporter_pwdcookie', $normalized_password,  time()+ $session_time);
 }
+
+
+function presetValues()
+{
+    global $cookie_name, $ugID_list, $user_id;
+
+        //get some globals about the user
+       if ($cookie_name != '') {
+           $user_id = getUserId($cookie_name);
+           $ugID_list = getUsersGroupIDList($user_id);
+}
+
+
+
 ?>
 
     <style>
@@ -366,12 +379,13 @@ if (isset($login)) {
 
                 //nov14 header("Location: $referer");
             } else {
-
+                presetValues();
                 echo $lang_notadmin;
                 exit;
             }
         } else {
             echo $lang_wronglogin;
+            presetValues();
             exit;
         }
 
@@ -386,11 +400,13 @@ if (isset($login)) {
                 $myUrl =  "${protocol}://${domain}/index.php";
                 header("location:$myUrl");
                 echo $lang_notsupporter;
+                presetValues();
                 exit;
             }
         } else {
             ob_end_flush();
             echo $lang_wronglogin;
+            presetValues();
             exit;
         }
 
@@ -401,78 +417,58 @@ if (isset($login)) {
             if (isSupporter($normalized_username)) {
                 setSupporterCookie();
                 ob_end_clean();
+                presetValues();
                 $myUrl =  "${protocol}://${domain}/supporter/index.php";
                 header("location: $myUrl");
             }
             setUserCookie();
         } else {
             ob_end_flush();
+            presetValues();
             echo $lang_wronglogin;
             exit;
         }
     }
 
-}
-?>
-<header>
-<?php
+} else {
 
-//check the cookie first.
-if (!isSet($_SESSION ['cookie_name'])) {
-if (eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
-    $sup = 1;
-else
-    $sup = 0;
-
-if (isset($_COOKIE['supporter_usercookie']))
-    $cookie_name = $_COOKIE['supporter_usercookie'];
-if (isset($_COOKIE['supporter_pwdcookie']))
-    $cookiepwd = $_COOKIE['supporter_pwdcookie'];
+echo '<header>';
 
 
-echo
-'<script language="JavaScript">
+    /*
+    //check the cookie first.
+    if (!isSet($_SESSION ['cookie_name'])) {
+    if (eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
+        $sup = 1;
+    else
+        $sup = 0;
+
+    if (isset($_COOKIE['supporter_usercookie']))
+        $cookie_name = $_COOKIE['supporter_usercookie'];
+    if (isset($_COOKIE['supporter_pwdcookie']))
+        $cookiepwd = $_COOKIE['supporter_pwdcookie'];
+
+    */
+    echo
+    '<script language="JavaScript">
         function setfocus(){
             document.login.user.focus();
-        } </script>';
-
-ob_flush();
-
-require "mdblogin.php";
-
-
-?>
-<script Src="../mdb/js/mdb.js">
-        new WOW().init();
-</script>
-<?php
-    echo'</header>';
-}
-else
-{
-    //Cookie was set
-
-            //if s
-            //ubmit has not been pressed, check the cookie against the database.
-            ob_end_flush();
-            if (preg_match("/admin/i", $PHP_SELF) && !isAdministrator($cookie_name) && $cookie_name !=
-
-                '') {
-                echo "$lang_notadmin";
-                exit;
-            }
-}
-        //get some globals about the user
-       if ($cookie_name != '') {
-            $user_id = getUserId($cookie_name);
-            $ugID_list = getUsersGroupIDList($user_id);
-
-        } else {
-            echo $lang_wronglogin;
-            exit;
         }
-        //this returns back to the page that called it.
-        ?>
-</body>
+</script>';
 
+    ob_flush();
+
+    require "mdblogin.php";
+    echo '<script Src="../mdb/js/mdb.js">
+        new WOW().init();
+</script>';
+
+}
+?>
+
+</header>
+
+
+
+</body>
 </HTML>

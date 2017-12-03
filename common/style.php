@@ -718,7 +718,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     background: <?php echo $theme['category']; ?>;
                     font-family: "<?php echo $theme['font']; ?>";
                     font-size: <?php echo $theme['font_size'];?>px;
-                    color: <?php echo $theme['text']; ?>;
+                    color: <?php echo $theme['text']; ?>;x
                 }
 
                 td.hf {

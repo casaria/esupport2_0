@@ -392,7 +392,7 @@ if (isset($login)) {
         if (checkUser($normalized_username, md5($normalized_password))) {
             if (isSupporter($normalized_username)) {
                 setSupporterCookie();
-                header("location:/supporter/index.php");
+                header("location:../supporter/index.php");
             }
             setUserCookie();
         } else {

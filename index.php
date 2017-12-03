@@ -64,7 +64,7 @@ else
 //if(isSupporter($_SESSION['cookie_name']))
 	//nov14 header("Location: $supporter_site_url/index.php");
 
-require_once "common/style.php";
+    require_once "common/style.php";
 
 $time_offset = getTimeOffset($_SESSION['cookie_name']);
 
@@ -196,7 +196,7 @@ border=0>
             												
             												if(isCookieSet($_SESSION['cookie_name'], $_SESSION['enc_pwd'])){
             													echo '<TR>
-            													<TD class=cat><B>' . $lang_useroptions . '</B></TD>
+                    													<TD class=cat><B>' . $lang_useroptions . '</B></TD>
             													</TR>
             													<TR>
             													<TD class=subcat>
@@ -323,7 +323,7 @@ border=0>
       </TABLE>
       </TR>
   </TBODY>
-</TABLE>
+</TABLE>87878776
 
 <?php
 

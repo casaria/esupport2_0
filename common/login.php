@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 < lang="en" class="full-height">
-
+<?php
+ob_start();
+?>
 <head>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
@@ -349,6 +351,7 @@ if (isset($login)) {
         $cookie_name = $normalized_username;
     }
     if (ereg("/admin", $normalized_referer)) {
+        ob_end_flush();
         //check the user name and password against the database.
         if (checkUser($normalized_username, md5($normalized_password))) {
             if (isAdministrator($normalized_username)) {
@@ -377,12 +380,14 @@ if (isset($login)) {
                 setSupporterCookie();
             } else {
                 setUserCookie();
+                ob_end_clean();
                 $myUrl =  "${protocol}://${domain}/index.php";
                 header("location:$myUrl");
                 echo $lang_notsupporter;
                 exit;
             }
         } else {
+            ob_end_flush();
             echo $lang_wronglogin;
             exit;
         }
@@ -393,11 +398,13 @@ if (isset($login)) {
         if (checkUser($normalized_username, md5($normalized_password))) {
             if (isSupporter($normalized_username)) {
                 setSupporterCookie();
+                ob_end_clean();
                 $myUrl =  "${protocol}://${domain}/supporter/index.php";
                 header("location: $myUrl");
             }
             setUserCookie();
         } else {
+            ob_end_flush();
             echo $lang_wronglogin;
             exit;
         }
@@ -428,7 +435,7 @@ echo
 
 <body>
     <?php
-
+ob_end_flush();
 require "mdblogin.php";
 
 
@@ -454,7 +461,7 @@ else
 
             //if s
             //ubmit has not been pressed, check the cookie against the database.
-
+            ob_end_flush();
             if (preg_match("/admin/i", $PHP_SELF) && !isAdministrator($cookie_name) && $cookie_name !=
 
                 '') {

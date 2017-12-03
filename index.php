@@ -89,8 +89,6 @@ if (sizeof ($groups) == 0) {
     $group_id =  eregi_replace("ugroup", "", $groups[0]);
 }
 
-$user_id = getUserID($cookie_name);
-$groups = getUsersGroupList($user_id);
 for ($i=0; $i< sizeof ($groups); $i++) {
      $group_id =  eregi_replace("ugroup", "", $groups[$i]);
      $groupname = getuGroup($group_id);
@@ -363,7 +361,7 @@ echo '
 ?>
 
 
-<script type="text/javascript" src="//cdn.jsdelivr.net/particle-api-js/5/particle.min.js">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/particle-api-js/5/particle.min.js">
 </script>
 
 <script type="text/javascript" src="particlepete.js"></script>

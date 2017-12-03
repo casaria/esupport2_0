@@ -82,10 +82,11 @@ function presetValues()
 {
     global $cookie_name, $ugID_list, $user_id;
 
-        //get some globals about the user
-       if ($cookie_name != '') {
-           $user_id = getUserId($cookie_name);
-           $ugID_list = getUsersGroupIDList($user_id);
+    //get some globals about the user
+    if ($cookie_name != '') {
+        $user_id = getUserId($cookie_name);
+        $ugID_list = getUsersGroupIDList($user_id);
+    }
 }
 
 
@@ -463,7 +464,7 @@ echo '<header>';
         new WOW().init();
 </script>';
 
-}
+}}
 ?>
 
 </header>

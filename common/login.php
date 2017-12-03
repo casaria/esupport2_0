@@ -29,17 +29,18 @@ require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
 
 $cookie_name = strtolower($_SESSION['cookie_name']);
-$normalized_username  = strtolower (trim($_POST['user']));
-$normalized_password = trim($_POST['password']);
+if ($cookie_name !== '') {
+    $normalized_username = strtolower(trim($cookie_name));
+    $enc_pwd = ($_SESSION['enc_pwd']);
+} else {
+    $normalized_username = strtolower(trim($_POST['user']));
+    $normalized_password = trim($_POST['password']);
+}
 
-//$cookieuser = '';
-//common.php
+
 session_status() === PHP_SESSION_ACTIVE  ? $cookieuser = '' : startSession();
 
 
-/*  Not a good ides
- *  trim ($_POST['password'],"((?=^)(\s*))|((\s*)(?>$))"); *
- */
 $normalized_referer = strtolower (trim($HTTP_REFERER));
 
 function setUserCookie()

@@ -213,8 +213,21 @@ function setSupporterCookie()
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
     <!-- SCRIPTS -->
 
+    <!-- SCRIPTS -->
+
     <!--suppress JSUnusedGlobalSymbols, JSUnusedGlobalSymbols -->
     <script type="text/javascript">
+        new WOW().init();
+
+
+    $(document).ready(function(){
+
+    // jQuery methods go here...
+        new WOW().init();
+
+
+
+
 
         jQuery.validator.addMethod("require_from_group", function(value, element, options) {
             let $fields = jQuery(options[1], element.form),
@@ -320,7 +333,7 @@ function setSupporterCookie()
                 }
             }
         });
-
+    }); //$(document).ready(function()
     </script>
 </head>
 
@@ -671,12 +684,6 @@ echo
             </div>
     </section>
     </header>
-        <!-- SCRIPTS -->
-
-
-        <script>
-            new WOW().init();
-        </script>
 
 
         <?php }

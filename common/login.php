@@ -377,7 +377,8 @@ if (isset($login)) {
                 setSupporterCookie();
             } else {
                 setUserCookie();
-                header("location: ../index.php");
+                $myUrl =  "${protocol}://${domain}/index.php";
+                header("location:$myUrl");
                 echo $lang_notsupporter;
                 exit;
             }
@@ -392,7 +393,8 @@ if (isset($login)) {
         if (checkUser($normalized_username, md5($normalized_password))) {
             if (isSupporter($normalized_username)) {
                 setSupporterCookie();
-                header("location: ../supporter/index.php");
+                $myUrl =  "${protocol}://${domain}/supporter/index.php";
+                header("location: $myUrl");
             }
             setUserCookie();
         } else {

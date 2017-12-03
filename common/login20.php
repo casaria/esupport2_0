@@ -202,6 +202,14 @@ function setSupporterCookie()
     </style>
 
 
+    <!-- JQuery -->
+    <script src="../mdb/js/jquery-3.2.1.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script src="../mdb/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="../mdb/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript    +++   mdb.min -->
+
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
     <!-- SCRIPTS -->
 
@@ -668,13 +676,6 @@ echo
     </section>
     </header>
 
-    <!-- JQuery -->
-    <script src="../mdb/js/jquery-3.2.1.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script src="../mdb/js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script src="../mdb/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript    +++   mdb.min -->
     <script Src="../mdb/js/mdb.js"></script>
     <script>
         new WOW().init();

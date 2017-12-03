@@ -444,7 +444,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 table {
                     -webkit-border-horizontal-spacing: 2px;
                     -webkit-border-vertical-spacing: 1px;
-                    font-weight: 500;
+                    font-weight: 500 !important;
                     padding: 5px;
                     margin: 2px;
                 }

@@ -216,7 +216,7 @@ function setSupporterCookie()
     <!-- SCRIPTS -->
 
     <!--suppress JSUnusedGlobalSymbols, JSUnusedGlobalSymbols -->
-    <script>
+    <script type="text/javascript">
 
 
     $(document).ready(function(){

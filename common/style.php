@@ -1718,7 +1718,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
             }
 
             .text-1 {
-                width: 80px;
+                width: 80px !important;
                 padding: 2px 2px 2px 2px;
                 border-radius: 3px;
                 font-size: 16px;

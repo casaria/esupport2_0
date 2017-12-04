@@ -56,7 +56,7 @@ function setSession(){
     global $normalized_username, $normalized_password, $remote_ip;
     $cookie_name = $normalized_username;
 //session_register ("cookie_name");
-    session_start();
+    // startSession();
     $_SESSION ['cookie_name'] = $cookie_name;
     $enc_pwd = md5($normalized_password);
 //session_register ("enc_pwd");

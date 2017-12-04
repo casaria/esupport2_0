@@ -430,14 +430,13 @@ if (isset($login)) {
         }
     }
 
-} else {
+}
 
 echo '<header>';
 
 
-    /*
-    //check the cookie first.
-    if (!isSet($_SESSION ['cookie_name'])) {
+        //check the cookie first.
+if (!isSet($_SESSION ['cookie_name'])) {
     if (eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
         $sup = 1;
     else
@@ -448,7 +447,6 @@ echo '<header>';
     if (isset($_COOKIE['supporter_pwdcookie']))
         $cookiepwd = $_COOKIE['supporter_pwdcookie'];
 
-    */
     echo
     '<script language="JavaScript">
         function setfocus(){
@@ -463,8 +461,40 @@ echo '<header>';
         new WOW().init();
 </script>';
 
+
+
+
+    if(eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
+        require "../common/footer.php";
+    else
+        require "common/footer.php";
+
+    exit;
+
 }
+else{  //Cookie was set
+
+    //if submit has not been pressed, check the cookie against the database.
+
+    if(preg_match("/admin/i", $PHP_SELF) && !isAdministrator($cookie_name) && $cookie_name != ''){
+        echo "$lang_notadmin";
+        exit;
+    }
+
+}
+//get some globals about the user
+if ($cookie_name != '') {
+    $user_id = getUserId($cookie_name);
+    $ugID_list = getUsersGroupIDList($user_id);
+
+} else {
+    echo $lang_wronglogin;
+    exit;
+}
+//this returns back to the page that called it.
 ?>
+
+
 
 </header>
 

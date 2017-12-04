@@ -30,10 +30,12 @@ require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 /** @noinspection PhpIncludeInspection */
 require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
 session_start();
-$cookie_name = strtolower($_SESSION['cookie_name']);
-if ($cookie_name !== '') {
-    $normalized_username = strtolower(trim($cookie_name));
-    $enc_pwd = ($_SESSION['enc_pwd']);
+
+if (isset($cookie_name){
+    if ($cookie_name =='') {
+        $normalized_username = strtolower(trim($cookie_name));
+        $enc_pwd = ($_SESSION['enc_pwd']);
+    }
 } else {
     $normalized_username = strtolower(trim($_POST['user']));
     $normalized_password = trim($_POST['password']);

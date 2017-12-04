@@ -463,7 +463,7 @@ echo '<header>';
         new WOW().init();
 </script>';
 
-}}
+}
 ?>
 
 </header>

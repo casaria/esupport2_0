@@ -170,19 +170,6 @@ function presetValues()
             background-size: cover;
         }
 
-        .top-nav-collapse {
-            background-color: #ff8a65 !important;
-            /*  background-color: #3f51b5 !important; */
-        }
-        .navbar:not(.top-nav-collapse) {
-            background: transparent !important;
-        }
-        @media (max-width: 768px) {
-            .navbar:not(.top-nav-collapse) {
-                background-color: #ff8a65 !important;
-                /*   background: #3f51b5 !important; */
-            }
-        }
 
         .card {
             background-color: rgba(124, 124, 122, 0.65);
@@ -218,7 +205,7 @@ function presetValues()
         .card {
             margin-top: 30px;
             /*margin-bottom: -45px;*/
-
+            color: bisque;
         }
 
         .md-form input[type=text]:focus:not([readonly]),
@@ -439,7 +426,20 @@ if (isset($login)) {
         }
     }
 
-} else {
+}
+
+//check the cookie first.
+if(!isSet($_SESSION ['cookie_name'])) {
+if (eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
+    $sup = 1;
+else
+    $sup = 0;
+
+if (isset($_COOKIE['supporter_usercookie']))
+    $cookie_name = $_COOKIE['supporter_usercookie'];
+if (isset($_COOKIE['supporter_pwdcookie']))
+    $cookiepwd = $_COOKIE['supporter_pwdcookie'];
+
 ?>
 <header>
     <?php
@@ -468,10 +468,33 @@ if (isset($login)) {
     ob_end_flush();
 
     require "mdblogin.php";
-    echo '<script Src="../mdb/js/mdb.js">
-        new WOW().init();
-</script>';
+    if(eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
+    require "../common/footer.php";
+    else
+    require "common/footer.php";
+
+    //exit;
+
 }
+    else{  //Cookie was set
+
+//if submit has not been pressed, check the cookie against the database.
+
+        if(preg_match("/admin/i", $PHP_SELF) && !isAdministrator($cookie_name) && $cookie_name != ''){
+            echo "$lang_notadmin";
+          //  exit;
+        }
+
+    }
+    //get some globals about the user
+    if ($cookie_name != '') {
+        $user_id = getUserId($cookie_name);
+        $ugID_list = getUsersGroupIDList($user_id);
+
+    } else {
+        echo $lang_wronglogin;
+
+    }
 ?>
 
 </header>
@@ -479,3 +502,5 @@ if (isset($login)) {
 
 </body>
 </HTML>
+
+}

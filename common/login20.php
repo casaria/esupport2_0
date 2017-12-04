@@ -139,7 +139,7 @@ function setSupporterCookie()
         }
 
         .top-nav-collapse {
-            background-color: #ff8a65 !important;
+            background-color: #3f51b5 !important;
             /*  background-color: #3f51b5 !important; */
         }
         .navbar:not(.top-nav-collapse) {
@@ -147,7 +147,7 @@ function setSupporterCookie()
         }
         @media (max-width: 768px) {
             .navbar:not(.top-nav-collapse) {
-                background-color: #ff8a65 !important;
+                background-color: #3f51b5 !important;
                 /*   background: #3f51b5 !important; */
             }
         }

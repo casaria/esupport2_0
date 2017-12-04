@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php
+
 ob_start(PHP_OUTPUT_HANDLER_FLUSHABLE, PHP_OUTPUT_HANDLER_CLEANABLE, PHP_OUTPUT_HANDLER_REMOVABLE);
 ?>
 <html lang="en" class="full-height">
@@ -87,8 +88,8 @@ function presetValues()
         $user_id = getUserId($cookie_name);
         $ugID_list = getUsersGroupIDList($user_id);
     }
-
 }
+
 
 ?>
 
@@ -431,9 +432,9 @@ if (isset($login)) {
     }
 
 } else {
-
-echo '<header>';
-
+?>
+<header>
+    <?php
 
     /*
     //check the cookie first.
@@ -456,14 +457,14 @@ echo '<header>';
         }
 </script>';
 
-    ob_flush();
+    ob_end_flush();
 
     require "mdblogin.php";
     echo '<script Src="../mdb/js/mdb.js">
         new WOW().init();
 </script>';
 
-}}
+}
 ?>
 
 </header>

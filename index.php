@@ -36,12 +36,12 @@ if($reg == 'yes'){
     exit;
 }
 
-if($pubpriv == 'Private'){
-if (session_status() !== PHP_SESSION_ACTIVE ) {
+if($pubpriv == 'Private') {
+    if (session_status() !== PHP_SESSION_ACTIVE) {
 
-    header("location: common/login.php");
+        header("location: common/login.php");
+    }
 }
-
 
 //set the start time so we can calculate how long it takes to load the page.
 $mtime1 = explode(" ", microtime());

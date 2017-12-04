@@ -29,6 +29,7 @@
     <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/common/login.php" afterPath="$PROJECT_DIR$/common/login.php" />
+      <change beforePath="$PROJECT_DIR$/common/mdblogin.php" afterPath="$PROJECT_DIR$/common/mdblogin.php" />
     </list>
     <ignored mask="workspace.xml" />
     <ignored mask="error_log" />
@@ -151,7 +152,7 @@
         <entry file="file://$PROJECT_DIR$/common/mdblogin.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="949">
-              <caret line="266" column="5" lean-forward="false" selection-start-line="266" selection-start-column="5" selection-end-line="266" selection-end-column="5" />
+              <caret line="266" column="0" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -160,14 +161,14 @@
       <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+            <state relative-caret-position="759">
+              <caret line="254" column="25" lean-forward="false" selection-start-line="254" selection-start-column="25" selection-end-line="254" selection-end-column="25" />
               <folding>
                 <element signature="e#446#467#0#PHP" expanded="true" />
-                <marker date="1512385253552" expanded="true" signature="2983:3031" ph="..." />
-                <marker date="1512385253552" expanded="true" signature="15329:15419" ph="..." />
-                <marker date="1512385253552" expanded="true" signature="15358:15410" ph="{...}" />
-                <marker date="1512385253552" expanded="true" signature="15513:15549" ph="..." />
+                <marker date="1512385372503" expanded="true" signature="2983:3031" ph="..." />
+                <marker date="1512385372503" expanded="true" signature="15354:15444" ph="..." />
+                <marker date="1512385372503" expanded="true" signature="15383:15435" ph="{...}" />
+                <marker date="1512385372503" expanded="true" signature="15538:15574" ph="..." />
               </folding>
             </state>
           </provider>
@@ -683,8 +684,8 @@
         <option value="$PROJECT_DIR$/common/login ori.php" />
         <option value="$PROJECT_DIR$/common/common.php" />
         <option value="$PROJECT_DIR$/common/config.php" />
-        <option value="$PROJECT_DIR$/common/mdblogin.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/common/mdblogin.php" />
         <option value="$PROJECT_DIR$/common/login.php" />
       </list>
     </option>
@@ -1072,14 +1073,7 @@
       <workItem from="1512311255218" duration="3475000" />
       <workItem from="1512318191185" duration="20067000" />
       <workItem from="1512346502504" duration="19553000" />
-      <workItem from="1512376240662" duration="8992000" />
-    </task>
-    <task id="LOCAL-02484" summary="After surgery">
-      <created>1512333391340</created>
-      <option name="number" value="02484" />
-      <option name="presentableId" value="LOCAL-02484" />
-      <option name="project" value="LOCAL" />
-      <updated>1512333391341</updated>
+      <workItem from="1512376240662" duration="9111000" />
     </task>
     <task id="LOCAL-02485" summary="After surgery">
       <created>1512333679500</created>
@@ -1417,11 +1411,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512385070982</updated>
     </task>
-    <option name="localTasksCounter" value="2533" />
+    <task id="LOCAL-02533" summary="ob_start">
+      <created>1512385264082</created>
+      <option name="number" value="02533" />
+      <option name="presentableId" value="LOCAL-02533" />
+      <option name="project" value="LOCAL" />
+      <updated>1512385264082</updated>
+    </task>
+    <option name="localTasksCounter" value="2534" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1772772000" />
+    <option name="totallyTimeSpent" value="1772891000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2617,14 +2618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/mdblogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="949">
-          <caret line="266" column="5" lean-forward="false" selection-start-line="266" selection-start-column="5" selection-end-line="266" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -2669,16 +2662,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/common/mdblogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="949">
+          <caret line="266" column="0" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+        <state relative-caret-position="759">
+          <caret line="254" column="25" lean-forward="false" selection-start-line="254" selection-start-column="25" selection-end-line="254" selection-end-column="25" />
           <folding>
             <element signature="e#446#467#0#PHP" expanded="true" />
-            <marker date="1512385253552" expanded="true" signature="2983:3031" ph="..." />
-            <marker date="1512385253552" expanded="true" signature="15329:15419" ph="..." />
-            <marker date="1512385253552" expanded="true" signature="15358:15410" ph="{...}" />
-            <marker date="1512385253552" expanded="true" signature="15513:15549" ph="..." />
+            <marker date="1512385372503" expanded="true" signature="2983:3031" ph="..." />
+            <marker date="1512385372503" expanded="true" signature="15354:15444" ph="..." />
+            <marker date="1512385372503" expanded="true" signature="15383:15435" ph="{...}" />
+            <marker date="1512385372503" expanded="true" signature="15538:15574" ph="..." />
           </folding>
         </state>
       </provider>

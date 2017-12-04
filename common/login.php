@@ -252,7 +252,7 @@ function presetValues()
 
 
     $(document).ready(function(){
-
+        new WOW().init();
     // jQuery methods go here...
 
 /*

@@ -32,9 +32,9 @@ require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
 session_start();
 
 if (isset($cookie_name)){
-    if ($cookie_name =='') {
+    if ($cookie_name !=='') {
         $normalized_username = strtolower(trim($cookie_name));
-        $enc_pwd = ($_SESSION['enc_pwd']);
+        ////$enc_pwd = ($_SESSION['enc_pwd']);
     }
 } else {
     if (isset($_POST['user'])) {

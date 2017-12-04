@@ -42,10 +42,10 @@ if (isset($_COOKIE[session_name()])) {
 }
 session_destroy();
 if($ssl == 'On'){
-	$referer = eregi_replace("http", "https", $HTTP_REFERER);
+	$referer = eregi_replace("http", "https", $_SERVER['HTTP_REFERER']);
 }
 else{
-	//$referer = $HTTP_REFERER;
+	//$referer = $_SERVER['HTTP_REFERER'];
 	//back to base
 	$referer = $site_url . "/index.php";
 }

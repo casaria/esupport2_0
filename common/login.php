@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <?php
-
 ob_start(PHP_OUTPUT_HANDLER_FLUSHABLE, PHP_OUTPUT_HANDLER_CLEANABLE, PHP_OUTPUT_HANDLER_REMOVABLE);
 ?>
 <html lang="en" class="full-height">
@@ -30,7 +29,7 @@ require_once  $_SERVER['DOCUMENT_ROOT']."/common/$database.class.php";
 require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 /** @noinspection PhpIncludeInspection */
 require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
-
+session_start();
 $cookie_name = strtolower($_SESSION['cookie_name']);
 if ($cookie_name !== '') {
     $normalized_username = strtolower(trim($cookie_name));
@@ -41,8 +40,8 @@ if ($cookie_name !== '') {
 }
 
 
-//session_status() === PHP_SESSION_ACTIVE  //? $cookieuser = '' : startSession()
-$normalized_referer = strtolower (trim($HTTP_REFERER));
+session_status() === PHP_SESSION_ACTIVE  ? $cookieuser = '' : startSession();
+$normalized_referer = strtolower (trim($_SERVER['HTTP_REFERER']));
 
 
 

@@ -54,9 +54,9 @@ if($pubpriv == 'Private'){
 	require "common/login.php";
 }
 
-while (session_status() !== PHP_SESSION_ACTIVE) {
-            usleep(20000);
-}
+//while (session_status() !== PHP_SESSION_ACTIVE) {
+//            usleep(20000);
+//}
 
 RewindSession();
 $language = getLanguage($_SESSION['cookie_name']);

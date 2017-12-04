@@ -45,7 +45,7 @@ $_SESSION ["cookie_name"] = $cookie_name;
 $enc_pwd = md5($_POST['b']);
 //session_register("enc_pwd");
 $_SESSION ["enc_pwd"] = $enc_pwd;
-$referer = $HTTP_REFERER;
+$referer = $_SERVER['HTTP_REFERER'];
 
 if($enable_helpdesk == 'Off'){
 	printerror($on_off_reason);

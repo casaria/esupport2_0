@@ -54,7 +54,7 @@ $normalized_password = trim($_POST['password']);
 /*  Not a good ides
  *  trim ($_POST['password'],"((?=^)(\s*))|((\s*)(?>$))"); *
  */
-$normalized_referer = strtolower (trim($HTTP_REFERER));
+$normalized_referer = strtolower (trim($_SERVER['HTTP_REFERER']));
 
 function setUserCookie()
 {

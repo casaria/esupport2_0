@@ -279,14 +279,14 @@ function isEmpty($table)
  **		Takes two arguments, password tring, and minimum length, return boolean true. and  Else,
  **	return boolean false.
  ************************************************************************************************************/
-function approvePassword($pwd, $minlength=6)
-{
+function approvePassword($pwd, $minlength=6){
+
     $error='';
 
 if (strlen($pwd) > 20 ) {
     $error .= "Password too long! ";}
 
-if (strlen($pwd) <      $minlenght ) {
+if (strlen($pwd) < $minlength) {
     $error .= "Password too short! ";}
 
 if (!preg_match("#[0-9]+#", $pwd)) {
@@ -299,10 +299,10 @@ if (!preg_match("#[A-Z]+#", $pwd)) {
     $error .= "Password must include at least one CAPS! ";}
 
 if (!preg_match("#\W+#", $pwd)) {
-    $error .= "Password must include at least one symbol! ";}
+    $error .= "Password must include at least one symbol! ";
     $result = new approveResult();
     $result->message = $error;
-    $error == '' ? $result->pass=true : $result->pass=false;
+    $error == '' ? $result->pass=true : $result->pass=false;}
 
 }
 /***********************************************************************************************************
@@ -2658,7 +2658,7 @@ function showFormattedTime($seconds, $daysEnabled = FALSE, $DontRound15min = FAL
         function listPlatforms()
         {
 
-            global $mysql_platforms_table, $db, $HTTP_REFERER, $lang_delete, $lang_rank;
+            global $mysql_platforms_table, $db, $lang_delete, $lang_rank;
 
             $sql = "select * from $mysql_platforms_table order by rank asc";
             $result = $db->query($sql);
@@ -2672,7 +2672,7 @@ function showFormattedTime($seconds, $daysEnabled = FALSE, $DontRound15min = FAL
                     echo "<input type=text name=platform$i value=\"$row[2]\">";
                     echo "&nbsp;&nbsp; $lang_rank: <input type=text size=2 value='$row[1]' name=rank".$i.">";
 
-                    if(!eregi("kbase", $HTTP_REFERER))
+                    if(!eregi("kbase", $_SERVER['HTTP_REFERER']))
                         echo "&nbsp;&nbsp;<a href=control.php?t=topts&act=tpla&rm=delete&id=$row[0]>$lang_delete</a>?";
                     else
                         echo "&nbsp;&nbsp;<a href=control.php?t=kbase&act=plat&rm=delete&id=$row[0]>$lang_delete</a>?";

@@ -456,7 +456,7 @@ echo '<header>';
         }
 </script>';
 
-    ob_flush();
+    ob_end_flush();
 
     require "mdblogin.php";
     echo '<script Src="../mdb/js/mdb.js">

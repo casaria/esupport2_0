@@ -449,13 +449,6 @@ if (isset($login)) {
 
 }
 
-ob_end_flush();
-require "mdblogin.php";
-if(eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
-    require "../common/footer.php";
-else
-    require "common/footer.php";
-
 //check the cookie first.
 if(!isSet($_SESSION ['cookie_name'])) {
 if (eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
@@ -493,7 +486,15 @@ if (isset($_COOKIE['supporter_pwdcookie']))
         }
 </script>';
 
+    ob_end_flush();
 
+    require "mdblogin.php";
+
+
+    if(eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
+    require "../common/footer.php";
+    else
+    require "common/footer.php";
 
     //exit;
 

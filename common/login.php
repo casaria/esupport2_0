@@ -437,8 +437,13 @@ if (isset($login)) {
                 presetValues();
                 $myUrl =  "${protocol}://${domain}/supporter/index.php";
                 header("location: $myUrl");
-            }
+            } else {
             setUserCookie();
+            presetValues();
+            ob_end_clean();
+            $myUrl =  "${protocol}://${domain}/index.php";
+            header("location: $myUrl");
+            }
         } else {
             ob_end_flush();
             presetValues();

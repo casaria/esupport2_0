@@ -474,8 +474,7 @@ if (isset($login)) {
 
 
     while (!isset($login)) {
-            sleep(1);
-
+        ob_flush();
 
     }}
 ?>

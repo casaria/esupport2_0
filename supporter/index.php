@@ -305,103 +305,104 @@ if (isAdministrator($cookie_name) && $awaiting_approval){
     } else $getstats=true;
 ?>
 <?php
-					switch($t){
-						case ("tcre"):
-							require "tcreate.php";
-							break;
-						case ("tmop"):
-							require "myopen.php";
-							break;
-						case ("tmgo"):
-							require "mygroupopen.php";
-							break;
-						case ("tmre"):
-							require "myrecent.php";
-							break;
-						case ("tsrc"):
-							require "tsearch.php";
-							break;
-						case ("tupd"):
-							require "tupdate.php";
-							break;
-						case ("epro"):
-							require "../editprofile.php";
-							break;
-						case ("sgrp"):
-							require "sgroups.php";
-							break;
-						case ("kbase"):
-							switch($act){
-								case("kedit"):
-									require "../kbase/edit.php";
-									break;
-								case("kadd"):
-									require "../kbase/add.php";
-									break;
-								case("kans"):
-									require "../answer.php";
-									break;
-								case("ksta"):
-									require "../kbase/kbstats.php";
-									break;
-								default:
-									require "../kbase.php";
-									break;
-							}
-							break;
-						case("terr"):
-							printError("$lang_missing_info");
-							break;
-                         case("execute"):
-                            //fixticketSeptember30(4996, 5051);
-                            //fixUgroupsTable();
-                             break;
-                         case("schedule"):
-                            //fixticketSeptember30(4996, 5051);
-                            //fixUgroupsTable();
-                             require "sched.php";
-                             break;
-						case ("memb"):
-							require "member.php";
-							break;
-						case ("tstats"):
-							require "../admin23/tstats.php";
-							break;
-						case ("tsur"):
-							require "../admin23/sstats.php";
-							break;
-						case ("gstats"):
-							require "../admin23/gstats.php";
-							break;
+if (isset($t)) {
+    switch ($t) {
+        case ("tcre"):
+            require "tcreate.php";
+            break;
+        case ("tmop"):
+            require "myopen.php";
+            break;
+        case ("tmgo"):
+            require "mygroupopen.php";
+            break;
+        case ("tmre"):
+            require "myrecent.php";
+            break;
+        case ("tsrc"):
+            require "tsearch.php";
+            break;
+        case ("tupd"):
+            require "tupdate.php";
+            break;
+        case ("epro"):
+            require "../editprofile.php";
+            break;
+        case ("sgrp"):
+            require "sgroups.php";
+            break;
+        case ("kbase"):
+            switch ($act) {
+                case("kedit"):
+                    require "../kbase/edit.php";
+                    break;
+                case("kadd"):
+                    require "../kbase/add.php";
+                    break;
+                case("kans"):
+                    require "../answer.php";
+                    break;
+                case("ksta"):
+                    require "../kbase/kbstats.php";
+                    break;
+                default:
+                    require "../kbase.php";
+                    break;
+            }
+            break;
+        case("terr"):
+            printError("$lang_missing_info");
+            break;
+        case("execute"):
+            //fixticketSeptember30(4996, 5051);
+            //fixUgroupsTable();
+            break;
+        case("schedule"):
+            //fixticketSeptember30(4996, 5051);
+            //fixUgroupsTable();
+            require "sched.php";
+            break;
+        case ("memb"):
+            require "member.php";
+            break;
+        case ("tstats"):
+            require "../admin23/tstats.php";
+            break;
+        case ("tsur"):
+            require "../admin23/sstats.php";
+            break;
+        case ("gstats"):
+            require "../admin23/gstats.php";
+            break;
 
 
-                        case ("tsuc"):
-                              showSubmitResult(TRUE,$id);
-                            break;
+        case ("tsuc"):
+            showSubmitResult(TRUE, $id);
+            break;
 
-						case ("slist"):
-							require "../admin23/slist.php";
-							break;
-						case ("time"):						
-    							require "../admin23/timedetailed.php";
-							break;
-						case("cccheater"):
-							require "../CCC/jheater.php";
-							break;							
-						case("ccccontrol"):
-							require "../CCC/jcontrol.php";
-							break;	
-						case ("uedit"):
-							require "../admin23/uedit.php";
-							break;
-						case("repo"):
-							require "../kbase/report.php";
-							break;
-						default:
-							require "announce.php";
-							break;
-					}
-		  
+        case ("slist"):
+            require "../admin23/slist.php";
+            break;
+        case ("time"):
+            require "../admin23/timedetailed.php";
+            break;
+        case("cccheater"):
+            require "../CCC/jheater.php";
+            break;
+        case("ccccontrol"):
+            require "../CCC/jcontrol.php";
+            break;
+        case ("uedit"):
+            require "../admin23/uedit.php";
+            break;
+        case("repo"):
+            require "../kbase/report.php";
+            break;
+        default:
+            require "announce.php";
+            break;
+    }
+}
 						  
 					?>
 				

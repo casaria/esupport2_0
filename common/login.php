@@ -466,8 +466,7 @@ if (isset($login)) {
         new WOW().init();
 </script>';
 
-
-
+    }
 
 ?>
 

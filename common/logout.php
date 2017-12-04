@@ -35,11 +35,13 @@ require_once "$database.class.php";
 require_once "common.php";
 
 startSession();
-$_SESSION = array();
+$mysessionname= $_SESSION['session_name'];
 
 if (isset($_COOKIE[session_name()])) {
     setcookie(session_name(), '', time()-42000, '/');
 }
+$_SESSION = array();
+
 session_destroy();
 if($ssl == 'On'){
 	$referer = eregi_replace("http", "https", $base_url);

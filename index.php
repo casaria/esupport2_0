@@ -49,11 +49,15 @@ if($pubpriv == 'Private') {
     if (session_status() !== PHP_SESSION_ACTIVE) {
         startSession();
 
-        if ($_COOKIE['session_id'] !== session_id()) {
+        if (($_COOKIE['session_id'] !== session_id()) || (($_COOKIE['cookie_name']) !== $_SESSION['cookie_name'] )) {
             require "common/login.php";
             exit;
         } else {
-            $cookie_name= $_SESSION['cookie_name'];
+
+            //restart
+            $myUrl =  "${protocol}://${domain}/$PHP_SELF";
+            header("location: $myUrl");
+
 
         }
     }

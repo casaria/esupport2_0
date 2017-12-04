@@ -29,6 +29,14 @@
 			**
 			***************************************************************************************/
 //ob_end_flush();
+//set the start time so we can calculate how long it takes to load the page.
+$mtime1 = explode(" ", microtime());
+$starttime = $mtime1[0] + $mtime1[1];
+
+require_once "common/config.php";
+require_once "common/$database.class.php";
+require_once "common/common.php";
+
 
 if($reg == 'yes'){
     require_once "lang/$default_language.lang.php";
@@ -43,13 +51,6 @@ if($pubpriv == 'Private') {
     }
 }
 
-//set the start time so we can calculate how long it takes to load the page.
-$mtime1 = explode(" ", microtime());
-$starttime = $mtime1[0] + $mtime1[1];
-
-require_once "common/config.php";
-require_once "common/$database.class.php";
-require_once "common/common.php";
 
         if($enable_helpdesk == 'Off'){
 	printerror($on_off_reason);

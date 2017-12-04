@@ -186,7 +186,7 @@ function presetValues()
 
         .card {
             background-color: rgba(124, 124, 122, 0.65);
-            color: #fdffe3;
+            color: #fdffe3 !important;
         }
 
         .md-form .prefix {

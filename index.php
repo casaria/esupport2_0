@@ -53,6 +53,11 @@ if($reg == 'yes'){
 if($pubpriv == 'Private'){
 	require "common/login.php";
 }
+
+while (session_status() !== PHP_SESSION_ACTIVE) {
+            usleep(200000);
+}
+
 RewindSession();
 $language = getLanguage($_SESSION['cookie_name']);
 if($language == '')

@@ -46,18 +46,28 @@ session_status() === PHP_SESSION_ACTIVE  ? $cookieuser = '' : startSession();
 
 $normalized_referer = strtolower (trim($HTTP_REFERER));
 
-function setUserCookie()
-{
-    global $normalized_username, $normalized_password, $session_time;
+function setSession(){
+    global $normalized_username, $normalized_password, $remote_ip;
     $cookie_name = $normalized_username;
 //session_register ("cookie_name");
     $_SESSION ['cookie_name'] = $cookie_name;
     $enc_pwd = md5($normalized_password);
 //session_register ("enc_pwd");
     $_SESSION ['enc_pwd'] = $enc_pwd;
+    $_SESSION ['timestamp'] = time();
+    $_SESSION ['IP'] = $remote_ip;
 
+}
+
+
+function setUserCookie()
+{
+    global $normalized_username, $normalized_password, $session_time;
+    $cookie_name = $normalized_username;
 //nov14 header("Location: $referer");
 //echo"<BR>$cookie_name $enc_pwd";
+    setSession();
+
     setcookie('cookieuser', $cookie_name, time() + $session_time);
     setcookie('cookiepwd', $normalized_password, time() + $session_time);
 }
@@ -67,11 +77,8 @@ function setSupporterCookie()
     global  $normalized_username, $normalized_password, $session_time;
     $cookie_name = $normalized_username;
 
-    //session_register("cookie_name");
-    $_SESSION ["cookie_name"] = $cookie_name;
-    $enc_pwd = md5($normalized_password);
-    //session_register("enc_pwd");
-    $_SESSION ["enc_pwd"] = $enc_pwd;
+    setSession();
+
 
     //nov14 header("Location: $referer");
     setcookie('supporter_usercookie', $cookie_name,  time()+ $session_time);
@@ -355,7 +362,7 @@ function presetValues()
 <?php
 if($enable_helpdesk == 'Off'){
     printerror($on_off_reason);
-    exit;
+  //  exit;
 }
 
 
@@ -371,23 +378,18 @@ if (isset($login)) {
         //check the user name and password against the database.
         if (checkUser($normalized_username, md5($normalized_password))) {
             if (isAdministrator($normalized_username)) {
-
-                //session_register ("cookie_name");
-                $_SESSION ["cookie_name"] = $cookie_name;
-                $enc_pwd = md5($normalized_password);
-                //session_register ("enc_pwd");
-                $_SESSION ["enc_pwd"] = $enc_pwd;
+                setSupporterCookie();
 
                 //nov14 header("Location: $referer");
             } else {
                 presetValues();
                 echo $lang_notadmin;
-                exit;
+            //    exit;
             }
         } else {
             echo $lang_wronglogin;
             presetValues();
-            exit;
+          //  exit;
         }
 
     } elseif ((ereg("/supporter", $normalized_referer))) {
@@ -402,13 +404,13 @@ if (isset($login)) {
                 header("location:$myUrl");
                 echo $lang_notsupporter;
                 presetValues();
-                exit;
+             //   exit;
             }
         } else {
             ob_end_flush();
             echo $lang_wronglogin;
             presetValues();
-            exit;
+           // exit;
         }
 
     } //otherwise, the user is not logging in to the admin site.
@@ -427,7 +429,7 @@ if (isset($login)) {
             ob_end_flush();
             presetValues();
             echo $lang_wronglogin;
-            exit;
+           // exit;
         }
     }
 
@@ -464,11 +466,12 @@ if (isset($login)) {
         new WOW().init();
 </script>';
 
-}
+
+
+
 ?>
 
 </header>
-
 
 
 </body>

@@ -56,8 +56,8 @@ $cookie_name = $_COOKIE['cookie_name'];
             exit;
 
         } else {
-            // logged in successfully
-
+            // logged in successfully;
+            echo "you are logged in";
         }
     }
 

@@ -46,7 +46,9 @@ if($reg == 'yes'){
 
 $session_id = $_COOKIE['session_id'];
 $cookie_name = $_COOKIE['cookie_name'];
-
+if ( $cookie_name=='') {
+    $cookie_name = $_COOKIE['supporter_usercookie'];
+}
     if($pubpriv == 'Private') {
         if (session_status() !== PHP_SESSION_ACTIVE) {
             startSession();

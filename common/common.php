@@ -3243,8 +3243,7 @@ function displayUserTicket($result)
     return $summary;
 }
 
-    /**	Takes the user id and returns an array containing the list of group tablenames(ugroupN) that the user is in.	**/
-function getUsersGroupList($id)
+    /**	Takes the user id and returns an array containing the list of group tablenames(ugroupN) that the user is in.function getUsersGroupList($id)
 {
 	global $mysql_ugroups_table, $num_groups, $db;
 

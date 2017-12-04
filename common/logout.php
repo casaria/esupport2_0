@@ -34,18 +34,19 @@ require_once "config.php";
 require_once "$database.class.php";
 require_once "common.php";
 
-session_start();
+//session_start();
 
 
 //if (isset($_COOKIE[session_name()])) {
-    setcookie(session_name(), '', time() - $session_time, '/', 'casaria.net');
+    setcookie(session_id(), '', time() - $session_time, '/', 'casaria.net');
 //}
 $_SESSION = array();
 
 session_destroy();
+session_unset();
 
 
-    $myUrl =  "${protocol}://${domain}/index.php";
+    $myUrl =  "${protocol}://$9{domain}/index.php";
     require $myUrl;
     exit;
 

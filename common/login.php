@@ -66,6 +66,7 @@ function setSession(){
     $_SESSION ['timestamp'] = time();
     $_SESSION ['IP'] = $remote_ip;
 
+
 }
 
 

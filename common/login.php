@@ -474,7 +474,8 @@ if (isset($login)) {
 
 
     while (!isset($login)) {
-            usleep(20000);
+            sleep(1);
+
 
     }}
 ?>

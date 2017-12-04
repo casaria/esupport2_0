@@ -170,6 +170,19 @@ function presetValues()
             background-size: cover;
         }
 
+        .top-nav-collapse {
+            background-color: #3f51b5 !important;
+            /*  background-color: #3f51b5 !important; */
+        }
+        .navbar:not(.top-nav-collapse) {
+            background: transparent !important;
+        }
+        @media (max-width: 768px) {
+            .navbar:not(.top-nav-collapse) {
+                background-color: #3f51b5 !important;
+                /*   background: #3f51b5 !important; */
+            }
+        }
 
         .card {
             background-color: rgba(124, 124, 122, 0.65);

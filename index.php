@@ -46,7 +46,8 @@ if($reg == 'yes'){
 
 if($pubpriv == 'Private') {
     if (session_status() !== PHP_SESSION_ACTIVE) {
-
+        startSession();
+        if ($cookie_name !== $_SESSION['cookie_name'])
         require"common/login.php";
         exit;
     }

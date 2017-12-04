@@ -55,8 +55,8 @@ if($pubpriv == 'Private') {
         } else {
 
             //restart
-            $myUrl =  "${protocol}://${domain}/$PHP_SELF";
-            header("location: $myUrl");
+         //   $myUrl =  "${protocol}://${domain}/$PHP_SELF";
+         //   header("location: $myUrl");
 
 
         }

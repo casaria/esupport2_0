@@ -44,7 +44,7 @@ if($reg == 'yes'){
     exit;
 }
 
-$cookie_name = $_COOKIE['cookie_name'];
+
 if($pubpriv == 'Private') {
     if (session_status() !== PHP_SESSION_ACTIVE) {
         startSession();
@@ -52,13 +52,19 @@ if($pubpriv == 'Private') {
         if ($_COOKIE['session_id'] !== session_id()) {
             require "common/login.php";
             exit;
+        } else {
+            $cookie_name= $_SESSION['cookie_name'];
+
         }
     }
 }
 
+//try to get it from cookie
+if ($cookie_name = '') {
 
+    $cookie_name =  $_COOKIE['cookie_name'];
+}
 
-$cookie_name = $_COOKIE['cookie_name'];
         if($enable_helpdesk == 'Off'){
 	printerror($on_off_reason);
 	exit;

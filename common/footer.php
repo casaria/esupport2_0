@@ -30,7 +30,8 @@
 			**		Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 			**
 			***************************************************************************************/
-require_once  $_SERVER['DOCUMENT_ROOT']."/common/config.php";
+
+$theme = getThemeVars(getThemeName('default'));
 
 
 echo "<br><center><font size=0 color=$theme[text] face=\"$theme[font]\">$helpdesk_name<br>";

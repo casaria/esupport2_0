@@ -377,6 +377,12 @@ if($enable_helpdesk == 'Off'){
 if (isset($login)) {
     //if admin is contained in the url, we need to make sure the user is an
     //admin before letting them login.
+    if (isset($_POST['user'])) {
+        $normalized_username = strtolower(trim($_POST['user']));
+    }
+    if (isset($_POST['password'])) {
+        $normalized_password = trim($_POST['password']);
+    }
     if ($$cookie_name == '') {
         $cookie_name = $normalized_username;
     }

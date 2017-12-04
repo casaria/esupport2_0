@@ -27,7 +27,6 @@
     <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/common/login.php" afterPath="$PROJECT_DIR$/common/login.php" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored mask="workspace.xml" />
     <ignored mask="error_log" />
@@ -109,8 +108,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="29" column="100" lean-forward="true" selection-start-line="29" selection-start-column="100" selection-end-line="29" selection-end-column="100" />
+            <state relative-caret-position="908">
+              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding>
                 <marker date="1512427757791" expanded="true" signature="3120:3208" ph="UPDATE ${$my... " />
                 <marker date="1512427757791" expanded="true" signature="3876:3932" ph="..." />
@@ -202,8 +201,8 @@
       <file leaf-file-name="logout.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/logout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="31" column="106" lean-forward="true" selection-start-line="31" selection-start-column="106" selection-end-line="31" selection-end-column="106" />
+            <state relative-caret-position="561">
+              <caret line="45" column="59" lean-forward="true" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -233,13 +232,13 @@
         <entry file="file://$PROJECT_DIR$/common/login.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="558">
-              <caret line="58" column="7" lean-forward="false" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+              <caret line="57" column="58" lean-forward="true" selection-start-line="57" selection-start-column="58" selection-end-line="57" selection-end-column="58" />
               <folding>
                 <element signature="e#446#467#0#PHP" expanded="true" />
-                <marker date="1512427757841" expanded="true" signature="3305:3353" ph="..." />
-                <marker date="1512427757841" expanded="true" signature="16516:16606" ph="..." />
-                <marker date="1512427757841" expanded="true" signature="16545:16597" ph="{...}" />
-                <marker date="1512427757841" expanded="true" signature="16818:16820" ph="..." />
+                <marker date="1512428060680" expanded="true" signature="3311:3359" ph="..." />
+                <marker date="1512428060680" expanded="true" signature="16522:16612" ph="..." />
+                <marker date="1512428060680" expanded="true" signature="16551:16603" ph="{...}" />
+                <marker date="1512428060680" expanded="true" signature="16824:16826" ph="..." />
               </folding>
             </state>
           </provider>
@@ -258,8 +257,8 @@
       <file leaf-file-name="common.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/common.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="3246" column="0" lean-forward="false" selection-start-line="3246" selection-start-column="0" selection-end-line="3246" selection-end-column="0" />
+            <state relative-caret-position="941">
+              <caret line="400" column="0" lean-forward="false" selection-start-line="400" selection-start-column="0" selection-end-line="400" selection-end-column="0" />
               <folding>
                 <marker date="1512382106457" expanded="true" signature="8099:8241" ph="INSERT into ${$mysql_attachments_table}... " />
                 <marker date="1512382106457" expanded="true" signature="8967:9026" ph="update ${$mysql_tickets_table}... " />
@@ -501,8 +500,8 @@
       <find>php_sel</find>
       <find>self</find>
       <find>session</find>
-      <find>url</find>
       <find>$them</find>
+      <find>url</find>
     </findStrings>
     <replaceStrings>
       <replace>$summary = displayTicket($result);</replace>
@@ -1035,14 +1034,7 @@
       <workItem from="1512311255218" duration="3475000" />
       <workItem from="1512318191185" duration="20067000" />
       <workItem from="1512346502504" duration="19553000" />
-      <workItem from="1512376240662" duration="35130000" />
-    </task>
-    <task id="LOCAL-02527" summary="ob_start">
-      <created>1512384064440</created>
-      <option name="number" value="02527" />
-      <option name="presentableId" value="LOCAL-02527" />
-      <option name="project" value="LOCAL" />
-      <updated>1512384064440</updated>
+      <workItem from="1512376240662" duration="35432000" />
     </task>
     <task id="LOCAL-02528" summary="ob_start">
       <created>1512384441427</created>
@@ -1380,11 +1372,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512427685611</updated>
     </task>
-    <option name="localTasksCounter" value="2576" />
+    <task id="LOCAL-02576" summary="ob_start">
+      <created>1512427764620</created>
+      <option name="number" value="02576" />
+      <option name="presentableId" value="LOCAL-02576" />
+      <option name="project" value="LOCAL" />
+      <updated>1512427764620</updated>
+    </task>
+    <option name="localTasksCounter" value="2577" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1798910000" />
+    <option name="totallyTimeSpent" value="1799212000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1696,12 +1695,12 @@
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>413</line>
+          <line>415</line>
           <option name="timeStamp" value="503" />
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>433</line>
+          <line>435</line>
           <option name="timeStamp" value="505" />
         </line-breakpoint>
         <line-breakpoint type="php">
@@ -1716,7 +1715,7 @@
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>507</line>
+          <line>509</line>
           <option name="timeStamp" value="517" />
         </line-breakpoint>
         <line-breakpoint type="php">
@@ -1726,7 +1725,7 @@
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>513</line>
+          <line>515</line>
           <option name="timeStamp" value="520" />
         </line-breakpoint>
         <line-breakpoint type="php">
@@ -1736,27 +1735,27 @@
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>459</line>
+          <line>461</line>
           <option name="timeStamp" value="522" />
         </line-breakpoint>
         <line-breakpoint suspend="NONE" type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>440</line>
+          <line>442</line>
           <option name="timeStamp" value="526" />
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>420</line>
+          <line>422</line>
           <option name="timeStamp" value="527" />
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>379</line>
+          <line>381</line>
           <option name="timeStamp" value="528" />
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>394</line>
+          <line>396</line>
           <option name="timeStamp" value="531" />
         </line-breakpoint>
         <line-breakpoint type="php">
@@ -1811,7 +1810,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>69</line>
+          <line>71</line>
           <option name="timeStamp" value="556" />
         </line-breakpoint>
         <breakpoint enabled="true" type="php-exception">
@@ -2426,14 +2425,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="31" column="106" lean-forward="true" selection-start-line="31" selection-start-column="106" selection-end-line="31" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -2444,8 +2435,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/common.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="3246" column="0" lean-forward="false" selection-start-line="3246" selection-start-column="0" selection-end-line="3246" selection-end-column="0" />
+        <state relative-caret-position="941">
+          <caret line="400" column="0" lean-forward="false" selection-start-line="400" selection-start-column="0" selection-end-line="400" selection-end-column="0" />
           <folding>
             <marker date="1512382106457" expanded="true" signature="8099:8241" ph="INSERT into ${$mysql_attachments_table}... " />
             <marker date="1512382106457" expanded="true" signature="8967:9026" ph="update ${$mysql_tickets_table}... " />
@@ -2636,8 +2627,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="29" column="100" lean-forward="true" selection-start-line="29" selection-start-column="100" selection-end-line="29" selection-end-column="100" />
+        <state relative-caret-position="908">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding>
             <marker date="1512427757791" expanded="true" signature="3120:3208" ph="UPDATE ${$my... " />
             <marker date="1512427757791" expanded="true" signature="3876:3932" ph="..." />
@@ -2699,16 +2690,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/common/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="45" column="59" lean-forward="true" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
-          <caret line="58" column="7" lean-forward="false" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+          <caret line="57" column="58" lean-forward="true" selection-start-line="57" selection-start-column="58" selection-end-line="57" selection-end-column="58" />
           <folding>
             <element signature="e#446#467#0#PHP" expanded="true" />
-            <marker date="1512427757841" expanded="true" signature="3305:3353" ph="..." />
-            <marker date="1512427757841" expanded="true" signature="16516:16606" ph="..." />
-            <marker date="1512427757841" expanded="true" signature="16545:16597" ph="{...}" />
-            <marker date="1512427757841" expanded="true" signature="16818:16820" ph="..." />
+            <marker date="1512428060680" expanded="true" signature="3311:3359" ph="..." />
+            <marker date="1512428060680" expanded="true" signature="16522:16612" ph="..." />
+            <marker date="1512428060680" expanded="true" signature="16551:16603" ph="{...}" />
+            <marker date="1512428060680" expanded="true" signature="16824:16826" ph="..." />
           </folding>
         </state>
       </provider>

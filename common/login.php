@@ -47,13 +47,15 @@ if (isset($_SESSION ['cookie_name'])){
 }
 
 
-session_status() === PHP_SESSION_ACTIVE  ? $cookieuser = '' : startSession();
+
 $normalized_referer = strtolower (trim($base_url));
 
 
 
 function setSession(){
     global $normalized_username, $normalized_password, $remote_ip;
+
+    session_status() === PHP_SESSION_ACTIVE  ? $cookieuser = '' : startSession();
     $cookie_name = $normalized_username;
 //session_register ("cookie_name");
     // startSession();

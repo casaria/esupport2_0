@@ -37,9 +37,9 @@ require_once "common.php";
 startSession();
 $mysessionname= $_SESSION['cookie_name'];
 
-if (isset($_COOKIE[session_name()])) {
+//if (isset($_COOKIE[session_name()])) {
     setcookie(session_name(), '', time() - $session_time, '/', 'casaria.net');
-}
+//}
 $_SESSION = array();
 
 session_destroy();

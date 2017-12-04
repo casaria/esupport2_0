@@ -46,7 +46,7 @@ session_destroy();
 
 
     $myUrl =  "${protocol}://${domain}/index.php";
-    require "$myUrl";
+    require $myUrl;
     exit;
 
 

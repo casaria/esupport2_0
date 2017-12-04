@@ -462,7 +462,9 @@ if (!isSet($_SESSION ['cookie_name'])) {
 </script>';
 
 
+while (!isset($login)) {
 
+}
 
     if(eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
         require "../common/footer.php";

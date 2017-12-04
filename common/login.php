@@ -519,4 +519,3 @@ if (isset($_COOKIE['supporter_pwdcookie']))
 </body>
 </HTML>
 
-}

@@ -55,7 +55,7 @@ if($pubpriv == 'Private'){
 }
 
 while (session_status() !== PHP_SESSION_ACTIVE) {
-            usleep(200000);
+            usleep(20000);
 }
 
 RewindSession();

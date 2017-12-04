@@ -481,6 +481,8 @@ if (isset($_COOKIE['supporter_pwdcookie']))
     ob_end_flush();
 
     require "mdblogin.php";
+
+
     if(eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
     require "../common/footer.php";
     else

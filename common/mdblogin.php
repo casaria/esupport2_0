@@ -262,5 +262,5 @@
         </div>
     </section>
 
-<script Src="../mdb/js/mdb.js">
+    <script Src="../mdb/js/mdb.js"> </script>
 

@@ -44,10 +44,16 @@ if($reg == 'yes'){
     exit;
 }
 
+$session_id = $_COOKIE['session_id'];
+$cookie_name = $_COOKIE['cookie_name'];
 
 if($pubpriv == 'Private') {
     if (session_status() !== PHP_SESSION_ACTIVE) {
         startSession();
+            if (($session_id !== session_id()) ||  ($cookie_name !== $_SESSION['cookie_name'] ) ) {
+
+
+            }
 
         if (($_COOKIE['session_id'] !== session_id()) || (($_COOKIE['cookie_name']) !== $_SESSION['cookie_name'] )) {
             require "common/login.php";

@@ -43,14 +43,11 @@ if (isset($_COOKIE[session_name()])) {
 $_SESSION = array();
 
 session_destroy();
-if($ssl == 'On'){
-	$referer = eregi_replace("http", "https", $base_url);
-}
-else{
-	//$referer = $base_url;
-	//back to base
-	$referer = $site_url . "/index.php";
-}
 
-header("Location: $referer");
-?>
+
+    $myUrl =  "${protocol}://${domain}/index.php";
+    require "$myUrl";
+    exit;
+
+
+

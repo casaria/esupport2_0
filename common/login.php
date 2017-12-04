@@ -37,8 +37,12 @@ if (isset($cookie_name)){
         $enc_pwd = ($_SESSION['enc_pwd']);
     }
 } else {
-    $normalized_username = strtolower(trim($_POST['user']));
-    $normalized_password = trim($_POST['password']);
+    if (isset($_POST['user'])) {
+        $normalized_username = strtolower(trim($_POST['user']));
+    }
+    if (isset($_POST['password'])) {
+        $normalized_password = trim($_POST['password']);
+    }
 }
 
 

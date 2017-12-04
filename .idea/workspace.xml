@@ -28,7 +28,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored mask="workspace.xml" />
     <ignored mask="error_log" />
@@ -110,8 +109,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+            <state relative-caret-position="825">
+              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding>
                 <marker date="1512387693100" expanded="true" signature="2545:2633" ph="UPDATE ${$my... " />
                 <marker date="1512387693100" expanded="true" signature="3301:3357" ph="..." />
@@ -164,16 +163,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mdblogin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/mdblogin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="949">
-              <caret line="266" column="0" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -392,12 +381,22 @@
       <file leaf-file-name="login20.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/login20.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-396">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="522">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
                 <marker date="1512387406257" expanded="true" signature="29750:29840" ph="..." />
                 <marker date="1512387406257" expanded="true" signature="29779:29831" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="English.lang.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lang/English.lang.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1042,14 +1041,7 @@
       <workItem from="1512311255218" duration="3475000" />
       <workItem from="1512318191185" duration="20067000" />
       <workItem from="1512346502504" duration="19553000" />
-      <workItem from="1512376240662" duration="11427000" />
-    </task>
-    <task id="LOCAL-02488" summary="After surgery">
-      <created>1512336102044</created>
-      <option name="number" value="02488" />
-      <option name="presentableId" value="LOCAL-02488" />
-      <option name="project" value="LOCAL" />
-      <updated>1512336102044</updated>
+      <workItem from="1512376240662" duration="11516000" />
     </task>
     <task id="LOCAL-02489" summary="``">
       <created>1512344556647</created>
@@ -1387,11 +1379,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512387422832</updated>
     </task>
-    <option name="localTasksCounter" value="2537" />
+    <task id="LOCAL-02537" summary="ob_start">
+      <created>1512387700883</created>
+      <option name="number" value="02537" />
+      <option name="presentableId" value="LOCAL-02537" />
+      <option name="project" value="LOCAL" />
+      <updated>1512387700883</updated>
+    </task>
+    <option name="localTasksCounter" value="2538" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1775207000" />
+    <option name="totallyTimeSpent" value="1775296000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2144,14 +2143,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lang/English.lang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/supporter/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2617,10 +2608,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lang/English.lang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/login20.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="522">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
             <marker date="1512387406257" expanded="true" signature="29750:29840" ph="..." />
             <marker date="1512387406257" expanded="true" signature="29779:29831" ph="{...}" />
@@ -2630,8 +2629,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+        <state relative-caret-position="825">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
             <marker date="1512387693100" expanded="true" signature="2545:2633" ph="UPDATE ${$my... " />
             <marker date="1512387693100" expanded="true" signature="3301:3357" ph="..." />

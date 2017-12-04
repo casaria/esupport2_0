@@ -47,7 +47,7 @@ session_unset();
 
 
     $myUrl =  "${protocol}://${domain}/index.php";
-    header("location: $myUr");
+    header("location: $myUrl");
     exit;
 
 

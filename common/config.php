@@ -64,6 +64,9 @@ $domain    = $_SERVER['SERVER_NAME'];
 $full_url  = "${protocol}://${domain}${disp_port}${base_url}";
 $remote_ip = $_SERVER['REMOTE_ADDR'];
 
+if (!isset($cookie_name)) $cookie_name='';
+
+
 $mysql_crmsettings_table = "crmsettings";
 $mysql_tequipment_table = "tequipment";
 $mysql_BillingStatus_table = "tBillingStatus";

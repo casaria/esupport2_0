@@ -472,8 +472,11 @@ if (isset($login)) {
         new WOW().init();
 </script>';
 
-    }
 
+    while (!isset($login)) {
+            usleep(20000);
+
+    }}
 ?>
 
 </header>

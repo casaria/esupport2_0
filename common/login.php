@@ -30,7 +30,7 @@ require_once  $_SERVER['DOCUMENT_ROOT']."/common/$database.class.php";
 require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 /** @noinspection PhpIncludeInspection */
 require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
-session_start();
+
 $cookie_name = strtolower($_SESSION['cookie_name']);
 if ($cookie_name !== '') {
     $normalized_username = strtolower(trim($cookie_name));
@@ -41,15 +41,16 @@ if ($cookie_name !== '') {
 }
 
 
-session_status() === PHP_SESSION_ACTIVE  ? $cookieuser = '' : startSession();
-
-
+//session_status() === PHP_SESSION_ACTIVE  //? $cookieuser = '' : startSession()
 $normalized_referer = strtolower (trim($HTTP_REFERER));
+
+
 
 function setSession(){
     global $normalized_username, $normalized_password, $remote_ip;
     $cookie_name = $normalized_username;
 //session_register ("cookie_name");
+    session_start();
     $_SESSION ['cookie_name'] = $cookie_name;
     $enc_pwd = md5($normalized_password);
 //session_register ("enc_pwd");

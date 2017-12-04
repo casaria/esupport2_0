@@ -47,7 +47,8 @@ if($reg == 'yes'){
 if($pubpriv == 'Private') {
     if (session_status() !== PHP_SESSION_ACTIVE) {
 
-        header("location: common/login.php");
+        require"common/login.php";
+        exit;
     }
 }
 

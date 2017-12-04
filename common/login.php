@@ -422,11 +422,11 @@ if (isset($login)) {
                 presetValues();
              //   exit;
             }
-        } else {
+        } else {  //authentication failed
             ob_end_flush();
+            http_response_code(403);  //let's log it in nginx log
             echo $lang_wronglogin;
-            presetValues();
-           // exit;
+
         }
 
     } //otherwise, the user is not logging in to the admin site.

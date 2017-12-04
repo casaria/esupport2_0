@@ -57,6 +57,8 @@ if($pubpriv == 'Private') {
 }
 
 
+
+$cookie_name = $_COOKIE['cookie_name'];
         if($enable_helpdesk == 'Off'){
 	printerror($on_off_reason);
 	exit;

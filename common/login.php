@@ -28,7 +28,7 @@ require_once  $_SERVER['DOCUMENT_ROOT']."/common/$database.class.php";
 require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 /** @noinspection PhpIncludeInspection */
 require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
-ob_end_flush();
+//ob_end_flush();
 session_start();
 $cookie_name = strtolower($_SESSION['cookie_name']);
 if ($cookie_name !== '') {

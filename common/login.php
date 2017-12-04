@@ -29,7 +29,7 @@ require_once  $_SERVER['DOCUMENT_ROOT']."/common/$database.class.php";
 require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 /** @noinspection PhpIncludeInspection */
 require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
-session_start();
+//session_start();
 
 if (isset($_SESSION ['cookie_name'])){
     $cookie_name = $_SESSION ['cookie_name'];

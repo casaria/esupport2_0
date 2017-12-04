@@ -35,7 +35,7 @@ require_once "$database.class.php";
 require_once "common.php";
 
 startSession();
-$mysessionname= $_SESSION['session_name'];
+$mysessionname= $_SESSION['cookie_name'];
 
 if (isset($_COOKIE[session_name()])) {
     setcookie(session_name(), '', time()-42000, '/');

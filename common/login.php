@@ -28,7 +28,6 @@ require_once  $_SERVER['DOCUMENT_ROOT']."/common/$database.class.php";
 require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 /** @noinspection PhpIncludeInspection */
 require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
-//ob_end_flush();
 session_start();
 $cookie_name = strtolower($_SESSION['cookie_name']);
 if ($cookie_name !== '') {
@@ -431,13 +430,14 @@ if (isset($login)) {
         }
     }
 
-}
+} else {
 
 echo '<header>';
 
 
-        //check the cookie first.
-if (!isSet($_SESSION ['cookie_name'])) {
+    /*
+    //check the cookie first.
+    if (!isSet($_SESSION ['cookie_name'])) {
     if (eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
         $sup = 1;
     else
@@ -448,6 +448,7 @@ if (!isSet($_SESSION ['cookie_name'])) {
     if (isset($_COOKIE['supporter_pwdcookie']))
         $cookiepwd = $_COOKIE['supporter_pwdcookie'];
 
+    */
     echo
     '<script language="JavaScript">
         function setfocus(){
@@ -455,49 +456,15 @@ if (!isSet($_SESSION ['cookie_name'])) {
         }
 </script>';
 
-    ob_end_flush();
+    ob_flush();
 
     require "mdblogin.php";
     echo '<script Src="../mdb/js/mdb.js">
         new WOW().init();
 </script>';
 
-
-while (!isset($login)) {
-
-}
-
-    if(eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
-        require "../common/footer.php";
-    else
-        require "common/footer.php";
-
-    exit;
-
-}
-else{  //Cookie was set
-
-    //if submit has not been pressed, check the cookie against the database.
-
-    if(preg_match("/admin/i", $PHP_SELF) && !isAdministrator($cookie_name) && $cookie_name != ''){
-        echo "$lang_notadmin";
-        exit;
-    }
-
-}
-//get some globals about the user
-if ($cookie_name != '') {
-    $user_id = getUserId($cookie_name);
-    $ugID_list = getUsersGroupIDList($user_id);
-
-} else {
-    echo $lang_wronglogin;
-    exit;
-}
-//this returns back to the page that called it.
+}}
 ?>
-
-
 
 </header>
 

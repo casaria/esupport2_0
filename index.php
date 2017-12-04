@@ -30,6 +30,19 @@
 			***************************************************************************************/
 //ob_end_flush();
 
+if($reg == 'yes'){
+    require_once "lang/$default_language.lang.php";
+    require "register.php";
+    exit;
+}
+
+if($pubpriv == 'Private'){
+if (session_status() !== PHP_SESSION_ACTIVE ) {
+
+    header("location: common/login.php");
+}
+
+
 //set the start time so we can calculate how long it takes to load the page.
 $mtime1 = explode(" ", microtime());
 $starttime = $mtime1[0] + $mtime1[1];
@@ -44,19 +57,9 @@ require_once "common/common.php";
 }
 
 
-if($reg == 'yes'){
-	require_once "lang/$default_language.lang.php";
-	require "register.php";
-	exit;
-}
 
-if($pubpriv == 'Private'){
-	require "common/login.php";
-}
 
-//while (session_status() !== PHP_SESSION_ACTIVE) {
-//            usleep(20000);
-//}
+
 
 RewindSession();
 $language = getLanguage($_SESSION['cookie_name']);

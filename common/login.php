@@ -75,8 +75,9 @@ function setUserCookie()
 //echo"<BR>$cookie_name $enc_pwd";
     setSession();
 
-    setcookie('cookieuser', $cookie_name, time() + $session_time);
-    setcookie('cookiepwd', $normalized_password, time() + $session_time);
+    setcookie('cookieuser', $cookie_name, time() + $session_time, '/', 'casaria.net');
+    setcookie('cookiepwd', $normalized_password, time() + $session_time, '/', 'casaria.net');
+    setcookie('session_id', session_id(), time() + $session_time, '/', 'casaria.net');
 }
 
 function setSupporterCookie()
@@ -88,8 +89,9 @@ function setSupporterCookie()
 
 
     //nov14 header("Location: $referer");
-    setcookie('supporter_usercookie', $cookie_name,  time()+ $session_time);
-    setcookie('supporter_pwdcookie', $normalized_password,  time()+ $session_time);
+    setcookie('supporter_usercookie', $cookie_name,  time()+ $session_time, '/', 'casaria.net');
+    setcookie('supporter_pwdcookie', $normalized_password,  time()+ $session_time, '/', 'casaria.net');
+    setcookie('session_id', session_id(), time() + $session_time, '/', 'casaria.net');
 }
 
 

@@ -47,9 +47,11 @@ if($reg == 'yes'){
 if($pubpriv == 'Private') {
     if (session_status() !== PHP_SESSION_ACTIVE) {
         startSession();
-        if ($cookie_name !== $_SESSION['cookie_name'])
-        require"common/login.php";
-        exit;
+
+        if ($_COOKIE['session_id'] !== session_id()) {
+            require "common/login.php";
+            exit;
+        }
     }
 }
 
@@ -78,7 +80,7 @@ else
 
 $time_offset = getTimeOffset($_SESSION['cookie_name']);
 
-if($cookie_name !== ''){
+if(($_COOKIE['cookie_name']) !== ''){
 	//update the lastactive time in the database.
 	$sql = "UPDATE $mysql_users_table set lastactive='".time()."' where user_name='".$cookie_name."'";
 	$db->query($sql);

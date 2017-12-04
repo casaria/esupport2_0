@@ -44,6 +44,7 @@ if($reg == 'yes'){
     exit;
 }
 
+$cookie_name = $_COOKIE['cookie_name'];
 if($pubpriv == 'Private') {
     if (session_status() !== PHP_SESSION_ACTIVE) {
         startSession();

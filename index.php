@@ -52,8 +52,9 @@ $cookie_name = $_COOKIE['cookie_name'];
             startSession();
         }
         if (($session_id !== session_id()) ||  ($cookie_name !== $_SESSION['cookie_name'] ) ) {
-            require "common/login.php";
-            exit;
+            $myUrl =  "${protocol}://${domain}/common/login.php";
+            header("location:$myUrl");
+
 
         } else {
             // logged in successfully;

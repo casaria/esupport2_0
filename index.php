@@ -28,7 +28,7 @@
 			**		Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 			**
 			***************************************************************************************/
-ob_end_flush();
+//ob_end_flush();
 
 //set the start time so we can calculate how long it takes to load the page.
 $mtime1 = explode(" ", microtime());

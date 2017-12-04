@@ -33,6 +33,7 @@
 
 //if the user is not logged in, set the default style sheet.
 //otherwise, grab the selected theme from the database.
+require_once  $_SERVER['DOCUMENT_ROOT']."/common/themelib.php";
 $theme = getThemeVars(getThemeName($cookie_name));
 
 $tablePadding =2;
@@ -1798,52 +1799,5 @@ console.log(document.querySelector('meta[name="viewport"]'));
     </HEAD>
 <?php
 
-function getThemeVars($name)
-{
-    global $mysql_themes_table, $db;
-
-    if ($name == '') {
-        return 'default';
-    } else {
-        $sql = "select * from $mysql_themes_table where name='$name'";
-        $result = $db->query($sql);
-        //$result = execsql($sql);
-        $row = $db->fetch_array($result);
-
-        return $row;
-    }
-
-}
-
-/******************************************************************==*****************************************
- **    function getThemeName():
- **        Takes one argument.  Queries the database and selects the theme associated with the user name that
- **    is given.  Returns the file path of the css file.
- ***********************************************************************************************************
- * @param $name
- * @return
- */
-function getThemeName($name)
-{
-    global $mysql_users_table, $mysql_settings_table, $default_theme, $db;
-
-    if ($name == '' || !isset($name)) {
-        return $default_theme;
-    } else {
-        $sql = "select theme from $mysql_users_table where user_name='$name'";
-        $result = $db->query($sql);
-        //$result = execsql($sql);
-        $row = $db->fetch_array($result);
-
-        if ($row[0] == 'default') {    //if users theme is set to default, get the default theme from the db
-            $sql = "select default_theme from $mysql_settings_table";
-            $result = $db->query($sql);
-            $row = $db->fetch_array($result);
-        }
-
-        return $row[0];
-    }
-
-}
 
 ?>

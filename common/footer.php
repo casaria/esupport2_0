@@ -30,8 +30,7 @@
 			**		Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 			**
 			***************************************************************************************/
-require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
-
+require_once  $_SERVER['DOCUMENT_ROOT']."/common/themelib.php";
 $theme = getThemeVars(getThemeName('default'));
 
 
@@ -47,4 +46,3 @@ if($enable_stats == 'On'){
 	echo "$lang_processed: $totaltime $lang_seconds, $db->queries $lang_queries<br>";
 }
 echo "</font> </center>";
-?>

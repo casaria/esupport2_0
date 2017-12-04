@@ -2672,7 +2672,7 @@ function showFormattedTime($seconds, $daysEnabled = FALSE, $DontRound15min = FAL
                     echo "<input type=text name=platform$i value=\"$row[2]\">";
                     echo "&nbsp;&nbsp; $lang_rank: <input type=text size=2 value='$row[1]' name=rank".$i.">";
 
-                    if(!eregi("kbase", $_SERVER['HTTP_REFERER']))
+                    if(!eregi("kbase", $base_url))
                         echo "&nbsp;&nbsp;<a href=control.php?t=topts&act=tpla&rm=delete&id=$row[0]>$lang_delete</a>?";
                     else
                         echo "&nbsp;&nbsp;<a href=control.php?t=kbase&act=plat&rm=delete&id=$row[0]>$lang_delete</a>?";

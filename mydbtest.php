@@ -38,7 +38,7 @@ if(isset($login))
 	
 	//if admin is contained in the url, we need to make sure the user is an
 	//admin before letting them login.
-	if(ereg("/admin", $_SERVER['HTTP_REFERER'])){
+	if(ereg("/admin", $base_url)){
 		//check the user name and password against the database.
 		if(checkUser($_POST['user'], md5($_POST['password']))){
 			if(isAdministrator($HTTP_POST_VARS['user'])){
@@ -48,7 +48,7 @@ if(isset($login))
 				$enc_pwd = md5($HTTP_POST_VARS['password']);
 				//session_register ("enc_pwd");
 				$_SESSION ["enc_pwd"] = $enc_pwd;
-				$referer = $_SERVER['HTTP_REFERER'];
+				$referer = $base_url;
 				header("Location: $referer");
 			}
 			else{
@@ -63,7 +63,7 @@ if(isset($login))
 
 	}
 
-	elseif ( (ereg("/supporter", $_SERVER['HTTP_REFERER']))  ){
+	elseif ( (ereg("/supporter", $base_url))  ){
 		//check the user name and password against the database.
 		if(checkUser($_POST['user'], md5($_POST['password']))){
 			if(isSupporter($HTTP_POST_VARS['user'])){
@@ -73,7 +73,7 @@ if(isset($login))
 				$enc_pwd = md5($HTTP_POST_VARS['password']);
 				//session_register("enc_pwd");
 				$_SESSION ["enc_pwd"] = $enc_pwd;
-				$referer = $_SERVER['HTTP_REFERER'];
+				$referer = $base_url;
 				header("Location: $referer");
 				setcookie('supporter_usercookie', $cookie_name,  time()+ 60*60*24*7);
 				setcookie('supporter_pwdcookie', $HTTP_POST_VARS['password'],  time()+ 60*60*24*7);
@@ -102,7 +102,7 @@ if(isset($login))
 				$enc_pwd = md5($HTTP_POST_VARS['password']);
 				//session_register ("enc_pwd");
 				$_SESSION ['enc_pwd'] = $enc_pwd;
-        $referer = $_SERVER['HTTP_REFERER'];
+        $referer = $base_url;
 				header("Location: $referer");
 				//echo"<BR>$cookie_name $enc_pwd";
 		}

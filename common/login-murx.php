@@ -768,7 +768,7 @@
     /*  Not a good ides7
      *  trim ($_POST['password'],"((?=^)(\s*))|((\s*)(?>$))"); *
      */
-//    $normalized_referer = strtolower(trim($_SERVER['HTTP_REFERER']));
+//    $normalized_referer = strtolower(trim($base_url));
 
     //if submit has been hit, set the cookie and reload the page immediately so the cookie takes effect.
     /*

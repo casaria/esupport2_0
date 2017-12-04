@@ -53,7 +53,7 @@ if(!isset($id)){
 				<table cellSpacing=1 cellPadding=5 width="100%" border=0><tr><td class=hf>';
 
 echo "<form action=\"control.php?t=kbase&act=kdel\" method=post>";
-$location = $_SERVER['HTTP_REFERER'] . "&act=kedit";
+$location = $base_url . "&act=kedit";
 echo "<input type=hidden name=location value=\"".$location."\">";
 
 	echo "<b><a href=\"control.php?t=kbase&act=kedit&order=platform\">$lang_platform</a></b></td>";

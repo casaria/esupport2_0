@@ -47,7 +47,7 @@ if (isset($cookie_name)){
 
 
 session_status() === PHP_SESSION_ACTIVE  ? $cookieuser = '' : startSession();
-$normalized_referer = strtolower (trim($_SERVER['HTTP_REFERER']));
+$normalized_referer = strtolower (trim($base_url));
 
 
 

@@ -47,7 +47,7 @@ if($reg == 'yes'){
 if($pubpriv == 'Private') {
     if (session_status() !== PHP_SESSION_ACTIVE) {
 
-        require"common/login20.php";
+        require"common/login.php";
         exit;
     }
 }

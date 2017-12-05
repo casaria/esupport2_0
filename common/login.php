@@ -93,7 +93,7 @@ function setSupporterCookie()
 
     //nov14 header("Location: $referer");
     setcookie('supporter_usercookie', $cookie_name,  time()+ $session_time, '/', 'casaria.net');
-    setcookie('supporter_pwdcookie', $normalized_password,  time()+ $session_time, '/', 'casaria.net');
+    //setcookie('supporter_pwdcookie', $normalized_password,  time()+ $session_time, '/', 'casaria.net');
     setcookie('session_id', session_id(), time() + $session_time, '/', 'casaria.net');
 }
 
@@ -260,6 +260,10 @@ function presetValues()
 
     $(document).ready(function(){
         new WOW().init();
+
+        function setfocus(){
+            document.login.user.focus();
+        }
     // jQuery methods go here...
 
 /*
@@ -458,7 +462,7 @@ if (isset($login)) {
     }
 
 }
-
+/*
 //check the cookie first.
 if(!isSet($_SESSION ['cookie_name'])) {
 if (eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
@@ -489,12 +493,7 @@ if (isset($_COOKIE['supporter_pwdcookie']))
         $cookiepwd = $_COOKIE['supporter_pwdcookie'];
 
     */
-    echo
-    '<script language="JavaScript">
-        function setfocus(){
-            document.login.user.focus();
-        }
-</script>';
+
 
     ob_end_flush();
 
@@ -506,9 +505,14 @@ if (isset($_COOKIE['supporter_pwdcookie']))
     else
     require "common/footer.php";
 
+
+
+
     //exit;
 
 }
+
+/*
     else{  //Cookie was set
 
 //if submit has not been pressed, check the cookie against the database.
@@ -531,7 +535,7 @@ if (isset($_COOKIE['supporter_pwdcookie']))
     } else {
         echo $lang_wronglogin;
 
-    }
+    }  */
 ?>
 
 </header>

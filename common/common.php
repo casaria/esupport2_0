@@ -380,7 +380,7 @@ function isCookieSet($cookie_name, $enc_pwd)
 ************************************************************************************************************/
 
 function startSession() {
-	global $session_time, $session_name;
+	global $session_time, $session_name, $cookie_name;
     session_set_cookie_params($session_time,'/', '.casaria.net',0,0);
     session_name($session_name);
     session_start();
@@ -389,14 +389,18 @@ function startSession() {
     } else {
         $_SESSION['count']++;
     }
-
+    $session_id = $_COOKIE['session_id'];
+    $cookie_name = $_COOKIE['cookie_name'];
+    if ( $cookie_name=='') {
+        $cookie_name = $_COOKIE['supporter_usercookie'];
+    }
 }
 
 function RewindSession() {
 	global $session_time, $session_name;
     //Reset the expiration time upon page load
    if (isset($_COOKIE[$session_name]))
-      setcookie($session_name, $_COOKIE[$session_name], time() + $session_time, "/");
+      setcookie($session_name, $_COOKIE[$session_name], time() + $session_time, "/", '.casaria.net');
 
    // trHIS MAY WORK BETTER
    // session_set_cookie_params($session_time); // 10 minutes.

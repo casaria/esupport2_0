@@ -60,12 +60,10 @@ if($reg == 'yes'){
         }
     }
 
-/*
-//try to get it from cookie
-if ($cookie_name = '') {
 
+if ($cookie_name = '') {
     $cookie_name =  $_COOKIE['cookie_name'];
-} */
+}
 
         if($enable_helpdesk == 'Off'){
 	printerror($on_off_reason);

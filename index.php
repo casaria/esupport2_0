@@ -78,7 +78,7 @@ if ($cookie_name = '') {
 
 
 RewindSession();
-``$language = getLanguage($_SESSION['cookie_name']);
+$language = getLanguage($_SESSION['cookie_name']);
 if($language == '')
 	require_once "lang/$default_language.lang.php";
 else

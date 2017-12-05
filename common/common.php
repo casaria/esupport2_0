@@ -2689,7 +2689,7 @@ function showFormattedTime($seconds, $daysEnabled = FALSE, $DontRound15min = FAL
         function listPlatforms()
         {
 
-            global $mysql_platforms_table, $db, $lang_delete, $lang_rank;
+            global $mysql_platforms_table, $db, $lang_delete, $lang_rank, $base_url;
 
             $sql = "select * from $mysql_platforms_table order by rank asc";
             $result = $db->query($sql);

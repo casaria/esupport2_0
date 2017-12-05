@@ -56,7 +56,7 @@ if($reg == 'yes'){
 
         } else {
             // logged in successfully;
-            echo "you are logged in";
+            //echo "you are logged in";
         }
     }
 startSession();  //fetch cookies too

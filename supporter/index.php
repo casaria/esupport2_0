@@ -49,7 +49,7 @@ if($pubpriv == 'Private') {
 
     } else {
         // logged in successfully;
-        echo "you are logged in";
+        //echo "you are logged in";
     }
 }
 

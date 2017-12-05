@@ -468,7 +468,7 @@ if (isset($login)) {
 
     } else {
 
-        ob_clean();
+        //ob_clean();
         //LOGIN CREDDENTIALS FAILED
         $myUrl = '';
         echo $lang_wronglogin . " CheckUSer failed!";

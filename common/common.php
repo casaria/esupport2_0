@@ -960,6 +960,29 @@ function isAdministrator($name)
 
 }
 
+
+/***********************************************************************************************************
+ **	function getPrivelegesAsInteger():
+ **		Takes a string as an argument.  Queries the database and returns an authorization integer bitmap
+ *	to 1.  Else, returns false.
+ ************************************************************************************************************/
+function getPrivelegesAsInteger($name)
+{
+    global $mysql_users_table, $db;
+
+    $sql = "select user,supervisor, supporter, admin, accountant, superuser from users where user_name='$name'";
+    $result = $db->query($sql);
+    $row = $db->fetch_row($result);
+    $ret = 0;
+    if($result) {
+        for ($n = 0; $n < 6; $n++) {
+            $ret += $row[$n] * pow(2, $n);
+        }
+    }
+    return $ret; //or 0 if not found
+}
+
+
 /***********************************************************************************************************
 **	function getsGroup():
 **		Takes an integer as input.  Queries the supporter groups table and returns the group name associated

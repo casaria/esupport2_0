@@ -31,6 +31,20 @@ require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
 
 
+if (isset($_POST['refer'])) {
+    $normalized_referer = strtolower (trim($_POST['refer']));
+    switch ($normalized_referer){
+        case 'admin':
+                $normalized_referer = "/admin/control.php";
+            break;
+        case 'supporter':
+            $normalized_referer = "/support/index.php";
+            break;
+
+        default:
+            $normalized_referer = "";
+    }
+
 if (isset($_SESSION ['cookie_name'])){
     $cookie_name = $_SESSION ['cookie_name'];
     if ($cookie_name !=='') {
@@ -49,8 +63,6 @@ if (isset($_SESSION ['cookie_name'])){
 }
 
 
-
-$normalized_referer = strtolower (trim($base_url));
 
 
 
@@ -109,6 +121,13 @@ function presetValues()
     }
 }
 
+
+function logAuthFailure(){
+global $lang_wronglogin, $lang_strikes_count;
+    ob_end_flush();
+    http_response_code(403);  //let's log it in nginx log
+    echo $lang_wronglogin+ " " + $lang_strikes_count;
+}
 
 ?>
 
@@ -379,7 +398,7 @@ function presetValues()
 <?php
 if($enable_helpdesk == 'Off'){
     printerror($on_off_reason);
-  //  exit;
+    exit;
 }
 
 
@@ -393,149 +412,83 @@ if (isset($login)) {
     if (isset($_POST['password'])) {
         $normalized_password = trim($_POST['password']);
     }
-    if ($$cookie_name == '') {
-        $cookie_name = $normalized_username;
-    }
-    if (ereg("/admin", $normalized_referer)) {
-        ob_end_flush();
-        //check the user name and password against the database.
-        if (checkUser($normalized_username, md5($normalized_password))) {
-            if (isAdministrator($normalized_username)) {
-                setSupporterCookie();
 
-                //nov14 header("Location: $referer");
-            } else {
-                presetValues();
-                echo $lang_notadmin;
-            //    exit;
-            }
-        } else {
-            echo $lang_wronglogin;
-            presetValues();
-          //  exit;
-        }
 
-    } elseif ((ereg("/supporter", $normalized_referer))) {
-        //check the user name and password against the database.
-        if (checkUser($normalized_username, md5($normalized_password))) {
-            if (isSupporter($normalized_username)) {
-                setSupporterCookie();
-            } else {
-                setUserCookie();
-                ob_end_clean();
-                $myUrl =  "${protocol}://${domain}/index.php";
-                header("location:$myUrl");
-                echo $lang_notsupporter;
-                presetValues();
-             //   exit;
-            }
-        } else {  //authentication failed
-            ob_end_flush();
-            http_response_code(403);  //let's log it in nginx log
-            echo $lang_wronglogin;
 
-        }
+    //check the user name and password against the database.
+    if (checkUser($normalized_username, md5($normalized_password))) {
+        $level =  getPrivelegesAsInteger($normalized_username);
 
-    } //otherwise, the user is not logging in to the admin site.
-    else {
-        //check the user name and password against the database.
-        if (checkUser($normalized_username, md5($normalized_password))) {
-            if (isSupporter($normalized_username)) {
-                setSupporterCookie();
-                ob_end_clean();
-                presetValues();
-                $myUrl =  "${protocol}://${domain}/supporter/index.php";
-                header("location: $myUrl");
-            } else {
-            setUserCookie();
-            presetValues();
+        if ($level== 0) {
             ob_end_clean();
-            $myUrl =  "${protocol}://${domain}/index.php";
-            header("location: $myUrl");
-            }
-        } else {
-            ob_end_flush();
-            presetValues();
-            echo $lang_wronglogin;
-           // exit;
+            setUserCookie();
+            $myUrl =  "${protocol}://${domain}/common/login.php".$postpara."inactive";
         }
+        elseif ($level == 1) {
+            ob_end_clean();
+            setUserCookie();
+            $myUrl = "${protocol}://${domain}/index.php".$postpara."welcome";
+        }
+        elseif ($level == 3) {
+            ob_end_clean();
+            setUserCookie();
+            $myUrl = "${protocol}://${domain}/index.php".$postpara."welcome-supervisor";
+        }
+        elseif ($level == 7) {
+            ob_end_clean();
+            setSupporterCookie();
+            $myUrl = "${protocol}://${domain}/supporter/index.php".$postpara."welcome-supporter";
+        }
+        elseif ($level == 15) {
+            ob_end_clean();
+            setSupporterCookie();
+            $myUrl = "${protocol}://${domain}/supporter/index.php".$postpara."welcome-admin";
+        }
+        elseif ($level == 31) {
+            ob_end_clean();
+            setSupporterCookie();
+            $myUrl = "${protocol}://${domain}/supporter/index.php".$postpara."welcome-accountant";
+        }
+        elseif ($level == 63) {
+            ob_end_clean();
+            setSupporterCookie();
+            $myUrl = "${protocol}://${domain}/supporter/index.php".$postpara."welcome-superAdmin";
+        }
+    } else {
+
+        ob_clean();
+        //LOGIN CREDDENTIALS FAILED
+        $myUrl = '';
+        echo $lang_wronglogin . " CheckUSer failed!";
+        logAuthFailure();
     }
 
-}
-/*
-//check the cookie first.
-if(!isSet($_SESSION ['cookie_name'])) {
-if (eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
-    $sup = 1;
-else
-    $sup = 0;
+    if ($normalized_referer=='') {
+        $postpara = "?res=";
+    } else {
+        $postpara = "?".$normalized_referer."&res=";
+    }
 
-/*if (isset($_COOKIE['supporter_usercookie']))
-    $cookie_name = $_COOKIE['supporter_usercookie'];
-if (isset($_COOKIE['supporter_pwdcookie']))
-    $cookiepwd = $_COOKIE['supporter_pwdcookie'];
-*/
+    // send them to the correct page
+    if ($myUrl !== '') {
+        header("location: $myUrl");
+    }
+    //will exit end here  if success
+
+
+}  // if (isset $login)  login button
+
+
 ?>
 <header>
     <?php
 
-    /*
-    //check the cookie first.
-    if (!isSet($_SESSION ['cookie_name'])) {
-    if (eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
-        $sup = 1;
-    else
-        $sup = 0;
-
-    if (isset($_COOKIE['supporter_usercookie']))
-        $cookie_name = $_COOKIE['supporter_usercookie'];
-    if (isset($_COOKIE['supporter_pwdcookie']))
-        $cookiepwd = $_COOKIE['supporter_pwdcookie'];
-
-    */
-
-
-    ob_end_flush();
+    ob_flush();
 
     require "mdblogin.php";
 
-
-    if(eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
-    require "../common/footer.php";
-    else
-    require "common/footer.php";
-
-
-
-
     //exit;
 
-}
-
-/*
-    else{  //Cookie was set
-
-//if submit has not been pressed, check the cookie against the database.
-
-        if(preg_match("/admin/i", $PHP_SELF) && !isAdministrator($cookie_name) && $cookie_name != ''){
-            echo "$lang_notadmin";
-          //  exit;
-        }
-
-    }
-    //get some globals about the user
-    if ($cookie_name != '') {
-        $user_id = getUserId($cookie_name);
-        $ugID_list = getUsersGroupIDList($user_id);
-        ob_end_clean();
-        $myUrl =  "${protocol}://${domain}/index.php";
-        header("location: $myUrl");
-
-
-    } else {
-        echo $lang_wronglogin;
-
-    }  */
 ?>
 
 </header>
@@ -543,4 +496,3 @@ if (isset($_COOKIE['supporter_pwdcookie']))
 
 </body>
 </HTML>
-

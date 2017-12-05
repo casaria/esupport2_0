@@ -38,6 +38,8 @@ if (isset($_SESSION ['cookie_name'])){
         ////$enc_pwd = ($_SESSION['enc_pwd']);
     }
 } else {
+
+    //***  REMOVE
     if (isset($_POST['user'])) {
         $normalized_username = strtolower(trim($_POST['user']));
     }

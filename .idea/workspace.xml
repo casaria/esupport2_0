@@ -250,13 +250,13 @@
       <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="61" column="41" lean-forward="false" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+            <state relative-caret-position="614">
+              <caret line="41" column="20" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
               <folding>
                 <element signature="e#446#467#0#PHP" expanded="true" />
-                <marker date="1512440510438" expanded="true" signature="16461:16551" ph="..." />
-                <marker date="1512440510438" expanded="true" signature="16490:16542" ph="{...}" />
-                <marker date="1512440510438" expanded="true" signature="16763:16765" ph="..." />
+                <marker date="1512440763102" expanded="true" signature="16483:16573" ph="..." />
+                <marker date="1512440763102" expanded="true" signature="16512:16564" ph="{...}" />
+                <marker date="1512440763102" expanded="true" signature="16785:16787" ph="..." />
               </folding>
             </state>
           </provider>
@@ -1099,14 +1099,7 @@
       <workItem from="1512311255218" duration="3475000" />
       <workItem from="1512318191185" duration="20067000" />
       <workItem from="1512346502504" duration="19553000" />
-      <workItem from="1512376240662" duration="47269000" />
-    </task>
-    <task id="LOCAL-02545" summary="ob_start">
-      <created>1512389057374</created>
-      <option name="number" value="02545" />
-      <option name="presentableId" value="LOCAL-02545" />
-      <option name="project" value="LOCAL" />
-      <updated>1512389057374</updated>
+      <workItem from="1512376240662" duration="47522000" />
     </task>
     <task id="LOCAL-02546" summary="ob_start">
       <created>1512389103924</created>
@@ -1444,11 +1437,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512439403173</updated>
     </task>
-    <option name="localTasksCounter" value="2594" />
+    <task id="LOCAL-02594" summary="ob_start">
+      <created>1512440519839</created>
+      <option name="number" value="02594" />
+      <option name="presentableId" value="LOCAL-02594" />
+      <option name="project" value="LOCAL" />
+      <updated>1512440519839</updated>
+    </task>
+    <option name="localTasksCounter" value="2595" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1811049000" />
+    <option name="totallyTimeSpent" value="1811302000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1787,12 +1787,12 @@
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>414</line>
+          <line>416</line>
           <option name="timeStamp" value="503" />
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>434</line>
+          <line>436</line>
           <option name="timeStamp" value="505" />
         </line-breakpoint>
         <line-breakpoint type="php">
@@ -1807,7 +1807,7 @@
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>508</line>
+          <line>510</line>
           <option name="timeStamp" value="517" />
         </line-breakpoint>
         <line-breakpoint type="php">
@@ -1817,7 +1817,7 @@
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>514</line>
+          <line>516</line>
           <option name="timeStamp" value="520" />
         </line-breakpoint>
         <line-breakpoint type="php">
@@ -1827,22 +1827,22 @@
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>460</line>
+          <line>462</line>
           <option name="timeStamp" value="522" />
         </line-breakpoint>
         <line-breakpoint suspend="NONE" type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>441</line>
+          <line>443</line>
           <option name="timeStamp" value="526" />
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>421</line>
+          <line>423</line>
           <option name="timeStamp" value="527" />
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>395</line>
+          <line>397</line>
           <option name="timeStamp" value="531" />
         </line-breakpoint>
         <line-breakpoint type="php">
@@ -1882,7 +1882,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>70</line>
+          <line>72</line>
           <option name="timeStamp" value="556" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -1899,6 +1899,11 @@
           <url>file://$PROJECT_DIR$/index.php</url>
           <line>52</line>
           <option name="timeStamp" value="561" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/common/login.php</url>
+          <line>62</line>
+          <option name="timeStamp" value="562" />
         </line-breakpoint>
         <breakpoint enabled="true" type="php-exception">
           <properties name="mysqli_sql_exception" />
@@ -1923,7 +1928,7 @@
           <properties />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="562" />
+      <option name="time" value="563" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="index.php">
@@ -2700,13 +2705,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="61" column="41" lean-forward="false" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+        <state relative-caret-position="614">
+          <caret line="41" column="20" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
           <folding>
             <element signature="e#446#467#0#PHP" expanded="true" />
-            <marker date="1512440510438" expanded="true" signature="16461:16551" ph="..." />
-            <marker date="1512440510438" expanded="true" signature="16490:16542" ph="{...}" />
-            <marker date="1512440510438" expanded="true" signature="16763:16765" ph="..." />
+            <marker date="1512440763102" expanded="true" signature="16483:16573" ph="..." />
+            <marker date="1512440763102" expanded="true" signature="16512:16564" ph="{...}" />
+            <marker date="1512440763102" expanded="true" signature="16785:16787" ph="..." />
           </folding>
         </state>
       </provider>

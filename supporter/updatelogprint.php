@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php startSession(); //session_start(); ?>
 <script language="Javascript1.2">
 <!--
 

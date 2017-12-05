@@ -42,7 +42,9 @@ require_once "common.php";
 //}
 session_set_cookie_params(600,'/', '.casaria.net',0,0);
 
-session_start();
+
+
+startSession();
 
 $_SESSION = array();
 

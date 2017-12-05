@@ -51,7 +51,8 @@ if ( $cookie_name=='') {
 }
     if($pubpriv == 'Private') {
         if (session_status() !== PHP_SESSION_ACTIVE) {
-            startSession(); // session_start();
+            startSession(); //
+            session_start();
         }
         if (($session_id !== session_id()) ||  ($cookie_name !== $_SESSION['cookie_name'] ) ) {
             $myUrl =  "${protocol}://${domain}/common/login.php";

@@ -28,7 +28,7 @@
 			**		Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 			**
 			***************************************************************************************/
-session_start();
+startSession(); //session_start();
 
 
 require_once "../common/config.php";

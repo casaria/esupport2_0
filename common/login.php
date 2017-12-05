@@ -402,6 +402,11 @@ if($enable_helpdesk == 'Off'){
     exit;
 }
 
+if ($normalized_referer=='') {
+    $postpara = "?res=";
+} else {
+    $postpara = "?".$normalized_referer."&res=";
+}
 
 //if submit has been hit, set the cookie and reload the page immediately so the cookie takes effect.
 if (isset($login)) {
@@ -470,11 +475,7 @@ if (isset($login)) {
         logAuthFailure();
     }
 
-    if ($normalized_referer=='') {
-        $postpara = "?res=";
-    } else {
-        $postpara = "?".$normalized_referer."&res=";
-    }
+
 
     // send them to the correct page
     if ($myUrl !== '') {

@@ -390,10 +390,6 @@ function startSession() {
         $_SESSION['count']++;
     }
     $session_id = $_COOKIE['session_id'];
-    $cookie_name = $_COOKIE['cookie_name'];
-    if ( $cookie_name=='') {
-        $cookie_name = $_COOKIE['supporter_usercookie'];
-    }
 }
 
 function RewindSession() {

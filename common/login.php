@@ -92,7 +92,7 @@ function setUserCookie()
     setSession();
 
     setcookie('cookieuser', $cookie_name, time() + $session_time, '/', 'casaria.net');
-    setcookie('cookiepwd', $normalized_password, time() + $session_time, '/', 'casaria.net');
+   // setcookie('cookiepwd', $normalized_password, time() + $session_time, '/', 'casaria.net');
     setcookie('session_id', session_id(), time() + $session_time, '/', 'casaria.net');
 }
 

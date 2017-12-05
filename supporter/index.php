@@ -34,6 +34,8 @@ require_once $_SERVER['DOCUMENT_ROOT']."/common/mysql.class.php";
 require_once $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 
 startSession();
+$cookie_name = $_COOKIE['supporter_usercookie'];
+
 
 /* if($SERVER_PORT == 80 && $enable_ssl == 'On' && (!isset($cookie_name) || $cookie_name == '')){
 	$site = eregi_replace("http", "https", $supporter_site_url);

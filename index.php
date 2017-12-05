@@ -39,6 +39,7 @@ require_once $_SERVER['DOCUMENT_ROOT']."/common/mysql.class.php";
 require_once $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 
 startSession();
+$cookie_name = $_COOKIE['cookie_name'];
 
 if($reg == 'yes'){
     require_once "lang/$default_language.lang.php";

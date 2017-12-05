@@ -59,9 +59,9 @@ if($reg == 'yes'){
             echo "you are logged in";
         }
     }
+startSession();  //fetch cookies too
 
-
-if ($cookie_name = '') {
+/*if ($cookie_name = '') {
     $cookie_name =  $_COOKIE['cookie_name'];
     if ($cookie_name = '')  $cookie_name = $_COOKIE['supporter_usercookie'];
 }

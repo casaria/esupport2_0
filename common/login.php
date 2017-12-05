@@ -32,10 +32,10 @@ require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
 
 
 if (isset($_POST['refer'])) {
-    $normalized_referer = strtolower (trim($_POST['refer']));
-    switch ($normalized_referer){
+    $normalized_referer = strtolower(trim($_POST['refer']));
+    switch ($normalized_referer) {
         case 'admin':
-                $normalized_referer = "/admin/control.php";
+            $normalized_referer = "/admin/control.php";
             break;
         case 'supporter':
             $normalized_referer = "/support/index.php";
@@ -44,6 +44,7 @@ if (isset($_POST['refer'])) {
         default:
             $normalized_referer = "";
     }
+}
 
 if (isset($_SESSION ['cookie_name'])){
     $cookie_name = $_SESSION ['cookie_name'];

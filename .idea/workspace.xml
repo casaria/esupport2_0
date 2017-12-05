@@ -26,7 +26,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/common/common.php" afterPath="$PROJECT_DIR$/common/common.php" />
+      <change beforePath="$PROJECT_DIR$/common/login.php" afterPath="$PROJECT_DIR$/common/login.php" />
     </list>
     <ignored mask="workspace.xml" />
     <ignored mask="error_log" />
@@ -160,16 +160,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-796">
-              <caret line="400" column="2" lean-forward="false" selection-start-line="400" selection-start-column="2" selection-end-line="400" selection-end-column="2" />
+            <state relative-caret-position="-99">
+              <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
               <folding>
                 <element signature="e#446#467#0#PHP" expanded="true" />
-                <marker date="1512514468154" expanded="true" signature="3813:3861" ph="..." />
-                <marker date="1512514468154" expanded="true" signature="16013:16054" ph="..." />
-                <marker date="1512514468154" expanded="true" signature="16082:16084" ph="..." />
+                <marker date="1512514893475" expanded="true" signature="3811:3859" ph="..." />
+                <marker date="1512514893475" expanded="true" signature="16011:16052" ph="..." />
+                <marker date="1512514893475" expanded="true" signature="16080:16082" ph="..." />
               </folding>
             </state>
           </provider>
@@ -185,7 +185,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="common.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/common.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1168">
@@ -608,8 +608,8 @@
         <option value="$PROJECT_DIR$/supporter/index.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f5a594a7-31d9-494d-a74e-43164176beae/console.sql" />
-        <option value="$PROJECT_DIR$/common/login.php" />
         <option value="$PROJECT_DIR$/common/common.php" />
+        <option value="$PROJECT_DIR$/common/login.php" />
       </list>
     </option>
   </component>
@@ -1046,14 +1046,7 @@
       <workItem from="1512376240662" duration="51919000" />
       <workItem from="1512493638967" duration="481000" />
       <workItem from="1512494467936" duration="515000" />
-      <workItem from="1512495118589" duration="15459000" />
-    </task>
-    <task id="LOCAL-02555" summary="ob_start">
-      <created>1512392552106</created>
-      <option name="number" value="02555" />
-      <option name="presentableId" value="LOCAL-02555" />
-      <option name="project" value="LOCAL" />
-      <updated>1512392552106</updated>
+      <workItem from="1512495118589" duration="15787000" />
     </task>
     <task id="LOCAL-02556" summary="ob_start">
       <created>1512393571964</created>
@@ -1391,11 +1384,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512514481349</updated>
     </task>
-    <option name="localTasksCounter" value="2604" />
+    <task id="LOCAL-02604" summary="ob_start">
+      <created>1512514584866</created>
+      <option name="number" value="02604" />
+      <option name="presentableId" value="LOCAL-02604" />
+      <option name="project" value="LOCAL" />
+      <updated>1512514584866</updated>
+    </task>
+    <option name="localTasksCounter" value="2605" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1832154000" />
+    <option name="totallyTimeSpent" value="1832482000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1734,7 +1734,7 @@
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>490</line>
+          <line>491</line>
           <option name="timeStamp" value="517" />
         </line-breakpoint>
         <line-breakpoint type="php">
@@ -1749,7 +1749,7 @@
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>418</line>
+          <line>419</line>
           <option name="timeStamp" value="531" />
         </line-breakpoint>
         <line-breakpoint type="php">
@@ -1769,7 +1769,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>84</line>
+          <line>85</line>
           <option name="timeStamp" value="556" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -1784,7 +1784,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>74</line>
+          <line>75</line>
           <option name="timeStamp" value="562" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -1814,7 +1814,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/common/login.php</url>
-          <line>398</line>
+          <line>399</line>
           <option name="timeStamp" value="569" />
         </line-breakpoint>
         <breakpoint enabled="true" type="php-exception">
@@ -2374,19 +2374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-796">
-          <caret line="400" column="2" lean-forward="false" selection-start-line="400" selection-start-column="2" selection-end-line="400" selection-end-column="2" />
-          <folding>
-            <element signature="e#446#467#0#PHP" expanded="true" />
-            <marker date="1512514468154" expanded="true" signature="3813:3861" ph="..." />
-            <marker date="1512514468154" expanded="true" signature="16013:16054" ph="..." />
-            <marker date="1512514468154" expanded="true" signature="16082:16084" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/common.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1168">
@@ -2576,6 +2563,19 @@
             <marker date="1512514564951" expanded="true" signature="130792:130852" ph="update ${$mysql_tickets_table}... " />
             <marker date="1512514564951" expanded="true" signature="131093:131114" ph="select * fro... ugroups" />
             <marker date="1512514564951" expanded="true" signature="131482:131542" ph="update ${$mysql_tickets_table}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-99">
+          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+          <folding>
+            <element signature="e#446#467#0#PHP" expanded="true" />
+            <marker date="1512514893475" expanded="true" signature="3811:3859" ph="..." />
+            <marker date="1512514893475" expanded="true" signature="16011:16052" ph="..." />
+            <marker date="1512514893475" expanded="true" signature="16080:16082" ph="..." />
           </folding>
         </state>
       </provider>

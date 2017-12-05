@@ -381,7 +381,7 @@ function isCookieSet($cookie_name, $enc_pwd)
 
 function startSession() {
 	global $session_time, $session_name;
-    session_set_cookie_params($session_time);
+    session_set_cookie_params($session_time,'/', '.casaria.net',0,0);
     session_name($session_name);
     session_start();
     if (!isset($_SESSION['count'])) {
@@ -397,6 +397,10 @@ function RewindSession() {
     //Reset the expiration time upon page load
    if (isset($_COOKIE[$session_name]))
       setcookie($session_name, $_COOKIE[$session_name], time() + $session_time, "/");
+
+   // trHIS MAY WORK BETTER
+   // session_set_cookie_params($session_time); // 10 minutes.
+   // session_regenerate_id(true);
 
 }
 /***********************************************************************************************************

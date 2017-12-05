@@ -40,13 +40,17 @@ require_once "common.php";
 //if (isset($_COOKIE[session_name()])) {
     setcookie(session_id(), '', time() - $session_time, '/', 'casaria.net');
 //}
+session_set_cookie_params(600,'/', '.casaria.net',0,0);
+
+session_start();
+
 $_SESSION = array();
 
-session_destroy();
 session_unset();
 
+session_destroy();
 
-    $myUrl =  "${protocol}://${domain}/index.php";
+$myUrl =  "${protocol}://${domain}/index.php";
     header("location: $myUrl");
     exit;
 

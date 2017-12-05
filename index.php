@@ -63,6 +63,7 @@ if($reg == 'yes'){
 
 if ($cookie_name = '') {
     $cookie_name =  $_COOKIE['cookie_name'];
+    if ($cookie_name = '')  $cookie_name = $_COOKIE['supporter_usercookie'];
 }
 
         if($enable_helpdesk == 'Off'){

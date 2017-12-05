@@ -29,7 +29,6 @@ $cookieuser = '';
 //common.php
 startSession();
 
-$cookie_name = $_SESSION['cookie_name'];
 //echo "cookie_name = $cookie_name <br>";
 //echo "session ID =" . session_id(). " <br>";
 //if submit has been hit, set the cookie and reload the page immediately so the cookie takes effect.

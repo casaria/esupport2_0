@@ -60,12 +60,12 @@ if($reg == 'yes'){
         }
     }
 
-
+/*
 //try to get it from cookie
 if ($cookie_name = '') {
 
     $cookie_name =  $_COOKIE['cookie_name'];
-}
+} */
 
         if($enable_helpdesk == 'Off'){
 	printerror($on_off_reason);
@@ -78,7 +78,7 @@ if ($cookie_name = '') {
 
 
 RewindSession();
-$language = getLanguage($_SESSION['cookie_name']);
+``$language = getLanguage($_SESSION['cookie_name']);
 if($language == '')
 	require_once "lang/$default_language.lang.php";
 else

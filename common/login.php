@@ -55,7 +55,7 @@ $normalized_referer = strtolower (trim($base_url));
 function setSession(){
     global $normalized_username, $normalized_password, $remote_ip;
 
-    session_status() === PHP_SESSION_ACTIVE  ? $cookieuser = '' : startSession();
+    //session_status() === PHP_SESSION_ACTIVE  ? $cookieuser = '' : startSession();
     $cookie_name = $normalized_username;
 //session_register ("cookie_name");
     // startSession();
@@ -466,11 +466,11 @@ if (eregi("supporter", $PHP_SELF) || eregi("admin", $PHP_SELF))
 else
     $sup = 0;
 
-if (isset($_COOKIE['supporter_usercookie']))
+/*if (isset($_COOKIE['supporter_usercookie']))
     $cookie_name = $_COOKIE['supporter_usercookie'];
 if (isset($_COOKIE['supporter_pwdcookie']))
     $cookiepwd = $_COOKIE['supporter_pwdcookie'];
-
+*/
 ?>
 <header>
     <?php

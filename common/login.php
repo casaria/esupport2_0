@@ -29,7 +29,7 @@ require_once  $_SERVER['DOCUMENT_ROOT']."/common/$database.class.php";
 require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 /** @noinspection PhpIncludeInspection */
 require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
-//session_start();
+
 
 if (isset($_SESSION ['cookie_name'])){
     $cookie_name = $_SESSION ['cookie_name'];
@@ -54,14 +54,12 @@ $normalized_referer = strtolower (trim($base_url));
 
 function setSession(){
     global $normalized_username, $normalized_password, $remote_ip;
-
+    startSession();  //creates a new one
     //session_status() === PHP_SESSION_ACTIVE  ? $cookieuser = '' : startSession();
+
     $cookie_name = $normalized_username;
-//session_register ("cookie_name");
-    // startSession();
     $_SESSION ['cookie_name'] = $cookie_name;
     $enc_pwd = md5($normalized_password);
-//session_register ("enc_pwd");
     $_SESSION ['enc_pwd'] = $enc_pwd;
     $_SESSION ['timestamp'] = time();
     $_SESSION ['IP'] = $remote_ip;

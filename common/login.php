@@ -484,7 +484,6 @@ if (isset($login)) {
         logAuthFailure();
         ob_clean();
         exit;
-
     }
 
 

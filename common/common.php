@@ -3270,34 +3270,30 @@ function displayUserTicket($result)
     return $summary;
 }
 
-    /**	Takes the user id and returns an array containing the list of group tablenames(ugroupN) that the user is in.function getUsersGroupList($id)
+/**	Takes the user id and returns an array containing the list of group tablenames(ugroupN) that the user is in.	**/
+function getUsersGroupList($id)
 {
-	global $mysql_ugroups_table, $num_groups, $db;
-
-
-
-	//if($num_groups == 1)
-    		$sql = "select id from $mysql_ugroups_table";
-	//else
-	//	$sql = "select id from $mysql_ugroups_table where id != 1";
-
-	$result = $db->query($sql);
-	//now we have the list of all the user groups.
-	$i=0;
-	while($row = $db->fetch_row($result)){
-		if($num_groups != 1){
-			$sql2 = "select id from ugroup" . $row[0] . " where user_id=$id";
-			$result2 = $db->query($sql2);
-			if($db->num_rows($result2) != 0){
-				$grouplist[$i] = "ugroup" . $row[0];
-				$i++;
-			}
-		 }
-	}
-	//$grouplist[0]="ugroup1";
-	//returns a list of strings (group table names).
-	return $grouplist;
-
+    global $mysql_ugroups_table, $num_groups, $db;
+    //if($num_groups == 1)
+    $sql = "select id from $mysql_ugroups_table";
+    //else
+    //	$sql = "select id from $mysql_ugroups_table where id != 1";
+    $result = $db->query($sql);
+    //now we have the list of all the user groups.
+    $i=0;
+    while($row = $db->fetch_row($result)){
+        if($num_groups != 1){
+            $sql2 = "select id from ugroup" . $row[0] . " where user_id=$id";
+            $result2 = $db->query($sql2);
+            if($db->num_rows($result2) != 0){
+                $grouplist[$i] = "ugroup" . $row[0];
+                $i++;
+            }
+        }
+    }
+    //$grouplist[0]="ugroup1";
+    //returns a list of strings (group table names).
+    return $grouplist;
 }
 
 /**	Takes the user id and returns an array containing the list of group tablenames(ugroupN) that the user is in.	**/

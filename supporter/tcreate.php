@@ -403,7 +403,7 @@ function createSupporterInfo()
 				</tr><tr>
 				<td class=back2 align=left>'.$lang_supporter.': </td>
 				<td class=back align=left>
-				<select id="selectwidth" name=supporter_id>';
+				<select class="selectwidth" name=supporter_id>';
 				createSupporterMenu($sg);
 				echo '</select></td></tr>';
 
@@ -412,14 +412,14 @@ function createSupporterInfo()
 		echo'	<tr>
 				<td class=back2 align=left>'.$lang_ticket.' '.$lang_priority.':</td>
 				<td class=back>
-				<select id="selectwidth" name=priority>';
+				<select class="selectwidth" name=priority>';
 				createPriorityMenu();  
 		echo '</select></tr></td>';
 
 		echo '<tr>
 				<td class=back2 align=left>'.$lang_ticket.' '.$lang_status.':</td>
 				<td class=back>
-				<select id="selectwidth2" name=status>';
+				<select class="selectwidth2" name=status>';
 
 				createStatusMenu(0,1);
 

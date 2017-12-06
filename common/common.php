@@ -177,15 +177,19 @@ function authenticate(){
     global $pubpriv, $session_id, $protocol, $domain, $cookie_name;
 
     startSession(); //session_start();
-    if (isset($_SESSION['supporter_usercookie'])) $cookie_name = $_SESSION['supporter_usercookie'];
-    elseif (isset($_SESSION['cookieuser'])) $cookie_name = $_SESSION['cookieuser'];
-    else {
+    if (isset($_SESSION['supporter_usercookie'])) {
+        $cookie_name = $_SESSION['supporter_usercookie'];
+    }
+    elseif (isset($_SESSION['cookieuser'])) {
+        $cookie_name = $_SESSION['cookieuser'];
+
+    } else {
         unset($cookie_name);  //let it stal
     }
 
 
     if($pubpriv == 'Private') {
-        if (($session_id !== session_id()) || (!$cookie_name) || ($cookie_name == '')) {
+        if (($session_id !== session_id()) || (!isset($cookie_name))) {
             $myUrl =  "${protocol}://${domain}/common/login.php";
             header("location: $myUrl");
         }

@@ -483,7 +483,6 @@ if (isset($login)) {
 
         </script>
 <?php
-        $myURL='';Q
         logAuthFailure();
         ob_flush();
         exit;

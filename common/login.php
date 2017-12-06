@@ -246,9 +246,6 @@ global $lang_wronglogin, $lang_strikes_count;
     $(document).ready(function(){
         new WOW().init();
 
-
-        $("#passwordcard").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd animationend', this.removeClass('wow zoomIn'));
-
         function capsLock(e){
 
             var kc = e.keyCode ? e.keyCode : e.which;

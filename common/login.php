@@ -245,6 +245,9 @@ global $lang_wronglogin, $lang_strikes_count;
 
     $(document).ready(function(){
 
+        new WOW().init();
+
+
         function capsLock(e){
             var kc = e.keyCode ? e.keyCode : e.which;
             var sk = e.shiftKey ? e.shiftKey : kc === 16;
@@ -253,7 +256,6 @@ global $lang_wronglogin, $lang_strikes_count;
             document.getElementById('divCaps').style.visibility = visibility
         }
 
-        new WOW().init();
 
 
         $("#newPassForm").submit(function(event){

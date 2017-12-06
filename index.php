@@ -56,7 +56,7 @@ if($pubpriv == 'Private') {
 }
 
 if ($cookie_name = '') {
-    $cookie_name =  $_COOKIE['cookie_name'];
+    $cookie_name =  $_COOKIE['cookieuser'];
     if ($cookie_name = '')  $cookie_name = $_COOKIE['supporter_usercookie'];
 }
 

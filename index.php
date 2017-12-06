@@ -54,7 +54,7 @@ if($reg == 'yes'){
 
 
             $myUrl =  "${protocol}://${domain}/common/login.php";
-            header("location:$myUrl");
+            header("location: $myUrl");
 
 
         } else {

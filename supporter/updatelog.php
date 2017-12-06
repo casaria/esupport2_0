@@ -28,12 +28,14 @@
 			**		Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 			**
 			***************************************************************************************/
-startSession(); //session_start();
-
 
 require_once "../common/config.php";
 require_once "../common/$database.class.php";
 require_once "../common/common.php";
+
+startSession(); //session_start();
+
+
 //+++ avoid "you are not a supporter" if selecting the updatelog
 //require_once "../common/login.php";
 RewindSession();

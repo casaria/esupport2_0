@@ -983,8 +983,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 }
 
                 .task-textarea {
-                    rows=3;
-                    cols=36;
+                    width: 350px;
+                    height: 80px;
                 }
 
                 .tkt-date{
@@ -1624,8 +1624,8 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 }
 
                 .task-textarea {
-                    rows=3;
-                    cols=50;
+                    width: 350px;
+                    height: 80px;
                 }
 
                 .tkt-date{

@@ -38,7 +38,7 @@ $language = getLanguage($cookie_name);
 if ($language == '')
     require_once "../lang/$default_language.lang.php";
 
-require "../common/login.php";
+
 
 
 $time_offset = getTimeOffset($cookie_name);

@@ -449,6 +449,7 @@ if (isset($login)) {
         $myUrl = '';
         echo $lang_wronglogin . " CheckUSer failed!";
         $modalMessage = "$lang_wronglogin". " password/username incorrect!";
+
         logAuthFailure();
     }
 

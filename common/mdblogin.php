@@ -233,13 +233,13 @@
 
                                     <!--Body-->
                                     <div class="md-form">
-                                        <i class="fa fa-user prefix"></i>
+                                        <i class="fa fa-user prefix yellow-text"></i>
                                         <input type="text" id="form1" name="user" class="form-control">
                                         <label for="form1">Your user name</label>
                                     </div>
 
                                     <div class="md-form">
-                                        <i class="fa fa-lock prefix"></i>
+                                        <i class="fa fa-lock prefix yellow-text"></i>
                                         <input type="password" id="form2" name="password" class="form-control">
                                         <label for="form2">Your password</label>
                                     </div>

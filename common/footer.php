@@ -31,7 +31,7 @@
 			**
 			***************************************************************************************/
 require_once  $_SERVER['DOCUMENT_ROOT']."/common/themelib.php";
-$theme = getThemeVars(getThemeName('default'));
+//$theme = getThemeVars(getThemeName('default'));
 
 
 echo '<br><div class="td" align="center"> '.$helpdesk_name. '<br>';

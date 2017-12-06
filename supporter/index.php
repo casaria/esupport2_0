@@ -28,6 +28,8 @@
 			**		Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 			**
 			***************************************************************************************/
+$mtime1 = explode(" ", microtime());
+$starttime = $mtime1[0] + $mtime1[1];
 
 require_once $_SERVER['DOCUMENT_ROOT']."/common/config.php";
 require_once $_SERVER['DOCUMENT_ROOT']."/common/mysql.class.php";

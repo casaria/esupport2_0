@@ -55,10 +55,10 @@ if($pubpriv == 'Private') {
     }
 }
 
-/*if ($cookie_name = '') {
+if ($cookie_name = '') {
     $cookie_name =  $_COOKIE['cookie_name'];
     if ($cookie_name = '')  $cookie_name = $_COOKIE['supporter_usercookie'];
-}  */
+}
 
         if($enable_helpdesk == 'Off'){
 	printerror($on_off_reason);

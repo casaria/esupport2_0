@@ -177,11 +177,8 @@ function authenticate(){
     global $pubpriv, $session_id, $protocol, $domain, $cookie_name;
 
     startSession(); //session_start();
-    if (isset($_SESSION['supporter_usercookie'])) {
-        $cookie_name = $_SESSION['supporter_usercookie'];
-    }
-    elseif (isset($_SESSION['cookieuser'])) {
-        $cookie_name = $_SESSION['cookieuser'];
+    if (isset($_SESSION['cookie_name'])) {
+        $cookie_name = $_SESSION['cookie_name'];
 
     } else {
         unset($cookie_name);  //let it stal

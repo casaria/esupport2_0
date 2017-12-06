@@ -36,7 +36,6 @@ require_once $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 startSession();
 $cookie_name = $_COOKIE['supporter_usercookie'];
 
-
 if($pubpriv == 'Private') {
     if (($session_id !== session_id()) || (!$cookie_name) || ($cookie_name == '')) {
     $myUrl =  "${protocol}://${domain}/common/login.php";

@@ -104,9 +104,10 @@ if(isset($send_mail)){
   }
 }
 
-
-	$ticket = getTicketInfo($id);	//get the ticket info again so we have the updated update log.
+$ticket = getTicketInfo($id);	//get the ticket info again so we have the updated update log.
 $supporter = getUserInfo($ticket[supporter_id]); //get all relevant uaer info for the supporter
+$user_id = getUserId($cookie_name);
+$ugID_list = getUsersGroupIDList($user_id);
 
 //+++
 $group_valid = in_array($ticket[ugroupid], $ugID_list);

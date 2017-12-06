@@ -51,10 +51,11 @@ if($pubpriv == 'Private') {
     }
 }
 
+
+
 RewindSession();
 
 require_once "../lang/$default_language.lang.php";
-require "../common/login.php";
 
 $language = getLanguage($cookie_name);
 if($language == '')

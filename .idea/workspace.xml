@@ -27,7 +27,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/common/login.php" afterPath="$PROJECT_DIR$/common/login.php" />
+      <change beforePath="$PROJECT_DIR$/common/mdblogin.php" afterPath="$PROJECT_DIR$/common/mdblogin.php" />
     </list>
     <ignored mask="workspace.xml" />
     <ignored mask="error_log" />
@@ -267,7 +267,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/login.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="297">
@@ -282,11 +282,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mdblogin.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mdblogin.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/mdblogin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8745">
-              <caret line="229" column="90" lean-forward="false" selection-start-line="229" selection-start-column="90" selection-end-line="229" selection-end-column="90" />
+            <state relative-caret-position="825">
+              <caret line="229" column="73" lean-forward="false" selection-start-line="229" selection-start-column="73" selection-end-line="229" selection-end-column="73" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
               </folding>
@@ -707,8 +707,8 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/common/common.php" />
         <option value="$PROJECT_DIR$/common/logout.php" />
-        <option value="$PROJECT_DIR$/common/mdblogin.php" />
         <option value="$PROJECT_DIR$/common/login.php" />
+        <option value="$PROJECT_DIR$/common/mdblogin.php" />
       </list>
     </option>
   </component>
@@ -1150,21 +1150,7 @@
       <workItem from="1512376240662" duration="51919000" />
       <workItem from="1512493638967" duration="481000" />
       <workItem from="1512494467936" duration="515000" />
-      <workItem from="1512495118589" duration="27148000" />
-    </task>
-    <task id="LOCAL-02590" summary="ob_start">
-      <created>1512437098714</created>
-      <option name="number" value="02590" />
-      <option name="presentableId" value="LOCAL-02590" />
-      <option name="project" value="LOCAL" />
-      <updated>1512437098714</updated>
-    </task>
-    <task id="LOCAL-02591" summary="ob_start">
-      <created>1512439124560</created>
-      <option name="number" value="02591" />
-      <option name="presentableId" value="LOCAL-02591" />
-      <option name="project" value="LOCAL" />
-      <updated>1512439124560</updated>
+      <workItem from="1512495118589" duration="27580000" />
     </task>
     <task id="LOCAL-02592" summary="ob_start">
       <created>1512439154717</created>
@@ -1495,11 +1481,25 @@
       <option name="project" value="LOCAL" />
       <updated>1512528643924</updated>
     </task>
-    <option name="localTasksCounter" value="2639" />
+    <task id="LOCAL-02639" summary="mdblogin">
+      <created>1512528908410</created>
+      <option name="number" value="02639" />
+      <option name="presentableId" value="LOCAL-02639" />
+      <option name="project" value="LOCAL" />
+      <updated>1512528908410</updated>
+    </task>
+    <task id="LOCAL-02640" summary="mdblogin">
+      <created>1512529124243</created>
+      <option name="number" value="02640" />
+      <option name="presentableId" value="LOCAL-02640" />
+      <option name="project" value="LOCAL" />
+      <updated>1512529124243</updated>
+    </task>
+    <option name="localTasksCounter" value="2641" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1843843000" />
+    <option name="totallyTimeSpent" value="1844275000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2732,16 +2732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/mdblogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8745">
-          <caret line="229" column="90" lean-forward="false" selection-start-line="229" selection-start-column="90" selection-end-line="229" selection-end-column="90" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -2751,6 +2741,16 @@
             <marker date="1512528898186" expanded="true" signature="3219:3267" ph="..." />
             <marker date="1512528898186" expanded="true" signature="16779:16820" ph="..." />
             <marker date="1512528898186" expanded="true" signature="16848:16850" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/mdblogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="229" column="73" lean-forward="false" selection-start-line="229" selection-start-column="73" selection-end-line="229" selection-end-column="73" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

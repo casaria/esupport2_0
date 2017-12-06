@@ -309,8 +309,7 @@ if (isAdministrator($cookie_name) && $awaiting_approval){
   
 
     } else $getstats=true;
-?>
-<?php
+
 
     switch ($t) {
         case ("tcre"):
@@ -380,12 +379,9 @@ if (isAdministrator($cookie_name) && $awaiting_approval){
         case ("gstats"):
             require "../admin23/gstats.php";
             break;
-
-
         case ("tsuc"):
             showSubmitResult(TRUE, $id);
             break;
-
         case ("slist"):
             require "../admin23/slist.php";
             break;
@@ -409,8 +405,7 @@ if (isAdministrator($cookie_name) && $awaiting_approval){
             break;
     }
 
-						  
-					?>
+    ?>
 				
               </TR>
               </TBODY> 

@@ -476,7 +476,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     margin-left: 4px; /*half the width*/
                 }
 
-                #selectwidth {
+                .selectwidth {
                     background-color: #afe7f7;
                     Vbackground-color: <?php echo $theme['subcategory']; ?>
                     border: 2px solid;
@@ -520,7 +520,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
                 }
 
-                #selectwidth option, #selectwidth2 option {
+                .selectwidth option, #selectwidth2 option {
 
                     width: 200px;
                     font-weight: 600;
@@ -1091,7 +1091,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     margin-left: 2px;
                     width: 680px;
                 }
-                #selectwidth {
+                .selectwidth {
                 /*    background-color: #afe7f7;   */
                     border: 0 solid;
                     background-color: <?php echo $theme['subcategory']; ?>;
@@ -1134,7 +1134,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
                 }
 
-                #selectwidth option, #selectwidth2 option {
+                .selectwidth option, #selectwidth2 option {
 
                     width: 350px;
                     font-weight: 600;

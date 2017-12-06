@@ -344,23 +344,12 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 font-size: 10px;
                 color: <?php echo $theme['text']; ?>;
             }
-
-
-            td.stats,
-            .stats {
-                background: <?php echo $theme['category']; ?>;
-                font-family: "<?php echo $theme['font']; ?>";
-                font-size: 10px;
-                color: <?php echo $theme['text']; ?>;
-            }
-
             td.error {
                 background: <?php echo $theme['subcategory']; ?>;
                 color: #ff0000;
                 font-family: "<?php echo $theme['font']; ?>";
                 font-size: <?php echo $theme['font_size']; ?>px;
             }
-
 
             td.subcat {
                 background: <?php echo $theme['subcategory']; ?>;

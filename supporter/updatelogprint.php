@@ -10,7 +10,7 @@ browserVersion = parseInt(navigator.appVersion);
 if (browserVersion >= 4) window.print()
 }
 
-printWindow();
+
 
 // -->
 </script> 
@@ -56,6 +56,7 @@ require_once "../common/common.php";
 
 ob_end_clean();
 authenticate();
+printWindow();
 
 //$cookie_name = $_SESSION['cookie_name'];
 

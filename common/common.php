@@ -191,6 +191,9 @@ function authenticate(){
             header("location: $myUrl");
         }
     }
+    $cookie_name = $_SESSION['cookie_name'];
+
+
 }
 
 

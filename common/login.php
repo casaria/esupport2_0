@@ -478,7 +478,7 @@ if (isset($login)) {
         $modalMessage = "$lang_wronglogin";
 
         logAuthFailure();
-        exit();
+        exit;
     }
 
 

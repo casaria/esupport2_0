@@ -45,10 +45,11 @@ require_once "../common/common.php";
 
 
 startSession();
-unset($cookie_name);
-if (isset($_COOKIE['supporter_usercookie'])) {$cookie_name = $_COOKIE['supporter_usercookie']; }
-
-$level = getPrivelegesAsInteger($cookie_name);
+unset($cookie_name); unset($level);
+if (isset($_COOKIE['supporter_usercookie'])) {
+    $cookie_name = $_COOKIE['supporter_usercookie'];
+    $level = getPrivelegesAsInteger($cookie_name);
+}
 
 if (!$level) exit;
 

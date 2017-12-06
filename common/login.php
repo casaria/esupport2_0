@@ -477,7 +477,7 @@ if (isset($login)) {
     }
 
 
-
+    presetValues();
     // send them to the correct page
     if ($myUrl !== '') {
         header("location: $myUrl");

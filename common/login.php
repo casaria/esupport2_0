@@ -243,22 +243,48 @@ global $lang_wronglogin, $lang_strikes_count;
     <script type="text/javascript">
 
 
-
-        $(document).ready(function(){
-
-
-            wow = new WOW({
-                boxClass: 'wow', // default
-                animateClass: 'animated', // default
-                offset: 0, // default
-                mobile: true, // default
-                live: true // default
-            });
-            wow.init();
+    $(document).ready(function(){
+        new WOW().init();
 
 
+        $("#passwordcard").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd animationend', this.removeClass('wow zoomIn'));
 
-          //  $('#passwordcard').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd animationend', this.removeClass('wow zoomIn'));
+        function capsLock(e){
+
+            var kc = e.keyCode ? e.keyCode : e.which;
+            var sk = e.shiftKey ? e.shiftKey : kc === 16;
+            var visibility = ((kc >= 65 && kc <= 90) && !sk) ||
+            ((kc >= 97 && kc <= 122) && sk) ? 'visible' : 'hidden';
+            document.getElementById('divCaps').style.visibility = visibility
+        }
+
+
+
+        $("#passwordform").submit(function(event){
+            // cancels the form submission
+
+            event.preventDefault();
+            submitForm();
+        });
+
+        function submitForm(){
+            // Initiate Variables With Form Content
+            var name = $("#name").val();
+
+            $.ajax({
+                type: "POST",
+                url: "password-process.php",
+                data: "name=" + name + "&pwd=" + password + "&message=" + message,
+                success : function(text){
+                    if (text == "success"){
+                        formSuccess();
+                    }
+                }
+            })
+        }
+        function formSuccess(){
+            $( "#msgSubmit" ).removeClass( "hidden" );
+        }
 
 
         //    function setfocus(){
@@ -451,9 +477,16 @@ if (isset($login)) {
         //ob_clean();
         //LOGIN CREDDENTIALS FAILED
         $myUrl = '';
-        //echo $lang_wronglogin . " CheckUSer failed!";
+        echo $lang_wronglogin . " CheckUSer failed!";
         $modalMessage = "$lang_wronglogin";
+        ?>
+        <script>
+        $("#passwordcard").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd animationend', this.removeClass('wow zoomIn'));
+        $('#passwordcard').addClass('animated rubberBand');
 
+        </script>
+<?php
+        $myURL='';
         logAuthFailure();
         ob_flush();
         exit;

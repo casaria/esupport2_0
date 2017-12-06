@@ -331,7 +331,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
 
 
-            td.stats {
+            .td.stats {
                 background: <?php echo $theme['category']; ?>;
                 font-family: "<?php echo $theme['font']; ?>";
                 font-size: 10px;

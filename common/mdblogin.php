@@ -245,11 +245,12 @@
                                     </div>
 
                                     <div class="text-center">
-                                        <button type="submit"  id="submit" name="login" class="btn orange-gradient btn-lg">LOGIN</button>
+                                        <button type="submit" id="submit" onkeypress="capsLock(event )" name="login" class="btn orange-gradient btn-lg">LOGIN</button>
                                         <hr>
                                         <div class="inline-ul text-center d-flex justify-content-center">
                                                 <label for="submit">CAPS LOCK is on!</label>
                                         </div>
+                                          <div id="divCaps" style="visibility:hidden">Caps Lock is on.</div>
                                     </div>
 
                                 </div>
@@ -263,7 +264,6 @@
     </section>
 
     <script Src="../mdb/js/mdb.js">
-        new WOW().init();
 
     </script>
 

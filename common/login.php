@@ -245,8 +245,19 @@ global $lang_wronglogin, $lang_strikes_count;
 
     $(document).ready(function(){
 
+        function capsLock(e){
+            var kc = e.keyCode ? e.keyCode : e.which;
+            var sk = e.shiftKey ? e.shiftKey : kc === 16;
+            var visibility = ((kc >= 65 && kc <= 90) && !sk) ||
+            ((kc >= 97 && kc <= 122) && sk) ? 'visible' : 'hidden';
+            document.getElementById('divCaps').style.visibility = visibility
+        }
 
-    //    function setfocus(){
+        new WOW().init();
+
+
+
+        //    function setfocus(){
     //        document.login.user.focus();
     //    }
     // jQuery methods go here...

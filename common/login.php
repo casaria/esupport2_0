@@ -242,13 +242,6 @@ global $lang_wronglogin, $lang_strikes_count;
     <!--suppress JSUnusedGlobalSymbols, JSUnusedGlobalSymbols -->
     <script type="text/javascript">
 
-
-    $(document).ready(function(){
-        new WOW().init();
-
-
-        $("#passwordcard").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd animationend', this.removeClass('wow zoomIn'));
-
         function capsLock(e){
 
             var kc = e.keyCode ? e.keyCode : e.which;
@@ -285,6 +278,13 @@ global $lang_wronglogin, $lang_strikes_count;
         function formSuccess(){
             $( "#msgSubmit" ).removeClass( "hidden" );
         }
+
+
+        $(document).ready(function(){
+        new WOW().init();
+
+
+        $("#passwordcard").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd animationend', this.removeClass('wow zoomIn'));
 
 
         //    function setfocus(){

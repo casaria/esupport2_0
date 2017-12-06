@@ -218,16 +218,16 @@
     <!--Intro Section-->
     <section class="view intro-9 hm-indigo-light">
         <div class="full-bg-img flex-center">
-            <div class="container">
+            <div class="container" id="pwdmodal">
                 <div class="row">
                     <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-lg-5">
                         <form method="post" role="form" id="newPassForm" name="newPassForm" >
                             <!--Form with header-->
-                            <div class="card wow zoomIn" id="passwordcard" data-wow-delay="0.0s" data-wow-duration="1.9s">
+                            <div class="card wow zoomIn" id="passwordcard" data-wow-delay="0.0s" data-wow-duration="1.0s">
                                 <div class="card-body z-depth-4">
 
                                     <!--Header-->
-                                    <div class="animated bounce form-header orange-gradient">
+                                    <div class="form-header orange-gradient">
                                         <h4><i class="fa fa-user mt-3 mb-3"></i> Casaria eSupport 2.0 login</h4>
                                     </div>
 

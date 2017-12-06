@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="62aec0fd-bd9e-467f-a9ea-0d0476e44df2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/common/login.php" afterPath="$PROJECT_DIR$/common/login.php" />
+      <change beforePath="$PROJECT_DIR$/common/mdblogin.php" afterPath="$PROJECT_DIR$/common/mdblogin.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,11 +57,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="491" column="13" lean-forward="false" selection-start-line="491" selection-start-column="13" selection-end-line="491" selection-end-column="13" />
+            <state relative-caret-position="-7107">
+              <caret line="280" column="0" lean-forward="false" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mdblogin.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/mdblogin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="230" column="24" lean-forward="true" selection-start-line="230" selection-start-column="24" selection-end-line="230" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -198,7 +210,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
+            <state relative-caret-position="891">
               <caret line="55" column="1" lean-forward="false" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
               <folding>
                 <marker date="1512563091692" expanded="true" signature="2929:3017" ph="UPDATE ${$my... " />
@@ -566,18 +578,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Francais.lang.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lang/Francais.lang.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1507424517631" expanded="true" signature="4974:4987" ph="SELECT * fro... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -613,6 +613,7 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/common/config.php" />
         <option value="$PROJECT_DIR$/common/login.php" />
+        <option value="$PROJECT_DIR$/common/mdblogin.php" />
       </list>
     </option>
   </component>
@@ -738,7 +739,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512553343747</updated>
-      <workItem from="1512553355067" duration="6504000" />
+      <workItem from="1512553355067" duration="6770000" />
     </task>
     <task id="LOCAL-00002" summary="Trceate fix">
       <created>1512553626857</created>
@@ -915,11 +916,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512563674098</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Trceate fix">
+      <created>1512563730657</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1512563730657</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8204000" />
+    <option name="totallyTimeSpent" value="8470000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2762" height="1850" extended-state="6" />
@@ -1226,13 +1234,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/mdblogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="225" column="75" lean-forward="false" selection-start-line="225" selection-start-column="75" selection-end-line="225" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -1818,34 +1819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="55" column="1" lean-forward="false" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
-          <folding>
-            <marker date="1512563091692" expanded="true" signature="2929:3017" ph="UPDATE ${$my... " />
-            <marker date="1512563091692" expanded="true" signature="3685:3741" ph="..." />
-            <marker date="1512563091692" expanded="true" signature="6558:6662" ph="..." />
-            <marker date="1512563091692" expanded="true" signature="6692:6947" ph="..." />
-            <marker date="1512563091692" expanded="true" signature="6735:6916" ph="..." />
-            <marker date="1512563091692" expanded="true" signature="6765:6872" ph="..." />
-            <marker date="1512563091692" expanded="true" signature="6768:6841" ph="..." />
-            <marker date="1512563091692" expanded="true" signature="7082:7191" ph="..." />
-            <marker date="1512563091692" expanded="true" signature="7221:7490" ph="..." />
-            <marker date="1512563091692" expanded="true" signature="7264:7459" ph="..." />
-            <marker date="1512563091692" expanded="true" signature="7294:7415" ph="..." />
-            <marker date="1512563091692" expanded="true" signature="7297:7384" ph="..." />
-            <marker date="1512563091692" expanded="true" signature="7668:7784" ph="..." />
-            <marker date="1512563091692" expanded="true" signature="7814:8074" ph="..." />
-            <marker date="1512563091692" expanded="true" signature="7857:8043" ph="..." />
-            <marker date="1512563091692" expanded="true" signature="7887:7999" ph="..." />
-            <marker date="1512563091692" expanded="true" signature="7890:7968" ph="..." />
-            <marker date="1512563091692" expanded="true" signature="9906:9925" ph="..." />
-            <marker date="1512563091692" expanded="true" signature="10111:10163" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1909,10 +1882,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="55" column="1" lean-forward="false" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+          <folding>
+            <marker date="1512563091692" expanded="true" signature="2929:3017" ph="UPDATE ${$my... " />
+            <marker date="1512563091692" expanded="true" signature="3685:3741" ph="..." />
+            <marker date="1512563091692" expanded="true" signature="6558:6662" ph="..." />
+            <marker date="1512563091692" expanded="true" signature="6692:6947" ph="..." />
+            <marker date="1512563091692" expanded="true" signature="6735:6916" ph="..." />
+            <marker date="1512563091692" expanded="true" signature="6765:6872" ph="..." />
+            <marker date="1512563091692" expanded="true" signature="6768:6841" ph="..." />
+            <marker date="1512563091692" expanded="true" signature="7082:7191" ph="..." />
+            <marker date="1512563091692" expanded="true" signature="7221:7490" ph="..." />
+            <marker date="1512563091692" expanded="true" signature="7264:7459" ph="..." />
+            <marker date="1512563091692" expanded="true" signature="7294:7415" ph="..." />
+            <marker date="1512563091692" expanded="true" signature="7297:7384" ph="..." />
+            <marker date="1512563091692" expanded="true" signature="7668:7784" ph="..." />
+            <marker date="1512563091692" expanded="true" signature="7814:8074" ph="..." />
+            <marker date="1512563091692" expanded="true" signature="7857:8043" ph="..." />
+            <marker date="1512563091692" expanded="true" signature="7887:7999" ph="..." />
+            <marker date="1512563091692" expanded="true" signature="7890:7968" ph="..." />
+            <marker date="1512563091692" expanded="true" signature="9906:9925" ph="..." />
+            <marker date="1512563091692" expanded="true" signature="10111:10163" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="491" column="13" lean-forward="false" selection-start-line="491" selection-start-column="13" selection-end-line="491" selection-end-column="13" />
+        <state relative-caret-position="-7107">
+          <caret line="280" column="0" lean-forward="false" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/mdblogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="230" column="24" lean-forward="true" selection-start-line="230" selection-start-column="24" selection-end-line="230" selection-end-column="24" />
           <folding />
         </state>
       </provider>

@@ -486,8 +486,9 @@ if (isset($login)) {
 
         </script>
 <?php
+        $myURL='';
         logAuthFailure();
-        exit;
+
     }
 
 

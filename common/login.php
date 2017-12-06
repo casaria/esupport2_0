@@ -485,7 +485,7 @@ if (isset($login)) {
         $('#passwordcard').addClass('animated rubberBand');
 
         </script>
-<?p
+<?php
         logAuthFailure();
         ob_flush();
         exit;

@@ -25,8 +25,9 @@
     <bookmark url="file://$PROJECT_DIR$/common/login.php" line="367" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="``">
+    <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/common/mdblogin.php" afterPath="$PROJECT_DIR$/common/mdblogin.php" />
     </list>
     <ignored mask="workspace.xml" />
     <ignored mask="error_log" />
@@ -284,8 +285,8 @@
       <file leaf-file-name="mdblogin.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/mdblogin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="732">
-              <caret line="266" column="13" lean-forward="true" selection-start-line="266" selection-start-column="13" selection-end-line="266" selection-end-column="13" />
+            <state relative-caret-position="666">
+              <caret line="242" column="120" lean-forward="false" selection-start-line="242" selection-start-column="120" selection-end-line="242" selection-end-column="120" />
               <folding />
             </state>
           </provider>
@@ -1147,21 +1148,7 @@
       <workItem from="1512376240662" duration="51919000" />
       <workItem from="1512493638967" duration="481000" />
       <workItem from="1512494467936" duration="515000" />
-      <workItem from="1512495118589" duration="23966000" />
-    </task>
-    <task id="LOCAL-02577" summary="ob_start">
-      <created>1512428069403</created>
-      <option name="number" value="02577" />
-      <option name="presentableId" value="LOCAL-02577" />
-      <option name="project" value="LOCAL" />
-      <updated>1512428069403</updated>
-    </task>
-    <task id="LOCAL-02578" summary="ob_start">
-      <created>1512428130851</created>
-      <option name="number" value="02578" />
-      <option name="presentableId" value="LOCAL-02578" />
-      <option name="project" value="LOCAL" />
-      <updated>1512428130851</updated>
+      <workItem from="1512495118589" duration="24136000" />
     </task>
     <task id="LOCAL-02579" summary="ob_start">
       <created>1512428137318</created>
@@ -1492,11 +1479,25 @@
       <option name="project" value="LOCAL" />
       <updated>1512525661995</updated>
     </task>
-    <option name="localTasksCounter" value="2626" />
+    <task id="LOCAL-02626" summary="mdblogin">
+      <created>1512525817576</created>
+      <option name="number" value="02626" />
+      <option name="presentableId" value="LOCAL-02626" />
+      <option name="project" value="LOCAL" />
+      <updated>1512525817576</updated>
+    </task>
+    <task id="LOCAL-02627" summary="mdblogin">
+      <created>1512525831567</created>
+      <option name="number" value="02627" />
+      <option name="presentableId" value="LOCAL-02627" />
+      <option name="project" value="LOCAL" />
+      <updated>1512525831567</updated>
+    </task>
+    <option name="localTasksCounter" value="2628" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1840661000" />
+    <option name="totallyTimeSpent" value="1840831000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1509,6 +1510,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2762" height="1850" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33831522" sideWeight="0.6818527" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34085214" sideWeight="0.4191843" order="8" side_tool="false" content_ui="tabs" />
@@ -1518,7 +1520,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28884712" sideWeight="0.2666163" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769424" sideWeight="0.48223734" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.025679758" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27265862" sideWeight="0.71319795" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27265862" sideWeight="0.71319795" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19033232" sideWeight="0.49086162" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29010025" sideWeight="0.41880664" order="1" side_tool="false" content_ui="tabs" />
@@ -1636,7 +1638,6 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
-    <MESSAGE value="Uedit cleanup" />
     <MESSAGE value="$tkt_padded_id   uGroupname added" />
     <MESSAGE value="Ticket Numbers on time Tab" />
     <MESSAGE value="Porgeress bars&#10;AFTR_HRS checkbox working" />
@@ -1661,7 +1662,8 @@
     <MESSAGE value="``" />
     <MESSAGE value="ob_start" />
     <MESSAGE value="login sessions and cookies" />
-    <option name="LAST_COMMIT_MESSAGE" value="login sessions and cookies" />
+    <MESSAGE value="mdblogin" />
+    <option name="LAST_COMMIT_MESSAGE" value="mdblogin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2742,8 +2744,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/mdblogin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="266" column="13" lean-forward="true" selection-start-line="266" selection-start-column="13" selection-end-line="266" selection-end-column="13" />
+        <state relative-caret-position="666">
+          <caret line="242" column="120" lean-forward="false" selection-start-line="242" selection-start-column="120" selection-end-line="242" selection-end-column="120" />
           <folding />
         </state>
       </provider>

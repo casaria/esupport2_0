@@ -240,7 +240,7 @@
 
                                     <div class="md-form">
                                         <i class="fa fa-lock prefix white-text"></i>
-                                        <input type="password" id="form2" name="password" class="form-control">
+                                        <input type="password" id="form2" name="password" class="form-control white-text">
                                         <label for="form2">Your password</label>
                                     </div>
 

@@ -35,7 +35,7 @@ require_once "common/$database.class.php";
 require_once "common/common.php";
 //$the_file ='';
 
-
+authenticate();
 
 $language = getLanguage($cookie_name);
 $time_offset = getTimeOffset($cookie_name);

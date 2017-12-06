@@ -28,11 +28,13 @@
 			**		Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 			**
 			***************************************************************************************/
+ob_start(null,0, PHP_OUTPUT_HANDLER_FLUSHABLE|PHP_OUTPUT_HANDLER_CLEANABLE|PHP_OUTPUT_HANDLER_REMOVABLE);
 
 require_once "../common/config.php";
 require_once "../common/$database.class.php";
 require_once "../common/common.php";
 
+ob_end_clean();
 authenticate();
 
 //+++ avoid "you are not a supporter" if selecting the updatelog

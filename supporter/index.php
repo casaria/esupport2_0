@@ -311,7 +311,7 @@ if (isAdministrator($cookie_name) && $awaiting_approval){
     } else $getstats=true;
 ?>
 <?php
-if (isset($t)) {
+
     switch ($t) {
         case ("tcre"):
             require "tcreate.php";
@@ -408,7 +408,7 @@ if (isset($t)) {
             require "announce.php";
             break;
     }
-}
+
 						  
 					?>
 				

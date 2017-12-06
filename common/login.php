@@ -477,7 +477,7 @@ if (isset($login)) {
         //ob_clean();
         //LOGIN CREDDENTIALS FAILED
         $myUrl = '';
-        echo $lang_wronglogin . " CheckUSer failed!";
+        //echo $lang_wronglogin . " CheckUSer failed!";
         $modalMessage = "$lang_wronglogin";
         ?>
         <script>
@@ -485,8 +485,7 @@ if (isset($login)) {
         $('#passwordcard').addClass('animated rubberBand');
 
         </script>
-<?php
-        $myURL='';
+<?p
         logAuthFailure();
         ob_flush();
         exit;

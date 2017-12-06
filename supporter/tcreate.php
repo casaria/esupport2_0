@@ -516,7 +516,7 @@ echo '
     <tr>
      <td class="back2" align="left" width="180px">'.$lang_emailcc.': </td>
      <td class="back">
-			<input type=text size=30 name=emailcc value="'.'">			
+			<input type=text size=34 name=emailcc value="'.'">			
 	</td>
     </tr>';
 endTable();

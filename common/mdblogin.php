@@ -234,7 +234,7 @@
                                     <!--Body-->
                                     <div class="md-form">
                                         <i class="fa fa-user prefix white-text"></i>
-                                        <input type="text" id="form1" name="user" class="form-control">
+                                        <input type="text" id="form1" name="user" class="form-control white-text">
                                         <label for="form1">Your user name</label>
                                     </div>
 

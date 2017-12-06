@@ -2022,18 +2022,18 @@ function createTicketInfo($flag='allow', $equipmentgroupid = 0)
 						<tr>';
 
                           echo '<td class=back2 width=90 align=right>* '.$lang_category.':</td>
-							<td class=back><select id="selectwidth" name=category>';  createCategoryMenu(0);
+							<td class=back><select class="selectwidth" name=category>';  createCategoryMenu(0);
                           echo '</select></td>';
 
 						echo '</tr><tr>
                              	<td class=back2 width=90 align=right>* '.$lang_platform.':</td>
-							<td class=back><select id="selectwidth" name=platform>'; createPlatformMenu(0, '');
+							<td class=back><select class="selectwidth" name=platform>'; createPlatformMenu(0, '');
 
 						echo '</select></TD>   
 						</tr>
 						<tr>
 							<td class=back2 width=90 align=right>* '.$lang_equipment.':</td>
-							<td class=back><select id="selectwidth" name=equipment>';  createEquipmentMenu(0,$equipmentgroupid);
+							<td class=back><select class="selectwidth" name=equipment>';  createEquipmentMenu(0,$equipmentgroupid);
 							echo '</select></td>
 						</tr>
 						<tr>

@@ -38,9 +38,12 @@ require_once "common.php";
 
 
 //if (isset($_COOKIE[session_name()])) {
-    setcookie(session_id(), '', time() - $session_time, '/', 'casaria.net');
-//}
-session_set_cookie_params(600,'/', '.casaria.net',0,0);
+    setcookie("session_id", session_id(), time() - $session_time, '/', 'casaria.net');
+    if (isset($_COOKIE['cookieuser'])) setcookie("cookieuser", $cookie_name, time() - 3600, '/', 'casaria.net');
+    if (isset($_COOKIE['supporter_usercookie'])) setcookie("supporter_usercookie", $cookie_name, time() - 3600, '/', 'casaria.net');
+
+
+//session_set_cookie_params(600,'/', '.casaria.net',0,0);
 
 
 

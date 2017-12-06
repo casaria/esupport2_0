@@ -27,6 +27,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/common/mdblogin.php" afterPath="$PROJECT_DIR$/common/mdblogin.php" />
     </list>
     <ignored mask="workspace.xml" />
     <ignored mask="error_log" />
@@ -80,8 +81,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+            <state relative-caret-position="264">
+              <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding>
                 <element signature="e#7#1461#0#PHP" expanded="true" />
                 <marker date="1512522731174" expanded="true" signature="2949:3037" ph="UPDATE ${$my... " />
@@ -203,23 +204,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/style.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="295" column="0" lean-forward="false" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
-              <folding>
-                <marker date="1512389431777" expanded="true" signature="1977:2142" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logout.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="logout.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/logout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="57" column="25" lean-forward="true" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="34" />
+            <state relative-caret-position="524">
+              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -281,14 +270,24 @@
       <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="364" column="0" lean-forward="false" selection-start-line="364" selection-start-column="0" selection-end-line="364" selection-end-column="0" />
+            <state relative-caret-position="171">
+              <caret line="452" column="0" lean-forward="true" selection-start-line="452" selection-start-column="0" selection-end-line="452" selection-end-column="0" />
               <folding>
                 <element signature="e#446#467#0#PHP" expanded="true" />
-                <marker date="1512522055145" expanded="true" signature="3219:3267" ph="..." />
-                <marker date="1512522055145" expanded="true" signature="15603:15644" ph="..." />
-                <marker date="1512522055145" expanded="true" signature="15672:15674" ph="..." />
+                <marker date="1512525263973" expanded="true" signature="3219:3267" ph="..." />
+                <marker date="1512525263973" expanded="true" signature="15578:15619" ph="..." />
+                <marker date="1512525263973" expanded="true" signature="15647:15649" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mdblogin.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/mdblogin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="221" column="33" lean-forward="true" selection-start-line="221" selection-start-column="33" selection-end-line="221" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -316,7 +315,7 @@
       <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-528">
+            <state relative-caret-position="66">
               <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
@@ -694,7 +693,6 @@
         <option value="$PROJECT_DIR$/common/login ori.php" />
         <option value="$PROJECT_DIR$/common/login20.php" />
         <option value="$PROJECT_DIR$/common/login-legacy.php" />
-        <option value="$PROJECT_DIR$/common/mdblogin.php" />
         <option value="$PROJECT_DIR$/common/themelib.php" />
         <option value="$PROJECT_DIR$/common/style.php" />
         <option value="$PROJECT_DIR$/common/footer.php" />
@@ -703,11 +701,12 @@
         <option value="$PROJECT_DIR$/supporter/updatelog.php" />
         <option value="$PROJECT_DIR$/supporter/updatelogprint.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f5a594a7-31d9-494d-a74e-43164176beae/console.sql" />
-        <option value="$PROJECT_DIR$/common/login.php" />
         <option value="$PROJECT_DIR$/supporter/index.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/common/common.php" />
         <option value="$PROJECT_DIR$/common/logout.php" />
+        <option value="$PROJECT_DIR$/common/login.php" />
+        <option value="$PROJECT_DIR$/common/mdblogin.php" />
       </list>
     </option>
   </component>
@@ -1149,21 +1148,7 @@
       <workItem from="1512376240662" duration="51919000" />
       <workItem from="1512493638967" duration="481000" />
       <workItem from="1512494467936" duration="515000" />
-      <workItem from="1512495118589" duration="23163000" />
-    </task>
-    <task id="LOCAL-02572" summary="ob_start">
-      <created>1512425597715</created>
-      <option name="number" value="02572" />
-      <option name="presentableId" value="LOCAL-02572" />
-      <option name="project" value="LOCAL" />
-      <updated>1512425597715</updated>
-    </task>
-    <task id="LOCAL-02573" summary="ob_start">
-      <created>1512425657286</created>
-      <option name="number" value="02573" />
-      <option name="presentableId" value="LOCAL-02573" />
-      <option name="project" value="LOCAL" />
-      <updated>1512425657286</updated>
+      <workItem from="1512495118589" duration="23680000" />
     </task>
     <task id="LOCAL-02574" summary="ob_start">
       <created>1512427142432</created>
@@ -1494,11 +1479,25 @@
       <option name="project" value="LOCAL" />
       <updated>1512524878995</updated>
     </task>
-    <option name="localTasksCounter" value="2621" />
+    <task id="LOCAL-02621" summary="login sessions and cookies">
+      <created>1512524913154</created>
+      <option name="number" value="02621" />
+      <option name="presentableId" value="LOCAL-02621" />
+      <option name="project" value="LOCAL" />
+      <updated>1512524913154</updated>
+    </task>
+    <task id="LOCAL-02622" summary="login sessions and cookies">
+      <created>1512525273783</created>
+      <option name="number" value="02622" />
+      <option name="presentableId" value="LOCAL-02622" />
+      <option name="project" value="LOCAL" />
+      <updated>1512525273783</updated>
+    </task>
+    <option name="localTasksCounter" value="2623" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1839858000" />
+    <option name="totallyTimeSpent" value="1840375000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1514,19 +1513,19 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33831522" sideWeight="0.6818527" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40914786" sideWeight="0.4191843" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34085214" sideWeight="0.4191843" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33834586" sideWeight="0.31443688" order="16" side_tool="true" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23809524" sideWeight="0.44070998" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29010025" sideWeight="0.5811933" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28884712" sideWeight="0.2666163" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769424" sideWeight="0.48223734" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.025679758" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27265862" sideWeight="0.71319795" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27265862" sideWeight="0.71319795" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19033232" sideWeight="0.49086162" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29010025" sideWeight="0.41880664" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17522658" sideWeight="0.493007" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40914786" sideWeight="0.58081573" order="3" side_tool="true" content_ui="tabs" x="41" y="96" width="1325" height="317" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34085214" sideWeight="0.58081573" order="3" side_tool="true" content_ui="tabs" x="41" y="96" width="1325" height="317" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13293052" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2310,14 +2309,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/mdblogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="265" column="0" lean-forward="false" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/themelib.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -2648,23 +2639,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/login.php">
+    <entry file="file://$PROJECT_DIR$/common/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="364" column="0" lean-forward="false" selection-start-line="364" selection-start-column="0" selection-end-line="364" selection-end-column="0" />
-          <folding>
-            <element signature="e#446#467#0#PHP" expanded="true" />
-            <marker date="1512522055145" expanded="true" signature="3219:3267" ph="..." />
-            <marker date="1512522055145" expanded="true" signature="15603:15644" ph="..." />
-            <marker date="1512522055145" expanded="true" signature="15672:15674" ph="..." />
-          </folding>
+        <state relative-caret-position="66">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/mysql.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+        <state relative-caret-position="264">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
           <folding>
             <element signature="e#7#1461#0#PHP" expanded="true" />
             <marker date="1512522731174" expanded="true" signature="2949:3037" ph="UPDATE ${$my... " />
@@ -2727,26 +2729,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/mysql.class.php">
+    <entry file="file://$PROJECT_DIR$/common/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="171">
+          <caret line="452" column="0" lean-forward="true" selection-start-line="452" selection-start-column="0" selection-end-line="452" selection-end-column="0" />
+          <folding>
+            <element signature="e#446#467#0#PHP" expanded="true" />
+            <marker date="1512525263973" expanded="true" signature="3219:3267" ph="..." />
+            <marker date="1512525263973" expanded="true" signature="15578:15619" ph="..." />
+            <marker date="1512525263973" expanded="true" signature="15647:15649" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/config.php">
+    <entry file="file://$PROJECT_DIR$/common/mdblogin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-528">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="57" column="25" lean-forward="true" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="34" />
+        <state relative-caret-position="270">
+          <caret line="221" column="33" lean-forward="true" selection-start-line="221" selection-start-column="33" selection-end-line="221" selection-end-column="33" />
           <folding />
         </state>
       </provider>

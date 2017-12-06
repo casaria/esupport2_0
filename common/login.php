@@ -488,7 +488,8 @@ if (isset($login)) {
 <?php
         $myURL='';
         logAuthFailure();
-        sleep(5);
+        ob_flush();
+        exit;
 
     }
 

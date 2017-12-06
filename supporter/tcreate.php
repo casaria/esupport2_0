@@ -383,7 +383,7 @@ function createSupporterInfo()
 				<td width="180px" class=back2 align=left>* '.$lang_group.':</td>
 				<td class=back >';
 				?>
-			    	<select class="selectwidth" id="ugroup-dd"  name=usergroup_name onChange="MM_jumpMenu('sgroup-dd', this, 'tkt', 0)">
+			    	<select class="selectwidth" id="ugroup-dd"  name=usergroup_name onChange="MM_jumpMenu('sgroup-dd', 'sgroup-dd', 'tkt', 0)">
 				<?php					
 				$ug=createUGroupsMenu();
 				echo '</select>				
@@ -571,7 +571,7 @@ function createUserInfo()
 				<td class=back >';
 					
 				?>
-			    	<select name=userlink id="selectwidth2" onChange="MM_jumpMenu('pills-tab', this,'tkt', 0)">
+			    	<select name=userlink class="selectwidth2" onChange="MM_jumpMenu('pills-tab', this,'tkt', 0)">
 				<?php	
 					
 				$userid=createSupporterUserMenu($sg);

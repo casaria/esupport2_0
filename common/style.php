@@ -502,7 +502,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                      background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat */
                 }
 
-                #selectwidth2 {
+                .selectwidth2 {
 
                     background-color: <?php $theme['category']; ?>;
                     border: 0 solid;
@@ -520,7 +520,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
                 }
 
-                .selectwidth option, #selectwidth2 option {
+                .selectwidth option, .selectwidth2 option {
 
                     width: 200px;
                     font-weight: 600;
@@ -1117,7 +1117,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                      background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat */
                 }
 
-                #selectwidth2 {
+                .alternate  {
                     background-color: <?php echo $theme['category']; ?>;
                     border: 0 solid;
                     -webkit-box-shadow: #B4B5B5 3px 3PX 3PX;
@@ -1134,7 +1134,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
                 }
 
-                .selectwidth option, #selectwidth2 option {
+                .selectwidth option, .selectwidth2 option {
 
                     width: 350px;
                     font-weight: 600;

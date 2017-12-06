@@ -35,10 +35,23 @@ require_once "../common/$database.class.php";
 require_once "../common/common.php";
 
 //since this isn't called from the index.php file, we have to make sure that the user is logged in.
-if($SERVER_PORT == 80 && (!isset($cookie_name) || $cookie_name == '') && $enable_ssl == 'On'){
-	$site = eregi_replace("http", "https", $admin_site_url);
-	header("Location: $site");
+//if($SERVER_PORT == 80 && (!isset($cookie_name) || $cookie_name == '') && $enable_ssl == 'On'){
+//	$site = eregi_replace("http", "https", $admin_site_url);
+//	header("Location: $site");
+//}
+
+startSession();
+$cookie_name = $_COOKIE['supporter_usercookie'];
+
+
+if($pubpriv == 'Private') {
+    if (($session_id !== session_id()) || (!$cookie_name) || ($cookie_name == '')) {
+        $myUrl =  "${protocol}://${domain}/common/login.php";
+        header("location: $myUrl");
+    }
 }
+
+RewindSession();
 
 require_once "../lang/$default_language.lang.php";
 require "../common/login.php";

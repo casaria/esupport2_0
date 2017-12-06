@@ -983,7 +983,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 }
 
                 .task-textarea {
-                    width: 350px;
+                    width: 180px;
                     height: 80px;
                 }
 
@@ -1624,7 +1624,7 @@ console.log(document.querySelector('meta[name="viewport"]'));
                 }
 
                 .task-textarea {
-                    width: 350px;
+                    width:360px;
                     height: 80px;
                 }
 

@@ -129,10 +129,10 @@ else {
 ?>
     <script language="JavaScript">
         <!--
-        function MM_jumpMenu(targ, selObj, restore) { //v3.0
+        function MM_jumpMenu(targ, selObj, selpill, restore) { //v3.0
             eval(targ + ".location='" + selObj.options[selObj.selectedIndex].value + "'");
             if (restore) selObj.selectedIndex = 0;
-            $('#pills-tab a[href="#asset"]').tab('show')
+            $('#pills-tab a[href="#'+ selpill +'"]').tab('show')
         }
 
         //--></script>
@@ -383,7 +383,7 @@ function createSupporterInfo()
 				<td width="180px" class=back2 align=left>* '.$lang_group.':</td>
 				<td class=back >';
 				?>
-			    	<select id="selectwidth" name=usergroup_name onChange="MM_jumpMenu('parent', this, 0)">
+			    	<select id="selectwidth" name=usergroup_name onChange="MM_jumpMenu('pills-tab', this, 'tkt', 0)">
 				<?php					
 				$ug=createUGroupsMenu();
 				echo '</select>				

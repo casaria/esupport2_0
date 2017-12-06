@@ -3264,22 +3264,22 @@ function displayUserTicket($result)
         echo $row[status] . "</a></td>";
 
 
-        // Calculates total time spent on the ticket in minutes
-        /*
-        $sql3 = "SELECT sum(minutes) FROM tickets,time_track WHERE (tickets.id=time_track.ticket_id AND tickets.id=" . $row[id] . ")";
+            // Calculates total time spent on the ticket in minutes
+            /*
+            $sql3 = "SELECT sum(minutes) FROM tickets,time_track WHERE (tickets.id=time_track.ticket_id AND tickets.id=" . $row[id] . ")";
 
-        $result3 = $db->query($sql3);
-        $row3 = $db->fetch_array($result3);
+            $result3 = $db->query($sql3);
+            $row3 = $db->fetch_array($result3);
 
-        if ($row3[0]) {
-            $minutes = $row3[0];
-        } else {
-            $minutes = "0";
-        }
-        */
-        $minutes = $row[minutes_labor];
-        $labor_minutes_total += $minutes;
-        echo '<td class=back2 align=right>';
+            if ($row3[0]) {
+                $minutes = $row3[0];
+            } else {
+                $minutes = "0";
+            }
+            */
+            $minutes = $row[minutes_labor];
+            $labor_minutes_total += $minutes;
+            echo '<td class=back2 align=right>';
         showFormattedTime($minutes * 60, 1, 1);
         echo '</td>';
 

@@ -41,11 +41,12 @@ require_once "../common/common.php";
 //if($SERVER_PORT == 80 && (!isset($cookie_name) || $cookie_name == '') && $enable_ssl == 'On'){
 //	$site = eregi_replace("http", "https", $admin_site_url);
 //	header("Location: $site");
-//}
+//}]
+
 
 startSession();
 unset($cookie_name);
-if (isset($_COOKIE['supporter_usercookie']) $cookie_name = $_COOKIE['supporter_usercookie'];
+if (isset($_COOKIE['supporter_usercookie'])) {$cookie_name = $_COOKIE['supporter_usercookie']; }
 
 $level = getPrivelegesAsInteger($cookie_name);
 

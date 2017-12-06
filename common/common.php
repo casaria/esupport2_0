@@ -396,7 +396,7 @@ function RewindSession() {
 	global $session_time, $session_name;
     //Reset the expiration time upon page load
    if (isset($_COOKIE[$session_name]))
-      setcookie($session_name, $_COOKIE[$session_name], time() + $session_time, "/", '.casaria.net');
+      setcookie($session_name, session_id(), time() + $session_time, "/", '.casaria.net');
 
    // trHIS MAY WORK BETTER
    // session_set_cookie_params($session_time); // 10 minutes.

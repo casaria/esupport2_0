@@ -50,8 +50,8 @@ if($reg == 'yes'){
 
     if($pubpriv == 'Private') {
 
-        if (($session_id !== session_id() ||
-            (!$cookie_name)) {
+        if (($session_id !== session_id()) || (!$cookie_name)) {
+
 
             $myUrl =  "${protocol}://${domain}/common/login.php";
             header("location:$myUrl");

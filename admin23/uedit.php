@@ -335,11 +335,6 @@ startTable("$lang_edit $lang_user", "center", "100%", 2);
 			
 		endTable();
 
-		startTable("$lang_addtougroups:", "left", 100, 4);
-
-			createUGroupCheckboxes();
-			
-		endTable();
 
 		if($error != 1){
 			echo '<input type=submit name=submit value="'.$lang_update.'">';

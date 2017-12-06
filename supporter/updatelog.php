@@ -33,8 +33,7 @@ require_once "../common/config.php";
 require_once "../common/$database.class.php";
 require_once "../common/common.php";
 
-startSession(); //session_start();
-
+authenticate();
 
 //+++ avoid "you are not a supporter" if selecting the updatelog
 //require_once "../common/login.php";

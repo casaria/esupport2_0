@@ -178,7 +178,7 @@ function authenticate(){
 
     startSession(); //session_start();
     if (isset($_SESSION['supporter_usercookie'])) $cookie_name = $_SESSION['supporter_usercookie'];
-    elseif (isset($_SESSION['cookieuser']) $cookie_name = $_SESSION['cookieuser'];
+    elseif (isset($_SESSION['cookieuser'])) $cookie_name = $_SESSION['cookieuser'];
     else {
         unset($cookie_name);  //let it stal
     }

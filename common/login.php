@@ -59,8 +59,6 @@ function setSession(){
     $_SESSION ['enc_pwd'] = $enc_pwd;
     $_SESSION ['timestamp'] = time();
     $_SESSION ['IP'] = $remote_ip;
-
-
 }
 
 

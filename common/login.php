@@ -247,7 +247,7 @@ global $lang_wronglogin, $lang_strikes_count;
         new WOW().init();
 
 
-        $('#passwordcard').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', this.removeClass('wow zoomIn'));
+        $("#passwordcard").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd animationend', this.removeClass('wow zoomIn'));
 
         function capsLock(e){
 
@@ -260,7 +260,7 @@ global $lang_wronglogin, $lang_strikes_count;
 
 
 
-        $("#passwordcard").submit(function(event));{
+        $("#passwordform").submit(function(event));{
             // cancels the form submission
 
             event.preventDefault();

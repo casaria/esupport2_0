@@ -282,9 +282,6 @@ global $lang_wronglogin, $lang_strikes_count;
                 }
             })
         }
-        function formSuccess(){
-            $( "#msgSubmit" ).removeClass( "hidden" );
-        }
 
 
         //    function setfocus(){
@@ -486,7 +483,7 @@ if (isset($login)) {
 
         </script>
 <?php
-        $myURL='';
+        $myURL='';Q
         logAuthFailure();
         ob_flush();
         exit;

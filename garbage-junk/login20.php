@@ -22,9 +22,9 @@ $starttime = $mtime1[0] + $mtime1[1];
 $normalized_username ='';
 $normalized_password ='';
 $normalized_referer ='';
-require_once  $_SERVER['DOCUMENT_ROOT']."/common/config.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/common/config.php";
 require_once  $_SERVER['DOCUMENT_ROOT']."/common/$database.class.php";
-require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/common/common.php";
 /** @noinspection PhpIncludeInspection */
     require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
 

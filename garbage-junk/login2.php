@@ -12,7 +12,7 @@
 <!-- PNG FIX for IE6 -->
 <!-- http://24ways.org/2007/supersleight-transparent-png-in-ie6 -->
 <!--[if lte IE 6]-->
-<script src="slide.js" type="text/javascript"></script>
+<script src="../common/slide.js" type="text/javascript"></script>
 
 <?php echo $script; ?>
 

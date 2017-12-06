@@ -46,25 +46,6 @@ if (isset($_POST['refer'])) {
     }
 }
 
-if (isset($_SESSION ['cookie_name'])){
-    $cookie_name = $_SESSION ['cookie_name'];
-    if ($cookie_name !=='') {
-        $normalized_username = strtolower(trim($cookie_name));
-        ////$enc_pwd = ($_SESSION['enc_pwd']);
-    }
-} else {
-
-    //***  REMOVE
-    if (isset($_POST['user'])) {
-        $normalized_username = strtolower(trim($_POST['user']));
-    }
-    if (isset($_POST['password'])) {
-        $normalized_password = trim($_POST['password']);
-    }
-}
-
-
-
 
 
 function setSession(){
@@ -87,8 +68,6 @@ function setUserCookie()
 {
     global $normalized_username, $normalized_password, $session_time;
     $cookie_name = $normalized_username;
-//nov14 header("Location: $referer");
-//echo"<BR>$cookie_name $enc_pwd";
     setSession();
 
     setcookie('cookieuser', $cookie_name, time() + $session_time, '/', 'casaria.net');
@@ -100,20 +79,13 @@ function setSupporterCookie()
 {
     global  $normalized_username, $normalized_password, $session_time;
     $cookie_name = $normalized_username;
-
     setSession();
-
-
-    //nov14 header("Location: $referer");
     setcookie('supporter_usercookie', $cookie_name,  time()+ $session_time, '/', 'casaria.net');
     //setcookie('supporter_pwdcookie', $normalized_password,  time()+ $session_time, '/', 'casaria.net');
     setcookie('session_id', session_id(), time() + $session_time, '/', 'casaria.net');
 }
-
-
 function presetValues()
-{
-    global $cookie_name, $ugID_list, $user_id;
+{   global $cookie_name, $ugID_list, $user_id;
 
     //get some globals about the user
     if ($cookie_name != '') {
@@ -121,17 +93,13 @@ function presetValues()
         $ugID_list = getUsersGroupIDList($user_id);
     }
 }
-
-
 function logAuthFailure(){
 global $lang_wronglogin, $lang_strikes_count;
     ob_end_flush();
     http_response_code(403);  //let's log it in nginx log
     echo $lang_wronglogin+ " " + $lang_strikes_count;
 }
-
 ?>
-
     <style>
         * {margin: 0; padding: 0;}
     </style>
@@ -144,9 +112,6 @@ global $lang_wronglogin, $lang_strikes_count;
     <link href="../mdb/css/mdb.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="../mdb/css/style.css" rel="stylesheet">
-
-
-
 
     <style>
         .intro-1{
@@ -281,9 +246,9 @@ global $lang_wronglogin, $lang_strikes_count;
     $(document).ready(function(){
         new WOW().init();
 
-        function setfocus(){
-            document.login.user.focus();
-        }
+    //    function setfocus(){
+    //        document.login.user.focus();
+    //    }
     // jQuery methods go here...
 
 /*

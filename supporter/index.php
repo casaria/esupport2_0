@@ -37,21 +37,10 @@ startSession();
 $cookie_name = $_COOKIE['supporter_usercookie'];
 
 
-/* if($SERVER_PORT == 80 && $enable_ssl == 'On' && (!isset($cookie_name) || $cookie_name == '')){
-	$site = eregi_replace("http", "https", $supporter_site_url);
-	header("Location: $site");
-}   */
-
 if($pubpriv == 'Private') {
-
-    if (($session_id !== session_id()) ||  ($cookie_name !== $_SESSION['cookie_name'] ) || ($cookie_name='') ) {
-        $myUrl =  "${protocol}://${domain}/common/login.php";
-        header("location:$myUrl");
-
-
-    } else {
-        // logged in successfully;
-        //echo "you are logged in";
+    if (($session_id !== session_id()) || (!$cookie_name) || ($cookie_name == '')) {
+    $myUrl =  "${protocol}://${domain}/common/login.php";
+        header("location: $myUrl");
     }
 }
 

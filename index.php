@@ -48,21 +48,12 @@ if($reg == 'yes'){
 }
 
 
-    if($pubpriv == 'Private') {
-
-        if (($session_id !== session_id()) || (!$cookie_name)) {
-
-
-            $myUrl =  "${protocol}://${domain}/common/login.php";
-            header("location: $myUrl");
-
-
-        } else {
-            // logged in successfully;
-            //echo "you are logged in";
-        }
+if($pubpriv == 'Private') {
+    if (($session_id !== session_id()) || (!$cookie_name) || ($cookie_name == '')) {
+        $myUrl =  "${protocol}://${domain}/common/login.php";
+        header("location: $myUrl");
     }
-startSession();  //fetch cookies too
+} //fetch cookies too
 
 /*if ($cookie_name = '') {
     $cookie_name =  $_COOKIE['cookie_name'];

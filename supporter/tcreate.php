@@ -132,6 +132,7 @@ else {
         function MM_jumpMenu(targ, selObj, restore) { //v3.0
             eval(targ + ".location='" + selObj.options[selObj.selectedIndex].value + "'");
             if (restore) selObj.selectedIndex = 0;
+            $('#pills-tab a[href="#asset"]').tab('show')
         }
 
         //--></script>
@@ -158,7 +159,7 @@ else {
         </ul>
 
 
-        <div class="tab-content" id="pills-tab">
+        <div class="tab-content" id="pills-tab-content">
 
             <div class="tab-pane fade show active" id="scan" role="tabpanel" aria-labelledby="new-tab">
                 <p><?php createScanpage(); ?></p>

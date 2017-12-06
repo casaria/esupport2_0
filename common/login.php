@@ -487,6 +487,7 @@ if (isset($login)) {
         </script>
 <?php
         logAuthFailure();
+        exit;
     }
 
 

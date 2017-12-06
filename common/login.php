@@ -476,9 +476,10 @@ if (isset($login)) {
         $myUrl = '';
         echo $lang_wronglogin . " CheckUSer failed!";
         $modalMessage = "$lang_wronglogin";
-
+        ob_flush();
+        require "mdblogin.php";
         logAuthFailure();
-
+        exit;
     }
 
 
@@ -496,9 +497,9 @@ if (isset($login)) {
 ?>
 <header>
     <?php
-    ob_clean();
+    ob_flush();
     require "mdblogin.php";
-   // ob_flush();
+
     exit;
 
 ?>

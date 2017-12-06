@@ -27,7 +27,7 @@
 			**		License along with This program; if not, write to the Free Software
 			**		Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 			**
-			***************************************************************************************/
+    		***************************************************************************************/
 ob_start(null,0, PHP_OUTPUT_HANDLER_FLUSHABLE|PHP_OUTPUT_HANDLER_CLEANABLE|PHP_OUTPUT_HANDLER_REMOVABLE);
 
 require_once "../common/config.php";

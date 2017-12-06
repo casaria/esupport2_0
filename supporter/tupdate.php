@@ -695,7 +695,7 @@ function createTimeTab()
 							</td></tr><tr>
 
 							<td class=back2 align=right>' . $lang_phoneext . ':</td>
-							<td cl-ass=back>
+							<td class=back>
 								<input type=text size=20 name=phone value="' . $info['phone'] . '">
 							</td>';
 
@@ -859,7 +859,7 @@ function createTimeTab()
 
             echo '<td width=15% class=back align=left>';
             echo "<input class=box type=checkbox name=after_hours>";
-            echo "AFTR-HRS";
+            echo "A-HRS";
             echo '</td>';
 
             echo '<td width=15% class=back align=left>';

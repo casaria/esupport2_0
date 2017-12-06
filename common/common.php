@@ -3628,7 +3628,7 @@ function displayTimeHistory()
 				     if($row['after_hours'] != "0"){
 					   echo " checked";
 			     	}
-			    echo ">AFTR_HRS";
+			    echo ">A_HRS";
     	echo '</td>';
 
    	  echo '<td width=10% class=back>';
@@ -3636,7 +3636,7 @@ function displayTimeHistory()
 				     if($row['engineer_rate'] != "0"){
 					   echo " checked";
 			     	}
-			    echo ">SPECIAL";
+			    echo ">Special";
     	echo '</td>';
 
     	echo '<td width=10% class=back2>';

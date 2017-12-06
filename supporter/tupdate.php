@@ -728,11 +728,11 @@ function createTimeTab()
         $g_tkt_uGoup_name = getUserGroupName($info['ugroupid']);
         startTable("$lang_ticket #$g_tkt_id_padded  &nbsp&nbsp GROUP: $g_tkt_uGoup_name", "left", 100, 2, "extra");
         echo '<tr>
-
-							<td class=back2 align=right>' . $lang_ticket . ' ' . $lang_status . ':</td>
-							<td class=back align="left">
-							
-							<select id="selectwidth2" name=status>';
+    
+            <td class=back2 align=right>' . $lang_ticket . ' ' . $lang_status . ':</td>
+            <td class=back align="left">
+            
+            <select id="selectwidth2" name=status>';
         createStatusMenu(0);
 
 
@@ -859,12 +859,12 @@ function createTimeTab()
 
             echo '<td width=15% class=back align=left>';
             echo "<input class=box type=checkbox name=after_hours>";
-            echo "A-HRS";
+            echo " A-HRS";
             echo '</td>';
 
             echo '<td width=15% class=back align=left>';
             echo "<input class=box type=checkbox name=engineer_rate>";
-            echo "Special";
+            echo " Special";
             echo '</td>';
 
             echo '<td width=15% class=back align=left colspan=2>';

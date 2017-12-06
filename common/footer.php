@@ -34,7 +34,7 @@ require_once  $_SERVER['DOCUMENT_ROOT']."/common/themelib.php";
 $theme = getThemeVars(getThemeName('default'));
 
 
-echo '<br><div class="td flex-center"> '.$helpdesk_namE. '<br></div>';
+echo '<br><div class="td" align="center"> '.$helpdesk_namE. '<br>';
 echo "$lang_powered Peter & <b><a href=\"https://odoo.casaria.net\">TheTeam</a></b> V$version<br>";
 echo "<a href=\"https://icons8.com/icon/44052/Shopping-Cart-Loaded\"> icon credits</a><br>";
 if($enable_stats == 'On'){
@@ -45,4 +45,4 @@ if($enable_stats == 'On'){
 	
 	echo "$lang_processed: $totaltime $lang_seconds, $db->queries $lang_queries<br>";
 }
-echo "</font> </center>";
+echo "</div>";

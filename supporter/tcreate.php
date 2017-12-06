@@ -383,7 +383,7 @@ function createSupporterInfo()
 				<td width="180px" class=back2 align=left>* '.$lang_group.':</td>
 				<td class=back >';
 				?>
-			    	<select id="selectwidth" name=usergroup_name onChange="MM_jumpMenu('parent', this, 0)">
+			    	<select id="selectwidth" name=usergroup_name onChange="MM_jumpMenu('tkt', this, 0)">
 				<?php					
 				$ug=createUGroupsMenu();
 				echo '</select>				

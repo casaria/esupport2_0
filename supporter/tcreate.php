@@ -145,7 +145,7 @@ else {
         <form action=tcreate.php method=post enctype="multipart/form-data">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" id="pills-scan-tab" data-toggle="pill" href="#scan" role="tab" aria-controls="pills-scan" aria-selected="true"><h3>Scan</h3></a>
+                <a class="nav-link" id="pills-scan-tab" data-toggle="pill" href="#scan" role="tab" aria-controls="pills-scan" aria-selected="true"><h3>Scan</h3></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="pills-tkt-tab" data-toggle="pill" href="#tkt" role="tab" aria-controls="pills-tkt" aria-selected="false"><h3>Tkt</h3></a>

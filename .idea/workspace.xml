@@ -12,11 +12,11 @@
     <bookmark url="file://$PROJECT_DIR$/supporter/tsearch.php" line="359" />
     <bookmark url="file://$PROJECT_DIR$/common/common.php" />
     <bookmark url="file://$PROJECT_DIR$/supporter/tcreate.php" line="552" />
-    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="1802" />
+    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="1803" />
     <bookmark url="file://$PROJECT_DIR$/supporter" />
     <bookmark url="file://$PROJECT_DIR$/dylay/4.html" line="11" />
     <bookmark url="file://$PROJECT_DIR$/supporter/tupdate.php" line="0" />
-    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="1275" />
+    <bookmark url="file://$PROJECT_DIR$/common/style.php" line="1276" />
     <bookmark url="file://$PROJECT_DIR$/common/login20.php" line="391" />
     <bookmark url="file://$PROJECT_DIR$/common/common.php" line="2772" />
     <bookmark url="file://$PROJECT_DIR$/common/common.php" line="3717" />
@@ -165,10 +165,10 @@
       <file leaf-file-name="style.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/style.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2787">
-              <caret line="325" column="11" lean-forward="true" selection-start-line="325" selection-start-column="11" selection-end-line="325" selection-end-column="11" />
+            <state relative-caret-position="763">
+              <caret line="347" column="0" lean-forward="true" selection-start-line="347" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
               <folding>
-                <marker date="1512536509096" expanded="true" signature="1977:2142" ph="..." />
+                <marker date="1512537355038" expanded="true" signature="1977:2142" ph="..." />
               </folding>
             </state>
           </provider>
@@ -283,9 +283,9 @@
         <entry file="file://$PROJECT_DIR$/common/footer.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="386">
-              <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+              <caret line="36" column="44" lean-forward="false" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
               <folding>
-                <marker date="1512537201299" expanded="true" signature="1520:1760" ph="..." />
+                <marker date="1512537429285" expanded="true" signature="1520:1760" ph="..." />
               </folding>
             </state>
           </provider>
@@ -305,7 +305,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tabl</find>
       <find>table</find>
       <find>.info</find>
       <find>font-famil</find>
@@ -335,6 +334,7 @@
       <find>logout</find>
       <find>getpriv</find>
       <find>ge</find>
+      <find>td.st</find>
     </findStrings>
     <replaceStrings>
       <replace>$summary = displayTicket($result);</replace>
@@ -927,21 +927,7 @@
       <workItem from="1512376240662" duration="51919000" />
       <workItem from="1512493638967" duration="481000" />
       <workItem from="1512494467936" duration="515000" />
-      <workItem from="1512495118589" duration="35427000" />
-    </task>
-    <task id="LOCAL-02618" summary="login sessions and cookies">
-      <created>1512522999929</created>
-      <option name="number" value="02618" />
-      <option name="presentableId" value="LOCAL-02618" />
-      <option name="project" value="LOCAL" />
-      <updated>1512522999929</updated>
-    </task>
-    <task id="LOCAL-02619" summary="login sessions and cookies">
-      <created>1512523978387</created>
-      <option name="number" value="02619" />
-      <option name="presentableId" value="LOCAL-02619" />
-      <option name="project" value="LOCAL" />
-      <updated>1512523978387</updated>
+      <workItem from="1512495118589" duration="35654000" />
     </task>
     <task id="LOCAL-02620" summary="login sessions and cookies">
       <created>1512524878995</created>
@@ -1272,11 +1258,25 @@
       <option name="project" value="LOCAL" />
       <updated>1512536518028</updated>
     </task>
-    <option name="localTasksCounter" value="2667" />
+    <task id="LOCAL-02667" summary="control panel leve - 8">
+      <created>1512537220650</created>
+      <option name="number" value="02667" />
+      <option name="presentableId" value="LOCAL-02667" />
+      <option name="project" value="LOCAL" />
+      <updated>1512537220650</updated>
+    </task>
+    <task id="LOCAL-02668" summary="control panel leve - 8">
+      <created>1512537364964</created>
+      <option name="number" value="02668" />
+      <option name="presentableId" value="LOCAL-02668" />
+      <option name="project" value="LOCAL" />
+      <updated>1512537364964</updated>
+    </task>
+    <option name="localTasksCounter" value="2669" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1852122000" />
+    <option name="totallyTimeSpent" value="1852349000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2457,16 +2457,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/style.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2787">
-          <caret line="325" column="11" lean-forward="true" selection-start-line="325" selection-start-column="11" selection-end-line="325" selection-end-column="11" />
-          <folding>
-            <marker date="1512536509096" expanded="true" signature="1977:2142" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin23/control.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -2546,12 +2536,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/common/style.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="763">
+          <caret line="347" column="0" lean-forward="true" selection-start-line="347" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
+          <folding>
+            <marker date="1512537355038" expanded="true" signature="1977:2142" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
-          <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <caret line="36" column="44" lean-forward="false" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
           <folding>
-            <marker date="1512537201299" expanded="true" signature="1520:1760" ph="..." />
+            <marker date="1512537429285" expanded="true" signature="1520:1760" ph="..." />
           </folding>
         </state>
       </provider>

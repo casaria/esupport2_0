@@ -466,7 +466,7 @@ if (isset($login)) {
             setSupporterCookie();
             $myUrl = "${protocol}://${domain}/supporter/index.php".$postpara."welcome-superAdmin";
         }
-        elseif ($level >= 8) {
+        elseif ($level >= 4) {
             ob_end_clean();
             setSupporterCookie();
             $myUrl = "${protocol}://${domain}/supporter/index.php".$postpara."welcome-admin";

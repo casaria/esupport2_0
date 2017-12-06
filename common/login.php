@@ -244,10 +244,10 @@ global $lang_wronglogin, $lang_strikes_count;
 
 
     $(document).ready(function(){
-
         new WOW().init();
 
-        $('#passwordcard').removeClass('wow zoomIn');
+
+        $('#passwordcard').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', this.removeClass('wow zoomIn'));
 
         function capsLock(e){
 

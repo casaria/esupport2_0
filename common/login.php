@@ -244,7 +244,7 @@ global $lang_wronglogin, $lang_strikes_count;
 
 
     $(document).ready(function(){
-        new WOW().init();
+
 
     //    function setfocus(){
     //        document.login.user.focus();

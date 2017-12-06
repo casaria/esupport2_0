@@ -262,5 +262,7 @@
         </div>
     </section>
 
-    <script Src="../mdb/js/mdb.js"> </script>
+    <script Src="../mdb/js/mdb.js">
+        new WOW().init();
+    </script>
 

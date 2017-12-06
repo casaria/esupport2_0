@@ -248,10 +248,7 @@
                                         <button type="submit"  id="submit" name="login" class="btn orange-gradient btn-lg">LOGIN</button>
                                         <hr>
                                         <div class="inline-ul text-center d-flex justify-content-center">
-
-                                        </div>
-                                        <div>
-                                            <label for
+                                                <label for="submit">text</label>
                                         </div>
                                     </div>
 

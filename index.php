@@ -53,7 +53,7 @@ if($pubpriv == 'Private') {
         $myUrl =  "${protocol}://${domain}/common/login.php";
         header("location: $myUrl");
     }
-} //fetch cookies too
+}
 
 /*if ($cookie_name = '') {
     $cookie_name =  $_COOKIE['cookie_name'];

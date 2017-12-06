@@ -864,7 +864,7 @@ function createTimeTab()
 
             echo '<td width=15% class=back align=left>';
             echo "<input class=box type=checkbox name=engineer_rate>";
-            echo "SPECIAL";
+            echo "Special";
             echo '</td>';
 
             echo '<td width=15% class=back align=left colspan=2>';

@@ -478,7 +478,8 @@ if (isset($login)) {
         $modalMessage = "$lang_wronglogin";
         ?>
         <script>
-        $("#passwordcard").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd animationend', this.removeClass('wow zoomIn'));
+        $('#passwordcard').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd animationend',
+            $('#passwordcard').removeClass('wow zoomIn'));
         $('#pwdmodal').addClass('animated rubberBand');
 
         </script>

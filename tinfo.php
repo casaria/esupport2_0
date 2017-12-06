@@ -105,7 +105,7 @@ if(isset($send_mail)){
 }
 
 
-$ticket = getTicketInfo($id);	//get the ticket info again so we have the updated update log.
+	$ticket = getTicketInfo($id);	//get the ticket info again so we have the updated update log.
 $supporter = getUserInfo($ticket[supporter_id]); //get all relevant uaer info for the supporter
 
 //+++

@@ -48,17 +48,13 @@ if($reg == 'yes'){
 startSession();
 $cookie_name = $_COOKIE['cookieuser'];
 
-if($pubpriv == 'Private') {
-    if (($session_id !== session_id()) || (!$cookie_name) || ($cookie_name == '')) {
+if($pubpriv == 'Private') {if (($session_id !== session_id()) || (!$cookie_name) || ($cookie_name == '')) {
         $myUrl =  "${protocol}://${domain}/common/login.php";
         header("location: $myUrl");
     }
 }
 
-if ($cookie_name = '') {
-    $cookie_name =  $_COOKIE['cookieuser'];
-    if ($cookie_name = '')  $cookie_name = $_COOKIE['supporter_usercookie'];
-}
+$cookie_name = $_SESSION['cookie_name'];
 
         if($enable_helpdesk == 'Off'){
 	printerror($on_off_reason);

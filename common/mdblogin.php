@@ -248,7 +248,7 @@
                                         <button type="submit"  id="submit" name="login" class="btn orange-gradient btn-lg">LOGIN</button>
                                         <hr>
                                         <div class="inline-ul text-center d-flex justify-content-center">
-                                                <label for="submit">text</label>
+                                                <label for="submit">CAPS LOCK is on!</label>
                                         </div>
                                     </div>
 

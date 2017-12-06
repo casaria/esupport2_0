@@ -982,6 +982,11 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     font-size: <?php echo ($theme['font_size']+1); ?>px;
                 }
 
+                .task-textarea {
+                    rows=3;
+                    cols=36;
+                }
+
                 .tkt-date{
                     margin: 4px;
                     height: 34px;
@@ -1616,6 +1621,11 @@ console.log(document.querySelector('meta[name="viewport"]'));
                     width: 350px;
                     height: 80px;
                     font-size: <?php echo ($theme['font_size']+1); ?>px;
+                }
+
+                .task-textarea {
+                    rows=3;
+                    cols=50;
                 }
 
                 .tkt-date{

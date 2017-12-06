@@ -779,7 +779,7 @@ function createTimeTab()
 
         echo '<td class=back align="left" colspan="3">';
         echo 'Work tasks / reference<BR>';
-        echo '<textarea  name=reference rows=3 cols=36>' . '</textarea></td>';
+        echo '<textarea  name=reference class="ta-task">' . '</textarea></td>';
         echo '</tr><tr>';
 
         echo '<td class=back >';

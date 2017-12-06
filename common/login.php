@@ -496,16 +496,14 @@ if (isset($login)) {
 ?>
 <header>
     <?php
-
-
-
+    ob_clean();
     require "mdblogin.php";
-    ob_flush();
-    //exit;
+   // ob_flush();
+    exit;
 
 ?>
 
-</header`>
+</header>
 
 
 </body>

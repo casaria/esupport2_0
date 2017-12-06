@@ -331,6 +331,21 @@ console.log(document.querySelector('meta[name="viewport"]'));
 
 
 
+            .stats {
+                background: <?php echo $theme['bg1']; ?>;
+                font-family: "<?php echo $theme['font']; ?>";
+                font-size: 10px;
+                color: <?php echo $theme['text']; ?>;
+            }
+
+            td.stats {
+                background: <?php echo $theme['category']; ?>;
+                font-family: "<?php echo $theme['font']; ?>";
+                font-size: 10px;
+                color: <?php echo $theme['text']; ?>;
+            }
+
+
             td.stats,
             .stats {
                 background: <?php echo $theme['category']; ?>;

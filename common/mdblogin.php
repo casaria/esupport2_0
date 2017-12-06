@@ -228,7 +228,7 @@
 
                                     <!--Header-->
                                     <div class="form-header orange-gradient">
-                                        <h4><i class="fa fa-user-secret mt-3 mb-3"></i> Casaria eSupport 2.0 login</h4>
+                                        <h4><i class="fa fa-user mt-3 mb-3"></i> Casaria eSupport 2.0 login</h4>
                                     </div>
 
                                     <!--Body-->
@@ -245,10 +245,13 @@
                                     </div>
 
                                     <div class="text-center">
-                                        <button type="submit" name="login" class="btn orange-gradient btn-lg">LOGIN</button>
+                                        <button type="submit"  id="submit" name="login" class="btn orange-gradient btn-lg">LOGIN</button>
                                         <hr>
                                         <div class="inline-ul text-center d-flex justify-content-center">
 
+                                        </div>
+                                        <div>
+                                            <label for
                                         </div>
                                     </div>
 

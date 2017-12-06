@@ -253,7 +253,7 @@ global $lang_wronglogin, $lang_strikes_count;
                 offset: 0, // default
                 mobile: true, // default
                 live: true // default
-            })
+            });
             wow.init();
 
 

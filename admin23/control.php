@@ -45,7 +45,7 @@ require_once "../common/common.php";
 
 startSession();
 unset($cookie_name);
-$cookie_name = $_COOKIE['supporter_usercookie'];
+if (isset($_COOKIE['supporter_usercookie']) $cookie_name = $_COOKIE['supporter_usercookie'];
 
 $level = getPrivelegesAsInteger($cookie_name);
 

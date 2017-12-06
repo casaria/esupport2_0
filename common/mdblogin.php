@@ -213,7 +213,7 @@
                 </ul>
             </div>
         </div>
-        =    </nav>
+    </nav>
 
     <!--Intro Section-->
     <section class="view intro-9 hm-indigo-light">

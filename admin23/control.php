@@ -51,10 +51,9 @@ if (isset($_COOKIE['supporter_usercookie'])) {
     $level = getPrivelegesAsInteger($cookie_name);
 }
 
-if (!$level) exit;
 
 if($pubpriv == 'Private') {
-    if ( (!($level & 8)) || ($session_id !== session_id()) || (!$cookie_name) || ($cookie_name == '')) {
+    if ( (!($level & 8)) || ($session_id !== session_id()) || (!$cookie_name) || ($cookie_name == '') || (!$level)) {
         $myUrl =  "${protocol}://${domain}/common/login.php";
         header("location: $myUrl");
     }

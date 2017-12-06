@@ -478,7 +478,7 @@ if (isset($login)) {
         $modalMessage = "$lang_wronglogin";
 
         logAuthFailure();
-        exit;
+
     }
 
 
@@ -497,15 +497,15 @@ if (isset($login)) {
 <header>
     <?php
 
-    ob_flush();
+
 
     require "mdblogin.php";
-
+    ob_flush();
     //exit;
 
 ?>
 
-</header>
+</header`>
 
 
 </body>

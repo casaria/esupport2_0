@@ -258,7 +258,7 @@ global $lang_wronglogin, $lang_strikes_count;
 
 
 
-            $('#passwordcard').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd animationend', this.removeClass('wow zoomIn'));
+          //  $('#passwordcard').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd animationend', this.removeClass('wow zoomIn'));
 
 
         //    function setfocus(){

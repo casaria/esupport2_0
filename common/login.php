@@ -479,7 +479,7 @@ if (isset($login)) {
         ?>
         <script>
         $("#passwordcard").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd animationend', this.removeClass('wow zoomIn'));
-        $('#passwordcard').addClass('animated rubberBand');
+        $('#pwdmodal').addClass('animated rubberBand');
 
         </script>
 <?php

@@ -482,7 +482,7 @@ if (isset($login)) {
         </script>
 <?php
         logAuthFailure();
-        ob_flush();
+        oc_clean();
         exit;
 
     }

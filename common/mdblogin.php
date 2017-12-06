@@ -264,5 +264,6 @@
 
     <script Src="../mdb/js/mdb.js">
         new WOW().init();
+
     </script>
 

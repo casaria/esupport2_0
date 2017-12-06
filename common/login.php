@@ -247,8 +247,10 @@ global $lang_wronglogin, $lang_strikes_count;
 
         new WOW().init();
 
+        $('#passwordcard').removeClass('wow zoomIn');
 
         function capsLock(e){
+
             var kc = e.keyCode ? e.keyCode : e.which;
             var sk = e.shiftKey ? e.shiftKey : kc === 16;
             var visibility = ((kc >= 65 && kc <= 90) && !sk) ||
@@ -258,8 +260,9 @@ global $lang_wronglogin, $lang_strikes_count;
 
 
 
-        $("#newPassForm").submit(function(event){
+        $("#passwordcard").submit(function(event));{
             // cancels the form submission
+
             event.preventDefault();
             submitForm();
         });
@@ -390,7 +393,7 @@ global $lang_wronglogin, $lang_strikes_count;
 
 
 
-    }); //$(document).ready(function()
+    }) //$(document).ready(function()
     </script>
 </head>
 

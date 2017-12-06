@@ -260,7 +260,7 @@ global $lang_wronglogin, $lang_strikes_count;
 
 
 
-        $("#passwordform").submit(function(event));{
+        $("#passwordform").submit(function(event){
             // cancels the form submission
 
             event.preventDefault();

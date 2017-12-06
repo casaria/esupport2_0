@@ -256,6 +256,31 @@ global $lang_wronglogin, $lang_strikes_count;
         new WOW().init();
 
 
+        $("#newPassForm").submit(function(event){
+            // cancels the form submission
+            event.preventDefault();
+            submitForm();
+        });
+
+        function submitForm(){
+            // Initiate Variables With Form Content
+            var name = $("#name").val();
+
+            $.ajax({
+                type: "POST",
+                url: "password-process.php",
+                data: "name=" + name + "&pwd=" + password + "&message=" + message,
+                success : function(text){
+                    if (text == "success"){
+                        formSuccess();
+                    }
+                }
+            })
+        }
+        function formSuccess(){
+            $( "#msgSubmit" ).removeClass( "hidden" );
+        }
+
 
         //    function setfocus(){
     //        document.login.user.focus();

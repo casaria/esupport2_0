@@ -218,7 +218,7 @@
 
     <!--Intro Section-->
     <?php
-  echo '<section class="view '.$intro-background .' hm-indigo-light">';
+  echo '<section class="view '.$intro_background.' hm-indigo-light">';
     ?>
         <div class="full-bg-img flex-center">
             <div class="container" id="pwdmodal">

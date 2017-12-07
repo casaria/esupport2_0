@@ -2,6 +2,7 @@
 <script language="Javascript1.2">
 <!--
 <?php
+printWindow();
 ob_start(null,0, PHP_OUTPUT_HANDLER_FLUSHABLE|PHP_OUTPUT_HANDLER_CLEANABLE|PHP_OUTPUT_HANDLER_REMOVABLE);
 ?>
 
@@ -56,7 +57,8 @@ require_once "../common/common.php";
 
 ob_end_clean();
 authenticate();
-printWindow();
+
+
 
 //$cookie_name = $_SESSION['cookie_name'];
 

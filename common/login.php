@@ -119,7 +119,7 @@ global $lang_wronglogin, $lang_strikes_count;
     </style>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../mdb/font/fa/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
     <link href="../mdb/css/bootstrap.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -248,7 +248,7 @@ global $lang_wronglogin, $lang_strikes_count;
     <script src="../mdb/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript    +++   mdb.min -->
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+    <script src="../mdb/js/modules (optional)/jquery.validate.min.js"></script>
     <!-- SCRIPTS -->
 
     <!-- SCRIPTS -->

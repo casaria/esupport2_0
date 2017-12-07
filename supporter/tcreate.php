@@ -374,6 +374,7 @@ function createQRcode($url){
 function createSupporterInfo()
 {
 	global $sg, $lang_supporterinfo, $userid, $ug, $lang_priority,$lang_group, $lang_ticket, $lang_status,$lang_supporter,$lang_supportergroup;
+    $ticket['priority']='';
 
 	if($sg == '')
 		$sg = getDefaultSupporterGroupID();
@@ -413,7 +414,7 @@ function createSupporterInfo()
 				<td class=back2 align=left>'.$lang_ticket.' '.$lang_priority.':</td>
 				<td class=back>
 				<select class="selectwidth" name=priority>';
-				createPriorityMenu();  
+				createPriorityMenu(0,99999,$ticket);
 		echo '</select></tr></td>';
 
 		echo '<tr>

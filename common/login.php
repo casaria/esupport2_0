@@ -33,7 +33,10 @@ require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
 //otherwise, grab the selected theme from the database.
 //require_once  $_SERVER['DOCUMENT_ROOT']."/common/themelib.php";
 //$theme = getThemeVars(getThemeName($cookie_name));
- $intro_background = 'intro-10'; //intro-1 .. intro-10 are defined in this file
+ $intro_background = 'intro-'.chr(random_int(0,10));
+ //intro-1 .. intro-10 are defined in this file
+
+
 
 if (isset($_POST['refer'])) {
     $normalized_referer = strtolower(trim($_POST['refer']));

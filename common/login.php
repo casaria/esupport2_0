@@ -35,7 +35,7 @@ require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
 //$theme = getThemeVars(getThemeName($cookie_name));
  $intro_background = 'intro-9'; //.chr(random_int(0,10));
  //intro-1 .. intro-10 are defined in this
-ra
+
 
 
 

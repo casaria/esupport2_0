@@ -32,25 +32,6 @@
 			**
 			***************************************************************************************/
 
-/**********************************************************************************************************/
-/****************************	 Variables	***********************************************************/
-
-$database = "mysql";					//database (mysql is the only one available
-$server_gmt_offset = -5; //Timezone GMT -5
-$db_host='localhost';
-$db_user = 'casaria_hdesk1';
-$db_pwd = '26XwoR]B';
-$db_name = 'hostgo_hdesk1';
-$uploaddir = '/var/www/casaria/support/uploads/';
-$session_time = 72000;
-$session_name = 'CasariaIncSupport';
-$MailQueuePath = "/var/www/casaria/support/MAILQUEUE/";
-
-
-/*********	You shouldn't need to change anything below here.	***********************************/
-/**********************************************************************************************************/
-/**********************************************************************************************************/
-
 $base_dir  = __DIR__; // Absolute path to your installation, ex: /var/www/mywebsite
 $doc_root  = preg_replace("!${_SERVER['SCRIPT_NAME']}$!", '', $_SERVER['SCRIPT_FILENAME']); # ex: /var/www
 $base_url  = preg_replace("!^${doc_root}!", '', $base_dir); # ex: '' or '/mywebsite'
@@ -60,6 +41,42 @@ $disp_port = ($protocol == 'http' && $port == 80 || $protocol == 'https' && $por
 $domain    = $_SERVER['SERVER_NAME'];
 $full_url  = "${protocol}://${domain}${disp_port}${base_url}";
 $remote_ip = $_SERVER['REMOTE_ADDR'];
+
+
+
+/**********************************************************************************************************/
+/****************************	 Variables	***********************************************************/
+if ($domain == 'support.casaria.net') {
+
+    $database = "mysql";                    //database (mysql is the only one available
+    $server_gmt_offset = -5; //Timezone GMT -5
+    $db_host = 'localhost';
+    $db_user = 'casaria_hdesk1';
+    $db_pwd = '26XwoR]B';
+    $db_name = 'hostgo_hdesk1';
+    $uploaddir = '/var/www/casaria/support/uploads/';
+    $session_time = 72000;
+    $session_name = 'CasariaIncSupport';
+    $MailQueuePath = "/var/www/casaria/support/MAILQUEUE/";
+} else {
+
+    $database = "mysql";                    //database (mysql is the only one available
+    $server_gmt_offset = -5; //Timezone GMT -5
+    $db_host = 'localhost';
+    $db_user = 'casaria_hdesk1';
+    $db_pwd = '26XwoR]B';
+    $db_name = 'casaria_hdesk';
+    $uploaddir = '/var/www/casaria/esupport2_0/uploads/';
+    $session_time = 72000;
+    $session_name = 'EVALCasaria';
+    $MailQueuePath = '/var/www/casaria/esupport2_0/MAILQUEUE/';
+    $includePath = '/var/www/casaria/esupport2_0/common/';
+}
+/*********	You shouldn't need to change anything below here.	***********************************/
+/**********************************************************************************************************/
+/**********************************************************************************************************/
+
+
 
 if (!isset($cookie_name)) $cookie_name='';
 

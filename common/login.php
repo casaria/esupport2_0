@@ -28,6 +28,8 @@ ob_start(null,0, PHP_OUTPUT_HANDLER_FLUSHABLE|PHP_OUTPUT_HANDLER_CLEANABLE|PHP_O
 //set the start time so we can calculate how long it takes to load the page.
 $mtime1 = explode(" ", microtime());
 $starttime = $mtime1[0] + $mtime1[1];
+
+$modalMessage='';
 //$normalized_username ='';
 //$normalized_password ='';
 //$normalized_referer ='';

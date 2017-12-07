@@ -175,12 +175,12 @@ else {
             <div class="tab-pane fade" id="asset" role="tabpanel" aria-labelledby="asset-tab">
                 <p>Asset Database
                     <?php
-                    try {
+               /*     try {
                         Connection::get()->connect();
                         echo 'A connection to the PostgreSQL database sever has been established successfully.';
                     } catch (PDOException $e) {
                         echo $e->getMessage();
-                    }
+                    }    */
                     ?>
                 </p>
             </div>
@@ -385,7 +385,7 @@ function createSupporterInfo()
 				?>
 			    	<select class="selectwidth" id="ugroup-dd"  name=usergroup_name onChange="MM_jumpMenu('sgroup-dd', 'sgroup-dd', 'tkt', 0)">
 				<?php					
-				$ug=createUGroupsMenu();
+				$ug=createUGroupsMenu(1); //with empty option
 				echo '</select>				
 				</td></tr>					
 		

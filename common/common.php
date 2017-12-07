@@ -2117,21 +2117,23 @@ echo '
 **	function createUGroupsMenu():
 **		Takes no arguments.  Creates the drop down menu
 ************************************************************************************************************/
-function createUGroupsMenu()
+function createUGroupsMenu($emptyrow=0)
 {
-	global $mysql_ugroups_table, $sg, $ug, $db;
+	global $sg, $ug, $db;
 
 	/* $sql = "select id, group_name from $mysql_ugroups_table order by rank asc"; */
 
-    $sql = "select id, group_name from $mysql_ugroups_table order by group_name asc";
+    $sql = "select id, group_name from ugroups order by group_name asc";
 
 
     $result = $db->query($sql);
 	$num_rows = 0;
 
+    if($emptyrow == 1)
+        echo "<option></option>\n";
 
 
-		while($row = $db->fetch_array($result)){
+    while($row = $db->fetch_array($result)){
 			if($num_rows == 1 || $row['id'] != 0){
 				echo "<option value=\"index.php?t=tcre&sg=$sg&ug=$row[id]\"";
 					if($ug == $row['id']) echo " selected";

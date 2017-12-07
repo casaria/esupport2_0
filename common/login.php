@@ -18,7 +18,6 @@ ob_start(null,0, PHP_OUTPUT_HANDLER_FLUSHABLE|PHP_OUTPUT_HANDLER_CLEANABLE|PHP_O
 
  */
 //set the start time so we can calculate how long it takes to load the page.
-
 $mtime1 = explode(" ", microtime());
 $starttime = $mtime1[0] + $mtime1[1];
 //$normalized_username ='';
@@ -30,6 +29,11 @@ require_once  $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 /** @noinspection PhpIncludeInspection */
 require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
 
+//if the user is not logged in, set the default style sheet.
+//otherwise, grab the selected theme from the database.
+//require_once  $_SERVER['DOCUMENT_ROOT']."/common/themelib.php";
+//$theme = getThemeVars(getThemeName($cookie_name));
+ $intro_background = 'intro-4'; //intro-1 .. intro-10 are defined in this file
 
 if (isset($_POST['refer'])) {
     $normalized_referer = strtolower(trim($_POST['refer']));
@@ -95,7 +99,7 @@ function logAuthFailure(){
 global $lang_wronglogin, $lang_strikes_count;
     ob_end_flush();
     http_response_code(403);  //let's log it in nginx log
-    echo $lang_wronglogin+ " " + $lang_strikes_count;
+    // echo $lang_wronglogin+ " " + $lang_strikes_count;
 }
 ?>
     <style>
@@ -469,7 +473,7 @@ if (isset($login)) {
         //ob_clean();
         //LOGIN CREDDENTIALS FAILED
         $myUrl = '';
-        echo $lang_wronglogin . " CheckUSer failed!";
+        //echo $lang_wronglogin . " CheckUSer failed!";
         $modalMessage = "$lang_wronglogin";
 
         logAuthFailure();

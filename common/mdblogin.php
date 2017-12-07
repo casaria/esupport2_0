@@ -207,16 +207,19 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-toggle="modal" data-target="#passwordModalInfo">password guidelines</a>
                     </li>
-                    <li class="nav-item">
+             <!--       <li class="nav-item">
                         <a class="nav-link" href="#" data-toggle="modal" data-target="#newpasswordModal">Create secure password</a>
                     </li>
+ -->
                 </ul>
             </div>
         </div>
     </nav>
 
     <!--Intro Section-->
-    <section class="view intro-9 hm-indigo-light">
+    <?php
+  echo '<section class="view '.$intro-background .' hm-indigo-light">';
+    ?>
         <div class="full-bg-img flex-center">
             <div class="container" id="pwdmodal">
                 <div class="row">

@@ -405,7 +405,7 @@ function isCookieSet($cookie_name, $enc_pwd)
 
 function startSession() {
 	global $session_time, $session_name, $cookie_name;
-    session_set_cookie_params($session_time,'/', '.casaria.net',0,1);
+    session_set_cookie_params($session_time,'/', '.casaria.net',1,1);
     session_name($session_name);
     session_start();
     if (!isset($_SESSION['count'])) {

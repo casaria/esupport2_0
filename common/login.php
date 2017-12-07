@@ -192,7 +192,7 @@ global $lang_wronglogin, $lang_strikes_count;
         }
 
         .card {
-            background-color: rgba(124, 124, 122, 0.65);
+            background-color: rgba(100, 100, 95, 0.7);
             color: #fdffe3 !important;
         }
 

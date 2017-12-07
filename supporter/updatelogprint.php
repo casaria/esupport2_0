@@ -1,26 +1,18 @@
-
-<script language="Javascript1.2">
-<!--
 <?php
-printWindow();
 ob_start(null,0, PHP_OUTPUT_HANDLER_FLUSHABLE|PHP_OUTPUT_HANDLER_CLEANABLE|PHP_OUTPUT_HANDLER_REMOVABLE);
 ?>
 
+<script language="Javascript1.2">
 function printWindow(){
 browserVersion = parseInt(navigator.appVersion);
 if (browserVersion >= 4) window.print()
 }
 
+printWindow();
 
-
-// -->
 </script> 
 
-
-
-
-<?php
-
+<?PHP
 
 /***************************************************************************************************
 **	file:	updatelog.php
@@ -54,6 +46,8 @@ if (browserVersion >= 4) window.print()
 require_once "../common/config.php";
 require_once "../common/$database.class.php";
 require_once "../common/common.php";
+
+
 
 ob_end_clean();
 authenticate();

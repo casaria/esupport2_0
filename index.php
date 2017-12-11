@@ -60,7 +60,6 @@ if($pubpriv == 'Private') {if (($session_id !== session_id()) || (!$cookie_name)
     }
 }
 
-
 $cookie_name = $_SESSION['cookie_name'];
 
         if($enable_helpdesk == 'Off'){

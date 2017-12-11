@@ -43,9 +43,9 @@ require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
 //otherwise, grab the selected theme from the database.
 //require_once  $_SERVER['DOCUMENT_ROOT']."/common/themelib.php";
 //$theme = getThemeVars(getThemeName($cookie_name));
- $intro_background = 'intro-'.(string)(rand(0,10));
+ $intro_background = 'intro-'.(string)(rand(0,12));
  //intro-1 .. intro-10 are defined in this
-
+ $intro_background = "intro-11";
 
 
 
@@ -174,6 +174,14 @@ global $lang_wronglogin, $lang_strikes_count;
         }
         .intro-10 {
             background: url("../img/chicago.jpg")no-repeat center center;
+            background-size: cover;
+        }
+        .intro-11 {
+            background: url("../img/trillium.jpg")no-repeat center center;
+            background-size: cover;
+        }
+        .intro-12 {
+            background: url("../img/meadow5190.jpg")no-repeat center center;
             background-size: cover;
         }
 

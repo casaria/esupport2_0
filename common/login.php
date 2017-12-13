@@ -45,7 +45,7 @@ require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
 //$theme = getThemeVars(getThemeName($cookie_name));
  $intro_background = 'intro-'.(string)(rand(0,12));
  //intro-1 .. intro-10 are defined in this
- $intro_background = "intro-11";
+ //$intro_background = "intro-11";
 
 
 
@@ -57,6 +57,7 @@ if (isset($_POST['refer'])) {
             break;
         case 'supporter':
             $normalized_referer = "/support/index.php";
+
             break;
 
         default:
@@ -188,17 +189,7 @@ global $lang_wronglogin, $lang_strikes_count;
         .top-nav-collapse {
             background-color: #3f51b5 !important;
             /*  background-color: #3f51b5 !important; */
-        }
         .navbar:not(.top-nav-collapse) {
-            background: transparent !important;
-        }
-        @media (max-width: 768px) {
-            .navbar:not(.top-nav-collapse) {
-                background-color: #3f51b5 !important;
-                /*   background: #3f51b5 !important; */
-            }
-        }
-
         .card {
             background-color: rgba(100, 100, 95, 0.7);
             color: #fdffe3 !important;
@@ -213,6 +204,16 @@ global $lang_wronglogin, $lang_strikes_count;
         }
         h6 {
             line-height: 1.9;
+        }
+        .navbar:not(.top-nav-collapse) {
+            background: transparent !important;
+        }
+            background-color: #3f51b5 !important;
+            /*   background: #3f51b5 !important; */
+        }
+        }
+
+        @media (max-width: 768px) {
         }
         @media (max-width: 740px) {
             .full-height,

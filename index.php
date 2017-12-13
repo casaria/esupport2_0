@@ -218,7 +218,7 @@ border=0>
             													<TD class=subcat>
             													<LI><A
             													href="index.php?t=epro">' . $lang_editprofile . '</A>
-            													</LI>
+                													</LI>
             
             													</TD>
             													</TR>';

@@ -43,7 +43,7 @@ require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
 //otherwise, grab the selected theme from the database.
 //require_once  $_SERVER['DOCUMENT_ROOT']."/common/themelib.php";
 //$theme = getThemeVars(getThemeName($cookie_name));
- $intro_background = 'intro-'.(string)(rand(0,12));
+ $intro_background = 'intro-'.(string)(rand(1,12));
  //intro-1 .. intro-10 are defined in this
  //$intro_background = "intro-11";
 
@@ -132,7 +132,7 @@ global $lang_wronglogin, $lang_strikes_count;
 
     <style>
         .intro-1{
-            background:  url("../img/svg/bg1.png") no-repeat, linear-gradient(rgba(63, 81, 181, 0.5), rgba(67, 20, 34, 0.9)) !important;
+            background:  url("../img/trillium.jpg") no-repeat, linear-gradient(rgba(63, 81, 181, 0.5), rgba(67, 20, 34, 0.9)) !important;
             background-size: cover;
         }
         .intro-2 {
@@ -143,11 +143,11 @@ global $lang_wronglogin, $lang_strikes_count;
             background-size: cover;
         }
         .intro-3 {
-            background: url("../img/IMG_3629.png")no-repeat center center;
+            background: url("../img/iceland.jpg")no-repeat center center;
             background-size: cover;
         }
         .intro-4 {
-            background: url("../img/wormhole.png")no-repeat center center;
+            background: url("../img/anenmone.jpg")no-repeat center center;
             background-size: cover;
         }
         .intro-5 {

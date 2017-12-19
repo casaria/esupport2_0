@@ -6,28 +6,6 @@
  **
  **        This file contains the style sheet.
  **
- ****************************************************************************************************
- **
- **    author:    JD Bottorf
- **    date:    12/23/2001
- **
- ***********************************************************************************************
- **
- **    Copyright (C) 2001  <JD Bottorf>
- **
- **        This program is free software; you can redistribute it and/or
- **        modify it under the terms of the GNU General Public
- **        License as published by the Free Software Foundation; either
- **        version 2.1 of the License, or (at your option) any later version.
- **
- **        This program is distributed in the hope that it will be useful,
- **        but WITHOUT ANY WARRANTY; without even the implied warranty of
- **        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- **        General Public License for more details.
- **
- **        You should have received a copy of the GNU General Public
- **        License along with This program; if not, write to the Free Software
- **        Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  **
  ***************************************************************************************/
 
@@ -68,7 +46,7 @@ $tablePadding =2;
 
 
     <script src="/mdb/js/jquery-3.2.1.min.js"></script>
-    <script src="/mdb/js/3.2.1.popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="/mdb/js/3.2.1.popper.min.js"></script>
     <script src="/mdb/js/bootstrap-4b2.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
     <!-- THeSE ARE WORKING (ll 4 sources   -->

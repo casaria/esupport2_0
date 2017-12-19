@@ -43,7 +43,7 @@ require_once $_SERVER['DOCUMENT_ROOT']."/lang/$default_language.lang.php";
 //otherwise, grab the selected theme from the database.
 //require_once  $_SERVER['DOCUMENT_ROOT']."/common/themelib.php";
 //$theme = getThemeVars(getThemeName($cookie_name));
- $intro_background = 'intro-'.(string)(rand(1,12));
+ $intro_background = 'intro-'.(string)(rand(1,13));
  //intro-1 .. intro-10 are defined in this
  //$intro_background = "intro-11";
 
@@ -183,6 +183,10 @@ global $lang_wronglogin, $lang_strikes_count;
         }
         .intro-12 {
             background: url("../img/meadow5190.jpg")no-repeat center center;
+            background-size: cover;
+        }
+        .intro-13{
+            background:  url("../img/Lake0.jpg") no-repeat, linear-gradient(rgba(63, 81, 181, 0.5), rgba(67, 20, 34, 0.9)) !important;
             background-size: cover;
         }
 

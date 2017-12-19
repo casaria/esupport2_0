@@ -46,14 +46,14 @@ $remote_ip = $_SERVER['REMOTE_ADDR'];
 
 /**********************************************************************************************************/
 /****************************	 Variables	***********************************************************/
-if ($domain == 'support.casaria.net') {
+if (preg_match('support',$domain)) {
 
     $database = "mysql";                    //database (mysql is the only one available
     $server_gmt_offset = -5; //Timezone GMT -5
     $db_host = 'localhost';
     $db_user = 'casaria_hdesk1';
     $db_pwd = '26XwoR]B';
-    $db_name = 'hostgo_hdesk1';
+    $db_name =  'support';  #'hostgo_hdesk1';
     $uploaddir = '/var/www/casaria/support/uploads/';
     $session_time = 72000;
     $session_name = 'CasariaIncSupport';
@@ -65,7 +65,7 @@ if ($domain == 'support.casaria.net') {
     $db_host = 'localhost';
     $db_user = 'casaria_hdesk1';
     $db_pwd = '26XwoR]B';
-    $db_name = 'casaria_hdesk';
+    $db_name = 'eval';  #'casaria_hdesk';
     $uploaddir = '/var/www/casaria/esupport2_0/uploads/';
     $session_time = 72000;
     $session_name = 'EVALCasaria';

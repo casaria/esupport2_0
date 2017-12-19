@@ -9,13 +9,6 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="esupport.casaria.net">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/var/www/casaria/support" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
       <paths name="eval.casaria.net">
         <serverdata>
           <mappings>
@@ -27,6 +20,13 @@
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="support.casaria.net">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/var/www/casaria/support" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

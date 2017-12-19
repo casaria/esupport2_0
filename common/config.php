@@ -46,7 +46,7 @@ $remote_ip = $_SERVER['REMOTE_ADDR'];
 
 /**********************************************************************************************************/
 /****************************	 Variables	***********************************************************/
-if (preg_match('support',$domain)) {
+if (preg_match('/support/i',$domain)) {
 
     $database = "mysql";                    //database (mysql is the only one available
     $server_gmt_offset = -5; //Timezone GMT -5

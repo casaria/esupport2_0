@@ -7,34 +7,12 @@
 **	This file contains all footer information.
 **
 ************************************************************************************************************
-	**
-	**	author:	JD Bottorf
-	**	date:	09/24/01
-	**
-	***********************************************************************************************
-			**
-			**	Copyright (C) 2001  <JD Bottorf>
-			**
-			**		This program is free software; you can redistribute it and/or
-			**		modify it under the terms of the GNU General Public
-			**		License as published by the Free Software Foundation; either
-			**		version 2.1 of the License, or (at your option) any later version.
-			**
-			**		This program is distributed in the hope that it will be useful,
-			**		but WITHOUT ANY WARRANTY; without even the implied warranty of
-			**		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-			**		General Public License for more details.
-			**
-			**		You should have received a copy of the GNU General Public
-			**		License along with This program; if not, write to the Free Software
-			**		Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-			**
-			***************************************************************************************/
+
 require_once  $_SERVER['DOCUMENT_ROOT']."/common/themelib.php";
 //$theme = getThemeVars(getThemeName('default'));
 
 
-echo '<br><div class="stats" align="center"> '.$helpdesk_name. '<br>';
+echo '<br><div class="stats" align="center"> '.$helpdesk_name.<b> Database: $dbname'</b><br>';
 echo "$lang_powered Peter & <b><a href=\"https://odoo.casaria.net\">TheTeam</a></b> V$version<br>";
 echo "<a href=\"https://icons8.com/icon/44052/Shopping-Cart-Loaded\"> icon credits</a><br>";
 if($enable_stats == 'On'){

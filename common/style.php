@@ -47,7 +47,7 @@ $tablePadding =2;
 
     <script src="/mdb/js/jquery-3.2.1.min.js"></script>
     <script src="/mdb/js/3.2.1.popper.min.js"></script>
-    <script src="/mdb/js/bootstrap-4b2.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="/mdb/js/bootstrap-4b2.min.js"></script>
 
     <!-- THeSE ARE WORKING (ll 4 sources   -->
 

@@ -194,6 +194,10 @@ else {
                             COL 3
                         </div>
                     </div>
+                    <div class="row">
+                        <b>Asset's service history: </b>
+                    </div>
+
                 </div>
                 </p>
             </div>

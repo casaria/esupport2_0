@@ -224,7 +224,7 @@
             <div class="container" id="pwdmodal">
                 <div class="row">
                     <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-lg-5">
-                        <form method="post" role="form" id="newPassForm" name="newPassForm" >
+                        <form method="post" role="form" id="newPassForm2" name="newPassForm2" >
                             <!--Form with header-->
                             <div class="card wow zoomIn" id="passwordcard" data-wow-delay="0.0s" data-wow-duration="1.0s">
                                 <div class="card-body z-depth-4">

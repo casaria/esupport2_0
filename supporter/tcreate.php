@@ -74,7 +74,7 @@ if(isset($create)) {
     $short = addslashes(stripScripts($short));
     $description = addslashes(stripScripts($description));
     //$ugroup_id = getUGroupId($usergroup_name);
-    $ugroup_id = $ug;
+    $ugroup_id = $usergroup_name;
 
     //fix checkboxes
     $emailgroup = ($emailgroup == "on") ? "On" : "Off";

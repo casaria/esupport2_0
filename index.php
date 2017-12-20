@@ -39,6 +39,7 @@
 
 $mtime1 = explode(" ", microtime());
 $starttime = $mtime1[0] + $mtime1[1];
+ob_start(null,0, PHP_OUTPUT_HANDLER_FLUSHABLE|PHP_OUTPUT_HANDLER_CLEANABLE|PHP_OUTPUT_HANDLER_REMOVABLE);
 
 require_once $_SERVER['DOCUMENT_ROOT']."/common/config.php";
 require_once $_SERVER['DOCUMENT_ROOT']."/common/mysql.class.php";
@@ -50,7 +51,7 @@ if($reg == 'yes'){
     exit;
 }
 
-
+/*
 startSession();
 //$cookie_name = $_COOKIE['cookieuser'];
 $cookie_name = S_SESSION['cookie_name'];
@@ -67,12 +68,11 @@ $cookie_name = $_SESSION['cookie_name'];
 	exit;
 }
 
-
-
-
-
-
+*/
+ob_end_clean();
+authenticate();
 RewindSession();
+
 $language = getLanguage($_SESSION['cookie_name']);
 if($language == '')
 	require_once "lang/$default_language.lang.php";

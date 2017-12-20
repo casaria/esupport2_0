@@ -73,8 +73,8 @@ if(isset($create)) {
 
     $short = addslashes(stripScripts($short));
     $description = addslashes(stripScripts($description));
-    //$ugroup_id = getUGroupId($usergroup_name);
-    $ugroup_id = $ug;
+    $ugroup_id = getUGroupId($usergroup_name);
+    //$ugroup_id = $ug;
 
     //fix checkboxes
     $emailgroup = ($emailgroup == "on") ? "On" : "Off";
@@ -173,8 +173,9 @@ else {
                     createTicketInfo('allow', $ug); ?></P>
             </div>
             <div class="tab-pane fade" id="asset" role="tabpanel" aria-labelledby="asset-tab">
-                <p>Asset Database
-                    <?php
+                <p>Asset Database <br>
+
+                    <?php createQRcode('https//casaria.net');
                /*     try {
                         Connection::get()->connect();
                         echo 'A connection to the PostgreSQL database sever has been established successfully.';

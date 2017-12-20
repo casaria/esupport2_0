@@ -55,7 +55,7 @@ if (preg_match('/support/i',$domain)) {
     $db_pwd = '26XwoR]B';
     $db_name =  'support';  #'hostgo_hdesk1';
     $uploaddir = '/var/www/casaria/support/uploads/';
-    $session_time = 72000;
+    $session_time = 3600;
     $session_name = 'CasariaIncSupport';
     $MailQueuePath = "/var/www/casaria/support/MAILQUEUE/";
 } else {
@@ -67,7 +67,7 @@ if (preg_match('/support/i',$domain)) {
     $db_pwd = '26XwoR]B';
     $db_name = 'eval';  #'casaria_hdesk';
     $uploaddir = '/var/www/casaria/esupport2_0/uploads/';
-    $session_time = 72000;
+    $session_time = 1800;
     $session_name = 'EVALCasaria';
     $MailQueuePath = '/var/www/casaria/esupport2_0/MAILQUEUE/';
     $includePath = '/var/www/casaria/esupport2_0/common/';

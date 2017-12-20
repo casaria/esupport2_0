@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/supporter/tsearch.php" line="782" />
+    <bookmark url="file://$PROJECT_DIR$/supporter/tcreate.php" />
+    <bookmark url="file://$PROJECT_DIR$" />
+    <bookmark url="file://$PROJECT_DIR$/supporter/tsearch.php" />
+    <bookmark url="file://$PROJECT_DIR$/common/common.php" line="1934" />
+    <bookmark url="file://$PROJECT_DIR$/supporter/index.php" />
+    <bookmark url="file://$PROJECT_DIR$/supporter/tsearch.php" line="359" />
+    <bookmark url="file://$PROJECT_DIR$/common/common.php" />
+    <bookmark url="file://$PROJECT_DIR$/common/common.php" line="3688" />
+  </component>
   <component name="ChangeListManager">
-    <list id="cec09a3c-4723-49bb-b410-97d94080be5e" name="Transoition  to 1 5 3" comment="Transoition  to 1 5 3" />
-    <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="Footer shows database in use">
+    <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="showformattedtime, some common upgrades to displayticket">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/common/mdblogin.php" afterPath="$PROJECT_DIR$/common/mdblogin.php" />
+      <change beforePath="$PROJECT_DIR$/common/config.php" afterPath="$PROJECT_DIR$/common/config.php" />
+      <change beforePath="$PROJECT_DIR$/supporter/tcreate.php" afterPath="$PROJECT_DIR$/supporter/tcreate.php" />
     </list>
+    <ignored mask="workspace.xml" />
+    <ignored mask="error_log" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="true" />
@@ -13,9 +30,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
@@ -24,26 +41,34 @@
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
     <expand>
       <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="EVAL casaria-hdesk @ SFO22" type="feb32156:DbDataSourceImpl" />
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="casaria5@odoo.casaria.net" type="e3449647:DbNodeDescriptor" />
       </path>
       <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="EVAL casaria-hdesk @ SFO22" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="MySQL - @ casaria.net" type="e3449647:DbNodeDescriptor" />
       </path>
       <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="EVAL casaria-hdesk @ SFO22" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="casaria_hdesk: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="MySQL hostgo-hdesk1  @ Nextday" type="e3449647:DbNodeDescriptor" />
       </path>
       <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="SUPPORT hostgo-hdesk1  @ SFO22" type="feb32156:DbDataSourceImpl" />
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="MySQL hostgo-hdesk1  @ Nextday" type="e3449647:DbNodeDescriptor" />
+        <item name="casaria_hdesk1" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="MySQL hostgo-hdesk1  @ Nextday" type="e3449647:DbNodeDescriptor" />
+        <item name="casaria_hdesk1" type="e3449647:DbNodeDescriptor" />
+        <item name="" type="fce03ad6:DatabaseStructure$GroupNode" />
       </path>
     </expand>
     <select />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="autoscrollToSource" value="true" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Favorite Funnctions">
@@ -52,31 +77,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DBIgeneratorclass.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CASARIA/DBIgeneratorclass.php">
+      <file leaf-file-name="Norwegian.lang.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lang/Norwegian.lang.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2232">
-              <caret line="152" column="24" lean-forward="false" selection-start-line="152" selection-start-column="24" selection-end-line="152" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-10003">
-              <caret line="46" column="1" lean-forward="false" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mdblogin.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/common/mdblogin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="689">
-              <caret line="194" column="0" lean-forward="true" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+            <state relative-caret-position="3003">
+              <caret line="91" column="26" lean-forward="false" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -85,7 +90,7 @@
       <file leaf-file-name="tmaterial.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CASARIA/classes/tmaterial.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2449">
+            <state relative-caret-position="2607">
               <caret line="79" column="777" lean-forward="false" selection-start-line="79" selection-start-column="777" selection-end-line="79" selection-end-column="777" />
               <folding />
             </state>
@@ -95,7 +100,7 @@
       <file leaf-file-name="Danish.lang.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lang/Danish.lang.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3689">
+            <state relative-caret-position="3927">
               <caret line="119" column="31" lean-forward="false" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
               <folding />
             </state>
@@ -105,11 +110,9 @@
       <file leaf-file-name="Italian.lang.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lang/Italian.lang.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
+            <state relative-caret-position="4026">
               <caret line="127" column="31" lean-forward="false" selection-start-line="127" selection-start-column="31" selection-end-line="127" selection-end-column="31" />
-              <folding>
-                <marker date="1513744796046" expanded="true" signature="5359:5372" ph="SELECT * fro... " />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,20 +120,61 @@
       <file leaf-file-name="ticket.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CASARIA/classes/ticket.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2449">
+            <state relative-caret-position="2607">
               <caret line="79" column="21" lean-forward="false" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tcreate.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tcreate.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/supporter/tcreate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15159">
-              <caret line="517" column="56" lean-forward="false" selection-start-line="517" selection-start-column="56" selection-end-line="517" selection-end-column="56" />
+            <state relative-caret-position="792">
+              <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
               <folding>
-                <marker date="1513744796394" expanded="true" signature="18428:19253" ph="{...}" />
+                <marker date="1513753586228" expanded="true" signature="2914:3577" ph="INSERT INTO ${$mysql_tickets_table}... " />
+                <marker date="1513753586228" expanded="true" signature="4163:4222" ph="update ${$mysql_tickets_table}... " />
+                <marker date="1513753586228" expanded="true" signature="4455:4562" ph="INSERT into ${$mysql_time_table}... " />
+                <marker date="1513753586228" expanded="true" signature="8711:9188" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="8742:9118" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="8774:8899" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="8931:9103" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="9030:9083" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="9262:10149" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="9290:10119" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="9320:10087" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="9350:9569" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="9441:9510" ph="..." />
+                <marker date="1513753586228" expanded="false" signature="9605:9621" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="9622:9712" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="9742:10078" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="9785:9982" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="13437:13527" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="13789:13872" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="14086:14226" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="14175:14226" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="14306:14446" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="14399:14446" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="14533:14670" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="14624:14670" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="14889:14981" ph="select id,us... ${$mysql_users_table}" />
+                <marker date="1513753586228" expanded="true" signature="15670:15754" ph="select id,us... ${$mysql_users_table}" />
+                <marker date="1513753586228" expanded="true" signature="15841:15900" ph="select user_... ${$table}" />
+                <marker date="1513753586228" expanded="true" signature="16379:16518" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="16610:16756" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="16853:17025" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="16951:17015" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="17266:17325" ph="select defau... ${$mysql_ugroups_table}" />
+                <marker date="1513753586228" expanded="true" signature="17528:17593" ph="select id, g... ${$mysql_sgroups_table}" />
+                <marker date="1513753586228" expanded="true" signature="18250:18357" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="18570:18612" ph="select * fro... ${$mysql_users_table}" />
+                <marker date="1513753586228" expanded="true" signature="18772:18950" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="18861:18935" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="18959:19120" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="19034:19110" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="19124:19276" ph="..." />
+                <marker date="1513753586228" expanded="true" signature="19202:19276" ph="..." />
               </folding>
             </state>
           </provider>
@@ -139,12 +183,19 @@
       <file leaf-file-name="common.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/common.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79174">
-              <caret line="2584" column="0" lean-forward="false" selection-start-line="2584" selection-start-column="0" selection-end-line="2584" selection-end-column="0" />
-              <folding>
-                <marker date="1513744795714" expanded="true" signature="129929:130132" ph="{...}" />
-                <marker date="1513744795714" expanded="true" signature="130976:131624" ph="..." />
-              </folding>
+            <state relative-caret-position="79134">
+              <caret line="2427" column="0" lean-forward="false" selection-start-line="2427" selection-start-column="0" selection-end-line="2427" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="792">
+              <caret line="69" column="23" lean-forward="false" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,8 +203,8 @@
       <file leaf-file-name="tupdate.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/supporter/tupdate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14198">
-              <caret line="486" column="0" lean-forward="false" selection-start-line="486" selection-start-column="0" selection-end-line="486" selection-end-column="0" />
+            <state relative-caret-position="15642">
+              <caret line="502" column="12" lean-forward="false" selection-start-line="502" selection-start-column="12" selection-end-line="502" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -161,75 +212,204 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="SCHEME" value="Project" />
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>:hover</find>
-      <find>.selec</find>
-      <find>#selec</find>
-      <find>.selectwidth2</find>
-      <find>createNotificationPanel</find>
-      <find>input</find>
-      <find>createticket</find>
-      <find>selectwidth</find>
+      <find>eval</find>
+      <find>update</find>
+      <find>kbase</find>
+      <find>===</find>
+      <find>(</find>
+      <find>$sql</find>
+      <find>$mysql_tb</find>
+      <find>strt</find>
+      <find>textarea</find>
       <find>textare</find>
-      <find>CHEC</find>
-      <find>HRS</find>
-      <find>aft</find>
-      <find>hrs</find>
-      <find>specia</find>
-      <find>createTicketInfo</find>
-      <find>thixd</find>
-      <find>createtickjet</find>
-      <find>ANNOUN</find>
+      <find>limit</find>
+      <find>colspa</find>
+      <find>co</find>
+      <find>col</find>
+      <find>collu</find>
+      <find>\'</find>
+      <find>user</find>
+      <find>$db</find>
+      <find>db</find>
+      <find>disp</find>
+      <find>createUserInfo</find>
+      <find>display</find>
+      <find>created</find>
+      <find>$lang_closed</find>
+      <find>TBODY</find>
+      <find>displa</find>
+      <find>80</find>
+      <find>726</find>
+      <find>priority</find>
+      <find>$ugroup</find>
     </findStrings>
+    <replaceStrings>
+      <replace>$summary = displayTicket($result);</replace>
+      <replace>preg_replace</replace>
+      <replace>preg_match</replace>
+      <replace>20%</replace>
+      <replace>left</replace>
+      <replace>back3</replace>
+      <replace>header_text</replace>
+      <replace>'</replace>
+      <replace>time_track</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\horra\PhpstormProjects\NEW eval-casaria-esupport</dir>
+    </dirStrings>
+  </component>
+  <component name="FrameworkCommandLineHistory">
+    <commandsHistory>
+      <command text="dir" />
+      <command text=".git" />
+    </commandsHistory>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="SHOW_REMOTE_BRANCHES" value="true" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Peter Horrack &lt;phorrack@casaria.net&gt;" />
+      </list>
+    </option>
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
-    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/common/style.php" />
-        <option value="$PROJECT_DIR$/supporter/tupdate.php" />
-        <option value="$PROJECT_DIR$/supporter/tcreate.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/common/config.php" />
-        <option value="$PROJECT_DIR$/garbage-junk/live_w_locator.js" />
-        <option value="$PROJECT_DIR$/garbage-junk/style2.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/supporter/index.php" />
-        <option value="$PROJECT_DIR$/supporter/updatelogprint.php" />
+        <option value="$PROJECT_DIR$/../eval.casaria.net/supporter/tsearch.php" />
+        <option value="$PROJECT_DIR$/admin/timedetailed.php" />
+        <option value="$PROJECT_DIR$/kbase/edit.php" />
+        <option value="$PROJECT_DIR$/supporter/tsearch-3.php" />
+        <option value="$PROJECT_DIR$/dylay/src/dylay.js" />
+        <option value="$PROJECT_DIR$/answer.php" />
+        <option value="$PROJECT_DIR$/supporter/sched.php" />
+        <option value="$PROJECT_DIR$/dylay/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/sched/partials/_variables.scss" />
+        <option value="$PROJECT_DIR$/dylay/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/jsgrid-php/db/config.php" />
+        <option value="$PROJECT_DIR$/jsgrid-php/index.html" />
+        <option value="$PROJECT_DIR$/jsgrid-php/public/js/sample.js" />
+        <option value="$PROJECT_DIR$/jsgrid-php/models/TicketsRepository.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/schema/Generate POJOs.groovy" />
+        <option value="$PROJECT_DIR$/common/mysql.class.php" />
+        <option value="$PROJECT_DIR$/jsgrid-php/models/ClientRepository.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0fef9fff-b91c-41a0-98a6-099749727d3e/console_4.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0fef9fff-b91c-41a0-98a6-099749727d3e/console_5.sql" />
+        <option value="src:table:/f1a7d862/0fef9fff-b91c-41a0-98a6-099749727d3e/casaria_hdesk1.themes" />
+        <option value="$PROJECT_DIR$/admin/themes.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0fef9fff-b91c-41a0-98a6-099749727d3e/console_6.sql" />
+        <option value="$PROJECT_DIR$/supporter/tsearch-2.php" />
+        <option value="$PROJECT_DIR$/common/scripts.php" />
         <option value="$PROJECT_DIR$/common/login.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/supporter/index.php" />
+        <option value="$PROJECT_DIR$/admin/addsupporter.php" />
+        <option value="$PROJECT_DIR$/kbase/add.php" />
+        <option value="$PROJECT_DIR$/supporter/mygroupopen.php" />
+        <option value="$PROJECT_DIR$/myclosed.php" />
+        <option value="$PROJECT_DIR$/myopen.php" />
+        <option value="$PROJECT_DIR$/supporter/tsearch.php" />
+        <option value="$PROJECT_DIR$/CASARIA/NOTES.TXT" />
+        <option value="$PROJECT_DIR$/CASARIA/classes/tequipment.php" />
+        <option value="$PROJECT_DIR$/CASARIA/classes/time_track.php" />
+        <option value="$PROJECT_DIR$/CASARIA/classes/user.php" />
+        <option value="$PROJECT_DIR$/CASARIA/classes/users.php" />
+        <option value="$PROJECT_DIR$/tcreate.php" />
+        <option value="$PROJECT_DIR$/supporter/myopen.php" />
+        <option value="$PROJECT_DIR$/lang/English.lang.php" />
+        <option value="$PROJECT_DIR$/CASARIA/DBI.php" />
+        <option value="$PROJECT_DIR$/common/style.php" />
+        <option value="$PROJECT_DIR$/mygroupshow.php" />
+        <option value="$PROJECT_DIR$/tinfo.php" />
+        <option value="$PROJECT_DIR$/CASARIA/DBIgeneratorclass.php" />
+        <option value="$PROJECT_DIR$/common/style2.php" />
         <option value="$PROJECT_DIR$/common/common.php" />
-        <option value="$PROJECT_DIR$/supporter/updatelog.php" />
-        <option value="$PROJECT_DIR$/common/.gitignore" />
-        <option value="$PROJECT_DIR$/common/footer.php" />
-        <option value="$PROJECT_DIR$/common/mdblogin.php" />
+        <option value="$PROJECT_DIR$/supporter/tupdate.php" />
+        <option value="$PROJECT_DIR$/common/config.php" />
+        <option value="$PROJECT_DIR$/supporter/tcreate.php" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpDebugGeneral" xdebug_show_addresses="true" hide_empty_superglobals="false" listening_started="true" notify_if_session_was_finished_without_being_paused="false" />
   <component name="PhpServers">
-    <servers />
+    <servers>
+      <server host="eval.casaria.net" id="4681ece0-4643-4c8b-88de-f818313ab65c" name="eval.casaria.net  (SSH tunnel)" port="9000" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/var/www/casaria/eval/support/supporter" />
+        </path_mappings>
+      </server>
+      <server host="eval.casaria.net" id="152b425a-87ef-4425-8ecf-c397be05866b" name="eval.casaria.net" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/var/www/casaria/eval/support" />
+        </path_mappings>
+      </server>
+      <server host="support.casaria.net" id="3778e364-0e04-4506-a279-4c9bfd9ea6bb" name="support.casaria.net" port="2083" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/supporter" remote-root="/usr/share/phpmyadmin" />
+        </path_mappings>
+      </server>
+      <server host="esupport.casaria.net" id="ba581193-1f5a-414c-b86e-2471a7503912" name="esupport.casaria.net" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/var/www/casaria/support" />
+          <mapping local-root="$PROJECT_DIR$/tools" remote-root="/var/www/casaria/support" />
+        </path_mappings>
+      </server>
+    </servers>
   </component>
+  <component name="PhpWebServerValidation" deployment_server_id="6c593dc2-d6ca-4a05-86a7-ca77a7adcf6d" path_to_validation_script="C:\Users\horra\PhpstormProjects\NEW eval-casaria-esupport" selected_validation_type="REMOTE" web_path_to_validation_script="http://127.0.0.1/" />
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-24" />
-    <option name="y" value="2" />
-    <option name="width" value="3215" />
-    <option name="height" value="1834" />
+    <option name="width" value="2742" />
+    <option name="height" value="1836" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>LossyEncoding</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -247,33 +427,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="esupport2_0b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="esupport2_0b" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="esupport2_0b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="esupport2_0b" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="common" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="esupport2_0b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="esupport2_0b" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="mdb" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="esupport2_0b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="esupport2_0b" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="mdb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="font" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Changed Files">
           <expand>
@@ -293,17 +446,37 @@
           <expand>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="esupport2_0" type="cbb8eebc:String" user="esupport2_0" />
+              <item name="JSGRID-eval-casaria-esupport" type="cbb8eebc:String" user="JSGRID-eval-casaria-esupport" />
             </path>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="esupport2_0" type="cbb8eebc:String" user="esupport2_0" />
-              <item name="common" type="cbb8eebc:String" user="common" />
+              <item name="JSGRID-eval-casaria-esupport" type="cbb8eebc:String" user="JSGRID-eval-casaria-esupport" />
+              <item name="jsgrid-php" type="cbb8eebc:String" user="jsgrid-php" />
             </path>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="esupport2_0" type="cbb8eebc:String" user="esupport2_0" />
-              <item name="supporter" type="cbb8eebc:String" user="supporter" />
+              <item name="JSGRID-eval-casaria-esupport" type="cbb8eebc:String" user="JSGRID-eval-casaria-esupport" />
+              <item name="jsgrid-php" type="cbb8eebc:String" user="jsgrid-php" />
+              <item name="db" type="cbb8eebc:String" user="db" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="JSGRID-eval-casaria-esupport" type="cbb8eebc:String" user="JSGRID-eval-casaria-esupport" />
+              <item name="jsgrid-php" type="cbb8eebc:String" user="jsgrid-php" />
+              <item name="models" type="cbb8eebc:String" user="models" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="JSGRID-eval-casaria-esupport" type="cbb8eebc:String" user="JSGRID-eval-casaria-esupport" />
+              <item name="jsgrid-php" type="cbb8eebc:String" user="jsgrid-php" />
+              <item name="public" type="cbb8eebc:String" user="public" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="JSGRID-eval-casaria-esupport" type="cbb8eebc:String" user="JSGRID-eval-casaria-esupport" />
+              <item name="jsgrid-php" type="cbb8eebc:String" user="jsgrid-php" />
+              <item name="public" type="cbb8eebc:String" user="public" />
+              <item name="js" type="cbb8eebc:String" user="js" />
             </path>
           </expand>
           <select />
@@ -331,20 +504,50 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="esupport2b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esupport2b" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="esupport2b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esupport2b" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="common" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="esupport2b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="node.js.path.for.package.stylelint" value="project" />
-    <property name="node.js.detected.package.stylelint" value="true" />
-    <property name="node.js.selected.package.stylelint" value="C:\Users\horra\AppData\Roaming\npm\node_modules\stylelint" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../esupport2_0/Transoition__to_1_5_3.patch" />
-    <property name="vcs.patch.path" value="$PROJECT_DIR$/../esupport2_0" />
+    <property name="settings.editor.selected.configurable" value="ics" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;PostgreSQL&#10;DDL Data Source" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../NEW eval.casaria.net/supporter/index.php" />
+    <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/common" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\horra\PhpstormProjects\esupport2_0\garbage-junk" />
-      <recent name="C:\Users\horra\PhpstormProjects\esupport2_0\images" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\horra\PhpstormProjects\eval-casaria-esupport\common" />
+      <recent name="C:\Users\horra\.PhpStorm2017.2\config\extensions\com.intellij.database\schema" />
+      <recent name="C:\Users\horra\PhpstormProjects\JSGRID-eval-casaria-esupport\jsgrid-php\models" />
+      <recent name="C:\Users\horra\PhpstormProjects\NEW eval-casaria-esupport\supporter" />
+      <recent name="C:\Users\horra\PhpstormProjects\eSupport@casaria.net\tools" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -359,438 +562,530 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="PHP Remote Debug.VIA SSH TUNNEL PROT  ">
+    <configuration name="index.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://eval.casaria.net/support/supporter/index.php" />
+    <configuration name="VIA SSH TUNNEL PROT  " type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" singleton="true" server_name="eval.casaria.net  (SSH tunnel)" session_id="XDEBUG_ECLIPSE" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="PHP Remote Debug.VIA SSH TUNNEL PROT  " />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="ShelveChangesManager" show_recycled="true">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="StructuralSearchPlugin">
+    <searchConfiguration name="user defined" created="1506663422131" text="$mysql_BillingStatus_table" recursive="true" caseInsensitive="false" type="PHP" history="1">
+      <constraint name="__context__" target="true" within="" contains="" />
+    </searchConfiguration>
+    <searchConfiguration name="user defined" created="1504884290120" text="displayUserTicket" recursive="true" caseInsensitive="false" type="PHP" history="1">
+      <constraint name="__context__" target="true" within="" contains="" />
+    </searchConfiguration>
+    <searchConfiguration name="user defined" created="1504558011541" text="WebFontConfig" recursive="true" caseInsensitive="false" type="PHP" history="1">
+      <constraint name="__context__" target="true" within="" contains="" />
+    </searchConfiguration>
+    <searchConfiguration name="user defined" created="1504557964714" text="WebFontConfig" recursive="true" caseInsensitive="true" type="PHP" history="1" />
+  </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\horra\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="62aec0fd-bd9e-467f-a9ea-0d0476e44df2" name="Default" comment="" />
-      <created>1512553343747</created>
+      <changelist id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="" />
+      <created>1500787402196</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1512553343747</updated>
-      <workItem from="1512553355067" duration="13330000" />
-      <workItem from="1512570599808" duration="442000" />
+      <updated>1500787402196</updated>
+      <workItem from="1500787404679" duration="11111000" />
+      <workItem from="1500835545640" duration="30178000" />
+      <workItem from="1501002765367" duration="1002000" />
+      <workItem from="1501003839146" duration="35053000" />
+      <workItem from="1501049760471" duration="15480000" />
+      <workItem from="1501102058617" duration="13734000" />
+      <workItem from="1501129864396" duration="12777000" />
+      <workItem from="1501149917693" duration="4033000" />
+      <workItem from="1501154013849" duration="969000" />
+      <workItem from="1501176518670" duration="16631000" />
+      <workItem from="1501206439351" duration="4765000" />
+      <workItem from="1501706893475" duration="596000" />
+      <workItem from="1501707502290" duration="377000" />
+      <workItem from="1501707925511" duration="3939000" />
+      <workItem from="1501722952230" duration="5853000" />
+      <workItem from="1501734382285" duration="5424000" />
+      <workItem from="1501983766306" duration="54000" />
+      <workItem from="1501983877656" duration="65000" />
+      <workItem from="1501987385211" duration="11542000" />
+      <workItem from="1502241513515" duration="1417000" />
+      <workItem from="1502432747301" duration="19934000" />
+      <workItem from="1502734641579" duration="58621000" />
+      <workItem from="1503014880510" duration="540000" />
+      <workItem from="1504196452301" duration="1454000" />
+      <workItem from="1504345050823" duration="741000" />
+      <workItem from="1504428096382" duration="16750000" />
+      <workItem from="1504516431883" duration="11435000" />
+      <workItem from="1504727426268" duration="20502000" />
+      <workItem from="1504879707930" duration="11265000" />
+      <workItem from="1505244662115" duration="1526000" />
+      <workItem from="1505615451530" duration="3869000" />
+      <workItem from="1505625234428" duration="140000" />
+      <workItem from="1505625629551" duration="1215000" />
+      <workItem from="1505628276262" duration="115000" />
+      <workItem from="1505628537327" duration="30072000" />
+      <workItem from="1505936190232" duration="15355000" />
+      <workItem from="1506304726279" duration="52000" />
+      <workItem from="1506374218786" duration="13014000" />
+      <workItem from="1506657683851" duration="23039000" />
+      <workItem from="1506894092514" duration="51572000" />
+      <workItem from="1507178770265" duration="7349000" />
+      <workItem from="1507424602296" duration="13000" />
+      <workItem from="1507509207920" duration="6602000" />
+      <workItem from="1507523238810" duration="446000" />
+      <workItem from="1507578161848" duration="231000" />
+      <workItem from="1507578522036" duration="31862000" />
+      <workItem from="1507635557986" duration="223000" />
+      <workItem from="1507636094088" duration="171000" />
+      <workItem from="1507636290670" duration="23159000" />
+      <workItem from="1507753345687" duration="9719000" />
+      <workItem from="1507825078554" duration="19745000" />
+      <workItem from="1507935960927" duration="9352000" />
+      <workItem from="1507953534385" duration="21473000" />
+      <workItem from="1508040116309" duration="3327000" />
+      <workItem from="1508044084489" duration="10619000" />
+      <workItem from="1508059989923" duration="454000" />
+      <workItem from="1513746793225" duration="2900000" />
     </task>
-    <task id="LOCAL-00007" summary="Trceate fix">
-      <created>1512554855996</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
+    <task id="LOCAL-00647" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507191602595</created>
+      <option name="number" value="00647" />
+      <option name="presentableId" value="LOCAL-00647" />
       <option name="project" value="LOCAL" />
-      <updated>1512554855996</updated>
+      <updated>1507191602595</updated>
     </task>
-    <task id="LOCAL-00008" summary="Trceate fix">
-      <created>1512555738808</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
+    <task id="LOCAL-00648" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507513625408</created>
+      <option name="number" value="00648" />
+      <option name="presentableId" value="LOCAL-00648" />
       <option name="project" value="LOCAL" />
-      <updated>1512555738808</updated>
+      <updated>1507513625408</updated>
     </task>
-    <task id="LOCAL-00009" summary="Trceate fix">
-      <created>1512555789160</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
+    <task id="LOCAL-00649" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507514372457</created>
+      <option name="number" value="00649" />
+      <option name="presentableId" value="LOCAL-00649" />
       <option name="project" value="LOCAL" />
-      <updated>1512555789160</updated>
+      <updated>1507514372457</updated>
     </task>
-    <task id="LOCAL-00010" summary="Trceate fix">
-      <created>1512555825739</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
+    <task id="LOCAL-00650" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507601037029</created>
+      <option name="number" value="00650" />
+      <option name="presentableId" value="LOCAL-00650" />
       <option name="project" value="LOCAL" />
-      <updated>1512555825739</updated>
+      <updated>1507601037029</updated>
     </task>
-    <task id="LOCAL-00011" summary="Trceate fix">
-      <created>1512556167059</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
+    <task id="LOCAL-00651" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507601439576</created>
+      <option name="number" value="00651" />
+      <option name="presentableId" value="LOCAL-00651" />
       <option name="project" value="LOCAL" />
-      <updated>1512556167059</updated>
+      <updated>1507601439576</updated>
     </task>
-    <task id="LOCAL-00012" summary="Trceate fix">
-      <created>1512556268584</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
+    <task id="LOCAL-00652" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507602104252</created>
+      <option name="number" value="00652" />
+      <option name="presentableId" value="LOCAL-00652" />
       <option name="project" value="LOCAL" />
-      <updated>1512556268584</updated>
+      <updated>1507602104253</updated>
     </task>
-    <task id="LOCAL-00013" summary="Trceate fix">
-      <created>1512556601173</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
+    <task id="LOCAL-00653" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507602333373</created>
+      <option name="number" value="00653" />
+      <option name="presentableId" value="LOCAL-00653" />
       <option name="project" value="LOCAL" />
-      <updated>1512556601173</updated>
+      <updated>1507602333373</updated>
     </task>
-    <task id="LOCAL-00014" summary="Trceate fix">
-      <created>1512556674484</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
+    <task id="LOCAL-00654" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507602343915</created>
+      <option name="number" value="00654" />
+      <option name="presentableId" value="LOCAL-00654" />
       <option name="project" value="LOCAL" />
-      <updated>1512556674484</updated>
+      <updated>1507602343915</updated>
     </task>
-    <task id="LOCAL-00015" summary="Trceate fix">
-      <created>1512556736704</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
+    <task id="LOCAL-00655" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507603045296</created>
+      <option name="number" value="00655" />
+      <option name="presentableId" value="LOCAL-00655" />
       <option name="project" value="LOCAL" />
-      <updated>1512556736704</updated>
+      <updated>1507603045296</updated>
     </task>
-    <task id="LOCAL-00016" summary="Trceate fix">
-      <created>1512556762489</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
+    <task id="LOCAL-00656" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507603152625</created>
+      <option name="number" value="00656" />
+      <option name="presentableId" value="LOCAL-00656" />
       <option name="project" value="LOCAL" />
-      <updated>1512556762489</updated>
+      <updated>1507603152625</updated>
     </task>
-    <task id="LOCAL-00017" summary="Trceate fix">
-      <created>1512557171630</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
+    <task id="LOCAL-00657" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507603443286</created>
+      <option name="number" value="00657" />
+      <option name="presentableId" value="LOCAL-00657" />
       <option name="project" value="LOCAL" />
-      <updated>1512557171630</updated>
+      <updated>1507603443286</updated>
     </task>
-    <task id="LOCAL-00018" summary="Trceate fix">
-      <created>1512557208687</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
+    <task id="LOCAL-00658" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507604363712</created>
+      <option name="number" value="00658" />
+      <option name="presentableId" value="LOCAL-00658" />
       <option name="project" value="LOCAL" />
-      <updated>1512557208687</updated>
+      <updated>1507604363712</updated>
     </task>
-    <task id="LOCAL-00019" summary="Trceate fix">
-      <created>1512557281687</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
+    <task id="LOCAL-00659" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507604654111</created>
+      <option name="number" value="00659" />
+      <option name="presentableId" value="LOCAL-00659" />
       <option name="project" value="LOCAL" />
-      <updated>1512557281687</updated>
+      <updated>1507604654111</updated>
     </task>
-    <task id="LOCAL-00020" summary="Trceate fix">
-      <created>1512557692223</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
+    <task id="LOCAL-00660" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507604834342</created>
+      <option name="number" value="00660" />
+      <option name="presentableId" value="LOCAL-00660" />
       <option name="project" value="LOCAL" />
-      <updated>1512557692223</updated>
+      <updated>1507604834342</updated>
     </task>
-    <task id="LOCAL-00021" summary="Trceate fix">
-      <created>1512557803928</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
+    <task id="LOCAL-00661" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507605004567</created>
+      <option name="number" value="00661" />
+      <option name="presentableId" value="LOCAL-00661" />
       <option name="project" value="LOCAL" />
-      <updated>1512557803928</updated>
+      <updated>1507605004567</updated>
     </task>
-    <task id="LOCAL-00022" summary="Trceate fix">
-      <created>1512563331097</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
+    <task id="LOCAL-00662" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507605063756</created>
+      <option name="number" value="00662" />
+      <option name="presentableId" value="LOCAL-00662" />
       <option name="project" value="LOCAL" />
-      <updated>1512563331097</updated>
+      <updated>1507605063756</updated>
     </task>
-    <task id="LOCAL-00023" summary="Trceate fix">
-      <created>1512563390749</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
+    <task id="LOCAL-00663" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507605145285</created>
+      <option name="number" value="00663" />
+      <option name="presentableId" value="LOCAL-00663" />
       <option name="project" value="LOCAL" />
-      <updated>1512563390749</updated>
+      <updated>1507605145285</updated>
     </task>
-    <task id="LOCAL-00024" summary="Trceate fix">
-      <created>1512563521026</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
+    <task id="LOCAL-00664" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507605409947</created>
+      <option name="number" value="00664" />
+      <option name="presentableId" value="LOCAL-00664" />
       <option name="project" value="LOCAL" />
-      <updated>1512563521026</updated>
+      <updated>1507605409947</updated>
     </task>
-    <task id="LOCAL-00025" summary="Trceate fix">
-      <created>1512563564369</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
+    <task id="LOCAL-00665" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507605624406</created>
+      <option name="number" value="00665" />
+      <option name="presentableId" value="LOCAL-00665" />
       <option name="project" value="LOCAL" />
-      <updated>1512563564369</updated>
+      <updated>1507605624406</updated>
     </task>
-    <task id="LOCAL-00026" summary="Trceate fix">
-      <created>1512563674098</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
+    <task id="LOCAL-00666" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507605732622</created>
+      <option name="number" value="00666" />
+      <option name="presentableId" value="LOCAL-00666" />
       <option name="project" value="LOCAL" />
-      <updated>1512563674098</updated>
+      <updated>1507605732622</updated>
     </task>
-    <task id="LOCAL-00027" summary="Trceate fix">
-      <created>1512563730657</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
+    <task id="LOCAL-00667" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507606210239</created>
+      <option name="number" value="00667" />
+      <option name="presentableId" value="LOCAL-00667" />
       <option name="project" value="LOCAL" />
-      <updated>1512563730657</updated>
+      <updated>1507606210239</updated>
     </task>
-    <task id="LOCAL-00028" summary="Trceate fix">
-      <created>1512564000173</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
+    <task id="LOCAL-00668" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507606897600</created>
+      <option name="number" value="00668" />
+      <option name="presentableId" value="LOCAL-00668" />
       <option name="project" value="LOCAL" />
-      <updated>1512564000173</updated>
+      <updated>1507606897600</updated>
     </task>
-    <task id="LOCAL-00029" summary="Trceate fix">
-      <created>1512564065791</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
+    <task id="LOCAL-00669" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507608026331</created>
+      <option name="number" value="00669" />
+      <option name="presentableId" value="LOCAL-00669" />
       <option name="project" value="LOCAL" />
-      <updated>1512564065791</updated>
+      <updated>1507608026331</updated>
     </task>
-    <task id="LOCAL-00030" summary="Trceate fix">
-      <created>1512564157861</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
+    <task id="LOCAL-00670" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507608129158</created>
+      <option name="number" value="00670" />
+      <option name="presentableId" value="LOCAL-00670" />
       <option name="project" value="LOCAL" />
-      <updated>1512564157861</updated>
+      <updated>1507608129158</updated>
     </task>
-    <task id="LOCAL-00031" summary="Trceate fix">
-      <created>1512564263530</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
+    <task id="LOCAL-00671" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507608332142</created>
+      <option name="number" value="00671" />
+      <option name="presentableId" value="LOCAL-00671" />
       <option name="project" value="LOCAL" />
-      <updated>1512564263530</updated>
+      <updated>1507608332142</updated>
     </task>
-    <task id="LOCAL-00032" summary="Trceate fix">
-      <created>1512564384426</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
+    <task id="LOCAL-00672" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507608629853</created>
+      <option name="number" value="00672" />
+      <option name="presentableId" value="LOCAL-00672" />
       <option name="project" value="LOCAL" />
-      <updated>1512564384426</updated>
+      <updated>1507608629853</updated>
     </task>
-    <task id="LOCAL-00033" summary="Trceate fix">
-      <created>1512564526117</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
+    <task id="LOCAL-00673" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507608797501</created>
+      <option name="number" value="00673" />
+      <option name="presentableId" value="LOCAL-00673" />
       <option name="project" value="LOCAL" />
-      <updated>1512564526117</updated>
+      <updated>1507608797501</updated>
     </task>
-    <task id="LOCAL-00034" summary="Trceate fix">
-      <created>1512564666441</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
+    <task id="LOCAL-00674" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507609020763</created>
+      <option name="number" value="00674" />
+      <option name="presentableId" value="LOCAL-00674" />
       <option name="project" value="LOCAL" />
-      <updated>1512564666441</updated>
+      <updated>1507609020763</updated>
     </task>
-    <task id="LOCAL-00035" summary="Trceate fix">
-      <created>1512564741400</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
+    <task id="LOCAL-00675" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507609116926</created>
+      <option name="number" value="00675" />
+      <option name="presentableId" value="LOCAL-00675" />
       <option name="project" value="LOCAL" />
-      <updated>1512564741400</updated>
+      <updated>1507609116926</updated>
     </task>
-    <task id="LOCAL-00036" summary="Trceate fix">
-      <created>1512564823081</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
+    <task id="LOCAL-00676" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507609340720</created>
+      <option name="number" value="00676" />
+      <option name="presentableId" value="LOCAL-00676" />
       <option name="project" value="LOCAL" />
-      <updated>1512564823081</updated>
+      <updated>1507609340720</updated>
     </task>
-    <task id="LOCAL-00037" summary="Trceate fix">
-      <created>1512564882711</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
+    <task id="LOCAL-00677" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507609667442</created>
+      <option name="number" value="00677" />
+      <option name="presentableId" value="LOCAL-00677" />
       <option name="project" value="LOCAL" />
-      <updated>1512564882711</updated>
+      <updated>1507609667442</updated>
     </task>
-    <task id="LOCAL-00038" summary="Trceate fix">
-      <created>1512564962793</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
+    <task id="LOCAL-00678" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507609851394</created>
+      <option name="number" value="00678" />
+      <option name="presentableId" value="LOCAL-00678" />
       <option name="project" value="LOCAL" />
-      <updated>1512564962793</updated>
+      <updated>1507609851394</updated>
     </task>
-    <task id="LOCAL-00039" summary="Trceate fix">
-      <created>1512565105533</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
+    <task id="LOCAL-00679" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507609983950</created>
+      <option name="number" value="00679" />
+      <option name="presentableId" value="LOCAL-00679" />
       <option name="project" value="LOCAL" />
-      <updated>1512565105533</updated>
+      <updated>1507609983950</updated>
     </task>
-    <task id="LOCAL-00040" summary="Trceate fix">
-      <created>1512565208510</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
+    <task id="LOCAL-00680" summary="showFormattedTime  $IncludeDays=0">
+      <created>1507610058707</created>
+      <option name="number" value="00680" />
+      <option name="presentableId" value="LOCAL-00680" />
       <option name="project" value="LOCAL" />
-      <updated>1512565208510</updated>
+      <updated>1507610058707</updated>
     </task>
-    <task id="LOCAL-00041" summary="Trceate fix">
-      <created>1512565389729</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
+    <task id="LOCAL-00681" summary="master from eval-casaria-esupport  phpstorm">
+      <created>1507611791015</created>
+      <option name="number" value="00681" />
+      <option name="presentableId" value="LOCAL-00681" />
       <option name="project" value="LOCAL" />
-      <updated>1512565389729</updated>
+      <updated>1507611791015</updated>
     </task>
-    <task id="LOCAL-00042" summary="javascript">
-      <created>1512565484743</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
+    <task id="LOCAL-00682" summary="master from eval-casaria-esupport  phpstorm">
+      <created>1507622309249</created>
+      <option name="number" value="00682" />
+      <option name="presentableId" value="LOCAL-00682" />
       <option name="project" value="LOCAL" />
-      <updated>1512565484743</updated>
+      <updated>1507622309249</updated>
     </task>
-    <task id="LOCAL-00043" summary="javascript">
-      <created>1512565586391</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
+    <task id="LOCAL-00683" summary="fixes">
+      <created>1507626635412</created>
+      <option name="number" value="00683" />
+      <option name="presentableId" value="LOCAL-00683" />
       <option name="project" value="LOCAL" />
-      <updated>1512565586391</updated>
+      <updated>1507626635412</updated>
     </task>
-    <task id="LOCAL-00044" summary="javascript">
-      <created>1512565611382</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
+    <task id="LOCAL-00684" summary="fixes">
+      <created>1507627657232</created>
+      <option name="number" value="00684" />
+      <option name="presentableId" value="LOCAL-00684" />
       <option name="project" value="LOCAL" />
-      <updated>1512565611382</updated>
+      <updated>1507627657232</updated>
     </task>
-    <task id="LOCAL-00045" summary="javascript">
-      <created>1512565623617</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
+    <task id="LOCAL-00685" summary="fixes">
+      <created>1507627997833</created>
+      <option name="number" value="00685" />
+      <option name="presentableId" value="LOCAL-00685" />
       <option name="project" value="LOCAL" />
-      <updated>1512565623617</updated>
+      <updated>1507627997834</updated>
     </task>
-    <task id="LOCAL-00046" summary="javascript">
-      <created>1512565710454</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
+    <task id="LOCAL-00686" summary="fixes">
+      <created>1507628511786</created>
+      <option name="number" value="00686" />
+      <option name="presentableId" value="LOCAL-00686" />
       <option name="project" value="LOCAL" />
-      <updated>1512565710454</updated>
+      <updated>1507628511786</updated>
     </task>
-    <task id="LOCAL-00047" summary="javascript">
-      <created>1512566623236</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
+    <task id="LOCAL-00687" summary="fixes">
+      <created>1507634804361</created>
+      <option name="number" value="00687" />
+      <option name="presentableId" value="LOCAL-00687" />
       <option name="project" value="LOCAL" />
-      <updated>1512566623236</updated>
+      <updated>1507634804361</updated>
     </task>
-    <task id="LOCAL-00048" summary="1.5.2a">
-      <created>1512568006395</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
+    <task id="LOCAL-00688" summary="fixes">
+      <created>1507635072271</created>
+      <option name="number" value="00688" />
+      <option name="presentableId" value="LOCAL-00688" />
       <option name="project" value="LOCAL" />
-      <updated>1512568006395</updated>
+      <updated>1507635072271</updated>
     </task>
-    <task id="LOCAL-00049" summary="1.5.2a">
-      <created>1512569014808</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
+    <task id="LOCAL-00689" summary="Added additional collumns for myopen">
+      <created>1508050030017</created>
+      <option name="number" value="00689" />
+      <option name="presentableId" value="LOCAL-00689" />
       <option name="project" value="LOCAL" />
-      <updated>1512569014808</updated>
+      <updated>1508050030018</updated>
     </task>
-    <task id="LOCAL-00050" summary="1.5.2a">
-      <created>1512569370342</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
+    <task id="LOCAL-00690" summary="showformattedtime, some common upgrades to displayticket">
+      <created>1508052542257</created>
+      <option name="number" value="00690" />
+      <option name="presentableId" value="LOCAL-00690" />
       <option name="project" value="LOCAL" />
-      <updated>1512569370343</updated>
+      <updated>1508052542257</updated>
     </task>
-    <task id="LOCAL-00051" summary="1.5.2a">
-      <created>1512570241887</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
+    <task id="LOCAL-00691" summary="showformattedtime, some common upgrades to displayticket">
+      <created>1508054026724</created>
+      <option name="number" value="00691" />
+      <option name="presentableId" value="LOCAL-00691" />
       <option name="project" value="LOCAL" />
-      <updated>1512570241887</updated>
+      <updated>1508054026724</updated>
     </task>
-    <task id="LOCAL-00052" summary="1.5.2a">
-      <created>1512570474485</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
+    <task id="LOCAL-00692" summary="showformattedtime, some common upgrades to displayticket">
+      <created>1508058569178</created>
+      <option name="number" value="00692" />
+      <option name="presentableId" value="LOCAL-00692" />
       <option name="project" value="LOCAL" />
-      <updated>1512570474485</updated>
+      <updated>1508058569178</updated>
     </task>
-    <task id="LOCAL-00053" summary="1.5.2a">
-      <created>1512570777997</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
+    <task id="LOCAL-00693" summary="showformattedtime, some common upgrades to displayticket">
+      <created>1508058997533</created>
+      <option name="number" value="00693" />
+      <option name="presentableId" value="LOCAL-00693" />
       <option name="project" value="LOCAL" />
-      <updated>1512570777999</updated>
+      <updated>1508058997533</updated>
     </task>
-    <task id="LOCAL-00054" summary="1.5.2a">
-      <created>1513724412907</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
+    <task id="LOCAL-00694" summary="showformattedtime, some common upgrades to displayticket">
+      <created>1508059475937</created>
+      <option name="number" value="00694" />
+      <option name="presentableId" value="LOCAL-00694" />
       <option name="project" value="LOCAL" />
-      <updated>1513724412907</updated>
+      <updated>1508059475937</updated>
     </task>
-    <task id="LOCAL-00055" summary="Footer shows database in use">
-      <created>1513724748125</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
+    <task id="LOCAL-00695" summary="showformattedtime, some common upgrades to displayticket">
+      <created>1508059667544</created>
+      <option name="number" value="00695" />
+      <option name="presentableId" value="LOCAL-00695" />
       <option name="project" value="LOCAL" />
-      <updated>1513724748125</updated>
+      <updated>1508059667544</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <option name="localTasksCounter" value="696" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18458000" />
+    <option name="totallyTimeSpent" value="607614000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-24" y="2" width="3215" height="1834" extended-state="0" />
+    <frame x="-24" y="0" width="2742" height="1836" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289977" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13043478" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33900928" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5006435" sideWeight="0.41775057" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39247313" sideWeight="0.49086162" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32323232" sideWeight="0.49339622" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3232258" sideWeight="0.49339622" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20226415" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908162" sideWeight="0.49734244" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3037323" sideWeight="0.6507937" order="3" side_tool="false" content_ui="tabs" x="41" y="96" width="1325" height="317" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289977" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15372907" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39247313" sideWeight="0.49086162" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23514539" sideWeight="0.47666413" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20226415" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13517666" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3037323" sideWeight="0.6507937" order="3" side_tool="false" content_ui="tabs" x="41" y="96" width="1325" height="317" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33900928" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19721872" sideWeight="0.41691843" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5006435" sideWeight="0.41775057" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988358" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5006435" sideWeight="0.5822494" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32818532" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23514539" sideWeight="0.44070998" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32323232" sideWeight="0.49339622" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908162" sideWeight="0.49734244" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24967825" sideWeight="0.46442235" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955974" sideWeight="0.4973545" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962447" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289977" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15372907" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988358" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23552124" sideWeight="0.47666413" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33900928" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29224905" sideWeight="0.5854214" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33836478" sideWeight="0.31443688" order="13" side_tool="true" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.025679758" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908162" sideWeight="0.5330296" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32818532" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24967825" sideWeight="0.46697038" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32323232" sideWeight="0.49339622" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908162" sideWeight="0.49734244" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955405" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962447" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14516129" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3057644" sideWeight="0.5067976" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5343915" sideWeight="0.49086162" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17522658" sideWeight="0.493007" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988358" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39247313" sideWeight="0.49086162" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23552124" sideWeight="0.49734244" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20226415" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27192983" sideWeight="0.5751511" order="3" side_tool="true" content_ui="tabs" x="41" y="96" width="1325" height="317" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33831522" sideWeight="0.6818527" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27192983" sideWeight="0.42484894" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32578617" sideWeight="0.49357522" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23809524" sideWeight="0.44222054" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955974" sideWeight="0.4973545" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28884712" sideWeight="0.2666163" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2907268" sideWeight="0.5755287" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769424" sideWeight="0.48223734" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32741117" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17371601" sideWeight="0.71319795" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2907268" sideWeight="0.4244713" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13293052" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13591495" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3037323" sideWeight="0.6507937" order="3" side_tool="false" content_ui="tabs" x="41" y="96" width="1325" height="317" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -803,12 +1098,6 @@
               </option>
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
-              </option>
-              <option name="COLUMN_WIDTH">
-                <map>
-                  <entry key="2" value="177" />
-                  <entry key="3" value="216" />
-                </map>
               </option>
               <option name="COLUMN_ORDER">
                 <list>
@@ -828,350 +1117,486 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Trceate fix" />
-    <MESSAGE value="javascript" />
-    <MESSAGE value="1.5.2a" />
-    <MESSAGE value="Footer shows database in use" />
-    <MESSAGE value="Transoition  to 1 5 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Transoition  to 1 5 3" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+    <MESSAGE value="endtable()  remove &lt;BR&gt;" />
+    <MESSAGE value="replace style.php" />
+    <MESSAGE value="Removed scripts.php" />
+    <MESSAGE value="Reverted" />
+    <MESSAGE value="STyles" />
+    <MESSAGE value="Style padding" />
+    <MESSAGE value="endtable in displayticket common.php" />
+    <MESSAGE value="add scheduler menu link" />
+    <MESSAGE value="dylay" />
+    <MESSAGE value=" 4" />
+    <MESSAGE value="Merge remote-tracking branch 'remotes/origin/master'&#10;&#10;# Conflicts:&#10;#&#9;common/login.php&#10;#&#9;common/style.php&#10;#&#9;dylay/2.html&#10;#&#9;dylay/3.html&#10;#&#9;dylay/4.html&#10;#&#9;dylay/README.md&#10;#&#9;dylay/assets/css/main.css&#10;#&#9;dylay/assets/js/main.js&#10;#&#9;dylay/assets/vendor/jquery.easing.1.3.js&#10;#&#9;dylay/index.html&#10;#&#9;dylay/src/dylay.js&#10;#&#9;supporter/myopen.php" />
+    <MESSAGE value="update" />
+    <MESSAGE value="jsgrid-php path update" />
+    <MESSAGE value="fixed Tsearch-2, modified styles" />
+    <MESSAGE value="modified styles" />
+    <MESSAGE value="&#10;bORDER" />
+    <MESSAGE value="Theme vars added" />
+    <MESSAGE value="cosmetic CRM space added" />
+    <MESSAGE value="login cosmetic" />
+    <MESSAGE value="Alternate Tsearch displayticket" />
+    <MESSAGE value="showFormattedTime  $IncludeDays=0" />
+    <MESSAGE value="master from eval-casaria-esupport  phpstorm" />
+    <MESSAGE value="fixes" />
+    <MESSAGE value="Added additional collumns for myopen" />
+    <MESSAGE value="showformattedtime, some common upgrades to displayticket" />
+    <option name="LAST_COMMIT_MESSAGE" value="showformattedtime, some common upgrades to displayticket" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/myopen.php</url>
+          <line>39</line>
+          <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/myopen.php</url>
+          <line>119</line>
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/myopen.php</url>
+          <line>116</line>
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/CASARIA/DBI.php</url>
+          <line>70</line>
+          <option name="timeStamp" value="174" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/CASARIA/DBI.php</url>
+          <line>108</line>
+          <option name="timeStamp" value="175" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/CASARIA/DBI.php</url>
+          <line>101</line>
+          <option name="timeStamp" value="176" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/CASARIA/DBI.php</url>
+          <line>144</line>
+          <option name="timeStamp" value="177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/CASARIA/DBI.php</url>
+          <line>88</line>
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/CASARIA/DBI.php</url>
+          <line>65</line>
+          <option name="timeStamp" value="180" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/CASARIA/DBI.php</url>
+          <line>60</line>
+          <option name="timeStamp" value="181" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/supporter/myopen.php</url>
+          <line>131</line>
+          <option name="timeStamp" value="186" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/supporter/myopen.php</url>
+          <line>167</line>
+          <option name="timeStamp" value="189" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/common/common.php</url>
-          <line>192</line>
+          <line>2435</line>
+          <option name="timeStamp" value="191" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="192" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/garbage-junk/login-legacy.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="276" column="2" lean-forward="true" selection-start-line="276" selection-start-column="2" selection-end-line="276" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/scripts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/garbage-junk/mdb22.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/session/session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="178" column="14" lean-forward="true" selection-start-line="178" selection-start-column="14" selection-end-line="178" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/garbage-junk/php.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
-          <caret line="1408" column="0" lean-forward="true" selection-start-line="1408" selection-start-column="0" selection-end-line="1408" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin23/error_log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="1" column="37" lean-forward="false" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/garbage-junk/login20.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f5a594a7-31d9-494d-a74e-43164176beae/console.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f5a594a7-31d9-494d-a74e-43164176beae/console_2.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c189c9a4-e773-4082-b8a0-b5347822f33e/console.sql" />
-    <entry file="file://$PROJECT_DIR$/common/config.support.php" />
-    <entry file="file://$PROJECT_DIR$/common/themelib.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mygroupshow.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c788f063/f5a594a7-31d9-494d-a74e-43164176beae/hostgo_hdesk1.ugroup47" />
-    <entry file="file://$PROJECT_DIR$/common/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/garbage-junk/login2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c788f063/f5a594a7-31d9-494d-a74e-43164176beae/hostgo_hdesk1.users" />
-    <entry file="file://$PROJECT_DIR$/common/mysql.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin23/uedit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10197">
-          <caret line="336" column="0" lean-forward="false" selection-start-line="336" selection-start-column="0" selection-end-line="336" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin23/control.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="55" column="113" lean-forward="false" selection-start-line="55" selection-start-column="113" selection-end-line="55" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c788f063/f5a594a7-31d9-494d-a74e-43164176beae/casaria_hdesk.users" />
-    <entry file="file://$PROJECT_DIR$/admin23/users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/config.eval.php" />
-    <entry file="file://$PROJECT_DIR$/common/style.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2811">
-          <caret line="985" column="30" lean-forward="false" selection-start-line="985" selection-start-column="30" selection-end-line="985" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lang/Francais.lang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lang/English.lang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="218" column="18" lean-forward="false" selection-start-line="218" selection-start-column="15" selection-end-line="218" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/supporter/tupdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14198">
-          <caret line="486" column="0" lean-forward="false" selection-start-line="486" selection-start-column="0" selection-end-line="486" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/garbage-junk/camera.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/supporter/tcreate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15159">
-          <caret line="517" column="56" lean-forward="false" selection-start-line="517" selection-start-column="56" selection-end-line="517" selection-end-column="56" />
-          <folding>
-            <marker date="1513744796394" expanded="true" signature="18428:19253" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/garbage-junk/barcode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="27" column="37" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="27" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/supporter/findPath.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/garbage-junk/live_w_locator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="275" column="0" lean-forward="true" selection-start-line="275" selection-start-column="0" selection-end-line="275" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/garbage-junk/live_w_locator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/adapter-latest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8745">
-          <caret line="293" column="8" lean-forward="false" selection-start-line="293" selection-start-column="8" selection-end-line="293" selection-end-column="8" />
+        <state relative-caret-position="1564">
+          <caret line="120" column="54" lean-forward="false" selection-start-line="120" selection-start-column="54" selection-end-line="120" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/supporter/index.php">
+    <entry file="file://$PROJECT_DIR$/supporter/mygroupopen.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1287">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="5661">
+          <caret line="361" column="45" lean-forward="false" selection-start-line="361" selection-start-column="43" selection-end-line="361" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/garbage-junk/style2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20526">
-          <caret line="651" column="2" lean-forward="false" selection-start-line="651" selection-start-column="2" selection-end-line="651" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/supporter/updatelogprint.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="957">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79174">
-          <caret line="2584" column="0" lean-forward="false" selection-start-line="2584" selection-start-column="0" selection-end-line="2584" selection-end-column="0" />
-          <folding>
-            <marker date="1513744795714" expanded="true" signature="129929:130132" ph="{...}" />
-            <marker date="1513744795714" expanded="true" signature="130976:131624" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/supporter/updatelog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lang/Italian.lang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="127" column="31" lean-forward="false" selection-start-line="127" selection-start-column="31" selection-end-line="127" selection-end-column="31" />
-          <folding>
-            <marker date="1513744796046" expanded="true" signature="5359:5372" ph="SELECT * fro... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CASARIA/classes/ticket.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2449">
-          <caret line="79" column="21" lean-forward="false" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/.gitignore">
+    <entry file="file://$PROJECT_DIR$/CCC/heater.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/footer.php">
+    <entry file="file://$PROJECT_DIR$/CASARIA/NOTES.TXT">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="51">
+          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CASARIA/DBIgeneratorclass.php">
+    <entry file="das://table:/b46ee7f4/f5a594a7-31d9-494d-a74e-43164176beae/casaria_hdesk1.time_track" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f5a594a7-31d9-494d-a74e-43164176beae/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2232">
-          <caret line="152" column="24" lean-forward="false" selection-start-line="152" selection-start-column="24" selection-end-line="152" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CASARIA/error_log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CASARIA/classes/time_track.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="39" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CASARIA/classes/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="85" column="32" lean-forward="false" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/mysql/mysql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2703">
+          <caret line="159" column="9" lean-forward="false" selection-start-line="159" selection-start-column="9" selection-end-line="159" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10003">
-          <caret line="46" column="1" lean-forward="false" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+        <state relative-caret-position="4284">
+          <caret line="252" column="25" lean-forward="false" selection-start-line="252" selection-start-column="25" selection-end-line="252" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CASARIA/classes/users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tcreate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="314" column="28" lean-forward="false" selection-start-line="314" selection-start-column="28" selection-end-line="314" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/mysql.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/common.ori.php" />
+    <entry file="file://$PROJECT_DIR$/supporter/myopen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="121" column="145" lean-forward="false" selection-start-line="121" selection-start-column="145" selection-end-line="121" selection-end-column="145" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lang/English.lang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="55" column="26" lean-forward="false" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/UpdateClosedDate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="18" column="44" lean-forward="false" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kbase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="130" column="156" lean-forward="false" selection-start-line="130" selection-start-column="156" selection-end-line="130" selection-end-column="156" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/ulist.php" />
+    <entry file="file://$PROJECT_DIR$/CCC/jheater.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QueueDeamon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="46" column="17" lean-forward="false" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/casaria/public_html/support/supporter/index.php" />
+    <entry file="file://$PROJECT_DIR$/common/style.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="237" column="56" lean-forward="false" selection-start-line="237" selection-start-column="56" selection-end-line="237" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mygroupshow.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="245" column="29" lean-forward="false" selection-start-line="245" selection-start-column="29" selection-end-line="245" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CCC/jcontrol.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="34" column="8" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydbtest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/themes.php" />
+    <entry file="file://$PROJECT_DIR$/CASARIA/classes/tequipment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="86" column="242" lean-forward="false" selection-start-line="86" selection-start-column="242" selection-end-line="86" selection-end-column="242" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supporter/tsearch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12427">
+          <caret line="758" column="16" lean-forward="false" selection-start-line="758" selection-start-column="16" selection-end-line="758" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/addsupporter.php" />
+    <entry file="file://$PROJECT_DIR$/tinfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2635">
+          <caret line="182" column="12" lean-forward="false" selection-start-line="182" selection-start-column="12" selection-end-line="182" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kbase/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="90" column="4" lean-forward="false" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myopen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="114" column="21" lean-forward="false" selection-start-line="114" selection-start-column="21" selection-end-line="114" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myclosed.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="104" column="16" lean-forward="false" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/control.php" />
+    <entry file="file://$PROJECT_DIR$/admin/templates_restore.php" />
+    <entry file="file://$PROJECT_DIR$/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/scripts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CASARIA/DBI.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="105" column="44" lean-forward="false" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CASARIA/DBIgeneratorclass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3281">
+          <caret line="193" column="19" lean-forward="false" selection-start-line="193" selection-start-column="19" selection-end-line="193" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/style2.php" />
     <entry file="file://$PROJECT_DIR$/lang/Norwegian.lang.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2821">
+        <state relative-caret-position="3003">
           <caret line="91" column="26" lean-forward="false" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/mdblogin.php">
+    <entry file="file://$PROJECT_DIR$/CASARIA/classes/tmaterial.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="689">
-          <caret line="194" column="0" lean-forward="true" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+        <state relative-caret-position="2607">
+          <caret line="79" column="777" lean-forward="false" selection-start-line="79" selection-start-column="777" selection-end-line="79" selection-end-column="777" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lang/Danish.lang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3927">
+          <caret line="119" column="31" lean-forward="false" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/Italian.lang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4026">
+          <caret line="127" column="31" lean-forward="false" selection-start-line="127" selection-start-column="31" selection-end-line="127" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CASARIA/classes/ticket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2607">
+          <caret line="79" column="21" lean-forward="false" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79134">
+          <caret line="2427" column="0" lean-forward="false" selection-start-line="2427" selection-start-column="0" selection-end-line="2427" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supporter/tupdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15642">
+          <caret line="502" column="12" lean-forward="false" selection-start-line="502" selection-start-column="12" selection-end-line="502" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="69" column="23" lean-forward="false" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supporter/tcreate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+          <folding>
+            <marker date="1513753586228" expanded="true" signature="2914:3577" ph="INSERT INTO ${$mysql_tickets_table}... " />
+            <marker date="1513753586228" expanded="true" signature="4163:4222" ph="update ${$mysql_tickets_table}... " />
+            <marker date="1513753586228" expanded="true" signature="4455:4562" ph="INSERT into ${$mysql_time_table}... " />
+            <marker date="1513753586228" expanded="true" signature="8711:9188" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="8742:9118" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="8774:8899" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="8931:9103" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="9030:9083" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="9262:10149" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="9290:10119" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="9320:10087" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="9350:9569" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="9441:9510" ph="..." />
+            <marker date="1513753586228" expanded="false" signature="9605:9621" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="9622:9712" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="9742:10078" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="9785:9982" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="13437:13527" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="13789:13872" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="14086:14226" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="14175:14226" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="14306:14446" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="14399:14446" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="14533:14670" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="14624:14670" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="14889:14981" ph="select id,us... ${$mysql_users_table}" />
+            <marker date="1513753586228" expanded="true" signature="15670:15754" ph="select id,us... ${$mysql_users_table}" />
+            <marker date="1513753586228" expanded="true" signature="15841:15900" ph="select user_... ${$table}" />
+            <marker date="1513753586228" expanded="true" signature="16379:16518" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="16610:16756" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="16853:17025" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="16951:17015" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="17266:17325" ph="select defau... ${$mysql_ugroups_table}" />
+            <marker date="1513753586228" expanded="true" signature="17528:17593" ph="select id, g... ${$mysql_sgroups_table}" />
+            <marker date="1513753586228" expanded="true" signature="18250:18357" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="18570:18612" ph="select * fro... ${$mysql_users_table}" />
+            <marker date="1513753586228" expanded="true" signature="18772:18950" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="18861:18935" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="18959:19120" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="19034:19110" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="19124:19276" ph="..." />
+            <marker date="1513753586228" expanded="true" signature="19202:19276" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20133333" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

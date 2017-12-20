@@ -173,8 +173,9 @@ else {
                     createTicketInfo('allow', $ug); ?></P>
             </div>
             <div class="tab-pane fade" id="asset" role="tabpanel" aria-labelledby="asset-tab">
-                <p>Asset Database <br>
+                <p>
                     <div class="col align-self-center">
+                    Share ticket<br>
                     <?php createQRcode('https//casaria.net');
                /*     try {
                         Connection::get()->connect();

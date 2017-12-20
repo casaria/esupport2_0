@@ -196,7 +196,10 @@ else {
                     </div>
 
                     <div class="row">
-                        <b>Asset data (retrieved after scan): </b>
+                        <div class="col align-self-start">
+                            <b>Asset data (retrieved after scan): </b>
+                        </div>
+
 
 
                     </div>

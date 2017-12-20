@@ -174,7 +174,7 @@ else {
             </div>
             <div class="tab-pane fade" id="asset" role="tabpanel" aria-labelledby="asset-tab">
                 <p>Asset Database <br>
-                    <div class"row align-items-center justify-content-center">
+                    <div class="col align-self-center">
                     <?php createQRcode('https//casaria.net');
                /*     try {
                         Connection::get()->connect();
@@ -183,7 +183,7 @@ else {
                         echo $e->getMessage();
                     }    */
                     ?>
-                    </div>
+                        </div>
                 </p>
             </div>
         </div>

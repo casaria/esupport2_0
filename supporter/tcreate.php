@@ -174,7 +174,7 @@ else {
             </div>
             <div class="tab-pane fade" id="asset" role="tabpanel" aria-labelledby="asset-tab">
                 <p>
-                    <div class="container">
+                <div class="container-asset">
                     <div class="row">
                         <div class="col align-self-start">
                            COL 1
@@ -193,6 +193,14 @@ else {
                         <div class="col align-self-end">
                             COL 3
                         </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col align-self-start">
+                            <b>Asset data (retrieved after scan): </b>
+                        </div>
+
+
                     </div>
                 </div>
                </p>

@@ -31,21 +31,25 @@
 			***************************************************************************************/
 $mtime1 = explode(" ", microtime());
 $starttime = $mtime1[0] + $mtime1[1];
+ob_start(null,0, PHP_OUTPUT_HANDLER_FLUSHABLE|PHP_OUTPUT_HANDLER_CLEANABLE|PHP_OUTPUT_HANDLER_REMOVABLE);
 
 require_once $_SERVER['DOCUMENT_ROOT']."/common/config.php";
 require_once $_SERVER['DOCUMENT_ROOT']."/common/mysql.class.php";
 require_once $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 
+/*
 startSession();
 $cookie_name = $_COOKIE['supporter_usercookie'];
+//$cookie_name = $_COOKIE['supporter_usercookie'];
 
 if($pubpriv == 'Private') {
     if (($session_id !== session_id()) || (!$cookie_name) || ($cookie_name == '')) {
     $myUrl =  "${protocol}://${domain}/common/login.php";
         header("location: $myUrl");
     }
-}
-
+}*/
+ob_end_clean();
+authenticate();
 RewindSession();
 ?>
 

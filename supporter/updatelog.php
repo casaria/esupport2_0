@@ -5,29 +5,7 @@
 **		This file generates the update log given a specified ticket number and displays it in its
 **	own window.
 **
-****************************************************************************************************
-	**
-	**	author:	JD Bottorf
-	**	date:	10/17/01
-	***********************************************************************************************
-			**
-			**	Copyright (C) 2001  <JD Bottorf>
-			**
-			**		This program is free software; you can redistribute it and/or
-			**		modify it under the terms of the GNU General Public
-			**		License as published by the Free Software Foundation; either
-			**		version 2.1 of the License, or (at your option) any later version.
-			**
-			**		This program is distributed in the hope that it will be useful,
-			**		but WITHOUT ANY WARRANTY; without even the implied warranty of
-			**		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-			**		General Public License for more details.
-			**
-			**		You should have received a copy of the GNU General Public
-			**		License along with This program; if not, write to the Free Software
-			**		Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-			**
-    		***************************************************************************************/
+*************************************************************************************************/
 ob_start(null,0, PHP_OUTPUT_HANDLER_FLUSHABLE|PHP_OUTPUT_HANDLER_CLEANABLE|PHP_OUTPUT_HANDLER_REMOVABLE);
 
 require_once "../common/config.php";

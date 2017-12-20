@@ -195,7 +195,10 @@ else {
                         </div>
                     </div>
                     <div class="row">
-                        <b>Asset's service history: </b>
+                        <div class="col align-self-start">
+                            <b>Asset's service history: </b>
+                        </div>
+
                     </div>
 
                 </div>

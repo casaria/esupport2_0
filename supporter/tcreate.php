@@ -74,7 +74,7 @@ if(isset($create)) {
     $short = addslashes(stripScripts($short));
     $description = addslashes(stripScripts($description));
     //$ugroup_id = getUGroupId($usergroup_name);
-    $ugroup_id = $usergroup_name;
+    $ugroup_id = $usergroup_id;
 
     //fix checkboxes
     $emailgroup = ($emailgroup == "on") ? "On" : "Off";
@@ -174,7 +174,7 @@ else {
             </div>
             <div class="tab-pane fade" id="asset" role="tabpanel" aria-labelledby="asset-tab">
                 <p>Asset Database <br>
-
+                    <div class"row align-items-center justify-content-center">
                     <?php createQRcode('https//casaria.net');
                /*     try {
                         Connection::get()->connect();
@@ -183,6 +183,7 @@ else {
                         echo $e->getMessage();
                     }    */
                     ?>
+                    </div>
                 </p>
             </div>
         </div>
@@ -385,7 +386,7 @@ function createSupporterInfo()
 				<td width="180px" class=back2 align=left>* '.$lang_group.':</td>
 				<td class=back >';
 				?>
-			    	<select class="selectwidth" id="ugroup-dd"  name=usergroup_name onChange="MM_jumpMenu('sgroup-dd', 'sgroup-dd', 'tkt', 0)">
+			    	<select class="selectwidth" id="ugroup-dd"  name=usergroup_id onChange="MM_jumpMenu('sgroup-dd', 'sgroup-dd', 'tkt', 0)">
 				<?php					
 				$ug=createUGroupsMenu(1); //with empty option
 				echo '</select>				

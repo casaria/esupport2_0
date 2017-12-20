@@ -174,7 +174,7 @@ else {
             </div>
             <div class="tab-pane fade" id="asset" role="tabpanel" aria-labelledby="asset-tab">
                 <p>
-                <div class="container-asset">
+                <div class="container container-aaset">
                     <div class="row">
                         <div class="col align-self-start">
                            COL 1

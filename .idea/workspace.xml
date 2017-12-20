@@ -18,7 +18,6 @@
     <list default="true" id="cce5a29d-03e1-4d66-b900-6e10479f00cd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change beforePath="$PROJECT_DIR$/supporter/index.php" afterPath="$PROJECT_DIR$/supporter/index.php" />
     </list>
     <ignored mask="workspace.xml" />
     <ignored mask="error_log" />
@@ -251,27 +250,27 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="806">
-              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+            <state relative-caret-position="558">
+              <caret line="76" column="43" lean-forward="false" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
               <folding>
-                <marker date="1513779717683" expanded="true" signature="3382:3470" ph="UPDATE ${$mysql_users_table}... " />
-                <marker date="1513779717683" expanded="true" signature="6985:7089" ph="..." />
-                <marker date="1513779717683" expanded="true" signature="7119:7374" ph="..." />
-                <marker date="1513779717683" expanded="true" signature="7162:7343" ph="..." />
-                <marker date="1513779717683" expanded="true" signature="7192:7299" ph="..." />
-                <marker date="1513779717683" expanded="true" signature="7195:7268" ph="..." />
-                <marker date="1513779717683" expanded="true" signature="7509:7618" ph="..." />
-                <marker date="1513779717683" expanded="true" signature="7648:7917" ph="..." />
-                <marker date="1513779717683" expanded="true" signature="7691:7886" ph="..." />
-                <marker date="1513779717683" expanded="true" signature="7721:7842" ph="..." />
-                <marker date="1513779717683" expanded="true" signature="7724:7811" ph="..." />
-                <marker date="1513779717683" expanded="true" signature="8095:8211" ph="..." />
-                <marker date="1513779717683" expanded="true" signature="8241:8505" ph="..." />
-                <marker date="1513779717683" expanded="true" signature="8284:8474" ph="..." />
-                <marker date="1513779717683" expanded="true" signature="8314:8430" ph="..." />
-                <marker date="1513779717683" expanded="true" signature="8317:8395" ph="..." />
-                <marker date="1513779717683" expanded="true" signature="10337:10356" ph="..." />
-                <marker date="1513779717683" expanded="true" signature="10542:10594" ph="..." />
+                <marker date="1513780107846" expanded="true" signature="3392:3480" ph="UPDATE ${$mysql_users_table}... " />
+                <marker date="1513780107846" expanded="true" signature="6995:7099" ph="..." />
+                <marker date="1513780107846" expanded="true" signature="7129:7384" ph="..." />
+                <marker date="1513780107846" expanded="true" signature="7172:7353" ph="..." />
+                <marker date="1513780107846" expanded="true" signature="7202:7309" ph="..." />
+                <marker date="1513780107846" expanded="true" signature="7205:7278" ph="..." />
+                <marker date="1513780107846" expanded="true" signature="7519:7628" ph="..." />
+                <marker date="1513780107846" expanded="true" signature="7658:7927" ph="..." />
+                <marker date="1513780107846" expanded="true" signature="7701:7896" ph="..." />
+                <marker date="1513780107846" expanded="true" signature="7731:7852" ph="..." />
+                <marker date="1513780107846" expanded="true" signature="7734:7821" ph="..." />
+                <marker date="1513780107846" expanded="true" signature="8105:8221" ph="..." />
+                <marker date="1513780107846" expanded="true" signature="8251:8515" ph="..." />
+                <marker date="1513780107846" expanded="true" signature="8294:8484" ph="..." />
+                <marker date="1513780107846" expanded="true" signature="8324:8440" ph="..." />
+                <marker date="1513780107846" expanded="true" signature="8327:8405" ph="..." />
+                <marker date="1513780107846" expanded="true" signature="10347:10366" ph="..." />
+                <marker date="1513780107846" expanded="true" signature="10552:10604" ph="..." />
               </folding>
             </state>
           </provider>
@@ -959,13 +958,6 @@
       <workItem from="1513746793225" duration="11980000" />
       <workItem from="1513763743157" duration="7693000" />
     </task>
-    <task id="LOCAL-00682" summary="master from eval-casaria-esupport  phpstorm">
-      <created>1507622309249</created>
-      <option name="number" value="00682" />
-      <option name="presentableId" value="LOCAL-00682" />
-      <option name="project" value="LOCAL" />
-      <updated>1507622309249</updated>
-    </task>
     <task id="LOCAL-00683" summary="fixes">
       <created>1507626635412</created>
       <option name="number" value="00683" />
@@ -1302,11 +1294,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513779476869</updated>
     </task>
-    <option name="localTasksCounter" value="731" />
+    <task id="LOCAL-00731" summary="session_start  headers already sent issue">
+      <created>1513779759674</created>
+      <option name="number" value="00731" />
+      <option name="presentableId" value="LOCAL-00731" />
+      <option name="project" value="LOCAL" />
+      <updated>1513779759675</updated>
+    </task>
+    <option name="localTasksCounter" value="732" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="626160000" />
+    <option name="totallyTimeSpent" value="626550000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1323,8 +1322,9 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33900928" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5006435" sideWeight="0.41775057" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24905184" sideWeight="0.46442235" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3232258" sideWeight="0.49339622" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3232258" sideWeight="0.49339622" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908162" sideWeight="0.49734244" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289977" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2273752" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -1351,7 +1351,6 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5006435" sideWeight="0.5822494" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32818532" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24905184" sideWeight="0.46442235" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955974" sideWeight="0.4973545" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5131579" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32323232" sideWeight="0.49339622" order="8" side_tool="false" content_ui="tabs" />
@@ -1432,7 +1431,6 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
-    <MESSAGE value="Reverted" />
     <MESSAGE value="STyles" />
     <MESSAGE value="Style padding" />
     <MESSAGE value="endtable in displayticket common.php" />
@@ -1457,7 +1455,8 @@
     <MESSAGE value="Tcreate, fix usergroup lost on create" />
     <MESSAGE value="QR Code test" />
     <MESSAGE value="Asset tab" />
-    <option name="LAST_COMMIT_MESSAGE" value="Asset tab" />
+    <MESSAGE value="session_start  headers already sent issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="session_start  headers already sent issue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2156,27 +2155,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        <state relative-caret-position="558">
+          <caret line="76" column="43" lean-forward="false" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
           <folding>
-            <marker date="1513779717683" expanded="true" signature="3382:3470" ph="UPDATE ${$mysql_users_table}... " />
-            <marker date="1513779717683" expanded="true" signature="6985:7089" ph="..." />
-            <marker date="1513779717683" expanded="true" signature="7119:7374" ph="..." />
-            <marker date="1513779717683" expanded="true" signature="7162:7343" ph="..." />
-            <marker date="1513779717683" expanded="true" signature="7192:7299" ph="..." />
-            <marker date="1513779717683" expanded="true" signature="7195:7268" ph="..." />
-            <marker date="1513779717683" expanded="true" signature="7509:7618" ph="..." />
-            <marker date="1513779717683" expanded="true" signature="7648:7917" ph="..." />
-            <marker date="1513779717683" expanded="true" signature="7691:7886" ph="..." />
-            <marker date="1513779717683" expanded="true" signature="7721:7842" ph="..." />
-            <marker date="1513779717683" expanded="true" signature="7724:7811" ph="..." />
-            <marker date="1513779717683" expanded="true" signature="8095:8211" ph="..." />
-            <marker date="1513779717683" expanded="true" signature="8241:8505" ph="..." />
-            <marker date="1513779717683" expanded="true" signature="8284:8474" ph="..." />
-            <marker date="1513779717683" expanded="true" signature="8314:8430" ph="..." />
-            <marker date="1513779717683" expanded="true" signature="8317:8395" ph="..." />
-            <marker date="1513779717683" expanded="true" signature="10337:10356" ph="..." />
-            <marker date="1513779717683" expanded="true" signature="10542:10594" ph="..." />
+            <marker date="1513780107846" expanded="true" signature="3392:3480" ph="UPDATE ${$mysql_users_table}... " />
+            <marker date="1513780107846" expanded="true" signature="6995:7099" ph="..." />
+            <marker date="1513780107846" expanded="true" signature="7129:7384" ph="..." />
+            <marker date="1513780107846" expanded="true" signature="7172:7353" ph="..." />
+            <marker date="1513780107846" expanded="true" signature="7202:7309" ph="..." />
+            <marker date="1513780107846" expanded="true" signature="7205:7278" ph="..." />
+            <marker date="1513780107846" expanded="true" signature="7519:7628" ph="..." />
+            <marker date="1513780107846" expanded="true" signature="7658:7927" ph="..." />
+            <marker date="1513780107846" expanded="true" signature="7701:7896" ph="..." />
+            <marker date="1513780107846" expanded="true" signature="7731:7852" ph="..." />
+            <marker date="1513780107846" expanded="true" signature="7734:7821" ph="..." />
+            <marker date="1513780107846" expanded="true" signature="8105:8221" ph="..." />
+            <marker date="1513780107846" expanded="true" signature="8251:8515" ph="..." />
+            <marker date="1513780107846" expanded="true" signature="8294:8484" ph="..." />
+            <marker date="1513780107846" expanded="true" signature="8324:8440" ph="..." />
+            <marker date="1513780107846" expanded="true" signature="8327:8405" ph="..." />
+            <marker date="1513780107846" expanded="true" signature="10347:10366" ph="..." />
+            <marker date="1513780107846" expanded="true" signature="10552:10604" ph="..." />
           </folding>
         </state>
       </provider>

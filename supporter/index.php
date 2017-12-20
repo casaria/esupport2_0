@@ -1,6 +1,7 @@
 
 <?php
 /**************************************************************************************************
+ *
 **	file:	index.php
 **
 **		This is the index file that provides access to the rest of the site basically.  Mostly html
@@ -29,10 +30,11 @@
 			**		Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 			**
 			***************************************************************************************/
+ob_start(null,0, PHP_OUTPUT_HANDLER_FLUSHABLE|PHP_OUTPUT_HANDLER_CLEANABLE|PHP_OUTPUT_HANDLER_REMOVABLE);
 $mtime1 = explode(" ", microtime());
 $starttime = $mtime1[0] + $mtime1[1];
 
-ob_start(null,0, PHP_OUTPUT_HANDLER_FLUSHABLE|PHP_OUTPUT_HANDLER_CLEANABLE|PHP_OUTPUT_HANDLER_REMOVABLE);
+
 
 require_once $_SERVER['DOCUMENT_ROOT']."/common/config.php";
 require_once $_SERVER['DOCUMENT_ROOT']."/common/mysql.class.php";

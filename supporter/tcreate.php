@@ -174,18 +174,28 @@ else {
             </div>
             <div class="tab-pane fade" id="asset" role="tabpanel" aria-labelledby="asset-tab">
                 <p>
-                    <div class="col align-self-center">
-                    Share ticket<br>
-                    <?php createQRcode('https//casaria.net');
-               /*     try {
-                        Connection::get()->connect();
-                        echo 'A connection to the PostgreSQL database sever has been established successfully.';
-                    } catch (PDOException $e) {
-                        echo $e->getMessage();
-                    }    */
-                    ?>
+                <div class="container">
+                    <div class="row">
+                        <div class="col align-self-start">
+                            One of three columns
                         </div>
-                </p>
+                        <div class="col align-self-center">
+                            Share ticket<br>
+                            <?php createQRcode('https//casaria.net');
+                            /*     try {
+                                     Connection::get()->connect();
+                                     echo 'A connection to the PostgreSQL database sever has been established successfully.';
+                                 } catch (PDOException $e) {
+                                     echo $e->getMessage();
+                                 }    */
+                            ?>
+                        </div>
+                        <div class="col align-self-end">
+                            One of three columns
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 

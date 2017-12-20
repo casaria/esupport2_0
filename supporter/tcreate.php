@@ -174,7 +174,7 @@ else {
             </div>
             <div class="tab-pane fade" id="asset" role="tabpanel" aria-labelledby="asset-tab">
                 <p>
-                <div class="container">
+                    <div class="container">
                     <div class="row">
                         <div class="col align-self-start">
                            COL 1
@@ -195,6 +195,7 @@ else {
                         </div>
                     </div>
                 </div>
+               </p>
             </div>
         </div>
 

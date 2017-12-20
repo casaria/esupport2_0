@@ -2136,7 +2136,7 @@ function createUGroupsMenu($emptyrow=0)
 
     while($row = $db->fetch_array($result)){
 			if($num_rows == 1 || $row['id'] != 0){
-				echo "<option value=\"index.php?t=tcre&sg=$sg&ug=$row[id]\"";
+				echo "<option value=$row[id]";
 					if($ug == $row['id']) echo " selected";
 				echo ">".$row['group_name']."</option>";
 				//set $ug to the 1st item as default

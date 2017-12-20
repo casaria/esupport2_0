@@ -175,7 +175,7 @@ else {
             <div class="tab-pane fade" id="asset" role="tabpanel" aria-labelledby="asset-tab">
                 <p>
                 <div class="container-aaset">
-                    <div class="row">
+                    <div class="row alig-items-start">
                         <div class="col align-self-start">
                            COL 1
                         </div>
@@ -190,11 +190,11 @@ else {
                                  }    */
                             ?>
                         </div>
-                        <div class="col align-self-end">
+                        <div class="col align-self-end ">
                             COL 3
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row align-items-start">
                         <div class="col align-self-start">
                             <b>Asset's service history: </b>
                         </div>

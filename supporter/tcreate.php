@@ -181,7 +181,7 @@ else {
                         </div>
                         <div class="col align-self-center">
                             <b>Share ticket</b>
-                            <?php createQRcode('https//casaria.net');?>
+                
                         </div>
                         <div class="col align-self-end ">
                             COL 3

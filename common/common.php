@@ -2135,12 +2135,12 @@ function createUGroupsMenu($emptyrow=0)
 
 
     while($row = $db->fetch_array($result)){
-			if($num_rows == 1 || $row['id'] != 0){
-				echo "<option value=$row[id]";
-					if($ug == $row['id']) echo " selected";
+			if($num_rows == 1 || $row[0] != 0){
+				echo "<option value=$row[0]";
+					if($ug == $row[0]) echo " selected";
 				echo ">".$row['group_name']."</option>";
 				//set $ug to the 1st item as default
-				If (! isset($ug)) $ug=$row['id'];
+				If (! isset($ug)) $ug=$row[0];
 
 			}
 		}

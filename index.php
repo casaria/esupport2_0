@@ -64,6 +64,7 @@ $cookie_name = $_SESSION['cookie_name'];
 }
 
 */
+$cookie_name = $_COOKIE['cookieuser'];
 ob_end_clean();
 authenticate();
 RewindSession();

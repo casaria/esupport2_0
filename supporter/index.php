@@ -51,6 +51,7 @@ if($pubpriv == 'Private') {
         header("location: $myUrl");
     }
 }*/
+$cookie_name = $_COOKIE['supporter_usercookie'];
 ob_end_clean();
 authenticate();
 RewindSession();

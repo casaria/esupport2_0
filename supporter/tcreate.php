@@ -173,16 +173,28 @@ else {
                     createTicketInfo('allow', $ug); ?></P>
             </div>
             <div class="tab-pane fade" id="asset" role="tabpanel" aria-labelledby="asset-tab">
-                <p>Asset Database <br>
-
-                    <?php createQRcode('https//casaria.net');
-               /*     try {
-                        Connection::get()->connect();
-                        echo 'A connection to the PostgreSQL database sever has been established successfully.';
-                    } catch (PDOException $e) {
-                        echo $e->getMessage();
-                    }    */
-                    ?>
+                <p>
+                <div class="container container-aaset">
+                    <div class="row">
+                        <div class="col align-self-start">
+                           COL 1
+                        </div>
+                        <div class="col align-self-center">
+                            Share ticket<br>
+                            <?php createQRcode('https//casaria.net');
+                            /*     try {
+                                     Connection::get()->connect();
+                                     echo 'A connection to the PostgreSQL database sever has been established successfully.';
+                                 } catch (PDOException $e) {
+                                     echo $e->getMessage();
+                                 }    */
+                            ?>
+                        </div>
+                        <div class="col align-self-end">
+                            COL 3
+                        </div>
+                    </div>
+                </div>
                 </p>
             </div>
         </div>

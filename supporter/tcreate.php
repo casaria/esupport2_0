@@ -194,15 +194,6 @@ else {
                             COL 3
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col align-self-start">
-                            <b>Asset data (retrieved after scan): </b>
-                        </div>
-
-
-
-                    </div>
                 </div>
             </div>
         </div>

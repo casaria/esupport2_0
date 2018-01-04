@@ -3046,8 +3046,7 @@ function showSubmitResult($success, $id){
     startTable("$lang_ticket $lang_submitted", "left");
         $myUrl =  "${protocol}://${domain}/supporter/index.php?t=tupd&id=$id";
         echo "<tr><td class=back2><br><br> $lang_ticket <A class=hf href=\"$myUrl\">#";
-        echo str_pad($id, 5, 0, STR_PAD_LEFT).' '.$lang_submitted_succ.'</a>;';
-
+        echo str_pad($id, 5, 0, STR_PAD_LEFT).'</a>'.' '.$lang_submitted_succ;
 
 
         echo "<br><br><br></td></tr>";

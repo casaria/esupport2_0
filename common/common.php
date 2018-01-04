@@ -3042,9 +3042,10 @@ function stripScripts($text)
 
 
 function showSubmitResult($success, $id){
-    global $lang_ticket, $lang_submitted, $lang_submitted_succ;
+    global $lang_ticket, $lang_submitted,$protocol, $domain;
     startTable("$lang_ticket $lang_submitted", "left");
-        echo "<tr><td class=back2><br><br> $lang_ticket <b>#" . str_pad($id, 5, "0", STR_PAD_LEFT) . " </b>$lang_submitted_succ.";
+        $myUrl =  "${protocol}://${domain}/supporter/index.php?t=tupd&id=$id";
+        echo "<tr><td class=back2><br><br> $lang_ticket <A class=hf href=\".$myUrl".">str_pad($id, 5, 0, STR_PAD_LEFT)></a>";
         echo "<br><br><br></td></tr>";
     endTable();
 

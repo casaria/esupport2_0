@@ -6,6 +6,7 @@
       <secret-storage>master_key</secret-storage>
       <first-sync>true</first-sync>
       <user-name>phorrack</user-name>
+      <introspection-schemas>bugtracker:information_schema,pg_catalog,pg_temp_1,pg_toast,pg_toast_temp_1,public|casaria5:public|casaria5-17-11-04:|odoo-11:information_schema,pg_catalog,pg_temp_1,pg_toast,pg_toast_temp_1,public</introspection-schemas>
       <ssh-properties>
         <enabled>true</enabled>
         <proxy-host>odoo.casaria.net</proxy-host>

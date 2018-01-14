@@ -36,6 +36,7 @@ require_once "common/common.php";
 //$the_file ='';
 
 authenticate();
+$normalized_username = $cookie_name;
 
 $language = getLanguage($cookie_name);
 $time_offset = getTimeOffset($cookie_name);

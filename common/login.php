@@ -94,7 +94,7 @@ function setUserCookie()
 
 function setSupporterCookie()
 {
-    global  $normalized_username, $normalized_password, $session_time;
+    global  $normalized_username, $session_time;
     $cookie_name = $normalized_username;
     setSession();
     setcookie('supporter_usercookie', $cookie_name,  time()+ $session_time, '/', 'casaria.net');

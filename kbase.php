@@ -128,7 +128,7 @@ else{
                         $sql = "SELECT id, question from $mysql_kbase_table where platform='$pla' and category='$cat' and viewable_by='all' order by popularity desc";
                 }
                 else{
-                        $sql = "SELECT id, question from $mysql_kbase_table where platform='$pla' and category='$cat' and viewable_by='supporters' order by popularity desc";
+                        $sql = "SELECT id, question from $mysql_kbase_table where platform='$pla' and category='$cat' and viewable_by='supporters' order by  popularity desc";
                 }
 
                 $result = $db->query($sql);

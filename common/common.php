@@ -31,7 +31,7 @@
 			**
 			***************************************************************************************/
 
-$version='1.5.2c';
+$version='1.5.2f';
 
 //create the connection to the database.
 
@@ -404,8 +404,8 @@ function isCookieSet($cookie_name, $enc_pwd)
 ************************************************************************************************************/
 
 function startSession() {
-	global $session_time, $session_name, $cookie_name, $session_id;
-    session_set_cookie_params($session_time,'/', '.casaria.net',1,1);
+	global $session_time, $session_name, $cookie_name, $session_id, $domain;
+    session_set_cookie_params($session_time,"/", ".$domain",1,1);
     session_name($session_name);
     session_start();
     if (!isset($_SESSION['count'])) {

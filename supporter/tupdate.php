@@ -156,7 +156,7 @@ if (isset($update)) {
         $updated = 1;
     }
 
-    //if
+    //if short chaanges
     if ($old_short != $short) {
         $msg = "\$lang_shortchange $old_short";
         $log = updateLog($id, $msg);
@@ -165,6 +165,14 @@ if (isset($update)) {
         $updated = 1;
     }
 
+    //if description changes
+    if ($old_description != $description) {
+        $msg = "\$lang_descriptionchange $old_description";
+        $log = updateLog($id, $msg);
+        $sql = "update $mysql_tickets_table set update_log='$log' where id=$id";
+        $db->query($sql);
+        $updated = 1;
+    }
 
     unset($statuschange);
     //if the status is changed, update the log to reflect the change.

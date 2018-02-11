@@ -96,7 +96,7 @@ $lang_lastname = "Last Name";
 $lang_prioritychange = "Priority changed to";
 $lang_statuschange = "Status changed to";
 $lang_shortchange = "Short description changed from:";
-
+$lang_descriptionchange = "Description changed from:";
 
 $lang_emailsent = "Email Sent";
 $lang_userupdate = "User posted update";

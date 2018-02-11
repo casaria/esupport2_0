@@ -265,7 +265,6 @@ if (isset($update)) {
                 eval("\$body = \"$template\";");
 
                 if ($enable_smtp == 'lin') {
-                if ($enable_smtp == 'lin') {
                     sendmail($sup_email, $helpdesk_name, $logged_in_user['email'], $id, $body, $sub);
                 }
                 if ($enable_smtp == 'win') {

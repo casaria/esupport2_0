@@ -158,7 +158,7 @@ if (isset($update)) {
 
     //if short chaanges
     if ($old_short != $short) {
-        $msg = "\$lang_shortchange $old_short";
+        $msg = "\$lang_shortchange $old_short <b>to</b> $short";
         $log = updateLog($id, $msg);
         $sql = "update $mysql_tickets_table set update_log='$log' where id=$id";
         $db->query($sql);
@@ -167,7 +167,7 @@ if (isset($update)) {
 
     //if description changes
     if ($old_description != $description) {
-        $msg = "\$lang_descriptionchange $old_description";
+        $msg = "\$lang_descriptionchange $old_description  <b>to</b>$description";
         $log = updateLog($id, $msg);
         $sql = "update $mysql_tickets_table set update_log='$log' where id=$id";
         $db->query($sql);

@@ -36,7 +36,7 @@ require_once "../common/mysql.class.php";
 require_once "../common/common.php";
 $language = getLanguage($cookie_name);
 if ($language == '')
-    require_once "../lang/$default_language.lang.php";
+    require_once "../lang/english.lang.php";
 
 
 
@@ -107,6 +107,8 @@ if (isset($update)) {
     $after_hoursbox = ($after_hours == "on") ? "1" : "0";
     $engineer_ratebox = ($engineer_rate == "on") ? "1" : "0";
 
+
+
     //lets update the time spent first.
     if (isset($time_spent) && $time_spent != '' && $enable_time_tracking == 'On') {
         //time is set to midnight
@@ -148,6 +150,15 @@ if (isset($update)) {
     //if the notification options are changed reflect the change.
     if ($old_emailcc != $emailcc) {
         $msg = "\$lang_emailccchange $emailcc";
+        $log = updateLog($id, $msg);
+        $sql = "update $mysql_tickets_table set update_log='$log' where id=$id";
+        $db->query($sql);
+        $updated = 1;
+    }
+
+    //if
+    if ($old_short != $short) {
+        $msg = "\$lang_shortchange $old_short";
         $log = updateLog($id, $msg);
         $sql = "update $mysql_tickets_table set update_log='$log' where id=$id";
         $db->query($sql);
@@ -253,6 +264,7 @@ if (isset($update)) {
                 $template = str_replace("\\'", "'", $template[0]);
                 eval("\$body = \"$template\";");
 
+                if ($enable_smtp == 'lin') {
                 if ($enable_smtp == 'lin') {
                     sendmail($sup_email, $helpdesk_name, $logged_in_user['email'], $id, $body, $sub);
                 }
@@ -474,10 +486,10 @@ unset($update);
         if ($enable_kbase == 'On') {
 
         echo "<form name=form2 method=post action=index.php?t=kbase&act=kadd>";
-        echo "<input type=hidden name=platform value='$info[platform]'>";
-        echo "<input type=hidden name=category value='$info[category]'>";
-        echo "<input type=hidden name=short value='$info[short]'>";
-        echo "<input type=hidden name=description value='$info[description]'>";
+        echo "<input type=hidden name=old_platform value='$info[platform]'>";
+        echo "<input type=hidden name=old_category value='$info[category]'>";
+        echo "<input type=hidden name=old_short value='$info[short]'>";
+        echo "<input type=hidden name=old_description value='$info[description]'>";
         echo "<div class=\"col align-self end\"><input type=submit id=submit name=dumptokb height=80 value=\"$lang_dumptokb\"></div></form>";
         }
         Echo "</div>";
@@ -548,7 +560,7 @@ function createMainTab()
     echo '<a href="updatelog.php?cookie_name=' . $cookie_name . '&id=' .
                         $info['id'] . '" target="myWindow" onClick="window.open(\'\', \'myWindow\',\'location=no, status=yes, scrollbars=yes, height=500, width=600, menubar=no, toolbar=no, resizable=yes\')">
 
-<img border=0 src="../' . $theme['image_dir'] . 'orangeglow0_show_summary.png"></a> ';
+<img border=0 src="../' . $theme['image_dir'] . '"orangeglow0_show_summary.png"></a> ';
     echo "<div align=right><a href=\"$supporter_site_url/print.php?id=$id\">$lang_printable</a></div>";
 
 
@@ -973,7 +985,7 @@ function createTimeTab()
 
                     <div id="dylay" class="row">
                         <div class="col-sm-12 overhead"  data-foo="5">
-                            <span style="height: 200px;">#4530<br>Short dedcription<br>line 2</span>
+                            <span style="height: 200px;">#4530<br>Short description<br>line 2</span>
                         </div>
                         <div class="col-sm-12 billable" data-foo="6">
                             <span style="height: 40px;">#4320</span>
@@ -994,7 +1006,7 @@ function createTimeTab()
                             <span style="height: 80px;">#4000</span>
                         </div>
                         <div class="col-sm-12 overhead"  data-foo="5">
-                            <span style="height: 200px;">#4530<br>Short dedcription<br>line 2</span>
+                            <span style="height: 200px;">#4530<br>Short description<br>line 2</span>
                         </div>
                         <div class="col-sm-12 billable" data-foo="6">
                             <span style="height: 40px;">#4320</span>

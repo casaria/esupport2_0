@@ -83,23 +83,23 @@ function setSession(){
 
 function setUserCookie()
 {
-    global $normalized_username, $normalized_password, $session_time;
+    global $normalized_username, $normalized_password, $session_time, $domain;
     $cookie_name = $normalized_username;
     setSession();
 
-    setcookie('cookieuser', $cookie_name, time() + $session_time, '/', 'casaria.net');
+    setcookie('cookieuser', $cookie_name, time() + $session_time, '/', $domain);//'casaria.net');
    // setcookie('cookiepwd', $normalized_password, time() + $session_time, '/', 'casaria.net');
-    setcookie('session_id', session_id(), time() + $session_time, '/', 'casaria.net');
+    setcookie('session_id', session_id(), time() + $session_time, '/', $domain);//'casaria.net');
 }
 
 function setSupporterCookie()
 {
-    global  $normalized_username, $session_time;
+    global  $normalized_username, $session_time, $domain;
     $cookie_name = $normalized_username;
     setSession();
-    setcookie('supporter_usercookie', $cookie_name,  time()+ $session_time, '/', 'casaria.net');
+    setcookie('supporter_usercookie', $cookie_name,  time()+ $session_time, '/', $domain); //'casaria.net');
     //setcookie('supporter_pwdcookie', $normalized_password,  time()+ $session_time, '/', 'casaria.net');
-    setcookie('session_id', session_id(), time() + $session_time, '/', 'casaria.net');
+    setcookie('session_id', session_id(), time() + $session_time, '/', $domain);// 'casaria.net');
 }
 function presetValues()
 {   global $cookie_name, $ugID_list, $user_id;

@@ -991,7 +991,7 @@ function getPrivelegesAsInteger($name)
 {
     global $mysql_users_table, $db;
 
-    $sql = "select user,supervisor, supporter, admin, accountant, superuser from users where user_name='$name'";
+    $sql = "select user, supervisor, supporter, admin, accountant, superuser from users where user_name='$name'";
     $result = $db->query($sql);
     $row = $db->fetch_row($result);
     $ret = 0;

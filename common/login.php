@@ -69,10 +69,11 @@ if (isset($_POST['refer'])) {
 
 function setSession(){
     global $normalized_username, $normalized_password, $remote_ip;
-    startSession();  //creates a new one
+
     //session_status() === PHP_SESSION_ACTIVE  ? $cookieuser = '' : startSession();
 
     $cookie_name = $normalized_username;
+    startSession();  //creates a new one
     $_SESSION ['cookie_name'] = $cookie_name;
     $enc_pwd = md5($normalized_password);
     $_SESSION ['enc_pwd'] = $enc_pwd;

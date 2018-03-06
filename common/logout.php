@@ -39,15 +39,15 @@ require_once "common.php";
 
 //if (isset($_COOKIE[session_name()])) {
   $cookie_name='';
-    setcookie("session_id", session_id(), time() - $session_time, '/', 'casaria.net');
+    setcookie("session_id", session_id(), time() - $session_time, '/', $domain);
     if (isset($_COOKIE['cookieuser'])) {
 
         unset($_COOKIE['cookieuser']);
         // empty value and expiration one hour before
-        setcookie("cookieuser", $cookie_name, time() - 3600, '/', 'casaria.net');
+        setcookie("cookieuser", $cookie_name, time() - 3600, '/', $domain);
     }
     if (isset($_COOKIE['supporter_usercookie']))
-        setcookie("supporter_usercookie", $cookie_name, time() - 3600, '/', 'casaria.net');
+        setcookie("supporter_usercookie", $cookie_name, time() - 3600, '/', $domain);
 
 //session_set_cookie_params(600,'/', '.casaria.net',0,0);
 

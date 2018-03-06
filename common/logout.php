@@ -56,7 +56,7 @@ session_destroy();
 
 $myUrl =  "${protocol}://${domain}/index.php";
     header("location: $myUrl");
-    exit;
+        exit;
 
 
 

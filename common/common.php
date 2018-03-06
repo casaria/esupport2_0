@@ -2893,9 +2893,9 @@ function convertFileSize($attachsize)
 
 function getLanguage($name)
 {
-	global $mysql_users_table, $db;
-
-	$sql = "SELECT language from $mysql_users_table where user_name='$name'";
+	global $mysql_users_table, $db, $language;
+    if ($name=='') return $language['English'];
+    $sql = "SELECT language from $mysql_users_table where user_name='$name'";
 	$result = $db->query($sql);
 	$language = $db->fetch_array($result);
 	return $language['language'];

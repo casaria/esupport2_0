@@ -36,6 +36,7 @@ require_once "common/common.php";
 //$the_file ='';
 
 authenticate();
+$cookie_name = $_COOKIE['cookieuser'];
 $normalized_username = $cookie_name;
 
 $language = getLanguage($cookie_name);
@@ -56,7 +57,7 @@ if(isset($create)){
 
 	$time = time() + ($time_offset * 3600);
 	
-	if($group == '' || $priority == '' || $normalized_username == '' || $description == ''){
+    	if($group == '' || $priority == '' || $normalized_username == '' || $description == ''){
 		header("Location: index.php?t=terr");
 	}
 	else{

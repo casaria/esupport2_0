@@ -56,12 +56,13 @@ startSession();
 
 
 //$cookie_name = S_SESSION['cookie_name'];
+$cookie_name = $_COOKIE['cookieuser'];
 if($pubpriv == 'Private') {if (($session_id !== session_id()) || (!$cookie_name) || ($cookie_name == '')) {
         $myUrl =  "${protocol}://${domain}/common/login.php";
         header("location: $myUrl");
     }
 }
-$cookie_name = $_COOKIE['cookieuser'];
+
 //$cookie_name = $_SESSION['cookie_name'];
 
         if($enable_helpdesk == 'Off'){

@@ -153,7 +153,7 @@ else{
 	createTicketHeader("$lang_create $lang_ticket");
 	createSupporterInfo($group_id);
 	createUserInfo($groupname);
-	createNotificationPanel($group_id);
+	//createNotificationPanel($group_id);
 	
 	if($enable_uattachments == 'Off'){
 		createTicketInfo('disallow', $group_id);

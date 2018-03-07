@@ -47,7 +47,7 @@ require_once "common.php";
         setcookie("cookieuser", $cookie_name, time() - 3600, '/', $domain);
     }
     if (isset($_COOKIE['supporter_usercookie']))
-        setcookie("supporter_usercookie", $cookie_name, time() - 3600, '/', $domain);
+        setcookie("supporter_usercookie", $cookie_name, time() - 3600, '/', $domain );
 
 //session_set_cookie_params(600,'/', '.casaria.net',0,0);
 
@@ -67,3 +67,4 @@ $myUrl =  "${protocol}://${domain}/index.php";
 
 
 
+?>

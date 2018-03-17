@@ -161,7 +161,7 @@ if($enable_uattachments == 'On'){
 // display the form and submit button(s)
 // $send_mail is set upon submit
 // $user_update contains the textfield with  updates
-$sql = "SELECT template from $mysql_templates_table where name='user_ticket_info2'";
+$sql = "SELECT template from $mysql_templates_table where name='user_ticket_info2' and  status != '** ON HOLD **'";
 $result = $db->query($sql);
 $template = $db->fetch_array($result);
 $template=str_replace("\\'","'",$template[0]);

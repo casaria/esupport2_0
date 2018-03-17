@@ -348,7 +348,7 @@ function randomPassword( $length = 8 ) {
 function checkPwd($pwd1, $pwd2)
 {
 
-	if(strtolower($pwd1) == strtolower($pwd2))
+	if((strtolower($pwd1)) == (strtolower($pwd2)))
 		return true;
 	else
 		return false;

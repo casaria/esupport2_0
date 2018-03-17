@@ -107,7 +107,7 @@ function showTickets($name)
 	$highest = getRStatus(getHighestRank($mysql_tstatus_table));	//set the highest priority rating
 
 	//ticket list limited to 30
-	$sql = "select * from $mysql_tickets_table where user='$name' and status!='$highest' order by create_date desc";
+	$sql = "select * from $mysql_tickets_table where user='$name' and status!='$highest' and status != '** ON HOLD **' order by create_date desc";
 	$result = $db->query($sql);
 
 

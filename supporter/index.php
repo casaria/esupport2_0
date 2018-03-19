@@ -45,8 +45,9 @@ require_once $_SERVER['DOCUMENT_ROOT']."/common/config.php";
 require_once $_SERVER['DOCUMENT_ROOT']."/common/mysql.class.php";
 require_once $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 
-startSession();
+
 $cookie_name = $_COOKIE['supporter_usercookie'];
+startSession();
 
 if($pubpriv == 'Private') {
     if (($session_id !== session_id()) || (!$cookie_name) || ($cookie_name == '')) {

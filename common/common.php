@@ -3051,7 +3051,7 @@ function showSubmitResult($success, $id){
 
 
         echo "<br><br></td></tr>";
-    echo "<input type=submit name=updat value=\"$lang_update $lang_ticket\">";
+    //echo "<input type=submit name=updat value=\"$lang_update $lang_ticket\">";
     echo "</form>";
 
     endTable();

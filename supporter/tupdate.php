@@ -506,7 +506,7 @@ unset($update);
 
         function createSupporterInfo()
         {
-        global $sg, $lang_supporterinfo, $lang_supportergroup, $lang_supporter, $lang_ticket, $lang_priority, $lang_status;
+        global $sg, $lang_supporterinfo, $lang_supportergroup, $lang_supporter, $info, $lang_ticket, $lang_priority, $lang_status;
         startTable("$lang_supporterinfo", "left", 100, 4);
         ECHO '                <tr>                              
 							<td class=back2 align=right>' . $lang_supportergroup . '</td>
@@ -532,7 +532,7 @@ unset($update);
 							<td class=back align="left">
 							
 							<select id="selectwidth" name=prio>';
-            createPriorityMenu(0);
+            createPriorityMenu(0,999999,$info);
 
             echo '
 							</select>

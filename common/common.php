@@ -1604,7 +1604,7 @@ function createPriorityMenu($flag=0, $maxRank = 999999, $ticket=NULL)
 	//automatically select medium priority if ticket has no priority yet
     if (isset($ticket)) {
         if ($ticket['priority'] == '') {
-            $select = floor($num_rows / 2);
+            $select = floor(($num_rows / 2)+1);
         }
     }
 

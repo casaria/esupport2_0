@@ -50,7 +50,6 @@ if($reg == 'yes'){
     exit;
 }
 
-
 startSession();
 //$cookie_name = $_COOKIE['supporter_usercookie'];
 

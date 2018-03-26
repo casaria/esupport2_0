@@ -44,13 +44,17 @@ require_once "../common/common.php";
 //}]
 
 
+$cookie_name = $_COOKIE['supporter_usercookie'];
 startSession();
+
+/*
+
 unset($cookie_name); unset($level);
 if (isset($_SESSION['cookie_name'])) {
     $cookie_name = $_SESSION['cookie_name'];
     $level = getPrivelegesAsInteger($cookie_name);
 }
-
+*/
 
 if($pubpriv == 'Private') {
     if ( (!($level & 8)) || ($session_id !== session_id()) || (!$cookie_name) || ($cookie_name == '') || (!$level)) {

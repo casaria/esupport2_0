@@ -48,9 +48,10 @@ require_once $_SERVER['DOCUMENT_ROOT']."/common/common.php";
 
 $cookie_name = $_COOKIE['supporter_usercookie'];
 startSession();
+$level = getPrivelegesAsInteger($cookie_name);
 
 if($pubpriv == 'Private') {
-    if (($session_id !== session_id()) || (!$cookie_name) || ($cookie_name == '')) {
+    if ((!($level & 4)) || ($session_id !== session_id()) || (!$cookie_name) || ($cookie_name == '')) {
     $myUrl =  "${protocol}://${domain}/common/login.php";
         header("location: $myUrl");
     }

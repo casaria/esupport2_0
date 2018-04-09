@@ -34,7 +34,9 @@
 //this is the delay time before the db is updated when a user is no longer online.
 $timeoutseconds=60;
 $timestamp = time(); 
-$timeout = $timestamp-$timeoutseconds; 
+$timeout = $timestamp-$timeoutseconds;
+$online = [];
+$users = [];
 
 //set the user variable so we can access it for database queries
 if($cookie_name == '' || !isset($cookie_name))
@@ -55,6 +57,7 @@ while($row = $db->fetch_array($result)){
 //get the count of the number of guests online.
 $guest_count = 0;
 $k = 0;
+
 for($j=0; $j<sizeof($users); $j++){
 	if($users[$j] == 'guest123'){		//if the user is guest123, add one to the guest count
 		$guest_count++;

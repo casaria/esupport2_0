@@ -73,7 +73,7 @@ if(isset($create)) {
 
     $short = addslashes(stripScripts($short));
     $description = addslashes(stripScripts($description));
-    //$ugroup_id = getUGroupId($usergroup_name);
+    if(empty($usergroup_id))  $usergroup_id = getUGroupId($usergroup_name);
     $ugroup_id = $usergroup_id;
 
     //fix checkboxes

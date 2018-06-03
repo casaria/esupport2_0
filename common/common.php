@@ -1000,7 +1000,7 @@ function getPrivelegesAsInteger($name)
             $ret += $row[$n] * pow(2, $n);
         }
     }
-    return $ret; //or 0 if not found
+        return $ret; //or 0 if not found
 }
 
 

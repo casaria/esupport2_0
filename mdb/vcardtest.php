@@ -129,7 +129,7 @@
         require_once "../common/common.php";
 
         include ("VCARD.css");
-        $sql = "select * from $mysql_users_table where admin=1 and user_name != 'support_pool' order by user_name asc limit 40, 100";
+        $sql = "select * from $mysql_users_table where admin=1 and user_name != 'support_pool' order by user_name asc";
 
         $result = $db->query($sql);
         $fd = fopen("test.vcf", "w" );

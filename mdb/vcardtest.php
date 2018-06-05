@@ -127,10 +127,11 @@
 
 
         include ("VCARD.css");
+
         $test = new vcardexp;
 
         $test->setValue("firstName", "Max");
-        $test->setValue("lastName", "Mustermann");``
+        $test->setValue("lastName", "Mustermann");
         $test->setValue("organisation", "Mustermann Holding GmbH");
         $test->setValue("tel_work", "01234/567890");
         $test->setValue("tel_home", "069/0123456");

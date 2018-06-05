@@ -124,7 +124,9 @@
         <?php
 
         include("vcardexp.inc.php");
+        require_once "../common/config.php";
         require_once "../common/$database.class.php";
+        require_once "../common/common.php";
 
         include ("VCARD.css");
         $sql = "select * from $mysql_users_table where admin=1 and user_name != 'support_pool' order by user_name asc limit $low, $users_limit";

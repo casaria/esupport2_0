@@ -151,7 +151,6 @@
             $supp = $row['supporter'];
             $admin = $row['admin'];
 
-
             $test = new vcardexp;
 
             $test->setValue("firstName", $first);

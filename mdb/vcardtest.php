@@ -171,6 +171,7 @@
             $acard = $test->getCard();
 
             fputs($fd, $acard);
+            fputs($fd, "\n\n");
         }
         fclose($fd);
 

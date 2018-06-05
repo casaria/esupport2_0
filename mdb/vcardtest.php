@@ -23,13 +23,7 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
 
-<?php
 
-include("vcardexp.inc.php");
-
-
-include ("VCARD.css");
-?>
 <!--Section: Live preview-->
 <section class="form-light">
 
@@ -128,6 +122,11 @@ include ("VCARD.css");
 
         <button href="#" class="btn btn-primary">Button></button>
         <?php
+
+        include("vcardexp.inc.php");
+
+
+        include ("VCARD.css");
         $test = new vcardexp;
 
         $test->setValue("firstName", "Max");

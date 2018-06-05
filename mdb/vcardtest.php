@@ -146,7 +146,9 @@
         $test->copyPicture("test.jpg");
 
         $test->getCard();
-
+        $fd = fopen("test.vcf", "w" );
+        fputs($fd, $test);
+        fclose($fd);
 
 
         ?>

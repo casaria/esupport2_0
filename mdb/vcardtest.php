@@ -124,30 +124,53 @@
         <?php
 
         include("vcardexp.inc.php");
-
+        require_once "../common/$database.class.php";
 
         include ("VCARD.css");
+        $sql = "select * from $mysql_users_table where admin=1 and user_name != 'support_pool' order by user_name asc limit $low, $users_limit";
 
-        $test = new vcardexp;
-
-        $test->setValue("firstName", "Max");
-        $test->setValue("lastName", "Mustermann");
-        $test->setValue("organisation", "Mustermann Holding GmbH");
-        $test->setValue("tel_work", "01234/567890");
-        $test->setValue("tel_home", "069/0123456");
-        $test->setValue("tel_pref", "069/0123456");
-        $test->setValue("url", "http://www.foo.bar");
-        $test->setValue("email_internet", "max@foo.bar");
-        $test->setValue("email_pref", "max@foo.bar");
-        $test->setValue("street_home", "Musterstrasse 1");
-        $test->setValue("postal_home", "12345");
-        $test->setValue("city_home", "Musterstadt");
-        $test->setValue("country_home", "Musterland");
-        $test->copyPicture("test.jpg");
-
-        $acard= $test->getCard();
+        $result = $db->query($sql);
         $fd = fopen("test.vcf", "w" );
-        fputs($fd,$acard);
+
+        while($row = $db->fetch_array($result)) {
+            $first = ucwords($row['first_name']);
+            $last = ucwords($row['last_name']);
+            $user_name = $row['user_name'];
+            $email = $row['email'];
+            if ($email == '')
+                $email = '&nbsp;';
+            $pager = $row['pager_email'];
+            if ($pager == '')
+                $pager = '&nbsp;';
+            $office = $row['office'];
+            if ($office == '')
+                $office = '&nbsp;';
+            $user = $row['user'];
+            $supp = $row['supporter'];
+            $admin = $row['admin'];
+
+
+            $test = new vcardexp;
+
+            $test->setValue("firstName", $first);
+            $test->setValue("lastName", $last);
+            $test->setValue("organisation", "Casaria Technology Inc.");
+            $test->setValue("tel_work", $office);
+            $test->setValue("tel_home", "");
+            $test->setValue("tel_pref", "");
+            $test->setValue("url", "https://www.casaria.net");
+            $test->setValue("email_internet", $email);
+            $test->setValue("email_pref", "");
+            $test->setValue("street_home", "Musterstrasse 1");
+            $test->setValue("postal_home", "12345");
+            $test->setValue("city_home", "Musterstadt");
+            $test->setValue("country_home", "Musterland");
+            $test->copyPicture("test.jpg");
+
+            $acard = $test->getCard();
+
+            fputs($fd, $acard);
+        }
         fclose($fd);
 
 

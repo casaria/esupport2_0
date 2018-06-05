@@ -127,7 +127,6 @@
 
 
         include ("VCARD.css");
-
         $test = new vcardexp;
 
         $test->setValue("firstName", "Max");

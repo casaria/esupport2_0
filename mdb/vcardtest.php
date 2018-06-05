@@ -100,29 +100,7 @@ include ("VCARD.css");
 
 </section>
 <!--Section: Live preview-->
-<?php
-	$test = new vcardexp;
 
-	$test->setValue("firstName", "Max");
-	$test->setValue("lastName", "Mustermann");
-	$test->setValue("organisation", "Mustermann Holding GmbH");
-	$test->setValue("tel_work", "01234/567890");
-	$test->setValue("tel_home", "069/0123456");
-	$test->setValue("tel_pref", "069/0123456");
-	$test->setValue("url", "http://www.foo.bar");
-	$test->setValue("email_internet", "max@foo.bar");
-	$test->setValue("email_pref", "max@foo.bar");
-	$test->setValue("street_home", "Musterstrasse 1");
-	$test->setValue("postal_home", "12345");
-	$test->setValue("city_home", "Musterstadt");
-	$test->setValue("country_home", "Musterland");
-	$test->copyPicture("test.jpg");
-
-	$test->getCard();
-
-
-
-?>
 
 </head>
 
@@ -149,6 +127,29 @@ include ("VCARD.css");
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
         <button href="#" class="btn btn-primary">Button></button>
+        <?php
+        $test = new vcardexp;
+
+        $test->setValue("firstName", "Max");
+        $test->setValue("lastName", "Mustermann");
+        $test->setValue("organisation", "Mustermann Holding GmbH");
+        $test->setValue("tel_work", "01234/567890");
+        $test->setValue("tel_home", "069/0123456");
+        $test->setValue("tel_pref", "069/0123456");
+        $test->setValue("url", "http://www.foo.bar");
+        $test->setValue("email_internet", "max@foo.bar");
+        $test->setValue("email_pref", "max@foo.bar");
+        $test->setValue("street_home", "Musterstrasse 1");
+        $test->setValue("postal_home", "12345");
+        $test->setValue("city_home", "Musterstadt");
+        $test->setValue("country_home", "Musterland");
+        $test->copyPicture("test.jpg");
+
+        $test->getCard();
+
+
+
+        ?>
     </div>
 </div>
 <!--/.Card-->

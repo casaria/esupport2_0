@@ -145,9 +145,9 @@
         $test->setValue("country_home", "Musterland");
         $test->copyPicture("test.jpg");
 
-        $test->getCard();
+        $acard= $test->getCard();
         $fd = fopen("test.vcf", "w" );
-        fputs($fd, $test);
+        fputs($fd,$acard);
         fclose($fd);
 
 

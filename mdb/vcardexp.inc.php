@@ -184,9 +184,8 @@
 			$card .= "END:VCARD";
 			
 			//Karte ausgeben und String loeschen
-			echo $card;
-			$card = "";
-		
+			return $card;
+
 		}
 	
 	}

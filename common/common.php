@@ -1805,7 +1805,6 @@ function displayTicket($result)
         }
         echo "<td class=\"back\">";
         echo stripslashes($row['equipment']) . "</td>";
-
         echo "<td class=\"back2\">";
         echo "<a href=\"?t=tupd&id=" . $row['id'] . "\">";
         echo stripslashes($row['short']) . "</a></td>

@@ -1476,6 +1476,7 @@ function createUserGroupMenu($flag=0)
 	$sql = "select id, group_name from $mysql_ugroups_table order by rank asc";
 	$result = $db->query($sql);
 	$num_rows = $db->num_rows($result);
+	$i = 0;
 
 	if ($flag == 0 || !isset($flag)) {
 		while ($row = $db->fetch_array($result)) {
@@ -1507,6 +1508,7 @@ function createUserGroupMenu($flag=0)
 
 		echo "<option></option>";
 		while ($row = $db->fetch_row($result)) {
+		   // $i++;
 			if ($num_rows == 1 || $row[0] != 1) {
 				echo "<option value=\"$row[0]\"";
 				if ($sg == $row[0] || $info['groupid'] == $row[0]) {

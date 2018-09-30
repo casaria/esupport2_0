@@ -67,7 +67,7 @@ if($pubpriv == 'Private') {
 
 
 
-RewindSession();
+        RewindSession();
 
 require_once "../lang/$default_language.lang.php";
 

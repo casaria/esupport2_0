@@ -838,9 +838,10 @@ function createTimeTab()
         echo '			
             </select>
             <select class="tkt-date" name=woyear>';
-        echo "<option value=" . (string)($today['year'] - 1).'>';
         echo "<option value=" . (string)($today['year'] - 2);
-        echo '>' . ($today['year']) . '</option>';
+        echo '>' . ($today['year'] - 2) . '</option>';
+        echo "<option value=" . (string)($today['year'] - 1);
+        echo '>' . ($today['year'] - 1) . '</option>';
 
 
         echo "<option value=$today[year]";

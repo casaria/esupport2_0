@@ -54,11 +54,11 @@ if (preg_match('/support/i',$domain)) {
     $db_user = 'casaria_hdesk1';
     $db_pwd = '26XwoR]B';
     $db_name =  'support';  #'hostgo_hdesk1';
-    $uploaddir = '/var/www/casaria/support/uploads/';
+    $uploaddir = '/var/www/casaria/esupport/uploads/';
     $session_time = 3600;
     $session_name = 'eSupport';
-    $MailQueuePath = "/var/www/casaria/support/MAILQUEUE/";
-    $includePath = '/var/www/casaria/support/common/';
+    $MailQueuePath = "/var/www/casaria/esupport/MAILQUEUE/";
+    $includePath = '/var/www/casaria/esupport/common/';
 } else {
 
     $database = "mysql";                    //database (mysql is the only one available

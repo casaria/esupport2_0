@@ -67,7 +67,7 @@ if (preg_match('/support/i',$domain)) {
     $db_pwd = '26XwoR]B';
     $db_name = 'eval';  #'casaria_hdesk';
     $uploaddir = '/var/www/casaria/esupport2_0/uploads/';
-    $session_time = 1800;
+    $session_time = 3600;
     $session_name = 'EVALCasaria';
     $MailQueuePath = '/var/www/casaria/esupport2_0/MAILQUEUE/';
     $includePath = '/var/www/casaria/esupport2_0/common/';
@@ -78,7 +78,9 @@ if (preg_match('/support/i',$domain)) {
 
 
 
-if (!isset($cookie_name)) $cookie_name='';
+if (!isset($cookie_name))
+
+   global $cookie_name;
 
 
 $mysql_crmsettings_table = "crmsettings";

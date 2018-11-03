@@ -58,6 +58,7 @@ if (preg_match('/support/i',$domain)) {
     $session_time = 3600;
     $session_name = 'CasariaIncSupport';
     $MailQueuePath = "/var/www/casaria/support/MAILQUEUE/";
+    $includePath = '/var/www/casaria/support/common/';
 } else {
 
     $database = "mysql";                    //database (mysql is the only one available

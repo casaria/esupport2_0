@@ -80,7 +80,6 @@ if (preg_match('/support/i',$domain)) {
 
 
 if (!isset($cookie_name))
-
    global $cookie_name;
 
 

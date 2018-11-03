@@ -56,7 +56,7 @@ if (preg_match('/support/i',$domain)) {
     $db_name =  'support';  #'hostgo_hdesk1';
     $uploaddir = '/var/www/casaria/support/uploads/';
     $session_time = 3600;
-    $session_name = 'CasariaIncSupport';
+    $session_name = 'eSupport';
     $MailQueuePath = "/var/www/casaria/support/MAILQUEUE/";
     $includePath = '/var/www/casaria/support/common/';
 } else {
@@ -71,7 +71,7 @@ if (preg_match('/support/i',$domain)) {
     $session_time = 3600;
     $session_name = 'EVALCasaria';
     $MailQueuePath = '/var/www/casaria/esupport2_0/MAILQUEUE/';
-    $includePath = '/var/www/casaria/esupport2_0/common/';
+    $includePath = '/var/www/casaria/esupport2_0/common/' ;
 }
 /*********	You shouldn't need to change anything below here.	***********************************/
 /**********************************************************************************************************/

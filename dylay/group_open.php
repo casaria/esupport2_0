@@ -21,7 +21,7 @@
         <link href="/mdb/css/style.css" rel="stylesheet">
         <!-- Bootstrap tooltips -->
         <link href='https://fonts.googleapis.com/css?family=Titillium Web:300:400' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="assets/css/main.css" media="screen">
+        <link href="assets/css/main.css" rel="stylesheet"  media="screen">
 
 
 

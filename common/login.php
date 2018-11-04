@@ -127,7 +127,7 @@ global $lang_wronglogin, $lang_strikes_count;
     <!-- Bootstrap core CSS -->
     <link href="/mdb/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-    <link href="/mdb/css/mdb.min.css" rel="stylesheet">
+    <link href="/mdb/css/mdb.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="/mdb/css/style.css" rel="stylesheet">
     <style>

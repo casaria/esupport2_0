@@ -16,13 +16,13 @@
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Bootstrap core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="/mdb/css/bootstrap.min.css" rel="stylesheet">
         <!-- Material Design Bootstrap -->
-        <link href="css/mdb.min.css" rel="stylesheet">
+        <link href="/mdb/css/mdb.min.css" rel="stylesheet">
         <!-- Your custom styles (optional) -->
 
         <!-- JQuery -->
-        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="/mdb/js/jquery-3.2.1.min.js"></script>
         <!-- Bootstrap tooltips -->
         <script type="text/javascript" src="js/popper.min.js"></script>
         <!-- Bootstrap core JavaScript -->

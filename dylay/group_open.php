@@ -44,13 +44,13 @@
 								<a href="#">text</a>
 							</li>
 							<li>
-								<a href="#" data-sort-by="foo">data-foo</a>
+								<a href="#" data-sort-by="ticket_id">ticket_id</a>
 							</li>
 							<li>
 								<a href="#" data-sort-way="desc">text desc</a>
 							</li>
 							<li>
-								<a href="#" data-sort-by="foo" data-sort-way="desc">data-foo desc</a>
+								<a href="#" data-sort-by="ticket_id" data-sort-way="desc">ticket_id desc</a>
 							</li>
 						</ul>
 					</div>
@@ -60,26 +60,26 @@
                         <?php PopulateTickets(); ?>
 
 
-						<div class="col-sm-4 overhead"  data-foo="5">
+						<div class="col-sm-4 overhead" ticket_id="5">
 
-							<span style="height: 200px;">#4530<br>Short dedcription<br>line 2</span>
+							<span style="height: 200px;">#4530<br>Short deascription<br>line 2</span>
 						</div>
-						<div class="col-sm-4 billable" data-foo="6">
+						<div class="col-sm-4 billable" ticket_id="6">
 							<span style="height: 40px;">#4320</span>
 						</div>
-						<div class="col-sm-4 billable" data-foo="3">
+						<div class="col-sm-4 billable" ticket_id="3">
 							<span style="height: 40px;">#4857</span>
 						</div>
-						<div class="col-sm-4 billable" data-foo="2">
+						<div class="col-sm-4 billable" ticket_id="2">
 							<span style="height: 20px;">#4858</span>
 						</div>
-						<div class="col-sm-4 overhead"  data-foo="4">
+						<div class="col-sm-4 overhead"  ticket_id="4">
 							<span style="height: 60px;">#3567</span>
 						</div>
-						<div class="col-sm-4 consonne" data-foo="1">
+						<div class="col-sm-4 consonne" ticket_id="1">
 							<span style="height: 60px;">#4584</span>
 						</div>
-						<div class="col-sm-4 billable" data-foo="17">
+						<div class="col-sm-4 billable" ticket_id="17">
 							<span style="height: 20px;">#4000</span>
 						</div>
 					</div>
@@ -108,7 +108,7 @@
     {
         $last_update = $row['lastupdate'];  //last update timestamp.
 
-        echo "<div class=\"col-sm-4 " . $row['equipment']."\"" . " data-foo=\"$row[id]\"><br>";
+        echo "<div class=\"col-sm-4 " . $row['equipment']."\"" . " ticket_id=\"$row[id]\"><br>";
         echo "<span style=\"height: 100px;\">";
         echo "<B>#".$row[id]."</B><br>".stripslashes($row['short'])."<br>". $row['user']."<br>";
         echo "</span>";

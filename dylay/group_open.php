@@ -96,7 +96,7 @@
             $timeConstraint = "";
             $statusmessage = '';
 
-            $sql2 = "select * from $mysql_tickets_table where status= OPEN order by id desc";
+            $sql2 = "select * from $mysql_tickets_table where status = 'OPEN' order by id desc";
             $result2 = $db->query($sql2);
         }
         ?>

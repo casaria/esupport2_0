@@ -11,6 +11,9 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 
         <title>DyLay</title>
+
+        <link href='https://fonts.googleapis.com/css?family=Titillium Web:300:400' rel='stylesheettype='text/css'>
+        <link href="assets/css/main.css" rel="stylesheet"  media="screen">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Bootstrap core CSS -->
@@ -20,106 +23,103 @@
         <!-- Your custom styles (optional) -->
         <link href="/mdb/css/style.css" rel="stylesheet">
         <!-- Bootstrap tooltips -->
-        <link href='https://fonts.googleapis.com/css?family=Titillium Web:300:400' rel='stylesheet' type='text/css'>
-        <link href="assets/css/main.css" rel="stylesheet"  media="screen">
 
 
-
-
-
-<?php
-        require_once "../common/config.php";
-        require_once "../common/$database.class.php";
-        require_once "../common/common.php";
-        $recordcount = 0;
-        $supporter_id = getUserID($cookie_name);
-        $highest_pri = getRPriority(getHighestRank($mysql_tpriorities_table));	//set the highest priority rating
-?>
-	</head>
-	<body>
-
-		<div class="container">
-			<h1>Open Tickets</h1>
-			<div id="sandbox">
-				<div class="row">
-					<div class="col-sm-4">
-						<h2>Filters</h2>
-						<ul id="filters">
-							<li>
-								<a href="#" data-filter="*">all</a>
-							</li>
-							<li>
-								<a href="#" data-filter=".overhead">Overhead</a>
-							</li>
-							<li>
-								<a href="#" data-filter=".billable">billable</a>
-							</li>
-						</ul>
-					</div>
-                    <div class="col-sm-4">
-                          <a class="btn-floating btn-lg blue-gradient"><i class="fa fa-bolt"></i></a>
-                    </div>
-					<div class="col-sm-4">
-						<h2>Sorts</h2>
-						<ul id="sorts">
-							<li>
-								<a href="#">text</a>
-							</li>
-							<li>
-								<a href="#" data-sort-by="ticket_id">ticket_id</a>
-							</li>
-							<li>
-								<a href="#" data-sort-way="desc">text desc</a>
-							</li>
-							<li>
-								<a href="#" data-sort-by="ticket_id" data-sort-way="desc">ticket_id desc</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="container">
-					<div id="dylay" class="row">
-                        <?php PopulateTickets(); ?>
-
-					</div>
-                    <h3>TOTAL TICKETS: <?PHP echo $recordcount; ?>
-                    </h3>
-				</div>
-
-			</div>
-		</div>
 
 
         <?php
-        function PopulateTickets()
-        {
-            global $mysql_tickets_table, $cookie_name, $mysql_tstatus_table, $mysql_tpriorities_table, $num_groups, $mysql_ugroups_table, $lang_summary, $lang_recordcount, $supporter_site_url, $highest_pri, $theme, $db, $admin_site_url, $mysql_BillingStatus_table,$recordcount;
+                require_once "../common/config.php";
+                require_once "../common/$database.class.php";
+                require_once "../common/common.php";
+                $recordcount = 0;
+                $supporter_id = getUserID($cookie_name);
+                $highest_pri = getRPriority(getHighestRank($mysql_tpriorities_table));	//set the highest priority rating
+        ?>
+            </head>
+            <body>
 
-            $time_offset = getTimeOffset($cookie_name);
-            $time = time() + ($time_offset * 3600);
-            $day_const = 86400;
-            $day_difference = 90 * $day_const;
-            $time_from = time() - $day_difference;
+                <div class="container">
+                    <h1>Open Tickets</h1>
+                    <div id="sandbox">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h2>Filters</h2>
+                                <ul id="filters">
+                                    <li>
+                                        <a href="#" data-filter="*">all</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-filter=".overhead">Overhead</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-filter=".billable">billable</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                  <a class="btn-floating btn-lg blue-gradient"><i class="fa fa-bolt"></i></a>
+                            </div>
+                            <div class="col-sm-4">
+                                <h2>Sorts</h2>
+                                <ul id="sorts">
+                                    <li>
+                                        <a href="#">text</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-sort-by="ticket_id">ticket_id</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-sort-way="desc">text desc</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-sort-by="ticket_id" data-sort-way="desc">ticket_id desc</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div id="dylay" class="row">
+                                <?php PopulateTickets(); ?>
+
+                            </div>
+                            <h3>TOTAL TICKETS: <?PHP echo $recordcount; ?>
+                            </h3>
+                        </div>
+
+                    </div>
+                </div>
 
 
-            $sql2 = "select * from $mysql_tickets_table where status != 'CLOSED' order by id desc";
-            $result2 = $db->query($sql2);
+                <?php
+                function PopulateTickets()
+                {
+                    global $mysql_tickets_table, $cookie_name, $mysql_tstatus_table, $mysql_tpriorities_table, $num_groups, $mysql_ugroups_table, $lang_summary, $lang_recordcount, $supporter_site_url, $highest_pri, $theme, $db, $admin_site_url, $mysql_BillingStatus_table,$recordcount;
+
+                    $time_offset = getTimeOffset($cookie_name);
+                    $time = time() + ($time_offset * 3600);
+                    $day_const = 86400;
+                    $day_difference = 90 * $day_const;
+                    $time_from = time() - $day_difference;
 
 
-    while ($row = $db->fetch_array($result2))
-    {
-        $last_update = $row['lastupdate'];  //last update timestamp.
+                    $sql2 = "select * from $mysql_tickets_table where status != 'CLOSED' order by id desc";
+                    $result2 = $db->query($sql2);
 
-        echo "<div class=\"col-xs-12 col-sm-4 \"" . " ticket_id=\"$row[id]\">";
-        echo "<span style=\"background-color: rgba(56,155,217, 0.6)\">";
-        //"height: 120px;
-        echo "<B>#".$row[id]."</B><br>".$row['equipment']."<br>".stripslashes($row['short'])."<br>". $row['user'];
-        echo "</span>";
-        echo"</div>";
 
-        $recordcount++;
+            while ($row = $db->fetch_array($result2))
+            {
+                $last_update = $row['lastupdate'];  //last update timestamp.
 
-       }
+                echo "<div class=\"col-xs-12 col-sm-4 \"" . " ticket_id=\"$row[id]\">";
+                echo "<span style=\"background-color: rgba(56,155,217, 0.6)\">";
+                //"height: 120px;
+                echo "<B>#".$row[id]."</B><br>".$row['equipment']."<br>".stripslashes($row['short'])."<br>". $row['user'];
+                echo "</span>";
+                echo"</div>";
+
+                $recordcount++;
+
+               }
 
 
 

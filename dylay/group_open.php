@@ -149,7 +149,7 @@
 
         }
         ?>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="assets/vendor/jquery.easing.1.3.js"></script>
 		<script src="src/dylay.js"></script>
 		<script src="assets/js/main.js"></script>

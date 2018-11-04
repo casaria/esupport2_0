@@ -116,44 +116,13 @@
         echo "<div class=\"col-sm-4 \"" . " ticket_id=\"$row[id]\"><br>";
         echo "<span style=\"background-color: rgba(56,155,217, 0.6)\">";
         //"height: 120px;
-        echo "<B>#".$row[id]."</B><br>".$row['equipment']."<br>".stripslashes($row['short'])."<br>". $row['user']."<br>";
+        echo "<B>#".$row[id]."</B><br>".$row['equipment']."<br>".stripslashes($row['short'])."<br>". $row['user'];
         echo "</span>";
-
-     ?>
-        <script>
-
-        </script>
-    <?PHP
-        /*
-        echo $row['create_date']."<br>";
-
-        $row['lastupdate']
-        $row['category']
-
-
-
-
-        $row['status']
-        $row[priority]
-
-        */
         echo"</div>";
 
-           $recordcount++;
+        $recordcount++;
 
        }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

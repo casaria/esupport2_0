@@ -7,6 +7,15 @@
 		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" media="screen">
 		<link href='https://fonts.googleapis.com/css?family=Titillium Web:300:400' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="assets/css/main.css" media="screen">
+
+<?php
+        require_once "../common/config.php";
+        require_once "../common/$database.class.php";
+        require_once "../common/common.php";
+
+        $supporter_id = getUserID($cookie_name);
+        $highest_pri = getRPriority(getHighestRank($mysql_tpriorities_table));	//set the highest priority rating
+?>
 	</head>
 	<body>
 
@@ -87,7 +96,7 @@
             $timeConstraint = "";
             $statusmessage = '';
 
-            $sql2 = "select * from $mysql_tickets_table where status " . OPEN . " order by id desc";
+            $sql2 = "select * from $mysql_tickets_table where status= OPEN order by id desc";
             $result2 = $db->query($sql2);
         }
         ?>

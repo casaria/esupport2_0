@@ -12,7 +12,7 @@
         require_once "../common/config.php";
         require_once "../common/$database.class.php";
         require_once "../common/common.php";
-
+        $recordcount = 0;
         $supporter_id = getUserID($cookie_name);
         $highest_pri = getRPriority(getHighestRank($mysql_tpriorities_table));	//set the highest priority rating
 ?>
@@ -83,16 +83,18 @@
 							<span style="height: 20px;">#4000</span>
 						</div>
 					</div>
+                    <H2>TOTAL TICKETS: <?PHP echo $recordcount; ?>
+                    </H2>
 				</div>
+
 			</div>
 		</div>
 
-        <H2>TOTAL TICKETS: <?PHP echo $recordcount; ?>
-        </H2>
+
         <?php
         function PopulateTickets()
         {
-            global $mysql_tickets_table, $cookie_name, $mysql_tstatus_table, $mysql_tpriorities_table, $num_groups, $mysql_ugroups_table, $lang_summary, $lang_recordcount, $supporter_site_url, $highest_pri, $theme, $db, $admin_site_url, $mysql_BillingStatus_table;
+            global $mysql_tickets_table, $cookie_name, $mysql_tstatus_table, $mysql_tpriorities_table, $num_groups, $mysql_ugroups_table, $lang_summary, $lang_recordcount, $supporter_site_url, $highest_pri, $theme, $db, $admin_site_url, $mysql_BillingStatus_table,$recordcount;
 
             $time_offset = getTimeOffset($cookie_name);
             $time = time() + ($time_offset * 3600);
@@ -101,7 +103,7 @@
             $time_from = time() - $day_difference;
             $timeConstraint = "";
             $statusmessage = '';
-            $recordcount = 0;
+
 
             $sql2 = "select * from $mysql_tickets_table where status != 'CLOSED' order by id desc";
             $result2 = $db->query($sql2);

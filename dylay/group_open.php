@@ -64,8 +64,7 @@
 				</div>
 				<div class="container">
 					<div id="dylay" class="row">
-
-
+                        <?php PopulateTickets(); ?>
 						<div class="col-sm-4 overhead"  data-foo="5">
 							<span style="height: 200px;">#4530<br>Short dedcription<br>line 2</span>
 						</div>

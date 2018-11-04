@@ -9,22 +9,6 @@
 		<link rel="stylesheet" href="assets/css/main.css" media="screen">
 	</head>
 	<body>
-	<?php
-        function PopulateTickets()
-        {
-            global $mysql_tickets_table, $cookie_name, $mysql_tstatus_table, $mysql_tpriorities_table, $num_groups, $db;
-            $time_offset = getTimeOffset($cookie_name);
-            $time = time() + ($time_offset * 3600);
-            $day_const = 86400;
-            $day_difference = 90 * $day_const;
-            $time_from = time() - $day_difference;
-            $timeConstraint = "";
-            $statusmessage = '';
-
-            $sql2 = "select * from $mysql_tickets_table where status " . OPEN . " order by id desc";
-            $result2 = $db->query($sql2);
-        }
-	?>
 
 		<div class="container">
 			<h1>Scheduler</h1>
@@ -91,6 +75,22 @@
 				</div>
 			</div>
 		</div>
+        <?php
+        function PopulateTickets()
+        {
+            global $mysql_tickets_table, $cookie_name, $mysql_tstatus_table, $mysql_tpriorities_table, $num_groups, $db;
+            $time_offset = getTimeOffset($cookie_name);
+            $time = time() + ($time_offset * 3600);
+            $day_const = 86400;
+            $day_difference = 90 * $day_const;
+            $time_from = time() - $day_difference;
+            $timeConstraint = "";
+            $statusmessage = '';
+
+            $sql2 = "select * from $mysql_tickets_table where status " . OPEN . " order by id desc";
+            $result2 = $db->query($sql2);
+        }
+        ?>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="assets/vendor/jquery.easing.1.3.js"></script>
 		<script src="src/dylay.js"></script>

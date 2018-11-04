@@ -12,8 +12,7 @@
 
         <title>DyLay</title>
 
-        <link href='https://fonts.googleapis.com/css?family=Titillium Web:300:400' rel='stylesheettype='text/css'>
-        <link href="assets/css/main.css" rel="stylesheet"  media="screen">
+
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Bootstrap core CSS -->
@@ -23,7 +22,8 @@
         <!-- Your custom styles (optional) -->
         <link href="/mdb/css/style.css" rel="stylesheet">
         <!-- Bootstrap tooltips -->
-
+        <link href='https://fonts.googleapis.com/css?family=Titillium Web:300:400' rel='stylesheettype='text/css'>
+        <link href="assets/css/main.css" rel="stylesheet"  media="screen">
 
 
 

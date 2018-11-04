@@ -57,7 +57,7 @@
                                 </ul>
                             </div>
                             <div class="col-sm-4">
-                                  <a class="btn-floating btn-lg blue-gradient"><i class="fa fa-bolt"></i></a>
+
                                 <!--Dropdown warning-->
                                 <div class="dropdown">
                                     <!--Trigger-->
@@ -65,7 +65,7 @@
                                             aria-haspopup="true" aria-expanded="false">With button</button>
 
                                     <!--Menu-->
-                                    <div class="dropdown-menu juicy-peach-gradient" id="your-custom-id-button">
+                                    <div class="dropdown-menu fa fa-bolt dropdown-danger" id="your-custom-id-button">
                                         <!-- Search form -->
                                         <div class="md-form text-center">
                                             <input class="form-control" type="text" placeholder="Search" aria-label="Search">

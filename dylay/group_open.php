@@ -54,30 +54,31 @@
                                     <li>
                                         <a href="#" data-filter=".billable">billable</a>
                                     </li>
+                                    <!--Dropdown warning-->
+                                    <div class="dropdown">
+                                        <!--Trigger-->
+                                        <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenu2-2" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">User Group</button>
+
+                                        <!--Menu-->
+                                        <div class="dropdown-menu dropdown-danger" id="your-custom-id-button">
+
+                                            <a class="dropdown-item mdb-dropdownLink" href="https://mdbootstrap.com/">MDB</a>
+                                            <a class="dropdown-item mdb-dropdownLink" href="https://mdbootstrap.com/react/">MDB react</a>
+                                            <a class="dropdown-item mdb-dropdownLink" href="https://mdbootstrap.com/angular/">MDB angular</a>
+                                            <a class="dropdown-item mdb-dropdownLink" href="https://mdbootstrap.com/vue/">MDB vue</a>
+                                            <a class="dropdown-item mdb-dropdownLink" href="https://brandflow.net/">BrandFlow</a>
+                                            <a class="dropdown-item mdb-dropdownLink" href="https://mdbootstrap.com/bootstrap-tutorial/">MDB
+                                                Rocks</a>
+                                        </div>
+                                    </div>
+                                    <!--/Dropdown warning-->
+
                                 </ul>
                             </div>
                             <div class="col-sm-4">
 
-                                <!--Dropdown warning-->
-                                <div class="dropdown">
-                                    <!--Trigger-->
-                                    <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenu2-2" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">User Group</button>
-
-                                    <!--Menu-->
-                                    <div class="dropdown-menu dropdown-danger" id="your-custom-id-button">
-
-                                        <a class="dropdown-item mdb-dropdownLink" href="https://mdbootstrap.com/">MDB</a>
-                                        <a class="dropdown-item mdb-dropdownLink" href="https://mdbootstrap.com/react/">MDB react</a>
-                                        <a class="dropdown-item mdb-dropdownLink" href="https://mdbootstrap.com/angular/">MDB angular</a>
-                                        <a class="dropdown-item mdb-dropdownLink" href="https://mdbootstrap.com/vue/">MDB vue</a>
-                                        <a class="dropdown-item mdb-dropdownLink" href="https://brandflow.net/">BrandFlow</a>
-                                        <a class="dropdown-item mdb-dropdownLink" href="https://mdbootstrap.com/bootstrap-tutorial/">MDB
-                                            Rocks</a>
-                                    </div>
-                                </div>
-                                <!--/Dropdown warning-->
-                            </div>
+                                                     </div>
                             <div class="col-sm-4">
                                 <h4>Sorts</h4>
                                 <ul id="sorts">

@@ -60,28 +60,6 @@
                         <?php PopulateTickets(); ?>
 
 
-						<div class="col-sm-4 overhead" ticket_id="5">
-
-							<span style="height: 200px;">#4530<br>Short deascription<br>line 2</span>
-						</div>
-						<div class="col-sm-4 billable" ticket_id="6">
-							<span style="height: 40px;">#4320</span>
-						</div>
-						<div class="col-sm-4 billable" ticket_id="3">
-							<span style="height: 40px;">#4857</span>
-						</div>
-						<div class="col-sm-4 billable" ticket_id="2">
-							<span style="height: 20px;">#4858</span>
-						</div>
-						<div class="col-sm-4 overhead"  ticket_id="4">
-							<span style="height: 60px;">#3567</span>
-						</div>
-						<div class="col-sm-4 consonne" ticket_id="1">
-							<span style="height: 60px;">#4584</span>
-						</div>
-						<div class="col-sm-4 billable" ticket_id="17">
-							<span style="height: 20px;">#4000</span>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -108,7 +86,7 @@
     {
         $last_update = $row['lastupdate'];  //last update timestamp.
 
-        echo "<div class=\"col-sm-4 " . $row['equipment']."\"" . " ticket_id=\"$row[id]\"><br>";
+        echo "<div class=\"col-sm-4 " . $   row['equipment']."\"" . " ticket_id=\"$row[id]\"><br>";
         echo "<span style=\"height: 100px;\">";
         echo "<B>#".$row[id]."</B><br>".stripslashes($row['short'])."<br>". $row['user']."<br>";
         echo "</span>";

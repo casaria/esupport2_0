@@ -64,6 +64,7 @@
 			<h1>Open Tickets</h1>
 			<div id="sandbox">
 				<div class="row">
+                    <a class="btn-floating btn-lg blue-gradient"><i class="fa fa-bolt"></i></a>
 					<div class="col-sm-6">
 						<h2>Filters</h2>
 						<ul id="filters">

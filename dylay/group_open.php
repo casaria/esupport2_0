@@ -1,10 +1,11 @@
 <!doctype html>
 <html>
-<head>
+	<head>
 		<meta charset="utf-8">
 		<title>DyLay</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="httpsm/css?family=Titillium Web:300:400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" media="screen">
+		<link href='https://fonts.googleapis.com/css?family=Titillium Web:300:400' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="assets/css/main.css" media="screen">
 
 <?php

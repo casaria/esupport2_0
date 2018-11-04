@@ -123,14 +123,13 @@ global $lang_wronglogin, $lang_strikes_count;
     </style>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="../mdb/font/fa/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
-    <link href="../mdb/css/bootstrap.css" rel="stylesheet">
+    <link href="/mdb/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-    <link href="../mdb/css/mdb.css" rel="stylesheet">
+    <link href="/mdb/css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
-    <link href="../mdb/css/style.css" rel="stylesheet">
-
+    <link href="/mdb/css/style.css" rel="stylesheet">
     <style>
         .intro-1{
             background:  url("../img/trillium.jpg") no-repeat, linear-gradient(rgba(63, 81, 181, 0.5), rgba(67, 20, 34, 0.9)) !important;
@@ -538,7 +537,15 @@ if (isset($login)) {
 ?>
 
 </header>
-
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="/mdb/js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="/mdb/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="/mdb/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="/mdb/js/mdb.min.js"></script>
 
 </body>
 </HTML>

@@ -127,9 +127,9 @@
 
         }
         ?>
-        <!-- DYLAY Scripts-->
+        <!-- DYLAY Scripts
         <script src="assets/vendor/jquery.easing.1.3.js"></script>
-
+        -->
         <!-- JQuery -->
         <script type="text/javascript" src="/mdb/js/jquery-3.3.1.min.js"></script>
         <!-- Bootstrap tooltips -->

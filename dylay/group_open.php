@@ -58,6 +58,29 @@
                             </div>
                             <div class="col-sm-4">
                                   <a class="btn-floating btn-lg blue-gradient"><i class="fa fa-bolt"></i></a>
+                                <!--Dropdown warning-->
+                                <div class="dropdown">
+                                    <!--Trigger-->
+                                    <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenu2-2" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">With button</button>
+
+                                    <!--Menu-->
+                                    <div class="dropdown-menu dropdown-danger" id="your-custom-id-button">
+                                        <!-- Search form -->
+                                        <div class="md-form text-center">
+                                            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                                            <button class="btn peach-gradient btn-rounded btn-sm my-0" type="button">Search</button>
+                                        </div>
+                                        <a class="dropdown-item mdb-dropdownLink" href="https://mdbootstrap.com/">MDB</a>
+                                        <a class="dropdown-item mdb-dropdownLink" href="https://mdbootstrap.com/react/">MDB react</a>
+                                        <a class="dropdown-item mdb-dropdownLink" href="https://mdbootstrap.com/angular/">MDB angular</a>
+                                        <a class="dropdown-item mdb-dropdownLink" href="https://mdbootstrap.com/vue/">MDB vue</a>
+                                        <a class="dropdown-item mdb-dropdownLink" href="https://brandflow.net/">BrandFlow</a>
+                                        <a class="dropdown-item mdb-dropdownLink" href="https://mdbootstrap.com/bootstrap-tutorial/">MDB
+                                            Rocks</a>
+                                    </div>
+                                </div>
+                                <!--/Dropdown warning-->
                             </div>
                             <div class="col-sm-4">
                                 <h4>Sorts</h4>

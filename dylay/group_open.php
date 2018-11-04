@@ -2,8 +2,49 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+
+
+
+
 		<title>DyLay</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Material Design Bootstrap</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="css/mdb.min.css" rel="stylesheet">
+        <!-- Your custom styles (optional) -->
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+
+        <script>    $(document).ready(function(){
+                $("button").click(function(){
+                    $(".card-body").hide();
+                    $(".view").click(function(){
+                        $(".card-body").show();
+                    });
+                });
+            });
+
+        </script>
+
+
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" media="screen">
 		<link href='https://fonts.googleapis.com/css?family=Titillium Web:300:400' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="assets/css/main.css" media="screen">
@@ -60,8 +101,8 @@
                         <?php PopulateTickets(); ?>
 
 					</div>
-                    <H2>TOTAL TICKETS: <?PHP echo $recordcount; ?>
-                    </H2>
+                    <h3>TOTAL TICKETS: <?PHP echo $recordcount; ?>
+                    </h3>
 				</div>
 
 			</div>

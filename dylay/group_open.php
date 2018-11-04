@@ -20,7 +20,7 @@
 	<body>
 
 		<div class="container">
-			<h1>Scheduler</h1>
+			<h1>Open Tickets</h1>
 			<div id="sandbox">
 				<div class="row">
 					<div class="col-sm-8">

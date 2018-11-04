@@ -78,8 +78,6 @@
             $day_const = 86400;
             $day_difference = 90 * $day_const;
             $time_from = time() - $day_difference;
-            $timeConstraint = "";
-            $statusmessage = '';
 
 
             $sql2 = "select * from $mysql_tickets_table where status != 'CLOSED' order by id desc";
@@ -90,7 +88,7 @@
     {
         $last_update = $row['lastupdate'];  //last update timestamp.
 
-        echo "<div class=\"col-sm-4 \"" . " ticket_id=\"$row[id]\">";
+        echo "<div class=\"col-xs-4 \"" . " ticket_id=\"$row[id]\">";
         echo "<span style=\"background-color: rgba(56,155,217, 0.6)\">";
         //"height: 120px;
         echo "<B>#".$row[id]."</B><br>".$row['equipment']."<br>".stripslashes($row['short'])."<br>". $row['user'];

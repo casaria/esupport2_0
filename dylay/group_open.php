@@ -65,7 +65,7 @@
                                             aria-haspopup="true" aria-expanded="false">With button</button>
 
                                     <!--Menu-->
-                                    <div class="dropdown-menu dropdown-danger" id="your-custom-id-button">
+                                    <div class="dropdown-menu juicy-peach-gradient dropdown-danger" id="your-custom-id-button">
                                         <!-- Search form -->
                                         <div class="md-form text-center">
                                             <input class="form-control" type="text" placeholder="Search" aria-label="Search">

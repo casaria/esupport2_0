@@ -110,7 +110,6 @@
 
         echo "<div class=\"col-sm-4 " . $row['equipment']."\"" . " data-foo=\"$row[id]\"><br>";
         echo "<span style=\"height: 200px;\">";
-        echo "<a href=\"?t=tupd&id=$row[id]\">";
         echo stripslashes($row['short'])."<br>". $row['user']."<br>";
         echo "</span>";
 

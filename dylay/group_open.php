@@ -1,11 +1,11 @@
 <!doctype html>
 <html>
-	<head>
+	<head>://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" media="screen">
+        <link href='https://fonts.googleapis.co
 		<meta charset="utf-8">
 		<title>DyLay</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" media="screen">
-		<link href='https://fonts.googleapis.com/css?family=Titillium Web:300:400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="httpsm/css?family=Titillium Web:300:400' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="assets/css/main.css" media="screen">
 
 <?php
@@ -109,11 +109,15 @@
         $last_update = $row['lastupdate'];  //last update timestamp.
 
         echo "<div class=\"col-sm-4 \"" . " ticket_id=\"$row[id]\"><br>";
-        echo "<span style=\"height: 100px;\">";
+        echo "<span style=\"height: 100px; background-color: rgba(244,71,164, 0.6)\">";
         echo "<B>#".$row[id]."</B><br>".$row['equipment']."<br>".stripslashes($row['short'])."<br>". $row['user']."<br>";
         echo "</span>";
 
+     ?>
+        <script>
 
+        </script>
+    <?PHP
         /*
         echo $row['create_date']."<br>";
 

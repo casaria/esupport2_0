@@ -86,6 +86,9 @@
 				</div>
 			</div>
 		</div>
+
+        <H2>TOTAL TICKETS: <?PHP echo $recordcount; ?>
+        </H2>
         <?php
         function PopulateTickets()
         {

@@ -22,7 +22,7 @@
         <!-- Your custom styles (optional) -->
         <link href="/mdb/css/style.css" rel="stylesheet">
         <!-- Bootstrap tooltips -->
-        <link href='https://fonts.googleapis.com/css?family=Titillium Web:300:400' rel='stylesheettype='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Titillium Web:400:600' rel='stylesheettype='text/css'>
         <link href="assets/css/main.css" rel="stylesheet"  media="screen">
 
 

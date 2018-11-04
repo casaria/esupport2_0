@@ -105,7 +105,7 @@
             $statusmessage = '';
 
 
-            $sql2 = "select * from $mysql_tickets_table where status != 'CLOSED' and id >= 6860 order by id desc";
+            $sql2 = "select * from $mysql_tickets_table where status != 'CLOSED' and id >= 6840 order by id desc";
             $result2 = $db->query($sql2);
 
 
@@ -113,7 +113,7 @@
     {
         $last_update = $row['lastupdate'];  //last update timestamp.
 
-        echo "<div class=\"col-sm-4 \"" . " ticket_id=\"$row[id]\"><br>";
+        echo "<div class=\"col-sm-4 \"" . " ticket_id=\"$row[id]\">";
         echo "<span style=\"background-color: rgba(56,155,217, 0.6)\">";
         //"height: 120px;
         echo "<B>#".$row[id]."</B><br>".$row['equipment']."<br>".stripslashes($row['short'])."<br>". $row['user'];

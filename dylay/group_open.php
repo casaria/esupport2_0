@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
-	<head>://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" media="screen">
-        <link href='https://fonts.googleapis.co
+<head>
 		<meta charset="utf-8">
 		<title>DyLay</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">

@@ -127,7 +127,10 @@
 
         }
         ?>
-
+        <!-- DYLAY Scripts-->
+        <script src="assets/vendor/jquery.easing.1.3.js"></script>
+        <script src="src/dylay.js"></script>
+        <script src="assets/js/main.js"></script>
         <!-- JQuery -->
         <script type="text/javascript" src="/mdb/js/jquery-3.3.1.min.js"></script>
         <!-- Bootstrap tooltips -->
@@ -136,9 +139,6 @@
         <script type="text/javascript" src="/mdb/js/bootstrap.min.js"></script>
         <!-- MDB core JavaScript -->
         <script type="text/javascript" src="/mdb/js/mdb.min.js"></script>
-        <!-- DYLAY Scripts-->
-        <script src="assets/vendor/jquery.easing.1.3.js"></script>
-        <script src="src/dylay.js"></script>
-        <script src="assets/js/main.js"></script>
+
 	</body>
 </html>

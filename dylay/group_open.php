@@ -105,7 +105,7 @@
             $statusmessage = '';
 
 
-            $sql2 = "select * from $mysql_tickets_table where status != 'CLOSED' order by id desc";
+            $sql2 = "select * from $mysql_tickets_table where status != 'CLOSED' and id >= 4840 order by id desc";
             $result2 = $db->query($sql2);
 
 

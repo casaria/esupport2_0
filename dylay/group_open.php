@@ -9,21 +9,23 @@
 		<link rel="stylesheet" href="assets/css/main.css" media="screen">
 	</head>
 	<body>
+	<?php
+        function PopulateTickets()
+        {
+            global $mysql_tickets_table, $cookie_name, $mysql_tstatus_table, $mysql_tpriorities_table, $num_groups, $db;
+            $time_offset = getTimeOffset($cookie_name);
+            $time = time() + ($time_offset * 3600);
+            $day_const = 86400;
+            $day_difference = 90 * $day_const;
+            $time_from = time() - $day_difference;
+            $timeConstraint = "";
+            $statusmessage = '';
 
-	<? php
-	function listOpenTickets($id, $sort, $groups, $filter)
-{
-	global $mysql_tickets_table, $cookie_name, $mysql_tstatus_table, $mysql_tpriorities_table, $num_groups, $db;
-	$time_offset = getTimeOffset($cookie_name);
-	$time =time() + ($time_offset * 3600);
-	$day_const = 86400;
-	$day_difference = 90 * $day_const;
-	$time_from =time() - $day_difference;
-	$timeConstraint="";
-	$statusmessage = '';
+            $sql2 = "select * from $mysql_tickets_table where status " . OPEN . " order by id desc";
+            $result2 = $db->query($sql2);
+        }
+	?>
 
-
-	>?
 		<div class="container">
 			<h1>Scheduler</h1>
 			<div id="sandbox">
@@ -63,8 +65,11 @@
 				<div class="container">
 					<div id="dylay" class="row">
 
-						order by id desc";
 
+<?php
+
+    PopulateTickets();
+?>
 
 						<div class="col-sm-4 overhead"  data-foo="5">
 							<span style="height: 200px;">#4530<br>Short dedcription<br>line 2</span>

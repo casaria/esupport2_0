@@ -108,7 +108,7 @@
     {
         $last_update = $row['lastupdate'];  //last update timestamp.
 
-        echo "<div class=\"col-sm-4 " . $row['equipment']."\"" . " data-foo=".str_pad($row['id'], 5, "0", STR_PAD_LEFT)."><br>";
+        echo "<div class=\"col-sm-4 " . $row['equipment']."\"" . " data-foo=\"$row[id]\"><br>";
         echo "<span style=\"height: 200px;\">";
         echo "<a href=\"?t=tupd&id=$row[id]\">";
         echo stripslashes($row['short'])."<br>". $row['user']."<br>";

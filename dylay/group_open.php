@@ -57,9 +57,11 @@
 				</div>
 				<div class="container">
 					<div id="dylay" class="row">
+                        <?php PopulateTickets(); ?>
+
 
 						<div class="col-sm-4 overhead"  data-foo="5">
-                            <?php PopulateTickets(); ?>
+
 							<span style="height: 200px;">#4530<br>Short dedcription<br>line 2</span>
 						</div>
 						<div class="col-sm-4 billable" data-foo="6">
@@ -87,7 +89,8 @@
         <?php
         function PopulateTickets()
         {
-            global $mysql_tickets_table, $cookie_name, $mysql_tstatus_table, $mysql_tpriorities_table, $num_groups, $db;
+            global $mysql_tickets_table, $cookie_name, $mysql_tstatus_table, $mysql_tpriorities_table, $num_groups, $mysql_ugroups_table, $lang_summary, $lang_recordcount, $supporter_site_url, $highest_pri, $theme, $db, $admin_site_url, $mysql_BillingStatus_table;
+
             $time_offset = getTimeOffset($cookie_name);
             $time = time() + ($time_offset * 3600);
             $day_const = 86400;
@@ -95,9 +98,59 @@
             $time_from = time() - $day_difference;
             $timeConstraint = "";
             $statusmessage = '';
+            $recordcount = 0;
 
             $sql2 = "select * from $mysql_tickets_table where status = 'OPEN' order by id desc";
             $result2 = $db->query($sql2);
+
+
+    while ($row = $db->fetch_array($result2))
+    {
+        $last_update = $row['lastupdate'];  //last update timestamp.
+
+        echo "<div class=\"col-sm-4 " . $row['equipment'] . " data-foo=".str_pad($row['id'], 5, "0", STR_PAD_LEFT);
+        echo "<span style=\"height: 200px;\">";
+        echo "<a href=\"?t=tupd&id=$row[id]\">";
+        echo stripslashes($row['short'])."<br>". $row['user']."<br>";
+        echo "</span>";
+
+
+        /*
+        echo $row['create_date']."<br>";
+
+        $row['lastupdate']
+        $row['category']
+
+
+
+
+        $row['status']
+        $row[priority]
+
+        */
+        echo"</div>";
+
+           $recordcount++;
+
+       }
+
+
+
+    endTable();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
         ?>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

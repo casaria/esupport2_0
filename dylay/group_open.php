@@ -39,11 +39,11 @@
             <body>
 
                 <div class="container">
-                    <h1>Open Tickets</h1>
+                    <h2>Open Tickets</h2>
                     <div id="sandbox">
                         <div class="row">
                             <div class="col-sm-4">
-                                <h2>Filters</h2>
+                                <h4>Filters</h4>
                                 <ul id="filters">
                                     <li>
                                         <a href="#" data-filter="*">all</a>
@@ -60,7 +60,7 @@
                                   <a class="btn-floating btn-lg blue-gradient"><i class="fa fa-bolt"></i></a>
                             </div>
                             <div class="col-sm-4">
-                                <h2>Sorts</h2>
+                                <h4>Sorts</h4>
                                 <ul id="sorts">
                                     <li>
                                         <a href="#">text</a>
@@ -82,8 +82,8 @@
                                 <?php PopulateTickets(); ?>
 
                             </div>
-                            <h3>TOTAL TICKETS: <?PHP echo $recordcount; ?>
-                            </h3>
+                            <h4>TOTAL TICKETS: <?PHP echo $recordcount; ?>
+                            </h4>
                         </div>
 
                     </div>

@@ -110,7 +110,7 @@
 
         echo "<div class=\"col-sm-4 " . $row['equipment']."\"" . " data-foo=\"$row[id]\"><br>";
         echo "<span style=\"height: 200px;\">";
-        echo stripslashes($row['short'])."<br>". $row['user']."<br>";
+        echo $row[id]."br>".stripslashes($row['short'])."<br>". $row['user']."<br>";
         echo "</span>";
 
 

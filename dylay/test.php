@@ -3,7 +3,7 @@
  * User: horra
  * Date: 11/5/2018
  * Time: 10:20 AM
- */
+
 
 
 <!doctype html>
@@ -41,6 +41,7 @@
         ?>
     </head>
     <body>
+    select
         <select id="first-choice">
             <option selected value="base">Please Select</option>
             <option value="beverages">Beverages</option>

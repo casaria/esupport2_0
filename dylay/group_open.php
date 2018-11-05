@@ -73,7 +73,7 @@
                                         </div>
                                     </div> <!--/Dropdown warning-->
 
-                                    <div class="col-sm-4">
+
                                     <select id="first-choice">
                                         <option selected value="base">Please Select</option>
                                         <option value="beverages">Beverages</option>
@@ -86,7 +86,7 @@
                                         <option>Please choose from above</option>
                                     </select>
 
-                                    </div>
+
 
                                 </ul>
                             </div>

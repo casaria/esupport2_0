@@ -230,7 +230,7 @@
                                 <div class="card-body z-depth-4">
 
                                     <!--Header-->
-                                    <div class="form-header juicy-peach-gradient">
+                                    <div class="form-header peach-gradient">
                                         <h4><i class="fa fa-user mt-3 mb-3"></i> Casaria eSupport 2.0 login</h4>
                                     </div>
 

@@ -65,10 +65,11 @@ if(isset($adduser)){
 			$error_message = "<br>$lang_nameexists<br>";
 
 			$sql_head = "update ";
-			$sql_tail = "where user_name = \'$_POST[user_name]\'";
+			$sql_tail = " where user_name = \'$_POST[user_name]\'";
 		}
 		else {
 		  $sql_head = "insert into ";
+		  $sql_tail = "";
 		}
 
         $timezone = $_POST["timezone"];

@@ -101,7 +101,7 @@ if(isset($adduser)){
 					break;
 			}
 
-			$sql = "$sql.$sql_tail";
+			$sql = $sql + $sql_tail;
 			if($db->query($sql, $mysql_users_table)){
 				$success = 1;
 				$error_message .= "<br><font color=green>$_POST[user_name] $lang_addedsuccessfully</font><br>";
@@ -114,7 +114,7 @@ if(isset($adduser)){
 				if($$inp != ''){
 					$user_id = getUserID($user_name);
 					$sql = "INSERT into sgroup" . $$inp . " VALUES(NULL, '$user_id', '$user_name')";
-					$db->query($sql);
+    					$db->query($sql);
 				}
 			}
 

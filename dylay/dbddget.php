@@ -15,10 +15,10 @@ require_once "../common/common.php";
 	//$selected = mysql_select_db("dropdownvalues", $db) or die("Could not select examples");
 	$choice = mysql_real_escape_string($_GET['choice']);
 
-	$query = "SELECT * FROM dd_vals WHERE category='$choice'";
+	$sql = "SELECT * FROM dd_vals WHERE category='$choice'";
 
-	$result = mysql_query($query);
-
+	//$result = mysql_query($query);
+    $result = $db->query($sql);
 	while ($row = mysql_fetch_array($result)) {
         echo "<option>" . $row{'dd_val'} . "</option>";
     }

@@ -226,7 +226,7 @@
                     <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-lg-5">
                         <form method="post" role="form" id="newPassForm2" name="newPassForm2" >
                             <!--Form with header-->
-                            <div class="card wow zoomInDown flipInX" id="passwordcard"  data-wow-delay="1.0s" data-wow-duration="2.0s">
+                            <div class="card wow zoomInDown " id="passwordcard"  data-wow-delay="0.5s" data-wow-duration="4.0s">
                                 <div class="card-body z-depth-4">
 
                                     <!--Header-->

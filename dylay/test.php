@@ -70,5 +70,13 @@
                 <script src="/dylay/src/dylay.js"></script>
                 <script src="/dylay/assets/js/main.js"></script>
 
+        <script>
+            $("#first-choice").change(function() {
+                $("#second-choice").load("dbddgeg.php?choice=" + $("#first-choice").val());
+            });
+
+        </script>
+
+
 	</body>
 </html>

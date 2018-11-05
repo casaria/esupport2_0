@@ -363,7 +363,7 @@ $lang_guest = " guest online<br>";
 $lang_whosonline = "Who's Online";
 /****	end of whosonline.php text */
 
-
+$lang_invalidUserLevel = "Invalid user level, go back and select a user level!";
 $lang_fileremoved = "File was removed or could not be found.";
 $lang_updates = "Updates";
 $lang_webuser = "web_user";

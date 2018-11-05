@@ -53,21 +53,26 @@ if(isset($adduser)){
 		$pwd = md5($pass1);
 	}
 
-
+    if ($user_level == '') {
+		$error = 1;
+        $error_message .= "<br>$lang_invalidUserLevel<br>";
+	}
 
 	if($error != 1){
-		if(userExists($_POST[user_name])){
+		if(userExists($_POST['user_name'])){
 			//if the user already exists, update the database rather than insert.
 			$error = 1;
 			$error_message = "<br>$lang_nameexists<br>";
-			$timeoffset = GetServerTimeOffset($_POST[timezone]);
+
 			$sql_head = "update ";
-			$sql_tail = "where user_name = '$_POST[user_name]'";
+			$sql_tail = "where user_name = \'$_POST[user_name]\'";
 		}
-		else{
+		else {
 		  $sql_head = "insert into ";
 		}
-		
+
+        $timeoffset = GetServerTimeOffset($_POST[timezone]);
+
 			switch($level){
                 case ("superuser"):
                     $sql = $sql_head . "$mysql_users_table values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',1,1,1,1,1,1,'$default_theme',null,null,null,0,'$default_language', '$timeoffset','$CloudControl')";
@@ -195,7 +200,7 @@ echo '
 								<option value=-11>'.$lang_timezone2.'</option>
 								<option value=-10>'.$lang_timezone3.'</option>
 								<option value=-9>'.$lang_timezone4.'</option>
-								<option value=-8>'.$lang_timezone5.'</option>
+								<option value=-8 selected>'.$lang_timezone5.'</option>
 								<option value=-7>'.$lang_timezone6.'</option>
 								<option value=-6>'.$lang_timezone7.'</option>
 								<option value=-5>'.$lang_timezone8.'</option>
@@ -229,7 +234,7 @@ echo '
 				echo"<tr><td class=cat align=right width=20%><b>Cloud Control:<td class=back><select name=CloudControl> <option value='Off' selected> Off </option>";
 				echo"<option value='On'> On </option> </b></tr>";
 				echo"<tr><td class=cat align=right width=20%><b> $lang_level: </b></td>
-				<td class=back><select name=level>				
+				<td class=back><select name=userlevel>				
 								<option value=inactive selected>$lang_inactive</option>
 								<option value=user>$lang_user</option>
 								<option value=supervisor>$lang_supervisor</option>

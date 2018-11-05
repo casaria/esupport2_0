@@ -19,7 +19,7 @@ require_once "../common/common.php";
 
 	//$result = mysql_query($query);
     $result = $db->query($sql);
-	while ($row = mysql_fetch_array($result)) {
-        echo "<option>" . $row{'dd_val'} . "</option>";
+    WHILE ($row = $db->fetch_array($result)) {
+        echo "<option>" . $row['dd_val'] . "</option>";
     }
 ?>

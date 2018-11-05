@@ -71,8 +71,22 @@
                                             <a class="dropdown-item mdb-dropdownLink" href="https://mdbootstrap.com/bootstrap-tutorial/">MDB
                                                 Rocks</a>
                                         </div>
+                                    </div> <!--/Dropdown warning-->
+
+                                    <div>
+                                    <select id="first-choice">
+                                        <option selected value="base">Please Select</option>
+                                        <option value="beverages">Beverages</option>
+                                        <option value="snacks">Snacks</option>
+                                    </select>
+
+                                    <br>
+
+                                    <select id="second-choice">
+                                        <option>Please choose from above</option>
+                                    </select>
+
                                     </div>
-                                    <!--/Dropdown warning-->
 
                                 </ul>
                             </div>

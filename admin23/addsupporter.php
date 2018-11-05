@@ -63,12 +63,11 @@ if(isset($adduser)){
 			//if the user already exists, update the database rather than insert.
 			$error = 1;
 			$error_message = "<br>$lang_nameexists<br>";
-
-			$sql_head = "update ";
+			$sql_head = "update $mysql_users_table set ";
 			$sql_tail = " where user_name = \'$_POST[user_name]\'";
 		}
 		else {
-		  $sql_head = "insert into ";
+		  $sql_head = "insert into $mysql_users_table ";
 		  $sql_tail = "";
 		}
 
@@ -76,29 +75,29 @@ if(isset($adduser)){
 
 			switch($user_level){
                 case ("superadmin"):
-                    $sql = $sql_head . "$mysql_users_table values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',1,1,1,1,1,1,'$default_theme',null,null,null,0,'$default_language', '$timezone','$CloudControl')";
+                    $sql = $sql_head . "values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',1,1,1,1,1,1,'$default_theme',null,null,null,0,'$default_language', '$timezone','$CloudControl')";
                     break;
                 case ("accountant"):
-                    $sql = $sql_head . "$mysql_users_table values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',0,0,1,1,1,0,'$default_theme',null,null,null,0,'$default_language', '$timezone','$CloudControl')";
+                    $sql = $sql_head . "values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',0,0,1,1,1,0,'$default_theme',null,null,null,0,'$default_language', '$timezone','$CloudControl')";
                     break;
 
 				case ("admin"):
-					$sql = $sql_head . "$mysql_users_table values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',1,1,1,1,0,0,'$default_theme',null,null,null,0,'$default_language','$timezone','$CloudControl')";
+					$sql = $sql_head . "values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',1,1,1,1,0,0,'$default_theme',null,null,null,0,'$default_language','$timezone','$CloudControl')";
 					break;
 				case ("supporter"):
-					$sql = $sql_head . "$mysql_users_table values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',0,0,1,0,0,0,'$default_theme',null,null,null,0,'$default_language','$timezone','$CloudControl')";
+					$sql = $sql_head . "values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',0,0,1,0,0,0,'$default_theme',null,null,null,0,'$default_language','$timezone','$CloudControl')";
 					break;
                 case ("supervisor"):
-					$sql = $sql_head . "$mysql_users_table values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',0,1,0,0,0,0,'$default_theme',null,null,null,0, '$default_language', '$timezone', '$CloudControl')";
+					$sql = $sql_head . "values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',0,1,0,0,0,0,'$default_theme',null,null,null,0, '$default_language', '$timezone', '$CloudControl')";
 
                     break;
 
 				case ("user"):
-					$sql = $sql_head .  "$mysql_users_table values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',1,0,0,0,0,0,'$default_theme',null,null,null,0, '$default_language', '$timezone', '$CloudControl')";
+					$sql = $sql_head .  "values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',1,0,0,0,0,0,'$default_theme',null,null,null,0, '$default_language', '$timezone', '$CloudControl')";
                                       // $sql = $sql_head . "$mysql_users_table values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',1,0,0,'$default_theme',null,null,null,0,'$default_language', '$timezone')";
 					break;
 				default:
-					$sql = $sql_head . "$mysql_users_table values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',1,0,0,0,0,0,'$default_theme',null,null,null,0,'$default_language', '$timezone', '$CloudControl')";
+					$sql = $sql_head . "values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',1,0,0,0,0,0,'$default_theme',null,null,null,0,'$default_language', '$timezone', '$CloudControl')";
 					break;
 			}
 

@@ -13,6 +13,7 @@ require_once "../common/common.php";
 
 
 	//$selected = mysql_select_db("dropdownvalues", $db) or die("Could not select examples");
+    global $db;
 	$choice = mysql_real_escape_string($_GET['choice']);
 
 	$sql = "SELECT * FROM dd_vals WHERE category='$choice'";

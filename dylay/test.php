@@ -72,13 +72,13 @@
 
         <script>
 
-            $(document).ready(function(){
+
 
 
                     $("#first-choice").change(function() {
                         $("#second-choice").load("dbddget.php?choice=" + $("#first-choice").val());
                     });
-            });
+
 
         </script>
 

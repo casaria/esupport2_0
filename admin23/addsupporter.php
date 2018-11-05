@@ -73,7 +73,7 @@ if(isset($adduser)){
 
         $timeoffset = GetServerTimeOffset($_POST[timezone]);
 
-			switch($level){
+			switch($user_level){
                 case ("superuser"):
                     $sql = $sql_head . "$mysql_users_table values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',1,1,1,1,1,1,'$default_theme',null,null,null,0,'$default_language', '$timeoffset','$CloudControl')";
                     break;
@@ -234,7 +234,7 @@ echo '
 				echo"<tr><td class=cat align=right width=20%><b>Cloud Control:<td class=back><select name=CloudControl> <option value='Off' selected> Off </option>";
 				echo"<option value='On'> On </option> </b></tr>";
 				echo"<tr><td class=cat align=right width=20%><b> $lang_level: </b></td>
-				<td class=back><select name=userlevel>				
+				<td class=back><select name=user_level>				
 								<option value=inactive selected>$lang_inactive</option>
 								<option value=user>$lang_user</option>
 								<option value=supervisor>$lang_supervisor</option>

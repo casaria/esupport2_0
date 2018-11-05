@@ -77,18 +77,23 @@
                                 </ul>
                             </div>
                             <div class="col-sm-4">
-                                <select id="first-choice">
-                                    <option selected value="base">Please Select</option>
-                                    <option value="beverages">Beverages</option>
-                                    <option value="snacks">Snacks</option>
-                                </select>
 
-                                <br>
-
-                                <select id="second-choice">
-                                    <option>Please choose from above</option>
-                                </select>
-
+                                <form>
+                                    <div class="form-group"> <!-- Message input !-->
+                                        <label class="control-label " for="region_id">Message</label>
+                                        <select class="form-control" id="first-choice" name="region">
+                                            <option selected value="base">Please Select</option>
+                                            <option value="beverages">Beverages</option>
+                                            <option value="snacks">Snacks</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group"> <!-- Message input !-->
+                                        <label class="control-label " for="region_id">Message</label>
+                                        <select class="form-control" id="second-choice" name="second">
+                                            <option selected value="base">Please choose from above</option>
+                                        </select>
+                                    </div>
+                                </form>
 
                             </div>
                             <div class="col-sm-4">
@@ -172,6 +177,19 @@
         <script type="text/javascript" src="/mdb/js/mdb.min.js"></script>
                 <script src="src/dylay.js"></script>
                 <script src="assets/js/main.js"></script>
+                <script>
 
-	</body>
+
+
+
+                    $("#first-choice").change(function() {
+                        $("#second-choice").load("dbddget.php?choice=" + $("#first-choice").val());
+                    });
+
+
+                </script>
+
+
+
+            </body>
 </html>

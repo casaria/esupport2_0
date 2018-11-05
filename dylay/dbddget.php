@@ -12,7 +12,7 @@ require_once "../common/$database.class.php";
 require_once "../common/common.php";
 
 
-	//$selected = mysql_select_db("dropdownvalues", $db) or die("Could not select examples");
+	//$mydb = mysql_select_db("support", $db) or die("Could not select examples");
     global $db;
 	$choice = mysql_real_escape_string($_GET['choice']);
 

@@ -44,7 +44,7 @@
     <br>
     <br>
     select
-        <select id="first-choice">
+        <select id="first-choice" class="back2">
             <option selected value="base">Please Select</option>
             <option value="beverages">Beverages</option>
             <option value="snacks">Snacks</option>
@@ -52,7 +52,7 @@
 
         <br>
 
-        <select id="second-choice">
+        <select id="second-choice" class="back2">
             <option>Please choose from above</option>
         </select>
 

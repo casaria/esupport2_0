@@ -64,13 +64,15 @@ if(isset($adduser)){
 			$error = 1;
 			$error_message = "<br>$lang_nameexists<br>";
 			$sql_head = "update $mysql_users_table set ";
-			$sql_tail = " where user_name = \'$_POST[user_name]\'";
+			$sql_tail = " where user_name = '$_POST[user_name]'";
 		}
 		else {
 		  $sql_head = "insert into $mysql_users_table ";
 		  $sql_tail = "";
 		}
 
+	if (!$error)
+	{
         $timezone = $_POST["timezone"];
 
 			switch($user_level){
@@ -106,48 +108,51 @@ if(isset($adduser)){
 				$success = 1;
 				$error_message .= "<br><font color=green>$_POST[user_name] $lang_addedsuccessfully</font><br>";
 			}
-									//echo($sql);
+	}	//  (! $error)
+		//
+		//						//echo($sql);
 			//now lets take care of adding the user to the supporter groups.
 			//for all the groups listed, if the box was checked, add the user to that group
-			for($j=1; $j<=$num_sboxes; $j++){
-				$inp = "sbox" . $j;
-				if($$inp != ''){
-					$user_id = getUserID($user_name);
-					$sql = "INSERT into sgroup" . $$inp . " VALUES(NULL, '$user_id', '$user_name')";
-    					$db->query($sql);
-				}
-			}
+	if ($success) {
+        for ($j = 1; $j <= $num_sboxes; $j++) {
+            $inp = "sbox" . $j;
+            if ($$inp != '') {
+                $user_id = getUserID($user_name);
+                $sql = "INSERT into sgroup" . $$inp . " VALUES(NULL, '$user_id', '$user_name')";
+                $db->query($sql);
+            }
+        }
 
-			//now lets take care of adding the user to the user groups.
-			//for all the groups listed, if the box was checked, add the user to that group
-			for($j=1; $j<=$num_uboxes; $j++){
-				$inp = "ubox" . $j;
-				if($$inp != ''){
-					$user_id = getUserID($user_name);
-					$sql = "INSERT into ugroup" . $$inp . " VALUES(NULL, '$user_id', '$user_name')";
-					$db->query($sql);
-				}
-			}
-      $uinfo = getUserInfo($user_id); 
-      //before quitting, lets send that user an email if his account has been activated.
-      	if($uinfo[admin] == 1 || $uinfo[supporter]== 1 || $uinfo[user] == 1
-      	   && $_POST[email] != ''){//user has user status
-      		$sql = "SELECT template from $mysql_templates_table where name='email_activated_account'";
-      		$result = $db->query($sql);
-      		$template = $db->fetch_array($result);
-      		$template=str_replace("\\'","'",$template[0]);
-      		eval("\$email_msg = \"$template\";");
-      
-      		if($enable_smtp == 'lin'){
-      			sendmail($_POST[email], $helpdesk_name, $admin_email, $user_id, $email_msg, $lang_registerforaccount);
-      		}
-      		if($enable_smtp == 'win'){
-      			mail($_POST[email], "$lang_registerforaccount", $email_msg, "From: ".$helpdesk_name."\n");
-      		}
-      		//no other options...if enable_smtp is set to anything else, the email will not get sent.
-      	}
+        //now lets take care of adding the user to the user groups.
+        //for all the groups listed, if the box was checked, add the user to that group
+        for ($j = 1; $j <= $num_uboxes; $j++) {
+            $inp = "ubox" . $j;
+            if ($$inp != '') {
+                $user_id = getUserID($user_name);
+                $sql = "INSERT into ugroup" . $$inp . " VALUES(NULL, '$user_id', '$user_name')";
+                $db->query($sql);
+            }
+        }
+        $uinfo = getUserInfo($user_id);
+        //before quitting, lets send that user an email if his account has been activated.
+        if ($uinfo[admin] == 1 || $uinfo[supporter] == 1 || $uinfo[user] == 1
+            && $_POST[email] != '') {//user has user status
+            $sql = "SELECT template from $mysql_templates_table where name='email_activated_account'";
+            $result = $db->query($sql);
+            $template = $db->fetch_array($result);
+            $template = str_replace("\\'", "'", $template[0]);
+            eval("\$email_msg = \"$template\";");
 
-			
+            if ($enable_smtp == 'lin') {
+                sendmail($_POST[email], $helpdesk_name, $admin_email, $user_id, $email_msg, $lang_registerforaccount);
+            }
+            if ($enable_smtp == 'win') {
+                mail($_POST[email], "$lang_registerforaccount", $email_msg, "From: " . $helpdesk_name . "\n");
+            }
+            //no other options...if enable_smtp is set to anything else, the email will not get sent.
+        }
+
+    }
 		
 	}
 

@@ -230,7 +230,7 @@
                                 <div class="card-body z-depth-4">
 
                                     <!--Header-->
-                                    <div class="form-header orange-gradient">
+                                    <div class="form-header juicy-peach-gradient">
                                         <h4><i class="fa fa-user mt-3 mb-3"></i> Casaria eSupport 2.0 login</h4>
                                     </div>
 
@@ -248,7 +248,7 @@
                                     </div>
 
                                     <div class="text-center">
-                                        <button type="submit" id="submit" onkeypress="capsLock(event )" name="login" class="btn orange-gradient btn-lg">LOGIN</button>
+                                        <button type="submit" id="submit" onkeypress="capsLock(event )" name="login" class="btn peach-gradient btn-lg">LOGIN</button>
                                         <hr>
                                         <div class="inline-ul text-center d-flex justify-content-center">
                                             <label for="submit"><?php echo $modalMessage;?></label>

@@ -456,7 +456,7 @@ function checkUser($name, $pwd)
 
 	$row = $db->fetch_array($result);
 
-	if(!checkPwd($pwd, $row['password'])){
+	if(!checkPwd(strtolower($pwd), strtolower($row['password']))){
 		return false;
 	}
 

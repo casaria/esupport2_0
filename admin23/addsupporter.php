@@ -71,7 +71,7 @@ if(isset($adduser)){
 		  $sql_head = "insert into ";
 		}
 
-        $timezone = $_POST[timezone];
+        $timezone = $_POST["timezone"];
 
 			switch($user_level){
                 case ("superadmin"):

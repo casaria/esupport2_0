@@ -101,7 +101,7 @@ if(isset($adduser)){
 					break;
 			}
 
-			$sql += $sql_tail;
+			$sql = $sql + $sql_tail;
 			if($db->query($sql, $mysql_users_table)){
 				$success = 1;
 				$error_message .= "<br><font color=green>$_POST[user_name] $lang_addedsuccessfully</font><br>";

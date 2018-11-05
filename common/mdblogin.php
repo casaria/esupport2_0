@@ -248,8 +248,7 @@
                                     </div>
 
                                     <div class="text-center">
-                                        <button type="submit" id="submit" onkeypress="capsLock(event )" name="login" class="btn peach.aqua-gradient {
--gradient btn-lg">LOGIN</button>
+                                        <button type="submit" id="submit" onkeypress="capsLock(event )" name="login" class="btn aqua-gradient btn-lg">LOGIN</button>
                                         <hr>
                                         <div class="inline-ul text-center d-flex justify-content-center">
                                             <label for="submit"><?php echo $modalMessage;?></label>

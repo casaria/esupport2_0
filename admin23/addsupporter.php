@@ -74,7 +74,7 @@ if(isset($adduser)){
         $timeoffset = GetServerTimeOffset($_POST[timezone]);
 
 			switch($user_level){
-                case ("superuser"):
+                case ("superadmin"):
                     $sql = $sql_head . "$mysql_users_table values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',1,1,1,1,1,1,'$default_theme',null,null,null,0,'$default_language', '$timeoffset','$CloudControl')";
                     break;
                 case ("accountant"):
@@ -101,6 +101,7 @@ if(isset($adduser)){
 					break;
 			}
 
+			$sql += $sql_tail;
 			if($db->query($sql, $mysql_users_table)){
 				$success = 1;
 				$error_message .= "<br><font color=green>$_POST[user_name] $lang_addedsuccessfully</font><br>";

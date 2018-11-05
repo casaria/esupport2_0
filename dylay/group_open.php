@@ -88,7 +88,7 @@
                                         </select>
                                     </div>
                                     <div class="form-group"> <!-- Message input !-->
-                                        <label class="control-label " for="region_id">Message</label>
+                                        <label class="control-label " for="region2_id">Message</label>
                                         <select class="form-control" id="second-choice" name="second">
                                             <option selected value="base">Please choose from above</option>
                                         </select>

@@ -74,25 +74,23 @@
                                     </div> <!--/Dropdown warning-->
 
 
-                                    <select id="first-choice">
-                                        <option selected value="base">Please Select</option>
-                                        <option value="beverages">Beverages</option>
-                                        <option value="snacks">Snacks</option>
-                                    </select>
-
-                                    <br>
-
-                                    <select id="second-choice">
-                                        <option>Please choose from above</option>
-                                    </select>
-
-
-
                                 </ul>
                             </div>
                             <div class="col-sm-4">
+                                <select id="first-choice">
+                                    <option selected value="base">Please Select</option>
+                                    <option value="beverages">Beverages</option>
+                                    <option value="snacks">Snacks</option>
+                                </select>
 
-                                                     </div>
+                                <br>
+
+                                <select id="second-choice">
+                                    <option>Please choose from above</option>
+                                </select>
+
+
+                            </div>
                             <div class="col-sm-4">
                                 <h4>Sorts</h4>
                                 <ul id="sorts">

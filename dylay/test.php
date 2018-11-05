@@ -76,7 +76,7 @@
 
 
                     $("#first-choice").change(function() {
-                        $("#second-choice").load("dbddgeg.php?choice=" + $("#first-choice").val());
+                        $("#second-choice").load("dbddget.php?choice=" + $("#first-choice").val());
                     });
             });
 

@@ -460,6 +460,7 @@ function checkUser($name, $pwd)
 		return false;
 	}
 
+
 	if($row[user] == 0 && $name != ''){
 	    //	require_once "../common/style.php";
 		printerror("Your account is not active.");

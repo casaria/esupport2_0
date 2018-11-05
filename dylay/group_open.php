@@ -26,6 +26,10 @@
         <link href="assets/css/main.css" rel="stylesheet"  media="screen">
 
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 
         <?php
                 require_once "../common/config.php";
@@ -78,22 +82,52 @@
                             </div>
                             <div class="col-sm-4">
 
+
+
+
+
                                 <form>
-                                    <div class="form-group"> <!-- Message input !-->
-                                        <label class="control-label " for="region_id">Message</label>
-                                        <select class="form-control" id="first-choice" name="region">
-                                            <option selected value="base">Please Select</option>
-                                            <option value="beverages">Beverages</option>
-                                            <option value="snacks">Snacks</option>
-                                        </select>
+                                    <div class="form-group row">
+                                        <label for="first-choice" class="col-4 col-form-label">Select</label>
+                                        <div class="col-8">
+                                            <select id="first-choice" name="first-choice" class="custom-select">
+                                                <option value="base">Select type</option>
+                                                <option value="snacks">snacks</option>
+                                                <option value="beverages">beverages</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="form-group"> <!-- Message input !-->
-                                        <label class="control-label " for="region2_id">Message</label>
-                                        <select class="form-control" id="second-choice" name="second">
-                                            <option selected value="base">Please choose from above</option>
-                                        </select>
+                                    <div class="form-group row">
+                                        <label for="second-choice" class="col-4 col-form-label">Select</label>
+                                        <div class="col-8">
+                                            <select id="second-choice" name="second-choice" class="custom-select">
+                                                <option value="base">Please choose from above</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="text" class="col-4 col-form-label">Text Field</label>
+                                        <div class="col-8">
+                                            <div class="input-group">
+                                                <div class="input-group-addon">
+                                                    <i class="fa fa-address-card"></i>
+                                                </div>
+                                                <input id="text" name="text" type="text" class="form-control here">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="offset-4 col-8">
+                                            <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                                        </div>
                                     </div>
                                 </form>
+
+
+
+
+
+
 
                             </div>
                             <div class="col-sm-4">

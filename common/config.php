@@ -81,7 +81,7 @@ if (preg_match('/support/i',$domain)) {
 
 if (!isset($cookie_name))
    global $cookie_name;
-if ($cookie_name == '') $cookie_name =$_COOKIE['supporter_usercookie'];
+//if ($cookie_name == '') $cookie_name =$_COOKIE['supporter_usercookie'];
 
 
 $mysql_crmsettings_table = "crmsettings";

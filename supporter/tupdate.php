@@ -34,6 +34,7 @@
 require_once "../common/config.php";
 require_once "../common/mysql.class.php";
 require_once "../common/common.php";
+if ($cookie_name == '') $cookie_name =$_COOKIE['supporter_usercookie'];
 $language = getLanguage($cookie_name);
 if ($language == '')
     require_once "../lang/english.lang.php";

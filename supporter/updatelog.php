@@ -41,7 +41,7 @@ authenticate();
 //require_once "../common/login.php";
 
 
-RewindSession();
+    RewindSession();
 
 $language = getLanguage($cookie_name);
 if($language == '')

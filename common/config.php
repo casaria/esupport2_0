@@ -91,7 +91,10 @@ if (preg_match('/supporter/i',$full_url)) {
     if ($cookie_name == '') $cookie_name = $_COOKIE['supporter_usercookie'];
 } else {
 
+
     if ($cookie_name == '') $cookie_name =$_COOKIE['cookieuser'];
+
+    if (!$cookie_name) $cookie_name = $_COOKIE['supporter_usercookie'];
 }
 
 $mysql_crmsettings_table = "crmsettings";

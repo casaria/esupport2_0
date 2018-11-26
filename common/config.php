@@ -87,9 +87,6 @@ if (preg_match('/support/i',$domain)) {
 
 
 
-
-
-
 $mysql_crmsettings_table = "crmsettings";
 $mysql_tequipment_table = "tequipment";
 $mysql_BillingStatus_table = "tBillingStatus";

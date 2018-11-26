@@ -87,10 +87,10 @@ if(isset($adduser)){
 					$sql = $sql_head . "values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',1,1,1,1,0,0,'$default_theme',null,null,null,0,'$default_language','$timezone','$CloudControl')";
 					break;
 				case ("supporter"):
-					$sql = $sql_head . "values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',0,0,1,0,0,0,'$default_theme',null,null,null,0,'$default_language','$timezone','$CloudControl')";
+					$sql = $sql_head . "values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',1,0,1,0,0,0,'$default_theme',null,null,null,0,'$default_language','$timezone','$CloudControl')";
 					break;
                 case ("supervisor"):
-					$sql = $sql_head . "values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',0,1,0,0,0,0,'$default_theme',null,null,null,0, '$default_language', '$timezone', '$CloudControl')";
+					$sql = $sql_head . "values(NULL,'$_POST[first_name]','$_POST[last_name]','$_POST[user_name]','$_POST[email]','$_POST[pager]','$pwd','$_POST[office]','$_POST[phone]',1,1,0,0,0,0,'$default_theme',null,null,null,0, '$default_language', '$timezone', '$CloudControl')";
 
                     break;
 

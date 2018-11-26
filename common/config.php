@@ -42,7 +42,9 @@ $domain    = $_SERVER['SERVER_NAME'];
 $full_url  = "${protocol}://${domain}${disp_port}${base_url}";
 $remote_ip = $_SERVER['REMOTE_ADDR'];
 
+//if (!isset($cookie_name))
 
+    global $cookie_name;
 
 /**********************************************************************************************************/
 /****************************	 Variables	***********************************************************/
@@ -59,6 +61,10 @@ if (preg_match('/support/i',$domain)) {
     $session_name = 'eSupport';
     $MailQueuePath = "/var/www/casaria/esupport/MAILQUEUE/";
     $includePath = '/var/www/casaria/esupport/common/';
+
+    if ($cookie_name == '') $cookie_name =$_COOKIE['supporter_usercookie'];
+
+
 } else {
 
     $database = "mysql";                    //database (mysql is the only one available
@@ -72,6 +78,8 @@ if (preg_match('/support/i',$domain)) {
     $session_name = 'EVALCasaria';
     $MailQueuePath = '/var/www/casaria/esupport2_0/MAILQUEUE/';
     $includePath = '/var/www/casaria/esupport2_0/common/' ;
+
+    if ($cookie_name == '') $cookie_name =$_COOKIE['usercookie'];
 }
 /*********	You shouldn't need to change anything below here.	***********************************/
 /**********************************************************************************************************/
@@ -79,9 +87,8 @@ if (preg_match('/support/i',$domain)) {
 
 
 
-if (!isset($cookie_name))
-   global $cookie_name;
-if ($cookie_name == '') $cookie_name =$_COOKIE['supporter_usercookie'];
+
+
 
 $mysql_crmsettings_table = "crmsettings";
 $mysql_tequipment_table = "tequipment";

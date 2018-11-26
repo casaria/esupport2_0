@@ -39,8 +39,9 @@ authenticate();
 
 //+++ avoid "you are not a supporter" if selecting the updatelog
 //require_once "../common/login.php";
-RewindSession();
 $cookie_name = $_SESSION['cookie_name'];
+RewindSession();
+
 $language = getLanguage($cookie_name);
 if($language == '')
 	require_once "../lang/$default_language.lang.php";

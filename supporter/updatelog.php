@@ -39,7 +39,7 @@ authenticate();
 
 //+++ avoid "you are not a supporter" if selecting the updatelog
 //require_once "../common/login.php";
-$cookie_name =$_COOKIE['supporter_usercookie'];
+
 //$cookie_name = $_SESSION['cookie_name'];
 RewindSession();
 

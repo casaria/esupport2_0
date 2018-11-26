@@ -62,7 +62,7 @@ if (preg_match('/support/i',$domain)) {
     $MailQueuePath = "/var/www/casaria/esupport/MAILQUEUE/";
     $includePath = '/var/www/casaria/esupport/common/';
 
-    if ($cookie_name == '') $cookie_name =$_COOKIE['supporter_usercookie'];
+
 
 
 } else {
@@ -79,13 +79,20 @@ if (preg_match('/support/i',$domain)) {
     $MailQueuePath = '/var/www/casaria/esupport2_0/MAILQUEUE/';
     $includePath = '/var/www/casaria/esupport2_0/common/' ;
 
-    if ($cookie_name == '') $cookie_name =$_COOKIE['usercookie'];
+
 }
 /*********	You shouldn't need to change anything below here.	***********************************/
 /**********************************************************************************************************/
 /**********************************************************************************************************/
 
+if (preg_match('/supporter/i',$full_url)) {
 
+
+    if ($cookie_name == '') $cookie_name = $_COOKIE['supporter_usercookie'];
+} else {
+
+    if ($cookie_name == '') $cookie_name =$_COOKIE['usercookie'];
+}
 
 $mysql_crmsettings_table = "crmsettings";
 $mysql_tequipment_table = "tequipment";

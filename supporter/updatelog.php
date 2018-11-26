@@ -40,7 +40,7 @@ authenticate();
 //+++ avoid "you are not a supporter" if selecting the updatelog
 //require_once "../common/login.php";
 RewindSession();
-//$cookie_name = $_SESSION['cookie_name'];
+$cookie_name = $_SESSION['cookie_name'];
 $language = getLanguage($cookie_name);
 if($language == '')
 	require_once "../lang/$default_language.lang.php";
@@ -120,7 +120,7 @@ echo "</form>";
 			$log[$i] = eregi_replace("^[0-9]*", "$date ", $log[$i]);
 		}
 								
-		if($i%2 == 0){
+    		if($i%2 == 0){
 			echo "<tr><td colspan=2 class=cat align=left><font size=1><b>". $log[$i] ."</b></font></td></tr>";
 		}
 		else{

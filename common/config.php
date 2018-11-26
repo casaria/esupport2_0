@@ -89,11 +89,12 @@ global $cookie_name;
 if (preg_match('/supporter/i',$full_url)) {
 
     if ($cookie_name == '') $cookie_name = $_COOKIE['supporter_usercookie'];
+    if (!$cookie_name) $cookie_name = $_COOKIE['cookieuser'];
+
 } else {
 
 
-    if ($cookie_name == '') $cookie_name =$_COOKIE['cookieuser'];
-
+    if ($cookie_name == '') $cookie_name = $_COOKIE['cookieuser'];
     if (!$cookie_name) $cookie_name = $_COOKIE['supporter_usercookie'];
 }
 

@@ -42,9 +42,7 @@ $domain    = $_SERVER['SERVER_NAME'];
 $full_url  = "${protocol}://${domain}${disp_port}${base_url}";
 $remote_ip = $_SERVER['REMOTE_ADDR'];
 
-//if (!isset($cookie_name))
 
-    global $cookie_name;
 
 /**********************************************************************************************************/
 /****************************	 Variables	***********************************************************/
@@ -85,8 +83,10 @@ if (preg_match('/support/i',$domain)) {
 /**********************************************************************************************************/
 /**********************************************************************************************************/
 
-if (preg_match('/supporter/i',$full_url)) {
+//if (!isset($cookie_name))
 
+global $cookie_name;
+if (preg_match('/supporter/i',$full_url)) {
 
     if ($cookie_name == '') $cookie_name = $_COOKIE['supporter_usercookie'];
 } else {

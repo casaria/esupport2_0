@@ -195,7 +195,7 @@ else {
 
                             <?php createQRcode('https//casaria.net');?>
                         </div>
-                        <div class="col align-self-end ">
+                        <div class="cstyle="width:500px;height:600px;"ol align-self-end ">
 
                         </div>
                     </div>

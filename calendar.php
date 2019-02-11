@@ -32,7 +32,7 @@
         <a href="#index" class="fa fa-chevron-left -schedule"></a>
       </div>
       <div class="cal-title">
-        <div class="cal-heading -calendar">Calendar</div>
+        <div class="cal-heading -calendar">TimeCard</div>
         <div class="cal-heading -schedule">Wednesday, November 10</div>
       </div>
       <div class="cal-button -right">

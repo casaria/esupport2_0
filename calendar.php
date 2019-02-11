@@ -237,18 +237,14 @@
   </section>
 </main>
 <div class="meta">
-  <h1>CSS-only Colorful <br>Calendar Concept</h1>
+  <h1>TimeCard Concept</h1>
   <p>
-Dribbble Rework<br />
-    Original Shot by <a href="https://dribbble.com/shots/2335073-Calendar-App-Animation" target="_blank">Ludmila Shevchenko</a>
   </p>
   <p>
 Click on the arrows (when enabled) and the highlighted date to see the effect.<br>
 You can also go <strong>back</strong> in your browser to navigate between scenes, or click the left arrow in the schedule view.
   </p>
-  <p>
-Works in all modern browsers.
-  </p>
+
 </div>
 </body>
 </html>
